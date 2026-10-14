@@ -17,7 +17,9 @@ jobs:
           python-version: "3.12"
       - uses: actions/cache@v4
         with:
-          path: alerts.json
+          path: |
+            alerts.json
+            lists.json
           key: alerts-${{ github.run_id }}
           restore-keys: alerts-
       - run: python scanner.py
