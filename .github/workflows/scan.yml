@@ -1,0 +1,23 @@
+name: Support scan
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: alerts.json
+          key: alerts-${{ github.run_id }}
+          restore-keys: alerts-
+      - run: python scanner.py
+        env:
+          TOKENS: "NEAR,SOL,ETH"
+          CHECK_EVERY_MINUTES: "0"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
