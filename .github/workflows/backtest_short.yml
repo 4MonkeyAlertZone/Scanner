@@ -1,0 +1,36 @@
+name: Short-signal backtest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/backtest_short.yml"
+      - "backtest_short.py"
+      - "scanner.py"
+concurrency:
+  group: backtest-short
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  backtest-short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python backtest_short.py
+        env:
+          BT_SHORT_MONTHS: "36"
+          BT_SHORT_STOCK_YEARS: "5"
+          SHORT_TOKENS: "BTC,ETH,stock:SPY,stock:QQQ,stock:AAPL,stock:MSFT,stock:NVDA,stock:GOOGL,stock:AMZN,stock:META,stock:TSLA"
+          MIN_SCORE: "3"
+          MIN_RR: "1.2"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add backtest_short_signals.csv backtest_short_summary.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Short-signal backtest" && (git pull --rebase -q; git push))

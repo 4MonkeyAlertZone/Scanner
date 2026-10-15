@@ -1,0 +1,37 @@
+name: Backtest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/backtest.yml"
+      - "backtest.py"
+      - "scanner.py"
+concurrency:
+  group: backtest
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python backtest.py
+        env:
+          BT_CRYPTO: "30"
+          BT_MONTHS: "12"
+          BT_STOCKS: "1"
+          BT_STOCK_YEARS: "3"
+          MIN_SCORE: "3"
+          MIN_RR: "1.2"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add backtest_signals.csv backtest_summary.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Backtest results" && (git pull --rebase -q; git push))
