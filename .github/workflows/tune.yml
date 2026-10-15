@@ -1,0 +1,33 @@
+name: Weekly self-review
+on:
+  schedule:
+    - cron: "17 5 * * 0"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  tune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-run the backtest on fresh data
+        run: python backtest.py
+        env:
+          BT_CRYPTO: "30"
+          BT_MONTHS: "12"
+          BT_STOCKS: "1"
+          BT_STOCK_YEARS: "3"
+      - name: Self-review (may adjust config.json)
+        run: python tuner.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add backtest_signals.csv backtest_summary.txt tuning_log.md tuning_state.json config.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Weekly self-review" && git push)
