@@ -1,0 +1,32 @@
+name: Strategy lab 4
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/lab4.yml"
+      - "backtest_lab4.py"
+concurrency:
+  group: lab4
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  lab4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python backtest_lab4.py
+        env:
+          LAB4_COINS: "50"
+          LAB4_DAYS: "3300"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add lab4_summary.txt lab4_results.csv 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Strategy lab 4 results" && (git pull --rebase -q; git push))
