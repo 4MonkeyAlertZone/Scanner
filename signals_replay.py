@@ -81,6 +81,7 @@ def replay_coin(args):
                 # MARKET: enter at the open of the first candle after the post
                 e = m[i][1]; tp = level(spec, e, c["sl"], side)
                 ok = (c["sl"] < e < tp) if side == "long" else (c["sl"] > e > tp)
+                ok = ok and 0.003 <= abs(e - c["sl"]) / e <= 0.35 and abs(tp - e) / e <= 2.0      # same sanity limits as for calls with a written entry
                 if ok:
                     r = walk(m, i, e, c["sl"], tp, side)
                     if r: rows.append((coin, c["epoch"], side, "MARKET", tpn, r[0], r[1], r[2], round(abs(tp - e) / abs(e - c["sl"]), 2), 0))
@@ -96,6 +97,7 @@ def replay_coin(args):
                     if r: rows.append((coin, m[k][0], side, "RANDOM", tpn, r[0], r[1], r[2], round(tpp / sp, 2), 1))
                 # LIMIT: wait for the stated entry price (the deeper one if he gives two)
                 lim = c["entry_lo"] if side == "long" else c["entry_hi"]
+                if lim is None: continue          # "Entry: CMP" only: there is no limit price to wait for
                 for j in range(i, min(len(m) - 1, i + WAIT)):
                     _, o, h, l, cl = m[j]
                     hit = (l <= lim) if side == "long" else (h >= lim)
@@ -167,7 +169,7 @@ def main():
     for r in csv.DictReader(open(os.path.join(OUT, CALLS))):
         if r["valid"] != "1": continue
         calls.append(dict(coin=r["coin"], side=r["side"], epoch=int(r["epoch"]), sl=float(r["sl"]), tp1=float(r["tp1"]) if r["tp1"] else None, tp_last=float(r["tp_last"]) if r["tp_last"] else None,
-                          entry_lo=float(r["entry_lo"]), entry_hi=float(r["entry_hi"])))
+                          entry_lo=float(r["entry_lo"]) if r["entry_lo"] else None, entry_hi=float(r["entry_hi"]) if r["entry_hi"] else None))
     by = {}
     for c in calls: by.setdefault(c["coin"], []).append(c)
     print(f"{len(calls)} usable calls on {len(by)} coins", flush=True)
