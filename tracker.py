@@ -4,7 +4,7 @@ fills in what price did afterwards, so we can later measure which signals actual
 Needs scanner.py in the same folder. Run:  python tracker.py"""
 import csv, json, os, sys, time
 from datetime import datetime, timezone
-import scanner, paper
+import scanner, paper, trend
 
 LOG = os.path.join(scanner.HERE, "signals.csv")
 COLS = ["epoch", "time_utc", "market", "token", "verdict", "passed_filters", "price", "zone_lo", "zone_hi", "entry", "stop",
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     toks = [a.upper() for a in sys.argv[1:]] or scanner.TOKENS
     scanner.run(toks)
     log_new()
-    paper.update(seen, scanner.SHORTS)
+    paper.update(seen, scanner.SHORTS, trend.check())
     paper.daily()
     now = datetime.now(timezone.utc)
     if (now.hour % 6 == 0 and now.minute < 5) or os.environ.get("EVALUATE_NOW"): evaluate_all()

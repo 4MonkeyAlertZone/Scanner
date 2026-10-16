@@ -11,7 +11,7 @@ import scanner
 def P(n): return os.path.join(scanner.HERE, n)
 LEDGER, REPORT, META = P("paper_trades.csv"), P("daily_report.md"), P("summary_state.json")
 COLS = ["id", "token", "market", "side", "verdict", "score", "open_epoch", "open_time", "entry", "stop", "target", "status",
-        "close_epoch", "close_time", "exit", "reason", "ret_pct", "pnl_usd", "hours", "R"]
+        "close_epoch", "close_time", "exit", "reason", "ret_pct", "pnl_usd", "hours", "R", "max_hours"]
 COST = 0.002                  # round-trip fees + slippage
 STAKE = 100.0                 # imagined money per trade
 MAX_HOLD_H = 14 * 24          # close at market after this long
@@ -59,7 +59,7 @@ def close_positions(rows):
         reason = ex = None
         if (long and p <= s) or (not long and p >= s): reason, ex = "stop", p          # stops fill at the current price (can be worse)
         elif t and ((long and p >= t) or (not long and p <= t)): reason, ex = "target", t
-        elif now - float(r["open_epoch"]) > MAX_HOLD_H * 3600: reason, ex = "time (14 days)", p
+        elif now - float(r["open_epoch"]) > float(r.get("max_hours") or MAX_HOLD_H) * 3600: reason, ex = "time limit", p
         if not reason: continue
         net = ((ex - e) / e if long else (e - ex) / e) - COST
         risk = abs(e - s) / e
@@ -68,8 +68,11 @@ def close_positions(rows):
         n += 1
     return n
 
-def open_new(rows, seen, shorts):
+def open_new(rows, seen, shorts, trend=()):
     now, c, n = time.time(), [], 0
+    for o in trend:   # trend-breakout paper test (trend.py): crypto longs with their own stop, target and time limit
+        c.append(dict(token=o["tok"], market="crypto", side="long", verdict=o["verdict"], score="", entry=o["last"], stop=o["stop"],
+                      target=o["target"], max_hours=o["max_hours"]))
     for tok, o in seen:
         z, rr = o["zone"], scanner.rr_of(o)
         if z["pts"] >= scanner.MIN_SCORE and (rr is None or rr >= scanner.MIN_RR):
@@ -80,15 +83,18 @@ def open_new(rows, seen, shorts):
             c.append(dict(token=o["tok"], market="stock" if o["key"].startswith("STOCK:") else "crypto", side="short", verdict="SHORT SIGNAL", score=o["pts"], entry=o["last"], stop=o["stop"], target=o["target"]))
     for x in c:
         if (x["side"] == "long" and x["stop"] >= x["entry"]) or (x["side"] == "short" and x["stop"] <= x["entry"]): continue
-        if any(r["token"] == x["token"] and r["side"] == x["side"] and (r["status"] == "open" or now - float(r["close_epoch"] or 0) < REOPEN_H * 3600) for r in rows): continue
+        grp = lambda v: v if str(v).startswith("BREAKOUT") else "SR"      # each trend rule is tracked separately from the support-zone signals
+        if any(r["token"] == x["token"] and r["side"] == x["side"] and grp(r["verdict"]) == grp(x["verdict"])
+               and (r["status"] == "open" or now - float(r["close_epoch"] or 0) < REOPEN_H * 3600) for r in rows): continue
         rows.append(dict(id=len(rows) + 1, token=x["token"], market=x["market"], side=x["side"], verdict=x["verdict"], score=x["score"],
-                         open_epoch=int(now), open_time=stamp(now), entry=g(x["entry"]), stop=g(x["stop"]), target=g(x["target"]), status="open"))
+                         open_epoch=int(now), open_time=stamp(now), entry=g(x["entry"]), stop=g(x["stop"]), target=g(x["target"]), status="open",
+                         max_hours=x.get("max_hours", "")))
         n += 1
     return n
 
-def update(seen, shorts):
+def update(seen, shorts, trend=()):
     rows = read()
-    c = close_positions(rows); o = open_new(rows, seen, shorts)
+    c = close_positions(rows); o = open_new(rows, seen, shorts, trend)
     if c or o: write(rows)
     print(f"Paper trades: {o} opened, {c} closed, {sum(r['status'] == 'open' for r in rows)} open")
 
@@ -126,7 +132,7 @@ def report(rows, now):
     T.append("Imagined $100 per trade, 0.2% costs. Full report attached.")
     M = ["# Signal performance report", f"Generated {datetime.fromtimestamp(now, LOCAL):%d %b %Y %H:%M}. Times are {os.environ.get('REPORT_TZ', 'Europe/London')}.", "",
          "Method: every alert that passed your filters is an imagined $100 trade. Longs are bought at the alert price and sold at the target "
-         "(nearest resistance), the stop, or after 14 days. BTC/ETH short signals are imagined shorts. Costs 0.2% per trade. "
+         "(nearest resistance), the stop, or after the time limit (14 days; 7 days for BREAKOUT trend trades, a paper-only test with no phone alerts). Costs 0.2% per trade. "
          "Prices are checked every ~5 minutes, so real fills can be worse, especially for stops.", "", "## Summary", ""]
     M += [line("All trades", a), line("Longs", stats([r for r in closed if r["side"] == "long"])), line("Shorts", stats([r for r in closed if r["side"] == "short"])),
           line("Crypto", stats([r for r in closed if r["market"] == "crypto"])), line("Stocks", stats([r for r in closed if r["market"] == "stock"])), ""]
