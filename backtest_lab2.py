@@ -255,6 +255,7 @@ def main():
         with gzip.open(os.path.join(OUT, "lab2_candidates.csv.gz"), "wt", newline="") as f:
             w = csv.DictWriter(f, cols); w.writeheader(); w.writerows(rows)
     text, results = summarise(rows, errs) if rows else ("No signals found. " + str(errs[:3]), [])
+    if rows: text = B.coverage(rows) + "\n" + text
     if results:
         with open(os.path.join(OUT, "lab2_results.csv"), "w", newline="") as f:
             w = csv.DictWriter(f, list(results[0].keys())); w.writeheader(); w.writerows(results)

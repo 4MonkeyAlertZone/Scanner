@@ -20,15 +20,57 @@ SIGNALS = ("BUY SIGNAL", "IN ZONE", "IN ZONE - WAIT")
 OUT = scanner.HERE
 # ------------------------------------------
 
-def hist_crypto(sym, interval, need):
+def _rows(k, ms=True):
+    return [(x[0] / 1000, float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])) for x in k]
+
+def _binance_us(sym, interval, need):
+    """Binance.US: 1000 candles per request, pages back with endTime (verified to work from GitHub, MEXC's paging does not)."""
     out, end = [], int(time.time() * 1000)
     while len(out) < need:
-        k = json.loads(scanner.http(f"https://api.mexc.com/api/v3/klines?symbol={sym}USDT&interval={interval}&endTime={end}&limit=500"))
+        k = json.loads(scanner.http(f"https://api.binance.us/api/v3/klines?symbol={sym}USDT&interval={interval}&endTime={end}&limit=1000"))
         if not k: break
-        out = [(x[0] / 1000, float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])) for x in k] + out
+        out = _rows(k) + out
         end = int(k[0][0]) - 1
-        if len(k) < 500: break
-    return out[:-1]   # drop the candle that is still forming
+        if len(k) < 1000: break
+    return out
+
+def _okx(sym, interval, need):
+    """OKX: 100 candles per request, pages back with 'after'. Used when Binance.US does not list the coin or has too little history."""
+    bar = {"4h": "4H", "1d": "1D"}[interval]; out, after = [], ""
+    while len(out) < need:
+        k = json.loads(scanner.http(f"https://www.okx.com/api/v5/market/history-candles?instId={sym}-USDT&bar={bar}&limit=100" + (f"&after={after}" if after else "")))["data"]
+        if not k: break
+        rows = [(int(x[0]) / 1000, float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])) for x in k]
+        out += rows; after = str(int(min(r[0] for r in rows) * 1000))
+        if len(k) < 100: break
+        time.sleep(0.45)            # OKX allows about 20 history requests per 2 seconds per address
+    return out
+
+def clean(rows):
+    """Oldest first, one row per timestamp, prices valid. Guards against the duplicated-history bug that spoiled the first crypto backtests."""
+    seen, out = set(), []
+    for r in sorted(rows):
+        if r[0] in seen or min(r[1:5]) <= 0: continue
+        seen.add(r[0]); out.append(r)
+    return out
+
+def hist_crypto(sym, interval, need):
+    best = []
+    for fn in (_binance_us, _okx):
+        try: rows = clean(fn(sym, interval, need))
+        except Exception: rows = []
+        if len(rows) > len(best): best = rows
+        if len(best) >= need * .9: break
+    return best[:-1]   # drop the candle that is still forming
+
+def coverage(rows):
+    """One line saying what dates the signals really cover, so a data problem is visible in every report."""
+    f = lambda t: datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%d")
+    out = []
+    for mk in ("crypto", "stock"):
+        e = [int(r["epoch"]) for r in rows if r.get("market") == mk]
+        if e: out.append(f"{mk}: {f(min(e))} to {f(max(e))} ({(max(e) - min(e)) / 86400 / 30.4:.0f} months, {len(e)} signals)")
+    return "DATA COVERED  " + "; ".join(out) if out else ""
 
 def hist_stock(sym, interval):
     j = json.loads(scanner.http(scanner.YAHOO.format(sym, interval, "10y"), headers=scanner.UA))["chart"]["result"][0]
@@ -137,7 +179,7 @@ if __name__ == "__main__":
     if S:
         with open(os.path.join(OUT, "backtest_signals.csv"), "w", newline="") as f:
             w = csv.DictWriter(f, list(S[0].keys())); w.writeheader(); w.writerows(sorted(S, key=lambda r: r["epoch"]))
-    text = summary(S, C, errs) if S else "No signals found. " + str(errs[:3])
+    text = (coverage(S) + "\n" + summary(S, C, errs)) if S else "No signals found. " + str(errs[:3])
     open(os.path.join(OUT, "backtest_summary.txt"), "w").write(text + "\n")
     print("\n" + text)
     try:   # send the headline numbers and the full summary to your phone

@@ -115,7 +115,7 @@ if __name__ == "__main__":
     if S:
         with open(os.path.join(scanner.HERE, "backtest_short_signals.csv"), "w", newline="") as f:
             w = csv.DictWriter(f, list(S[0].keys())); w.writeheader(); w.writerows(sorted(S, key=lambda r: r["epoch"]))
-    text = summary(S, C, moves, errs) if S else "No short signals found. " + str(errs[:3])
+    text = (B.coverage(S) + "\n" + summary(S, C, moves, errs)) if S else "No short signals found. " + str(errs[:3])
     with open(os.path.join(scanner.HERE, "backtest_short_summary.txt"), "w") as f: f.write(text + "\n")
     print("\n" + text)
     try:
