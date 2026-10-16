@@ -50,3 +50,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 49,CAKE,crypto,long,IN ZONE - WAIT,4,1792115157,16 Oct 02:45,2.199,2.1077857,2.2856667,open,,,,,,,,,
 50,FET,crypto,long,BUY SIGNAL,3,1792115157,16 Oct 02:45,0.2043,0.19753214,0.21326,open,,,,,,,,,
 51,XPL,crypto,long,BUY SIGNAL,4,1792115157,16 Oct 02:45,0.08514,0.081883214,0.089323333,open,,,,,,,,,
+52,JUP,crypto,long,IN ZONE - WAIT,4,1792116685,16 Oct 03:11,0.3146,0.30748214,0.32945,open,,,,,,,,,
