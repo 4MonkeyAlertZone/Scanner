@@ -83,7 +83,7 @@ def open_new(rows, seen, shorts, trend=()):
             c.append(dict(token=o["tok"], market="stock" if o["key"].startswith("STOCK:") else "crypto", side="short", verdict="SHORT SIGNAL", score=o["pts"], entry=o["last"], stop=o["stop"], target=o["target"]))
     for x in c:
         if (x["side"] == "long" and x["stop"] >= x["entry"]) or (x["side"] == "short" and x["stop"] <= x["entry"]): continue
-        grp = lambda v: v if str(v).startswith(("BREAKOUT", "CROSS")) else "SR"      # each trend rule is tracked separately from the support-zone signals
+        grp = lambda v: v if str(v).startswith(("BREAKOUT", "CROSS", "RECLAIM")) else "SR"      # each trend rule is tracked separately from the support-zone signals
         if any(r["token"] == x["token"] and r["side"] == x["side"] and grp(r["verdict"]) == grp(x["verdict"])
                and (r["status"] == "open" or now - float(r["close_epoch"] or 0) < REOPEN_H * 3600) for r in rows): continue
         rows.append(dict(id=len(rows) + 1, token=x["token"], market=x["market"], side=x["side"], verdict=x["verdict"], score=x["score"],
@@ -132,7 +132,7 @@ def report(rows, now):
     T.append("Imagined $100 per trade, 0.2% costs. Full report attached.")
     M = ["# Signal performance report", f"Generated {datetime.fromtimestamp(now, LOCAL):%d %b %Y %H:%M}. Times are {os.environ.get('REPORT_TZ', 'Europe/London')}.", "",
          "Method: every alert that passed your filters is an imagined $100 trade. Longs are bought at the alert price and sold at the target "
-         "(nearest resistance), the stop, or after the time limit (14 days; 7 days for CROSS trend trades, a paper-only test). Costs 0.2% per trade. "
+         "(nearest resistance), the stop, or after the time limit (14 days; 7 days for CROSS and RECLAIM trend trades, a paper-only test). Costs 0.2% per trade. "
          "Prices are checked every ~5 minutes, so real fills can be worse, especially for stops.", "", "## Summary", ""]
     M += [line("All trades", a), line("Longs", stats([r for r in closed if r["side"] == "long"])), line("Shorts", stats([r for r in closed if r["side"] == "short"])),
           line("Crypto", stats([r for r in closed if r["market"] == "crypto"])), line("Stocks", stats([r for r in closed if r["market"] == "stock"])), ""]
