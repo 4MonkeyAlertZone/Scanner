@@ -33,7 +33,7 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOPIC_STOCKS: ${{ secrets.NTFY_TOPIC_STOCKS }}
           HOLDINGS: ${{ secrets.HOLDINGS }}
-          SHORT_TOKENS: "BTC,ETH,stock:SPY,stock:QQQ,stock:AAPL,stock:MSFT,stock:NVDA,stock:GOOGL,stock:AMZN,stock:META,stock:TSLA"
+          SHORT_TOKENS: ""   # short alerts switched off: they lost money in the real-data backtest
           SUMMARY_HOUR_UTC: "7"
       - name: Save signal log
         run: |
