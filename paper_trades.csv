@@ -352,3 +352,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 351,ASTER,crypto,long,RECLAIM C TP1,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.7451448,open,,,,,,,,,168
 352,ASTER,crypto,long,RECLAIM C TP2,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.7821896,open,,,,,,,,,168
 353,ASTER,crypto,long,RECLAIM C TP3,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.8192344,open,,,,,,,,,168
+354,TIA,crypto,long,BUY SIGNAL,3,1792184383,16 Oct 21:59,0.6586,0.6053025,,open,,,,,,,,,
