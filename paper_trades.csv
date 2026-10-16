@@ -28,7 +28,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 27,VET,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,0.007105,0.0069528571,0.0073846667,open,,,,,,,,,
 28,TRUMP,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,1.88,1.8306179,1.928,open,,,,,,,,,
 29,VIRTUAL,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,0.6796,0.65649643,0.7105,open,,,,,,,,,
-30,PENDLE,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,2.056,1.9334286,2.1465,open,,,,,,,,,
+30,PENDLE,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,2.056,1.9334286,2.1465,closed,1792146773,16 Oct 11:32,2.1465,target,4.20,4.20,10.9,0.70,
 31,XTZ,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,0.3117,0.29804786,0.32865714,open,,,,,,,,,
 32,SPX,crypto,long,IN ZONE - WAIT,3,1792107460,16 Oct 00:37,0.3459,0.32770357,0.3696,open,,,,,,,,,
 33,ARB,crypto,long,BUY SIGNAL,4,1792108553,16 Oct 00:55,0.19554,0.18531429,0.204535,open,,,,,,,,,
