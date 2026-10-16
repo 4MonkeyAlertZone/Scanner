@@ -1,13 +1,13 @@
 rule,train_n,train_avgR,test_n,test_avgR,test_ci,vs_random,status
-breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 14 days | ladder,1534,0.966,425,0.018,0.123,-0.264,WEAK
-breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 14 days | single 2x target,1534,1.009,425,-0.037,0.13,-0.322,FAILS
-breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | single 2x target,1534,0.979,425,0.047,0.127,-0.118,WEAK
-breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | ladder,1534,0.925,425,0.02,0.117,-0.14,WEAK
-breakout 20 + volume | any BTC | stop 2.5 ATR | limit 14 days | ladder,2353,0.787,1040,-0.526,0.056,-0.777,FAILS
-breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 14 days | ladder,1677,0.903,620,0.095,0.096,-0.168,WEAK
-breakout 55 | any BTC | stop 2.5 ATR | limit 14 days | ladder,2054,0.819,803,-0.137,0.08,-0.387,FAILS
-breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 7 days | ladder,1677,0.865,620,0.086,0.093,-0.067,WEAK
-breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 14 days | single 2x target,1677,0.927,620,0.083,0.109,-0.181,WEAK
-breakout 20 + volume | any BTC | stop 2.5 ATR | limit 14 days | single 2x target,2353,0.801,1040,-0.551,0.065,-0.803,FAILS
-breakout 55 | any BTC | stop 2.5 ATR | limit 7 days | ladder,2054,0.777,803,-0.096,0.078,-0.257,FAILS
-breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 7 days | single 2x target,1677,0.9,620,0.127,0.104,-0.031,WEAK
+breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | single 2x target,991,0.195,427,0.046,0.13,0.018,WEAK
+breakout 20 + volume | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | ladder,1131,0.162,511,-0.014,0.108,-0.042,FAILS
+breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | ladder,991,0.169,427,0.048,0.119,0.02,WEAK
+"breakout 55 | BTC rising (20>50, above 50) | stop 2.5 ATR | limit 7 days | single 2x target",990,0.186,349,0.068,0.144,0.031,WEAK
+20/50 cross up | any BTC | stop 2.5 ATR | limit 7 days | single 2x target,750,0.212,417,0.187,0.134,0.224,HOLDS
+"breakout 55 | BTC rising (20>50, above 50) | stop 2.5 ATR | limit 7 days | ladder",990,0.165,349,0.086,0.13,0.052,WEAK
+20/50 cross up | any BTC | stop 2.5 ATR | limit 7 days | ladder,750,0.189,417,0.172,0.12,0.204,HOLDS
+20/50 cross up | BTC above 200-avg | stop 2.5 ATR | limit 7 days | single 2x target,597,0.233,313,0.322,0.158,0.339,HOLDS
+20/50 cross up | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | ladder,479,0.231,252,0.292,0.161,0.264,HOLDS
+20/50 cross up | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | single 2x target,479,0.256,252,0.304,0.177,0.276,HOLDS
+breakout 20 + volume | BTC above 200-avg | stop 2.5 ATR | limit 7 days | ladder,1202,0.144,508,0.053,0.11,0.062,WEAK
+breakout 55 | any BTC | stop 2.5 ATR | limit 7 days | single 2x target,1250,0.154,598,-0.029,0.107,0.008,FAILS
