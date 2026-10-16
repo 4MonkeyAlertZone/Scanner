@@ -61,3 +61,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 60,ZEC,crypto,long,IN ZONE - WAIT,5,1792128324,16 Oct 06:25,1228.73,1189.8214,1301.65,open,,,,,,,,,
 61,ICP,crypto,long,IN ZONE - WAIT,4,1792130068,16 Oct 06:54,3.08,3.0258929,3.2134,open,,,,,,,,,
 62,SHIB,crypto,long,IN ZONE,3,1792133795,16 Oct 07:56,5.158e-06,5.1051071e-06,5.3655e-06,open,,,,,,,,,
+63,BNB,crypto,long,IN ZONE,3,1792135669,16 Oct 08:27,731.68,725.59464,744.585,open,,,,,,,,,
+64,CRO,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.05874,0.057666786,0.06039,open,,,,,,,,,
+65,GRASS,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.692,0.66695714,0.7431,open,,,,,,,,,
