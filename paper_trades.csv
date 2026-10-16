@@ -54,3 +54,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 53,PEPE,crypto,long,BUY SIGNAL,3,1792121491,16 Oct 04:31,4.079e-06,3.906e-06,4.28675e-06,open,,,,,,,,,
 54,JST,crypto,long,IN ZONE,4,1792121491,16 Oct 04:31,0.13557,0.13357536,0.1418175,open,,,,,,,,,
 55,POL,crypto,long,BUY SIGNAL,3,1792123365,16 Oct 05:02,0.09523,0.093406429,0.0976725,open,,,,,,,,,
+56,APT,crypto,long,BUY SIGNAL,4,1792124984,16 Oct 05:29,0.8537,0.83101071,0.88185,open,,,,,,,,,
