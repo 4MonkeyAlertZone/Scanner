@@ -1,0 +1,106 @@
+STRATEGY LAB 3  2026-10-16   (60 altcoins by market cap, 36 months of 4H; entry at the next candle's open)
+R = profit in units of the risk to the stop, after 0.2% costs. 'excess' = result minus RANDOM altcoin entries made while the same BTC condition held.
+Choices are made on the older two thirds; the newest third is the unseen test. Altcoins move together, so real error margins are wider than printed.
+
+== 1) Does a rising BTC help ANY altcoin buy? Random altcoin entries only, average R by BTC condition (stop 2.5 ATR, 7-day limit, TP ladder) ==
+   Columns: oldest third / middle third / NEWEST third
+   any BTC                                   +0.17R  +0.12R  +0.16R
+   BTC above 50-avg                          +0.17R  +0.08R  +0.15R
+   BTC rising (20>50, above 50)              +0.11R  +0.02R  +0.10R
+   BTC 7-day up + above 20-avg               +0.16R  +0.08R  +0.16R
+   BTC above 200-avg                         +0.10R  +0.06R  +0.14R
+   BTC strong rise (rising + 7d > +3%)       +0.16R  +0.10R  +0.18R
+
+== 2) Every signal family under every BTC condition (stop 2.5 ATR, 7-day limit, TP ladder 1x/2x/3x risk) ==
+   Each cell: signals, avg R (excess vs random in the same BTC condition).  Columns: oldest / middle / NEWEST
+
+breakout 20 + volume
+   any BTC                                   n=1300 +0.75 (+0.58) | n=1053 +0.69 (+0.57) | n=1040 -0.45 (-0.61)
+   BTC above 50-avg                          n= 910 +0.84 (+0.66) | n= 689 +0.53 (+0.45) | n= 781 -0.40 (-0.56)
+   BTC rising (20>50, above 50)              n= 845 +0.80 (+0.69) | n= 182 +0.09 (+0.08) | n= 668 -0.30 (-0.40)
+   BTC 7-day up + above 20-avg               n= 832 +0.83 (+0.67) | n= 598 +0.67 (+0.58) | n= 524 -0.45 (-0.61)
+   BTC above 200-avg                         n= 286 +0.33 (+0.23) | n=1053 +0.69 (+0.63) | n=1027 -0.44 (-0.58)
+   BTC strong rise (rising + 7d > +3%)       n= 676 +0.81 (+0.65) | n=  39 -0.02 (-0.12) | n= 466 -0.06 (-0.24)
+breakout 55
+   any BTC                                   n=1222 +0.84 (+0.67) | n= 832 +0.68 (+0.56) | n= 803 -0.10 (-0.26)
+   BTC above 50-avg                          n= 962 +0.97 (+0.80) | n= 715 +0.72 (+0.65) | n= 620 +0.09 (-0.07)
+   BTC rising (20>50, above 50)              n= 936 +0.99 (+0.88) | n= 312 +0.43 (+0.41) | n= 607 +0.05 (-0.05)
+   BTC 7-day up + above 20-avg               n= 923 +0.97 (+0.81) | n= 611 +0.85 (+0.77) | n= 425 +0.02 (-0.14)
+   BTC above 200-avg                         n= 169 +0.16 (+0.07) | n= 832 +0.68 (+0.62) | n= 803 -0.10 (-0.24)
+   BTC strong rise (rising + 7d > +3%)       n= 780 +1.05 (+0.89) | n= 104 +0.83 (+0.73) | n= 493 +0.15 (-0.03)
+breakout 20 + leads BTC
+   any BTC                                   n=1274 +0.41 (+0.23) | n=1183 +0.56 (+0.44) | n=1159 -0.31 (-0.48)
+   BTC above 50-avg                          n= 897 +0.43 (+0.25) | n= 728 +0.31 (+0.23) | n= 832 -0.10 (-0.25)
+   BTC rising (20>50, above 50)              n= 793 +0.38 (+0.27) | n= 273 -0.09 (-0.11) | n= 757 -0.06 (-0.16)
+   BTC 7-day up + above 20-avg               n= 819 +0.43 (+0.27) | n= 611 +0.54 (+0.45) | n= 521 -0.34 (-0.50)
+   BTC above 200-avg                         n= 299 +0.32 (+0.22) | n=1183 +0.56 (+0.51) | n=1093 -0.28 (-0.43)
+   BTC strong rise (rising + 7d > +3%)       n= 585 +0.24 (+0.08) | n=  39 -0.49 (-0.59) | n= 495 +0.31 (+0.13)
+pullback in uptrend (RSI<=40)
+   any BTC                                   n= 559 +0.52 (+0.35) | n= 676 -0.14 (-0.27) | n=1040 -0.14 (-0.30)
+   BTC above 50-avg                          n= 182 +0.31 (+0.13) | n=  52 -0.28 (-0.36) | n= 306 +0.03 (-0.12)
+   BTC rising (20>50, above 50)              n= 182 +0.31 (+0.20) | n=  52 -0.28 (-0.30) | n= 229 +0.26 (+0.16)
+   BTC 7-day up + above 20-avg               n=  78 +0.52 (+0.35) | n=  39 -0.03 (-0.11) | n= 175 -0.48 (-0.64)
+   BTC above 200-avg                         n= 403 +0.67 (+0.57) | n= 676 -0.14 (-0.20) | n= 900 -0.10 (-0.25)
+   BTC strong rise (rising + 7d > +3%)       n= 156 +0.30 (+0.14) | n=  13 +1.99 (+1.89) | n= 117 +0.66 (+0.48)
+20/50 cross up
+   any BTC                                   n= 351 +0.62 (+0.44) | n=1027 +0.60 (+0.48) | n= 725 -0.35 (-0.51)
+   BTC above 50-avg                          n= 169 +0.76 (+0.58) | n= 806 +0.61 (+0.54) | n= 556 -0.18 (-0.33)
+   BTC rising (20>50, above 50)              n= 156 +0.72 (+0.61) | n= 481 +0.48 (+0.46) | n= 517 -0.19 (-0.28)
+   BTC 7-day up + above 20-avg               n= 156 +0.72 (+0.56) | n= 728 +0.74 (+0.65) | n= 530 -0.28 (-0.44)
+   BTC above 200-avg                         n= 182 +0.39 (+0.29) | n=1027 +0.60 (+0.55) | n= 699 -0.32 (-0.47)
+   BTC strong rise (rising + 7d > +3%)       n= 143 +0.88 (+0.72) | n= 195 +1.00 (+0.90) | n= 254 +0.54 (+0.36)
+leader pullback (RSI<=45)
+   any BTC                                   n= 143 +0.10 (-0.08) | n= 104 -0.65 (-0.77) | n= 168 +0.36 (+0.20)
+   BTC above 50-avg                          n= 104 +0.21 (+0.03) | n=   0 +0.00 (-0.08) | n=  64 +0.69 (+0.53)
+   BTC rising (20>50, above 50)              n=  91 -0.04 (-0.15) | n=   0 +0.00 (-0.02) | n=  52 +0.80 (+0.70)
+   BTC 7-day up + above 20-avg               n=  52 +0.46 (+0.30) | n=   0 +0.00 (-0.08) | n=  12 +0.20 (+0.04)
+   BTC above 200-avg                         n=  26 -0.08 (-0.18) | n= 104 -0.65 (-0.70) | n= 155 +0.47 (+0.33)
+   BTC strong rise (rising + 7d > +3%)       n=  65 +0.36 (+0.20) | n=   0 +0.00 (-0.10) | n=  52 +0.80 (+0.62)
+
+== 3) Search: 264 variants with enough trades; 211 looked clearly profitable in training (t>=2) ==
+Overfitting meter: 40 of 211 (19%) were also positive on the unseen newest third; their average test R was -0.180. (Pure noise: ~50% and ~-0.03.)
+
+Top 12 picked ONLY from training, then checked on the unseen newest third:
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 14 days | ladder
+    train n= 1534 +0.97R (+/-0.07)   TEST n=  425 +0.02R (+/-0.12)   vs random in same BTC condition -0.26   [WEAK]
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 14 days | single 2x target
+    train n= 1534 +1.01R (+/-0.07)   TEST n=  425 -0.04R (+/-0.13)   vs random in same BTC condition -0.32   [FAILS]
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | single 2x target
+    train n= 1534 +0.98R (+/-0.07)   TEST n=  425 +0.05R (+/-0.13)   vs random in same BTC condition -0.12   [WEAK]
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR | limit 7 days | ladder
+    train n= 1534 +0.92R (+/-0.06)   TEST n=  425 +0.02R (+/-0.12)   vs random in same BTC condition -0.14   [WEAK]
+- breakout 20 + volume | any BTC | stop 2.5 ATR | limit 14 days | ladder
+    train n= 2353 +0.79R (+/-0.06)   TEST n= 1040 -0.53R (+/-0.06)   vs random in same BTC condition -0.78   [FAILS]
+- breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 14 days | ladder
+    train n= 1677 +0.90R (+/-0.06)   TEST n=  620 +0.09R (+/-0.10)   vs random in same BTC condition -0.17   [WEAK]
+- breakout 55 | any BTC | stop 2.5 ATR | limit 14 days | ladder
+    train n= 2054 +0.82R (+/-0.06)   TEST n=  803 -0.14R (+/-0.08)   vs random in same BTC condition -0.39   [FAILS]
+- breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 7 days | ladder
+    train n= 1677 +0.87R (+/-0.06)   TEST n=  620 +0.09R (+/-0.09)   vs random in same BTC condition -0.07   [WEAK]
+- breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 14 days | single 2x target
+    train n= 1677 +0.93R (+/-0.07)   TEST n=  620 +0.08R (+/-0.11)   vs random in same BTC condition -0.18   [WEAK]
+- breakout 20 + volume | any BTC | stop 2.5 ATR | limit 14 days | single 2x target
+    train n= 2353 +0.80R (+/-0.06)   TEST n= 1040 -0.55R (+/-0.07)   vs random in same BTC condition -0.80   [FAILS]
+- breakout 55 | any BTC | stop 2.5 ATR | limit 7 days | ladder
+    train n= 2054 +0.78R (+/-0.06)   TEST n=  803 -0.10R (+/-0.08)   vs random in same BTC condition -0.26   [FAILS]
+- breakout 55 | BTC above 50-avg | stop 2.5 ATR | limit 7 days | single 2x target
+    train n= 1677 +0.90R (+/-0.07)   TEST n=  620 +0.13R (+/-0.10)   vs random in same BTC condition -0.03   [WEAK]
+
+Procedure result: average TEST result -0.073R, 7 of 12 positive, 0 clearly holding.
+
+== 4) Take-profit ladder for the leading rules: how often each target was reached, and the % gain if it is ==
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR (5.8% below entry) | all history, 1959 signals: TP1 hit 68% (+5.8%), TP2 hit 60% (+11.6%), TP3 hit 53% (+17.3%)
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR (6.9% below entry) | NEWEST third only, 425 signals: TP1 hit 45% (+6.9%), TP2 hit 31% (+13.8%), TP3 hit 28% (+20.7%)
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR (5.8% below entry) | all history, 1959 signals: TP1 hit 68% (+5.8%), TP2 hit 60% (+11.6%), TP3 hit 53% (+17.3%)
+- breakout 55 | BTC 7-day up + above 20-avg | stop 2.5 ATR (6.9% below entry) | NEWEST third only, 425 signals: TP1 hit 45% (+6.9%), TP2 hit 31% (+13.8%), TP3 hit 28% (+20.7%)
+
+== 5) Does ranking work? 'breakout 55' under 'BTC 7-day up + above 20-avg': average ladder R by tercile of each ranking number (cut-offs from training data only) ==
+   strength vs BTC (30 candles):  low: train +1.53R (n=520), TEST +1.94R (n=13)   |   middle: train +0.78R (n=507), TEST +0.71R (n=143)   |   high: train +0.58R (n=507), TEST -0.44R (n=269)
+   volume vs normal:  low: train +1.00R (n=520), TEST -0.12R (n=127)   |   middle: train +0.72R (n=507), TEST +0.02R (n=235)   |   high: train +1.18R (n=507), TEST +0.28R (n=63)
+   volatility (ATR %):  low: train +1.06R (n=533), TEST +0.70R (n=77)   |   middle: train +1.23R (n=494), TEST +0.01R (n=154)   |   high: train +0.61R (n=507), TEST -0.25R (n=194)
+   room below the old high (ATRs):  low: train +0.53R (n=520), TEST -0.02R (n=232)   |   middle: train +1.47R (n=507), TEST +0.13R (n=141)   |   high: train +0.91R (n=507), TEST -0.13R (n=52)
+
+VERDICTS
+NOTHING survived. BTC-gated altcoin buying did not beat random entries on unseen data.
+
+Not tested: TRX (pegged coin, skipped), USDF (pegged coin, skipped), U (pegged coin, skipped), HTX (pegged coin, skipped), USDGO (pegged coin, skipped)
