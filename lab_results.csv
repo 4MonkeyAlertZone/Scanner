@@ -1,0 +1,17 @@
+side,rule,train_n,train_avgR,test_n,test_avgR,test_ci,status
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level,668,0.248,389,-0.034,0.038,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,2989,0.436,1207,-0.466,0.033,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,3837,0.347,1554,-0.353,0.028,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk,2989,0.496,1207,-0.472,0.031,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk,3837,0.394,1554,-0.358,0.027,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk,16168,0.184,7984,-0.139,0.017,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level,908,0.189,462,-0.026,0.032,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level,2989,0.194,1207,-0.074,0.027,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk,11999,0.237,5930,-0.192,0.023,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level,3837,0.153,1554,-0.052,0.021,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk,3837,0.26,1554,-0.346,0.029,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk,2989,0.324,1207,-0.457,0.034,FAILS
+long,long | crypto | BUY | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,1208,0.651,523,-0.537,0.042,FAILS
+long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 2x risk,16168,0.143,7984,-0.118,0.018,FAILS
+long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | RSI <= 40 | stop 1.5 ATR | target nearest level,783,0.225,538,-0.09,0.042,FAILS
+short,short | all | SHORT+AT TOP-WAIT | score>=3 | needs higher-timeframe match | below 50-candle average | stop 0.5 ATR | target nearest level | R/R>=1.2,273,0.118,132,0.278,0.264,HOLDS
