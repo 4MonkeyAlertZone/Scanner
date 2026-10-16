@@ -1,0 +1,18 @@
+MEXC endTime page 0: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC endTime page 1: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC endTime page 2: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC endTime page 3: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC endTime paging, all pages together: 2000 candles, 2026-07-25 04:00 -> 2026-10-16 08:00, duplicates 1500, sorted False 
+MEXC startTime page 0: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC startTime page 1: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC startTime page 2: 500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00
+MEXC startTime paging: 1500 candles, 2026-07-25 04:00 -> 2026-10-16 08:00, duplicates 1000, sorted False 
+Bybit ERR HTTP Error 403: Forbidden
+Bybit spot (1000 per page, 4 pages): NO DATA 
+OKX history-candles (100 per page, 8 pages): 800 candles, 2026-06-05 04:00 -> 2026-10-16 08:00, duplicates 0, sorted False 
+Binance ERR HTTP Error 451: 
+Binance (1000 per page, 3 pages): NO DATA 
+Binance.US (1000 per page, 3 pages): 3000 candles, 2025-06-03 04:00 -> 2026-10-16 08:00, duplicates 0, sorted False 
+CryptoCompare ERR HTTP Error 401: Unauthorized
+CryptoCompare 4h (2000 per page, 3 pages): NO DATA 
+Yahoo BTC-USD 1h, 2y: 17522 candles, 2024-10-16 10:00 -> 2026-10-16 10:22, duplicates 0, sorted True 
