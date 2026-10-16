@@ -1,49 +1,49 @@
-REPLAY OF cash'S POSTED CALLS: 140 calls with numbers in the text (2025-01-03 to 2026-06-23), 38 coins tested.
-not testable: AGLD (HTTP Error 400: Bad Request); AGT (HTTP Error 400: Bad Request); ALPHA (HTTP Error 400: Bad Request); AR (HTTP Error 400: Bad Request); ARPA (HTTP Error 400: Bad Request); BAKE (HTTP Error 400: Bad Request); BLESS (HTTP Error 400: Bad Request); BUSDT (HTTP Error 400: Bad Request); CFX (HTTP Error 400: Bad Request); COOKIE (HTTP Error 400: Bad Request); COW (HTTP Error 400: Bad Request); ETFHI (HTTP Error 400: Bad Request); HNT (not on Binance.US or too little history); HUSDT (HTTP Error 400: Bad Request); JASMY (not on Binance.US or too little history) ...
+REPLAY OF cash'S POSTED CALLS: 142 calls with numbers in the text (2025-01-03 to 2026-06-23), 38 coins tested.
+not testable: AGLD (HTTP Error 400: Bad Request); AGT (HTTP Error 400: Bad Request); ALPHA (HTTP Error 400: Bad Request); AR (HTTP Error 400: Bad Request); ARKM (HTTP Error 400: Bad Request); ARPA (HTTP Error 400: Bad Request); BAKE (HTTP Error 400: Bad Request); BLESS (HTTP Error 400: Bad Request); BUSDT (HTTP Error 400: Bad Request); CFX (HTTP Error 400: Bad Request); COOKIE (HTTP Error 400: Bad Request); COW (HTTP Error 400: Bad Request); ETFHI (HTTP Error 400: Bad Request); HNT (not on Binance.US or too little history); HUSDT (HTTP Error 400: Bad Request) ...
 R = profit in units of the stated risk (entry minus stop), after 0.2% costs. 'target %' = how often the stated target was reached before the stop.
 
 A. TARGET = TP1  (his own stated level)
-   MARKET  buy at once after the post                                     n= 116 avg -0.09R (+/-0.19)  target  50%  stop  47%  timeout   3%   avg reward:risk 1.1
+   MARKET  buy at once after the post                                     n= 115 avg -0.08R (+/-0.19)  target  50%  stop  47%  timeout   3%   avg reward:risk 1.2
    LIMIT   wait for the stated entry price                                n=  89 avg -0.11R (+/-0.25)  target  39%  stop  58%  timeout   2%   avg reward:risk 1.6
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 580 avg -0.06R (+/-0.08)  target  51%  stop  43%  timeout   6%   avg reward:risk 1.1
-           limit orders filled: 89 of 116
-           calls skipped because price was already past the stop or target when the post came: 23
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 575 avg -0.05R (+/-0.09)  target  51%  stop  43%  timeout   6%   avg reward:risk 1.2
+           limit orders filled: 89 of 114
+           calls skipped because price was already past the stop or target when the post came: 26
 
 A. TARGET = LAST TP  (his own stated level)
-   MARKET  buy at once after the post                                     n= 137 avg -0.09R (+/-0.35)  target  19%  stop  69%  timeout  12%   avg reward:risk 4.7
-   LIMIT   wait for the stated entry price                                n=  95 avg -0.25R (+/-0.49)  target  12%  stop  85%  timeout   3%   avg reward:risk 6.4
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 685 avg -0.02R (+/-0.14)  target  18%  stop  61%  timeout  21%   avg reward:risk 4.7
-           limit orders filled: 95 of 137
-           calls skipped because price was already past the stop or target when the post came: 2
+   MARKET  buy at once after the post                                     n= 132 avg -0.07R (+/-0.37)  target  20%  stop  70%  timeout   9%   avg reward:risk 4.5
+   LIMIT   wait for the stated entry price                                n=  92 avg -0.24R (+/-0.51)  target  12%  stop  86%  timeout   2%   avg reward:risk 6.2
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 660 avg -0.03R (+/-0.15)  target  19%  stop  63%  timeout  18%   avg reward:risk 4.5
+           limit orders filled: 92 of 131
+           calls skipped because price was already past the stop or target when the post came: 9
 
 A. TARGET = 1R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
-   MARKET  buy at once after the post                                     n= 137 avg -0.13R (+/-0.16)  target  44%  stop  49%  timeout   7%   avg reward:risk 1.0
+   MARKET  buy at once after the post                                     n= 136 avg -0.12R (+/-0.16)  target  46%  stop  49%  timeout   5%   avg reward:risk 1.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.17R (+/-0.19)  target  45%  stop  53%  timeout   2%   avg reward:risk 1.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 685 avg -0.11R (+/-0.07)  target  44%  stop  47%  timeout  10%   avg reward:risk 1.0
-           limit orders filled: 95 of 137
-           calls skipped because price was already past the stop or target when the post came: 2
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.08R (+/-0.07)  target  46%  stop  46%  timeout   8%   avg reward:risk 1.0
+           limit orders filled: 95 of 135
+           calls skipped because price was already past the stop or target when the post came: 5
 
 A. TARGET = 2R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
-   MARKET  buy at once after the post                                     n= 137 avg -0.15R (+/-0.22)  target  26%  stop  62%  timeout  12%   avg reward:risk 2.0
+   MARKET  buy at once after the post                                     n= 136 avg -0.12R (+/-0.22)  target  28%  stop  62%  timeout  10%   avg reward:risk 2.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.18R (+/-0.27)  target  29%  stop  67%  timeout   3%   avg reward:risk 2.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 685 avg -0.09R (+/-0.10)  target  26%  stop  58%  timeout  16%   avg reward:risk 2.0
-           limit orders filled: 95 of 137
-           calls skipped because price was already past the stop or target when the post came: 2
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.10R (+/-0.10)  target  27%  stop  60%  timeout  14%   avg reward:risk 2.0
+           limit orders filled: 95 of 135
+           calls skipped because price was already past the stop or target when the post came: 5
 
 A. TARGET = 3R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
-   MARKET  buy at once after the post                                     n= 137 avg -0.11R (+/-0.26)  target  20%  stop  66%  timeout  14%   avg reward:risk 3.0
+   MARKET  buy at once after the post                                     n= 136 avg -0.10R (+/-0.27)  target  20%  stop  68%  timeout  12%   avg reward:risk 3.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.35R (+/-0.30)  target  18%  stop  79%  timeout   3%   avg reward:risk 3.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 685 avg -0.10R (+/-0.11)  target  18%  stop  63%  timeout  19%   avg reward:risk 3.0
-           limit orders filled: 95 of 137
-           calls skipped because price was already past the stop or target when the post came: 2
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.11R (+/-0.12)  target  18%  stop  64%  timeout  18%   avg reward:risk 3.0
+           limit orders filled: 95 of 135
+           calls skipped because price was already past the stop or target when the post came: 5
 
 B. MARKET entry, by half of the period and by side (targets 1R | 2R | 3R)
-   older half  n=  68 avg -0.21R (+/-0.23)  |  n=  68 avg -0.21R (+/-0.31)  |  n=  68 avg -0.19R (+/-0.37)
-   newer half  n=  69 avg -0.05R (+/-0.23)  |  n=  69 avg -0.09R (+/-0.31)  |  n=  69 avg -0.03R (+/-0.38)
-   longs       n= 101 avg -0.20R (+/-0.19)  |  n= 101 avg -0.34R (+/-0.23)  |  n= 101 avg -0.29R (+/-0.27)
+   older half  n=  67 avg -0.20R (+/-0.23)  |  n=  67 avg -0.19R (+/-0.32)  |  n=  67 avg -0.16R (+/-0.38)
+   newer half  n=  69 avg -0.04R (+/-0.23)  |  n=  69 avg -0.06R (+/-0.31)  |  n=  69 avg -0.05R (+/-0.38)
+   longs       n= 100 avg -0.18R (+/-0.19)  |  n= 100 avg -0.30R (+/-0.24)  |  n= 100 avg -0.28R (+/-0.28)
    shorts      n=  36 avg +0.06R (+/-0.32)  |  n=  36 avg +0.37R (+/-0.48)  |  n=  36 avg +0.40R (+/-0.63)
 
 C. MARKET entry, 2R target, by month of the post (is it steady, or one lucky stretch?)
-   2025-01 -0.81(13)  2025-02 -0.57(13)  2025-03 -0.28(6)  2025-04 +0.97(3)  2025-05 +0.36(11)  2025-06 -0.04(16)  2025-07 -0.17(6)  2025-08 +0.05(16)  2025-09 -0.21(11)  2025-10 +0.05(7)  2025-11 -0.23(3)  2025-12 +0.24(8)  2026-01 +0.28(9)  2026-02 -0.78(6)  2026-03 -0.54(1)  2026-04 +0.62(2)  2026-06 -0.83(6)
+   2025-01 -0.81(13)  2025-02 -0.57(13)  2025-03 -0.43(5)  2025-04 +0.97(3)  2025-05 +0.36(11)  2025-06 +0.08(17)  2025-07 -0.17(6)  2025-08 +0.05(16)  2025-09 -0.16(10)  2025-10 +0.05(7)  2025-11 -0.23(3)  2025-12 +0.24(8)  2026-01 +0.28(9)  2026-02 -0.78(6)  2026-03 -0.54(1)  2026-04 +0.62(2)  2026-06 -0.55(6)
 
 D. HOW TO READ: compare MARKET and LIMIT with RANDOM. If they are not clearly above it, the picks add nothing beyond the stop/target shape. Calls whose levels are only drawn on a chart image are not in this test, and a channel can delete or edit posts, so a good record here is the best case. Overlapping calls (several coins at once) move together, so true error margins are wider than printed.

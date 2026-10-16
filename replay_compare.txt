@@ -1,22 +1,22 @@
 TRADER COMPARISON (average R after 0.2% costs; 'edge' = trader minus random entries with the same stop/target shape; +/- is the 95% margin of the trader's own average)
 
 TARGET 1R
-  cash       MARKET n= 137 -0.13R (+/-0.16) target hit  44% | LIMIT n=  95 -0.17R | RANDOM -0.11R | edge market -0.02R, limit -0.06R
-  gauls      MARKET n= 153 +0.09R (+/-0.16) target hit  57% | LIMIT n=  84 -0.09R | RANDOM -0.06R | edge market +0.15R, limit -0.03R
-  titan      MARKET n= 104 -0.20R (+/-0.18) target hit  38% | LIMIT n=  44 +0.13R | RANDOM -0.09R | edge market -0.11R, limit +0.22R
+  cash       MARKET n= 136 -0.12R (+/-0.16) target hit  46% | LIMIT n=  95 -0.17R | RANDOM -0.08R | edge market -0.03R, limit -0.09R
+  gauls      MARKET n= 214 +0.06R (+/-0.13) target hit  56% | LIMIT n=  84 -0.09R | RANDOM -0.04R | edge market +0.09R, limit -0.05R
+  titan      MARKET n= 104 -0.17R (+/-0.19) target hit  39% | LIMIT n=  43 +0.11R | RANDOM -0.09R | edge market -0.08R, limit +0.20R
 
 TARGET 2R
-  cash       MARKET n= 137 -0.15R (+/-0.22) target hit  26% | LIMIT n=  95 -0.18R | RANDOM -0.09R | edge market -0.06R, limit -0.09R
-  gauls      MARKET n= 153 +0.05R (+/-0.23) target hit  35% | LIMIT n=  84 +0.03R | RANDOM +0.08R | edge market -0.03R, limit -0.05R
-  titan      MARKET n= 103 -0.15R (+/-0.25) target hit  24% | LIMIT n=  44 +0.09R | RANDOM +0.11R | edge market -0.26R, limit -0.03R
+  cash       MARKET n= 136 -0.12R (+/-0.22) target hit  28% | LIMIT n=  95 -0.18R | RANDOM -0.10R | edge market -0.02R, limit -0.08R
+  gauls      MARKET n= 214 +0.04R (+/-0.19) target hit  35% | LIMIT n=  84 +0.03R | RANDOM +0.07R | edge market -0.04R, limit -0.04R
+  titan      MARKET n= 103 -0.11R (+/-0.25) target hit  26% | LIMIT n=  43 +0.04R | RANDOM +0.11R | edge market -0.22R, limit -0.07R
 
 TARGET 3R
-  cash       MARKET n= 137 -0.11R (+/-0.26) target hit  20% | LIMIT n=  95 -0.35R | RANDOM -0.10R | edge market -0.01R, limit -0.25R
-  gauls      MARKET n= 151 +0.18R (+/-0.29) target hit  29% | LIMIT n=  84 +0.13R | RANDOM +0.20R | edge market -0.02R, limit -0.07R
-  titan      MARKET n= 101 -0.14R (+/-0.30) target hit  18% | LIMIT n=  44 +0.13R | RANDOM +0.07R | edge market -0.22R, limit +0.06R
+  cash       MARKET n= 136 -0.10R (+/-0.27) target hit  20% | LIMIT n=  95 -0.35R | RANDOM -0.11R | edge market +0.00R, limit -0.24R
+  gauls      MARKET n= 212 +0.08R (+/-0.24) target hit  27% | LIMIT n=  84 +0.13R | RANDOM +0.15R | edge market -0.08R, limit -0.03R
+  titan      MARKET n= 101 -0.12R (+/-0.30) target hit  19% | LIMIT n=  43 +0.07R | RANDOM +0.09R | edge market -0.21R, limit -0.03R
 
 TARGET TP1 (his stated first target)
-  cash       MARKET n= 116 -0.09R (+/-0.19) target hit  50% | LIMIT n=  89 -0.11R | RANDOM -0.06R | edge market -0.03R, limit -0.05R
-  gauls      MARKET n= 146 +0.12R (+/-0.34) target hit  34% | LIMIT n=  81 -0.16R | RANDOM +0.08R | edge market +0.04R, limit -0.24R
+  cash       MARKET n= 115 -0.08R (+/-0.19) target hit  50% | LIMIT n=  89 -0.11R | RANDOM -0.05R | edge market -0.03R, limit -0.06R
+  gauls      MARKET n= 206 +0.04R (+/-0.27) target hit  32% | LIMIT n=  81 -0.16R | RANDOM -0.02R | edge market +0.06R, limit -0.14R
 
 A trader only counts if the edge is clearly above zero in BOTH halves of the period (see each replay_<name>.txt, section B). With several traders one will look good by luck, so a good number here is a reason to look closer, not a verdict.
