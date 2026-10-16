@@ -63,7 +63,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 62,SHIB,crypto,long,IN ZONE,3,1792133795,16 Oct 07:56,5.158e-06,5.1051071e-06,5.3655e-06,open,,,,,,,,,
 63,BNB,crypto,long,IN ZONE,3,1792135669,16 Oct 08:27,731.68,725.59464,744.585,open,,,,,,,,,
 64,CRO,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.05874,0.057666786,0.06039,open,,,,,,,,,
-65,GRASS,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.692,0.66695714,0.7431,open,,,,,,,,,
+65,GRASS,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.692,0.66695714,0.7431,closed,1792156186,16 Oct 14:09,0.6581,stop,-5.10,-5.10,5.7,-1.41,
 66,LINK,crypto,long,IN ZONE - WAIT,3,1792137716,16 Oct 09:01,12.602,12.4544,13.252,open,,,,,,,,,
 67,FF,crypto,long,BUY SIGNAL,3,1792137716,16 Oct 09:01,0.11501,0.11018321,0.12088667,open,,,,,,,,,
 68,ARB,crypto,long,CROSS C TP1,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.2185975,open,,,,,,,,,168
