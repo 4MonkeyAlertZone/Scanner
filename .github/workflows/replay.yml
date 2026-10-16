@@ -1,0 +1,36 @@
+name: Trader replay
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/replay.yml"
+      - "signals_replay.py"
+      - "replay_compare.py"
+      - "calls_*.csv"
+concurrency:
+  group: replay
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Replay every calls_*.csv
+        run: |
+          for f in calls_*.csv; do
+            name="${f#calls_}"; name="${name%.csv}"
+            CALLS="$f" LABEL="$name" python signals_replay.py
+          done
+          python replay_compare.py
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add replay_*.txt replay_*.csv replay_compare.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Trader replay results" && (git pull --rebase -q; git push))
