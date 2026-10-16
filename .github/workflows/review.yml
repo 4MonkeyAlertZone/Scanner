@@ -1,0 +1,28 @@
+name: Weekly review
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * 1"
+concurrency:
+  group: review
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python review.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save review
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add review_latest.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Weekly review" && (git pull --rebase -q; git push))
