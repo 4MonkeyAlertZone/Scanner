@@ -20,6 +20,7 @@ RULES = ("EMA50 reclaim", "range-mid reclaim", "both together", "ANY CANDLE (ben
 STOPS = ("range-low stop (his style)", "2.5 ATR stop")
 OUT = scanner.HERE
 BTC = {}
+GATES = (("4H 50-avg (about 8 days)", 50), ("4H 100-avg (about 17 days)", 100), ("4H 200-avg (about 33 days)", 200), ("4H 600-avg (about 100 days)", 600), ("4H 1200-avg (about 200 days)", 1200))
 
 def ema(c, k):
     a = 2 / (k + 1); out = [c[0]]
@@ -28,7 +29,10 @@ def ema(c, k):
 
 def btc_setup():
     m = B.hist_crypto("BTC", "4h", MONTHS * 180 + 520); I = L4.ind(m)
-    BTC["ep"] = [r[0] for r in m]; BTC["g"] = [bool(I["s200"][i] and I["c"][i] > I["s200"][i]) for i in range(len(m))]
+    c = [r[4] for r in m]; pre = [0.0]
+    for x in c: pre.append(pre[-1] + x)
+    def above(i, k): return int(i >= k - 1 and c[i] > (pre[i + 1] - pre[i + 1 - k]) / k)
+    BTC["ep"] = [r[0] for r in m]; BTC["g"] = [tuple(above(i, k) for _, k in GATES) for i in range(len(m))]
 
 def coin(tok):
     try:
@@ -48,7 +52,7 @@ def coin(tok):
             sig = [k for k, f in ((0, r1), (1, r2), (2, r1 and r2)) if f and i >= nxt[k]]
             bench = i % 6 == 0
             if not sig and not bench: continue
-            e = m[i + 1][1]; j = max(0, __import__("bisect").bisect_right(BTC["ep"], m[i][0]) - 1); g = int(BTC["g"][j])
+            e = m[i + 1][1]; j = max(0, __import__("bisect").bisect_right(BTC["ep"], m[i][0]) - 1); g = BTC["g"][j]
             stops = {0: min(lo[i - 39:i + 1]) * 0.998, 1: e - 2.5 * a}
             for si, st in stops.items():
                 if st <= 0 or st >= e: continue
@@ -96,11 +100,17 @@ def summarise(rows, errs):
                 L.append(f"     {RULES[k]:20} {L4.f_acc([r[5] for r in sel])}  gross {gr:+.2f}R  random {mr:+.2f}R  edge {mu - mr:+.2f}R | {' | '.join(parts)}{'  <-- HOLDS' if ok else ''}")
                 res.append(dict(rule=RULES[k], stop=sn, horizon=H, n=len(sel), net_R=round(mu, 3), random_R=round(mr, 3), holds=int(ok)))
     L.append("")
-    L.append("B. BTC TREND. Same rules, only entries with BTC above its 200-candle average vs below (time limit 14 days).")
-    for si, sn in enumerate(STOPS):
-        for k in range(4):
-            sel = [r for r in rows if r[2] == k and r[3] == si and r[4] == 1]
-            if sel: L.append(f"  {sn:28} {RULES[k]:24} BTC above: {L4.f_acc([r[5] for r in sel if r[7]])} | below: {L4.f_acc([r[5] for r in sel if not r[7]])}")
+    L.append("B. WHICH BTC TREND FILTER HELPS? Entries with the range-low stop and 7-day limit, split by whether BTC was above its moving average (4H candles) when the signal fired. 'share' = how often BTC was above it (benchmark entries).")
+    for k in range(4):
+        L.append(f"  {RULES[k]}")
+        for gi, (gn, _) in enumerate(GATES):
+            sel = [r for r in rows if r[2] == k and r[3] == 0 and r[4] == 0]
+            if not sel: continue
+            bm = [r for r in rows if r[2] == 3 and r[3] == 0 and r[4] == 0]
+            sh = sum(r[7][gi] for r in bm) / len(bm) * 100 if bm else 0
+            ab = [r[5] for r in sel if r[7][gi]]; be = [r[5] for r in sel if not r[7][gi]]
+            e1 = [r[5] for r in sel if r[7][gi] and r[1] < cut]; e2 = [r[5] for r in sel if r[7][gi] and r[1] >= cut]
+            L.append(f"     BTC above {gn:30} above: {L4.f_acc(ab)} | below: {L4.f_acc(be)} | above, older half {L3.mean_ci(L4.stat(e1))[0]:+.2f}R, newer half {L3.mean_ci(L4.stat(e2))[0]:+.2f}R | BTC above it {sh:.0f}% of the time")
     L.append("")
     L.append("C. HOW TO READ: only a HOLDS line deserves a live paper test. The traders' charts also use a volume profile, trendlines and judgement that these simple definitions only approximate, so a failure here says the simple version has no edge, not that the trader has none. Entries overlap in time and across coins, so true error margins are wider than printed. Coins are the ones in today's top list (survivorship bias).")
     return "\n".join(L), res
