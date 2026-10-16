@@ -58,3 +58,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 57,DOGE,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.082,0.081111786,0.084148,open,,,,,,,,,
 58,KAS,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.036904,0.036234857,0.0395225,open,,,,,,,,,
 59,NEXO,crypto,long,BUY SIGNAL,5,1792126827,16 Oct 06:00,0.8189,0.80378214,0.84178,open,,,,,,,,,
+60,ZEC,crypto,long,IN ZONE - WAIT,5,1792128324,16 Oct 06:25,1228.73,1189.8214,1301.65,open,,,,,,,,,
