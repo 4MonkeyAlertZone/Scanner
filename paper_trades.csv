@@ -43,3 +43,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 42,PENGU,crypto,long,BUY SIGNAL,3,1792109451,16 Oct 01:10,0.007607,0.0074408036,0.00806025,open,,,,,,,,,
 43,LDO,crypto,long,BUY SIGNAL,3,1792109451,16 Oct 01:10,0.401,0.39226429,0.4218,open,,,,,,,,,
 44,SEI,crypto,long,IN ZONE - WAIT,4,1792110924,16 Oct 01:35,0.06321,0.062108929,0.06654,open,,,,,,,,,
+45,CC,crypto,long,IN ZONE - WAIT,3,1792111668,16 Oct 01:47,0.10639,0.10388714,0.11128,open,,,,,,,,,
