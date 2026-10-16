@@ -2,7 +2,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1,SOL,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,105.43,103.71571,108.06167,open,,,,,,,,,
 2,XRP,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,1.3335,1.2966857,1.3669,open,,,,,,,,,
 3,BTC,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,82206.69,81387.554,83193.773,open,,,,,,,,,
-4,TRX,crypto,long,BUY SIGNAL,5,1792107460,16 Oct 00:37,0.3323,0.33029643,0.33599,open,,,,,,,,,
+4,TRX,crypto,long,BUY SIGNAL,5,1792107460,16 Oct 00:37,0.3323,0.33029643,0.33599,closed,1792149826,16 Oct 12:23,0.33599,target,0.91,0.91,11.8,1.51,
 5,ETH,crypto,long,BUY SIGNAL,5,1792107460,16 Oct 00:37,2442.01,2381.7561,2535.18,open,,,,,,,,,
 6,HYPE,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,81.82,80.638571,84.79,open,,,,,,,,,
 7,XMR,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,546.36,536.745,562.91,closed,1792121491,16 Oct 04:31,562.91,target,2.83,2.83,3.9,1.61,
@@ -12,7 +12,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 11,AVAX,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,10.029,9.6200357,10.4855,open,,,,,,,,,
 12,HBAR,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,0.08505,0.082941286,0.08754,open,,,,,,,,,
 13,USDF,crypto,long,IN ZONE,5,1792107460,16 Oct 00:37,0.9949,0.99361071,,open,,,,,,,,,
-14,MNT,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,0.53,0.51998214,0.54206667,open,,,,,,,,,
+14,MNT,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,0.53,0.51998214,0.54206667,closed,1792149826,16 Oct 12:23,0.54206667,target,2.08,2.08,11.8,1.10,
 15,ASTER,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,0.7041,0.69175714,0.72155,open,,,,,,,,,
 16,SKY,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,0.07185,0.067647857,0.074553333,open,,,,,,,,,
 17,U,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,0.9993,0.9912,1.2083,open,,,,,,,,,
@@ -34,7 +34,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 33,ARB,crypto,long,BUY SIGNAL,4,1792108553,16 Oct 00:55,0.19554,0.18531429,0.204535,open,,,,,,,,,
 34,RENDER,crypto,long,BUY SIGNAL,3,1792108553,16 Oct 00:55,1.957,1.8195357,2.216,open,,,,,,,,,
 35,CRV,crypto,long,BUY SIGNAL,4,1792108553,16 Oct 00:55,0.3549,0.3439,0.36938333,open,,,,,,,,,
-36,OKB,crypto,long,IN ZONE - WAIT,4,1792109451,16 Oct 01:10,117.127,113.18382,120.033,open,,,,,,,,,
+36,OKB,crypto,long,IN ZONE - WAIT,4,1792109451,16 Oct 01:10,117.127,113.18382,120.033,closed,1792149826,16 Oct 12:23,120.033,target,2.28,2.28,11.2,0.68,
 37,AAVE,crypto,long,BUY SIGNAL,3,1792109451,16 Oct 01:10,157.34,153.85357,176.525,open,,,,,,,,,
 38,DOT,crypto,long,BUY SIGNAL,4,1792109451,16 Oct 01:10,1.1449,1.1203893,1.1782,open,,,,,,,,,
 39,ATOM,crypto,long,BUY SIGNAL,4,1792109451,16 Oct 01:10,1.749,1.6912595,1.7824286,open,,,,,,,,,
@@ -66,3 +66,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 65,GRASS,crypto,long,IN ZONE - WAIT,3,1792135669,16 Oct 08:27,0.692,0.66695714,0.7431,open,,,,,,,,,
 66,LINK,crypto,long,IN ZONE - WAIT,3,1792137716,16 Oct 09:01,12.602,12.4544,13.252,open,,,,,,,,,
 67,FF,crypto,long,BUY SIGNAL,3,1792137716,16 Oct 09:01,0.11501,0.11018321,0.12088667,open,,,,,,,,,
+68,ARB,crypto,long,CROSS C TP1,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.2185975,open,,,,,,,,,168
+69,ARB,crypto,long,CROSS C TP2,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.236185,open,,,,,,,,,168
+70,ARB,crypto,long,CROSS C TP3,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.2537725,open,,,,,,,,,168
+71,FLR,crypto,long,IN ZONE,4,1792149826,16 Oct 12:23,0.006705,0.0065552143,0.00692625,open,,,,,,,,,
