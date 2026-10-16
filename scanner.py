@@ -126,6 +126,8 @@ def analyse(tok):
     lv, last, atr, tol = zones(d4)
     seg = d4[-120:]
     hh, ll = max(r["h"] for r in seg), min(r["l"] for r in seg)
+    if ll > 0 and hh / ll < 1.04:   # moved less than 4% in the last ~20 days: a pegged stablecoin (USDF, USDGO...), not a tradable setup
+        return dict(tok=tok.replace("STOCK:", ""), last=last, verdict="WAIT", zone=None, target=None, note="Price barely moves (stablecoin?)")
     fibs = [hh - r * (hh - ll) for r in (.236, .382, .5, .618, .786)]
     sup = sorted([z for z in lv if z["lo"] < last], key=lambda z: -z["p"])[:5]
     res = sorted([z for z in lv if z["lo"] >= last], key=lambda z: z["p"])
