@@ -60,3 +60,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 59,NEXO,crypto,long,BUY SIGNAL,5,1792126827,16 Oct 06:00,0.8189,0.80378214,0.84178,open,,,,,,,,,
 60,ZEC,crypto,long,IN ZONE - WAIT,5,1792128324,16 Oct 06:25,1228.73,1189.8214,1301.65,open,,,,,,,,,
 61,ICP,crypto,long,IN ZONE - WAIT,4,1792130068,16 Oct 06:54,3.08,3.0258929,3.2134,open,,,,,,,,,
+62,SHIB,crypto,long,IN ZONE,3,1792133795,16 Oct 07:56,5.158e-06,5.1051071e-06,5.3655e-06,open,,,,,,,,,
