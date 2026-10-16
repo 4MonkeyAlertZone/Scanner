@@ -1,0 +1,12 @@
+Binance.US BTC daily: 2581 days, 2019-09-23 -> 2026-10-16, taker-buy field sample 2.22375000 of volume 3.77543000
+Binance.US ETH daily: 2581 days, 2019-09-23 -> 2026-10-16, taker-buy field sample 59.18820000 of volume 121.23090000
+Binance.US SOL daily: 2220 days, 2020-09-18 -> 2026-10-16, taker-buy field sample 1610.16500000 of volume 3114.00200000
+OKX BTC daily: 3293 days, 2017-10-10 -> 2026-10-15
+Yahoo BTC-USD: 146 days, 2014-10-01 -> 2026-10-16
+Yahoo IBIT: 146 days, 2024-01-08 -> 2026-10-15
+Yahoo FBTC: 146 days, 2024-01-08 -> 2026-10-15
+Yahoo GBTC: 138 days, 2015-06-01 -> 2026-10-15
+Farside BTC ETF flows: NOT REACHABLE ERR HTTP Error 403: Forbidden
+SoSoValue: NOT REACHABLE ERR HTTP Error 403: Forbidden
+CoinGlass: NOT REACHABLE ERR HTTP Error 500: Internal Server Error
+Blockchain.com BTC volume: reachable, 55823 bytes, starts: {"status":"ok","name":"USD Exchange Trade Volume","unit":"Trade Volume (USD)","period":"day","description":"The total US
