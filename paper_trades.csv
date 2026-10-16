@@ -55,3 +55,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 54,JST,crypto,long,IN ZONE,4,1792121491,16 Oct 04:31,0.13557,0.13357536,0.1418175,open,,,,,,,,,
 55,POL,crypto,long,BUY SIGNAL,3,1792123365,16 Oct 05:02,0.09523,0.093406429,0.0976725,open,,,,,,,,,
 56,APT,crypto,long,BUY SIGNAL,4,1792124984,16 Oct 05:29,0.8537,0.83101071,0.88185,open,,,,,,,,,
+57,DOGE,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.082,0.081111786,0.084148,open,,,,,,,,,
+58,KAS,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.036904,0.036234857,0.0395225,open,,,,,,,,,
+59,NEXO,crypto,long,BUY SIGNAL,5,1792126827,16 Oct 06:00,0.8189,0.80378214,0.84178,open,,,,,,,,,
