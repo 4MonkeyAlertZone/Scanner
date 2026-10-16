@@ -1,16 +1,16 @@
 rule,train_n,train_avgR,test_n,test_avgR,test_ci,vs_random,status
-"long | crypto | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target 3R, hold long limit",1170,1.191,694,-0.261,0.121,-0.542,FAILS
-"long | crypto | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target 3R, hold short limit",1170,1.172,694,-0.22,0.121,-0.421,FAILS
-"long | crypto | breakout 55-candle high + volume>=1.5x | stop 2.5 ATR, target 3R, hold long limit",871,1.241,440,0.397,0.162,-0.065,WEAK
-"long | crypto | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target 3R, hold short limit",1170,0.998,694,-0.118,0.107,-0.355,FAILS
-"long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 2.5 ATR, target 3R, hold short limit",1014,1.041,606,-0.142,0.119,-0.447,FAILS
-"long | crypto | breakout 55-candle high + volume>=1.5x | stop 2.5 ATR, target 3R, hold short limit",871,1.166,440,0.406,0.158,0.049,HOLDS
-"long | crypto | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target 2R, hold short limit",1170,0.766,694,-0.137,0.096,-0.268,FAILS
-"long | crypto | breakout 55-candle high | stop 2.5 ATR, target 3R, hold long limit",975,1.158,530,0.326,0.148,-0.157,WEAK
-"long | crypto | breakout 55-candle high + volume>=1.5x + above 200-avg | stop 2.5 ATR, target 2R, hold long limit",689,0.963,440,0.389,0.135,0.131,HOLDS
-"long | crypto | breakout 55-candle high | stop 2.5 ATR, target 3R, hold short limit",975,1.117,530,0.253,0.134,0.04,HOLDS
-"long | crypto | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target 2R, hold long limit",1170,0.766,694,-0.215,0.098,-0.505,FAILS
-"long | crypto | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target 2R, hold short limit",767,0.9,518,0.298,0.12,0.079,HOLDS
-"long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 2.5 ATR, target 2R, hold short limit",1014,0.794,606,-0.174,0.102,-0.362,FAILS
-"long | crypto | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target 2R, hold long limit",767,0.91,518,0.28,0.122,0.082,HOLDS
-"long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target 3R, hold short limit",1014,1.099,606,-0.225,0.131,-0.484,FAILS
+"long | all | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",2159,0.422,1038,0.125,0.142,-0.105,WEAK
+"long | all | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",2159,0.542,1038,0.17,0.187,0.173,WEAK
+"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1803,0.609,895,0.206,0.194,0.171,HOLDS
+"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",1803,0.469,895,0.111,0.128,-0.123,WEAK
+"long | all | breakout 20-candle high | stop 2.5 ATR, target none (time exit), hold long limit",2617,0.345,1285,0.066,0.129,-0.154,WEAK
+"long | all | breakout 20-candle high | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",1932,0.441,978,0.122,0.129,-0.097,WEAK
+"long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1097,0.909,488,0.733,0.809,0.608,WEAK
+"long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",1567,0.607,742,0.639,0.594,0.451,HOLDS
+"long | all | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1352,0.673,657,0.733,0.662,0.533,HOLDS
+"long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",1293,0.785,569,0.597,0.702,0.555,WEAK
+"long | all | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",1567,0.475,742,0.362,0.361,0.187,HOLDS
+"long | all | breakout 55-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1380,0.65,680,0.694,0.64,0.34,HOLDS
+"long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",712,1.318,287,0.956,1.361,0.86,WEAK
+"long | all | breakout 55-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",972,0.918,406,0.849,0.956,0.598,WEAK
+"long | all | breakout 20-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1932,0.53,978,0.173,0.192,-0.276,WEAK
