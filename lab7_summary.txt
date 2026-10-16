@@ -1,0 +1,164 @@
+DATA COVERED  crypto: 2019-11-07 to 2026-10-02 (83 months, 386526 signals)
+====================================================================================================
+GROUP 1: the 60 coins lab 6 already used
+276198 entries, 45 coins; era 1 = before 2024-02-24, era 2 = after. R = profit in units of risk after 0.2% costs; a third sold at 1x, 2x, 3x risk; time limit 7 or 14 days.
+skipped: XMR (not enough history); WBT (not enough history); RAIN (not enough history); BTW (not enough history); USDF (not enough history); M (not enough history); MNT (not enough history); U (not enough history); HTX (not enough history); BGB (not enough history)
+
+A. EACH RULE. 'random' = random entries on the same coins with the same stop distance (matched to each signal). edge = rule minus random. HOLDS = n>=60 in both eras, average above zero and above random in both eras.
+  range-low stop (his style), time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=49156 -0.04R (+/-0.01)
+     EMA50 reclaim        n= 4053 +0.07R (+/-0.03)  gross +0.11R  random -0.02R  edge +0.09R | era1 n=1894 +0.06R vs -0.02R | era2 n=2159 +0.08R vs -0.02R  <-- HOLDS
+     range-mid reclaim    n= 1654 +0.08R (+/-0.05)  gross +0.10R  random -0.01R  edge +0.09R | era1 n= 737 +0.16R vs -0.02R | era2 n= 917 +0.01R vs -0.00R  <-- HOLDS
+     both together        n=  470 +0.09R (+/-0.09)  gross +0.11R  random +0.00R  edge +0.09R | era1 n= 192 +0.18R vs -0.01R | era2 n= 278 +0.03R vs +0.01R  <-- HOLDS
+  range-low stop (his style), time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=49156 -0.03R (+/-0.01)
+     EMA50 reclaim        n= 4053 +0.07R (+/-0.04)  gross +0.10R  random -0.01R  edge +0.07R | era1 n=1894 +0.10R vs +0.00R | era2 n=2159 +0.04R vs -0.01R  <-- HOLDS
+     range-mid reclaim    n= 1654 +0.09R (+/-0.06)  gross +0.12R  random +0.03R  edge +0.07R | era1 n= 737 +0.26R vs +0.01R | era2 n= 917 -0.04R vs +0.04R
+     both together        n=  470 +0.07R (+/-0.10)  gross +0.09R  random +0.02R  edge +0.04R | era1 n= 192 +0.22R vs -0.02R | era2 n= 278 -0.04R vs +0.05R
+  2.5 ATR stop, time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=73051 -0.02R (+/-0.01)
+     EMA50 reclaim        n= 5610 +0.01R (+/-0.03)  gross +0.05R  random -0.04R  edge +0.06R | era1 n=2731 +0.02R vs -0.05R | era2 n=2879 +0.00R vs -0.04R  <-- HOLDS
+     range-mid reclaim    n= 3098 +0.02R (+/-0.04)  gross +0.05R  random -0.04R  edge +0.06R | era1 n=1481 +0.09R vs -0.03R | era2 n=1617 -0.04R vs -0.05R
+     both together        n= 1007 +0.04R (+/-0.07)  gross +0.07R  random -0.03R  edge +0.07R | era1 n= 463 +0.16R vs -0.03R | era2 n= 544 -0.07R vs -0.04R
+  2.5 ATR stop, time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=73051 -0.02R (+/-0.01)
+     EMA50 reclaim        n= 5610 +0.01R (+/-0.03)  gross +0.06R  random -0.03R  edge +0.05R | era1 n=2731 +0.03R vs -0.05R | era2 n=2879 -0.00R vs -0.02R
+     range-mid reclaim    n= 3098 +0.04R (+/-0.04)  gross +0.07R  random -0.01R  edge +0.05R | era1 n=1481 +0.13R vs -0.00R | era2 n=1617 -0.05R vs -0.02R
+     both together        n= 1007 +0.04R (+/-0.07)  gross +0.07R  random -0.00R  edge +0.04R | era1 n= 463 +0.16R vs -0.00R | era2 n= 544 -0.06R vs -0.00R
+
+B. WHICH BTC TREND FILTER HELPS? Entries with the range-low stop and 7-day limit, split by whether BTC was above its moving average (4H candles) when the signal fired. 'share' = how often BTC was above it (benchmark entries).
+  EMA50 reclaim
+     BTC above 4H 50-avg (about 8 days)       above: n= 2776 +0.07R (+/-0.04) | below: n= 1277 +0.07R (+/-0.06) | above, older half +0.08R, newer half +0.07R | BTC above it 46% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n= 2274 +0.11R (+/-0.05) | below: n= 1779 +0.03R (+/-0.05) | above, older half +0.12R, newer half +0.09R | BTC above it 49% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n= 2011 +0.14R (+/-0.05) | below: n= 2042 +0.01R (+/-0.04) | above, older half +0.18R, newer half +0.10R | BTC above it 50% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n= 2001 +0.12R (+/-0.05) | below: n= 2052 +0.03R (+/-0.05) | above, older half +0.13R, newer half +0.10R | BTC above it 52% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n= 2032 +0.08R (+/-0.05) | below: n= 2021 +0.07R (+/-0.05) | above, older half +0.15R, newer half +0.01R | BTC above it 52% of the time
+  range-mid reclaim
+     BTC above 4H 50-avg (about 8 days)       above: n= 1123 +0.05R (+/-0.06) | below: n=  531 +0.14R (+/-0.09) | above, older half +0.13R, newer half -0.02R | BTC above it 46% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n= 1062 +0.09R (+/-0.07) | below: n=  592 +0.06R (+/-0.08) | above, older half +0.17R, newer half +0.01R | BTC above it 49% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=  960 +0.15R (+/-0.07) | below: n=  694 -0.03R (+/-0.07) | above, older half +0.25R, newer half +0.07R | BTC above it 50% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=  919 +0.14R (+/-0.07) | below: n=  735 -0.00R (+/-0.07) | above, older half +0.21R, newer half +0.07R | BTC above it 52% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=  908 +0.10R (+/-0.07) | below: n=  746 +0.05R (+/-0.07) | above, older half +0.23R, newer half -0.00R | BTC above it 52% of the time
+  both together
+     BTC above 4H 50-avg (about 8 days)       above: n=  322 +0.07R (+/-0.11) | below: n=  148 +0.15R (+/-0.15) | above, older half +0.17R, newer half -0.01R | BTC above it 46% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n=  244 +0.06R (+/-0.13) | below: n=  226 +0.12R (+/-0.12) | above, older half +0.16R, newer half -0.01R | BTC above it 49% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=  195 +0.25R (+/-0.15) | below: n=  275 -0.02R (+/-0.11) | above, older half +0.31R, newer half +0.20R | BTC above it 50% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=  212 +0.24R (+/-0.15) | below: n=  258 -0.03R (+/-0.11) | above, older half +0.29R, newer half +0.20R | BTC above it 52% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=  240 +0.11R (+/-0.13) | below: n=  230 +0.07R (+/-0.13) | above, older half +0.23R, newer half +0.04R | BTC above it 52% of the time
+  ANY CANDLE (benchmark)
+     BTC above 4H 50-avg (about 8 days)       above: n=22746 +0.01R (+/-0.01) | below: n=26410 -0.08R (+/-0.01) | above, older half +0.06R, newer half -0.05R | BTC above it 46% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n=24212 +0.01R (+/-0.01) | below: n=24944 -0.09R (+/-0.01) | above, older half +0.09R, newer half -0.08R | BTC above it 49% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=24417 +0.02R (+/-0.01) | below: n=24739 -0.10R (+/-0.01) | above, older half +0.15R, newer half -0.10R | BTC above it 50% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=25332 -0.02R (+/-0.01) | below: n=23824 -0.06R (+/-0.01) | above, older half +0.06R, newer half -0.12R | BTC above it 52% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=25605 -0.05R (+/-0.01) | below: n=23551 -0.03R (+/-0.01) | above, older half +0.06R, newer half -0.17R | BTC above it 52% of the time
+
+C. HOW TO READ: only a HOLDS line deserves a live paper test. The traders' charts also use a volume profile, trendlines and judgement that these simple definitions only approximate, so a failure here says the simple version has no edge, not that the trader has none. Entries overlap in time and across coins, so true error margins are wider than printed. Coins are the ones in today's top list (survivorship bias).
+
+D. BY CALENDAR YEAR (range-low stop, 7-day limit). Does the rule beat random in every year, or only in some?
+  EMA50 reclaim
+     2019: rule n=   34 -0.41R (+/-0.26)  random +0.23R | benchmark n=  468 -0.44R (+/-0.07)
+     2020: rule n=  267 +0.28R (+/-0.14)  random +0.01R | benchmark n= 3964 +0.22R (+/-0.04)
+     2021: rule n=  218 +0.31R (+/-0.16)  random -0.01R | benchmark n= 3864 +0.08R (+/-0.04)
+     2022: rule n=  549 -0.07R (+/-0.09)  random -0.01R | benchmark n= 6726 -0.14R (+/-0.03)
+     2023: rule n=  739 +0.02R (+/-0.08)  random -0.03R | benchmark n= 8097 +0.02R (+/-0.02)
+     2024: rule n=  570 +0.10R (+/-0.09)  random -0.03R | benchmark n= 7580 -0.13R (+/-0.02)
+     2025: rule n=  817 -0.01R (+/-0.07)  random -0.02R | benchmark n= 9608 -0.09R (+/-0.02)
+     2026: rule n=  859 +0.15R (+/-0.07)  random -0.04R | benchmark n= 8849 -0.04R (+/-0.02)
+  range-mid reclaim
+     2019: rule n=    9 -0.51R (+/-0.42)  random -0.08R | benchmark n=  468 -0.44R (+/-0.07)
+     2020: rule n=  138 +0.43R (+/-0.18)  random +0.04R | benchmark n= 3964 +0.22R (+/-0.04)
+     2021: rule n=  147 +0.23R (+/-0.19)  random +0.08R | benchmark n= 3864 +0.08R (+/-0.04)
+     2022: rule n=  235 -0.00R (+/-0.13)  random -0.08R | benchmark n= 6726 -0.14R (+/-0.03)
+     2023: rule n=  178 +0.11R (+/-0.15)  random -0.07R | benchmark n= 8097 +0.02R (+/-0.02)
+     2024: rule n=  250 +0.20R (+/-0.13)  random +0.00R | benchmark n= 7580 -0.13R (+/-0.02)
+     2025: rule n=  382 -0.14R (+/-0.10)  random +0.02R | benchmark n= 9608 -0.09R (+/-0.02)
+     2026: rule n=  315 +0.07R (+/-0.12)  random -0.02R | benchmark n= 8849 -0.04R (+/-0.02)
+  both together
+     2020: rule n=   27 +0.33R (+/-0.33)  random +0.00R | benchmark n= 3964 +0.22R (+/-0.04)
+     2021: rule n=   47 +0.28R (+/-0.32)  random +0.13R | benchmark n= 3864 +0.08R (+/-0.04)
+     2022: rule n=   78 +0.10R (+/-0.22)  random +0.00R | benchmark n= 6726 -0.14R (+/-0.03)
+     2023: rule n=   29 +0.11R (+/-0.35)  random -0.19R | benchmark n= 8097 +0.02R (+/-0.02)
+     2024: rule n=   76 +0.15R (+/-0.24)  random -0.05R | benchmark n= 7580 -0.13R (+/-0.02)
+     2025: rule n=  133 -0.08R (+/-0.17)  random +0.02R | benchmark n= 9608 -0.09R (+/-0.02)
+     2026: rule n=   77 +0.12R (+/-0.23)  random +0.03R | benchmark n= 8849 -0.04R (+/-0.02)
+====================================================================================================
+GROUP 2: coins 61-100, never seen before (true out-of-sample)
+110328 entries, 29 coins; era 1 = before 2025-03-05, era 2 = after. R = profit in units of risk after 0.2% costs; a third sold at 1x, 2x, 3x risk; time limit 7 or 14 days.
+
+A. EACH RULE. 'random' = random entries on the same coins with the same stop distance (matched to each signal). edge = rule minus random. HOLDS = n>=60 in both eras, average above zero and above random in both eras.
+  range-low stop (his style), time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=18595 -0.07R (+/-0.02)
+     EMA50 reclaim        n= 1573 +0.03R (+/-0.05)  gross +0.06R  random -0.06R  edge +0.09R | era1 n= 706 +0.01R vs -0.04R | era2 n= 867 +0.05R vs -0.07R  <-- HOLDS
+     range-mid reclaim    n=  750 +0.02R (+/-0.08)  gross +0.05R  random -0.08R  edge +0.10R | era1 n= 355 +0.09R vs -0.07R | era2 n= 395 -0.04R vs -0.09R
+     both together        n=  243 -0.05R (+/-0.13)  gross -0.03R  random -0.11R  edge +0.06R | era1 n= 118 -0.02R vs -0.11R | era2 n= 125 -0.08R vs -0.12R
+  range-low stop (his style), time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=18595 -0.07R (+/-0.02)
+     EMA50 reclaim        n= 1573 -0.00R (+/-0.06)  gross +0.03R  random -0.05R  edge +0.05R | era1 n= 706 -0.00R vs -0.04R | era2 n= 867 -0.00R vs -0.06R
+     range-mid reclaim    n=  750 -0.01R (+/-0.08)  gross +0.01R  random -0.03R  edge +0.02R | era1 n= 355 +0.12R vs -0.00R | era2 n= 395 -0.13R vs -0.06R
+     both together        n=  243 -0.13R (+/-0.14)  gross -0.11R  random -0.05R  edge -0.08R | era1 n= 118 -0.03R vs -0.04R | era2 n= 125 -0.23R vs -0.07R
+  2.5 ATR stop, time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=29522 -0.05R (+/-0.01)
+     EMA50 reclaim        n= 2371 -0.03R (+/-0.05)  gross +0.01R  random -0.07R  edge +0.04R | era1 n=1178 -0.05R vs -0.08R | era2 n=1193 -0.01R vs -0.06R
+     range-mid reclaim    n= 1587 -0.03R (+/-0.06)  gross -0.00R  random -0.06R  edge +0.03R | era1 n= 821 +0.01R vs -0.07R | era2 n= 766 -0.07R vs -0.05R
+     both together        n=  523 -0.11R (+/-0.09)  gross -0.09R  random -0.12R  edge +0.00R | era1 n= 271 -0.01R vs -0.11R | era2 n= 252 -0.23R vs -0.13R
+  2.5 ATR stop, time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=29522 -0.05R (+/-0.01)
+     EMA50 reclaim        n= 2371 -0.04R (+/-0.05)  gross -0.00R  random -0.06R  edge +0.02R | era1 n=1178 -0.06R vs -0.05R | era2 n=1193 -0.02R vs -0.07R
+     range-mid reclaim    n= 1587 -0.03R (+/-0.06)  gross -0.00R  random -0.02R  edge -0.01R | era1 n= 821 +0.02R vs +0.03R | era2 n= 766 -0.09R vs -0.08R
+     both together        n=  523 -0.13R (+/-0.10)  gross -0.10R  random -0.07R  edge -0.06R | era1 n= 271 -0.02R vs -0.05R | era2 n= 252 -0.24R vs -0.09R
+
+B. WHICH BTC TREND FILTER HELPS? Entries with the range-low stop and 7-day limit, split by whether BTC was above its moving average (4H candles) when the signal fired. 'share' = how often BTC was above it (benchmark entries).
+  EMA50 reclaim
+     BTC above 4H 50-avg (about 8 days)       above: n= 1101 +0.08R (+/-0.07) | below: n=  472 -0.08R (+/-0.10) | above, older half +0.02R, newer half +0.12R | BTC above it 45% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n=  943 +0.09R (+/-0.07) | below: n=  630 -0.06R (+/-0.08) | above, older half +0.08R, newer half +0.11R | BTC above it 48% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=  818 +0.17R (+/-0.08) | below: n=  755 -0.12R (+/-0.07) | above, older half +0.11R, newer half +0.21R | BTC above it 49% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=  763 +0.13R (+/-0.08) | below: n=  810 -0.06R (+/-0.07) | above, older half +0.05R, newer half +0.22R | BTC above it 49% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=  738 +0.09R (+/-0.08) | below: n=  835 -0.02R (+/-0.07) | above, older half +0.01R, newer half +0.19R | BTC above it 50% of the time
+  range-mid reclaim
+     BTC above 4H 50-avg (about 8 days)       above: n=  519 +0.11R (+/-0.09) | below: n=  231 -0.17R (+/-0.12) | above, older half +0.16R, newer half +0.07R | BTC above it 45% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n=  516 +0.10R (+/-0.09) | below: n=  234 -0.14R (+/-0.12) | above, older half +0.16R, newer half +0.04R | BTC above it 48% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=  465 +0.15R (+/-0.10) | below: n=  285 -0.19R (+/-0.11) | above, older half +0.17R, newer half +0.14R | BTC above it 49% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=  435 +0.09R (+/-0.10) | below: n=  315 -0.07R (+/-0.11) | above, older half +0.07R, newer half +0.12R | BTC above it 49% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=  425 +0.02R (+/-0.10) | below: n=  325 +0.03R (+/-0.11) | above, older half +0.00R, newer half +0.05R | BTC above it 50% of the time
+  both together
+     BTC above 4H 50-avg (about 8 days)       above: n=  172 +0.00R (+/-0.16) | below: n=   71 -0.18R (+/-0.21) | above, older half -0.01R, newer half +0.02R | BTC above it 45% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n=  147 +0.08R (+/-0.18) | below: n=   96 -0.25R (+/-0.17) | above, older half +0.08R, newer half +0.08R | BTC above it 48% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n=  114 +0.16R (+/-0.20) | below: n=  129 -0.23R (+/-0.16) | above, older half +0.08R, newer half +0.24R | BTC above it 49% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n=  112 -0.03R (+/-0.19) | below: n=  131 -0.07R (+/-0.17) | above, older half -0.01R, newer half -0.06R | BTC above it 49% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n=  115 -0.07R (+/-0.18) | below: n=  128 -0.04R (+/-0.18) | above, older half -0.09R, newer half -0.03R | BTC above it 50% of the time
+  ANY CANDLE (benchmark)
+     BTC above 4H 50-avg (about 8 days)       above: n= 8373 -0.00R (+/-0.02) | below: n=10222 -0.12R (+/-0.02) | above, older half -0.04R, newer half +0.03R | BTC above it 45% of the time
+     BTC above 4H 100-avg (about 17 days)     above: n= 8998 -0.01R (+/-0.02) | below: n= 9597 -0.11R (+/-0.02) | above, older half -0.02R, newer half -0.01R | BTC above it 48% of the time
+     BTC above 4H 200-avg (about 33 days)     above: n= 9129 -0.01R (+/-0.02) | below: n= 9466 -0.12R (+/-0.02) | above, older half -0.00R, newer half -0.02R | BTC above it 49% of the time
+     BTC above 4H 600-avg (about 100 days)    above: n= 9045 -0.04R (+/-0.02) | below: n= 9550 -0.09R (+/-0.02) | above, older half -0.07R, newer half -0.00R | BTC above it 49% of the time
+     BTC above 4H 1200-avg (about 200 days)   above: n= 9307 -0.09R (+/-0.02) | below: n= 9288 -0.05R (+/-0.02) | above, older half -0.13R, newer half -0.02R | BTC above it 50% of the time
+
+C. HOW TO READ: only a HOLDS line deserves a live paper test. The traders' charts also use a volume profile, trendlines and judgement that these simple definitions only approximate, so a failure here says the simple version has no edge, not that the trader has none. Entries overlap in time and across coins, so true error margins are wider than printed. Coins are the ones in today's top list (survivorship bias).
+
+D. BY CALENDAR YEAR (range-low stop, 7-day limit). Does the rule beat random in every year, or only in some?
+  EMA50 reclaim
+     2020: rule n=   28 +0.00R (+/-0.41)  random +0.03R | benchmark n=  441 +0.13R (+/-0.11)
+     2021: rule n=   29 +0.53R (+/-0.43)  random -0.04R | benchmark n=  496 +0.12R (+/-0.11)
+     2022: rule n=  138 -0.20R (+/-0.16)  random -0.02R | benchmark n= 1529 -0.16R (+/-0.06)
+     2023: rule n=  225 +0.14R (+/-0.15)  random -0.05R | benchmark n= 2511 +0.02R (+/-0.05)
+     2024: rule n=  237 +0.06R (+/-0.14)  random -0.03R | benchmark n= 3253 -0.10R (+/-0.04)
+     2025: rule n=  412 +0.02R (+/-0.11)  random -0.13R | benchmark n= 5115 -0.11R (+/-0.03)
+     2026: rule n=  504 +0.01R (+/-0.10)  random -0.03R | benchmark n= 5245 -0.04R (+/-0.03)
+  range-mid reclaim
+     2020: rule n=   19 +0.16R (+/-0.53)  random +0.06R | benchmark n=  441 +0.13R (+/-0.11)
+     2021: rule n=   25 +0.68R (+/-0.43)  random -0.13R | benchmark n=  496 +0.12R (+/-0.11)
+     2022: rule n=   48 -0.08R (+/-0.26)  random -0.09R | benchmark n= 1529 -0.16R (+/-0.06)
+     2023: rule n=   86 +0.22R (+/-0.22)  random -0.03R | benchmark n= 2511 +0.02R (+/-0.05)
+     2024: rule n=  144 +0.12R (+/-0.17)  random -0.09R | benchmark n= 3253 -0.10R (+/-0.04)
+     2025: rule n=  207 -0.16R (+/-0.14)  random -0.10R | benchmark n= 5115 -0.11R (+/-0.03)
+     2026: rule n=  221 -0.00R (+/-0.14)  random -0.08R | benchmark n= 5245 -0.04R (+/-0.03)
+  both together
+     2020: rule n=    7 +0.58R (+/-0.74)  random -0.04R | benchmark n=  441 +0.13R (+/-0.11)
+     2021: rule n=    7 +0.58R (+/-0.91)  random +0.03R | benchmark n=  496 +0.12R (+/-0.11)
+     2022: rule n=   20 -0.39R (+/-0.37)  random -0.22R | benchmark n= 1529 -0.16R (+/-0.06)
+     2023: rule n=   19 +0.08R (+/-0.47)  random -0.17R | benchmark n= 2511 +0.02R (+/-0.05)
+     2024: rule n=   49 +0.13R (+/-0.29)  random +0.00R | benchmark n= 3253 -0.10R (+/-0.04)
+     2025: rule n=   72 -0.22R (+/-0.21)  random -0.23R | benchmark n= 5115 -0.11R (+/-0.03)
+     2026: rule n=   69 -0.07R (+/-0.25)  random -0.05R | benchmark n= 5245 -0.04R (+/-0.03)
+====================================================================================================
+HOW TO READ: the real question is GROUP 2 and the older years. If the EMA50 reclaim line shows HOLDS (or at least an edge above random in both eras) for group 2 too, and is not negative in most years, the edge is more believable. If it vanishes there, lab 6 was probably fitted to its coins and period. Survivorship bias remains (only coins still listed today).
