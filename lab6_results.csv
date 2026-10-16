@@ -1,0 +1,13 @@
+rule,stop,horizon,n,net_R,random_R,holds
+EMA50 reclaim,range-low stop (his style),42,2374,0.1,-0.01,1
+range-mid reclaim,range-low stop (his style),42,1014,0.059,-0.02,1
+both together,range-low stop (his style),42,305,0.104,0.067,1
+EMA50 reclaim,range-low stop (his style),84,2374,0.069,0.007,1
+range-mid reclaim,range-low stop (his style),84,1014,0.017,-0.015,0
+both together,range-low stop (his style),84,305,0.009,-0.018,0
+EMA50 reclaim,2.5 ATR stop,42,3144,0.002,-0.056,0
+range-mid reclaim,2.5 ATR stop,42,1788,-0.03,-0.048,0
+both together,2.5 ATR stop,42,589,-0.055,-0.087,0
+EMA50 reclaim,2.5 ATR stop,84,3144,0.0,-0.044,0
+range-mid reclaim,2.5 ATR stop,84,1788,-0.035,-0.036,0
+both together,2.5 ATR stop,84,589,-0.06,-0.054,0

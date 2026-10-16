@@ -1,0 +1,37 @@
+DATA COVERED  crypto: 2023-10-18 to 2026-10-02 (36 months, 152834 signals)
+152834 entries, 45 coins; era 1 = before 2025-06-23, era 2 = after. R = profit in units of risk after 0.2% costs; a third sold at 1x, 2x, 3x risk; time limit 7 or 14 days.
+skipped: XMR (not enough history); WBT (not enough history); RAIN (not enough history); BTW (not enough history); M (not enough history); USDF (not enough history); MNT (not enough history); U (not enough history); HTX (not enough history); BGB (not enough history)
+
+A. EACH RULE. 'random' = random entries on the same coins with the same stop distance (matched to each signal). edge = rule minus random. HOLDS = n>=60 in both eras, average above zero and above random in both eras.
+  range-low stop (his style), time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=27408 -0.03R (+/-0.01)
+     EMA50 reclaim        n= 2374 +0.10R (+/-0.04)  gross +0.13R  random -0.01R  edge +0.11R | era1 n=1059 +0.09R vs -0.03R | era2 n=1315 +0.11R vs +0.00R  <-- HOLDS
+     range-mid reclaim    n= 1014 +0.06R (+/-0.07)  gross +0.08R  random -0.02R  edge +0.08R | era1 n= 468 +0.11R vs -0.01R | era2 n= 546 +0.01R vs -0.03R  <-- HOLDS
+     both together        n=  305 +0.10R (+/-0.12)  gross +0.13R  random +0.07R  edge +0.04R | era1 n= 134 +0.10R vs +0.05R | era2 n= 171 +0.11R vs +0.08R  <-- HOLDS
+  range-low stop (his style), time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=27408 -0.03R (+/-0.01)
+     EMA50 reclaim        n= 2374 +0.07R (+/-0.05)  gross +0.10R  random +0.01R  edge +0.06R | era1 n=1059 +0.04R vs +0.03R | era2 n=1315 +0.09R vs -0.01R  <-- HOLDS
+     range-mid reclaim    n= 1014 +0.02R (+/-0.07)  gross +0.04R  random -0.01R  edge +0.03R | era1 n= 468 +0.07R vs +0.02R | era2 n= 546 -0.03R vs -0.04R
+     both together        n=  305 +0.01R (+/-0.13)  gross +0.03R  random -0.02R  edge +0.03R | era1 n= 134 -0.00R vs +0.07R | era2 n= 171 +0.02R vs -0.08R
+  2.5 ATR stop, time limit 42 candles (7 days)
+     benchmark (every 6th candle): n=39795 -0.04R (+/-0.01)
+     EMA50 reclaim        n= 3144 +0.00R (+/-0.04)  gross +0.05R  random -0.06R  edge +0.06R | era1 n=1554 +0.01R vs -0.07R | era2 n=1590 -0.00R vs -0.04R
+     range-mid reclaim    n= 1788 -0.03R (+/-0.05)  gross +0.00R  random -0.05R  edge +0.02R | era1 n= 941 -0.02R vs -0.03R | era2 n= 847 -0.04R vs -0.07R
+     both together        n=  589 -0.06R (+/-0.09)  gross -0.02R  random -0.09R  edge +0.03R | era1 n= 305 +0.01R vs -0.08R | era2 n= 284 -0.12R vs -0.09R
+  2.5 ATR stop, time limit 84 candles (14 days)
+     benchmark (every 6th candle): n=39795 -0.03R (+/-0.01)
+     EMA50 reclaim        n= 3144 +0.00R (+/-0.04)  gross +0.05R  random -0.04R  edge +0.04R | era1 n=1554 -0.00R vs -0.04R | era2 n=1590 +0.00R vs -0.05R
+     range-mid reclaim    n= 1788 -0.03R (+/-0.06)  gross -0.00R  random -0.04R  edge +0.00R | era1 n= 941 -0.01R vs -0.06R | era2 n= 847 -0.06R vs -0.01R
+     both together        n=  589 -0.06R (+/-0.10)  gross -0.03R  random -0.05R  edge -0.01R | era1 n= 305 +0.04R vs -0.07R | era2 n= 284 -0.17R vs -0.03R
+
+B. BTC TREND. Same rules, only entries with BTC above its 200-candle average vs below (time limit 14 days).
+  range-low stop (his style)   EMA50 reclaim            BTC above: n= 1218 +0.15R (+/-0.07) | below: n= 1156 -0.01R (+/-0.06)
+  range-low stop (his style)   range-mid reclaim        BTC above: n=  573 +0.14R (+/-0.10) | below: n=  441 -0.14R (+/-0.09)
+  range-low stop (his style)   both together            BTC above: n=  120 +0.25R (+/-0.23) | below: n=  185 -0.15R (+/-0.15)
+  range-low stop (his style)   ANY CANDLE (benchmark)   BTC above: n=14805 +0.01R (+/-0.02) | below: n=12603 -0.07R (+/-0.02)
+  2.5 ATR stop                 EMA50 reclaim            BTC above: n= 1450 +0.09R (+/-0.07) | below: n= 1694 -0.08R (+/-0.06)
+  2.5 ATR stop                 range-mid reclaim        BTC above: n=  916 +0.04R (+/-0.08) | below: n=  872 -0.11R (+/-0.08)
+  2.5 ATR stop                 both together            BTC above: n=  194 +0.16R (+/-0.19) | below: n=  395 -0.17R (+/-0.11)
+  2.5 ATR stop                 ANY CANDLE (benchmark)   BTC above: n=22319 -0.01R (+/-0.02) | below: n=17476 -0.06R (+/-0.02)
+
+C. HOW TO READ: only a HOLDS line deserves a live paper test. The traders' charts also use a volume profile, trendlines and judgement that these simple definitions only approximate, so a failure here says the simple version has no edge, not that the trader has none. Entries overlap in time and across coins, so true error margins are wider than printed. Coins are the ones in today's top list (survivorship bias).
