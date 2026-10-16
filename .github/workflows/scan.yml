@@ -22,6 +22,7 @@ jobs:
           path: |
             alerts.json
             lists.json
+            trend_state.json
           key: alerts-${{ github.run_id }}
           restore-keys: alerts-
       - run: python tracker.py
@@ -39,5 +40,5 @@ jobs:
         run: |
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
-          git add signals.csv paper_trades.csv daily_report.md summary_state.json 2>/dev/null || true
+          git add signals.csv paper_trades.csv daily_report.md summary_state.json trend_state.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Update signal log" && (git pull --rebase -q; git push))
