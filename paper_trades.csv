@@ -349,3 +349,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 348,TER,stock,long,IN ZONE - WAIT,4,1792177190,16 Oct 19:59,326.80499,313.6523,342.63,open,,,,,,,,,
 349,WM,stock,long,BUY SIGNAL,5,1792177190,16 Oct 19:59,225.82001,216.21215,231.2925,open,,,,,,,,,
 350,GEHC,stock,long,BUY SIGNAL,5,1792180180,16 Oct 20:49,69.474998,67.344285,72.095999,open,,,,,,,,,
+351,ASTER,crypto,long,RECLAIM C TP1,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.7451448,open,,,,,,,,,168
+352,ASTER,crypto,long,RECLAIM C TP2,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.7821896,open,,,,,,,,,168
+353,ASTER,crypto,long,RECLAIM C TP3,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.8192344,open,,,,,,,,,168
