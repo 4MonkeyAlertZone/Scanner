@@ -1,71 +1,102 @@
+DATA COVERED  crypto: 2024-10-19 to 2026-10-09 (24 months, 25648 signals); stock: 2021-09-23 to 2026-09-30 (60 months, 12764 signals)
 STRATEGY LAB  2026-10-16   (crypto: 24 months of 4H, stocks: 5 years daily)
 R = profit in units of the risk to the stop, after 0.2% costs. The search uses only the OLDER two thirds of each market's history (train);
 the NEWEST third (test) is never looked at while searching. Signals overlap in time, so real error margins are wider than printed.
 
 ==================== LONG ====================
-24152 signals replayed
+18439 signals replayed
 Current rules, no filters (default stop and target), by period:
-  oldest third   n= 8141  avg R +0.03 (+/-0.02)
-  middle third   n= 8027  avg R -0.03 (+/-0.02)
-  newest third   n= 7984  avg R -0.12 (+/-0.02)
+  oldest third   n= 6188  avg R -0.03 (+/-0.02)
+  middle third   n= 6091  avg R -0.04 (+/-0.01)
+  newest third   n= 6160  avg R -0.01 (+/-0.01)
 
-Variants tried: 5092.  Of those, 2368 looked clearly profitable in training (t>=2).
-Overfitting meter: of those 2368 'training winners', 1022 (43%) were also positive on the unseen test period; their average test R was -0.089. (Pure noise would give about 50% and about -0.03.)
+Variants tried: 4644.  Of those, 803 looked clearly profitable in training (t>=2).
+Overfitting meter: of those 803 'training winners', 670 (83%) were also positive on the unseen test period; their average test R was +0.029. (Pure noise would give about 50% and about -0.03.)
 
 Top 15 variants chosen ONLY from training (profitable in both training periods), then checked on the unseen test period:
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level
-    train n=  668  avg R +0.25 (+/-0.02)   TEST n=  389  avg R -0.03 (+/-0.04)   vs random +0.03   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk
-    train n= 2989  avg R +0.44 (+/-0.04)   TEST n= 1207  avg R -0.47 (+/-0.03)   vs random -0.52   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk
-    train n= 3837  avg R +0.35 (+/-0.03)   TEST n= 1554  avg R -0.35 (+/-0.03)   vs random -0.40   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk
-    train n= 2989  avg R +0.50 (+/-0.04)   TEST n= 1207  avg R -0.47 (+/-0.03)   vs random -0.57   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk
-    train n= 3837  avg R +0.39 (+/-0.03)   TEST n= 1554  avg R -0.36 (+/-0.03)   vs random -0.43   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk
-    train n=16168  avg R +0.18 (+/-0.02)   TEST n= 7984  avg R -0.14 (+/-0.02)   vs random -0.28   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level
-    train n=  908  avg R +0.19 (+/-0.02)   TEST n=  462  avg R -0.03 (+/-0.03)   vs random +0.03   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level
-    train n= 2989  avg R +0.19 (+/-0.02)   TEST n= 1207  avg R -0.07 (+/-0.03)   vs random -0.02   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk
-    train n=11999  avg R +0.24 (+/-0.02)   TEST n= 5930  avg R -0.19 (+/-0.02)   vs random -0.37   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level
-    train n= 3837  avg R +0.15 (+/-0.01)   TEST n= 1554  avg R -0.05 (+/-0.02)   vs random -0.01   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk
-    train n= 3837  avg R +0.26 (+/-0.03)   TEST n= 1554  avg R -0.35 (+/-0.03)   vs random -0.42   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk
-    train n= 2989  avg R +0.32 (+/-0.03)   TEST n= 1207  avg R -0.46 (+/-0.03)   vs random -0.55   [FAILS]
-- long | crypto | BUY | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk
-    train n= 1208  avg R +0.65 (+/-0.06)   TEST n=  523  avg R -0.54 (+/-0.04)   vs random -0.62   [FAILS]
-- long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 2x risk
-    train n=16168  avg R +0.14 (+/-0.01)   TEST n= 7984  avg R -0.12 (+/-0.02)   vs random -0.20   [FAILS]
-- long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | RSI <= 40 | stop 1.5 ATR | target nearest level
-    train n=  783  avg R +0.22 (+/-0.02)   TEST n=  538  avg R -0.09 (+/-0.04)   vs random -0.02   [FAILS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 1.5x risk
+    train n= 4163  avg R +0.03 (+/-0.01)   TEST n= 2057  avg R +0.02 (+/-0.01)   vs random -0.00   [WEAK]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 2x risk
+    train n= 4163  avg R +0.03 (+/-0.01)   TEST n= 2057  avg R +0.02 (+/-0.01)   vs random +0.02   [HOLDS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk
+    train n= 4163  avg R +0.03 (+/-0.01)   TEST n= 2057  avg R +0.02 (+/-0.01)   vs random -0.00   [WEAK]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 2x risk
+    train n= 4163  avg R +0.04 (+/-0.01)   TEST n= 2057  avg R +0.03 (+/-0.02)   vs random +0.00   [HOLDS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 3x risk
+    train n= 4163  avg R +0.04 (+/-0.01)   TEST n= 2057  avg R +0.03 (+/-0.02)   vs random +0.01   [HOLDS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 1.5x risk
+    train n= 4163  avg R +0.04 (+/-0.01)   TEST n= 2057  avg R +0.03 (+/-0.02)   vs random +0.00   [HOLDS]
+- long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 1.5x risk
+    train n= 3325  avg R +0.03 (+/-0.01)   TEST n= 1515  avg R +0.02 (+/-0.02)   vs random -0.01   [WEAK]
+- long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 2x risk
+    train n= 3325  avg R +0.03 (+/-0.01)   TEST n= 1515  avg R +0.02 (+/-0.02)   vs random +0.02   [HOLDS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 0.5 ATR | target 3x risk
+    train n= 4163  avg R +0.06 (+/-0.02)   TEST n= 2057  avg R +0.05 (+/-0.03)   vs random +0.01   [HOLDS]
+- long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 3x risk
+    train n= 3325  avg R +0.03 (+/-0.01)   TEST n= 1515  avg R +0.02 (+/-0.02)   vs random -0.00   [WEAK]
+- long | stock | BUY | score>=3 | stop 1.5 ATR | target 1.5x risk
+    train n= 2720  avg R +0.03 (+/-0.01)   TEST n= 1346  avg R +0.02 (+/-0.02)   vs random -0.01   [WEAK]
+- long | stock | BUY | score>=3 | stop 1.5 ATR | target 2x risk
+    train n= 2720  avg R +0.03 (+/-0.01)   TEST n= 1346  avg R +0.02 (+/-0.02)   vs random +0.02   [WEAK]
+- long | stock | BUY | score>=3 | stop 1.5 ATR | target 3x risk
+    train n= 2720  avg R +0.03 (+/-0.01)   TEST n= 1346  avg R +0.01 (+/-0.02)   vs random -0.00   [WEAK]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | stop 1.5 ATR | target 1.5x risk
+    train n= 3100  avg R +0.03 (+/-0.01)   TEST n= 1490  avg R +0.02 (+/-0.02)   vs random +0.00   [HOLDS]
+- long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | stop 1.5 ATR | target 2x risk
+    train n= 3100  avg R +0.03 (+/-0.01)   TEST n= 1490  avg R +0.02 (+/-0.02)   vs random +0.02   [HOLDS]
 
-Procedure result: following 'pick the best in training' gave an average TEST result of -0.248R, 0 of 15 positive, 0 clearly holding.
+Procedure result: following 'pick the best in training' gave an average TEST result of +0.022R, 15 of 15 positive, 8 clearly holding.
 
-LONG: NOTHING survived. Rules that looked good in training did not hold on unseen data, so no variant here is a real edge.
+LONG: weak hints only. Not enough to rely on.
 
 ==================== SHORT ====================
-27092 signals replayed
+19973 signals replayed
 Current rules, no filters (default stop and target), by period:
-  oldest third   n= 8924  avg R -0.16 (+/-0.02)
-  middle third   n= 9060  avg R -0.11 (+/-0.02)
-  newest third   n= 9108  avg R -0.10 (+/-0.02)
+  oldest third   n= 6606  avg R -0.08 (+/-0.02)
+  middle third   n= 6713  avg R -0.08 (+/-0.02)
+  newest third   n= 6654  avg R -0.13 (+/-0.02)
 
-Variants tried: 3121.  Of those, 14 looked clearly profitable in training (t>=2).
-Overfitting meter: of those 14 'training winners', 13 (93%) were also positive on the unseen test period; their average test R was +0.524. (Pure noise would give about 50% and about -0.03.)
+Variants tried: 2850.  Of those, 593 looked clearly profitable in training (t>=2).
+Overfitting meter: of those 593 'training winners', 18 (3%) were also positive on the unseen test period; their average test R was -0.099. (Pure noise would give about 50% and about -0.03.)
 
-Top 1 variants chosen ONLY from training (profitable in both training periods), then checked on the unseen test period:
-- short | all | SHORT+AT TOP-WAIT | score>=3 | needs higher-timeframe match | below 50-candle average | stop 0.5 ATR | target nearest level | R/R>=1.2
-    train n=  273  avg R +0.12 (+/-0.17)   TEST n=  132  avg R +0.28 (+/-0.26)   vs random +0.44   [HOLDS]
+Top 15 variants chosen ONLY from training (profitable in both training periods), then checked on the unseen test period:
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 3x risk
+    train n= 5227  avg R +0.18 (+/-0.05)   TEST n= 2020  avg R -0.14 (+/-0.07)   vs random -0.12   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 2x risk
+    train n= 5227  avg R +0.14 (+/-0.04)   TEST n= 2020  avg R -0.12 (+/-0.06)   vs random -0.08   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 1.0 ATR | target 1.5x risk
+    train n= 5227  avg R +0.07 (+/-0.02)   TEST n= 2020  avg R -0.02 (+/-0.03)   vs random -0.02   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 50-candle average | stop 0.5 ATR | target 3x risk
+    train n= 4680  avg R +0.17 (+/-0.05)   TEST n= 2228  avg R -0.12 (+/-0.06)   vs random -0.09   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 1.0 ATR | target 2x risk
+    train n= 5227  avg R +0.07 (+/-0.02)   TEST n= 2020  avg R -0.01 (+/-0.03)   vs random +0.01   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 1.0 ATR | target 1.5x risk
+    train n= 3630  avg R +0.08 (+/-0.02)   TEST n= 1347  avg R -0.06 (+/-0.03)   vs random -0.08   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 1.0 ATR | target 2x risk
+    train n= 3630  avg R +0.09 (+/-0.03)   TEST n= 1347  avg R -0.06 (+/-0.04)   vs random -0.02   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | stop 0.5 ATR | target 3x risk
+    train n= 8981  avg R +0.12 (+/-0.03)   TEST n= 4448  avg R -0.14 (+/-0.05)   vs random -0.12   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 0.5 ATR | target 3x risk
+    train n= 3630  avg R +0.18 (+/-0.05)   TEST n= 1347  avg R -0.25 (+/-0.08)   vs random -0.16   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 1.5x risk
+    train n= 5227  avg R +0.11 (+/-0.03)   TEST n= 2020  avg R -0.13 (+/-0.05)   vs random -0.04   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 50-candle average | stop 0.5 ATR | target 2x risk
+    train n= 4680  avg R +0.13 (+/-0.04)   TEST n= 2228  avg R -0.11 (+/-0.06)   vs random -0.08   [FAILS]
+- short | crypto | SHORT | score>=2 | below 200-candle average | stop 0.5 ATR | target 1.5x risk
+    train n= 3017  avg R +0.13 (+/-0.04)   TEST n= 1120  avg R -0.17 (+/-0.07)   vs random -0.12   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=3 | below 200-candle average | stop 1.0 ATR | target 1.5x risk
+    train n= 2458  avg R +0.09 (+/-0.03)   TEST n=  871  avg R -0.06 (+/-0.05)   vs random -0.05   [FAILS]
+- short | crypto | SHORT | score>=2 | below 200-candle average | stop 0.5 ATR | target 2x risk
+    train n= 3017  avg R +0.15 (+/-0.05)   TEST n= 1120  avg R -0.16 (+/-0.08)   vs random -0.14   [FAILS]
+- short | crypto | SHORT+AT TOP-WAIT | score>=3 | needs fib match | below 200-candle average | stop 1.0 ATR | target 1.5x risk
+    train n= 2109  avg R +0.10 (+/-0.03)   TEST n=  746  avg R -0.06 (+/-0.05)   vs random -0.07   [FAILS]
 
-Procedure result: following 'pick the best in training' gave an average TEST result of +0.278R, 1 of 1 positive, 1 clearly holding.
+Procedure result: following 'pick the best in training' gave an average TEST result of -0.107R, 0 of 15 positive, 0 clearly holding.
 
-SHORT: weak hints only. Not enough to rely on.
+SHORT: NOTHING survived. Rules that looked good in training did not hold on unseen data, so no variant here is a real edge.
 
 VERDICTS
-LONG: NOTHING survived. Rules that looked good in training did not hold on unseen data, so no variant here is a real edge.
-SHORT: weak hints only. Not enough to rely on.
+LONG: weak hints only. Not enough to rely on.
+SHORT: NOTHING survived. Rules that looked good in training did not hold on unseen data, so no variant here is a real edge.
+
+Could not test: XMR (not enough history), WBT (not enough history), RAIN (not enough history), BTW (not enough history)

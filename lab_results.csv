@@ -1,17 +1,31 @@
 side,rule,train_n,train_avgR,test_n,test_avgR,test_ci,status
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level,668,0.248,389,-0.034,0.038,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,2989,0.436,1207,-0.466,0.033,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,3837,0.347,1554,-0.353,0.028,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk,2989,0.496,1207,-0.472,0.031,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 3x risk,3837,0.394,1554,-0.358,0.027,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk,16168,0.184,7984,-0.139,0.017,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | above 200-candle average | RSI <= 40 | stop 1.5 ATR | target nearest level,908,0.189,462,-0.026,0.032,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level,2989,0.194,1207,-0.074,0.027,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk,11999,0.237,5930,-0.192,0.023,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target nearest level,3837,0.153,1554,-0.052,0.021,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk,3837,0.26,1554,-0.346,0.029,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | RSI <= 40 | stop 1.5 ATR | target 1.5x risk,2989,0.324,1207,-0.457,0.034,FAILS
-long,long | crypto | BUY | score>=3 | RSI <= 40 | stop 1.5 ATR | target 2x risk,1208,0.651,523,-0.537,0.042,FAILS
-long,long | all | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 2x risk,16168,0.143,7984,-0.118,0.018,FAILS
-long,long | crypto | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | RSI <= 40 | stop 1.5 ATR | target nearest level,783,0.225,538,-0.09,0.042,FAILS
-short,short | all | SHORT+AT TOP-WAIT | score>=3 | needs higher-timeframe match | below 50-candle average | stop 0.5 ATR | target nearest level | R/R>=1.2,273,0.118,132,0.278,0.264,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 1.5x risk,4163,0.03,2057,0.015,0.014,WEAK
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 2x risk,4163,0.03,2057,0.016,0.014,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.5 ATR | target 3x risk,4163,0.029,2057,0.015,0.014,WEAK
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 2x risk,4163,0.039,2057,0.03,0.018,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 3x risk,4163,0.038,2057,0.031,0.019,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 1.0 ATR | target 1.5x risk,4163,0.036,2057,0.03,0.018,HOLDS
+long,long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 1.5x risk,3325,0.03,1515,0.018,0.016,WEAK
+long,long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 2x risk,3325,0.03,1515,0.019,0.017,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | stop 0.5 ATR | target 3x risk,4163,0.058,2057,0.049,0.029,HOLDS
+long,long | stock | BUY+IN ZONE | score>=3 | stop 1.5 ATR | target 3x risk,3325,0.029,1515,0.017,0.016,WEAK
+long,long | stock | BUY | score>=3 | stop 1.5 ATR | target 1.5x risk,2720,0.032,1346,0.016,0.017,WEAK
+long,long | stock | BUY | score>=3 | stop 1.5 ATR | target 2x risk,2720,0.032,1346,0.017,0.018,WEAK
+long,long | stock | BUY | score>=3 | stop 1.5 ATR | target 3x risk,2720,0.031,1346,0.015,0.017,WEAK
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | stop 1.5 ATR | target 1.5x risk,3100,0.027,1490,0.017,0.016,HOLDS
+long,long | stock | BUY+IN ZONE+IN ZONE-WAIT | score>=3 | needs fib match | stop 1.5 ATR | target 2x risk,3100,0.027,1490,0.018,0.017,HOLDS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 3x risk,5227,0.184,2020,-0.14,0.067,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 2x risk,5227,0.14,2020,-0.123,0.059,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 1.0 ATR | target 1.5x risk,5227,0.071,2020,-0.023,0.031,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 50-candle average | stop 0.5 ATR | target 3x risk,4680,0.167,2228,-0.12,0.063,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 1.0 ATR | target 2x risk,5227,0.073,2020,-0.013,0.033,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 1.0 ATR | target 1.5x risk,3630,0.08,1347,-0.061,0.035,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 1.0 ATR | target 2x risk,3630,0.085,1347,-0.06,0.037,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | stop 0.5 ATR | target 3x risk,8981,0.117,4448,-0.139,0.045,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | needs fib match | below 200-candle average | stop 0.5 ATR | target 3x risk,3630,0.177,1347,-0.249,0.079,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 200-candle average | stop 0.5 ATR | target 1.5x risk,5227,0.106,2020,-0.13,0.052,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=2 | below 50-candle average | stop 0.5 ATR | target 2x risk,4680,0.126,2228,-0.11,0.055,FAILS
+short,short | crypto | SHORT | score>=2 | below 200-candle average | stop 0.5 ATR | target 1.5x risk,3017,0.134,1120,-0.168,0.067,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=3 | below 200-candle average | stop 1.0 ATR | target 1.5x risk,2458,0.092,871,-0.055,0.047,FAILS
+short,short | crypto | SHORT | score>=2 | below 200-candle average | stop 0.5 ATR | target 2x risk,3017,0.15,1120,-0.157,0.075,FAILS
+short,short | crypto | SHORT+AT TOP-WAIT | score>=3 | needs fib match | below 200-candle average | stop 1.0 ATR | target 1.5x risk,2109,0.097,746,-0.064,0.048,FAILS
