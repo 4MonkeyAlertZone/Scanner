@@ -36,7 +36,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 35,CRV,crypto,long,BUY SIGNAL,4,1792108553,16 Oct 00:55,0.3549,0.3439,0.36938333,open,,,,,,,,,
 36,OKB,crypto,long,IN ZONE - WAIT,4,1792109451,16 Oct 01:10,117.127,113.18382,120.033,closed,1792149826,16 Oct 12:23,120.033,target,2.28,2.28,11.2,0.68,
 37,AAVE,crypto,long,BUY SIGNAL,3,1792109451,16 Oct 01:10,157.34,153.85357,176.525,open,,,,,,,,,
-38,DOT,crypto,long,BUY SIGNAL,4,1792109451,16 Oct 01:10,1.1449,1.1203893,1.1782,open,,,,,,,,,
+38,DOT,crypto,long,BUY SIGNAL,4,1792109451,16 Oct 01:10,1.1449,1.1203893,1.1782,closed,1792153525,16 Oct 13:25,1.1782,target,2.71,2.71,12.2,1.27,
 39,ATOM,crypto,long,BUY SIGNAL,4,1792109451,16 Oct 01:10,1.749,1.6912595,1.7824286,open,,,,,,,,,
 40,AERO,crypto,long,BUY SIGNAL,3,1792109451,16 Oct 01:10,0.9406,0.904145,,open,,,,,,,,,
 41,ZRO,crypto,long,IN ZONE - WAIT,3,1792109451,16 Oct 01:10,2.1003,2.0448536,2.2857,open,,,,,,,,,
@@ -54,7 +54,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 53,PEPE,crypto,long,BUY SIGNAL,3,1792121491,16 Oct 04:31,4.079e-06,3.906e-06,4.28675e-06,open,,,,,,,,,
 54,JST,crypto,long,IN ZONE,4,1792121491,16 Oct 04:31,0.13557,0.13357536,0.1418175,open,,,,,,,,,
 55,POL,crypto,long,BUY SIGNAL,3,1792123365,16 Oct 05:02,0.09523,0.093406429,0.0976725,open,,,,,,,,,
-56,APT,crypto,long,BUY SIGNAL,4,1792124984,16 Oct 05:29,0.8537,0.83101071,0.88185,open,,,,,,,,,
+56,APT,crypto,long,BUY SIGNAL,4,1792124984,16 Oct 05:29,0.8537,0.83101071,0.88185,closed,1792153525,16 Oct 13:25,0.88185,target,3.10,3.10,7.9,1.17,
 57,DOGE,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.082,0.081111786,0.084148,open,,,,,,,,,
 58,KAS,crypto,long,IN ZONE - WAIT,3,1792126827,16 Oct 06:00,0.036904,0.036234857,0.0395225,open,,,,,,,,,
 59,NEXO,crypto,long,BUY SIGNAL,5,1792126827,16 Oct 06:00,0.8189,0.80378214,0.84178,open,,,,,,,,,
@@ -70,3 +70,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 69,ARB,crypto,long,CROSS C TP2,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.236185,open,,,,,,,,,168
 70,ARB,crypto,long,CROSS C TP3,,1792149826,16 Oct 12:23,0.20101,0.1834225,0.2537725,open,,,,,,,,,168
 71,FLR,crypto,long,IN ZONE,4,1792149826,16 Oct 12:23,0.006705,0.0065552143,0.00692625,open,,,,,,,,,
+72,BDX,crypto,long,BUY SIGNAL,4,1792153526,16 Oct 13:25,0.07474,0.072438214,0.080240909,open,,,,,,,,,
