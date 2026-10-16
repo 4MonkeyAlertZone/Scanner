@@ -1,0 +1,17 @@
+rule,phase,n,mean_R,bench_R,holds
+cross 20/50 above 200-avg,"UP (above 200-avg, rising)",187,0.279,0.018,1
+cross 20/50 above 200-avg,"TOPPING (above 200-avg, falling)",35,0.519,0.404,0
+cross 20/50 above 200-avg,"DOWN (below 200-avg, falling)",31,-0.008,0.083,0
+cross 20/50 above 200-avg,"BASING (below 200-avg, rising)",20,0.411,0.011,0
+cross 20/50 (any trend),"UP (above 200-avg, rising)",297,0.282,0.018,1
+cross 20/50 (any trend),"TOPPING (above 200-avg, falling)",65,0.378,0.404,0
+cross 20/50 (any trend),"DOWN (below 200-avg, falling)",208,0.069,0.083,0
+cross 20/50 (any trend),"BASING (below 200-avg, rising)",72,0.202,0.011,0
+breakout 20 + volume 1.5x,"UP (above 200-avg, rising)",772,0.238,0.018,1
+breakout 20 + volume 1.5x,"TOPPING (above 200-avg, falling)",112,0.481,0.404,0
+breakout 20 + volume 1.5x,"DOWN (below 200-avg, falling)",249,0.206,0.083,0
+breakout 20 + volume 1.5x,"BASING (below 200-avg, rising)",68,0.194,0.011,0
+pullback in uptrend (RSI<=40),"UP (above 200-avg, rising)",476,-0.116,0.018,0
+pullback in uptrend (RSI<=40),"TOPPING (above 200-avg, falling)",28,0.236,0.404,0
+pullback in uptrend (RSI<=40),"DOWN (below 200-avg, falling)",40,0.179,0.083,0
+pullback in uptrend (RSI<=40),"BASING (below 200-avg, rising)",136,-0.278,0.011,0
