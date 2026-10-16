@@ -1,0 +1,44 @@
+DATA COVERED  crypto: 2022-04-12 to 2026-10-13 (54 months, 351145 signals)
+351145 entries, 39 coins; era 1 = before 2025-06-16, era 2 = after. R = profit in units of risk (stop 2.5 ATR of that candle size), sell a third at 1x/2x/3x risk, 0.2% round-trip costs. 'gross' = before costs.
+skipped: XMR (HTTP Error 400: Bad Request); WBT (HTTP Error 400: Bad Request); RAIN (HTTP Error 400: Bad Request); CC (HTTP Error 400: Bad Request); GRAM (not on Binance.US or too little history); TAO (HTTP Error 400: Bad Request); CRO (HTTP Error 400: Bad Request); OKB (HTTP Error 400: Bad Request); BTW (HTTP Error 400: Bad Request); USDF (HTTP Error 400: Bad Request) ...
+
+A. EACH RULE ON EACH TIMEFRAME. edge = rule net average minus the benchmark's on the same timeframe. HOLDS = n>=60 in both eras, net average above zero and above the benchmark in both eras.
+  1h candles (time limit 72 candles). Benchmark: n=139865 -0.17R (+/-0.02), typical cost drag 0.09R per trade
+     buy surge (volume 2x, buyers 58%+, green)  net n=20758 -0.15R (+/-0.02)  gross -0.03R  edge +0.01R | era1 n=10671 -0.12R vs -0.11R | era2 n=10087 -0.19R vs -0.22R
+     buy surge + above 50-avg                   net n=14667 -0.16R (+/-0.03)  gross -0.03R  edge +0.00R | era1 n=7647 -0.11R vs -0.11R | era2 n=7020 -0.22R vs -0.22R
+     buying pressure building (3 candles)       net n=18175 -0.14R (+/-0.02)  gross -0.02R  edge +0.03R | era1 n=9451 -0.11R vs -0.11R | era2 n=8724 -0.17R vs -0.22R
+     buy surge + 4H uptrend                     net n= 8432 -0.10R (+/-0.03)  gross +0.01R  edge +0.07R | era1 n=4655 -0.10R vs -0.11R | era2 n=3777 -0.09R vs -0.22R
+  2h candles (time limit 60 candles). Benchmark: n=69385 -0.10R (+/-0.02), typical cost drag 0.06R per trade
+     buy surge (volume 2x, buyers 58%+, green)  net n=10370 -0.09R (+/-0.04)  gross -0.00R  edge +0.01R | era1 n=5219 -0.02R vs -0.05R | era2 n=5151 -0.16R vs -0.14R
+     buy surge + above 50-avg                   net n= 7200 -0.06R (+/-0.03)  gross +0.01R  edge +0.04R | era1 n=3752 -0.00R vs -0.05R | era2 n=3448 -0.12R vs -0.14R
+     buying pressure building (3 candles)       net n= 9103 -0.08R (+/-0.03)  gross -0.01R  edge +0.02R | era1 n=4714 -0.03R vs -0.05R | era2 n=4389 -0.13R vs -0.14R
+     buy surge + 4H uptrend                     net n= 4414 -0.04R (+/-0.04)  gross +0.03R  edge +0.06R | era1 n=2375 -0.02R vs -0.05R | era2 n=2039 -0.06R vs -0.14R
+  4h candles (time limit 42 candles). Benchmark: n=33823 -0.06R (+/-0.02), typical cost drag 0.04R per trade
+     buy surge (volume 2x, buyers 58%+, green)  net n= 4896 -0.02R (+/-0.03)  gross +0.02R  edge +0.03R | era1 n=2412 +0.02R vs -0.05R | era2 n=2484 -0.07R vs -0.06R
+     buy surge + above 50-avg                   net n= 3395 -0.03R (+/-0.04)  gross +0.02R  edge +0.03R | era1 n=1727 +0.04R vs -0.05R | era2 n=1668 -0.09R vs -0.06R
+     buying pressure building (3 candles)       net n= 4290 -0.03R (+/-0.04)  gross +0.01R  edge +0.03R | era1 n=2204 +0.02R vs -0.05R | era2 n=2086 -0.09R vs -0.06R
+     buy surge + 4H uptrend                     net n= 2372 -0.04R (+/-0.05)  gross +0.00R  edge +0.02R | era1 n=1244 -0.00R vs -0.05R | era2 n=1128 -0.08R vs -0.06R
+
+B. LATENESS. How far price had already risen from its lowest low of the last 24 candles when the signal fired (in ATRs). Signals of rules 1-4 pooled per timeframe, split into thirds: early / middle / late.
+  1h: EARLY (rise -13.9-3.7 ATR) n=20677 -0.10R (+/-0.02) | MIDDLE (rise 3.7-6.0 ATR) n=20677 -0.10R (+/-0.02) | LATE (rise 6.0-9307.2 ATR) n=20678 -0.23R (+/-0.03)
+  2h: EARLY (rise -10.2-3.4 ATR) n=10362 -0.07R (+/-0.04) | MIDDLE (rise 3.4-5.4 ATR) n=10362 -0.08R (+/-0.02) | LATE (rise 5.4-633.1 ATR) n=10363 -0.06R (+/-0.02)
+  4h: EARLY (rise -0.9-3.3 ATR) n= 4984 +0.01R (+/-0.03) | MIDDLE (rise 3.3-5.1 ATR) n= 4984 -0.07R (+/-0.03) | LATE (rise 5.1-86.6 ATR) n= 4985 -0.03R (+/-0.03)
+
+C. DOES THE BTC TREND MATTER? Same rules, split by whether BTC (4H) was above its own 200-candle average when the signal fired. Benchmark in same split.
+  1h buy surge (volume 2x, buyers 58%+, green)  BTC above 200-avg: n= 9583 -0.11R (+/-0.03) | below: n=11175 -0.19R (+/-0.03)
+  1h buy surge + above 50-avg                   BTC above 200-avg: n= 7572 -0.11R (+/-0.03) | below: n= 7095 -0.22R (+/-0.05)
+  1h buying pressure building (3 candles)       BTC above 200-avg: n= 8900 -0.11R (+/-0.03) | below: n= 9275 -0.16R (+/-0.02)
+  1h buy surge + 4H uptrend                     BTC above 200-avg: n= 6153 -0.08R (+/-0.03) | below: n= 2279 -0.15R (+/-0.05)
+  1h ANY CANDLE (benchmark)                     BTC above 200-avg: n=62002 -0.14R (+/-0.02) | below: n=77863 -0.19R (+/-0.03)
+  2h buy surge (volume 2x, buyers 58%+, green)  BTC above 200-avg: n= 4961 -0.05R (+/-0.03) | below: n= 5409 -0.12R (+/-0.07)
+  2h buy surge + above 50-avg                   BTC above 200-avg: n= 4158 -0.03R (+/-0.04) | below: n= 3042 -0.09R (+/-0.04)
+  2h buying pressure building (3 candles)       BTC above 200-avg: n= 4864 -0.06R (+/-0.03) | below: n= 4239 -0.10R (+/-0.04)
+  2h buy surge + 4H uptrend                     BTC above 200-avg: n= 3258 -0.01R (+/-0.04) | below: n= 1156 -0.12R (+/-0.07)
+  2h ANY CANDLE (benchmark)                     BTC above 200-avg: n=31046 -0.07R (+/-0.01) | below: n=38339 -0.12R (+/-0.04)
+  4h buy surge (volume 2x, buyers 58%+, green)  BTC above 200-avg: n= 2612 -0.02R (+/-0.05) | below: n= 2284 -0.03R (+/-0.05)
+  4h buy surge + above 50-avg                   BTC above 200-avg: n= 2307 -0.01R (+/-0.05) | below: n= 1088 -0.07R (+/-0.07)
+  4h buying pressure building (3 candles)       BTC above 200-avg: n= 2608 +0.00R (+/-0.05) | below: n= 1682 -0.09R (+/-0.05)
+  4h buy surge + 4H uptrend                     BTC above 200-avg: n= 1831 +0.00R (+/-0.06) | below: n=  541 -0.18R (+/-0.09)
+  4h ANY CANDLE (benchmark)                     BTC above 200-avg: n=15188 -0.05R (+/-0.02) | below: n=18635 -0.07R (+/-0.02)
+
+D. HOW TO READ: only a line marked HOLDS in A is worth a live paper test. Compare 'gross' with 'net': a rule that only works before costs is not tradable. Entries overlap in time and across coins, so true error margins are wider than printed. Only coins listed on Binance.US and in today's top list are included (survivorship bias). About 3 years is a single market cycle phase mix, so treat results as hints.
