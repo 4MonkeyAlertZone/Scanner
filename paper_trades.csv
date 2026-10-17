@@ -291,7 +291,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 290,WLD,crypto,long,RECLAIM C TP1,,1792163628,16 Oct 16:13,0.5191,0.4614752,0.5767248,open,,,,,,,,,168
 291,WLD,crypto,long,RECLAIM C TP2,,1792163628,16 Oct 16:13,0.5191,0.4614752,0.6343496,open,,,,,,,,,168
 292,WLD,crypto,long,RECLAIM C TP3,,1792163628,16 Oct 16:13,0.5191,0.4614752,0.6919744,open,,,,,,,,,168
-293,GRAM,crypto,long,IN ZONE - WAIT,3,1792163628,16 Oct 16:13,1.372,1.34775,1.41,open,,,,,,,,,
+293,GRAM,crypto,long,IN ZONE - WAIT,3,1792163628,16 Oct 16:13,1.372,1.34775,1.41,closed,1792227012,17 Oct 09:50,1.347,stop,-2.02,-2.02,17.6,-1.14,
 294,MORPHO,crypto,long,IN ZONE - WAIT,5,1792163628,16 Oct 16:13,2.3858,2.319575,2.47134,open,,,,,,,,,
 295,ACGL,stock,long,BUY SIGNAL,5,1792163628,16 Oct 16:13,100.89,95.764284,103.28,open,,,,,,,,,
 296,ADSK,stock,long,BUY SIGNAL,3,1792163628,16 Oct 16:13,240.50999,227.31339,243.66,open,,,,,,,,,
