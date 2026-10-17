@@ -357,4 +357,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 356,XMR,crypto,long,IN ZONE,5,1792211451,17 Oct 05:30,560.68,553.82357,572.05,closed,1792229661,17 Oct 10:34,552.58,stop,-1.64,-1.64,5.1,-1.34,
 357,ADA,crypto,long,BUY SIGNAL,3,1792225385,17 Oct 09:23,0.2241,0.22158214,0.2334,open,,,,,,,,,
 358,ONDO,crypto,long,IN ZONE - WAIT,3,1792229661,17 Oct 10:34,0.45154,0.43379357,0.47866,open,,,,,,,,,
-359,STABLE,crypto,long,IN ZONE - WAIT,3,1792229661,17 Oct 10:34,0.02626,0.025936214,0.027565,open,,,,,,,,,
+359,STABLE,crypto,long,IN ZONE - WAIT,3,1792229661,17 Oct 10:34,0.02626,0.025936214,0.027565,closed,1792232226,17 Oct 11:17,0.025834,stop,-1.82,-1.82,0.7,-1.48,
