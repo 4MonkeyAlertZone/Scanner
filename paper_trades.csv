@@ -382,3 +382,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 381,HBAR,crypto,long,IN ZONE - WAIT,3,1792259234,17 Oct 18:47,0.08249,0.081246071,0.084245,open,,,,,,,,,
 382,WLD,crypto,long,IN ZONE - WAIT,3,1792261500,17 Oct 19:25,0.4985,0.482225,0.53326667,open,,,,,,,,,
 383,ETC,crypto,long,IN ZONE - WAIT,3,1792261500,17 Oct 19:25,7.82,7.6364286,8.0233333,open,,,,,,,,,
+384,FET,crypto,long,IN ZONE - WAIT,4,1792264184,17 Oct 20:09,0.1919,0.18582143,0.20325,open,,,,,,,,,
