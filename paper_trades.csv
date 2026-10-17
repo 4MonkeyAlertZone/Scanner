@@ -21,7 +21,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 20,USDGO,crypto,long,IN ZONE,5,1792107460,16 Oct 00:37,1.001,0.99923571,,open,,,,,,,,,
 21,ALGO,crypto,long,BUY SIGNAL,4,1792107460,16 Oct 00:37,0.11846,0.11235036,0.12248,open,,,,,,,,,
 22,FIL,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,1.1656,1.0775929,1.215775,open,,,,,,,,,
-23,KCS,crypto,long,IN ZONE,5,1792107460,16 Oct 00:37,7.4119,7.3038071,7.5654,open,,,,,,,,,
+23,KCS,crypto,long,IN ZONE,5,1792107460,16 Oct 00:37,7.4119,7.3038071,7.5654,closed,1792218971,17 Oct 07:36,7.5654,target,1.87,1.87,31.0,1.28,
 24,INJ,crypto,long,BUY SIGNAL,3,1792107460,16 Oct 00:37,8.498,8.0004643,,open,,,,,,,,,
 25,STABLE,crypto,long,IN ZONE,4,1792107460,16 Oct 00:37,0.027409,0.027067,0.0280932,closed,1792130068,16 Oct 06:54,0.027008,stop,-1.66,-1.66,6.3,-1.33,
 26,ETHFI,crypto,long,BUY SIGNAL,5,1792107460,16 Oct 00:37,0.6726,0.61427143,0.72433333,open,,,,,,,,,
