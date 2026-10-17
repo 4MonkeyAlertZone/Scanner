@@ -368,3 +368,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 367,HTX,crypto,long,RECLAIM C TP2,,1792238731,17 Oct 13:05,1.672e-06,1.629734e-06,1.756532e-06,open,,,,,,,,,168
 368,HTX,crypto,long,RECLAIM C TP3,,1792238731,17 Oct 13:05,1.672e-06,1.629734e-06,1.798798e-06,open,,,,,,,,,168
 369,BCH,crypto,long,IN ZONE - WAIT,3,1792238731,17 Oct 13:05,274.9,268.88214,284.33333,open,,,,,,,,,
+370,TRX,crypto,long,IN ZONE,5,1792247678,17 Oct 15:34,0.3364,0.33050357,0.33855,open,,,,,,,,,
