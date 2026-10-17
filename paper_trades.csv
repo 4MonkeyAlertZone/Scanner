@@ -355,3 +355,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 354,TIA,crypto,long,BUY SIGNAL,3,1792184383,16 Oct 21:59,0.6586,0.6053025,,open,,,,,,,,,
 355,SEI,crypto,long,IN ZONE - WAIT,4,1792209941,17 Oct 05:05,0.06401,0.06196,0.06654,open,,,,,,,,,
 356,XMR,crypto,long,IN ZONE,5,1792211451,17 Oct 05:30,560.68,553.82357,572.05,open,,,,,,,,,
+357,ADA,crypto,long,BUY SIGNAL,3,1792225385,17 Oct 09:23,0.2241,0.22158214,0.2334,open,,,,,,,,,
