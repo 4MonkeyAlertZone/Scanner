@@ -359,3 +359,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 358,ONDO,crypto,long,IN ZONE - WAIT,3,1792229661,17 Oct 10:34,0.45154,0.43379357,0.47866,open,,,,,,,,,
 359,STABLE,crypto,long,IN ZONE - WAIT,3,1792229661,17 Oct 10:34,0.02626,0.025936214,0.027565,closed,1792232226,17 Oct 11:17,0.025834,stop,-1.82,-1.82,0.7,-1.48,
 360,PUMP,crypto,long,BUY SIGNAL,3,1792235035,17 Oct 12:03,0.004611,0.0044690714,0.0048195,open,,,,,,,,,
+361,OKB,crypto,long,BUY SIGNAL,3,1792236371,17 Oct 12:26,117.514,116.39904,120.09817,open,,,,,,,,,
+362,XDC,crypto,long,IN ZONE - WAIT,3,1792236371,17 Oct 12:26,0.03356,0.032638571,0.034526667,open,,,,,,,,,
