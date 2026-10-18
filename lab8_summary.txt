@@ -1,0 +1,71 @@
+BTC daily candles 2019-09-23 to 2026-10-17 (2582 days). Era 1 = before 2023-04-06, era 2 = after. Forward returns from the signal-day close, no costs (a few trades per year, so costs are tiny).
+Benchmark = every ordinary day in the same trend condition (for DIVERGENCE: every day). 'edge' = rule average minus benchmark average; the +/- is a rough 95% margin, and it is too narrow when events cluster, so only a clear edge in BOTH eras counts.
+
+PULLBACK 20-day average   (35 events)
+    7 days ahead, BTC: n= 35 avg  +2.1% median  +1.3% up  60% (benchmark avg  +1.4%) edge  +0.8% +/-3.0
+        era1 n=17 +2.5% vs +2.3% | era2 n=18 +1.8% vs +0.8%  <-- LEANS POSITIVE (beats benchmark in both eras)
+        top-20 altcoin basket 7 days ahead: n= 35 avg  +3.9% median  +2.2% up  57% (benchmark avg  +1.9%) edge  +2.0% +/-4.0
+   14 days ahead, BTC: n= 35 avg  +1.0% median  +0.6% up  54% (benchmark avg  +2.7%) edge  -1.7% +/-3.6
+        era1 n=17 +2.0% vs +4.7% | era2 n=18 +0.2% vs +1.4%
+        top-20 altcoin basket 14 days ahead: n= 35 avg  +3.4% median  +0.2% up  54% (benchmark avg  +5.2%) edge  -1.8% +/-6.1
+   28 days ahead, BTC: n= 35 avg  +2.0% median  -0.4% up  49% (benchmark avg  +5.8%) edge  -3.8% +/-5.9
+        era1 n=17 +2.7% vs +10.0% | era2 n=18 +1.3% vs +3.0%
+        top-20 altcoin basket 28 days ahead: n= 35 avg  +6.5% median  +1.0% up  54% (benchmark avg +11.6%) edge  -5.1% +/-12.2
+   worst dip in the next 28 days: typical -10.1%, 1 in 4 events worse than -15.5% (benchmark typical -7.7%)
+
+PULLBACK 50-day average   (36 events)
+    7 days ahead, BTC: n= 36 avg  -1.2% median  -1.0% up  44% (benchmark avg  +1.4%) edge  -2.6% +/-2.5
+        era1 n=12 -2.8% vs +2.5% | era2 n=24 -0.3% vs +0.7%
+        top-20 altcoin basket 7 days ahead: n= 36 avg  +0.9% median  -1.7% up  39% (benchmark avg  +2.1%) edge  -1.2% +/-3.9
+   14 days ahead, BTC: n= 35 avg  -0.7% median  -0.8% up  43% (benchmark avg  +2.8%) edge  -3.5% +/-2.9
+        era1 n=12 +0.4% vs +5.2% | era2 n=23 -1.3% vs +1.3%
+        top-20 altcoin basket 14 days ahead: n= 35 avg  +2.8% median  -0.4% up  49% (benchmark avg  +5.2%) edge  -2.5% +/-5.7
+   28 days ahead, BTC: n= 35 avg  +0.2% median  -1.2% up  40% (benchmark avg  +5.6%) edge  -5.4% +/-5.8
+        era1 n=12 +0.5% vs +10.3% | era2 n=23 +0.0% vs +2.6%
+        top-20 altcoin basket 28 days ahead: n= 35 avg  +7.4% median  +1.0% up  51% (benchmark avg +11.7%) edge  -4.3% +/-12.5
+   worst dip in the next 28 days: typical -11.5%, 1 in 4 events worse than -19.8% (benchmark typical -7.8%)
+
+PULLBACK 100-day average   (22 events)
+    7 days ahead, BTC: n= 22 avg  +1.9% median  +2.3% up  64% (benchmark avg  +1.3%) edge  +0.5% +/-3.9
+        era1 n=10 +2.3% vs +2.5% | era2 n=12 +1.6% vs +0.6%
+        top-20 altcoin basket 7 days ahead: n= 22 avg  +2.1% median  +2.6% up  64% (benchmark avg  +2.2%) edge  -0.1% +/-4.2
+   14 days ahead, BTC: n= 22 avg  +1.1% median  -0.7% up  45% (benchmark avg  +2.7%) edge  -1.6% +/-4.9
+        era1 n=10 +2.8% vs +5.1% | era2 n=12 -0.4% vs +1.1%
+        top-20 altcoin basket 14 days ahead: n= 22 avg  +3.1% median  +0.7% up  55% (benchmark avg  +5.6%) edge  -2.5% +/-6.3
+   28 days ahead, BTC: n= 22 avg  +1.8% median  -0.2% up  45% (benchmark avg  +5.4%) edge  -3.6% +/-7.0
+        era1 n=10 +0.9% vs +10.4% | era2 n=12 +2.5% vs +2.1%
+        top-20 altcoin basket 28 days ahead: n= 22 avg  +4.2% median  +4.0% up  55% (benchmark avg +11.8%) edge  -7.7% +/-8.0
+   worst dip in the next 28 days: typical -7.2%, 1 in 4 events worse than -17.4% (benchmark typical -8.1%)
+
+DIVERGENCE (bearish)   (8 events)
+    7 days ahead, BTC: n=  8 avg  +0.9% median  -0.2% up  50% (benchmark avg  +1.0%) edge  -0.1% +/-5.4
+        era1 n=4 -3.8% vs +1.2% | era2 n=4 +5.6% vs +0.8%
+        top-20 altcoin basket 7 days ahead: n=  8 avg  -0.1% median  -4.0% up  38% (benchmark avg  +1.7%) edge  -1.8% +/-5.6
+   14 days ahead, BTC: n=  8 avg  +1.1% median  +0.3% up  50% (benchmark avg  +2.0%) edge  -0.9% +/-7.0
+        era1 n=4 -0.9% vs +2.6% | era2 n=4 +3.1% vs +1.5%
+        top-20 altcoin basket 14 days ahead: n=  8 avg  -1.6% median  -1.8% up  50% (benchmark avg  +3.5%) edge  -5.1% +/-6.1
+   28 days ahead, BTC: n=  8 avg +12.6% median  +9.2% up  88% (benchmark avg  +4.2%) edge  +8.4% +/-19.0
+        era1 n=4 +19.4% vs +5.4% | era2 n=4 +5.8% vs +3.2%  <-- LEANS POSITIVE (beats benchmark in both eras)
+        top-20 altcoin basket 28 days ahead: n=  8 avg  +0.9% median  -3.9% up  38% (benchmark avg  +8.0%) edge  -7.1% +/-13.5
+   worst dip in the next 28 days: typical -7.2%, 1 in 4 events worse than -14.0% (benchmark typical -7.9%)
+
+COMBO (divergence, then pullback to 50-day)   (14 events)
+    7 days ahead, BTC: n= 14 avg  -0.5% median  -1.5% up  36% (benchmark avg  +1.0%) edge  -1.5% +/-3.2
+        era1 n=4 -2.7% vs +1.2% | era2 n=10 +0.3% vs +0.8%
+        top-20 altcoin basket 7 days ahead: n= 14 avg  +2.3% median  -2.4% up  36% (benchmark avg  +1.7%) edge  +0.7% +/-7.2
+   14 days ahead, BTC: n= 14 avg  +2.5% median  -0.1% up  50% (benchmark avg  +2.0%) edge  +0.5% +/-4.9
+        era1 n=4 +5.2% vs +2.6% | era2 n=10 +1.4% vs +1.5%
+        top-20 altcoin basket 14 days ahead: n= 14 avg  +6.2% median  +0.8% up  64% (benchmark avg  +3.5%) edge  +2.6% +/-10.4
+   28 days ahead, BTC: n= 14 avg  +6.3% median  +1.6% up  50% (benchmark avg  +4.2%) edge  +2.1% +/-11.1
+        era1 n=4 +17.8% vs +5.4% | era2 n=10 +1.7% vs +3.2%
+        top-20 altcoin basket 28 days ahead: n= 14 avg +12.8% median  +2.7% up  57% (benchmark avg  +8.0%) edge  +4.7% +/-27.4
+   worst dip in the next 28 days: typical -11.5%, 1 in 4 events worse than -12.5% (benchmark typical -7.9%)
+
+EVERY EVENT (date, BTC close, what happened over the next 14 days)
+  PULLBACK 20-day average: 2024-03-19 $62,057 (+6%), 2024-04-15 $63,450 (+1%), 2024-04-25 $64,500 (-2%), 2024-06-20 $64,902 (-12%), 2024-12-19 $97,557 (-1%), 2024-12-29 $93,862 (+1%), 2025-01-12 $94,456 (+9%), 2025-02-11 $95,749 (-7%), 2025-03-01 $86,036 (-2%), 2025-03-12 $83,591 (+4%), 2025-06-05 $101,498 (+3%), 2025-08-24 $113,400 (-2%), 2025-10-11 $110,519 (+1%), 2025-10-21 $108,595 (-6%)  [showing last 14 of 35]
+  PULLBACK 50-day average: 2024-07-31 $64,624 (-9%), 2024-12-20 $97,725 (+0%), 2024-12-30 $92,821 (+2%), 2025-01-09 $92,387 (+13%), 2025-02-02 $97,693 (-2%), 2025-02-12 $97,713 (-14%), 2025-06-05 $101,498 (+3%), 2025-06-17 $104,613 (+1%), 2025-08-01 $113,343 (+4%), 2025-08-18 $116,541 (-6%), 2025-08-28 $112,586 (+3%), 2025-10-10 $113,190 (-2%), 2025-10-20 $110,520 (-4%), 2026-10-08 $81,704  [showing last 14 of 36]
+  PULLBACK 100-day average: 2021-12-16 $47,646 (-1%), 2023-03-09 $20,369 (+39%), 2023-05-12 $26,791 (-0%), 2023-05-22 $26,854 (-4%), 2024-01-22 $39,554 (+8%), 2024-04-30 $60,699 (+2%), 2024-05-10 $60,935 (+12%), 2024-06-18 $65,220 (-5%), 2024-08-02 $61,536 (-4%), 2025-02-12 $97,713 (-14%), 2025-06-22 $100,901 (+8%), 2025-08-24 $113,400 (-2%), 2025-10-10 $113,190 (-2%), 2025-10-20 $110,520 (-4%)  [showing last 14 of 22]
+  DIVERGENCE (bearish): 2020-12-06 $19,371 (+21%), 2021-09-12 $46,028 (-6%), 2021-11-15 $63,601 (-9%), 2023-02-21 $24,453 (-9%), 2023-11-14 $35,558 (+6%), 2024-03-19 $62,057 (+6%), 2024-12-10 $96,541 (+2%), 2025-08-19 $113,000 (-2%)
+  COMBO (divergence, then pullback to 50-day): 2021-01-22 $33,046 (+16%), 2021-11-16 $60,083 (-5%), 2021-11-26 $53,738 (-12%), 2023-03-03 $22,358 (+23%), 2023-04-21 $27,263 (+8%), 2024-01-12 $42,789 (-2%), 2024-04-13 $63,947 (-1%), 2024-04-24 $64,279 (-5%), 2024-12-20 $97,725 (+0%), 2024-12-30 $92,821 (+2%), 2025-01-09 $92,387 (+13%), 2025-02-02 $97,693 (-2%), 2025-08-28 $112,586 (+3%), 2025-10-10 $113,190 (-2%)
+
+HOW TO READ: this is one asset with few events, so only a large, consistent edge in both eras means anything, and 'LEANS POSITIVE' is a hint, not proof. A rule that merely matches the benchmark has no edge: BTC drifts up in uptrends anyway. Divergence is expected to show NEGATIVE edge if the warning works. Overlapping 28-day windows make the margins look better than they are.

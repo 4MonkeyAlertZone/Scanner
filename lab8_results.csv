@@ -1,0 +1,16 @@
+event,horizon,n,avg,median,benchmark,edge,both_eras
+PULLBACK 20-day average,7,35,2.14,1.3,1.36,0.78,1
+PULLBACK 20-day average,14,35,1.04,0.63,2.71,-1.67,0
+PULLBACK 20-day average,28,35,1.96,-0.38,5.81,-3.85,0
+PULLBACK 50-day average,7,36,-1.17,-0.95,1.39,-2.56,0
+PULLBACK 50-day average,14,35,-0.7,-0.76,2.81,-3.51,0
+PULLBACK 50-day average,28,35,0.2,-1.19,5.64,-5.44,0
+PULLBACK 100-day average,7,22,1.88,2.26,1.35,0.53,0
+PULLBACK 100-day average,14,22,1.07,-0.7,2.7,-1.63,0
+PULLBACK 100-day average,28,22,1.8,-0.19,5.43,-3.63,0
+DIVERGENCE (bearish),7,8,0.89,-0.19,0.97,-0.08,0
+DIVERGENCE (bearish),14,8,1.15,0.35,2.0,-0.85,0
+DIVERGENCE (bearish),28,8,12.62,9.19,4.2,8.42,1
+"COMBO (divergence, then pullback to 50-day)",7,14,-0.54,-1.53,0.97,-1.51,0
+"COMBO (divergence, then pullback to 50-day)",14,14,2.51,-0.14,2.0,0.51,0
+"COMBO (divergence, then pullback to 50-day)",28,14,6.34,1.6,4.2,2.14,0
