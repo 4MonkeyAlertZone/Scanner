@@ -1,0 +1,7 @@
+strategy,final,max_drawdown_pct,switches
+A  hold the alt basket,2561,-73,1
+"B  basket, only while BTC above its 200-day avg",1176,-75,35
+"C  basket, only while BTC above its 100-day avg",2416,-62,57
+"D  basket, only while BTC above its 50-day avg",2764,-68,81
+E  hold BTC,5159,-53,1
+"F  hold BTC, only while above its 200-day avg",2703,-35,35

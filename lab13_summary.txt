@@ -1,0 +1,16 @@
+LAB 13: 69 alts with data (of 99 asked), 2022-11-21 to 2026-10-17 (1427 days). Start value 1000. Costs 0.1% per side. Rebalance every 30 days.
+
+A  hold the alt basket
+     final value    2,561   max drawdown   -73%   switches in/out 1   per year: 2022 -6%  2023 +146%  2024 +98%  2025 -50%  2026 +12%
+B  basket, only while BTC above its 200-day avg
+     final value    1,176   max drawdown   -75%   switches in/out 35   per year: 2022 +0%  2023 +75%  2024 +7%  2025 -52%  2026 +31%
+C  basket, only while BTC above its 100-day avg
+     final value    2,416   max drawdown   -62%   switches in/out 57   per year: 2022 +0%  2023 +84%  2024 +36%  2025 -24%  2026 +28%
+D  basket, only while BTC above its 50-day avg
+     final value    2,764   max drawdown   -68%   switches in/out 81   per year: 2022 +0%  2023 +186%  2024 +47%  2025 -45%  2026 +20%
+E  hold BTC
+     final value    5,159   max drawdown   -53%   switches in/out 1   per year: 2022 +5%  2023 +156%  2024 +121%  2025 -6%  2026 -7%
+F  hold BTC, only while above its 200-day avg
+     final value    2,703   max drawdown   -35%   switches in/out 35   per year: 2022 +0%  2023 +75%  2024 +57%  2025 -12%  2026 +11%
+
+HOW TO READ: compare final value AND max drawdown. If B/C/D end near A with a much smaller drawdown, the trend exit protected the profit; if they end far lower, the exits sold too early / whipsawed. Overlapping rebalances, survivorship bias (only coins listed today) and one cycle mean this is a single historical path, not a forecast. Ending value of 'hold the basket' is flattered most by survivorship bias.
