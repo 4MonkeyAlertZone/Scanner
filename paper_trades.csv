@@ -430,3 +430,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 429,SPX,crypto,long,IN ZONE - WAIT,3,1792354260,18 Oct 21:11,0.3474,0.32750357,0.3696,open,,,,,,,,,
 430,HBAR,crypto,long,IN ZONE - WAIT,3,1792355677,18 Oct 21:34,0.08236,0.080876143,0.084245,open,,,,,,,,,
 431,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1792358070,18 Oct 22:14,0.6302,0.62249286,0.654425,open,,,,,,,,,
+432,VET,crypto,long,IN ZONE - WAIT,3,1792360810,18 Oct 23:00,0.00651,0.0062592143,0.0068285,open,,,,,,,,,
