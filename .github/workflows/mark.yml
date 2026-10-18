@@ -8,6 +8,9 @@ on:
       amount:
         description: "Dollars per signal"
         default: "1000"
+      verdict:
+        description: "Which signals: BUY SIGNAL, IN ZONE, RECLAIM A, RECLAIM C, CROSS C ..."
+        default: "BUY SIGNAL"
 permissions:
   contents: write
 jobs:
@@ -23,6 +26,7 @@ jobs:
         env:
           SINCE: ${{ inputs.since }}
           AMOUNT: ${{ inputs.amount }}
+          VERDICT: ${{ inputs.verdict }}
       - name: Save report
         run: |
           git config user.name "scanner-bot"
