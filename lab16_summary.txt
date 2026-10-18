@@ -1,0 +1,82 @@
+LAB 16: 2022-11-21 to 2026-10-17; older half to 2024-11-03. Cost 0.20% round trip. Entry next day's open. 'edge' = rule minus random entries on the same asset and hold time.
+
+A. SHORT-TERM MEAN REVERSION (buy after a sharp 2-day drop)
+   BTC: 2-day drop >= 5%, hold 3d                   n= 44   +0.3% (+/-0.7)  win  52%  random  +0.2%  edge  +0.1%  older +1.1%/newer -0.6% (n=22/22)
+   BTC: 2-day drop >= 5%, hold 5d                   n= 44   +1.0% (+/-0.8)  win  61%  random  +0.4%  edge  +0.6%  older +2.7%/newer -0.7% (n=22/22)
+   BTC: 2-day drop >= 5%, hold 10d                  n= 34   +1.3% (+/-1.2)  win  56%  random  +1.1%  edge  +0.1%  older +2.4%/newer -0.0% (n=18/16)
+   BTC: 2-day drop >= 8%, hold 3d                   n= 17   +1.6% (+/-1.5)  win  53%  random  +0.2%  edge  +1.3%  older +2.6%/newer +0.4% (n=9/8)
+   BTC: 2-day drop >= 8%, hold 5d                   n= 16   +2.7% (+/-1.8)  win  62%  random  +0.8%  edge  +1.9%  older +5.0%/newer -0.3% (n=9/7)
+   BTC: 2-day drop >= 8%, hold 10d                  n= 16   +2.1% (+/-2.8)  win  56%  random  +0.9%  edge  +1.3%  older +6.3%/newer -3.2% (n=9/7)
+   BTC: 2-day drop >= 12%, hold 3d                  n=  1  too few trades
+   BTC: 2-day drop >= 12%, hold 5d                  n=  1  too few trades
+   BTC: 2-day drop >= 12%, hold 10d                 n=  1  too few trades
+   BTC: RSI(2) < 10 and above 200-day avg, hold 5d  n= 42   +0.9% (+/-1.0)  win  52%  random  +0.5%  edge  +0.4%  older +1.1%/newer +0.7% (n=25/17)
+
+   ETH: 2-day drop >= 5%, hold 3d                   n= 79   +0.0% (+/-0.7)  win  49%  random  +0.2%  edge  -0.2%  older +0.2%/newer -0.0% (n=30/49)
+   ETH: 2-day drop >= 5%, hold 5d                   n= 69   -0.1% (+/-0.8)  win  48%  random  +0.1%  edge  -0.2%  older +0.9%/newer -0.7% (n=27/42)
+   ETH: 2-day drop >= 5%, hold 10d                  n= 55   +0.5% (+/-1.3)  win  51%  random  +0.8%  edge  -0.2%  older +2.2%/newer -0.7% (n=24/31)
+   ETH: 2-day drop >= 8%, hold 3d                   n= 37   -0.0% (+/-1.1)  win  51%  random  +0.0%  edge  -0.1%  older -0.9%/newer +0.5% (n=14/23)
+   ETH: 2-day drop >= 8%, hold 5d                   n= 37   +0.4% (+/-1.2)  win  51%  random  +0.4%  edge  -0.1%  older +1.2%/newer -0.1% (n=14/23)
+   ETH: 2-day drop >= 8%, hold 10d                  n= 29   +0.1% (+/-1.8)  win  55%  random  +1.3%  edge  -1.3%  older +2.5%/newer -1.9% (n=13/16)
+   ETH: 2-day drop >= 12%, hold 3d                  n= 13   +3.1% (+/-1.8)  win  62%  random  +0.2%  edge  +2.9%  older +6.2%/newer +2.1% (n=3/10)
+   ETH: 2-day drop >= 12%, hold 5d                  n= 12   -0.3% (+/-2.8)  win  67%  random  +0.7%  edge  -1.0%  older +6.2%/newer -2.5% (n=3/9)
+   ETH: 2-day drop >= 12%, hold 10d                 n= 11   -0.2% (+/-2.9)  win  45%  random  +1.0%  edge  -1.2%  older +8.0%/newer -3.3% (n=3/8)
+   ETH: RSI(2) < 10 and above 200-day avg, hold 5d  n= 32   -0.5% (+/-1.1)  win  38%  random  +0.6%  edge  -1.2%  older -0.6%/newer -0.5% (n=20/12)
+
+   10 large alts: 2-day drop >= 5%, hold 3d         n=765   +0.8% (+/-0.3)  win  53%  random  +0.1%  edge  +0.6%  older +0.3%/newer +1.1% (n=302/463)
+   10 large alts: 2-day drop >= 5%, hold 5d         n=638   +0.7% (+/-0.4)  win  47%  random  +0.9%  edge  -0.2%  older +0.4%/newer +0.9% (n=265/373)
+   10 large alts: 2-day drop >= 5%, hold 10d        n=465   +2.3% (+/-0.8)  win  50%  random  +1.9%  edge  +0.4%  older +1.8%/newer +2.8% (n=202/263)
+   10 large alts: 2-day drop >= 8%, hold 3d         n=355   +1.0% (+/-0.5)  win  52%  random  +0.4%  edge  +0.5%  older +0.1%/newer +1.5% (n=129/226)
+   10 large alts: 2-day drop >= 8%, hold 5d         n=316   +1.0% (+/-0.7)  win  48%  random  +0.7%  edge  +0.3%  older +0.4%/newer +1.4% (n=119/197)
+   10 large alts: 2-day drop >= 8%, hold 10d        n=257   +2.5% (+/-1.1)  win  51%  random  +1.7%  edge  +0.8%  older +3.8%/newer +1.6% (n=109/148)
+   10 large alts: 2-day drop >= 12%, hold 3d        n=117   +2.2% (+/-1.0)  win  59%  random  +0.3%  edge  +1.8%  older +1.3%/newer +2.6% (n=38/79)
+   10 large alts: 2-day drop >= 12%, hold 5d        n=109   +2.5% (+/-1.4)  win  61%  random  +0.8%  edge  +1.7%  older +3.7%/newer +1.9% (n=38/71)
+   10 large alts: 2-day drop >= 12%, hold 10d       n=100   +4.6% (+/-1.7)  win  63%  random  +2.1%  edge  +2.6%  older +7.9%/newer +2.7% (n=37/63)
+   10 large alts: RSI(2) < 10 and above 200-day avg, hold 5d n=270   +0.0% (+/-0.5)  win  49%  random  +0.7%  edge  -0.6%  older -0.2%/newer +0.2% (n=124/146)
+
+B. FEAR & GREED (crowd sentiment)
+   BTC: index <= 10, hold 7d                        n=  9   -1.1% (+/-1.8)  win  33%  random  +0.7%  edge  -1.8%  older   n/a/newer -1.1% (n=0/9)
+   BTC: index <= 10, hold 14d                       n=  7   -0.8% (+/-1.5)  win  43%  random  +1.8%  edge  -2.6%  older   n/a/newer -0.8% (n=0/7)
+   BTC: index <= 10, hold 30d                       n=  5   -3.4% (+/-2.3)  win  20%  random  +3.8%  edge  -7.2%  older   n/a/newer -3.4% (n=0/5)
+   BTC: index <= 10, hold 60d                       n=  4  too few trades
+   BTC: index <= 20, hold 7d                        n= 27   -0.3% (+/-1.0)  win  59%  random  +1.0%  edge  -1.3%  older +5.0%/newer -0.7% (n=2/25)
+   BTC: index <= 20, hold 14d                       n= 17   -1.3% (+/-2.4)  win  53%  random  +2.5%  edge  -3.8%  older +4.5%/newer -2.1% (n=2/15)
+   BTC: index <= 20, hold 30d                       n= 11   +1.2% (+/-3.8)  win  55%  random  +5.0%  edge  -3.8%  older +0.6%/newer +1.3% (n=2/9)
+   BTC: index <= 20, hold 60d                       n=  7   +5.1% (+/-7.1)  win  57%  random  +9.3%  edge  -4.2%  older +24.1%/newer -2.5% (n=2/5)
+   BTC: index <= 25, hold 7d                        n= 43   +1.1% (+/-1.0)  win  60%  random  +0.8%  edge  +0.4%  older +9.1%/newer -0.7% (n=8/35)
+   BTC: index <= 25, hold 14d                       n= 26   +1.4% (+/-1.8)  win  58%  random  +1.4%  edge  +0.0%  older +12.0%/newer -1.7% (n=6/20)
+   BTC: index <= 25, hold 30d                       n= 15   +1.2% (+/-3.8)  win  60%  random  +3.0%  edge  -1.8%  older +10.6%/newer -2.2% (n=4/11)
+   BTC: index <= 25, hold 60d                       n=  8   -0.1% (+/-7.7)  win  38%  random  +9.9%  edge -10.0%  older +21.5%/newer -7.3% (n=2/6)
+   BTC: index <= 30, hold 7d                        n= 59   +0.6% (+/-0.9)  win  53%  random  +1.0%  edge  -0.4%  older +4.8%/newer -0.8% (n=15/44)
+   BTC: index <= 30, hold 14d                       n= 34   +1.2% (+/-1.4)  win  62%  random  +1.9%  edge  -0.7%  older +5.1%/newer -0.4% (n=10/24)
+   BTC: index <= 30, hold 30d                       n= 18   +2.1% (+/-3.1)  win  56%  random  +4.3%  edge  -2.2%  older +11.3%/newer -2.5% (n=6/12)
+   BTC: index <= 30, hold 60d                       n= 11   +8.4% (+/-7.2)  win  64%  random  +6.9%  edge  +1.4%  older +26.3%/newer -1.9% (n=4/7)
+   ETH: index <= 10, hold 7d                        n=  9   -2.3% (+/-1.8)  win  22%  random  +0.6%  edge  -2.9%  older   n/a/newer -2.3% (n=0/9)
+   ETH: index <= 10, hold 14d                       n=  7   -2.1% (+/-3.5)  win  43%  random  +1.4%  edge  -3.5%  older   n/a/newer -2.1% (n=0/7)
+   ETH: index <= 10, hold 30d                       n=  5   -4.3% (+/-5.2)  win  40%  random  +3.1%  edge  -7.4%  older   n/a/newer -4.3% (n=0/5)
+   ETH: index <= 10, hold 60d                       n=  4  too few trades
+   ETH: index <= 20, hold 7d                        n= 27   -0.5% (+/-1.5)  win  48%  random  +0.3%  edge  -0.9%  older +7.7%/newer -1.2% (n=2/25)
+   ETH: index <= 20, hold 14d                       n= 17   -2.4% (+/-3.1)  win  47%  random  +2.0%  edge  -4.3%  older +5.3%/newer -3.4% (n=2/15)
+   ETH: index <= 20, hold 30d                       n= 11   +1.0% (+/-5.8)  win  55%  random  +2.7%  edge  -1.6%  older -1.3%/newer +1.6% (n=2/9)
+   ETH: index <= 20, hold 60d                       n=  7   -3.2% (+/-7.7)  win  29%  random  +8.5%  edge -11.7%  older +16.3%/newer -11.0% (n=2/5)
+   ETH: index <= 25, hold 7d                        n= 43   +0.8% (+/-1.3)  win  60%  random  +1.0%  edge  -0.1%  older +8.9%/newer -1.0% (n=8/35)
+   ETH: index <= 25, hold 14d                       n= 26   +0.0% (+/-2.3)  win  50%  random  +1.5%  edge  -1.5%  older +10.4%/newer -3.1% (n=6/20)
+   ETH: index <= 25, hold 30d                       n= 15   -3.2% (+/-4.6)  win  47%  random  +2.9%  edge  -6.1%  older +1.9%/newer -5.0% (n=4/11)
+   ETH: index <= 25, hold 60d                       n=  8   -7.4% (+/-10.9)  win  38%  random  +6.3%  edge -13.6%  older +13.0%/newer -14.1% (n=2/6)
+   ETH: index <= 30, hold 7d                        n= 59   +0.2% (+/-1.2)  win  53%  random  +0.3%  edge  -0.0%  older +4.7%/newer -1.3% (n=15/44)
+   ETH: index <= 30, hold 14d                       n= 34   -0.3% (+/-1.9)  win  53%  random  +1.5%  edge  -1.8%  older +3.3%/newer -1.8% (n=10/24)
+   ETH: index <= 30, hold 30d                       n= 18   -1.7% (+/-3.2)  win  50%  random  +3.0%  edge  -4.7%  older +5.9%/newer -5.4% (n=6/12)
+   ETH: index <= 30, hold 60d                       n= 11   +0.0% (+/-8.4)  win  36%  random  +7.0%  edge  -7.0%  older +14.6%/newer -8.3% (n=4/7)
+
+   Forward BTC return by index level (all days, overlapping, so only a rough guide): bucket -> days, avg next 7d / 30d / 60d
+   extreme fear 0-20     114 days    +0.6%   +4.1%   +6.4%
+   fear 20-40            344 days    +1.1%   +3.5%   +9.6%
+   neutral 40-60         387 days    +0.9%   +4.8%  +12.2%
+   greed 60-80           475 days    +1.0%   +4.9%   +7.7%
+   extreme greed 80+      45 days    +0.6%   +1.6%   -0.4%
+   ALL DAYS             1366 days    +1.0%   +4.4%   +9.1%
+
+C. FUTURES FUNDING RATE (BTC perpetual, average of the day's 8-hour rates)
+   Funding data could not be fetched (binance: HTTP Error 451: ; bybit: HTTP Error 403: Forbidden); exchanges often block cloud servers. Section skipped.
+
+HOW TO READ: a rule is interesting only if its edge is clearly above its error margin and has the same sign in the older and newer half. With dozens of settings tried, a few will look good by luck; settings next to each other should agree. These are daily-data tests on one 3-year cycle; sentiment and funding extremes happen only a handful of independent times.
