@@ -418,3 +418,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 417,ADA,crypto,long,IN ZONE - WAIT,3,1792331891,18 Oct 14:58,0.2179,0.2113,0.224,open,,,,,,,,,
 418,SHIB,crypto,long,IN ZONE - WAIT,3,1792332981,18 Oct 15:16,4.904e-06,4.7865e-06,5.0085e-06,open,,,,,,,,,
 419,APT,crypto,long,IN ZONE - WAIT,3,1792332981,18 Oct 15:16,0.7724,0.758275,0.80125,open,,,,,,,,,
+420,PI,crypto,long,IN ZONE - WAIT,3,1792337048,18 Oct 16:24,0.07913,0.077428214,0.08023,open,,,,,,,,,
