@@ -391,3 +391,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 390,JUP,crypto,long,IN ZONE - WAIT,3,1792273990,17 Oct 22:53,0.2883,0.28006071,0.3052,open,,,,,,,,,
 391,POL,crypto,long,IN ZONE - WAIT,3,1792273990,17 Oct 22:53,0.09177,0.088965,0.094653333,open,,,,,,,,,
 392,FF,crypto,long,IN ZONE - WAIT,3,1792274851,17 Oct 23:07,0.10481,0.10319107,0.11183,open,,,,,,,,,
+393,WLFI,crypto,long,IN ZONE,4,1792282200,18 Oct 01:10,0.05698,0.056026786,0.057454,open,,,,,,,,,
