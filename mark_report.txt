@@ -1,4 +1,4 @@
-What-if: $1,000 in every paper 'BUY SIGNAL' opened since 16 Oct 15:30 UTC. Prices read 18 Oct 2026 18:29 UTC. No fees or slippage.
+What-if: $1,000 in every paper 'BUY SIGNAL' opened since 16 Oct 15:30 UTC. Prices read 18 Oct 2026 18:36 UTC. No fees or slippage.
 
   COIN     stock  bought 16 Oct 16:41  at 180.64       now 173.16        -4.14%  $  -41.41  open
   IVZ      stock  bought 16 Oct 16:41  at 28.555       now 28.2          -1.24%  $  -12.43  open
@@ -28,16 +28,16 @@ What-if: $1,000 in every paper 'BUY SIGNAL' opened since 16 Oct 15:30 UTC. Price
   CBOE     stock  bought 16 Oct 19:23  at 313.68       now 314.98        +0.41%  $   +4.14  open
   WM       stock  bought 16 Oct 19:59  at 225.82       now 226.86        +0.46%  $   +4.61  open
   GEHC     stock  bought 16 Oct 20:49  at 69.475       now 69.57         +0.14%  $   +1.37  open
-  TIA      crypto bought 16 Oct 21:59  at 0.6586       now 0.6152        -6.59%  $  -65.90  open
+  TIA      crypto bought 16 Oct 21:59  at 0.6586       now 0.611         -7.23%  $  -72.27  open
   ADA      crypto bought 17 Oct 09:23  at 0.2241       now 0.2213        -1.25%  $  -12.49  closed (stop)
   PUMP     crypto bought 17 Oct 12:03  at 0.004611     now 0.004463      -3.21%  $  -32.10  closed (stop)
   OKB      crypto bought 17 Oct 12:26  at 117.514      now 116.326       -1.01%  $  -10.11  closed (stop)
   VET      crypto bought 17 Oct 21:04  at 0.006816     now 0.00664       -2.58%  $  -25.82  closed (stop)
   ZRO      crypto bought 18 Oct 05:14  at 1.8944       now 1.8358        -3.09%  $  -30.93  closed (stop)
   STX      crypto bought 18 Oct 05:14  at 0.3748       now 0.3627        -3.23%  $  -32.28  closed (stop)
-  XMR      crypto bought 18 Oct 10:45  at 586.81       now 586.79        -0.00%  $   -0.03  open
-  HTX      crypto bought 18 Oct 14:34  at 1.658e-06    now 1.654e-06     -0.24%  $   -2.41  open
+  XMR      crypto bought 18 Oct 10:45  at 586.81       now 586.55        -0.04%  $   -0.44  open
+  HTX      crypto bought 18 Oct 14:34  at 1.658e-06    now 1.655e-06     -0.18%  $   -1.81  open
 
-CRYPTO    9 trades, $9,000 invested: profit/loss $-212.08 (-2.36%), 0 up / 9 down, 6 already closed
+CRYPTO    9 trades, $9,000 invested: profit/loss $-218.27 (-2.43%), 0 up / 9 down, 6 already closed
 STOCK    28 trades, $28,000 invested: profit/loss $-1.67 (-0.01%), 14 up / 14 down, 1 already closed
-TOTAL    37 trades, $37,000 invested: profit/loss $-213.75 (-0.58%)
+TOTAL    37 trades, $37,000 invested: profit/loss $-219.93 (-0.59%)
