@@ -415,3 +415,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 414,HTX,crypto,long,BUY SIGNAL,3,1792330495,18 Oct 14:34,1.658e-06,1.6485357e-06,1.6713e-06,open,,,,,,,,,
 415,PENDLE,crypto,long,IN ZONE - WAIT,4,1792330495,18 Oct 14:34,1.987,1.9470357,2.0675,open,,,,,,,,,
 416,LDO,crypto,long,IN ZONE - WAIT,3,1792330495,18 Oct 14:34,0.3783,0.36862857,0.3905,open,,,,,,,,,
+417,ADA,crypto,long,IN ZONE - WAIT,3,1792331891,18 Oct 14:58,0.2179,0.2113,0.224,open,,,,,,,,,
