@@ -427,3 +427,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 426,UNI,crypto,long,IN ZONE - WAIT,3,1792352422,18 Oct 20:40,6.856,6.6327857,7.6656667,open,,,,,,,,,
 427,ARB,crypto,long,IN ZONE - WAIT,3,1792352422,18 Oct 20:40,0.17577,0.17076479,0.179615,open,,,,,,,,,
 428,FIL,crypto,long,IN ZONE - WAIT,3,1792353443,18 Oct 20:57,0.9947,0.95753571,1.06285,open,,,,,,,,,
+429,SPX,crypto,long,IN ZONE - WAIT,3,1792354260,18 Oct 21:11,0.3474,0.32750357,0.3696,open,,,,,,,,,
