@@ -1,0 +1,55 @@
+84 weekly reports, 2024-01-28 to 2026-10-11. BTC daily closes 2021-04-28 to 2026-10-17. Forward returns are measured from the close of the report's day, so there is no peeking.
+Stances: 48 bullish, 31 bearish, 5 neutral/unclear. Labels are a human reading of each conclusion, so a few are debatable.
+
+WHOLE PERIOD   (84 reports)
+   7 days ahead. All reports: avg  +0.7% (+/-1.3), up 49% of the time
+       after bullish  n= 47  avg  +2.0% (+/-1.7)  call was right 57%
+       after neutral  n=  5  avg  +0.2% (+/-4.7)
+       after bearish  n= 31  avg  -1.1% (+/-2.1)  call was right 61%
+  14 days ahead. All reports: avg  +1.5% (+/-2.1), up 53% of the time
+       after bullish  n= 47  avg  +4.3% (+/-2.9)  call was right 60%
+       after neutral  n=  5  avg  +1.8% (+/-3.3)
+       after bearish  n= 31  avg  -2.8% (+/-2.9)  call was right 55%
+  28 days ahead. All reports: avg  +3.1% (+/-3.3), up 57% of the time
+       after bullish  n= 46  avg  +7.3% (+/-4.2)  call was right 67%
+       after neutral  n=  4  avg +14.7% (+/-21.6)
+       after bearish  n= 31  avg  -4.8% (+/-4.4)  call was right 61%
+  FOLLOWING HIM week by week (long when bullish, short when bearish, flat when neutral), 7-day moves: avg +1.57% per report vs +0.74% for just holding; total +130% vs +61% (simple sum, no compounding, no fees)
+
+BEFORE 1 Oct 2025 (his bullish phase)   (46 reports)
+   7 days ahead. All reports: avg  +2.8% (+/-1.7), up 63% of the time
+       after bullish  n= 42  avg  +2.5% (+/-1.8)  call was right 62%
+       after neutral  n=  1  avg  +8.2% (+/-0.0)
+       after bearish  n=  3  avg  +4.2% (+/-5.9)  call was right 33%
+  14 days ahead. All reports: avg  +4.7% (+/-3.0), up 61% of the time
+       after bullish  n= 42  avg  +4.8% (+/-3.2)  call was right 60%
+       after neutral  n=  1  avg  +7.9% (+/-0.0)
+       after bearish  n=  3  avg  +2.1% (+/-5.5)  call was right 33%
+  28 days ahead. All reports: avg  +7.8% (+/-4.4), up 67% of the time
+       after bullish  n= 42  avg  +7.4% (+/-4.5)  call was right 67%
+       after neutral  n=  1  avg +43.0% (+/-0.0)
+       after bearish  n=  3  avg  +1.8% (+/-2.1)  call was right 33%
+  FOLLOWING HIM week by week (long when bullish, short when bearish, flat when neutral), 7-day moves: avg +2.03% per report vs +2.76% for just holding; total +94% vs +127% (simple sum, no compounding, no fees)
+
+FROM 1 Oct 2025 (his bearish phase)   (38 reports)
+   7 days ahead. All reports: avg  -1.8% (+/-1.7), up 32% of the time
+       after bullish  n=  5  avg  -2.2% (+/-3.5)  call was right 20%
+       after neutral  n=  4  avg  -1.8% (+/-3.4)
+       after bearish  n= 28  avg  -1.7% (+/-2.2)  call was right 64%
+  14 days ahead. All reports: avg  -2.5% (+/-2.5), up 43% of the time
+       after bullish  n=  5  avg  +0.3% (+/-3.9)  call was right 60%
+       after neutral  n=  4  avg  +0.3% (+/-1.9)
+       after bearish  n= 28  avg  -3.4% (+/-3.1)  call was right 57%
+  28 days ahead. All reports: avg  -3.2% (+/-4.4), up 43% of the time
+       after bullish  n=  4  avg  +6.3% (+/-11.6)  call was right 75%
+       after neutral  n=  3  avg  +5.2% (+/-15.8)
+       after bearish  n= 28  avg  -5.5% (+/-4.8)  call was right 64%
+  FOLLOWING HIM week by week (long when bullish, short when bearish, flat when neutral), 7-day moves: avg +1.00% per report vs -1.79% for just holding; total +37% vs -66% (simple sum, no compounding, no fees)
+
+WHEN HE CHANGED HIS MIND (stance flips): date, new stance, BTC 28 days later
+   2025-08-31  turned BEARISH  BTC $108,432, 28 days later +3.4%
+   2025-10-13  turned BULLISH  BTC $115,291, 28 days later -7.9%
+   2025-10-19  turned BEARISH  BTC $108,456, 28 days later -13.1%
+   2026-08-04  turned BULLISH  BTC $64,099, 28 days later +20.8%
+
+HOW TO READ: 'right' means BTC moved the way he said over that horizon. A bullish stance in a rising market is easy to get right, so compare with 'all reports' and with holding. About 85 reports, overlapping windows, one asset, one trader and subjective labels: this can show whether his direction had obvious value, not prove a small edge.
