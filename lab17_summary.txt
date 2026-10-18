@@ -1,0 +1,45 @@
+LAB 17: 2022-11-21 to 2026-10-17; older half to 2024-11-03. Cost 0.20% round trip. 'by day' = each signal day counted once. edge = rule minus random entries on the same coins and hold time.
+
+ranks 1-10 (large): 8 coins
+   drop >= 8%, hold 5d                          n= 316 days=194  trade avg  +1.0% vs random +0.9% (edge  +0.1%) | by day  +1.3% (+/-0.9), edge  +0.5% | older +0.4%/newer +1.4% (119/197)
+   drop >= 8%, hold 10d                         n= 257 days=167  trade avg  +2.5% vs random +2.0% (edge  +0.5%) | by day  +3.8% (+/-1.4), edge  +1.8% | older +3.8%/newer +1.6% (109/148)
+   drop >= 12%, hold 5d                         n= 109 days= 70  trade avg  +2.5% vs random +0.9% (edge  +1.6%) | by day  +2.5% (+/-1.9), edge  +1.6% | older +3.7%/newer +1.9% (38/71)
+   drop >= 12%, hold 10d                        n= 100 days= 65  trade avg  +4.6% vs random +1.7% (edge  +3.0%) | by day  +4.7% (+/-2.3), edge  +3.0% | older +7.9%/newer +2.7% (37/63)
+      only while BTC above 200-day avg          n=  55 days= 33  trade avg  +4.5% vs random +1.7% (edge  +2.9%) | by day  +4.9% (+/-3.0), edge  +3.3% | older +9.9%/newer +1.4% (20/35)
+      only while BTC below 200-day avg          n=  45 days= 32  trade avg  +4.7% vs random +1.7% (edge  +3.1%) | by day  +4.4% (+/-3.4), edge  +2.8% | older +5.5%/newer +4.3% (17/28)
+      market-wide drop (BTC -4% too)            n=  72 days= 42  trade avg  +4.1% vs random +1.7% (edge  +2.5%) | by day  +3.2% (+/-2.5), edge  +1.5% | older +9.7%/newer +0.6% (28/44)
+      coin-specific drop (BTC fine)             n=  28 days= 23  trade avg  +5.9% vs random +1.7% (edge  +4.2%) | by day  +7.4% (+/-4.6), edge  +5.7% | older +2.2%/newer +7.6% (9/19)
+   drop >= 16%, hold 5d                         n=  51 days= 31  trade avg  +5.5% vs random +0.5% (edge  +5.1%) | by day  +7.8% (+/-4.0), edge  +7.3% | older +3.1%/newer +6.5% (14/37)
+   drop >= 16%, hold 10d                        n=  45 days= 26  trade avg  +5.2% vs random +1.6% (edge  +3.5%) | by day  +5.7% (+/-3.5), edge  +4.0% | older +9.0%/newer +3.4% (14/31)
+   drop >= 20%, hold 5d                         n=  16 days= 13  trade avg +11.4% vs random +0.8% (edge +10.6%) | by day +13.1% (+/-9.0), edge +12.4% | older +5.3%/newer +13.4% (4/12)
+   drop >= 20%, hold 10d                        n=  15 days= 12  trade avg +10.6% vs random +1.4% (edge  +9.2%) | by day +12.8% (+/-6.8), edge +11.4% | older +10.4%/newer +10.7% (4/11)
+
+ranks 11-40: 22 coins
+   drop >= 8%, hold 5d                          n=1091 days=393  trade avg  -0.1% vs random +0.7% (edge  -0.8%) | by day  +0.2% (+/-0.6), edge  -0.4% | older +0.7%/newer -0.5% (394/697)
+   drop >= 8%, hold 10d                         n= 852 days=345  trade avg  -0.1% vs random +1.2% (edge  -1.2%) | by day  +0.3% (+/-0.8), edge  -0.8% | older +2.1%/newer -1.5% (340/512)
+   drop >= 12%, hold 5d                         n= 456 days=186  trade avg  +1.2% vs random +0.6% (edge  +0.6%) | by day  +0.8% (+/-1.0), edge  +0.2% | older +1.1%/newer +1.2% (142/314)
+   drop >= 12%, hold 10d                        n= 381 days=172  trade avg  +1.5% vs random +1.3% (edge  +0.3%) | by day  +0.6% (+/-1.3), edge  -0.6% | older +4.1%/newer +0.2% (130/251)
+      only while BTC above 200-day avg          n= 242 days=105  trade avg  +0.7% vs random +1.3% (edge  -0.5%) | by day  +0.9% (+/-1.8), edge  -0.4% | older +2.7%/newer -0.5% (96/146)
+      only while BTC below 200-day avg          n= 139 days= 67  trade avg  +2.9% vs random +1.3% (edge  +1.6%) | by day  +0.3% (+/-1.7), edge  -1.0% | older +7.9%/newer +1.2% (34/105)
+      market-wide drop (BTC -4% too)            n= 195 days= 64  trade avg  +2.5% vs random +1.3% (edge  +1.2%) | by day  +1.2% (+/-1.6), edge  -0.0% | older +10.1%/newer -1.0% (62/133)
+      coin-specific drop (BTC fine)             n= 186 days=108  trade avg  +0.5% vs random +1.3% (edge  -0.8%) | by day  +0.3% (+/-1.8), edge  -1.0% | older -1.4%/newer +1.6% (68/118)
+   drop >= 16%, hold 5d                         n= 169 days= 83  trade avg  +1.5% vs random +0.6% (edge  +0.9%) | by day  +0.3% (+/-1.5), edge  -0.2% | older -0.1%/newer +2.1% (51/118)
+   drop >= 16%, hold 10d                        n= 151 days= 77  trade avg  +1.1% vs random +1.6% (edge  -0.6%) | by day  +0.4% (+/-1.7), edge  -1.3% | older +4.0%/newer -0.3% (49/102)
+   drop >= 20%, hold 5d                         n=  53 days= 25  trade avg  +1.8% vs random +0.4% (edge  +1.4%) | by day  +1.3% (+/-3.5), edge  +1.0% | older -2.1%/newer +3.2% (14/39)
+   drop >= 20%, hold 10d                        n=  51 days= 24  trade avg  +4.3% vs random +1.3% (edge  +3.1%) | by day  +6.3% (+/-4.4), edge  +5.1% | older +3.8%/newer +4.5% (13/38)
+
+ranks 41-99 (small, most survivorship): 36 coins
+   drop >= 8%, hold 5d                          n=1915 days=564  trade avg  +0.1% vs random +0.3% (edge  -0.2%) | by day  +0.9% (+/-0.6), edge  +0.6% | older +0.5%/newer -0.0% (563/1352)
+   drop >= 8%, hold 10d                         n=1445 days=493  trade avg  +0.5% vs random +0.6% (edge  -0.1%) | by day  +2.3% (+/-1.0), edge  +1.7% | older +2.3%/newer -0.3% (470/975)
+   drop >= 12%, hold 5d                         n= 875 days=325  trade avg  +0.2% vs random -0.3% (edge  +0.5%) | by day  +0.2% (+/-0.8), edge  +0.4% | older -0.0%/newer +0.3% (234/641)
+   drop >= 12%, hold 10d                        n= 733 days=292  trade avg  +0.4% vs random +1.0% (edge  -0.6%) | by day  +0.7% (+/-1.2), edge  -0.3% | older +2.0%/newer -0.2% (217/516)
+      only while BTC above 200-day avg          n= 457 days=173  trade avg  -0.0% vs random +1.0% (edge  -1.1%) | by day  +1.0% (+/-1.5), edge  +0.0% | older +1.4%/newer -0.9% (166/291)
+      only while BTC below 200-day avg          n= 276 days=119  trade avg  +1.2% vs random +1.0% (edge  +0.2%) | by day  +0.4% (+/-2.0), edge  -0.6% | older +3.8%/newer +0.6% (51/225)
+      market-wide drop (BTC -4% too)            n= 303 days= 72  trade avg  +0.6% vs random +1.0% (edge  -0.4%) | by day  +1.0% (+/-1.8), edge  -0.1% | older +6.3%/newer -1.9% (94/209)
+      coin-specific drop (BTC fine)             n= 430 days=220  trade avg  +0.3% vs random +1.0% (edge  -0.7%) | by day  +0.7% (+/-1.5), edge  -0.3% | older -1.4%/newer +0.9% (123/307)
+   drop >= 16%, hold 5d                         n= 398 days=182  trade avg  +1.0% vs random +0.1% (edge  +0.9%) | by day  +1.0% (+/-1.4), edge  +0.9% | older +1.2%/newer +1.0% (86/312)
+   drop >= 16%, hold 10d                        n= 341 days=156  trade avg  +0.2% vs random +0.7% (edge  -0.5%) | by day  +1.1% (+/-1.9), edge  +0.4% | older +4.4%/newer -1.1% (81/260)
+   drop >= 20%, hold 5d                         n= 184 days= 96  trade avg  +1.2% vs random +0.3% (edge  +1.0%) | by day  +0.2% (+/-1.8), edge  -0.1% | older +2.6%/newer +0.9% (31/153)
+   drop >= 20%, hold 10d                        n= 169 days= 86  trade avg  +1.8% vs random +0.3% (edge  +1.5%) | by day  +1.1% (+/-3.1), edge  +0.8% | older +5.8%/newer +0.8% (31/138)
+
+HOW TO READ: (1) if the edge is bigger for small coins, survivorship is likely inflating it. (2) 'by day' removes the crash-day clustering: if the by-day edge is small or its +/- is as large as the average, there are too few independent events. (3) A real effect should show the same sign in the older and newer half, and in both BTC regimes. 'Buying a falling coin' that goes to zero is invisible here because dead coins are not in the data.
