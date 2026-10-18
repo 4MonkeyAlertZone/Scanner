@@ -1,3 +1,20 @@
-What-if: $1,000 in every paper 'RECLAIM A' opened since 16 Oct 15:30 UTC. Prices read 18 Oct 2026 18:39 UTC. No fees or slippage.
+What-if: $1,000 in every paper 'RECLAIM A' opened since 16 Oct 00:00 UTC. Prices read 18 Oct 2026 18:41 UTC. No fees or slippage.
 
+  BCH      crypto bought 16 Oct 15:06  at 280.9        now 269.4         -4.09%  $  -40.94  open
+  BCH      crypto bought 16 Oct 15:06  at 280.9        now 269.4         -4.09%  $  -40.94  open
+  BCH      crypto bought 16 Oct 15:06  at 280.9        now 269.4         -4.09%  $  -40.94  open
+  AAVE     crypto bought 16 Oct 15:06  at 160.53       now 149.01        -7.18%  $  -71.76  open
+  AAVE     crypto bought 16 Oct 15:06  at 160.53       now 149.01        -7.18%  $  -71.76  open
+  AAVE     crypto bought 16 Oct 15:06  at 160.53       now 149.01        -7.18%  $  -71.76  open
+  DOT      crypto bought 16 Oct 15:06  at 1.1717       now 1.0728        -8.44%  $  -84.41  open
+  DOT      crypto bought 16 Oct 15:06  at 1.1717       now 1.0728        -8.44%  $  -84.41  open
+  DOT      crypto bought 16 Oct 15:06  at 1.1717       now 1.0728        -8.44%  $  -84.41  open
+  ALGO     crypto bought 16 Oct 15:06  at 0.11912      now 0.10781       -9.49%  $  -94.95  open
+  ALGO     crypto bought 16 Oct 15:06  at 0.11912      now 0.10781       -9.49%  $  -94.95  open
+  ALGO     crypto bought 16 Oct 15:06  at 0.11912      now 0.10781       -9.49%  $  -94.95  open
+  WLD      crypto bought 16 Oct 16:13  at 0.5191       now 0.471         -9.27%  $  -92.66  open
+  WLD      crypto bought 16 Oct 16:13  at 0.5191       now 0.471         -9.27%  $  -92.66  open
+  WLD      crypto bought 16 Oct 16:13  at 0.5191       now 0.471         -9.27%  $  -92.66  open
 
+CRYPTO   15 trades, $15,000 invested: profit/loss $-1,154.15 (-7.69%), 0 up / 15 down, 0 already closed
+TOTAL    15 trades, $15,000 invested: profit/loss $-1,154.15 (-7.69%)
