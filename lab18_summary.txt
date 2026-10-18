@@ -1,0 +1,41 @@
+LAB 18: funding rates, 2022-11-21 to 2026-10-17; older half to 2024-11-03. Cost 0.20% round trip. Entry next day's open.
+
+BTC: funding history 1583 days
+   Forward return by funding level (average per-8h rate that day). Overlapping days, so a rough guide: bucket -> days, next 1d / 7d / 30d, share of days in the older half
+   negative                        149 days   +0.21%   +1.8%   +4.4%   36% older
+   0 to 0.005%                     466 days   +0.23%   +1.0%   +3.8%   42% older
+   0.005 to 0.01% (normal)         415 days   -0.02%   +0.3%   +3.6%   44% older
+   0.01 to 0.03%                   337 days   +0.15%   +1.5%   +6.8%   76% older
+   above 0.03% (crowded longs)      29 days   +0.70%   +3.1%   +1.1%   93% older
+   ALL DAYS                       1396 days   +0.14%   +1.0%   +4.5%
+
+   BTC: funding <= 0, hold 7d                       n= 46   +1.3% (+/-1.1)  win  52%  random  +0.8%  edge  +0.4%  older +2.5%/newer +0.3% (n=20/26)
+   BTC: funding <= 0, hold 14d                      n= 32   +3.5% (+/-1.9)  win  53%  random  +1.9%  edge  +1.6%  older +6.2%/newer +1.1% (n=15/17)
+   BTC: funding <= 0, hold 30d                      n= 21   +2.5% (+/-3.1)  win  57%  random  +3.9%  edge  -1.4%  older +6.7%/newer -1.3% (n=10/11)
+   BTC: funding <= 0.005%, hold 7d                  n=116   +1.1% (+/-0.6)  win  49%  random  +0.9%  edge  +0.2%  older +1.4%/newer +0.9% (n=48/68)
+   BTC: funding <= 0.005%, hold 14d                 n= 65   +1.4% (+/-1.1)  win  58%  random  +1.5%  edge  -0.0%  older +3.8%/newer -0.3% (n=27/38)
+   BTC: funding <= 0.005%, hold 30d                 n= 35   +3.7% (+/-2.3)  win  60%  random  +4.5%  edge  -0.9%  older +8.8%/newer -0.6% (n=16/19)
+   BTC: funding >= 0.03% (crowded longs, buying here), hold 7d n=  7   +3.0% (+/-2.8)  win  71%  random  +1.0%  edge  +1.9%  older +2.7%/newer +3.6% (n=5/2)
+   BTC: funding >= 0.03% (crowded longs, buying here), hold 14d n=  6   +4.1% (+/-4.8)  win  67%  random  +1.5%  edge  +2.6%  older +5.1%/newer +2.2% (n=4/2)
+   BTC: funding >= 0.03% (crowded longs, buying here), hold 30d n=  4  too few trades
+
+ETH: funding history 1583 days
+   Forward return by funding level (average per-8h rate that day). Overlapping days, so a rough guide: bucket -> days, next 1d / 7d / 30d, share of days in the older half
+   negative                        165 days   +0.27%   +1.4%   +3.3%   27% older
+   0 to 0.005%                     456 days   +0.17%   +0.6%   +3.1%   38% older
+   0.005 to 0.01% (normal)         400 days   -0.10%   +0.7%   +2.7%   52% older
+   0.01 to 0.03%                   338 days   +0.19%   +0.8%   +5.6%   75% older
+   above 0.03% (crowded longs)      37 days   +0.13%   +0.3%   -4.2%   92% older
+   ALL DAYS                       1396 days   +0.11%   +0.8%   +3.4%
+
+   ETH: funding <= 0, hold 7d                       n= 49   -0.2% (+/-1.1)  win  49%  random  +0.5%  edge  -0.7%  older +2.4%/newer -1.5% (n=17/32)
+   ETH: funding <= 0, hold 14d                      n= 36   +2.0% (+/-2.0)  win  58%  random  +0.8%  edge  +1.2%  older +5.7%/newer -0.1% (n=13/23)
+   ETH: funding <= 0, hold 30d                      n= 22   +4.2% (+/-4.3)  win  59%  random  +4.3%  edge  -0.2%  older +6.0%/newer +3.1% (n=8/14)
+   ETH: funding <= 0.005%, hold 7d                  n=115   +0.5% (+/-0.7)  win  51%  random  +0.1%  edge  +0.4%  older +0.9%/newer +0.3% (n=46/69)
+   ETH: funding <= 0.005%, hold 14d                 n= 69   +0.7% (+/-1.4)  win  48%  random  +1.4%  edge  -0.6%  older +0.6%/newer +0.9% (n=29/40)
+   ETH: funding <= 0.005%, hold 30d                 n= 36   +1.4% (+/-2.7)  win  56%  random  +3.0%  edge  -1.6%  older +2.0%/newer +1.0% (n=15/21)
+   ETH: funding >= 0.03% (crowded longs, buying here), hold 7d n= 10   +0.4% (+/-2.7)  win  50%  random  +0.1%  edge  +0.3%  older +0.7%/newer -1.1% (n=8/2)
+   ETH: funding >= 0.03% (crowded longs, buying here), hold 14d n=  8   +3.4% (+/-4.0)  win  62%  random  +1.4%  edge  +2.0%  older +2.6%/newer +5.9% (n=6/2)
+   ETH: funding >= 0.03% (crowded longs, buying here), hold 30d n=  6   +6.3% (+/-4.2)  win  67%  random  +1.4%  edge  +4.9%  older +3.7%/newer +19.6% (n=5/1)
+
+HOW TO READ: the idea to confirm is 'negative/low funding precedes bounces and very high funding precedes weak returns'. It only matters if the edge is clearly above the error margin in BOTH halves. Funding extremes cluster in a few episodes, so n overstates the evidence.
