@@ -15,19 +15,27 @@ START = calendar.timegm((2022, 11, 21, 0, 0, 0)); SIDE = float(os.environ.get("L
 fmt = lambda d: time.strftime("%Y-%m-%d", time.gmtime(d * 86400))
 
 def load(tok):
-    try:
-        m = B.hist_crypto(tok, "1h", 36500)
-        return tok, {int(r[0] // 3600): (r[1], r[2], r[3], r[4]) for r in m}, ""
-    except Exception as e: return tok, {}, str(e)[:60]
+    """hourly history with retries (a quick burst of paged requests can be rate-limited)."""
+    best = []
+    for attempt in range(4):
+        try:
+            m = B.hist_crypto(tok, "1h", 36500)
+            if len(m) > 1000 and len(m) <= len(best): break          # same answer twice: the coin just has less history
+            if len(m) > len(best): best = m
+            if len(best) > 30000: break
+        except Exception as e: print(f"  {tok}: attempt {attempt + 1} failed: {str(e)[:60]}", flush=True)
+        time.sleep(4 * (attempt + 1))
+    print(f"  {tok}: {len(best)} hourly candles", flush=True)
+    return tok, {int(r[0] // 3600): (r[1], r[2], r[3], r[4]) for r in best}, ""
 
 def mean(v): return sum(v) / len(v) if v else 0.0
 
 def main():
     toks = [c for c in scanner.top100() if c != "BTC"][:40]
     print("Lab 19: loading hourly candles (this takes a while)...", flush=True)
-    with Pool(max(1, min(4, os.cpu_count() or 1))) as p: res = p.map(load, ["BTC"] + toks)
+    with Pool(2) as p: res = p.map(load, ["BTC"] + toks)
     data = {t: d for t, d, e in res if len(d) > 5000}
-    if "BTC" not in data: raise SystemExit("no BTC hourly data")
+    if "BTC" not in data: raise SystemExit("no BTC hourly data (loaded: " + ", ".join(f"{t}={len(d)}" for t, d, e in res[:6]) + ")")
     h0 = min(data["BTC"]); h1 = max(data["BTC"]); HN = h1 - h0 + 1
     arr = {}
     for t, d in data.items():
@@ -71,9 +79,11 @@ def main():
     for t in data:
         O, H, L, C = arr[t]; hh = []; ll = []; cc = []
         for d in days:
-            a = d * 24 - h0; seg = list(range(a, a + 24))
-            if a < 0 or a + 24 > HN or any(C[k] is None for k in seg): hh.append(None); ll.append(None); cc.append(None); continue
-            hh.append(max(H[k] for k in seg)); ll.append(min(L[k] for k in seg)); cc.append(C[a + 23])
+            a = d * 24 - h0
+            if a < 0 or a + 24 > HN: hh.append(None); ll.append(None); cc.append(None); continue
+            seg = [k for k in range(a, a + 24) if C[k] is not None]          # tolerate a few missing hours in a day
+            if len(seg) < 18: hh.append(None); ll.append(None); cc.append(None); continue
+            hh.append(max(H[k] for k in seg)); ll.append(min(L[k] for k in seg)); cc.append(C[seg[-1]])
         Hd[t], Ld[t], Cd[t] = hh, ll, cc
     i0 = next(i for i, d in enumerate(days) if d * 86400 >= START)
     pos, trades, events, curve, _ = TP.replay(days, Hd, Ld, Cd, coins, i0)

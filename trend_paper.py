@@ -39,7 +39,8 @@ def atr_at(H, L, C, i):
 def replay(days, H, L, C, coins, i0):
     n = len(days); cb = C["BTC"]; pos = {}; trades = []; events = []; W = {}
     for i in range(i0, n):
-        g = i >= GATE_N - 1 and cb[i] is not None and cb[i] > sum(cb[i - GATE_N + 1:i + 1]) / GATE_N
+        seg = [x for x in cb[max(0, i - GATE_N + 1):i + 1] if x is not None]
+        g = i >= GATE_N - 1 and cb[i] is not None and len(seg) >= GATE_N * 0.9 and cb[i] > sum(seg) / len(seg)
         for c in coins:
             cl = C[c][i]
             if cl is None: continue
