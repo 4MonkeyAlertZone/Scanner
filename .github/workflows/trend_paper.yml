@@ -28,5 +28,5 @@ jobs:
         run: |
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
-          git add atrtrend_start.txt atrtrend_report.txt atrtrend_trades.csv atrtrend_notified.txt 2>/dev/null || true
+          git add atrtrend_* 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "ATR trend paper update" && (git pull --rebase -q; git push))
