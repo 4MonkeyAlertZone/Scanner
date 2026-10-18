@@ -1,0 +1,32 @@
+name: ATR trend paper test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 0 * * *"
+  push:
+    paths:
+      - ".github/workflows/trend_paper.yml"
+      - "trend_paper.py"
+concurrency:
+  group: trendpaper
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  trend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python trend_paper.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add atrtrend_start.txt atrtrend_report.txt atrtrend_trades.csv atrtrend_notified.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "ATR trend paper update" && (git pull --rebase -q; git push))
