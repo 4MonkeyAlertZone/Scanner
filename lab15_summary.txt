@@ -1,0 +1,69 @@
+LAB 15: 68 alts + BTC, 2022-11-21 to 2026-10-17; older half to 2024-11-03. Start 1000. Cost 0.10% per side. Strategy returns are applied the day after the signal.
+Survivorship bias: only coins listed today are used, which flatters coin-picking strategies (momentum, trend) more than BTC. 3 years is one market cycle: treat differences as hints, not proof.
+
+
+BENCHMARKS
+  hold BTC
+      final   5,164  max drawdown  -53%  Sharpe 1.15  older half +336%  newer half +19%  | 22 +5%  23 +156%  24 +121%  25 -6%  26 -7%
+  hold BTC only while above its 200-day avg
+      final   3,381  max drawdown  -33%  Sharpe 1.03  older half +159%  newer half +30%  | 22 +0%  23 +94%  24 +82%  25 -18%  26 +17%
+  hold the alt basket (equal weight, monthly rebalance)
+      final   2,677  max drawdown  -72%  Sharpe 0.73  older half +130%  newer half +17%  | 22 -7%  23 +147%  24 +88%  25 -50%  26 +23%
+
+TREND FOLLOWING
+  20-day breakout, exit below 10-day low
+      final   2,416  max drawdown  -61%  Sharpe 0.76  older half +86%  newer half +30%  | 22 -3%  23 +92%  24 +67%  25 -28%  26 +8%
+  20-day breakout, exit below 10-day low  [vol-targeted]
+      final   2,382  max drawdown  -50%  Sharpe 0.80  older half +86%  newer half +28%  | 22 -3%  23 +85%  24 +63%  25 -22%  26 +5%
+  20-day breakout, exit below 10-day low, flat when BTC < 200-day avg
+      final   2,693  max drawdown  -49%  Sharpe 0.88  older half +45%  newer half +85%  | 22 +0%  23 +63%  24 +48%  25 -17%  26 +34%
+  55-day breakout, exit below 20-day low
+      final   2,802  max drawdown  -60%  Sharpe 0.87  older half +110%  newer half +34%  | 22 +1%  23 +92%  24 +76%  25 -21%  26 +4%
+  55-day breakout, exit below 20-day low  [vol-targeted]
+      final   2,679  max drawdown  -50%  Sharpe 0.95  older half +120%  newer half +22%  | 22 +1%  23 +87%  24 +74%  25 -19%  26 +1%
+  55-day breakout, exit below 20-day low, flat when BTC < 200-day avg
+      final   3,326  max drawdown  -47%  Sharpe 1.03  older half +98%  newer half +68%  | 22 +0%  23 +74%  24 +74%  25 -19%  26 +35%
+  100-day breakout, exit below 50-day low
+      final   1,701  max drawdown  -69%  Sharpe 0.54  older half +75%  newer half -3%  | 22 -1%  23 +61%  24 +78%  25 -48%  26 +15%
+  100-day breakout, exit below 50-day low  [vol-targeted]
+      final   2,037  max drawdown  -56%  Sharpe 0.72  older half +85%  newer half +10%  | 22 -1%  23 +52%  24 +96%  25 -37%  26 +9%
+  100-day breakout, exit below 50-day low, flat when BTC < 200-day avg
+      final   1,904  max drawdown  -57%  Sharpe 0.63  older half +47%  newer half +30%  | 22 +0%  23 +46%  24 +49%  25 -32%  26 +28%
+  55-day breakout, trailing stop 3 x daily range
+      final   3,103  max drawdown  -50%  Sharpe 1.01  older half +108%  newer half +49%  | 22 -0%  23 +101%  24 +60%  25 -6%  26 +3%
+  55-day breakout, trailing stop 3 x daily range  [vol-targeted]
+      final   3,191  max drawdown  -40%  Sharpe 1.16  older half +112%  newer half +50%  | 22 -0%  23 +91%  24 +74%  25 -5%  26 +1%
+  55-day breakout, trailing stop 3 x daily range, flat when BTC < 200-day avg
+      final   4,146  max drawdown  -40%  Sharpe 1.28  older half +109%  newer half +99%  | 22 +0%  23 +89%  24 +70%  25 -3%  26 +34%
+
+MOMENTUM ROTATION
+  top 5 by 30-day return, monthly
+      final   2,658  max drawdown  -78%  Sharpe 0.70  older half +134%  newer half +14%  | 22 +5%  23 +233%  24 +13%  25 -16%  26 -20%
+  top 5 by 30-day return, monthly, flat when BTC < 200-day avg
+      final   3,840  max drawdown  -75%  Sharpe 0.87  older half +15%  newer half +233%  | 22 +0%  23 +134%  24 -17%  25 +18%  26 +68%
+  top 10 by 30-day return, monthly
+      final   2,971  max drawdown  -67%  Sharpe 0.77  older half +139%  newer half +24%  | 22 +0%  23 +201%  24 +15%  25 -25%  26 +14%
+  top 10 by 30-day return, monthly, flat when BTC < 200-day avg
+      final   2,231  max drawdown  -69%  Sharpe 0.65  older half +15%  newer half +95%  | 22 +0%  23 +111%  24 -22%  25 -22%  26 +72%
+  top 5 by 60-day return, monthly
+      final   3,225  max drawdown  -76%  Sharpe 0.77  older half +254%  newer half -9%  | 22 +8%  23 +258%  24 +36%  25 -43%  26 +7%
+  top 5 by 60-day return, monthly  [vol-targeted]
+      final   2,832  max drawdown  -54%  Sharpe 0.84  older half +164%  newer half +7%  | 22 +5%  23 +160%  24 +22%  25 -20%  26 +6%
+  top 5 by 60-day return, monthly, flat when BTC < 200-day avg
+      final   2,443  max drawdown  -66%  Sharpe 0.67  older half +54%  newer half +58%  | 22 +0%  23 +185%  24 -19%  25 -29%  26 +50%
+  top 10 by 60-day return, monthly
+      final   2,423  max drawdown  -73%  Sharpe 0.68  older half +141%  newer half +0%  | 22 +4%  23 +127%  24 +53%  25 -43%  26 +17%
+  top 10 by 60-day return, monthly  [vol-targeted]
+      final   2,032  max drawdown  -59%  Sharpe 0.66  older half +110%  newer half -3%  | 22 +4%  23 +96%  24 +34%  25 -30%  26 +6%
+  top 10 by 60-day return, monthly, flat when BTC < 200-day avg
+      final   1,979  max drawdown  -64%  Sharpe 0.60  older half +44%  newer half +38%  | 22 +0%  23 +105%  24 +5%  25 -40%  26 +54%
+  top 5 by 90-day return, monthly
+      final   1,969  max drawdown  -74%  Sharpe 0.59  older half +145%  newer half -20%  | 22 +7%  23 +137%  24 +57%  25 -48%  26 -4%
+  top 5 by 90-day return, monthly, flat when BTC < 200-day avg
+      final   1,370  max drawdown  -64%  Sharpe 0.42  older half +8%  newer half +27%  | 22 +0%  23 +68%  24 +3%  25 -37%  26 +26%
+  top 10 by 90-day return, monthly
+      final   1,897  max drawdown  -68%  Sharpe 0.57  older half +70%  newer half +11%  | 22 +3%  23 +62%  24 +62%  25 -47%  26 +32%
+  top 10 by 90-day return, monthly, flat when BTC < 200-day avg
+      final   1,489  max drawdown  -63%  Sharpe 0.45  older half +6%  newer half +40%  | 22 +0%  23 +33%  24 +27%  25 -40%  26 +47%
+
+HOW TO READ: look for a strategy that (1) beats holding BTC on Sharpe or max drawdown, and (2) is positive in BOTH halves. Neighbouring settings (20/55/100 days, 30/60/90 days) should give similar answers; if only one setting works, it is luck. The vol-targeted lines show whether scaling down in turbulent times cuts the drawdown without killing the profit.

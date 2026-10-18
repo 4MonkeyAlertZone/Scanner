@@ -1,0 +1,30 @@
+group,name,final,max_dd_pct,sharpe,older_half_pct,newer_half_pct
+BENCHMARKS,hold BTC,5164,-53,1.15,336,19
+BENCHMARKS,hold BTC only while above its 200-day avg,3381,-33,1.03,159,30
+BENCHMARKS,"hold the alt basket (equal weight, monthly rebalance)",2677,-72,0.73,130,17
+TREND FOLLOWING,"20-day breakout, exit below 10-day low",2416,-61,0.76,86,30
+TREND FOLLOWING,"20-day breakout, exit below 10-day low  [vol-targeted]",2382,-50,0.8,86,28
+TREND FOLLOWING,"20-day breakout, exit below 10-day low, flat when BTC < 200-day avg",2693,-49,0.88,45,85
+TREND FOLLOWING,"55-day breakout, exit below 20-day low",2802,-60,0.87,110,34
+TREND FOLLOWING,"55-day breakout, exit below 20-day low  [vol-targeted]",2679,-50,0.95,120,22
+TREND FOLLOWING,"55-day breakout, exit below 20-day low, flat when BTC < 200-day avg",3326,-47,1.03,98,68
+TREND FOLLOWING,"100-day breakout, exit below 50-day low",1701,-69,0.54,75,-3
+TREND FOLLOWING,"100-day breakout, exit below 50-day low  [vol-targeted]",2037,-56,0.72,85,10
+TREND FOLLOWING,"100-day breakout, exit below 50-day low, flat when BTC < 200-day avg",1904,-57,0.63,47,30
+TREND FOLLOWING,"55-day breakout, trailing stop 3 x daily range",3103,-50,1.01,108,49
+TREND FOLLOWING,"55-day breakout, trailing stop 3 x daily range  [vol-targeted]",3191,-40,1.16,112,50
+TREND FOLLOWING,"55-day breakout, trailing stop 3 x daily range, flat when BTC < 200-day avg",4146,-40,1.28,109,99
+MOMENTUM ROTATION,"top 5 by 30-day return, monthly",2658,-78,0.7,134,14
+MOMENTUM ROTATION,"top 5 by 30-day return, monthly, flat when BTC < 200-day avg",3840,-75,0.87,15,233
+MOMENTUM ROTATION,"top 10 by 30-day return, monthly",2971,-67,0.77,139,24
+MOMENTUM ROTATION,"top 10 by 30-day return, monthly, flat when BTC < 200-day avg",2231,-69,0.65,15,95
+MOMENTUM ROTATION,"top 5 by 60-day return, monthly",3225,-76,0.77,254,-9
+MOMENTUM ROTATION,"top 5 by 60-day return, monthly  [vol-targeted]",2832,-54,0.84,164,7
+MOMENTUM ROTATION,"top 5 by 60-day return, monthly, flat when BTC < 200-day avg",2443,-66,0.67,54,58
+MOMENTUM ROTATION,"top 10 by 60-day return, monthly",2423,-73,0.68,141,0
+MOMENTUM ROTATION,"top 10 by 60-day return, monthly  [vol-targeted]",2032,-59,0.66,110,-3
+MOMENTUM ROTATION,"top 10 by 60-day return, monthly, flat when BTC < 200-day avg",1979,-64,0.6,44,38
+MOMENTUM ROTATION,"top 5 by 90-day return, monthly",1969,-74,0.59,145,-20
+MOMENTUM ROTATION,"top 5 by 90-day return, monthly, flat when BTC < 200-day avg",1370,-64,0.42,8,27
+MOMENTUM ROTATION,"top 10 by 90-day return, monthly",1897,-68,0.57,70,11
+MOMENTUM ROTATION,"top 10 by 90-day return, monthly, flat when BTC < 200-day avg",1489,-63,0.45,6,40
