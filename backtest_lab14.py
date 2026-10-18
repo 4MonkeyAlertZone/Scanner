@@ -12,7 +12,7 @@ from multiprocessing import Pool
 import scanner, backtest as B
 
 START = calendar.timegm((2022, 11, 21, 0, 0, 0)); END = calendar.timegm((2025, 9, 1, 0, 0, 0)); MID = (START + END) // 2
-K = 5; LOOK = 60; MINRISE = 0.30; WAIT = 30; HOLD = 60; COST = 0.002
+K = 5; LOOK = 60; MINRISE = 0.30; WAIT = 30; HOLD = 60; COST = float(os.environ.get('LAB_COST', '0.002')); TAG = os.environ.get('LAB_TAG', '')
 ENT = (0.382, 0.5, 0.618, 0.786); EXT = (1.0, 1.272, 1.618); BUF = (0.01, 0.02, 0.03, 0.04, 0.05, 0.06)
 day = lambda e: time.strftime("%Y-%m-%d", time.gmtime(e))
 
@@ -67,7 +67,7 @@ def main():
     print(f"Lab 14: {len(coins)} coins...", flush=True)
     with Pool(max(1, os.cpu_count() or 1)) as p: res = p.map(coin, coins)
     rows = [r for _, rs, _, _ in res for r in rs]
-    text = [f"LAB 14 Fibonacci pullbacks: {len(rows)} filled trades from {len({r[0] for r in rows})} coins, {day(START)} to {day(END)}; older half before {day(MID)}, newer half after. R after 0.2% costs. 'random' = matched random entries.",
+    text = [f"COST USED: {COST:.2%} round trip. LAB 14 Fibonacci pullbacks: {len(rows)} filled trades from {len({r[0] for r in rows})} coins, {day(START)} to {day(END)}; older half before {day(MID)}, newer half after. R after 0.2% costs. 'random' = matched random entries.",
             "Entries within the same coin and week overlap and coins move together, so the effective number of independent trades is far smaller than n; treat edges under about 0.1R as noise.", ""]
     out = []; best = None
     for half, name in ((0, "OLDER HALF"), (1, "NEWER HALF"), (2, "WHOLE WINDOW")):
@@ -93,9 +93,9 @@ def main():
     text.append("HOW TO READ: a bigger stop gives a smaller R per loss, so compare the '% per trade' (price return of one trade, same money in every trade) against its random control, not R alone. Tight stops on daily coins that move 3-5% a day are hit by ordinary noise, so watch the win rate and the days held. win% shows how often a trade reaches its target; low-retrace/high-target combinations have low win rates but bigger wins. Compare with lab 13: holding BTC made 5.2x over a similar period. Survivorship bias (today's listed coins) flatters every long strategy here. Not financial advice.")
     t = "\n".join(text)
     if out:
-        with open(os.path.join(scanner.HERE, "lab14_results.csv"), "w", newline="") as fh:
+        with open(os.path.join(scanner.HERE, f"lab14{TAG}_results.csv"), "w", newline="") as fh:
             w = csv.DictWriter(fh, list(out[0].keys())); w.writeheader(); w.writerows(out)
-    open(os.path.join(scanner.HERE, "lab14_summary.txt"), "w").write(t + "\n"); print(t)
+    open(os.path.join(scanner.HERE, f"lab14{TAG}_summary.txt"), "w").write(t + "\n"); print(t)
     try: scanner.notify("Strategy lab 14 finished", "Fibonacci test done - results are in the repo.", scanner.NTFY_TOPIC, "microscope")
     except Exception as ex: print("(phone send failed:", ex, ")")
 
