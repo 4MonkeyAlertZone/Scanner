@@ -401,3 +401,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 400,MORPHO,crypto,long,RECLAIM C TP3,,1792296869,18 Oct 05:14,2.4153,2.2357196,2.9540412,open,,,,,,,,,168
 401,ZRO,crypto,long,BUY SIGNAL,3,1792296869,18 Oct 05:14,1.8944,1.8407893,1.9876,closed,1792309685,18 Oct 08:48,1.8358,stop,-3.29,-3.29,3.6,-1.16,
 402,STX,crypto,long,BUY SIGNAL,3,1792296869,18 Oct 05:14,0.3748,0.36529643,0.4093,open,,,,,,,,,
+403,DRV,crypto,long,IN ZONE,3,1792310846,18 Oct 09:07,0.3862,0.3628075,0.4506,open,,,,,,,,,
