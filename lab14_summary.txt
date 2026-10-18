@@ -1,0 +1,229 @@
+LAB 14 Fibonacci pullbacks: 82926 filled trades from 57 coins, 2022-11-21 to 2025-09-01; older half before 2024-04-11, newer half after. R after 0.2% costs. 'random' = matched random entries.
+Entries within the same coin and week overlap and coins move together, so the effective number of independent trades is far smaller than n; treat edges under about 0.1R as noise.
+
+OLDER HALF:  entry level x target -> n | avg R (+/-) | win% | random | avg days | coins
+   stop 1% below entry, retrace 0.382 target 1.0   n= 579 -0.42R (+/-0.17) = -0.4% per trade (random -0.1%) win    4%    1d
+   stop 1% below entry, retrace 0.382 target 1.272 n= 579 -0.40R (+/-0.22) = -0.4% per trade (random -0.1%) win    3%    1d
+   stop 1% below entry, retrace 0.382 target 1.618 n= 579 -0.36R (+/-0.25) = -0.4% per trade (random +0.6%) win    2%    1d
+   stop 1% below entry, retrace 0.5   target 1.0   n= 463 -0.29R (+/-0.24) = -0.3% per trade (random -0.1%) win    3%    1d
+   stop 1% below entry, retrace 0.5   target 1.272 n= 463 -0.35R (+/-0.30) = -0.3% per trade (random -0.2%) win    2%    1d
+   stop 1% below entry, retrace 0.5   target 1.618 n= 463 -0.34R (+/-0.36) = -0.3% per trade (random +0.1%) win    1%    1d
+   stop 1% below entry, retrace 0.618 target 1.0   n= 334 +0.77R (+/-0.55) = +0.8% per trade (random -0.1%) win    5%    2d
+   stop 1% below entry, retrace 0.618 target 1.272 n= 334 +0.99R (+/-0.68) = +1.0% per trade (random +0.2%) win    4%    2d
+   stop 1% below entry, retrace 0.618 target 1.618 n= 334 +1.31R (+/-0.75) = +1.3% per trade (random +0.4%) win    4%    3d
+   stop 1% below entry, retrace 0.786 target 1.0   n= 159 +0.91R (+/-0.80) = +0.9% per trade (random -0.5%) win    6%    3d
+   stop 1% below entry, retrace 0.786 target 1.272 n= 159 +1.27R (+/-1.03) = +1.3% per trade (random +0.5%) win    5%    3d
+   stop 1% below entry, retrace 0.786 target 1.618 n= 159 +1.76R (+/-1.33) = +1.8% per trade (random +0.2%) win    4%    4d
+   stop 2% below entry, retrace 0.382 target 1.0   n= 579 -0.35R (+/-0.12) = -0.7% per trade (random -0.0%) win    7%    1d
+   stop 2% below entry, retrace 0.382 target 1.272 n= 579 -0.36R (+/-0.14) = -0.7% per trade (random -0.1%) win    5%    2d
+   stop 2% below entry, retrace 0.382 target 1.618 n= 579 -0.38R (+/-0.16) = -0.8% per trade (random +0.5%) win    3%    3d
+   stop 2% below entry, retrace 0.5   target 1.0   n= 463 -0.22R (+/-0.16) = -0.4% per trade (random -0.7%) win    7%    2d
+   stop 2% below entry, retrace 0.5   target 1.272 n= 463 -0.26R (+/-0.21) = -0.5% per trade (random +0.0%) win    4%    3d
+   stop 2% below entry, retrace 0.5   target 1.618 n= 463 -0.19R (+/-0.26) = -0.4% per trade (random +0.0%) win    3%    3d
+   stop 2% below entry, retrace 0.618 target 1.0   n= 334 +0.44R (+/-0.33) = +0.9% per trade (random +0.3%) win    8%    3d
+   stop 2% below entry, retrace 0.618 target 1.272 n= 334 +0.62R (+/-0.42) = +1.2% per trade (random +0.5%) win    7%    4d
+   stop 2% below entry, retrace 0.618 target 1.618 n= 334 +0.90R (+/-0.49) = +1.8% per trade (random +0.2%) win    7%    5d
+   stop 2% below entry, retrace 0.786 target 1.0   n= 159 +1.11R (+/-0.52) = +2.2% per trade (random +0.7%) win   13%    6d
+   stop 2% below entry, retrace 0.786 target 1.272 n= 159 +1.23R (+/-0.64) = +2.5% per trade (random -0.4%) win   10%    7d
+   stop 2% below entry, retrace 0.786 target 1.618 n= 159 +1.56R (+/-0.81) = +3.1% per trade (random -0.7%) win    9%    8d
+   stop 3% below entry, retrace 0.382 target 1.0   n= 579 -0.34R (+/-0.09) = -1.0% per trade (random -0.1%) win   11%    2d
+   stop 3% below entry, retrace 0.382 target 1.272 n= 579 -0.40R (+/-0.11) = -1.2% per trade (random -0.3%) win    7%    3d
+   stop 3% below entry, retrace 0.382 target 1.618 n= 579 -0.37R (+/-0.13) = -1.1% per trade (random +0.4%) win    5%    4d
+   stop 3% below entry, retrace 0.5   target 1.0   n= 463 -0.19R (+/-0.14) = -0.6% per trade (random -0.3%) win    9%    4d
+   stop 3% below entry, retrace 0.5   target 1.272 n= 463 -0.18R (+/-0.18) = -0.5% per trade (random -0.2%) win    6%    5d
+   stop 3% below entry, retrace 0.5   target 1.618 n= 463 -0.09R (+/-0.22) = -0.3% per trade (random +0.1%) win    5%    5d
+   stop 3% below entry, retrace 0.618 target 1.0   n= 334 +0.14R (+/-0.23) = +0.4% per trade (random -0.1%) win   10%    5d
+   stop 3% below entry, retrace 0.618 target 1.272 n= 334 +0.30R (+/-0.30) = +0.9% per trade (random -0.4%) win    8%    6d
+   stop 3% below entry, retrace 0.618 target 1.618 n= 334 +0.55R (+/-0.35) = +1.7% per trade (random +0.1%) win    8%    6d
+   stop 3% below entry, retrace 0.786 target 1.0   n= 159 +1.10R (+/-0.40) = +3.3% per trade (random +0.0%) win   19%    9d
+   stop 3% below entry, retrace 0.786 target 1.272 n= 159 +1.09R (+/-0.47) = +3.3% per trade (random -0.2%) win   16%   11d
+   stop 3% below entry, retrace 0.786 target 1.618 n= 159 +1.35R (+/-0.58) = +4.1% per trade (random +1.2%) win   14%   12d
+   stop 4% below entry, retrace 0.382 target 1.0   n= 579 -0.25R (+/-0.08) = -1.0% per trade (random -0.0%) win   15%    3d
+   stop 4% below entry, retrace 0.382 target 1.272 n= 579 -0.29R (+/-0.10) = -1.2% per trade (random +0.3%) win   10%    4d
+   stop 4% below entry, retrace 0.382 target 1.618 n= 579 -0.28R (+/-0.12) = -1.1% per trade (random +0.0%) win    7%    5d
+   stop 4% below entry, retrace 0.5   target 1.0   n= 463 -0.24R (+/-0.11) = -1.0% per trade (random -0.2%) win   11%    5d
+   stop 4% below entry, retrace 0.5   target 1.272 n= 463 -0.24R (+/-0.15) = -0.9% per trade (random -0.1%) win    8%    6d
+   stop 4% below entry, retrace 0.5   target 1.618 n= 463 -0.13R (+/-0.18) = -0.5% per trade (random +0.6%) win    7%    7d
+   stop 4% below entry, retrace 0.618 target 1.0   n= 334 +0.31R (+/-0.20) = +1.2% per trade (random +0.1%) win   15%    7d
+   stop 4% below entry, retrace 0.618 target 1.272 n= 334 +0.48R (+/-0.26) = +1.9% per trade (random +0.7%) win   13%    9d
+   stop 4% below entry, retrace 0.618 target 1.618 n= 334 +0.68R (+/-0.30) = +2.7% per trade (random +0.2%) win   13%   10d
+   stop 4% below entry, retrace 0.786 target 1.0   n= 159 +0.95R (+/-0.32) = +3.8% per trade (random +0.6%) win   23%   12d
+   stop 4% below entry, retrace 0.786 target 1.272 n= 159 +1.02R (+/-0.38) = +4.1% per trade (random -0.0%) win   20%   14d
+   stop 4% below entry, retrace 0.786 target 1.618 n= 159 +1.31R (+/-0.48) = +5.3% per trade (random +0.9%) win   19%   15d
+   stop 5% below entry, retrace 0.382 target 1.0   n= 579 -0.26R (+/-0.07) = -1.3% per trade (random -0.1%) win   18%    4d
+   stop 5% below entry, retrace 0.382 target 1.272 n= 579 -0.30R (+/-0.09) = -1.5% per trade (random +0.4%) win   11%    6d
+   stop 5% below entry, retrace 0.382 target 1.618 n= 579 -0.28R (+/-0.11) = -1.4% per trade (random +0.8%) win    9%    7d
+   stop 5% below entry, retrace 0.5   target 1.0   n= 463 -0.11R (+/-0.11) = -0.6% per trade (random -0.2%) win   16%    6d
+   stop 5% below entry, retrace 0.5   target 1.272 n= 463 -0.12R (+/-0.13) = -0.6% per trade (random -0.6%) win   11%    8d
+   stop 5% below entry, retrace 0.5   target 1.618 n= 463 +0.04R (+/-0.17) = +0.2% per trade (random +0.4%) win   10%    9d
+   stop 5% below entry, retrace 0.618 target 1.0   n= 334 +0.33R (+/-0.17) = +1.6% per trade (random -0.3%) win   19%    9d
+   stop 5% below entry, retrace 0.618 target 1.272 n= 334 +0.51R (+/-0.22) = +2.5% per trade (random -0.1%) win   17%   11d
+   stop 5% below entry, retrace 0.618 target 1.618 n= 334 +0.73R (+/-0.26) = +3.6% per trade (random +0.1%) win   16%   12d
+   stop 5% below entry, retrace 0.786 target 1.0   n= 159 +0.83R (+/-0.27) = +4.2% per trade (random +0.0%) win   28%   15d
+   stop 5% below entry, retrace 0.786 target 1.272 n= 159 +0.90R (+/-0.32) = +4.5% per trade (random +0.9%) win   25%   17d
+   stop 5% below entry, retrace 0.786 target 1.618 n= 159 +1.11R (+/-0.39) = +5.5% per trade (random +0.3%) win   23%   19d
+   stop 6% below entry, retrace 0.382 target 1.0   n= 579 -0.24R (+/-0.07) = -1.5% per trade (random -0.4%) win   21%    5d
+   stop 6% below entry, retrace 0.382 target 1.272 n= 579 -0.30R (+/-0.08) = -1.8% per trade (random +0.0%) win   13%    7d
+   stop 6% below entry, retrace 0.382 target 1.618 n= 579 -0.29R (+/-0.10) = -1.7% per trade (random +0.7%) win   10%    9d
+   stop 6% below entry, retrace 0.5   target 1.0   n= 463 -0.13R (+/-0.10) = -0.8% per trade (random +0.3%) win   17%    7d
+   stop 6% below entry, retrace 0.5   target 1.272 n= 463 -0.14R (+/-0.12) = -0.8% per trade (random +0.6%) win   13%    9d
+   stop 6% below entry, retrace 0.5   target 1.618 n= 463 +0.03R (+/-0.15) = +0.2% per trade (random -0.0%) win   12%   10d
+   stop 6% below entry, retrace 0.618 target 1.0   n= 334 +0.27R (+/-0.15) = +1.6% per trade (random -0.7%) win   22%   11d
+   stop 6% below entry, retrace 0.618 target 1.272 n= 334 +0.46R (+/-0.19) = +2.8% per trade (random -0.6%) win   19%   13d
+   stop 6% below entry, retrace 0.618 target 1.618 n= 334 +0.70R (+/-0.23) = +4.2% per trade (random -0.5%) win   19%   14d
+   stop 6% below entry, retrace 0.786 target 1.0   n= 159 +0.87R (+/-0.24) = +5.2% per trade (random +0.4%) win   33%   18d
+   stop 6% below entry, retrace 0.786 target 1.272 n= 159 +0.97R (+/-0.29) = +5.8% per trade (random +0.1%) win   30%   20d
+   stop 6% below entry, retrace 0.786 target 1.618 n= 159 +1.09R (+/-0.34) = +6.6% per trade (random +0.5%) win   28%   22d
+
+NEWER HALF:  entry level x target -> n | avg R (+/-) | win% | random | avg days | coins
+   stop 1% below entry, retrace 0.382 target 1.0   n= 993 -0.83R (+/-0.09) = -0.8% per trade (random -0.1%) win    2%    0d
+   stop 1% below entry, retrace 0.382 target 1.272 n= 993 -0.82R (+/-0.11) = -0.8% per trade (random -0.2%) win    1%    1d
+   stop 1% below entry, retrace 0.382 target 1.618 n= 993 -0.84R (+/-0.13) = -0.8% per trade (random -0.1%) win    1%    1d
+   stop 1% below entry, retrace 0.5   target 1.0   n= 870 -0.61R (+/-0.14) = -0.6% per trade (random -0.1%) win    2%    1d
+   stop 1% below entry, retrace 0.5   target 1.272 n= 870 -0.78R (+/-0.15) = -0.8% per trade (random +0.0%) win    1%    1d
+   stop 1% below entry, retrace 0.5   target 1.618 n= 870 -0.68R (+/-0.20) = -0.7% per trade (random +0.2%) win    1%    1d
+   stop 1% below entry, retrace 0.618 target 1.0   n= 727 -0.33R (+/-0.19) = -0.3% per trade (random -0.2%) win    3%    1d
+   stop 1% below entry, retrace 0.618 target 1.272 n= 727 -0.36R (+/-0.23) = -0.4% per trade (random +0.1%) win    2%    1d
+   stop 1% below entry, retrace 0.618 target 1.618 n= 727 -0.36R (+/-0.25) = -0.4% per trade (random -0.2%) win    2%    2d
+   stop 1% below entry, retrace 0.786 target 1.0   n= 482 -0.25R (+/-0.27) = -0.2% per trade (random -0.2%) win    3%    1d
+   stop 1% below entry, retrace 0.786 target 1.272 n= 482 -0.24R (+/-0.30) = -0.2% per trade (random -0.0%) win    3%    2d
+   stop 1% below entry, retrace 0.786 target 1.618 n= 482 -0.14R (+/-0.37) = -0.1% per trade (random -0.2%) win    2%    2d
+   stop 2% below entry, retrace 0.382 target 1.0   n= 993 -0.57R (+/-0.08) = -1.1% per trade (random -0.3%) win    5%    1d
+   stop 2% below entry, retrace 0.382 target 1.272 n= 993 -0.63R (+/-0.08) = -1.3% per trade (random -0.4%) win    3%    2d
+   stop 2% below entry, retrace 0.382 target 1.618 n= 993 -0.68R (+/-0.10) = -1.4% per trade (random +0.4%) win    2%    2d
+   stop 2% below entry, retrace 0.5   target 1.0   n= 870 -0.52R (+/-0.09) = -1.0% per trade (random -0.2%) win    5%    1d
+   stop 2% below entry, retrace 0.5   target 1.272 n= 870 -0.63R (+/-0.10) = -1.3% per trade (random -0.2%) win    3%    2d
+   stop 2% below entry, retrace 0.5   target 1.618 n= 870 -0.60R (+/-0.13) = -1.2% per trade (random -0.1%) win    2%    2d
+   stop 2% below entry, retrace 0.618 target 1.0   n= 727 -0.47R (+/-0.11) = -0.9% per trade (random +0.3%) win    5%    2d
+   stop 2% below entry, retrace 0.618 target 1.272 n= 727 -0.47R (+/-0.14) = -0.9% per trade (random +0.3%) win    3%    3d
+   stop 2% below entry, retrace 0.618 target 1.618 n= 727 -0.44R (+/-0.15) = -0.9% per trade (random +0.0%) win    3%    3d
+   stop 2% below entry, retrace 0.786 target 1.0   n= 482 -0.06R (+/-0.20) = -0.1% per trade (random -0.1%) win    6%    3d
+   stop 2% below entry, retrace 0.786 target 1.272 n= 482 -0.10R (+/-0.23) = -0.2% per trade (random -0.4%) win    5%    4d
+   stop 2% below entry, retrace 0.786 target 1.618 n= 482 +0.02R (+/-0.28) = +0.0% per trade (random +0.2%) win    4%    4d
+   stop 3% below entry, retrace 0.382 target 1.0   n= 993 -0.58R (+/-0.06) = -1.7% per trade (random -0.4%) win    7%    1d
+   stop 3% below entry, retrace 0.382 target 1.272 n= 993 -0.61R (+/-0.07) = -1.8% per trade (random -0.2%) win    5%    2d
+   stop 3% below entry, retrace 0.382 target 1.618 n= 993 -0.59R (+/-0.08) = -1.8% per trade (random -0.0%) win    4%    3d
+   stop 3% below entry, retrace 0.5   target 1.0   n= 870 -0.45R (+/-0.08) = -1.3% per trade (random -0.3%) win    7%    2d
+   stop 3% below entry, retrace 0.5   target 1.272 n= 870 -0.53R (+/-0.09) = -1.6% per trade (random -0.1%) win    5%    3d
+   stop 3% below entry, retrace 0.5   target 1.618 n= 870 -0.49R (+/-0.11) = -1.5% per trade (random +0.1%) win    4%    3d
+   stop 3% below entry, retrace 0.618 target 1.0   n= 727 -0.42R (+/-0.09) = -1.3% per trade (random -0.4%) win    7%    3d
+   stop 3% below entry, retrace 0.618 target 1.272 n= 727 -0.40R (+/-0.11) = -1.2% per trade (random +0.1%) win    5%    4d
+   stop 3% below entry, retrace 0.618 target 1.618 n= 727 -0.44R (+/-0.12) = -1.3% per trade (random +0.4%) win    4%    4d
+   stop 3% below entry, retrace 0.786 target 1.0   n= 482 +0.14R (+/-0.18) = +0.4% per trade (random +0.0%) win   10%    5d
+   stop 3% below entry, retrace 0.786 target 1.272 n= 482 +0.17R (+/-0.21) = +0.5% per trade (random +0.6%) win    8%    5d
+   stop 3% below entry, retrace 0.786 target 1.618 n= 482 +0.27R (+/-0.25) = +0.8% per trade (random -0.3%) win    7%    6d
+   stop 4% below entry, retrace 0.382 target 1.0   n= 993 -0.52R (+/-0.05) = -2.1% per trade (random -0.5%) win   10%    2d
+   stop 4% below entry, retrace 0.382 target 1.272 n= 993 -0.59R (+/-0.06) = -2.4% per trade (random +0.1%) win    6%    3d
+   stop 4% below entry, retrace 0.382 target 1.618 n= 993 -0.62R (+/-0.07) = -2.5% per trade (random -0.0%) win    4%    4d
+   stop 4% below entry, retrace 0.5   target 1.0   n= 870 -0.41R (+/-0.07) = -1.6% per trade (random -0.4%) win   10%    3d
+   stop 4% below entry, retrace 0.5   target 1.272 n= 870 -0.50R (+/-0.08) = -2.0% per trade (random +0.1%) win    6%    4d
+   stop 4% below entry, retrace 0.5   target 1.618 n= 870 -0.52R (+/-0.09) = -2.1% per trade (random +0.5%) win    4%    5d
+   stop 4% below entry, retrace 0.618 target 1.0   n= 727 -0.29R (+/-0.09) = -1.2% per trade (random -0.1%) win   10%    4d
+   stop 4% below entry, retrace 0.618 target 1.272 n= 727 -0.29R (+/-0.11) = -1.1% per trade (random -0.1%) win    8%    5d
+   stop 4% below entry, retrace 0.618 target 1.618 n= 727 -0.30R (+/-0.13) = -1.2% per trade (random -0.1%) win    6%    6d
+   stop 4% below entry, retrace 0.786 target 1.0   n= 482 +0.20R (+/-0.16) = +0.8% per trade (random +0.2%) win   13%    6d
+   stop 4% below entry, retrace 0.786 target 1.272 n= 482 +0.25R (+/-0.18) = +1.0% per trade (random -0.4%) win   12%    7d
+   stop 4% below entry, retrace 0.786 target 1.618 n= 482 +0.39R (+/-0.22) = +1.6% per trade (random -0.3%) win   11%    8d
+   stop 5% below entry, retrace 0.382 target 1.0   n= 993 -0.51R (+/-0.05) = -2.5% per trade (random -0.1%) win   12%    3d
+   stop 5% below entry, retrace 0.382 target 1.272 n= 993 -0.59R (+/-0.05) = -3.0% per trade (random +0.0%) win    7%    4d
+   stop 5% below entry, retrace 0.382 target 1.618 n= 993 -0.64R (+/-0.06) = -3.2% per trade (random +0.3%) win    5%    5d
+   stop 5% below entry, retrace 0.5   target 1.0   n= 870 -0.40R (+/-0.06) = -2.0% per trade (random -0.2%) win   12%    4d
+   stop 5% below entry, retrace 0.5   target 1.272 n= 870 -0.46R (+/-0.07) = -2.3% per trade (random -0.0%) win    8%    5d
+   stop 5% below entry, retrace 0.5   target 1.618 n= 870 -0.46R (+/-0.09) = -2.3% per trade (random -0.4%) win    6%    6d
+   stop 5% below entry, retrace 0.618 target 1.0   n= 727 -0.30R (+/-0.08) = -1.5% per trade (random -0.3%) win   12%    6d
+   stop 5% below entry, retrace 0.618 target 1.272 n= 727 -0.29R (+/-0.10) = -1.4% per trade (random +0.1%) win    9%    7d
+   stop 5% below entry, retrace 0.618 target 1.618 n= 727 -0.31R (+/-0.11) = -1.6% per trade (random +0.3%) win    8%    8d
+   stop 5% below entry, retrace 0.786 target 1.0   n= 482 +0.05R (+/-0.13) = +0.3% per trade (random -0.4%) win   14%    7d
+   stop 5% below entry, retrace 0.786 target 1.272 n= 482 +0.12R (+/-0.15) = +0.6% per trade (random -0.3%) win   12%    8d
+   stop 5% below entry, retrace 0.786 target 1.618 n= 482 +0.23R (+/-0.18) = +1.2% per trade (random -0.2%) win   12%    9d
+   stop 6% below entry, retrace 0.382 target 1.0   n= 993 -0.49R (+/-0.04) = -2.9% per trade (random -0.3%) win   14%    3d
+   stop 6% below entry, retrace 0.382 target 1.272 n= 993 -0.54R (+/-0.05) = -3.3% per trade (random +0.4%) win    9%    5d
+   stop 6% below entry, retrace 0.382 target 1.618 n= 993 -0.58R (+/-0.06) = -3.5% per trade (random -0.4%) win    7%    6d
+   stop 6% below entry, retrace 0.5   target 1.0   n= 870 -0.36R (+/-0.06) = -2.1% per trade (random -0.6%) win   14%    5d
+   stop 6% below entry, retrace 0.5   target 1.272 n= 870 -0.41R (+/-0.07) = -2.5% per trade (random -0.3%) win   10%    7d
+   stop 6% below entry, retrace 0.5   target 1.618 n= 870 -0.41R (+/-0.08) = -2.5% per trade (random +0.5%) win    8%    8d
+   stop 6% below entry, retrace 0.618 target 1.0   n= 727 -0.22R (+/-0.08) = -1.3% per trade (random -0.5%) win   15%    7d
+   stop 6% below entry, retrace 0.618 target 1.272 n= 727 -0.19R (+/-0.10) = -1.2% per trade (random -0.1%) win   12%    8d
+   stop 6% below entry, retrace 0.618 target 1.618 n= 727 -0.17R (+/-0.12) = -1.0% per trade (random +0.6%) win   10%    9d
+   stop 6% below entry, retrace 0.786 target 1.0   n= 482 +0.06R (+/-0.12) = +0.4% per trade (random -0.2%) win   17%    8d
+   stop 6% below entry, retrace 0.786 target 1.272 n= 482 +0.14R (+/-0.14) = +0.8% per trade (random -0.9%) win   15%    9d
+   stop 6% below entry, retrace 0.786 target 1.618 n= 482 +0.26R (+/-0.17) = +1.6% per trade (random +0.9%) win   14%   11d
+
+WHOLE WINDOW:  entry level x target -> n | avg R (+/-) | win% | random | avg days | coins
+   stop 1% below entry, retrace 0.382 target 1.0   n=1572 -0.68R (+/-0.08) = -0.7% per trade (random -0.1%) win    3%    0d
+   stop 1% below entry, retrace 0.382 target 1.272 n=1572 -0.66R (+/-0.11) = -0.7% per trade (random -0.2%) win    2%    1d
+   stop 1% below entry, retrace 0.382 target 1.618 n=1572 -0.66R (+/-0.12) = -0.7% per trade (random +0.1%) win    1%    1d
+   stop 1% below entry, retrace 0.5   target 1.0   n=1333 -0.50R (+/-0.12) = -0.5% per trade (random -0.1%) win    3%    1d
+   stop 1% below entry, retrace 0.5   target 1.272 n=1333 -0.63R (+/-0.14) = -0.6% per trade (random -0.1%) win    1%    1d
+   stop 1% below entry, retrace 0.5   target 1.618 n=1333 -0.56R (+/-0.18) = -0.6% per trade (random +0.1%) win    1%    1d
+   stop 1% below entry, retrace 0.618 target 1.0   n=1061 +0.02R (+/-0.22) = +0.0% per trade (random -0.2%) win    4%    1d
+   stop 1% below entry, retrace 0.618 target 1.272 n=1061 +0.06R (+/-0.27) = +0.1% per trade (random +0.1%) win    3%    2d
+   stop 1% below entry, retrace 0.618 target 1.618 n=1061 +0.17R (+/-0.29) = +0.2% per trade (random -0.0%) win    3%    2d
+   stop 1% below entry, retrace 0.786 target 1.0   n= 641 +0.04R (+/-0.28) = +0.0% per trade (random -0.3%) win    4%    2d
+   stop 1% below entry, retrace 0.786 target 1.272 n= 641 +0.14R (+/-0.34) = +0.1% per trade (random +0.1%) win    3%    2d
+   stop 1% below entry, retrace 0.786 target 1.618 n= 641 +0.33R (+/-0.43) = +0.3% per trade (random -0.1%) win    3%    2d
+   stop 2% below entry, retrace 0.382 target 1.0   n=1572 -0.49R (+/-0.07) = -1.0% per trade (random -0.2%) win    6%    1d
+   stop 2% below entry, retrace 0.382 target 1.272 n=1572 -0.53R (+/-0.08) = -1.1% per trade (random -0.3%) win    4%    2d
+   stop 2% below entry, retrace 0.382 target 1.618 n=1572 -0.57R (+/-0.09) = -1.1% per trade (random +0.5%) win    3%    2d
+   stop 2% below entry, retrace 0.5   target 1.0   n=1333 -0.42R (+/-0.08) = -0.8% per trade (random -0.4%) win    5%    2d
+   stop 2% below entry, retrace 0.5   target 1.272 n=1333 -0.50R (+/-0.10) = -1.0% per trade (random -0.1%) win    3%    2d
+   stop 2% below entry, retrace 0.5   target 1.618 n=1333 -0.46R (+/-0.12) = -0.9% per trade (random -0.0%) win    3%    3d
+   stop 2% below entry, retrace 0.618 target 1.0   n=1061 -0.18R (+/-0.13) = -0.4% per trade (random +0.3%) win    6%    2d
+   stop 2% below entry, retrace 0.618 target 1.272 n=1061 -0.13R (+/-0.16) = -0.3% per trade (random +0.4%) win    5%    3d
+   stop 2% below entry, retrace 0.618 target 1.618 n=1061 -0.02R (+/-0.19) = -0.0% per trade (random +0.1%) win    4%    3d
+   stop 2% below entry, retrace 0.786 target 1.0   n= 641 +0.23R (+/-0.20) = +0.5% per trade (random +0.1%) win    8%    4d
+   stop 2% below entry, retrace 0.786 target 1.272 n= 641 +0.23R (+/-0.24) = +0.5% per trade (random -0.4%) win    6%    4d
+   stop 2% below entry, retrace 0.786 target 1.618 n= 641 +0.40R (+/-0.29) = +0.8% per trade (random +0.0%) win    5%    5d
+   stop 3% below entry, retrace 0.382 target 1.0   n=1572 -0.49R (+/-0.05) = -1.5% per trade (random -0.3%) win    9%    2d
+   stop 3% below entry, retrace 0.382 target 1.272 n=1572 -0.53R (+/-0.06) = -1.6% per trade (random -0.3%) win    5%    2d
+   stop 3% below entry, retrace 0.382 target 1.618 n=1572 -0.51R (+/-0.07) = -1.5% per trade (random +0.1%) win    4%    3d
+   stop 3% below entry, retrace 0.5   target 1.0   n=1333 -0.36R (+/-0.07) = -1.1% per trade (random -0.3%) win    8%    3d
+   stop 3% below entry, retrace 0.5   target 1.272 n=1333 -0.41R (+/-0.08) = -1.2% per trade (random -0.1%) win    5%    4d
+   stop 3% below entry, retrace 0.5   target 1.618 n=1333 -0.35R (+/-0.11) = -1.1% per trade (random +0.1%) win    4%    4d
+   stop 3% below entry, retrace 0.618 target 1.0   n=1061 -0.25R (+/-0.10) = -0.7% per trade (random -0.3%) win    8%    4d
+   stop 3% below entry, retrace 0.618 target 1.272 n=1061 -0.18R (+/-0.12) = -0.5% per trade (random -0.1%) win    6%    4d
+   stop 3% below entry, retrace 0.618 target 1.618 n=1061 -0.13R (+/-0.14) = -0.4% per trade (random +0.3%) win    5%    5d
+   stop 3% below entry, retrace 0.786 target 1.0   n= 641 +0.38R (+/-0.17) = +1.1% per trade (random +0.0%) win   12%    6d
+   stop 3% below entry, retrace 0.786 target 1.272 n= 641 +0.40R (+/-0.20) = +1.2% per trade (random +0.4%) win   10%    7d
+   stop 3% below entry, retrace 0.786 target 1.618 n= 641 +0.54R (+/-0.23) = +1.6% per trade (random +0.1%) win    9%    8d
+   stop 4% below entry, retrace 0.382 target 1.0   n=1572 -0.42R (+/-0.05) = -1.7% per trade (random -0.3%) win   12%    2d
+   stop 4% below entry, retrace 0.382 target 1.272 n=1572 -0.48R (+/-0.05) = -1.9% per trade (random +0.1%) win    7%    3d
+   stop 4% below entry, retrace 0.382 target 1.618 n=1572 -0.49R (+/-0.06) = -2.0% per trade (random -0.0%) win    5%    4d
+   stop 4% below entry, retrace 0.5   target 1.0   n=1333 -0.35R (+/-0.06) = -1.4% per trade (random -0.4%) win   10%    4d
+   stop 4% below entry, retrace 0.5   target 1.272 n=1333 -0.41R (+/-0.07) = -1.6% per trade (random +0.0%) win    7%    5d
+   stop 4% below entry, retrace 0.5   target 1.618 n=1333 -0.39R (+/-0.09) = -1.5% per trade (random +0.6%) win    5%    5d
+   stop 4% below entry, retrace 0.618 target 1.0   n=1061 -0.10R (+/-0.09) = -0.4% per trade (random -0.0%) win   12%    5d
+   stop 4% below entry, retrace 0.618 target 1.272 n=1061 -0.04R (+/-0.11) = -0.2% per trade (random +0.2%) win   10%    6d
+   stop 4% below entry, retrace 0.618 target 1.618 n=1061 +0.01R (+/-0.13) = +0.0% per trade (random +0.0%) win    8%    7d
+   stop 4% below entry, retrace 0.786 target 1.0   n= 641 +0.38R (+/-0.14) = +1.5% per trade (random +0.3%) win   16%    8d
+   stop 4% below entry, retrace 0.786 target 1.272 n= 641 +0.44R (+/-0.17) = +1.8% per trade (random -0.3%) win   14%    9d
+   stop 4% below entry, retrace 0.786 target 1.618 n= 641 +0.62R (+/-0.20) = +2.5% per trade (random +0.0%) win   13%   10d
+   stop 5% below entry, retrace 0.382 target 1.0   n=1572 -0.42R (+/-0.04) = -2.1% per trade (random -0.1%) win   14%    3d
+   stop 5% below entry, retrace 0.382 target 1.272 n=1572 -0.49R (+/-0.05) = -2.4% per trade (random +0.1%) win    9%    5d
+   stop 5% below entry, retrace 0.382 target 1.618 n=1572 -0.51R (+/-0.05) = -2.6% per trade (random +0.4%) win    6%    5d
+   stop 5% below entry, retrace 0.5   target 1.0   n=1333 -0.30R (+/-0.06) = -1.5% per trade (random -0.2%) win   13%    5d
+   stop 5% below entry, retrace 0.5   target 1.272 n=1333 -0.34R (+/-0.07) = -1.7% per trade (random -0.2%) win    9%    6d
+   stop 5% below entry, retrace 0.5   target 1.618 n=1333 -0.28R (+/-0.08) = -1.4% per trade (random -0.2%) win    8%    7d
+   stop 5% below entry, retrace 0.618 target 1.0   n=1061 -0.10R (+/-0.08) = -0.5% per trade (random -0.3%) win   14%    7d
+   stop 5% below entry, retrace 0.618 target 1.272 n=1061 -0.04R (+/-0.10) = -0.2% per trade (random +0.1%) win   12%    8d
+   stop 5% below entry, retrace 0.618 target 1.618 n=1061 +0.02R (+/-0.11) = +0.1% per trade (random +0.2%) win   10%    9d
+   stop 5% below entry, retrace 0.786 target 1.0   n= 641 +0.25R (+/-0.12) = +1.2% per trade (random -0.3%) win   17%    9d
+   stop 5% below entry, retrace 0.786 target 1.272 n= 641 +0.31R (+/-0.14) = +1.6% per trade (random +0.0%) win   15%   10d
+   stop 5% below entry, retrace 0.786 target 1.618 n= 641 +0.45R (+/-0.17) = +2.3% per trade (random -0.1%) win   15%   11d
+   stop 6% below entry, retrace 0.382 target 1.0   n=1572 -0.40R (+/-0.04) = -2.4% per trade (random -0.3%) win   17%    4d
+   stop 6% below entry, retrace 0.382 target 1.272 n=1572 -0.45R (+/-0.04) = -2.7% per trade (random +0.3%) win   11%    6d
+   stop 6% below entry, retrace 0.382 target 1.618 n=1572 -0.47R (+/-0.05) = -2.8% per trade (random -0.0%) win    8%    7d
+   stop 6% below entry, retrace 0.5   target 1.0   n=1333 -0.28R (+/-0.05) = -1.7% per trade (random -0.3%) win   15%    6d
+   stop 6% below entry, retrace 0.5   target 1.272 n=1333 -0.32R (+/-0.06) = -1.9% per trade (random +0.0%) win   11%    8d
+   stop 6% below entry, retrace 0.5   target 1.618 n=1333 -0.26R (+/-0.08) = -1.6% per trade (random +0.3%) win    9%    9d
+   stop 6% below entry, retrace 0.618 target 1.0   n=1061 -0.07R (+/-0.07) = -0.4% per trade (random -0.6%) win   17%    8d
+   stop 6% below entry, retrace 0.618 target 1.272 n=1061 +0.01R (+/-0.09) = +0.1% per trade (random -0.3%) win   14%   10d
+   stop 6% below entry, retrace 0.618 target 1.618 n=1061 +0.10R (+/-0.11) = +0.6% per trade (random +0.3%) win   13%   11d
+   stop 6% below entry, retrace 0.786 target 1.0   n= 641 +0.26R (+/-0.11) = +1.6% per trade (random -0.1%) win   21%   10d
+   stop 6% below entry, retrace 0.786 target 1.272 n= 641 +0.35R (+/-0.13) = +2.1% per trade (random -0.6%) win   18%   12d
+   stop 6% below entry, retrace 0.786 target 1.618 n= 641 +0.47R (+/-0.15) = +2.8% per trade (random +0.8%) win   17%   13d
+
+WALK-FORWARD: best combination in the older half (largest % per trade above random, n>=30) = stop 6% below entry, retrace 0.786, target 1.618: +6.6% per trade vs random +0.5% (n=159). In the newer half it made +1.6% per trade vs random +0.9% (+0.26R, n=482).
+If the newer-half result is not clearly positive and above random, the 'best level' was luck. Choosing the maximum of 12 combinations on one window always looks good in hindsight.
+
+HOW TO READ: a bigger stop gives a smaller R per loss, so compare the '% per trade' (price return of one trade, same money in every trade) against its random control, not R alone. Tight stops on daily coins that move 3-5% a day are hit by ordinary noise, so watch the win rate and the days held. win% shows how often a trade reaches its target; low-retrace/high-target combinations have low win rates but bigger wins. Compare with lab 13: holding BTC made 5.2x over a similar period. Survivorship bias (today's listed coins) flatters every long strategy here. Not financial advice.
