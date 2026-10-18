@@ -393,3 +393,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 392,FF,crypto,long,IN ZONE - WAIT,3,1792274851,17 Oct 23:07,0.10481,0.10319107,0.11183,open,,,,,,,,,
 393,WLFI,crypto,long,IN ZONE,4,1792282200,18 Oct 01:10,0.05698,0.056026786,0.057454,open,,,,,,,,,
 394,CC,crypto,long,IN ZONE - WAIT,3,1792289387,18 Oct 03:09,0.10242,0.0999525,0.10555333,open,,,,,,,,,
+395,XPL,crypto,long,IN ZONE - WAIT,4,1792290871,18 Oct 03:34,0.07914,0.078058929,0.082424,open,,,,,,,,,
