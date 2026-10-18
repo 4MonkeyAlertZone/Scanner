@@ -433,3 +433,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 432,VET,crypto,long,IN ZONE - WAIT,3,1792360810,18 Oct 23:00,0.00651,0.0062592143,0.0068285,open,,,,,,,,,
 433,ICP,crypto,long,IN ZONE - WAIT,3,1792361893,18 Oct 23:18,2.858,2.7920714,2.9885,open,,,,,,,,,
 434,PENGU,crypto,long,IN ZONE - WAIT,3,1792361893,18 Oct 23:18,0.007374,0.0072256429,0.0075845,open,,,,,,,,,
+435,ETH,crypto,long,IN ZONE - WAIT,5,1792363382,18 Oct 23:43,2396.6,2371.6611,2437.08,open,,,,,,,,,
