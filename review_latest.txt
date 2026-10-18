@@ -1,7 +1,10 @@
-Paper review 16 Oct 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
+Paper review 18 Oct 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
 
-CROSS C: 3 legs opened, 0 closed, 3 open
-RECLAIM A: 12 legs opened, 0 closed, 12 open
-RECLAIM C: 12 legs opened, 0 closed, 12 open
+CROSS C: 6 legs opened, 3 closed, 3 open, average -1.05R, win rate 0%
+    TP1: 1 closed, average -1.05R, hit target 0%
+    TP2: 1 closed, average -1.05R, hit target 0%
+    TP3: 1 closed, average -1.05R, hit target 0%
+RECLAIM A: 15 legs opened, 0 closed, 15 open
+RECLAIM C: 30 legs opened, 0 closed, 30 open
 
 Backtest expectation: about +0.1R to +0.15R per trade for RECLAIM A; B slightly lower; C close to zero. Small samples swing wildly, so do not act on a handful of trades.
