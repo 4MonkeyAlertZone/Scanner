@@ -403,3 +403,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 402,STX,crypto,long,BUY SIGNAL,3,1792296869,18 Oct 05:14,0.3748,0.36529643,0.4093,open,,,,,,,,,
 403,DRV,crypto,long,IN ZONE,3,1792310846,18 Oct 09:07,0.3862,0.3628075,0.4506,open,,,,,,,,,
 404,XMR,crypto,long,BUY SIGNAL,3,1792316734,18 Oct 10:45,586.81,563.46107,,open,,,,,,,,,
+405,FLR,crypto,long,IN ZONE - WAIT,3,1792323133,18 Oct 12:32,0.006454,0.00639425,0.0065315,open,,,,,,,,,
