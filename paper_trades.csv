@@ -395,3 +395,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 394,CC,crypto,long,IN ZONE - WAIT,3,1792289387,18 Oct 03:09,0.10242,0.0999525,0.10555333,open,,,,,,,,,
 395,XPL,crypto,long,IN ZONE - WAIT,4,1792290871,18 Oct 03:34,0.07914,0.078058929,0.082424,open,,,,,,,,,
 396,CRO,crypto,long,IN ZONE,4,1792293833,18 Oct 04:23,0.05666,0.055136786,0.0578,open,,,,,,,,,
+397,BTC,crypto,long,IN ZONE,3,1792295633,18 Oct 04:53,81980.03,80517.488,82796.633,open,,,,,,,,,
