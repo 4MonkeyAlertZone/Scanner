@@ -1,0 +1,24 @@
+PROBE: free liquidation / positioning data  2026-10-19 19:09 UTC
+
+1) data.binance.vision futures daily files (BTCUSDT): which dataset exists on which dates
+  metrics              2020-06-15=404  2021-03-15=200  2021-11-10=200  2022-06-15=200  2023-06-15=200  2024-06-15=200  2025-06-15=200  2026-09-15=200
+  liquidationSnapshot  2020-06-15=404  2021-03-15=404  2021-11-10=404  2022-06-15=404  2023-06-15=404  2024-06-15=404  2025-06-15=404  2026-09-15=404
+  bookTicker           2020-06-15=404  2021-03-15=404  2021-11-10=404  2022-06-15=404  2023-06-15=200  2024-06-15=404  2025-06-15=404  2026-09-15=404
+
+2) Sample content of one metrics file (open interest + long/short ratios)
+  rows: 289
+  create_time,symbol,sum_open_interest,sum_open_interest_value,count_toptrader_long_short_ratio,sum_toptrader_long_short_ratio,count_long_short_ratio,sum_taker_long_short_vol_ratio
+  2024-06-15 00:00:00,BTCUSDT,79438.9190000000000000,5247201626.4112400000000000,2.07638620,1.45672300,2.31372549,0.60486200
+  2024-06-15 00:05:00,BTCUSDT,79334.4120000000000000,5238628809.6589830000000000,2.07904127,1.45790400,2.32174756,1.09858400
+
+3) Binance futures REST (recent only)
+  /fapi/v1/allForceOrders?symbol=BTCUSDT&limit=5 -> 404 HTTP Error 404: Not Found
+  /futures/data/openInterestHist?symbol=BTCUSDT&period=1d&limit=500 -> 200 items=30 oldest=2026-09-20 
+  /futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=1d&lim -> 200 items=30 oldest=2026-09-20 
+
+4) OKX public liquidation orders (recent only)
+  status 200  {"code":"0","data":[{"details":[{"bkLoss":"0","bkPx":"81772.5","ccy":"","posSide":"long","side":"sell","sz":"0.01","time":1792434505552,"ts":"1792434505552"},{"bkLoss":"0","bkPx":"81800.5","ccy":"","p
+  OKX open-interest-volume 1D: rows=180 oldest=2026-04-23
+
+5) Bybit (recent only)
+  Bybit OI 1d: rows=200 oldest=2026-04-03
