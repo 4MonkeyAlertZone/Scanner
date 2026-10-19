@@ -4,7 +4,7 @@ State = IN only when ALL of: (1) BTC closed above its 200-day average, (2) BTC c
 (C = BTC futures open interest at a new 180-day high AND up 15%+ in 30 days; data from data.binance.vision, cached in basketgate_oi.csv by basket_paper.py).
 Otherwise OUT. These are the 'gate + 50-day' and 'gate + OI C-14' rules from the majors/coins5 reports, combined. Rules fixed on 19 Oct 2026, never changed.
 Honest status: the OI part was chosen after seeing the data (not out-of-sample); backtests are survivorship-flattered and cover ~3 phases. Use as a prompt to look, not an order.
-Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run). Also sends a separate LEVERAGE note daily while IN (louder with a warning when BTC is within 2% of the 50-day exit line, or price is 10%+ (BTC) / 15%+ (ETH) below the IN entry)."""
+Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run). Also sends a separate daily LEVERAGE traffic-light note: GREEN 2%+ above the BTC 50-day average, ORANGE 0-2% above, RED below / regime OUT; louder when the colour changes."""
 import os, csv, json, time
 import scanner, backtest as B, basket_paper as BP
 
@@ -62,18 +62,31 @@ def main():
         scanner.notify(title, msg, scanner.NTFY_TOPIC, "green_circle" if state == "IN" else "red_circle", 4 if state == "OUT" else 3)
     elif parts:
         scanner.notify("Alt regime: " + state + " (" + parts + ")", msg, scanner.NTFY_TOPIC, "yellow_circle", 2)
-    # ---- separate LEVERAGE alert (own title/tag). While IN: one note a day; louder when something needs attention.
+    # ---- separate LEVERAGE alert: traffic light, sent every day. GREEN = 2%+ above the 50-day line, ORANGE = 0-2% above, RED = below / regime OUT.
+    gap = (c[-1] / ma(50) - 1) * 100                     # % BTC is above (+) or below (-) its 50-day average
+    if state == "OUT": color = "RED"
+    elif gap >= 2: color = "GREEN"
+    else: color = "ORANGE"
+    cur["lev_color"] = color
+    prev_color = (old or {}).get("lev_color")
+    EMO = {"GREEN": "green_circle", "ORANGE": "orange_circle", "RED": "red_circle"}
+    head = {"GREEN": "LEVERAGE GREEN: OK to hold or open", "ORANGE": "LEVERAGE ORANGE: hold only, do not add", "RED": "LEVERAGE RED: close leveraged longs"}[color]
+    act = {"GREEN": "ACTION: leveraged longs are allowed (BTC 2x or less is the steadiest in the tests). Open or hold.",
+           "ORANGE": "ACTION: do NOT open new leveraged positions. Existing ones can stay, but the exit line is close.",
+           "RED": "ACTION: close leveraged longs and stay out of leverage. " + ("; ".join(reasons) + "." if reasons else "")}[color]
+    body = [act, "",
+            f"BTC {c[-1]:,.0f} is {gap:+.1f}% vs its 50-day average ({ma(50):,.0f}).",
+            "Colours: GREEN = 2%+ above 50-day, ORANGE = 0 to 2% above, RED = below 50-day / 200-day or OI warning."]
     if state == "IN":
-        lv = lev("BTC", cur.get("entry_btc"), cur["btc"]) + "\n" + lev("ETH", cur.get("entry_eth"), cur["eth"])
-        gap = (1 - ma(50) / c[-1]) * 100
+        body += ["", "If you opened at the IN price:", lev("BTC", cur.get("entry_btc"), cur["btc"]), lev("ETH", cur.get("entry_eth"), cur["eth"]),
+                 f"EXIT LINE: BTC daily close below {ma(50):,.0f} (now {max(gap, 0):.1f}% away)."]
         dip = (1 - cur["btc"] / cur["entry_btc"]) * 100 if cur.get("entry_btc") else 0
         dipe = (1 - cur["eth"] / cur["entry_eth"]) * 100 if cur.get("entry_eth") and cur.get("eth") else 0
-        warn = []
-        if gap < 2: warn.append(f"BTC is only {gap:.1f}% above its 50-day exit line ({ma(50):,.0f})")
-        if dip >= 10 or dipe >= 15: warn.append(f"price is {max(dip, dipe):.0f}% below the IN entry; 3x liquidation is 33% away, 2x is 50%")
-        body = lv + f"\nExit line: BTC daily close below {ma(50):,.0f} ({gap:.1f}% below now).\nFast wicks can liquidate before a daily signal; use your own fill price and an exchange stop."
-        if warn: scanner.notify("LEVERAGE WARNING: " + warn[0][:60], "\n".join(warn) + "\n" + body, scanner.NTFY_TOPIC, "warning", 4)
-        else: scanner.notify("Leverage levels (alts IN)", body, scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2)
+        if dip >= 10 or dipe >= 15: body.append(f"WARNING: price is {max(dip, dipe):.0f}% below the IN entry. 3x liquidation is ~33% away, 2x ~50%.")
+    body += ["", "Fast wicks can liquidate before a daily signal. Use your own fill price and an exchange stop. Rule-based prompt, not advice."]
+    changed_c = prev_color is not None and prev_color != color
+    title = head + (" (colour changed)" if changed_c else "")
+    scanner.notify(title, "\n".join(body), scanner.NTFY_TOPIC, EMO[color], 4 if (changed_c or color == "RED") else 2 if color == "GREEN" else 3)
     json.dump(cur, open(sp, "w"))
     lp = P("regime_log.csv"); new = not os.path.exists(lp)
     with open(lp, "a", newline="") as f:
