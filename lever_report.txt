@@ -1,6 +1,7 @@
 LEVERAGE TEST: BTC and ETH at 1x / 2x / 3x, held vs. the alt-regime rule  (data to 2026-10-18)
 Rule: IN only while BTC > 200-day avg AND > 50-day avg AND no BTC open-interest warning C in the last 14 days. Isolated-margin long perpetual; liquidation checked against each day's LOW; 0.05% fee/side, funding 0.03%/day on notional (assumed).
 OI data loaded (from 2021-01).
+Bad-data check (daily lows more than 50% below both neighbouring closes are treated as data glitches): ETH 2020-11-15: low 27.00 vs closes 462.00/448.15 -> replaced by 434.71
 
 == A. $10,000 on 1 Oct 2020, value at the end of each phase (LIQ = wiped out on that date; account stays at $0) ==
                                    cycle 1            bear         cycle 2  since 2025 top  trades   liq  worst dip
@@ -12,11 +13,11 @@ BTC rule 2x                        $63,865         $50,899        $476,082      
 BTC rule 3x                        $68,457         $51,093        $939,331      $1,383,335      40     0       -78%
 
 ETH hold 1x                       $131,304         $31,453        $132,542         $68,388       1     0       -79%
-ETH hold 2x                 LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15       1     1      -100%
-ETH hold 3x                 LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15       1     1      -100%
+ETH hold 2x                       $250,059         $48,203        $243,987        $113,483       1     0       -84%
+ETH hold 3x                       $369,908         $67,276        $360,805        $165,148       1     0       -85%
 ETH rule 1x                        $73,217         $63,154        $258,675        $273,625      40     0       -40%
-ETH rule 2x                 LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15       1     1      -100%
-ETH rule 3x                 LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15  LIQ 2020-11-15       1     1      -100%
+ETH rule 2x                       $127,642         $99,615        $761,901        $821,423      40     0       -63%
+ETH rule 3x                       $161,172        $117,575      $1,324,668      $1,477,393      40     0       -77%
 
 (worst dip = biggest fall of the account from a peak, measured at daily closes.)
 
@@ -30,22 +31,22 @@ BTC rule 2x                 72           0           7.09x          1.33x       
 BTC rule 3x                 72           0          11.66x          1.50x       138.33x               0
 
 ETH hold 1x                 72           0           1.07x          0.53x         6.84x              30
-ETH hold 2x                 72          41           0.00x          0.00x         5.53x              48
-ETH hold 3x                 72          58           0.00x          0.00x         7.80x              58
+ETH hold 2x                 72          39           0.00x          0.00x        11.35x              46
+ETH hold 3x                 72          56           0.00x          0.00x        16.51x              56
 ETH rule 1x                 72           0           3.54x          1.07x        27.36x               0
-ETH rule 2x                 72           2           4.89x          0.00x        43.59x               2
-ETH rule 3x                 72           2           5.84x          0.00x        76.35x               3
+ETH rule 2x                 72           0           5.73x          1.10x        82.14x               0
+ETH rule 3x                 72           0           6.56x          0.64x       147.74x               1
 
 == C. How far did each IN spell fall below its entry price (intraday low)? This is what decides liquidation. Liquidation distance: 2x = 49.5%, 3x = 33.0%, 5x = 19.0% ==
 asset    IN spells  median dip  worst dip  >=19% (5x dead)  >=33% (3x dead)  >=49.5% (2x dead)
 BTC             40         -2%       -10%                0                0                  0
-ETH             40         -3%       -92%                2                1                  1
+ETH             40         -3%       -19%                1                0                  0
 Five worst IN spells (entry date -> exit date, deepest dip below entry):
-   ETH  2020-10-08 -> 2021-04-18   -92%
    ETH  2025-01-15 -> 2025-02-02   -19%
    ETH  2021-09-14 -> 2021-09-20   -15%
    ETH  2024-07-15 -> 2024-08-02   -15%
    ETH  2025-07-28 -> 2025-08-19   -12%
+   ETH  2024-10-14 -> 2024-12-15   -10%
 
 == D. If you entered at the latest daily close (2026-10-18), where would liquidation sit? ==
 BTC close 82,116.04:  2x liquidates at 41,468.60 (-49.5%)   3x liquidates at 55,154.61 (-32.8%)   5x liquidates at 66,103.41 (-19.5%)
