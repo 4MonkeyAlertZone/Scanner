@@ -28,13 +28,15 @@ def series(names):
         except Exception as e: print(nm, "failed:", str(e)[:60])
     return out, used
 
-def main():
+def main(coins=None, title=None, outfile="coins5_report.txt"):
+    global COINS
+    if coins: COINS = coins
     D = {}; notes = []
     for c, names in COINS.items():
         d, used = series(names); D[c] = d
         notes.append(f"{c}: {'+'.join(used) if used else 'NO DATA'}  first day {fd(min(d)) if d else '--'}  last {fd(max(d)) if d else '--'}  ({len(d)} days)")
     btc, _ = series(["BTC"]); last = max(btc); end_of = lambda e: last if e is None else e
-    L = ["$10,000 EQUALLY IN HBAR, NEAR, ONDO, RENDER, SUI: what it would be worth after each market phase", f"data to {fd(last)}", ""] + ["Data found: "] + ["  " + x for x in notes] + [
+    L = [title or "$10,000 EQUALLY IN HBAR, NEAR, ONDO, RENDER, SUI: what it would be worth after each market phase", f"data to {fd(last)}", ""] + ["Data found: "] + ["  " + x for x in notes] + [
          "If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.", ""]
     def px(c, d, back=True):
         """close on day d, or the nearest earlier day within 5 days"""
@@ -59,9 +61,9 @@ def main():
         whole = f"x{D[c][max(D[c])] / D[c][f0]:.2f}" if f0 else "--"
         L.append(f"{c:<8}" + "".join(cells) + f"{whole:>18}")
     # ---- part 2 ----
-    def hold_value(start_val, a, b, slots=5):
+    def hold_value(start_val, a, b, slots=None):
         """equal slots; unlisted coins' slots stay cash until first trading day (buy with 0.1% cost); returns value at day b"""
-        e = end_of(b); tot = 0.0; per = start_val / slots; rows = []
+        slots = slots or len(COINS); e = end_of(b); tot = 0.0; per = start_val / slots; rows = []
         for c in COINS:
             fa = first_day_at_or_after(c, a)
             if fa is None or fa >= e: tot += per; rows.append((c, per, "not listed")); continue
@@ -73,7 +75,7 @@ def main():
         v, rows = hold_value(10000.0, a, b)
         L.append(f"{pn:<16} ({fd(a)} -> {fd(end_of(b))}):  $10,000 -> ${v:,.0f}   ({'; '.join(f'{c} ${x:,.0f}' + (' [cash: not listed]' if note else '') for c, x, note in rows)})")
     # ---- part 3 ----
-    L += ["", "== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the five at each phase start =="]
+    L += ["", "== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the coins at each phase start =="]
     val = 10000.0
     for pn, a, b in PH:
         v, rows = hold_value(val, a, b); L.append(f"after {pn:<15} ({fd(end_of(b))}): ${v:,.0f}   (phase multiple x{v / val:.2f})"); val = v
@@ -107,7 +109,7 @@ def main():
             if left > 0: left -= 1
     rules = [("hold (daily-rebalanced basket)", [True] * n), ("BTC 200-day gate", gate[:]), ("gate + BTC above 50-day avg", [gate[i] and C[i] > m50[i] for i in range(n)])]
     if out_c: rules.append(("gate + OI warning (C, 14d cash)", [gate[i] and not out_c[i] for i in range(n)]))
-    L += ["", "== 4. Same five coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 =="]
+    L += ["", "== 4. Same coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 =="]
     L.append(f"{'rule':<34}" + "".join(f"{p[0]:>16}" for p in PH) + f"{'$10,000 became':>18}")
     for nm, ex in rules:
         cells = []; eq_all = 10000.0
@@ -119,9 +121,9 @@ def main():
                 e_ = 1 if ex[i] and has[i + 1] else 0; eq *= 1 + ret[i + 1] * e_ - COST * abs(e_ - prev); prev = e_
             cells.append(f"x{eq:.2f}".rjust(16)); eq_all *= eq
         L.append(f"{nm:<34}" + "".join(cells) + f"{'$%s' % format(eq_all, ',.0f'):>18}")
-    L += ["", "Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Gains in cycle 1 are limited by how few of the five existed; SUI and ONDO only exist from 2023-24.",
-          "Caveats: you chose five survivors that did well enough to be on your list (survivorship); exchange data may start after real listing; no tax; fills at daily closes."]
-    text = "\n".join(L); open(os.path.join(scanner.HERE, "coins5_report.txt"), "w").write(text + "\n"); print(text)
+    L += ["", "Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Cash slots (coins not yet listed) flatter the early phases of a basket.",
+          "Caveats: these coins are survivors that are still listed today (survivorship); exchange data may start after real listing; no tax; fills at daily closes."]
+    text = "\n".join(L); open(os.path.join(scanner.HERE, outfile), "w").write(text + "\n"); print(text); return text
 
 if __name__ == "__main__":
     main()
