@@ -21,6 +21,7 @@ HOLDINGS = os.environ.get("HOLDINGS", "")   # your open positions for SELL alert
 COLORS = {"BUY SIGNAL": ("green_circle", 4), "IN ZONE": ("yellow_circle", 3), "IN ZONE - WAIT": ("orange_circle", 3),
           "STOP HIT": ("red_circle", 5), "TAKE PROFIT": ("blue_circle", 4), "REJECTED": ("blue_circle", 4),
           "SHORT SIGNAL": ("purple_circle", 4), "AT TOP - WAIT": ("brown_circle", 3)}
+MUTED_PHONE = {"IN ZONE - WAIT"}   # verdicts that are still checked, logged and recorded, but send no phone alert (remove a name to get its alerts back)
 SHORT_TOKENS = [t.strip().upper() for t in os.environ.get("SHORT_TOKENS", "BTC,ETH").split(",") if t.strip()]   # coins to watch for a local top
 SHORTS = []        # filled by check_shorts(); tracker.py reads it for the paper-trading ledger
 # -------------------------------------------------------
@@ -401,7 +402,7 @@ def run(tokens):
             for k in [k for k, e in alerted.items() if not isinstance(e, dict) or time.time() - e["t"] > 86400]: del alerted[k]
             save(STATE, alerted)
             stock = t.startswith("STOCK:")
-            notify(f'{o["tok"]}: {v}', f'Price {fmt(o["last"])}. Zone {fmt(z["lo"])}-{fmt(z["hi"])}, stop {fmt(z["stop"])}' + (f', risk/reward {rr:.1f}' if rr else '') + f'. {o["note"]}',
+            (print if v in MUTED_PHONE else notify)(f'{o["tok"]}: {v}', f'Price {fmt(o["last"])}. Zone {fmt(z["lo"])}-{fmt(z["hi"])}, stop {fmt(z["stop"])}' + (f', risk/reward {rr:.1f}' if rr else '') + f'. {o["note"]}',
                    (NTFY_TOPIC_STOCKS or NTFY_TOPIC) if stock else NTFY_TOPIC, COLORS[v][0] + "," + ("chart_with_upwards_trend" if stock else "coin"), COLORS[v][1])
     if waiting or hidden: print(f"\n{waiting} others: nothing near support. {hidden} weaker setups hidden (below your filters).")
     if errs: print(f"could not check {len(errs)}: " + ", ".join(f"{t} ({str(e)[:40]})" for t, e in errs[:3]) + (" ..." if len(errs) > 3 else ""))
