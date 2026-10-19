@@ -511,3 +511,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 510,ACN,stock,long,BUY SIGNAL,3,1792433443,19 Oct 19:10,235.42,222.23608,258.61333,open,,,,,,,,,
 511,STX,crypto,long,IN ZONE - WAIT,4,1792435468,19 Oct 19:44,0.3587,0.34418571,0.377,open,,,,,,,,,
 512,CEG,stock,long,IN ZONE - WAIT,4,1792435468,19 Oct 19:44,262.92871,247.55708,281.67916,open,,,,,,,,,
+513,DUK,stock,long,BUY SIGNAL,5,1792437512,19 Oct 20:18,119.365,117.70036,121.395,open,,,,,,,,,
