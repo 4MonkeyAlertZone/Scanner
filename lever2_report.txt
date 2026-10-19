@@ -1,0 +1,44 @@
+STRICTER ENTRY FOR LEVERAGE  (data to 2026-10-18)  entry filter added to the regime rule; exit unchanged
+BAD data: ETH 2020-11-15: low 27.00 vs closes 462.00/448.15 -> replaced by 434.71
+
+== BTC 2x ==
+entry filter               $10k became  worst dip  trades  liq     30d-start test: median x  worst x  below 1x  liquidated
+base (current alert)          $627,037       -64%      40    0                        7.09x    1.33x         0           0
+50d +3%                       $638,278       -57%      26    0                        6.67x    1.33x         0           0
+50d +5%                       $695,256       -50%      21    0                        5.59x    1.29x         0           0
+IN 7+ days                    $290,003       -49%      19    0                        3.12x    0.96x         1           0
+50d +3% & IN 7d               $297,631       -49%      17    0                        3.20x    0.99x         1           0
+200d +10%                     $275,908       -53%      32    0                        3.31x    0.97x         1           0
+50d +5% & 200d +10%           $270,572       -48%      17    0                        2.90x    0.91x         2           0
+
+== BTC 3x ==
+entry filter               $10k became  worst dip  trades  liq     30d-start test: median x  worst x  below 1x  liquidated
+base (current alert)        $1,383,335       -78%      40    0                       11.66x    1.50x         0           0
+50d +3%                     $1,445,907       -72%      26    0                       11.06x    1.50x         0           0
+50d +5%                     $1,740,802       -63%      21    0                        8.67x    1.28x         0           0
+IN 7+ days                    $539,518       -62%      19    0                        3.92x    0.94x         2           0
+50d +3% & IN 7d               $563,455       -62%      17    0                        4.09x    0.98x         2           0
+200d +10%                     $459,851       -67%      32    0                        4.48x    0.93x         1           0
+50d +5% & 200d +10%           $471,157       -61%      17    0                        3.63x    0.75x         2           0
+
+== ETH 2x ==
+entry filter               $10k became  worst dip  trades  liq     30d-start test: median x  worst x  below 1x  liquidated
+base (current alert)          $821,423       -63%      40    0                        5.73x    1.10x         0           0
+50d +3%                       $637,396       -64%      26    0                        5.73x    1.10x         0           0
+50d +5%                       $630,706       -72%      21    0                        4.59x    0.88x         1           0
+IN 7+ days                    $471,582       -75%      19    0                        3.36x    0.83x        12           0
+50d +3% & IN 7d               $457,759       -75%      17    0                        3.27x    0.82x        11           0
+200d +10%                     $369,529       -55%      32    0                        2.58x    0.73x        15           0
+50d +5% & 200d +10%           $199,582       -67%      17    0                        1.91x    0.55x        15           0
+
+== ETH 3x ==
+entry filter               $10k became  worst dip  trades  liq     30d-start test: median x  worst x  below 1x  liquidated
+base (current alert)        $1,477,393       -77%      40    0                        6.56x    0.64x         1           0
+50d +3%                     $1,013,513       -78%      26    0                        6.27x    0.72x         1           0
+50d +5%                     $1,201,434       -85%      21    0                        5.54x    0.43x         1           0
+IN 7+ days                    $856,845       -88%      19    0                        3.74x    0.40x        13           0
+50d +3% & IN 7d               $865,118       -88%      17    0                        3.77x    0.41x        11           0
+200d +10%                     $473,203       -69%      32    0                        2.16x    0.33x        17           0
+50d +5% & 200d +10%           $214,823       -80%      17    0                        1.70x    0.22x        20           0
+
+Read: a stricter filter is only worth adopting if it improves the worst dip / worst start without a big loss in final value, on BOTH BTC and ETH, at both 2x and 3x. Otherwise it is noise from a small sample.
