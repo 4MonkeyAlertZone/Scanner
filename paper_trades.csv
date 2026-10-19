@@ -458,3 +458,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 457,CRV,crypto,long,BUY SIGNAL,4,1792398276,19 Oct 09:24,0.3563,0.34775,0.36706,open,,,,,,,,,
 458,XPL,crypto,long,BUY SIGNAL,3,1792406393,19 Oct 11:39,0.07702,0.075204643,0.07955,open,,,,,,,,,
 459,XTZ,crypto,long,BUY SIGNAL,3,1792411825,19 Oct 13:10,0.302,0.28858571,0.30465,open,,,,,,,,,
+460,DOT,crypto,long,IN ZONE,5,1792416477,19 Oct 14:27,1.1392,1.1208964,1.1782,open,,,,,,,,,
