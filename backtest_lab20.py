@@ -122,6 +122,7 @@ def sim(kind, HN, h0, A, coins, gate, start):
             pend = []
             for c in coins:
                 C = A[c][3]
+                if kind == "dropg" and not g: continue                      # gated variant: no new drop signals while the BTC risk switch is off
                 if c not in pos and C[t] is not None and t >= DROPH and C[t - DROPH] is not None and C[t] / C[t - DROPH] - 1 <= -DROPX: pend.append(c)
         eq[t] = cash + sum(p["u"] * (last[c] or p["px"]) for c, p in pos.items())
     return eq
@@ -163,10 +164,12 @@ def main():
     start = HBTC + 1
     text = [f"LAB 20: hourly data for {len(coins)} coins + BTC from {time.strftime('%Y-%m-%d', time.gmtime(h0 * 3600))} to {time.strftime('%Y-%m-%d', time.gmtime(h1 * 3600))}. Cost {SIDE:.2%} per side. Sleeves traded from {time.strftime('%Y-%m-%d', time.gmtime((h0 + start) * 3600))} (200-day warm-up).", ""]
     eqs = {}
-    for kind in ("core", "trend", "drop"):
+    for kind in ("core", "trend", "drop", "dropg"):
         print(f"simulating {kind}...", flush=True); eqs[kind] = sim(kind, HN, h0, A, coins, gate, start)
     allv = {"CORE only: BTC while BTC > 200-day avg": {"core": 1.0}, "TREND only: alt breakouts with ATR trailing stop": {"trend": 1.0}, "DROP only: buy 16% two-day drops, hold 10 days": {"drop": 1.0},
-            "COMBO 50/30/20  (core/trend/drop)": {"core": .5, "trend": .3, "drop": .2}, "COMBO 40/40/20": {"core": .4, "trend": .4, "drop": .2}, "COMBO 34/33/33": {"core": .34, "trend": .33, "drop": .33}}
+            "DROP only, gated by the BTC risk switch": {"dropg": 1.0},
+            "COMBO 50/30/20  (core/trend/drop)": {"core": .5, "trend": .3, "drop": .2}, "COMBO 40/40/20": {"core": .4, "trend": .4, "drop": .2}, "COMBO 34/33/33": {"core": .34, "trend": .33, "drop": .33},
+            "COMBO 70/15/15 (drop sleeve ungated)": {"core": .7, "trend": .15, "drop": .15}, "COMBO 70/15/15 (drop sleeve GATED)": {"core": .7, "trend": .15, "dropg": .15}, "COMBO 50/30/20 (drop sleeve GATED)": {"core": .5, "trend": .3, "dropg": .2}}
     curves = {n: combine(eqs, w, HN, start) for n, w in allv.items()}
     btc = [1.0] * HN
     for t in range(start, HN): btc[t] = (cf[t] / cf[start]) if cf[t] and cf[start] else btc[t - 1]
