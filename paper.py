@@ -168,7 +168,7 @@ def daily(force=False):
     text, md = report(read(), time.time())
     with open(REPORT, "w") as f: f.write(md)
     meta["last"] = today; scanner.save(META, meta)
-    scanner.notify("Daily signal report", text[:3900], scanner.NTFY_TOPIC, "bar_chart")
+    if not scanner.QUIET_OLD: scanner.notify("Daily signal report", text[:3900], scanner.NTFY_TOPIC, "bar_chart")
     attach(REPORT); attach(LEDGER)
     print("Daily report sent")
 

@@ -21,7 +21,8 @@ HOLDINGS = os.environ.get("HOLDINGS", "")   # your open positions for SELL alert
 COLORS = {"BUY SIGNAL": ("green_circle", 4), "IN ZONE": ("yellow_circle", 3), "IN ZONE - WAIT": ("orange_circle", 3),
           "STOP HIT": ("red_circle", 5), "TAKE PROFIT": ("blue_circle", 4), "REJECTED": ("blue_circle", 4),
           "SHORT SIGNAL": ("purple_circle", 4), "AT TOP - WAIT": ("brown_circle", 3)}
-MUTED_PHONE = {"IN ZONE - WAIT"}   # verdicts that are still checked, logged and recorded, but send no phone alert (remove a name to get its alerts back)
+MUTED_PHONE = {"BUY SIGNAL", "IN ZONE", "IN ZONE - WAIT", "SHORT SIGNAL", "AT TOP - WAIT"}   # verdicts that are still checked, logged and recorded, but send no phone alert (remove a name to get its alerts back)
+QUIET_OLD = True   # also mutes the daily signal report and the weekly review notes (files still written). Set False to bring them back. Holdings SELL alerts (stop hit / take profit / rejected) are NOT muted.
 SHORT_TOKENS = [t.strip().upper() for t in os.environ.get("SHORT_TOKENS", "BTC,ETH").split(",") if t.strip()]   # coins to watch for a local top
 SHORTS = []        # filled by check_shorts(); tracker.py reads it for the paper-trading ledger
 # -------------------------------------------------------
@@ -354,7 +355,7 @@ def check_shorts():
                 msg += f" Short idea: stop {fmt(o['stop'])}" + (f", target {fmt(o['target'])}" if o["target"] else "") + (f", risk/reward {o['rr']:.1f}" if o["rr"] else "")
                 msg += (". Stocks tend to drift up over time and shorting needs a broker that allows it (or puts or an inverse ETF), so keep size small." if stock
                         else f". Alts often fall harder than {name} when it turns, but shorts can lose more than a long, so keep size small.")
-            notify(f"{name}: {v}", msg, (NTFY_TOPIC_STOCKS or NTFY_TOPIC) if stock else NTFY_TOPIC,
+            (print if v in MUTED_PHONE else notify)(f"{name}: {v}", msg, (NTFY_TOPIC_STOCKS or NTFY_TOPIC) if stock else NTFY_TOPIC,
                    COLORS[v][0] + "," + ("chart_with_downwards_trend" if stock else "coin"), COLORS[v][1])
 
 def check_holdings():

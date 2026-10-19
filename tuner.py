@@ -109,7 +109,7 @@ def main(dry=False):
     if not dry:
         with open(P("tuning_log.md"), "a") as f: f.write(text + "\n")
         scanner.save(P("tuning_state.json"), state)
-        scanner.notify("Weekly review", push[:380], scanner.NTFY_TOPIC, "mag")
+        if not scanner.QUIET_OLD: scanner.notify("Weekly review", push[:380], scanner.NTFY_TOPIC, "mag")
         attach("tuning_log.md"); attach("backtest_summary.txt")
 
 def attach(name):

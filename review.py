@@ -31,7 +31,7 @@ def main():
     L += ["", "Backtest expectation: about +0.1R to +0.15R per trade for RECLAIM A; B slightly lower; C close to zero. Small samples swing wildly, so do not act on a handful of trades."]
     text = "\n".join(L)
     open(os.path.join(scanner.HERE, "review_latest.txt"), "w").write(text + "\n"); print(text)
-    scanner.notify("Weekly paper-test review", "; ".join(short) if short else "No trend-rule trades yet.", scanner.NTFY_TOPIC, "bar_chart", 3)
+    if not scanner.QUIET_OLD: scanner.notify("Weekly paper-test review", "; ".join(short) if short else "No trend-rule trades yet.", scanner.NTFY_TOPIC, "bar_chart", 3)
 
 if __name__ == "__main__":
     main()
