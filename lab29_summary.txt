@@ -49,19 +49,25 @@ ETH   G3 both                          26  17  47%  26%  +21%  1.9  0.05
 SOL   G1 OI +15% in 30d               168  24  38%  28%   +9%  1.0  0.14
 SOL   G2 OI new 180d high              47  25  36%  28%   +8%  0.9  0.14
 SOL   G3 both                          26  17  47%  28%  +19%  1.7  0.04
-DOGE  G1 OI +15% in 30d               168  24  42%  32%   +9%  1.0  0.14
-DOGE  G2 OI new 180d high              47  25  24%  32%   -8% -0.9  0.80
-DOGE  G3 both                          26  17  35%  32%   +3%  0.2  0.32
-BNB   G1 OI +15% in 30d               168  24  38%  26%  +12%  1.3  0.20
-BNB   G2 OI new 180d high              48  25  40%  26%  +14%  1.6  0.12
-BNB   G3 both                          26  17  41%  26%  +16%  1.5  0.14
-ADA   G1 OI +15% in 30d               168  24  46%  35%  +11%  1.1  0.06
-ADA   G2 OI new 180d high              48  25  48%  35%  +13%  1.4  0.03
-ADA   G3 both                          26  17  53%  35%  +18%  1.5  0.02
+XRP   G1 OI +15% in 30d               168  24  42%  26%  +15%  1.7  0.15
+XRP   G2 OI new 180d high              48  25  44%  26%  +18%  2.0  0.08
+XRP   G3 both                          26  17  47%  26%  +21%  1.9  0.04
+DOGE  G1 OI +15% in 30d               168  24  42%  32%   +9%  1.0  0.12
+DOGE  G2 OI new 180d high              47  25  24%  32%   -8% -0.9  0.73
+DOGE  G3 both                          26  17  35%  32%   +3%  0.2  0.34
+BNB   G1 OI +15% in 30d               168  24  38%  26%  +12%  1.3  0.17
+BNB   G2 OI new 180d high              48  25  40%  26%  +14%  1.6  0.09
+BNB   G3 both                          26  17  41%  26%  +16%  1.5  0.17
+LINK  G1 OI +15% in 30d               168  24  50%  32%  +18%  1.9  0.04
+LINK  G2 OI new 180d high              48  25  40%  32%   +8%  0.9  0.18
+LINK  G3 both                          26  17  47%  32%  +15%  1.4  0.04
+ADA   G1 OI +15% in 30d               168  24  46%  35%  +11%  1.1  0.09
+ADA   G2 OI new 180d high              48  25  48%  35%  +13%  1.4  0.04
+ADA   G3 both                          26  17  53%  35%  +18%  1.5  0.04
 
-G1 OI +15% in 30d                BTC warning preceded bigger-than-normal ALT falls in 5 of 5 alts; p<0.10 in 1; median lift +9%
-G2 OI new 180d high              BTC warning preceded bigger-than-normal ALT falls in 4 of 5 alts; p<0.10 in 1; median lift +10%
-G3 both                          BTC warning preceded bigger-than-normal ALT falls in 5 of 5 alts; p<0.10 in 3; median lift +18%
+G1 OI +15% in 30d                BTC warning preceded bigger-than-normal ALT falls in 7 of 7 alts; p<0.10 in 2; median lift +11%
+G2 OI new 180d high              BTC warning preceded bigger-than-normal ALT falls in 6 of 7 alts; p<0.10 in 3; median lift +10%
+G3 both                          BTC warning preceded bigger-than-normal ALT falls in 7 of 7 alts; p<0.10 in 5; median lift +18%
 
 Read: replication is real if most assets show positive lift with small p for G2/G3 (own OI) and, separately, BTC's warning also precedes alt falls. If only BTC works, treat it as a BTC-specific or lucky pattern.
 Caveats: assets are highly correlated (not independent tests); 4 flags x 8 assets; periods are short for assets listed after 2021; falls measured low-vs-close on daily candles.
