@@ -1,0 +1,32 @@
+name: BTC-gated basket paper test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 0 * * *"
+  push:
+    paths:
+      - ".github/workflows/basket_paper.yml"
+      - "basket_paper.py"
+concurrency:
+  group: basketpaper
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  basket:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python basket_paper.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add basketgate_* 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Basket paper update" && (git pull --rebase -q; git push))
