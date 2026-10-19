@@ -451,7 +451,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 450,KCS,crypto,long,RECLAIM C TP2,,1792383321,19 Oct 05:15,7.5557,7.10576,8.45558,open,,,,,,,,,168
 451,KCS,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,7.5557,7.10576,8.90552,open,,,,,,,,,168
 452,BGB,crypto,long,IN ZONE,4,1792385230,19 Oct 05:47,1.87788,1.8699846,1.89861,open,,,,,,,,,
-453,ZRO,crypto,long,BUY SIGNAL,3,1792396222,19 Oct 08:50,1.8948,1.8463071,1.9876,open,,,,,,,,,
+453,ZRO,crypto,long,BUY SIGNAL,3,1792396222,19 Oct 08:50,1.8948,1.8463071,1.9876,closed,1792408160,19 Oct 12:09,1.8415,stop,-3.01,-3.01,3.3,-1.18,
 454,UNI,crypto,long,RECLAIM C TP1,,1792398276,19 Oct 09:24,7.427,6.735502,8.118498,open,,,,,,,,,168
 455,UNI,crypto,long,RECLAIM C TP2,,1792398276,19 Oct 09:24,7.427,6.735502,8.809996,open,,,,,,,,,168
 456,UNI,crypto,long,RECLAIM C TP3,,1792398276,19 Oct 09:24,7.427,6.735502,9.501494,open,,,,,,,,,168
