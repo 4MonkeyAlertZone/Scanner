@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """STRICTER ENTRY FOR LEVERAGE. Same engine as lever.py (isolated margin, liquidation on daily LOW, 0.05% fee, funding 0.03%/day for 2x/3x). The EXIT rule is unchanged (leave when the base regime rule turns OUT).
 Only ENTRY is stricter: a leveraged position is opened only when the base rule is IN AND the extra filter is true on that day; once open it stays until the base rule says OUT.
-Filters: base | BTC 3%+ above 50d | 5%+ above 50d | IN for 7+ days | 3%+ above 50d AND IN 7+ days | 10%+ above 200d | 5%+ above 50d AND 10%+ above 200d.
+Filters (second round, after 7-day waits and 200d+10% were found too strict): base | 50d +1/2/3/4/5% | 200d +3/5% | 50d +2% & 200d +3% | 50d +3% & 200d +5%.
 For each: $10,000 from 1 Oct 2020 (final value, worst account dip, trades, liquidations) and the 30-day-start test (median/worst final multiple, starts ending below 1x). Past prices only; filters picked in advance (this list), but small sample (~40 IN spells) and the base OI flag was chosen with hindsight: differences between filters are mostly noise unless large and consistent across BTC and ETH."""
 import os, time, statistics as S
 import scanner, lever as LV
@@ -18,7 +18,7 @@ def main():
     a200 = lambda p: [bool(m200[i]) and C[i] > m200[i] * (1 + p) for i in range(n)]
     old7 = [age[i] >= 7 for i in range(n)]
     AND = lambda *xs: [all(x[i] for x in xs) for i in range(n)]
-    F = [("base (current alert)", [True] * n), ("50d +3%", a50(.03)), ("50d +5%", a50(.05)), ("IN 7+ days", old7), ("50d +3% & IN 7d", AND(a50(.03), old7)), ("200d +10%", a200(.10)), ("50d +5% & 200d +10%", AND(a50(.05), a200(.10)))]
+    F = [("base (current alert)", [True] * n), ("50d +1%", a50(.01)), ("50d +2%", a50(.02)), ("50d +3%", a50(.03)), ("50d +4%", a50(.04)), ("50d +5%", a50(.05)), ("200d +3%", a200(.03)), ("200d +5%", a200(.05)), ("50d +2% & 200d +3%", AND(a50(.02), a200(.03))), ("50d +3% & 200d +5%", AND(a50(.03), a200(.05)))]
     def hyst(E):
         w = [False] * n
         for i in range(n): w[i] = base[i] and (E[i] or (i > 0 and w[i - 1]))
