@@ -12,12 +12,17 @@ import scanner, backtest as B
 ts = lambda y, m, d: calendar.timegm((y, m, d, 0, 0, 0)) // 86400
 START = ts(2020, 10, 1)
 PH = [("cycle 1", ts(2020, 10, 1), ts(2021, 11, 10)), ("bear", ts(2021, 11, 10), ts(2022, 11, 21)), ("cycle 2", ts(2022, 11, 21), ts(2025, 10, 6)), ("since 2025 top", ts(2025, 10, 6), None)]
-MM = 0.005; FEE = 0.0005; FUND = 0.0003
+BAD = []; MM = 0.005; FEE = 0.0005; FUND = 0.0003
 fd = lambda d: time.strftime("%Y-%m-%d", time.gmtime(d * 86400))
 
 def ohlc(sym):
-    rows = B.hist_crypto(sym, "1d", 2600)
-    return {int(r[0] // 86400): (r[2], r[3], r[4]) for r in rows}
+    rows = B.hist_crypto(sym, "1d", 2600); out = {}; prev = None
+    for r in rows:
+        d = int(r[0] // 86400); h, l, c = r[2], r[3], r[4]
+        if prev and l < 0.5 * min(prev, c):          # a low more than 50% under both closes = bad data print, not a real trade
+            BAD.append(f"{sym} {fd(d)}: low {l:,.2f} vs closes {prev:,.2f}/{c:,.2f} -> replaced by {0.97 * min(prev, c):,.2f}"); l = 0.97 * min(prev, c)
+        out[d] = (h, l, c); prev = c
+    return out
 
 def signals(bt, days):
     n = len(days); C = [bt[d][2] for d in days]; ok = [False] * n; g200 = [False] * n; g50 = [False] * n
@@ -78,7 +83,8 @@ def main():
     pe = [idx.get(PH[k][2], n - 1) if PH[k][2] else n - 1 for k in range(4)]
     L_ = ["LEVERAGE TEST: BTC and ETH at 1x / 2x / 3x, held vs. the alt-regime rule  (data to " + fd(days[-1]) + ")",
           "Rule: IN only while BTC > 200-day avg AND > 50-day avg AND no BTC open-interest warning C in the last 14 days. Isolated-margin long perpetual; liquidation checked against each day's LOW; 0.05% fee/side, funding 0.03%/day on notional (assumed).",
-          "OI data " + ("loaded (from 2021-01)" if oi_ok else "NOT found, so the OI part of the rule is off") + ".", ""]
+          "OI data " + ("loaded (from 2021-01)" if oi_ok else "NOT found, so the OI part of the rule is off") + ".",
+          "Bad-data check (daily lows more than 50% below both neighbouring closes are treated as data glitches): " + ("; ".join(BAD) if BAD else "none found"), ""]
     sets = [("BTC", bt), ("ETH", et)]
     # ---- Part A
     L_ += ["== A. $10,000 on 1 Oct 2020, value at the end of each phase (LIQ = wiped out on that date; account stays at $0) =="]
