@@ -4,7 +4,7 @@ State = IN only when ALL of: (1) BTC closed above its 200-day average, (2) BTC c
 (C = BTC futures open interest at a new 180-day high AND up 15%+ in 30 days; data from data.binance.vision, cached in basketgate_oi.csv by basket_paper.py).
 Otherwise OUT. These are the 'gate + 50-day' and 'gate + OI C-14' rules from the majors/coins5 reports, combined. Rules fixed on 19 Oct 2026, never changed.
 Honest status: the OI part was chosen after seeing the data (not out-of-sample); backtests are survivorship-flattered and cover ~3 phases. Use as a prompt to look, not an order.
-Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run). Also sends a separate daily LEVERAGE traffic-light note: GREEN 2%+ above the BTC 50-day average, ORANGE 0-2% above, RED below / regime OUT; louder when the colour changes."""
+Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run). Also sends a separate daily LEVERAGE traffic-light note: GREEN 2%+ above the BTC 50-day average, ORANGE 0-2% above, RED below / regime OUT; louder when the colour changes. A matching SPOT traffic-light note is sent too (same colours, wording for unleveraged alt holdings)."""
 import os, csv, json, time
 import scanner, backtest as B, basket_paper as BP
 
@@ -87,6 +87,21 @@ def main():
     changed_c = prev_color is not None and prev_color != color
     title = head + (" (colour changed)" if changed_c else "")
     scanner.notify(title, "\n".join(body), scanner.NTFY_TOPIC, EMO[color], 4 if (changed_c or color == "RED") else 2 if color == "GREEN" else 3)
+    # ---- SPOT alert (no leverage): same traffic light on the same signal, separate message and wording.
+    scolor = color                                        # same thresholds as the leverage light
+    cur["spot_color"] = scolor; prev_s = (old or {}).get("spot_color")
+    shead = {"GREEN": "SPOT GREEN: hold / buy alts", "ORANGE": "SPOT ORANGE: hold, do not add", "RED": "SPOT RED: sell alts to cash"}[scolor]
+    sact = {"GREEN": "ACTION: be in alts (BTC/ETH and large coins). Buying or holding is fine. Spread buys over a few days rather than all at once.",
+            "ORANGE": "ACTION: keep what you hold, but do NOT add new alt money. The exit line is close and a small dip could flip this to RED.",
+            "RED": "ACTION: move alts to cash/stablecoins at your next opportunity (the rule exits on the daily close). " + ("; ".join(reasons) + "." if reasons else "")}[scolor]
+    sbody = [sact, "",
+             f"BTC {c[-1]:,.0f} is {gap:+.1f}% vs its 50-day average ({ma(50):,.0f}); 200-day average {ma(200):,.0f} ({'above' if g200 else 'below'}).",
+             "OI warning in last 14 days: " + ("YES" if oi_warn else "no"),
+             "Colours: GREEN = 2%+ above 50-day, ORANGE = 0 to 2% above, RED = below 50-day / 200-day or OI warning."]
+    if state == "IN": sbody.append(f"EXIT LINE: BTC daily close below {ma(50):,.0f} (now {max(gap, 0):.1f}% away).")
+    sbody += ["", "Backtest: in the 2021-22 bear year, buy-and-hold lost 59-76% on BNB/BTC/ETH; the gate/50-day/OI variants lost about 13-32%, at the cost of some bull-phase gains. Survivor coins, hindsight-chosen OI flag, 3 market phases. Rule-based prompt, not advice."]
+    sch = prev_s is not None and prev_s != scolor
+    scanner.notify(shead + (" (colour changed)" if sch else ""), "\n".join(sbody), scanner.NTFY_TOPIC, EMO[scolor], 4 if (sch or scolor == "RED") else 2 if scolor == "GREEN" else 3)
     json.dump(cur, open(sp, "w"))
     lp = P("regime_log.csv"); new = not os.path.exists(lp)
     with open(lp, "a", newline="") as f:
