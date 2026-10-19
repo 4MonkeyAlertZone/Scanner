@@ -1,0 +1,89 @@
+LAB 28  2026-10-19  OI warnings with intraday, quadrants, alt crowding and filters. BTC OI 2021-01-01 to 2026-10-18; files read 14421; 34 flags declared in advance; bad price ticks clipped 2.
+
+== 1. Flags vs a 10%+ BTC fall within 14 days. eps = episodes (flagged days within 7 days merged). lift = hit rate minus the base rate of that period (base: all 139 eps 29%; cycle 1 56% (16 eps), bear 42% (26 eps), cycle 2 19% (98 eps)). With 34 flags expect ~1 to reach z>2 by luck. ==
+flag                                               days  eps   hit     z    lift c1 (eps)    lift bear      lift c2
+OI +15% in 30d  [lab27 fixed]                       278   33   48%   2.4        +15% ( 7)     +13% ( 9)     +20% (18)
+OI new 180d high  [lab27 dynamic]                    76   30   53%   2.9        +44% ( 3)     +24% (12)     +14% (15)
+OI 1.5 std above 60d trend                          284   42   40%   1.6        +44% ( 4)     -22% ( 5)     +17% (33)
+OI +25% in 30d                                       91   10   60%   2.1        +10% ( 3)     +38% ( 5)     -19% ( 2)
+OI +10% in 30d                                      457   41   37%   1.0        +27% ( 6)      -2% (10)      +8% (26)
+OI +10% in 7d                                       187   60   42%   2.1        +19% (12)      -9% (15)     +14% (33)
+OI +5% in 3d                                        355   88   28%  -0.2         +1% ( 7)     +11% (17)      -1% (64)
+INTRADAY: biggest 1h OI rise in top 10% of year     189   68   19%  -1.9         -6% ( 4)      -7% (14)      -7% (50)
+INTRADAY: biggest 4h OI rise in top 10% of year     172   79   24%  -1.1        -23% ( 6)      -3% (18)      -1% (55)
+INTRADAY: 4h OI rise in top 5%                       81   53   23%  -1.1        -31% ( 4)      -1% (12)      -3% (37)
+QUADRANT price up 5%+ & OI up 10%+ (30d)            179   29   24%  -0.6         -6% ( 4)     -22% ( 5)      +1% (20)
+QUADRANT price up 5%+ & OI down 10%+                 59   16   44%   1.3         -6% ( 4)     +58% ( 1)     +17% (11)
+QUADRANT price down 5%+ & OI up 10%+                178   17   53%   2.1        +19% ( 4)      +8% ( 8)     +31% ( 6)
+QUADRANT price down 5%+ & OI down 10%+              159   20   15%  -1.4         -6% ( 2)     -42% ( 4)      -6% (15)
+ALT OI median up 25%+ in 30d                         83   17   35%   0.5          -- ( 0)     +38% ( 5)      -3% (12)
+ALT OI up 10%+ more than BTC OI                     392   35   26%  -0.5          -- ( 0)     +18% (10)      -8% (26)
+ALT: half or more of alts at OI 180d high             1    1    0%  -0.6          -- ( 0)       -- ( 0)     -19% ( 1)
+ALT half at OI high AND BTC OI +15%                   0
+OI +15% AND RSI >= 70                                17    7   57%   1.6        +44% ( 1)     +58% ( 1)     +21% ( 5)
+OI +15% AND >25% above 50d avg                        1    1  100%   1.5        +44% ( 1)       -- ( 0)       -- ( 0)
+OI +15% AND volume spike (2 std)                     19    8   50%   1.3        +44% ( 2)      +8% ( 4)     -19% ( 2)
+OI +15% AND fib ext 1.272/1.618/2.0                   3    2    0%  -0.9          -- ( 0)       -- ( 0)     -19% ( 2)
+OI 180d high AND RSI >= 70                            3    2   50%   0.6          -- ( 0)       -- ( 0)     +31% ( 2)
+OI 180d high AND >25% above 50d avg                   0
+OI 180d high AND volume spike                         5    5   60%   1.5        +44% ( 1)     +24% ( 3)     -19% ( 1)
+OI 180d high AND fib ext                              0
+OI 180d high AND OI +15%                             53   21   67%   3.7        +44% ( 3)     +28% (10)     +31% ( 8)
+OI 180d high AND price up 5%+ (30d)                  18   11   36%   0.5        -56% ( 1)     +33% ( 4)      -3% ( 6)
+OI 180d high AND price down (30d)                    52   16   62%   2.9        +44% ( 3)     +15% ( 7)     +31% ( 6)
+INTRADAY 4h top 10% AND OI +10% in 30d               59   31   35%   0.7        +10% ( 3)      -1% (12)      +6% (16)
+INTRADAY 4h top 10% AND RSI >= 70                    13   11    9%  -1.5          -- ( 0)       -- ( 0)     -10% (11)
+RSI >= 70 alone (control)                           170   17   24%  -0.5        -56% ( 2)     +58% ( 1)      +2% (14)
+volume spike alone (control)                        108   38   16%  -1.9         -6% ( 2)      -2% (10)     -16% (26)
+fib ext alone (control)                              78   18   33%   0.4         -6% ( 2)       -- ( 0)     +12% (16)
+
+SURVIVORS (z >= 2 and positive lift in every period that has 3+ episodes, in at least two periods): 6 of 34
+  OI 180d high AND OI +15%  (z 3.7, 21 eps)
+  OI 180d high AND price down (30d)  (z 2.9, 16 eps)
+  OI new 180d high  [lab27 dynamic]  (z 2.9, 30 eps)
+  OI +15% in 30d  [lab27 fixed]  (z 2.4, 33 eps)
+  QUADRANT price down 5%+ & OI up 10%+  (z 2.1, 17 eps)
+  OI +25% in 30d  (z 2.1, 10 eps)
+
+== 2. Leave-one-period-out: pick the 3 flags with the best average lift on the OTHER two periods (needs 4+ episodes in each), then score them on the held-out period ==
+held out    picked flags                                                                          their lift there  all flags avg
+cycle 1     OI 180d high AND OI +15%; OI 180d high AND price dow; QUADRANT price down 5%+ &                   +35%            +8%
+bear        OI 1.5 std above 60d trend; QUADRANT price down 5%+ & ; OI +15% in 30d  [lab27 fix                 -0%            +7%
+cycle 2     OI +15% in 30d  [lab27 fix; QUADRANT price down 5%+ & ; OI +10% in 30d                            +19%            +5%
+AVERAGE                                                                                                       +18%            +7%   (want the first clearly above the second and above 0)
+
+== 3. Size x horizon grid for the top survivors: hit rate (episodes) vs base, falls of 5/10/15% within 7/14/30 days ==
+OI 180d high AND OI +15%
+   fall >= 5%   7d: 67% vs 44%   14d: 81% vs 53%   30d: 90% vs 65%
+   fall >= 10%   7d: 43% vs 19%   14d: 67% vs 29%   30d: 76% vs 45%
+   fall >= 15%   7d: 19% vs 8%   14d: 29% vs 16%   30d: 48% vs 29%
+OI 180d high AND price down (30d)
+   fall >= 5%   7d: 69% vs 44%   14d: 88% vs 53%   30d: 94% vs 65%
+   fall >= 10%   7d: 44% vs 19%   14d: 62% vs 29%   30d: 75% vs 45%
+   fall >= 15%   7d: 31% vs 8%   14d: 31% vs 16%   30d: 44% vs 29%
+OI new 180d high  [lab27 dynamic]
+   fall >= 5%   7d: 63% vs 44%   14d: 77% vs 53%   30d: 87% vs 65%
+   fall >= 10%   7d: 30% vs 19%   14d: 53% vs 29%   30d: 67% vs 45%
+   fall >= 15%   7d: 20% vs 8%   14d: 27% vs 16%   30d: 40% vs 29%
+
+== 4. Exposure test (alt basket of 28 coins listed today = survivorship-flattered): gate + 7 days in cash after the warning. NOT out-of-sample for the picked flags. ==
+rule                                                           whole         cycle 1            bear         cycle 2
+hold the alt basket                                     x1.13 dd 81%    x1.16 dd 61%    x0.28 dd 77%    x3.53 dd 52%
+BTC 200-day gate only                                   x1.50 dd 66%    x0.72 dd 52%    x0.74 dd 27%    x2.80 dd 50%
+gate + out after: OI 180d high AND OI +15%              x3.23 dd 48%    x1.21 dd 32%    x0.74 dd 27%    x3.57 dd 48%
+gate + out after: OI 180d high AND price down (30d)     x2.99 dd 50%    x1.21 dd 32%    x0.74 dd 27%    x3.31 dd 50%
+gate + out after: OI new 180d high  [lab27 dynamic]     x3.26 dd 48%    x1.21 dd 32%    x0.74 dd 27%    x3.61 dd 45%
+gate + out after: OI +15% in 30d  [lab27 fixed]         x3.37 dd 55%    x1.26 dd 17%    x0.94 dd 11%    x2.85 dd 55%
+gate + out after: QUADRANT price down 5%+ & OI up 10    x3.15 dd 51%    x1.06 dd 32%    x0.94 dd 11%    x3.16 dd 51%
+gate + out after: OI +25% in 30d                        x2.20 dd 59%    x1.14 dd 32%    x0.74 dd 27%    x2.60 dd 50%
+
+Random-timing check (300 circular shifts of the same warning dates; want > 95%):
+  OI 180d high AND OI +15%                             real x3.23 vs gate-only x1.50; beats 99% of random timings
+  OI 180d high AND price down (30d)                    real x2.99 vs gate-only x1.50; beats 96% of random timings
+  OI new 180d high  [lab27 dynamic]                    real x3.26 vs gate-only x1.50; beats 99% of random timings
+  OI +15% in 30d  [lab27 fixed]                        real x3.37 vs gate-only x1.50; beats 95% of random timings
+  QUADRANT price down 5%+ & OI up 10%+                 real x3.15 vs gate-only x1.50; beats 97% of random timings
+  OI +25% in 30d                                       real x2.20 vs gate-only x1.50; beats 93% of random timings
+
+Read: trust a flag only if it is a SURVIVOR, the leave-one-period-out score is above both zero and the all-flags average, and it beats random timings. Otherwise it is noise from a large menu.
+Caveats: one asset (BTC) for the target, about 3 phases, 34 flags, flags in part 4 chosen after seeing the data, alt basket survivorship, exchange volume = Binance.US BTC volume.
