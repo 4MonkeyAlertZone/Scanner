@@ -109,14 +109,14 @@ def main():
     Lx += ["", "== BTC's OI warning vs each ALT's own falls (volatility-unit target). Flag dates from BTC OI; outcome from the alt's price. =="]
     Lx.append(f"{'alt':<6}{'BTC flag':<30}{'days':>5}{'eps':>4}{'hit':>5}{'base':>5}{'lift':>6}{'z':>5}{'p':>6}")
     if "BTC" in A:
-        bt = A["BTC"]; pos = {t: i for i, t in enumerate(bt["T"])}; sumry = {}
+        bt = A["BTC"]; pos = {t - t % 86400: i for i, t in enumerate(bt["T"])}; sumry = {}
         for s in SYMS[1:]:
             if s not in A: continue
             a = A[s]; T = a["T"]; days = a["days"]
             for name, flag in bt["flags"][:3]:
                 fa = [False] * a["n"]
                 for i, t in enumerate(T):
-                    j = pos.get(t)
+                    j = pos.get(t - t % 86400)
                     if j is not None and flag[j]: fa[i] = True
                 b = evalflag(days, [True] * a["n"], a["fs"], T, None, True); r = evalflag(days, fa, a["fs"], T)
                 if not r or r[1] < 3: continue
