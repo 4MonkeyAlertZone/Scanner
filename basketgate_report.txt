@@ -1,0 +1,20 @@
+BTC-GATED BASKET PAPER TEST  data to 2026-10-18 (completed daily candles)   started 2026-10-18   universe 72 coins
+BTC ABOVE its 200-day average -> basket held. Rule: top-10 coins by traded value, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
+Paper account (1000 start, 0.1% per side): 999 (-0.1%)   |   same basket WITHOUT the BTC switch: 999 (-0.1%)   |   BTC held: 1,000 (+0.0%)
+
+HOLDING (10 coins, last refreshed 2026-10-18):
+  OKB      10.0% of account   price 113.47
+  LIT      10.0% of account   price 3.0343
+  STRK     10.0% of account   price 0.05661
+  XPL      10.0% of account   price 0.07662
+  TAO      10.0% of account   price 268.4
+  GRAM     10.0% of account   price 1.343
+  ZRO      10.0% of account   price 1.9023
+  RAY      10.0% of account   price 1.9106
+  INJ      10.0% of account   price 8.556
+  ETHFI    10.0% of account   price 0.6831
+
+ACTIONS (1):
+  2026-10-18  ENTER         OKB LIT STRK XPL TAO GRAM ZRO RAY INJ ETHFI   account 999.0
+
+Judge it only after a full BTC bull-to-bear switch has happened, or many months. The lab 25 test showed the switch avoids most bear-market losses but gives up much of the bull-market profit; this paper test shows whether that holds live.
