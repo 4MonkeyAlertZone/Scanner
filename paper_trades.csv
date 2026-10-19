@@ -437,7 +437,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 436,WBT,crypto,long,IN ZONE,3,1792366773,19 Oct 00:39,79.874,79.661682,81.034,closed,1792402580,19 Oct 10:36,81.034,target,1.25,1.25,9.9,4.71,
 437,LTC,crypto,long,IN ZONE - WAIT,4,1792366773,19 Oct 00:39,59.04,58.345714,65.81,open,,,,,,,,,
 438,XRP,crypto,long,IN ZONE,5,1792373072,19 Oct 02:24,1.311,1.3006536,1.33415,open,,,,,,,,,
-439,NIGHT,crypto,long,IN ZONE - WAIT,3,1792377922,19 Oct 03:45,0.04102,0.039969381,0.04333,open,,,,,,,,,
+439,NIGHT,crypto,long,IN ZONE - WAIT,3,1792377922,19 Oct 03:45,0.04102,0.039969381,0.04333,closed,1792406393,19 Oct 11:39,0.03976,stop,-3.27,-3.27,7.9,-1.28,
 440,PEPE,crypto,long,RECLAIM C TP1,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.325536e-06,open,,,,,,,,,168
 441,PEPE,crypto,long,RECLAIM C TP2,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.608072e-06,open,,,,,,,,,168
 442,PEPE,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.890608e-06,open,,,,,,,,,168
@@ -456,3 +456,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 455,UNI,crypto,long,RECLAIM C TP2,,1792398276,19 Oct 09:24,7.427,6.735502,8.809996,open,,,,,,,,,168
 456,UNI,crypto,long,RECLAIM C TP3,,1792398276,19 Oct 09:24,7.427,6.735502,9.501494,open,,,,,,,,,168
 457,CRV,crypto,long,BUY SIGNAL,4,1792398276,19 Oct 09:24,0.3563,0.34775,0.36706,open,,,,,,,,,
+458,XPL,crypto,long,BUY SIGNAL,3,1792406393,19 Oct 11:39,0.07702,0.075204643,0.07955,open,,,,,,,,,
