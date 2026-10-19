@@ -47,7 +47,14 @@ def med(x): return st.median(x) if x else float("nan")
 def fx(v, f="{:+.0%}"): return f.format(v) if v == v else "--"
 
 def main():
-    btc = B.hist_crypto("BTC", "1d", 2600); T = [r[0] for r in btc]; O = [r[1] for r in btc]; H = [r[2] for r in btc]; L = [r[3] for r in btc]; C = [r[4] for r in btc]
+    btc = B.hist_crypto("BTC", "1d", 2600)
+    bad = 0; fixed = []
+    for r in btc:                                   # clip bad ticks: a wick more than 25% beyond the candle body is a data error (one 138,070 high in June 2023 spoiled the first run)
+        t, o, h, l, c, v = r; hb, lb = max(o, c), min(o, c)
+        h2, l2 = min(h, hb * 1.25), max(l, lb / 1.25)
+        bad += (h2 != h) + (l2 != l); fixed.append((t, o, h2, l2, c, v))
+    btc = fixed; print("bad ticks clipped:", bad)
+    T = [r[0] for r in btc]; O = [r[1] for r in btc]; H = [r[2] for r in btc]; L = [r[3] for r in btc]; C = [r[4] for r in btc]
     n = len(btc); pos = {t: i for i, t in enumerate(T)}
     rsi = rsi_series(C); ma50 = [sum(C[max(0, i-49):i+1]) / min(50, i + 1) for i in range(n)]
     coins = [t for t in scanner.top100()[:45] if t.upper() not in STABLES]
@@ -66,7 +73,7 @@ def main():
     p5 = zig(H, L, .05); p20 = zig(H, L, .20); ev = []
     for k in range(len(p5) - 1):
         a, b = p5[k], p5[k+1]
-        if not (a[2] == "H" and b[2] == "L") or not (W0 <= T[a[0]] < W1): continue
+        if not (a[2] == "H" and b[2] == "L") or not (W0 <= T[a[0]] < W1) or b[0] <= a[0]: continue
         pi, ti = a[0], b[0]; peak, tr = a[1], b[1]
         kext = None
         if k >= 3 and p5[k-1][2] == "L" and p5[k-2][2] == "H" and p5[k-3][2] == "L":
@@ -137,13 +144,15 @@ def main():
         if not fl: return None
         hit = [future_dd(i) >= .10 for i in fl]
         eps = []; last = -99
-        for i in fl:
-            if i - last > (7 if len(fl) < len(days) else 14): eps.append(i)
-            last = i
+        if len(fl) == len(days): eps = fl[::14]      # base rate: one sample per 14-day block
+        else:
+            for i in fl:
+                if i - last > 7: eps.append(i)
+                last = i
         eh = [future_dd(i) >= .10 for i in eps]
         return len(fl), sum(hit) / len(fl), len(eps), sum(eh) / len(eps), med([future_dd(i) for i in fl])
     # ---------- write ----------
-    Lx = [f"LAB 23  {datetime.now(timezone.utc):%Y-%m-%d}  BTC pullback anatomy, Oct 2020 - Aug 2025. Alt basket = equal-weight of {len(A)} large coins (listed today = survivorship).", ""]
+    Lx = [f"LAB 23 (v2: bad ticks clipped: {bad})  {datetime.now(timezone.utc):%Y-%m-%d}  BTC pullback anatomy, Oct 2020 - Aug 2025. Alt basket = equal-weight of {len(A)} large coins (listed today = survivorship).", ""]
     Lx.append("== A. Summary by pullback size (peak to trough, daily highs/lows) ==")
     Lx.append(f"{'size':<8}{'count':>6}{'med depth':>10}{'med days down':>14}{'recover<=30d':>13}{'alt basket med':>15}{'alt/BTC drop':>13}")
     for thr in (.05, .08, .10, .15, .20):
