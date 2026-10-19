@@ -1,0 +1,166 @@
+LAB 24  2026-10-19  model hunt, judged on unseen periods. Pool 57 coins, daily, hold 10d (open t+1 to open t+11), picks net of 0.10% cost.
+Each day only the TOP-K coins by trailing 60-day traded value are eligible (size rank stand-in; true market-cap history is not free). Target = return minus the average of that day's eligible coins.
+Pool: ETH, BNB, XRP, SOL, TRX, ZEC, HYPE, DOGE, LINK, ADA, NEAR, XLM, BCH, LTC, UNI, AVAX, SUI, HBAR, SHIB, CRO, QNT, ENA, OKB, AAVE, ONDO, PUMP, WLD, DOT, PEPE, MORPHO, ICP, ARB, ETC, ALGO, JUP, POL, ATOM, RENDER, PI, FIL, INJ, ZRO, STX, APT, ETHFI, DASH, TIA, VET, PYTH, FLR, CRV, RAY, TRUMP, PENGU, STRK, FET, VIRTUAL
+Missing from the pool: coins that died or were delisted (e.g. LUNA, FTT) - this still flatters 'buy the dip' style rules.
+
+################ TOP 10 COINS BY SIZE RANK ################
+Days per period: cycle 2 (train A) 1002; cycle 1 396; bear year 350; recent 388
+
+== 1. One feature at a time: average daily rank correlation (IC) with the 10-day excess return. +ve = high values did better. A real pattern keeps its SIGN in every period. (Market-wide features such as BTC trend cannot be ranked across coins; the model below can still use them.) ==
+feature               cycle 2 (train A           cycle 1         bear year            recent   consistent?
+size_rank                       -0.090            -0.097             0.043            -0.034
+vol_30d                         -0.072            -0.058            -0.083            -0.060   YES
+vol_10d                         -0.069            -0.059            -0.056            -0.060   YES
+off_60d_high                     0.064             0.049             0.045             0.003
+range_today                     -0.058            -0.061            -0.090            -0.029   YES
+corr_btc_30d                     0.051             0.075             0.118             0.024   YES
+vol_5v30                         0.027             0.042             0.008            -0.027
+above_60d_low                   -0.024            -0.054            -0.003            -0.031
+close_loc                       -0.020             0.027             0.027             0.021
+vol_ratio                       -0.017            -0.013             0.046            -0.072
+ret_30d                         -0.016            -0.027            -0.015            -0.077   YES
+rel_btc_30d                     -0.016            -0.027            -0.015            -0.077   YES
+ret_2d                          -0.016             0.011             0.029            -0.006
+ret_3d                          -0.015             0.008             0.021            -0.023
+rel_btc_3d                      -0.015             0.008             0.021            -0.023
+ret_5d                          -0.011            -0.014             0.082            -0.017
+ret_10d                          0.011            -0.031             0.085            -0.037
+rel_btc_10d                      0.011            -0.031             0.085            -0.037
+vs_ma20                          0.010            -0.002             0.087            -0.038
+ret_20d                          0.010             0.009             0.072            -0.042
+
+== 2. FIT A: train on cycle 2, test on cycle 1 / bear year / recent ==  (fit on 9999 coin-days)
+period              model    trades  avg excess/trade  win%  worst-3 excess     IC chance p
+cycle 2 (train A)   boost       201             3.67%   66%          -2.68%  0.197     0.00   (trained here)
+cycle 1             boost        80             3.11%   48%          -0.35%  0.060     0.14
+bear year           boost        70             0.03%   49%          -0.29%  0.038     0.29
+recent              boost        78             1.96%   55%          -1.40%  0.030     0.01
+cycle 2 (train A)   tree        201             0.18%   38%           0.07%  0.034     0.17   (trained here)
+cycle 1             tree         80            -2.10%   44%           5.43% -0.105     0.54
+bear year           tree         70             0.53%   47%           0.58% -0.049     0.11
+recent              tree         78             0.15%   41%          -0.35% -0.033     0.20
+
+Most used features: corr_btc_30d 0.09, basket_vs_btc_30d 0.08, btc_vs_50d 0.07, ret_10d 0.07, vol_5v30 0.07, vol_10d 0.06, vs_ma200 0.05, rel_btc_10d 0.04, off_60d_high 0.03, vs_ma50 0.03, ret_20d 0.03, above_60d_low 0.03
+
+Readable rules (depth-3 tree; value = predicted 10-day excess):
+|--- ret_10d <= 0.298
+|   |--- btc_vs_50d <= 0.241
+|   |   |--- vs_ma200 <= -0.324
+|   |   |   |--- value: [0.032]
+|   |   |--- vs_ma200 >  -0.324
+|   |   |   |--- value: [-0.003]
+|   |--- btc_vs_50d >  0.241
+|   |   |--- value: [-0.053]
+|--- ret_10d >  0.298
+|   |--- value: [0.059]
+
+
+== 3. FIT B (reverse): train on cycle 1 + bear year, test on cycle 2 / recent ==  (fit on 7290 coin-days)
+period              model    trades  avg excess/trade  win%  worst-3 excess     IC chance p
+cycle 1             boost        80             6.75%   55%          -4.67%  0.151     0.00   (trained here)
+bear year           boost        70            -0.07%   47%          -0.12%  0.019     0.49   (trained here)
+cycle 2 (test)      boost       201             0.03%   43%          -0.06% -0.034     0.36
+recent              boost        78             0.22%   46%           0.21% -0.027     0.31
+cycle 1             tree         80             1.27%   51%          -0.78% -0.029     0.07   (trained here)
+bear year           tree         70             0.22%   41%           0.03% -0.062     0.27   (trained here)
+cycle 2 (test)      tree        201            -0.49%   34%           0.30% -0.066     0.56
+recent              tree         78            -0.01%   44%          -0.69% -0.067     0.30
+
+Most used features: vol_30d 0.23, vs_ma200 0.12, vol_5v30 0.08, vol_ratio 0.07, corr_btc_30d 0.05, btc_vs_200d 0.04, above_60d_low 0.04, off_60d_high 0.04, ret_60d 0.03, ret_20d 0.03, basket_ret_30d 0.03, btc_ret_30d 0.03
+
+Readable rules (depth-3 tree; value = predicted 10-day excess):
+|--- vol_5v30 <= 0.333
+|   |--- value: [0.099]
+|--- vol_5v30 >  0.333
+|   |--- basket_ret_30d <= 0.668
+|   |   |--- vs_ma200 <= 1.298
+|   |   |   |--- value: [-0.002]
+|   |   |--- vs_ma200 >  1.298
+|   |   |   |--- value: [0.064]
+|   |--- basket_ret_30d >  0.668
+|   |   |--- basket_ret_10d <= 0.160
+|   |   |   |--- value: [-0.117]
+|   |   |--- basket_ret_10d >  0.160
+|   |   |   |--- value: [0.001]
+
+
+################ TOP 20 COINS BY SIZE RANK ################
+Days per period: cycle 2 (train A) 1002; cycle 1 0; bear year 98; recent 388
+
+== 1. One feature at a time: average daily rank correlation (IC) with the 10-day excess return. +ve = high values did better. A real pattern keeps its SIGN in every period. (Market-wide features such as BTC trend cannot be ranked across coins; the model below can still use them.) ==
+feature               cycle 2 (train A           cycle 1         bear year            recent   consistent?
+size_rank                       -0.075               nan            -0.094            -0.038
+vol_10d                         -0.063               nan            -0.086            -0.062
+off_60d_high                     0.063               nan             0.007             0.001
+vol_30d                         -0.058               nan            -0.158            -0.050
+range_today                     -0.049               nan            -0.099            -0.028
+corr_btc_30d                     0.049               nan             0.214             0.009
+vol_5v30                         0.033               nan            -0.046            -0.002
+ret_20d                          0.020               nan             0.018            -0.044
+vs_ma20                          0.019               nan            -0.012            -0.020
+vs_ma50                          0.016               nan            -0.029            -0.036
+ret_10d                          0.013               nan            -0.020            -0.012
+rel_btc_10d                      0.013               nan            -0.020            -0.012
+ret_2d                          -0.011               nan            -0.038             0.020
+vol_ratio                       -0.011               nan            -0.028            -0.041
+ret_60d                          0.010               nan            -0.062            -0.027
+ret_30d                          0.010               nan            -0.057            -0.048
+rel_btc_30d                      0.010               nan            -0.057            -0.048
+rsi14                            0.010               nan             0.050            -0.016
+vol_surge                        0.007               nan            -0.006            -0.007
+ret_3d                          -0.007               nan            -0.038             0.013
+
+== 2. FIT A: train on cycle 2, test on cycle 1 / bear year / recent ==  (fit on 15458 coin-days)
+period              model    trades  avg excess/trade  win%  worst-3 excess     IC chance p
+cycle 2 (train A)   boost       198             4.81%   68%          -2.83%  0.221     0.01   (trained here)
+recent              boost        78             4.42%   50%          -0.01%  0.016     0.04
+cycle 2 (train A)   tree        198             1.65%   46%          -0.45%  0.041     0.07   (trained here)
+recent              tree         78             3.38%   49%          -0.37% -0.066     0.07
+
+Most used features: basket_vs_btc_30d 0.14, vol_5v30 0.09, corr_btc_30d 0.06, ret_10d 0.06, ret_30d 0.06, rel_btc_10d 0.04, vs_ma200 0.04, btc_vs_50d 0.03, vol_10d 0.03, ret_60d 0.03, rel_btc_30d 0.03, vol_30d 0.03
+
+Readable rules (depth-3 tree; value = predicted 10-day excess):
+|--- ret_30d <= 0.440
+|   |--- vs_ma200 <= -0.321
+|   |   |--- above_60d_low <= 0.164
+|   |   |   |--- value: [0.003]
+|   |   |--- above_60d_low >  0.164
+|   |   |   |--- value: [0.047]
+|   |--- vs_ma200 >  -0.321
+|   |   |--- btc_vs_200d <= -0.073
+|   |   |   |--- value: [-0.028]
+|   |   |--- btc_vs_200d >  -0.073
+|   |   |   |--- value: [-0.003]
+|--- ret_30d >  0.440
+|   |--- basket_vs_btc_30d <= 0.046
+|   |   |--- value: [0.098]
+|   |--- basket_vs_btc_30d >  0.046
+|   |   |--- size_rank <= 7.500
+|   |   |   |--- value: [-0.014]
+|   |   |--- size_rank >  7.500
+|   |   |   |--- value: [0.032]
+
+
+== 3. FIT B (reverse): train on cycle 1 + bear year, test on cycle 2 / recent ==  (fit on 1274 coin-days)
+period              model    trades  avg excess/trade  win%  worst-3 excess     IC chance p
+cycle 2 (test)      boost       198             0.57%   55%           0.39%  0.061     0.30
+recent              boost        78            -1.42%   41%          -0.38%  0.026     0.72
+cycle 2 (test)      tree        198            -0.16%   44%           0.80%  0.013     0.48
+recent              tree         78             1.34%   40%          -1.53% -0.005     0.15
+
+Most used features: vol_30d 0.20, corr_btc_30d 0.13, above_60d_low 0.08, vol_10d 0.07, vs_ma200 0.06, btc_vs_200d 0.06, size_rank 0.05, vol_ratio 0.04, ret_60d 0.03, basket_vs_btc_30d 0.03, rel_btc_10d 0.03, off_60d_high 0.03
+
+Readable rules (depth-3 tree; value = predicted 10-day excess):
+|--- ret_20d <= -0.039
+|   |--- value: [-0.015]
+|--- ret_20d >  -0.039
+|   |--- vol_30d <= 0.035
+|   |   |--- value: [0.038]
+|   |--- vol_30d >  0.035
+|   |   |--- value: [-0.005]
+
+
+HOW TO READ: 'avg excess/trade' = top-3 picks (of the top-K by size) vs the average of the top-K, after costs, every 5th day. Only trust a pattern that is positive on EVERY unseen period with chance p below about 0.1.
+'worst-3 excess' = the model's lowest-ranked 3 vs average (no cost): a model with real information should show a clearly NEGATIVE number here. 'chance p' = how often a random shift of the model's own scores did as well (keeps score persistence).
+With ~35 features, one or two will show YES in the single-feature table by pure chance (checked on random data): only believe a YES whose IC is also meaningfully large (about 0.03+ in every period) and that the model uses.
+Size rank is traded value, not market cap, and the pool is survivors, so treat positive results as leads to confirm live, not proof.
