@@ -1,0 +1,67 @@
+LAB 29  2026-10-19  Does the OI warning replicate on other assets? Each asset uses its OWN Binance futures OI. Flags fixed in advance (G1-G4). Target: a fall within 14 days of at least one 14-day volatility unit; 'abs10' = a plain 10% fall.
+
+lift = hit rate minus the asset's own base rate; p = share of 200 random-timing shifts with a lift at least this good (small = real); c1/bear/c2 = lift per period (episodes). Crypto assets move together, so these are NOT independent confirmations.
+asset flag                           days eps  hit base  lift    z     p  abs10 lift      lift c1  lift bear   lift c2
+BTC   G1 OI +15% in 30d               278  33  30%  29%   +1%  0.1  0.30        +19%      -1% (7)   -1% (9)  +5% (18)
+BTC   G2 OI new 180d high              76  30  40%  29%  +11%  1.3  0.04        +24%     +56% (3)  -1% (12) +10% (15)
+BTC   G3 both                          53  21  48%  29%  +18%  1.8  0.03        +37%     +56% (3)  -5% (10)  +27% (8)
+BTC   G4 price down 5%+ & OI +10%     178  17  47%  29%  +18%  1.6  0.05        +24%     +31% (4)   +3% (8)  +27% (6)
+ETH   G1 OI +15% in 30d               346  28  21%  26%   -5% -0.6  0.73         -4%           --   +3% (4)  -3% (24)
+ETH   G2 OI new 180d high              72  24  33%  26%   +7%  0.8  0.27        +14%           --   -6% (6) +15% (18)
+ETH   G3 both                          59  21  29%  26%   +2%  0.2  0.52        +12%           --   -8% (7) +11% (14)
+ETH   G4 price down 5%+ & OI +10%     160  21  29%  26%   +2%  0.2  0.49         +3%           --   -2% (5)  +5% (17)
+SOL   G1 OI +15% in 30d               399  31  19%  28%   -9% -1.1  0.82        -23%           --  +17% (4)  -6% (28)
+SOL   G2 OI new 180d high              50  19  32%  28%   +3%  0.3  0.28         -3%           --  +24% (7)  -4% (12)
+SOL   G3 both                          42  16  19%  28%   -9% -0.8  0.79        -18%           --  +17% (6) -20% (10)
+SOL   G4 price down 5%+ & OI +10%     211  21  29%  28%   +0%  0.0  0.45        -13%           --  +33% (3)  +1% (19)
+XRP   G1 OI +15% in 30d               424  36  39%  26%  +12%  1.7  0.09         +7%           --   -3% (4) +13% (32)
+XRP   G2 OI new 180d high              31  13  38%  26%  +12%  1.0  0.28         +9%           --   -3% (4)  +17% (9)
+XRP   G3 both                          26  13  31%  26%   +4%  0.3  0.57         +9%           --   -3% (4)   +6% (9)
+XRP   G4 price down 5%+ & OI +10%     171  22  32%  26%   +5%  0.6  0.39         -4%           --   -3% (4)  +6% (18)
+DOGE  G1 OI +15% in 30d               532  31  26%  32%   -7% -0.8  0.62         -6%           --  +22% (4)  -2% (27)
+DOGE  G2 OI new 180d high              36  13  31%  32%   -2% -0.1  0.50        +10%           --  +39% (3)  -4% (10)
+DOGE  G3 both                          35  13  31%  32%   -2% -0.1  0.55        +10%           --  +39% (3)  -4% (10)
+DOGE  G4 price down 5%+ & OI +10%     104  16  19%  32%  -14% -1.2  0.87        -14%           --  +22% (4) -16% (12)
+BNB   G1 OI +15% in 30d               290  31  48%  26%  +23%  2.9  0.01        +11%           --  +28% (6) +23% (25)
+BNB   G2 OI new 180d high              43  16  44%  26%  +18%  1.7  0.08         +4%           --   -8% (7)  +41% (9)
+BNB   G3 both                          37  13  54%  26%  +28%  2.3  0.03        +11%           --   +3% (4)  +41% (9)
+BNB   G4 price down 5%+ & OI +10%     117  12  33%  26%   +8%  0.6  0.46         +6%           --   +3% (4)  +12% (8)
+LINK  G1 OI +15% in 30d               412  29  38%  32%   +6%  0.7  0.14         -0%           --  +22% (6)  +9% (24)
+LINK  G2 OI new 180d high              41  14  36%  32%   +4%  0.3  0.39         +5%           --  +29% (7)  -10% (7)
+LINK  G3 both                          36  12  33%  32%   +2%  0.1  0.46         +6%           --  +22% (6)   -8% (6)
+LINK  G4 price down 5%+ & OI +10%     136  26  27%  32%   -5% -0.5  0.68        -10%           --   +6% (6)  +4% (21)
+ADA   G1 OI +15% in 30d               440  33  36%  35%   +1%  0.2  0.33         -2%           --  +11% (6) +11% (27)
+ADA   G2 OI new 180d high              41  19  32%  35%   -3% -0.3  0.55         -8%           --  +36% (4)  -2% (15)
+ADA   G3 both                          37  17  29%  35%   -6% -0.5  0.67         -9%           --  +28% (3)  -1% (14)
+ADA   G4 price down 5%+ & OI +10%     212  28  21%  35%  -14% -1.5  0.91        -15%           --  -19% (5)  -0% (23)
+
+== Replication count per flag (assets other than BTC) ==
+G1 OI +15% in 30d                positive lift in 4 of 7 assets; p<0.10 in 2; median lift +1%   (BTC: +1% p=0.30)
+G2 OI new 180d high              positive lift in 5 of 7 assets; p<0.10 in 1; median lift +4%   (BTC: +11% p=0.04)
+G3 both                          positive lift in 4 of 7 assets; p<0.10 in 1; median lift +2%   (BTC: +18% p=0.03)
+G4 price down 5%+ & OI +10%      positive lift in 4 of 7 assets; p<0.10 in 0; median lift +0%   (BTC: +18% p=0.05)
+
+== BTC's OI warning vs each ALT's own falls (volatility-unit target). Flag dates from BTC OI; outcome from the alt's price. ==
+alt   BTC flag                       days eps  hit base  lift    z     p
+ETH   G1 OI +15% in 30d               168  24  33%  26%   +7%  0.8  0.23
+ETH   G2 OI new 180d high              48  25  36%  26%  +10%  1.1  0.13
+ETH   G3 both                          26  17  47%  26%  +21%  1.9  0.05
+SOL   G1 OI +15% in 30d               168  24  38%  28%   +9%  1.0  0.14
+SOL   G2 OI new 180d high              47  25  36%  28%   +8%  0.9  0.14
+SOL   G3 both                          26  17  47%  28%  +19%  1.7  0.04
+DOGE  G1 OI +15% in 30d               168  24  42%  32%   +9%  1.0  0.14
+DOGE  G2 OI new 180d high              47  25  24%  32%   -8% -0.9  0.80
+DOGE  G3 both                          26  17  35%  32%   +3%  0.2  0.32
+BNB   G1 OI +15% in 30d               168  24  38%  26%  +12%  1.3  0.20
+BNB   G2 OI new 180d high              48  25  40%  26%  +14%  1.6  0.12
+BNB   G3 both                          26  17  41%  26%  +16%  1.5  0.14
+ADA   G1 OI +15% in 30d               168  24  46%  35%  +11%  1.1  0.06
+ADA   G2 OI new 180d high              48  25  48%  35%  +13%  1.4  0.03
+ADA   G3 both                          26  17  53%  35%  +18%  1.5  0.02
+
+G1 OI +15% in 30d                BTC warning preceded bigger-than-normal ALT falls in 5 of 5 alts; p<0.10 in 1; median lift +9%
+G2 OI new 180d high              BTC warning preceded bigger-than-normal ALT falls in 4 of 5 alts; p<0.10 in 1; median lift +10%
+G3 both                          BTC warning preceded bigger-than-normal ALT falls in 5 of 5 alts; p<0.10 in 3; median lift +18%
+
+Read: replication is real if most assets show positive lift with small p for G2/G3 (own OI) and, separately, BTC's warning also precedes alt falls. If only BTC works, treat it as a BTC-specific or lucky pattern.
+Caveats: assets are highly correlated (not independent tests); 4 flags x 8 assets; periods are short for assets listed after 2021; falls measured low-vs-close on daily candles.
