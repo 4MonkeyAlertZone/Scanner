@@ -1,0 +1,140 @@
+####################################################################################################
+$10,000 IN BTC: what it would be worth after each market phase
+data to 2026-10-18
+
+Data found: 
+  BTC: BTC  first day 2019-09-23  last 2026-10-18  (2583 days)
+If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.
+
+== 1. Each coin alone: price multiple over each phase (bought on the phase's first day, or on its first trading day if listed later) ==
+coin                   cycle 1                  bear               cycle 2        since 2025 top    whole (to now)
+BTC                      x6.11                 x0.24                 x7.91                 x0.66             x8.27
+
+== 2. A fresh $10,000 at the START of each phase, split equally, held to the END of that phase ==
+cycle 1          (2020-10-01 -> 2021-11-10):  $10,000 -> $61,059   (BTC $61,059)
+bear             (2021-11-10 -> 2022-11-21):  $10,000 -> $2,428   (BTC $2,428)
+cycle 2          (2022-11-21 -> 2025-10-06):  $10,000 -> $79,007   (BTC $79,007)
+since 2025 top   (2025-10-06 -> 2026-10-18):  $10,000 -> $6,573   (BTC $6,573)
+
+== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the coins at each phase start ==
+after cycle 1         (2021-11-10): $61,059   (phase multiple x6.11)
+after bear            (2022-11-21): $14,826   (phase multiple x0.24)
+after cycle 2         (2025-10-06): $117,138   (phase multiple x7.90)
+after since 2025 top  (2026-10-18): $76,999   (phase multiple x0.66)
+=> $10,000 became $76,999 by 2026-10-18 (buying and holding through the bear year and everything else, no switching).
+
+== 4. Same coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 ==
+rule                                       cycle 1            bear         cycle 2  since 2025 top    $10,000 became
+hold (daily-rebalanced basket)               x6.11           x0.24           x7.90           x0.66           $76,998
+BTC 200-day gate                             x3.24           x0.67           x3.58           x0.95           $73,297
+gate + BTC above 50-day avg                  x4.55           x0.87           x3.76           x1.04          $155,801
+gate + OI warning (C, 14d cash)              x4.19           x0.68           x4.31           x1.09          $134,078
+
+Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Cash slots (coins not yet listed) flatter the early phases of a basket.
+Caveats: these coins are survivors that are still listed today (survivorship); exchange data may start after real listing; no tax; fills at daily closes.
+####################################################################################################
+$10,000 IN ETH: what it would be worth after each market phase
+data to 2026-10-18
+
+Data found: 
+  ETH: ETH  first day 2019-09-23  last 2026-10-18  (2583 days)
+If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.
+
+== 1. Each coin alone: price multiple over each phase (bought on the phase's first day, or on its first trading day if listed later) ==
+coin                   cycle 1                  bear               cycle 2        since 2025 top    whole (to now)
+ETH                     x13.14                 x0.24                 x4.21                 x0.52            x11.51
+
+== 2. A fresh $10,000 at the START of each phase, split equally, held to the END of that phase ==
+cycle 1          (2020-10-01 -> 2021-11-10):  $10,000 -> $131,238   (ETH $131,238)
+bear             (2021-11-10 -> 2022-11-21):  $10,000 -> $2,393   (ETH $2,393)
+cycle 2          (2022-11-21 -> 2025-10-06):  $10,000 -> $42,098   (ETH $42,098)
+since 2025 top   (2025-10-06 -> 2026-10-18):  $10,000 -> $5,155   (ETH $5,155)
+
+== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the coins at each phase start ==
+after cycle 1         (2021-11-10): $131,238   (phase multiple x13.12)
+after bear            (2022-11-21): $31,406   (phase multiple x0.24)
+after cycle 2         (2025-10-06): $132,211   (phase multiple x4.21)
+after since 2025 top  (2026-10-18): $68,149   (phase multiple x0.52)
+=> $10,000 became $68,149 by 2026-10-18 (buying and holding through the bear year and everything else, no switching).
+
+== 4. Same coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 ==
+rule                                       cycle 1            bear         cycle 2  since 2025 top    $10,000 became
+hold (daily-rebalanced basket)              x13.12           x0.24           x4.21           x0.52           $68,148
+BTC 200-day gate                             x6.15           x0.77           x3.25           x0.76          $117,528
+gate + BTC above 50-day avg                  x7.25           x0.86           x4.24           x0.86          $227,902
+gate + OI warning (C, 14d cash)              x9.45           x0.81           x3.48           x0.94          $248,224
+
+Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Cash slots (coins not yet listed) flatter the early phases of a basket.
+Caveats: these coins are survivors that are still listed today (survivorship); exchange data may start after real listing; no tax; fills at daily closes.
+####################################################################################################
+$10,000 IN BNB: what it would be worth after each market phase
+data to 2026-10-18
+
+Data found: 
+  BNB: BNB  first day 2019-09-23  last 2026-10-18  (2583 days)
+If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.
+
+== 1. Each coin alone: price multiple over each phase (bought on the phase's first day, or on its first trading day if listed later) ==
+coin                   cycle 1                  bear               cycle 2        since 2025 top    whole (to now)
+BNB                     x22.44                 x0.41                 x4.82                 x0.59            x36.34
+
+== 2. A fresh $10,000 at the START of each phase, split equally, held to the END of that phase ==
+cycle 1          (2020-10-01 -> 2021-11-10):  $10,000 -> $224,151   (BNB $224,151)
+bear             (2021-11-10 -> 2022-11-21):  $10,000 -> $4,127   (BNB $4,127)
+cycle 2          (2022-11-21 -> 2025-10-06):  $10,000 -> $48,146   (BNB $48,146)
+since 2025 top   (2025-10-06 -> 2026-10-18):  $10,000 -> $5,891   (BNB $5,891)
+
+== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the coins at each phase start ==
+after cycle 1         (2021-11-10): $224,151   (phase multiple x22.42)
+after bear            (2022-11-21): $92,500   (phase multiple x0.41)
+after cycle 2         (2025-10-06): $445,352   (phase multiple x4.81)
+after since 2025 top  (2026-10-18): $262,356   (phase multiple x0.59)
+=> $10,000 became $262,356 by 2026-10-18 (buying and holding through the bear year and everything else, no switching).
+
+== 4. Same coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 ==
+rule                                       cycle 1            bear         cycle 2  since 2025 top    $10,000 became
+hold (daily-rebalanced basket)              x22.41           x0.41           x4.81           x0.59          $262,388
+BTC 200-day gate                            x12.18           x0.85           x2.85           x0.83          $244,774
+gate + BTC above 50-day avg                 x18.33           x0.86           x2.95           x0.96          $448,029
+gate + OI warning (C, 14d cash)             x22.41           x0.84           x3.15           x0.96          $575,519
+
+Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Cash slots (coins not yet listed) flatter the early phases of a basket.
+Caveats: these coins are survivors that are still listed today (survivorship); exchange data may start after real listing; no tax; fills at daily closes.
+####################################################################################################
+$10,000 IN BTC + ETH + BNB EQUALLY: what it would be worth after each market phase
+data to 2026-10-18
+
+Data found: 
+  BTC: BTC  first day 2019-09-23  last 2026-10-18  (2583 days)
+  ETH: ETH  first day 2019-09-23  last 2026-10-18  (2583 days)
+  BNB: BNB  first day 2019-09-23  last 2026-10-18  (2583 days)
+If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.
+
+== 1. Each coin alone: price multiple over each phase (bought on the phase's first day, or on its first trading day if listed later) ==
+coin                   cycle 1                  bear               cycle 2        since 2025 top    whole (to now)
+BTC                      x6.11                 x0.24                 x7.91                 x0.66             x8.27
+ETH                     x13.14                 x0.24                 x4.21                 x0.52            x11.51
+BNB                     x22.44                 x0.41                 x4.82                 x0.59            x36.34
+
+== 2. A fresh $10,000 at the START of each phase, split equally, held to the END of that phase ==
+cycle 1          (2020-10-01 -> 2021-11-10):  $10,000 -> $138,816   (BTC $20,353; ETH $43,746; BNB $74,717)
+bear             (2021-11-10 -> 2022-11-21):  $10,000 -> $2,983   (BTC $809; ETH $798; BNB $1,376)
+cycle 2          (2022-11-21 -> 2025-10-06):  $10,000 -> $56,417   (BTC $26,336; ETH $14,033; BNB $16,049)
+since 2025 top   (2025-10-06 -> 2026-10-18):  $10,000 -> $5,873   (BTC $2,191; ETH $1,718; BNB $1,964)
+
+== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the coins at each phase start ==
+after cycle 1         (2021-11-10): $138,816   (phase multiple x13.88)
+after bear            (2022-11-21): $41,404   (phase multiple x0.30)
+after cycle 2         (2025-10-06): $233,587   (phase multiple x5.64)
+after since 2025 top  (2026-10-18): $137,185   (phase multiple x0.59)
+=> $10,000 became $137,185 by 2026-10-18 (buying and holding through the bear year and everything else, no switching).
+
+== 4. Same coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 ==
+rule                                       cycle 1            bear         cycle 2  since 2025 top    $10,000 became
+hold (daily-rebalanced basket)              x14.39           x0.30           x5.93           x0.60          $151,505
+BTC 200-day gate                             x7.25           x0.76           x3.46           x0.85          $162,201
+gate + BTC above 50-day avg                  x9.67           x0.87           x3.83           x0.96          $306,480
+gate + OI warning (C, 14d cash)             x11.09           x0.78           x3.88           x1.00          $333,552
+
+Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Cash slots (coins not yet listed) flatter the early phases of a basket.
+Caveats: these coins are survivors that are still listed today (survivorship); exchange data may start after real listing; no tax; fills at daily closes.
