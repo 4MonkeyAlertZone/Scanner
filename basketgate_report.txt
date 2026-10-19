@@ -14,6 +14,10 @@ HOLDING (10 coins, last refreshed 2026-10-18):
   ADA      10.0% of account   price 0.22139
   NEAR     10.0% of account   price 5.025
 
+OI WARNING VARIANTS (OI data to 2026-10-18; cash 7 days after a warning, on top of the BTC switch):
+  A: OI up 15%+ in 30 days       account 999 (-0.1%)   holding 10 coins   warning today: no   warning days since start: 0
+  B: OI at a new 180-day high    account 999 (-0.1%)   holding 10 coins   warning today: no   warning days since start: 0
+
 ACTIONS (1):
   2026-10-18  ENTER         ETH BNB XRP SOL ZEC HYPE DOGE LINK ADA NEAR   account 999.0
 
