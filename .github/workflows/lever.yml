@@ -1,0 +1,24 @@
+name: Leverage test
+on:
+  workflow_dispatch:
+concurrency:
+  group: lever
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  lever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python lever.py
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add lever_report.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Majors report" && (git pull --rebase -q; git push))
