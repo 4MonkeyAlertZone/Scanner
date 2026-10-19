@@ -522,3 +522,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 521,BNB,crypto,long,IN ZONE - WAIT,4,1792447506,19 Oct 23:05,731.27,718.96929,744.585,open,,,,,,,,,
 522,GRAM,crypto,long,IN ZONE,4,1792447506,19 Oct 23:05,1.362,1.35075,1.3918,open,,,,,,,,,
 523,APT,crypto,long,IN ZONE - WAIT,4,1792447506,19 Oct 23:05,0.7649,0.74995714,0.80125,open,,,,,,,,,
+524,WLD,crypto,long,IN ZONE - WAIT,3,1792449086,19 Oct 23:31,0.5309,0.51494643,0.5734,open,,,,,,,,,
+525,ARB,crypto,long,IN ZONE,4,1792449086,19 Oct 23:31,0.1963,0.19166929,0.20385667,open,,,,,,,,,
