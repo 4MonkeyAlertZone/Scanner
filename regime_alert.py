@@ -4,7 +4,7 @@ State = IN only when ALL of: (1) BTC closed above its 200-day average, (2) BTC c
 (C = BTC futures open interest at a new 180-day high AND up 15%+ in 30 days; data from data.binance.vision, cached in basketgate_oi.csv by basket_paper.py).
 Otherwise OUT. These are the 'gate + 50-day' and 'gate + OI C-14' rules from the majors/coins5 reports, combined. Rules fixed on 19 Oct 2026, never changed.
 Honest status: the OI part was chosen after seeing the data (not out-of-sample); backtests are survivorship-flattered and cover ~3 phases. Use as a prompt to look, not an order.
-Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run)."""
+Writes regime_state.json, regime_log.csv, regime_report.txt. Sends a phone alert on every change (and once on first run). Also sends a separate LEVERAGE note daily while IN (louder with a warning when BTC is within 2% of the 50-day exit line, or price is 10%+ (BTC) / 15%+ (ETH) below the IN entry)."""
 import os, csv, json, time
 import scanner, backtest as B, basket_paper as BP
 
@@ -62,6 +62,18 @@ def main():
         scanner.notify(title, msg, scanner.NTFY_TOPIC, "green_circle" if state == "IN" else "red_circle", 4 if state == "OUT" else 3)
     elif parts:
         scanner.notify("Alt regime: " + state + " (" + parts + ")", msg, scanner.NTFY_TOPIC, "yellow_circle", 2)
+    # ---- separate LEVERAGE alert (own title/tag). While IN: one note a day; louder when something needs attention.
+    if state == "IN":
+        lv = lev("BTC", cur.get("entry_btc"), cur["btc"]) + "\n" + lev("ETH", cur.get("entry_eth"), cur["eth"])
+        gap = (1 - ma(50) / c[-1]) * 100
+        dip = (1 - cur["btc"] / cur["entry_btc"]) * 100 if cur.get("entry_btc") else 0
+        dipe = (1 - cur["eth"] / cur["entry_eth"]) * 100 if cur.get("entry_eth") and cur.get("eth") else 0
+        warn = []
+        if gap < 2: warn.append(f"BTC is only {gap:.1f}% above its 50-day exit line ({ma(50):,.0f})")
+        if dip >= 10 or dipe >= 15: warn.append(f"price is {max(dip, dipe):.0f}% below the IN entry; 3x liquidation is 33% away, 2x is 50%")
+        body = lv + f"\nExit line: BTC daily close below {ma(50):,.0f} ({gap:.1f}% below now).\nFast wicks can liquidate before a daily signal; use your own fill price and an exchange stop."
+        if warn: scanner.notify("LEVERAGE WARNING: " + warn[0][:60], "\n".join(warn) + "\n" + body, scanner.NTFY_TOPIC, "warning", 4)
+        else: scanner.notify("Leverage levels (alts IN)", body, scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2)
     json.dump(cur, open(sp, "w"))
     lp = P("regime_log.csv"); new = not os.path.exists(lp)
     with open(lp, "a", newline="") as f:
