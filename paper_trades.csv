@@ -346,7 +346,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 345,CBOE,stock,long,BUY SIGNAL,4,1792175016,16 Oct 19:23,313.67999,299.03178,,open,,,,,,,,,
 346,KR,stock,long,IN ZONE - WAIT,5,1792177190,16 Oct 19:59,63.73,62.753571,65.942501,open,,,,,,,,,
 347,NDAQ,stock,long,IN ZONE - WAIT,4,1792177190,16 Oct 19:59,92.945,90.314289,96.247144,open,,,,,,,,,
-348,TER,stock,long,IN ZONE - WAIT,4,1792177190,16 Oct 19:59,326.80499,313.6523,342.63,open,,,,,,,,,
+348,TER,stock,long,IN ZONE - WAIT,4,1792177190,16 Oct 19:59,326.80499,313.6523,342.63,closed,1792423090,19 Oct 16:18,342.63,target,4.64,4.64,68.3,1.15,
 349,WM,stock,long,BUY SIGNAL,5,1792177190,16 Oct 19:59,225.82001,216.21215,231.2925,open,,,,,,,,,
 350,GEHC,stock,long,BUY SIGNAL,5,1792180180,16 Oct 20:49,69.474998,67.344285,72.095999,open,,,,,,,,,
 351,ASTER,crypto,long,RECLAIM C TP1,,1792181188,16 Oct 21:06,0.7081,0.6710552,0.7451448,open,,,,,,,,,168
@@ -491,3 +491,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 490,IEX,stock,long,IN ZONE,3,1792420974,19 Oct 15:42,233.52499,227.86017,238.43333,open,,,,,,,,,
 491,SO,stock,long,BUY SIGNAL,4,1792420974,19 Oct 15:42,89.589996,88.610174,91.238333,open,,,,,,,,,
 492,TROW,stock,long,BUY SIGNAL,3,1792420974,19 Oct 15:42,100.69,99.336786,103.575,open,,,,,,,,,
+493,ETC,crypto,long,IN ZONE - WAIT,3,1792423115,19 Oct 16:18,7.73,7.659,8.058,open,,,,,,,,,
+494,ATO,stock,long,BUY SIGNAL,4,1792423115,19 Oct 16:18,165.64999,164.14839,169.465,open,,,,,,,,,
+495,COST,stock,long,IN ZONE,5,1792423115,19 Oct 16:18,993.39001,983.88857,1015.746,open,,,,,,,,,
+496,UAL,stock,long,IN ZONE - WAIT,3,1792423115,19 Oct 16:18,96.889999,94.753322,101.78125,open,,,,,,,,,
