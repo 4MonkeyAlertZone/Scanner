@@ -300,7 +300,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 299,CVNA,stock,long,BUY SIGNAL,4,1792163628,16 Oct 16:13,60.619999,58.34109,65.114333,closed,1792430176,19 Oct 18:16,58.105,stop,-4.35,-4.35,74.0,-1.16,
 300,CMS,stock,long,IN ZONE,5,1792163628,16 Oct 16:13,68.175003,67.60768,69.620001,closed,1792425119,19 Oct 16:51,67.599998,stop,-1.04,-1.04,72.6,-1.25,
 301,IBM,stock,long,BUY SIGNAL,4,1792163628,16 Oct 16:13,231.30499,227.65375,239.486,open,,,,,,,,,
-302,J,stock,long,BUY SIGNAL,3,1792163628,16 Oct 16:13,141.2,138.41178,144.82333,open,,,,,,,,,
+302,J,stock,long,BUY SIGNAL,3,1792163628,16 Oct 16:13,141.2,138.41178,144.82333,closed,1792433388,19 Oct 19:09,137.67,stop,-2.70,-2.70,74.9,-1.37,
 303,PNC,stock,long,BUY SIGNAL,4,1792163628,16 Oct 16:13,220.64999,210.66072,226.895,open,,,,,,,,,
 304,TRMB,stock,long,BUY SIGNAL,3,1792163628,16 Oct 16:13,60.115002,58.702322,61.872499,open,,,,,,,,,
 305,COIN,stock,long,BUY SIGNAL,4,1792165316,16 Oct 16:41,180.64,168.00821,196.035,open,,,,,,,,,
@@ -508,3 +508,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 507,RF,stock,long,BUY SIGNAL,4,1792426669,19 Oct 17:17,27.225,26.840358,27.968,open,,,,,,,,,
 508,GEV,stock,long,BUY SIGNAL,3,1792430204,19 Oct 18:16,915.84039,872.81228,970.80002,open,,,,,,,,,
 509,HYPE,crypto,long,IN ZONE - WAIT,3,1792431911,19 Oct 18:45,78.22,76.82,79.94,open,,,,,,,,,
+510,ACN,stock,long,BUY SIGNAL,3,1792433443,19 Oct 19:10,235.42,222.23608,258.61333,open,,,,,,,,,
