@@ -1,0 +1,41 @@
+$10,000 EQUALLY IN HBAR, NEAR, ONDO, RENDER, SUI: what it would be worth after each market phase
+data to 2026-10-18
+
+Data found: 
+  HBAR: HBAR  first day 2019-09-16  last 2026-10-18  (2590 days)
+  NEAR: NEAR  first day 2020-12-02  last 2026-10-18  (2147 days)
+  ONDO: ONDO  first day 2024-07-28  last 2026-10-18  (813 days)
+  RENDER: RNDR+RENDER  first day 2022-07-27  last 2026-10-18  (1545 days)
+  SUI: SUI  first day 2023-05-02  last 2026-10-18  (1266 days)
+If a coin's first day is later than its real listing, this exchange data starts late and the true result would differ.
+
+== 1. Each coin alone: price multiple over each phase (bought on the phase's first day, or on its first trading day if listed later) ==
+coin                   cycle 1                  bear               cycle 2        since 2025 top    whole (to now)
+HBAR                    x14.40                 x0.11                 x4.69                 x0.38             x0.94
+NEAR    x10.61 (from 20-12-02)                 x0.13                 x1.81                 x1.68             x4.25
+ONDO            not listed yet        not listed yet x0.92 (from 24-07-28)                 x0.47             x0.44
+RENDER          not listed yet x0.73 (from 22-07-27)                 x7.94                 x0.53             x3.10
+SUI             not listed yet        not listed yet x2.69 (from 23-05-02)                 x0.28             x0.76
+
+== 2. A fresh $10,000 at the START of each phase, split equally, held to the END of that phase ==
+cycle 1          (2020-10-01 -> 2021-11-10):  $10,000 -> $55,965   (HBAR $28,762; NEAR $21,203; ONDO $2,000 [cash: not listed]; RENDER $2,000 [cash: not listed]; SUI $2,000 [cash: not listed])
+bear             (2021-11-10 -> 2022-11-21):  $10,000 -> $5,943   (HBAR $213; NEAR $263; ONDO $2,000 [cash: not listed]; RENDER $1,466; SUI $2,000 [cash: not listed])
+cycle 2          (2022-11-21 -> 2025-10-06):  $10,000 -> $36,062   (HBAR $9,379; NEAR $3,613; ONDO $1,834; RENDER $15,867; SUI $5,369)
+since 2025 top   (2025-10-06 -> 2026-10-18):  $10,000 -> $6,690   (HBAR $753; NEAR $3,356; ONDO $949; RENDER $1,064; SUI $568)
+
+== 3. ONE $10,000 started 1 Oct 2020, re-split equally across the five at each phase start ==
+after cycle 1         (2021-11-10): $55,965   (phase multiple x5.60)
+after bear            (2022-11-21): $33,259   (phase multiple x0.59)
+after cycle 2         (2025-10-06): $119,937   (phase multiple x3.61)
+after since 2025 top  (2026-10-18): $80,234   (phase multiple x0.67)
+=> $10,000 became $80,234 by 2026-10-18 (buying and holding through the bear year and everything else, no switching).
+
+== 4. Same five coins under the lab rules (equal-weight basket of the coins that exist, rebalanced daily, 0.1% per switch, signals at the close). Phase multiples, then $10,000 chained from 1 Oct 2020 ==
+rule                                       cycle 1            bear         cycle 2  since 2025 top    $10,000 became
+hold (daily-rebalanced basket)              x18.72           x0.17           x6.99           x0.61          $131,538
+BTC 200-day gate                            x20.02           x0.71           x2.59           x0.90          $327,846
+gate + BTC above 50-day avg                 x17.05           x0.82           x3.13           x1.14          $500,954
+gate + OI warning (C, 14d cash)             x21.62           x0.71           x3.92           x1.18          $713,699
+
+Read: parts 2-3 are plain buy-and-hold. Part 4 shows what the gate and the OI/50-day filters would have changed on the same coins (daily rebalanced, so it is not identical to part 3). Gains in cycle 1 are limited by how few of the five existed; SUI and ONDO only exist from 2023-24.
+Caveats: you chose five survivors that did well enough to be on your list (survivorship); exchange data may start after real listing; no tax; fills at daily closes.
