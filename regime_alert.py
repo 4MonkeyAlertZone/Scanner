@@ -32,10 +32,26 @@ def main():
     if oi_warn: reasons.append(f"BTC open-interest warning on {fd(days[recent[-1]])} (cash until {fd(days[recent[-1]] + COOL)})")
     sp = P("regime_state.json")
     old = json.load(open(sp)) if os.path.exists(sp) else None
-    cur = {"state": state, "g200": g200, "g50": g50, "oi_warn": oi_warn, "date": fd(days[-1]), "btc": round(c[-1], 2)}
+    try:
+        e = B.hist_crypto("ETH", "1d", 10); eth = e[-1][4]
+    except Exception: eth = None
+    cur = {"state": state, "g200": g200, "g50": g50, "oi_warn": oi_warn, "date": fd(days[-1]), "btc": round(c[-1], 2), "eth": round(eth, 2) if eth else None}
+    # entry prices of the current IN spell (kept while IN, cleared when OUT)
+    if state == "IN":
+        cur["entry_btc"] = (old or {}).get("entry_btc") if old and old.get("state") == "IN" and old.get("entry_btc") else cur["btc"]
+        cur["entry_eth"] = (old or {}).get("entry_eth") if old and old.get("state") == "IN" and old.get("entry_eth") else cur["eth"]
     msg = (f"BTC {c[-1]:,.0f}  200d avg {ma(200):,.0f} ({'above' if g200 else 'below'})  50d avg {ma(50):,.0f} ({'above' if g50 else 'below'})\n"
            f"OI warning in last {COOL}d: {'YES' if oi_warn else 'no'}" + ("" if oi_ok else " (OI data unavailable, treated as no)") + "\n"
            + ("Why OUT: " + "; ".join(reasons) if state == "OUT" else "All three conditions clear.") + "\nSignal from the daily close; rule-based prompt, not advice.")
+    MM = 0.005
+    def lev(name, entry, now):
+        if not entry or not now: return ""
+        out = f"{name} since IN {entry:,.0f} (now {now:,.0f}, {(now / entry - 1) * 100:+.1f}%): "
+        out += "; ".join(f"{L}x liq {entry * (1 - (1 - MM * L) / L):,.0f} ({(1 - entry * (1 - (1 - MM * L) / L) / now) * 100:.0f}% below now)" for L in (2, 3))
+        return out
+    if state == "IN":
+        msg += "\nLEVERAGE VIEW (if you opened at the IN price; 0.5% maintenance margin, exchange fees/funding extra):\n" + lev("BTC", cur.get("entry_btc"), cur["btc"]) + "\n" + lev("ETH", cur.get("entry_eth"), cur["eth"])
+        msg += f"\nBTC exit trigger: close below 50-day avg {ma(50):,.0f} ({(1 - ma(50) / c[-1]) * 100:.1f}% below now). Past worst dip below entry in IN spells: BTC 10%, ETH 19% (40 spells) - a fast wick can still hit before a daily signal."
     changed = old is None or old["state"] != state
     parts = ""
     if old and not changed:
