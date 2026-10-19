@@ -1,0 +1,43 @@
+LAB 20: hourly data for 28 coins + BTC from 2019-09-23 to 2026-10-18. Cost 0.10% per side. Sleeves traded from 2020-04-10 (200-day warm-up).
+
+BULL CYCLE 1 (1 Oct 2020 - 10 Nov 2021) [out-of-sample]
+   BENCHMARK: hold BTC                                                x 6.21  worst fall  -55%  Sharpe 2.39
+   BENCHMARK: hold the alt basket (equal weight, rebalanced monthly)  x54.40  worst fall  -61%  Sharpe 3.56
+   CORE only: BTC while BTC > 200-day avg                             x 3.64  worst fall  -57%  Sharpe 2.01
+   TREND only: alt breakouts with ATR trailing stop                   x 2.18  worst fall  -14%  Sharpe 2.57
+   DROP only: buy 16% two-day drops, hold 10 days                     x 2.35  worst fall  -45%  Sharpe 1.48
+   COMBO 50/30/20  (core/trend/drop)                                  x 3.12  worst fall  -33%  Sharpe 2.37
+   COMBO 40/40/20                                                     x 2.96  worst fall  -29%  Sharpe 2.47
+   COMBO 34/33/33                                                     x 2.89  worst fall  -31%  Sharpe 2.37
+
+BEAR YEAR (10 Nov 2021 - 21 Nov 2022)
+   BENCHMARK: hold BTC                                                x 0.24  worst fall  -77%  Sharpe -1.74
+   BENCHMARK: hold the alt basket (equal weight, rebalanced monthly)  x 0.19  worst fall  -82%  Sharpe -1.42
+   CORE only: BTC while BTC > 200-day avg                             x 0.58  worst fall  -44%  Sharpe -2.26
+   TREND only: alt breakouts with ATR trailing stop                   x 0.94  worst fall   -7%  Sharpe -1.38
+   DROP only: buy 16% two-day drops, hold 10 days                     x 0.52  worst fall  -58%  Sharpe -0.91
+   COMBO 50/30/20  (core/trend/drop)                                  x 0.67  worst fall  -36%  Sharpe -2.31
+   COMBO 40/40/20                                                     x 0.71  worst fall  -33%  Sharpe -2.26
+   COMBO 34/33/33                                                     x 0.68  worst fall  -37%  Sharpe -1.90
+
+BULL CYCLE 2 (21 Nov 2022 - 31 Aug 2025) [where the rules were found]
+   BENCHMARK: hold BTC                                                x 6.72  worst fall  -32%  Sharpe 1.72
+   BENCHMARK: hold the alt basket (equal weight, rebalanced monthly)  x 4.70  worst fall  -61%  Sharpe 1.17
+   CORE only: BTC while BTC > 200-day avg                             x 3.25  worst fall  -33%  Sharpe 1.24
+   TREND only: alt breakouts with ATR trailing stop                   x 1.27  worst fall  -31%  Sharpe 0.44
+   DROP only: buy 16% two-day drops, hold 10 days                     x 2.87  worst fall  -36%  Sharpe 1.14
+   COMBO 50/30/20  (core/trend/drop)                                  x 2.56  worst fall  -25%  Sharpe 1.28
+   COMBO 40/40/20                                                     x 2.33  worst fall  -25%  Sharpe 1.22
+   COMBO 34/33/33                                                     x 2.46  worst fall  -25%  Sharpe 1.30
+
+WHOLE PERIOD
+   BENCHMARK: hold BTC                                                x11.87  worst fall  -77%  Sharpe 0.95
+   BENCHMARK: hold the alt basket (equal weight, rebalanced monthly)  x44.90  worst fall  -83%  Sharpe 1.12
+   CORE only: BTC while BTC > 200-day avg                             x10.00  worst fall  -65%  Sharpe 1.03
+   TREND only: alt breakouts with ATR trailing stop                   x 3.32  worst fall  -32%  Sharpe 0.87
+   DROP only: buy 16% two-day drops, hold 10 days                     x 4.68  worst fall  -59%  Sharpe 0.74
+   COMBO 50/30/20  (core/trend/drop)                                  x 7.58  worst fall  -46%  Sharpe 1.17
+   COMBO 40/40/20                                                     x 6.77  worst fall  -41%  Sharpe 1.18
+   COMBO 34/33/33                                                     x 6.68  worst fall  -44%  Sharpe 1.15
+
+HOW TO READ: look at BULL CYCLE 1 first - the rules never saw it. A combination is only convincing if it (a) beats its own best single sleeve or holding BTC on Sharpe and worst fall in BOTH cycles and (b) does not depend on one sleeve. In a strong bull run, a strategy that sits in cash part of the time will usually earn less than holding BTC; the gain from combining shows up as a smaller fall and a smoother ride. Coins are survivors of today's top 40; early-cycle alt coverage is thin. Hourly candles still hide the order of prices inside each hour, so stop fills are approximate. Not financial advice.
