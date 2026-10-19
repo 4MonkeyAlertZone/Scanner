@@ -9,6 +9,11 @@ import os, csv, time, math
 from multiprocessing import Pool
 import scanner, backtest as B
 
+QUIET_TESTS = True   # paper tests keep collecting data and writing reports, but send no phone notes. Set False to turn their phone notes back on.
+def note(*a, **k):
+    if not QUIET_TESTS: scanner.notify(*a, **k)
+
+
 NE = 55; ATRK = 3.0; SLOTS = 20; SIDE = 0.001; GATE_N = 200
 HERE = scanner.HERE; P = lambda f: os.path.join(HERE, f)
 fd = lambda d: time.strftime("%Y-%m-%d", time.gmtime(d * 86400))
@@ -99,7 +104,7 @@ def main():
     done = open(np_).read().strip() if os.path.exists(np_) else ""
     if ev and done != str(last):
         msg = "\n".join(f"{k} {c} at {px:.6g} ({why})" for _, k, c, px, why in ev[:12])
-        try: scanner.notify("ATR trend: " + ", ".join(f"{k} {c}" for _, k, c, _, _ in ev[:4]), msg + "\nPaper test - signals from the daily close.", scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2)
+        try: note("ATR trend: " + ", ".join(f"{k} {c}" for _, k, c, _, _ in ev[:4]), msg + "\nPaper test - signals from the daily close.", scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2)
         except Exception as e: print("(phone send failed:", e, ")")
         open(np_, "w").write(str(last))
 

@@ -11,6 +11,11 @@ from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import Pool
 import scanner, backtest as B
 
+QUIET_TESTS = True   # paper tests keep collecting data and writing reports, but send no phone notes. Set False to turn their phone notes back on.
+def note(*a, **k):
+    if not QUIET_TESTS: scanner.notify(*a, **k)
+
+
 TOPK = 10; REFRESH = 30; SIDE = 0.001; GATE_N = 200; COOL = 7
 STABLES = {"USDT", "USDC", "DAI", "TUSD", "FDUSD", "USDE", "USD1", "PYUSD", "USDD", "BUSD", "USDP", "FRAX", "WBTC", "BTC", "STETH", "WSTETH", "WBETH"}
 HERE = scanner.HERE; P = lambda f: os.path.join(HERE, f)
@@ -147,7 +152,7 @@ def main():
     done = open(np_).read().strip() if os.path.exists(np_) else ""
     if ev and done != str(last):
         msg = "; ".join(f"{k} {' '.join(b)}" for _, k, b in ev)
-        try: scanner.notify("Basket paper test: " + ", ".join(k for _, k, _ in ev), msg + "\nPaper test - signals from the daily close.", scanner.NTFY_TOPIC, "bar_chart", 2)
+        try: note("Basket paper test: " + ", ".join(k for _, k, _ in ev), msg + "\nPaper test - signals from the daily close.", scanner.NTFY_TOPIC, "bar_chart", 2)
         except Exception as e: print("(phone send failed:", e, ")")
         open(np_, "w").write(str(last))
 

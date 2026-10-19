@@ -16,6 +16,11 @@ Used by tracker.py."""
 import os, time
 import scanner
 
+QUIET_TESTS = True   # paper tests keep collecting data and writing reports, but send no phone notes. Set False to turn their phone notes back on.
+def note(*a, **k):
+    if not QUIET_TESTS: scanner.notify(*a, **k)
+
+
 N_COINS = int(os.environ.get("TREND_COINS", "60"))       # lab 3 tested the top 60 altcoins by market cap
 MAX_HOURS = 168                                          # 42 four-hour candles = 7 days
 STOP_ATR = 2.5
@@ -99,7 +104,7 @@ def check(coins=None):
                                f"TP2 {scanner.fmt(last + 2 * risk)} (+{pct(2):.1f}%, ~38%), TP3 {scanner.fmt(last + 3 * risk)} (+{pct(3):.1f}%, ~25%). "
                                f"Passed: {', '.join(fired)}. BTC above 200-avg: {'yes' if g200 else 'no'}; BTC rising: {'yes' if grise else 'no'}. "
                                "Backtest edge is modest (about +0.2R per trade) and not yet proven live.")
-                        scanner.notify(f"{tok}: trend cross (paper test)", msg, scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2); notes += 1
+                        note(f"{tok}: trend cross (paper test)", ("GREEN - passed the BTC uptrend filter. " if "CROSS A" in fired else "") + msg, scanner.NTFY_TOPIC, "green_circle" if "CROSS A" in fired else "chart_with_upwards_trend", 2); notes += 1
             # 2) EMA50 reclaim with a stop under the 40-candle low
             rs = reclaim(d)
             if rs is not None:
@@ -111,13 +116,13 @@ def check(coins=None):
                         k = f"{tok}|{name}"
                         if not gates[name] or now - state.get(k, 0) < MAX_HOURS * 3600: continue
                         state[k] = now; fired.append(name); legs(tok, name, last, rs, risk)
-                    if fired and NOTIFY:
+                    if NOTIFY and ("RECLAIM A" in fired or "RECLAIM B" in fired):    # C alone is only a silent control
                         pct = lambda n: n * risk / last * 100
                         msg = (f"PAPER TEST, not advice. Back above its 50-average after a dip, price {scanner.fmt(last)}. Stop {scanner.fmt(rs)} (-{pct(1):.1f}%, just under the 40-candle low). "
                                f"TP1 {scanner.fmt(last + risk)} (+{pct(1):.1f}%), TP2 {scanner.fmt(last + 2 * risk)} (+{pct(2):.1f}%), TP3 {scanner.fmt(last + 3 * risk)} (+{pct(3):.1f}%). "
                                f"Passed: {', '.join(fired)}. BTC above its 200-avg: {'yes' if g200 else 'no'}; above its 100-avg: {'yes' if g100 else 'no'}. "
                                "Backtest edge is modest (about +0.1R per trade) and not yet proven live.")
-                        scanner.notify(f"{tok}: 50-avg reclaim (paper test)", msg, scanner.NTFY_TOPIC, "chart_with_upwards_trend", 2); notes += 1
+                        note(f"{tok}: 50-avg reclaim (paper test)", ("GREEN - strongest version (BTC above its 200-avg). " if "RECLAIM A" in fired else "ORANGE - weaker version (BTC above its 100-avg only). ") + msg, scanner.NTFY_TOPIC, "green_circle" if "RECLAIM A" in fired else "orange_circle", 2); notes += 1
         except Exception as e: print(f"trend check {tok}: could not check ({str(e)[:50]})")
     scanner.save(STATE, state)
     print(f"Trend check: {len(coins)} coins, BTC above 200-avg {g200}, above 100-avg {g100}, rising {grise}; {crosses} fresh crosses, {reclaims} fresh 50-avg reclaims, {len(out) // 3} paper signals, {notes} phone notes")
