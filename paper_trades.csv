@@ -507,3 +507,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 506,COF,stock,long,BUY SIGNAL,3,1792426669,19 Oct 17:17,199.83,196.0525,204.41,open,,,,,,,,,
 507,RF,stock,long,BUY SIGNAL,4,1792426669,19 Oct 17:17,27.225,26.840358,27.968,open,,,,,,,,,
 508,GEV,stock,long,BUY SIGNAL,3,1792430204,19 Oct 18:16,915.84039,872.81228,970.80002,open,,,,,,,,,
+509,HYPE,crypto,long,IN ZONE - WAIT,3,1792431911,19 Oct 18:45,78.22,76.82,79.94,open,,,,,,,,,
