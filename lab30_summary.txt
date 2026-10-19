@@ -1,0 +1,94 @@
+LAB 30  2026-10-19  In alts in the bull, out around the top and through the bear. OI data 2021-01-01 to 2026-10-18. Alt basket = 28 large coins listed today (survivorship-flattered), 0.1% per switch.
+
+== 1. BTC falls of 20%+ in the test window (peak to trough on daily highs/lows) ==
+peak        trough       BTC fall  days  alt basket fall
+2021-05-08  2021-05-19       -49%    11             -36%   (event 1)
+2021-05-19  2021-05-23       -29%     4             -18%   (event 2)
+2021-05-26  2021-06-08       -24%    13             -11%   (event 3)
+2021-06-15  2021-06-22       -30%     7             -30%   (event 4)
+2021-09-07  2021-09-21       -25%    14             -21%   (event 5)
+2021-11-10  2021-12-04       -40%    24             -23%   (event 6)
+2021-12-04  2022-01-24       -39%    51             -36%   (event 7)
+2022-02-10  2022-02-24       -25%    14             -18%   (event 8)
+2022-03-28  2022-05-12       -45%    45             -48%   (event 9)
+2022-05-31  2022-06-18       -46%    18             -36%   (event 10)
+2022-08-15  2022-09-07       -26%    23             -15%   (event 11)
+2022-09-13  2022-11-21       -32%    69             -22%   (event 12)
+2023-02-16  2023-03-10       -23%    22             -17%   (event 13)
+2023-06-21  2023-09-11       -34%    82              -2%   (event 14)
+2024-01-11  2024-01-23       -20%    12             -12%   (event 15)
+2024-03-14  2024-05-01       -23%    48             -22%   (event 16)
+2024-06-07  2024-07-05       -25%    28             -22%   (event 17)
+2024-07-29  2024-08-05       -29%     7             -22%   (event 18)
+2025-01-20  2025-02-28       -28%    39             -25%   (event 19)
+2025-03-02  2025-04-07       -22%    36             -33%   (event 20)
+2025-10-06  2025-11-21       -36%    46             -22%   (event 21)
+2026-01-14  2026-02-06       -39%    23             -30%   (event 22)
+2026-05-06  2026-07-01       -30%    56             -22%   (event 23)
+
+== 2. Results (multiple, max drawdown, share of days invested) ==
+rule                                   whole             cycle 1                bear             cycle 2 switches
+hold alt basket         x1.33 dd 81% in 100%x1.16 dd 61% in 100%x0.28 dd 77% in 100%x4.15 dd 52% in 100%        1
+BTC 200-day gate only    x1.76 dd 66% in 53% x0.72 dd 52% in 54%  x0.74 dd 27% in 6% x3.29 dd 50% in 65%       55
+B+cool7                  x3.83 dd 48% in 48% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x4.24 dd 45% in 59%       67
+B+cool14                 x4.49 dd 48% in 46% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x4.97 dd 45% in 55%       61
+B+cool30                 x3.18 dd 48% in 41% x1.14 dd 32% in 47%  x0.74 dd 27% in 4% x3.74 dd 46% in 49%       41
+B+dyn                    x3.00 dd 57% in 48% x1.04 dd 32% in 53%  x0.74 dd 27% in 4% x3.86 dd 45% in 58%       67
+B+brk20                  x2.07 dd 59% in 48% x1.21 dd 32% in 53%  x0.70 dd 31% in 6% x2.44 dd 59% in 58%       83
+B+brk50                  x3.42 dd 52% in 48% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x3.79 dd 52% in 59%       61
+C+cool7                  x3.79 dd 48% in 51% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x4.19 dd 48% in 62%       63
+C+cool14                 x4.90 dd 48% in 49% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x5.43 dd 48% in 60%       59
+C+cool30                 x3.79 dd 48% in 45% x1.14 dd 32% in 47%  x0.74 dd 27% in 4% x4.46 dd 48% in 56%       47
+C+dyn                    x3.36 dd 51% in 50% x1.04 dd 32% in 53%  x0.74 dd 27% in 4% x4.33 dd 48% in 62%       65
+C+brk20                  x2.82 dd 57% in 49% x1.21 dd 32% in 53%  x0.70 dd 31% in 6% x3.32 dd 57% in 60%       69
+C+brk50                  x4.10 dd 52% in 50% x1.21 dd 32% in 53%  x0.74 dd 27% in 4% x4.54 dd 52% in 61%       55
+
+== 3. EXIT AUDIT: for each BTC fall: exit day vs the peak ('d+12' = 12 days after; 'd-5' = out 5 days BEFORE), BTC % below its peak at that exit, and the share of the alt basket's fall avoided (100% = fully out; negative = lost more than buy-and-hold) ==
+event (BTC peak, fall, alt basket fall)       BTC 200-day gate only          B+cool7         B+cool14         B+cool30            B+dyn          B+brk20          B+brk50          C+cool7         C+cool14         C+cool30            C+dyn          C+brk20          C+brk50
+ 1 2021-05-08  -49% / alts  -36%                   never out/0%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%      d+9 27%/77%
+ 2 2021-05-19  -29% / alts  -18%                    d+2 14%/23%      d-2 0%/100%      d-2 0%/100%      d-2 0%/100%      d+2 14%/23%      d-2 0%/100%      d-2 0%/100%      d-2 0%/100%      d-2 0%/100%      d-2 0%/100%      d+2 14%/23%      d-2 0%/100%      d-2 0%/100%
+ 3 2021-05-26  -24% / alts  -11%                    d-5 9%/100%      d-9 0%/100%      d-9 0%/100%      d-9 0%/100%      d-5 9%/100%      d-9 0%/100%      d-9 0%/100%      d-9 0%/100%      d-9 0%/100%      d-9 0%/100%      d-5 9%/100%      d-9 0%/100%      d-9 0%/100%
+ 4 2021-06-15  -30% / alts  -30%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+ 5 2021-09-07  -25% / alts  -21%                   d+13 19%/-0%     d+13 19%/-0%     d+13 19%/-0%      pre-out/-0%     d+13 19%/-0%     d+13 19%/-0%     d+13 19%/-0%     d+13 19%/-0%     d+13 19%/-0%      pre-out/-0%     d+13 19%/-0%     d+13 19%/-0%     d+13 19%/-0%
+ 6 2021-11-10  -40% / alts  -23%                   never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%
+ 7 2021-12-04  -39% / alts  -36%                   d+24 12%/60%     d+18 10%/61%     d+18 10%/61%     d+18 10%/61%     d+18 10%/61%     d+24 12%/47%     d+18 10%/61%     d+18 10%/61%     d+18 10%/61%     d+18 10%/61%     d+18 10%/61%     d+24 12%/47%     d+18 10%/61%
+ 8 2022-02-10  -25% / alts  -18%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+ 9 2022-03-28  -45% / alts  -48%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+10 2022-05-31  -46% / alts  -36%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+11 2022-08-15  -26% / alts  -15%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+12 2022-09-13  -32% / alts  -22%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+13 2023-02-16  -23% / alts  -17%                   never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%
+14 2023-06-21  -34% / alts   -2%                   d+57 29%/n/a     d-16 31%/n/a     d-16 31%/n/a     d-16 31%/n/a      d-1 25%/n/a     d-14 30%/n/a     d-16 31%/n/a     d-16 31%/n/a     d-16 31%/n/a     d-16 31%/n/a     d+48 21%/n/a     d-14 30%/n/a     d-16 31%/n/a
+15 2024-01-11  -20% / alts  -12%                   never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%
+16 2024-03-14  -23% / alts  -22%                   never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%     never out/0%
+17 2024-06-07  -25% / alts  -22%                    d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%      d+27 21%/3%
+18 2024-07-29  -29% / alts  -22%                    d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%      d+5 13%/45%
+19 2025-01-20  -28% / alts  -25%                   never out/0%     never out/0%     never out/0%       pre-out/0%     never out/0%      d-12 13%/0%      d-13 12%/0%     never out/0%     never out/0%       pre-out/0%     never out/0%      d-12 13%/0%      d-13 12%/0%
+20 2025-03-02  -22% / alts  -33%                   d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%     d+26 11%/10%
+21 2025-10-06  -36% / alts  -22%                   d+28 16%/-4%        d-3 3%/9%      pre-out/54%     pre-out/100%       d-3 3%/51%      d-14 10%/2%     d-14 10%/29%        d+0 1%/9%       d+0 1%/54%      d+0 1%/100%     d+28 16%/51%       d+4 10%/2%      d+8 10%/29%
+22 2026-01-14  -39% / alts  -30%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+23 2026-05-06  -30% / alts  -22%                   pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%     pre-out/100%
+cell = exit day vs the peak and BTC % below its peak at the exit / share of the alt fall avoided. 'pre-out' = in cash when the 20-day look-back began (e.g. the gate was already off). 'n/a' = the alt basket fell less than 5% in that window.
+
+== 4a. Leave-one-period-out: choose the variant with the best (variant / gate-only) multiple on the other two periods, then see its ratio on the held-out period. 'all variants' = the average ratio of every variant there ==
+  hold out cycle 1: picked C+cool14   -> x1.21 vs gate x0.72 (ratio 1.68); all variants avg ratio 1.62
+  hold out bear: picked C+cool14   -> x0.74 vs gate x0.74 (ratio 1.00); all variants avg ratio 0.99
+  hold out cycle 2: picked B+cool7    -> x4.24 vs gate x3.29 (ratio 1.29); all variants avg ratio 1.25
+  average ratio picked 1.32 vs all variants 1.29   (>1 = better than gate-only)
+
+== 4b. Random-timing check: the warning dates shifted at random (300 circular shifts, >= 60 days); 'beats' = share of shifts with a WORSE whole-period multiple than the real dates (want > 95%) ==
+  B+cool7      real x3.83 vs gate-only x1.76; beats 97% of random timings
+  B+cool14     real x4.49 vs gate-only x1.76; beats 97% of random timings
+  B+cool30     real x3.18 vs gate-only x1.76; beats 94% of random timings
+  B+dyn        real x3.00 vs gate-only x1.76; beats 88% of random timings
+  B+brk20      real x2.07 vs gate-only x1.76; beats 54% of random timings
+  B+brk50      real x3.42 vs gate-only x1.76; beats 82% of random timings
+  C+cool7      real x3.79 vs gate-only x1.76; beats 98% of random timings
+  C+cool14     real x4.90 vs gate-only x1.76; beats 99% of random timings
+  C+cool30     real x3.79 vs gate-only x1.76; beats 96% of random timings
+  C+dyn        real x3.36 vs gate-only x1.76; beats 96% of random timings
+  C+brk20      real x2.82 vs gate-only x1.76; beats 88% of random timings
+  C+brk50      real x4.10 vs gate-only x1.76; beats 95% of random timings
+
+Read: for your goal the exit audit matters most. A good rule exits within days of the peak (or before), at a small BTC % below the peak, and avoids most of each fall without giving up the bull profit in part 2. Treat small differences between variants as noise: there are ~5 BTC tops in the data and 12 variants.
+Caveats: alt basket survivorship; OI history starts 2021 so cycle 1 is only May-Nov 2021; warnings chosen after seeing labs 27/28; fills at the signal-day close.
