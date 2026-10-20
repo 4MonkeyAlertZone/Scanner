@@ -450,7 +450,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 449,KCS,crypto,long,RECLAIM C TP1,,1792383321,19 Oct 05:15,7.5557,7.10576,8.00564,open,,,,,,,,,168
 450,KCS,crypto,long,RECLAIM C TP2,,1792383321,19 Oct 05:15,7.5557,7.10576,8.45558,open,,,,,,,,,168
 451,KCS,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,7.5557,7.10576,8.90552,open,,,,,,,,,168
-452,BGB,crypto,long,IN ZONE,4,1792385230,19 Oct 05:47,1.87788,1.8699846,1.89861,open,,,,,,,,,
+452,BGB,crypto,long,IN ZONE,4,1792385230,19 Oct 05:47,1.87788,1.8699846,1.89861,closed,1792478215,20 Oct 07:36,1.85685,stop,-1.32,-1.32,25.8,-3.14,
 453,ZRO,crypto,long,BUY SIGNAL,3,1792396222,19 Oct 08:50,1.8948,1.8463071,1.9876,closed,1792408160,19 Oct 12:09,1.8415,stop,-3.01,-3.01,3.3,-1.18,
 454,UNI,crypto,long,RECLAIM C TP1,,1792398276,19 Oct 09:24,7.427,6.735502,8.118498,open,,,,,,,,,168
 455,UNI,crypto,long,RECLAIM C TP2,,1792398276,19 Oct 09:24,7.427,6.735502,8.809996,open,,,,,,,,,168
@@ -540,6 +540,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 539,VIRTUAL,crypto,long,IN ZONE,5,1792467450,20 Oct 04:37,0.6667,0.65805714,0.68475,open,,,,,,,,,
 540,ONDO,crypto,long,BUY SIGNAL,3,1792469352,20 Oct 05:09,0.442,0.43441429,0.4772325,closed,1792476212,20 Oct 07:03,0.43441,stop,-1.92,-1.92,1.9,-1.12,
 541,HBAR,crypto,long,BUY SIGNAL,3,1792470975,20 Oct 05:36,0.08409,0.080830643,0.08745,open,,,,,,,,,
-542,KCS,crypto,long,IN ZONE,5,1792470975,20 Oct 05:36,7.3808,7.2383786,7.4851667,open,,,,,,,,,
+542,KCS,crypto,long,IN ZONE,5,1792470975,20 Oct 05:36,7.3808,7.2383786,7.4851667,closed,1792478215,20 Oct 07:36,7.2381,stop,-2.13,-2.13,2.0,-1.11,
 543,BTW,crypto,long,IN ZONE,3,1792472771,20 Oct 06:06,1.72637,1.4951848,2.71946,open,,,,,,,,,
 544,HTX,crypto,long,BUY SIGNAL,3,1792476212,20 Oct 07:03,1.648e-06,1.6376321e-06,1.661e-06,open,,,,,,,,,
+545,TIA,crypto,long,IN ZONE - WAIT,3,1792478215,20 Oct 07:36,0.6316,0.61397071,,open,,,,,,,,,
