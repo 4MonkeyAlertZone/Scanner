@@ -637,3 +637,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 636,FITB,stock,long,IN ZONE - WAIT,3,1792518280,20 Oct 18:44,52.334999,50.701964,55.363999,open,,,,,,,,,
 637,ITW,stock,long,IN ZONE,3,1792518280,20 Oct 18:44,273.95999,270.69625,301.87001,open,,,,,,,,,
 638,URI,stock,long,IN ZONE,3,1792518280,20 Oct 18:44,1048.3199,1028.4429,1104.145,open,,,,,,,,,
+639,GD,stock,long,BUY SIGNAL,4,1792519721,20 Oct 19:08,344.38501,334.40608,352.715,open,,,,,,,,,
+640,SWKS,stock,long,IN ZONE - WAIT,3,1792519721,20 Oct 19:08,82.379997,80.130533,86.663335,open,,,,,,,,,
