@@ -1,0 +1,21 @@
+name: Chart data and RSI test
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python chart_data.py
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add chart_data.json rsi_stats.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Chart data" && (git pull --rebase -q; git push))
