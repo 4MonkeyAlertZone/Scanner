@@ -533,3 +533,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 532,CAKE,crypto,long,IN ZONE - WAIT,3,1792457260,20 Oct 01:47,2.181,2.1167143,2.2775,open,,,,,,,,,
 533,POL,crypto,long,IN ZONE - WAIT,3,1792459234,20 Oct 02:20,0.09155,0.088865357,0.094365,open,,,,,,,,,
 534,JUP,crypto,long,IN ZONE - WAIT,3,1792459234,20 Oct 02:20,0.2915,0.28006071,0.3052,open,,,,,,,,,
+535,JST,crypto,long,IN ZONE,3,1792461120,20 Oct 02:52,0.14124,0.14044464,0.142895,open,,,,,,,,,
