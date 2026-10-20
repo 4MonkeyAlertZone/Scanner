@@ -1,0 +1,141 @@
+LAB 33: REGIME ROBUSTNESS  data to 2026-10-19  from 2020-10-01  (92 rows, base + buy-and-hold + variants)
+
+Per asset: final x = growth of 1.0; DD = worst drawdown; flips = IN/OUT changes per year; in% = time in market; H1 = Oct 2020-Dec 2022, H2 = 2023-now (growth multiples).
+
+
+== base ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+BASE 200/50 + OI(180,15%,14d)                  19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+buy and hold                                    7.71       -77       0.2       100      1.55      4.96      6.82       -79       0.2       100      3.39      2.01
+
+== 1 MA grid ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+MA slow 100 / fast 20                          12.37       -39      24.5        36      3.48      3.56     25.20       -39      24.5        36      5.17      4.88
+MA slow 100 / fast 30                          12.13       -39      21.8        39      3.43      3.53     18.36       -38      21.8        39      5.18      3.54
+MA slow 100 / fast 50                          27.91       -31      14.0        44      4.80      5.82     40.44       -35      14.0        44      8.32      4.86
+MA slow 100 / fast 70                          21.69       -37      12.7        47      3.98      5.45     52.26       -37      12.7        47     10.15      5.15
+MA slow 150 / fast 20                           8.26       -47      26.1        36      2.83      2.91     13.75       -39      26.1        36      4.03      3.41
+MA slow 150 / fast 30                           9.41       -45      23.1        38      2.85      3.30     12.26       -35      23.1        38      4.01      3.06
+MA slow 150 / fast 50                          20.59       -40      15.0        42      3.94      5.23     27.91       -32      15.0        42      6.30      4.43
+MA slow 150 / fast 70                          16.06       -45      13.7        46      3.27      4.91     34.50       -33      13.7        46      7.69      4.49
+MA slow 150 / fast 100                         19.81       -46      13.1        50      3.81      5.21     43.46       -38      13.1        50      9.73      4.46
+MA slow 200 / fast 20                           7.51       -49      26.1        35      2.86      2.62     11.78       -39      26.1        35      3.99      2.95
+MA slow 200 / fast 30                           8.29       -48      22.1        37      2.88      2.87     10.01       -44      22.1        37      3.97      2.52
+MA slow 200 / fast 50                          19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+MA slow 200 / fast 70                          13.71       -50      12.7        45      3.12      4.40     29.82       -44      12.7        45      7.21      4.14
+MA slow 200 / fast 100                         15.80       -47      12.4        49      3.46      4.57     33.06       -48      12.4        49      8.81      3.75
+MA slow 250 / fast 20                           7.42       -39      27.1        37      3.42      2.17     10.79       -44      27.1        37      4.86      2.22
+MA slow 250 / fast 30                           8.33       -39      23.5        39      3.44      2.42      9.30       -42      23.5        39      4.83      1.93
+MA slow 250 / fast 50                          19.49       -31      14.7        43      4.76      4.10     24.90       -38      14.7        43      7.60      3.28
+MA slow 250 / fast 70                          15.02       -36      12.1        46      4.02      3.74     33.91       -42      12.1        46      9.77      3.47
+MA slow 250 / fast 100                         17.84       -35      11.4        49      4.46      4.00     40.98       -41      11.4        49     11.94      3.43
+MA slow 300 / fast 20                           7.04       -44      27.1        38      3.32      2.12     11.51       -44      27.1        38      5.01      2.30
+MA slow 300 / fast 30                           8.13       -39      23.5        40      3.34      2.43      9.85       -45      23.5        40      4.98      1.98
+MA slow 300 / fast 50                          17.19       -34      14.4        43      4.61      3.73     23.50       -41      14.4        43      7.84      3.00
+MA slow 300 / fast 70                          11.88       -49      13.1        46      3.83      3.11     29.72       -43      13.1        46      9.57      3.11
+MA slow 300 / fast 100                         13.10       -44      12.4        49      4.34      3.02     34.62       -41      12.4        49     12.00      2.89
+
+== 2 OI grid ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+OI none                                        15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 90 / rise 10% / cool 7d            16.68       -43      14.7        40      3.98      4.19     19.87       -36      14.7        40      6.25      3.18
+OI lookback 90 / rise 10% / cool 14d           17.48       -43      13.1        39      3.98      4.39     20.70       -33      13.1        39      6.25      3.31
+OI lookback 90 / rise 10% / cool 21d           15.19       -39      11.7        36      4.22      3.60     20.46       -32      11.7        36      6.53      3.13
+OI lookback 90 / rise 15% / cool 7d            18.78       -43      14.4        41      3.98      4.72     21.75       -36      14.4        41      6.25      3.48
+OI lookback 90 / rise 15% / cool 14d           20.02       -43      13.4        40      3.98      5.03     23.17       -35      13.4        40      6.25      3.71
+OI lookback 90 / rise 15% / cool 21d           15.85       -39      12.4        38      4.22      3.75     20.26       -35      12.4        38      6.53      3.10
+OI lookback 90 / rise 20% / cool 7d            15.82       -43      13.7        42      3.98      3.97     20.21       -36      13.7        42      6.25      3.23
+OI lookback 90 / rise 20% / cool 14d           16.42       -43      13.4        41      3.98      4.13     21.34       -36      13.4        41      6.25      3.42
+OI lookback 90 / rise 20% / cool 21d           12.79       -39      12.7        40      4.22      3.03     19.03       -36      12.7        40      6.53      2.91
+OI lookback 90 / rise 30% / cool 7d            15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 90 / rise 30% / cool 14d           15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 90 / rise 30% / cool 21d           16.53       -39      12.7        43      4.22      3.91     23.83       -40      12.7        43      6.53      3.65
+OI lookback 180 / rise 10% / cool 7d           17.01       -43      14.0        41      3.98      4.27     23.79       -40      14.0        41      6.25      3.81
+OI lookback 180 / rise 10% / cool 14d          17.05       -43      12.7        40      3.98      4.28     22.89       -40      12.7        40      6.25      3.66
+OI lookback 180 / rise 10% / cool 21d          19.24       -39      11.7        39      4.22      4.56     25.13       -38      11.7        39      6.53      3.85
+OI lookback 180 / rise 15% / cool 7d           19.14       -43      13.7        42      3.98      4.81     26.04       -40      13.7        42      6.25      4.17
+OI lookback 180 / rise 15% / cool 14d          19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+OI lookback 180 / rise 15% / cool 21d          19.83       -39      12.4        41      4.22      4.70     25.93       -40      12.4        41      6.53      3.97
+OI lookback 180 / rise 20% / cool 7d           15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 180 / rise 20% / cool 14d          15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 180 / rise 20% / cool 21d          15.46       -39      12.7        42      4.22      3.66     22.96       -40      12.7        42      6.53      3.52
+OI lookback 180 / rise 30% / cool 7d           15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 180 / rise 30% / cool 14d          15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 180 / rise 30% / cool 21d          16.53       -39      12.7        43      4.22      3.91     23.83       -40      12.7        43      6.53      3.65
+OI lookback 365 / rise 10% / cool 7d           18.11       -43      13.7        42      3.98      4.55     31.47       -40      13.7        42      6.25      5.04
+OI lookback 365 / rise 10% / cool 14d          18.14       -43      12.7        42      3.98      4.56     31.02       -40      12.7        42      6.25      4.96
+OI lookback 365 / rise 10% / cool 21d          19.09       -39      12.1        41      4.22      4.52     31.19       -40      12.1        41      6.53      4.78
+OI lookback 365 / rise 15% / cool 7d           18.80       -43      13.4        42      3.98      4.72     32.62       -40      13.4        42      6.25      5.22
+OI lookback 365 / rise 15% / cool 14d          19.41       -43      12.7        42      3.98      4.88     33.15       -40      12.7        42      6.25      5.31
+OI lookback 365 / rise 15% / cool 21d          20.41       -39      12.1        42      4.22      4.83     33.34       -40      12.1        42      6.53      5.10
+OI lookback 365 / rise 20% / cool 7d           15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 365 / rise 20% / cool 14d          15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 365 / rise 20% / cool 21d          16.53       -39      12.7        43      4.22      3.91     23.83       -40      12.7        43      6.53      3.65
+OI lookback 365 / rise 30% / cool 7d           15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 365 / rise 30% / cool 14d          15.58       -43      13.1        43      3.98      3.91     22.80       -40      13.1        43      6.25      3.65
+OI lookback 365 / rise 30% / cool 21d          16.53       -39      12.7        43      4.22      3.91     23.83       -40      12.7        43      6.53      3.65
+
+== 3 whipsaw ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+band 0% on 50d / confirm 1d                    19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+band 0% on 50d / confirm 2d                    17.91       -35       8.1        42      4.51      3.98     29.68       -43       8.1        42      7.64      3.89
+band 0% on 50d / confirm 3d                    15.40       -37       7.1        42      5.02      3.07     22.85       -49       7.1        42      7.65      2.99
+band 1% on 50d / confirm 1d                    19.95       -41       9.4        42      4.02      4.97     30.66       -38       9.4        42      6.73      4.55
+band 1% on 50d / confirm 2d                    17.04       -34       7.8        42      4.48      3.81     30.32       -42       7.8        42      8.14      3.72
+band 1% on 50d / confirm 3d                    15.66       -37       7.1        42      4.89      3.20     30.83       -50       7.1        42     10.20      3.02
+band 2% on 50d / confirm 1d                    15.91       -46       8.8        41      3.59      4.43     22.30       -39       8.8        41      5.43      4.11
+band 2% on 50d / confirm 2d                    11.95       -48       7.8        41      3.54      3.38     17.78       -47       7.8        41      5.56      3.20
+band 2% on 50d / confirm 3d                    13.21       -41       6.8        41      4.66      2.84     23.72       -51       6.8        41      7.87      3.01
+band 3% on 50d / confirm 1d                    14.51       -46       8.8        41      3.59      4.04     20.15       -42       8.8        41      5.43      3.71
+band 3% on 50d / confirm 2d                    12.00       -48       7.4        41      3.54      3.39     22.46       -50       7.4        41      5.56      4.04
+band 3% on 50d / confirm 3d                    11.08       -50       6.8        41      4.66      2.38     21.71       -64       6.8        41      7.87      2.76
+band 5% on 50d / confirm 1d                    14.13       -36       7.4        43      4.04      3.50     18.25       -49       7.4        43      5.33      3.42
+band 5% on 50d / confirm 2d                     9.11       -41       6.4        43      3.80      2.40     14.20       -57       6.4        43      5.62      2.53
+band 5% on 50d / confirm 3d                     8.70       -46       5.8        43      4.40      1.98     15.26       -62       5.8        43      7.21      2.12
+
+== 4 RSI ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+weekly RSI > 75: 14d cash                       3.10       -43      14.0        29      1.04      2.99      2.99       -37      14.0        29      1.36      2.20
+weekly RSI > 80: 14d cash                       4.93       -43      14.0        33      1.18      4.18      7.20       -37      14.0        33      1.74      4.13
+weekly RSI > 85: 14d cash                       9.18       -43      13.7        36      1.88      4.87     10.82       -37      13.7        36      2.22      4.88
+need 2-day RSI > 40                            19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+need 2-day RSI > 45                            19.66       -43      13.1        42      3.98      4.94     26.27       -40      13.1        42      6.25      4.20
+need 2-day RSI > 50                            20.82       -41      11.4        41      4.06      5.13     29.05       -37      11.4        41      6.32      4.60
+
+== 5 vol size ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+vol sizing, target 40%/yr                       9.80       -30      13.1        42      2.33      4.21     11.10       -33      13.1        42      3.02      3.68
+vol sizing, target 60%/yr                      13.98       -40      13.1        42      2.91      4.81     18.74       -39      13.1        42      4.44      4.23
+vol sizing, target 80%/yr                      17.40       -43      13.1        42      3.53      4.93     23.46       -40      13.1        42      5.58      4.20
+
+== 6 ETH/BTC ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+ETH only: ETH/BTC above its 20d avg            19.66       -43      13.1        42      3.98      4.94      2.24       -44      24.5        19      2.33      0.96
+ETH only: ETH/BTC above its 50d avg            19.66       -43      13.1        42      3.98      4.94      2.88       -59      15.5        18      1.77      1.63
+
+== 7 vote ==
+variant                                    BTC final   BTC DD% BTC flips   BTC in%    BTC H1    BTC H2 ETH final   ETH DD% ETH flips   ETH in%    ETH H1    ETH H2
+vote: 3 of 5 averages                          21.74       -35       9.1        53      3.87      5.61     45.23       -43       9.1        53     11.14      4.06
+vote: 4 of 5 averages                          17.30       -44      12.1        49      3.62      4.77     38.59       -42      12.1        49      9.34      4.13
+vote: 5 of 5 averages                          16.39       -43      13.4        41      3.98      4.12     22.20       -38      13.4        41      6.25      3.55
+
+== CONSISTENT IMPROVERS (both BTC and ETH: final >= base, worst drawdown 3+ points better, each half >= 95% of base) : 2 of 90 variants ==
+  MA slow 100 / fast 50
+  MA slow 100 / fast 70
+A single passing cell among ~95 is what luck alone could produce; a block of neighbouring cells all passing would be more convincing.
+
+Top 8 by average return-to-drawdown (CAGR / worst drawdown) across BTC and ETH:
+  2.38  MA slow 100 / fast 50
+  2.15  MA slow 100 / fast 70
+  1.96  vote: 3 of 5 averages
+  1.95  MA slow 150 / fast 50
+  1.93  MA slow 250 / fast 50
+  1.91  MA slow 250 / fast 100
+  1.85  MA slow 150 / fast 70
+  1.84  MA slow 150 / fast 100
+
+== Random-timing null for the base rule (800 circular shifts of its IN/OUT series, same time in market) ==
+  BTC: share of shifts ending at least as high as the base: 0.00; share with a drawdown at least as small: 0.11
+  ETH: share of shifts ending at least as high as the base: 0.00; share with a drawdown at least as small: 0.01
+
+Read: start with family 1 and 2. If the neighbours of 200/50 and of the OI settings give similar results, the live rule sits on a plateau and is not a fragile pick. A family that helps both assets in both halves and cuts drawdown is the kind of change worth adding to a live paper test first. Everything here is one history with about three market phases.
