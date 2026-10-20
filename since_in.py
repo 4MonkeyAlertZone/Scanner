@@ -30,5 +30,13 @@ if all(w):
     for t, x in zip(alts, w): L.append(f"  {t:<8} ${x[0]:,.0f}")
     b = [(sum(2000 * D[t][k][4] / D[t][E][4] for t in alts) / 10000 - 1) * 100 for k in sorted(D["BTC"]) if E < k <= last]
     L.append(f"  worst closing dip of the basket versus entry: {min(b):+.1f}%")
+
+P = ["", "PEAK VALUE OF EACH PORTFOLIO (best daily close since entry) and how far it is now below that peak:"]
+ks = [k for k in sorted(D["BTC"]) if E <= k <= last]
+def ser(w): return [sum(a * D[t][k][4] / D[t][E][4] for t, a in w.items()) for k in ks]
+for name, w in [("BTC", {"BTC": 10000}), ("ETH", {"ETH": 10000}), ("Alt basket", {t: 2000 for t in alts})] + [(t, {t: 10000}) for t in alts]:
+    v = ser(w); i = max(range(len(v)), key=v.__getitem__)
+    P.append(f"  {name:<11} peak ${v[i]:>9,.0f} on {fd(ks[i])} ({(v[i]/10000-1)*100:+.1f}%)   now ${v[-1]:>9,.0f}   {(v[-1]/v[i]-1)*100:+.1f}% from peak")
+L += P
 L += ["", "Prices are daily closes, no fees or slippage; the real fill would be around the 20 Aug morning price."]
 open("since_in_report.txt", "w").write("\n".join(L) + "\n"); print("\n".join(L))
