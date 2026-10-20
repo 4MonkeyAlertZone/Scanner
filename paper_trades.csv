@@ -624,3 +624,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 623,EVRG,stock,long,IN ZONE,4,1792512787,20 Oct 17:13,82.834999,81.943568,84.828571,open,,,,,,,,,
 624,KR,stock,long,BUY SIGNAL,5,1792512787,20 Oct 17:13,62.779999,61.16455,65.636668,open,,,,,,,,,
 625,PSA,stock,long,IN ZONE,4,1792512787,20 Oct 17:13,300.11499,296.14999,306.34499,open,,,,,,,,,
+626,BTC,crypto,long,BUY SIGNAL,4,1792514454,20 Oct 17:40,82577.9,82160.244,84078.043,open,,,,,,,,,
+627,TAO,crypto,long,BUY SIGNAL,4,1792514454,20 Oct 17:40,270.91,266.12714,283.745,open,,,,,,,,,
+628,BAC,stock,long,IN ZONE - WAIT,3,1792514454,20 Oct 17:40,50.990002,49.945179,52.865,open,,,,,,,,,
