@@ -1,0 +1,29 @@
+RSI TIMEFRAME TEST vs the regime signals (daily sampling at each daily close, from 1 Oct 2020)
+
+Benchmark: the regime state itself (IN = up call, OUT = down call) for the 14-day direction test.
+
+Base rate: BTC was up over the next 14 days on 54% of days. Regime: IN days avg 14d return +4.3%, OUT days +0.4% (spread +3.9 pts), 'IN=up/OUT=down' right 54% of days.
+
+tf    days    AUC  agree%  lag IN  found%  lag OUT  found%  crosses/yr  fwd14 spread   hit%  RSI@IN  RSI@OUT
+1h    2210   0.60      56     +0d     100      +0d     100       165.2          0.7%     51      70       40
+2h    2210   0.64      58     +0d     100      +0d     100       128.8          0.7%     50      69       38
+4h    2210   0.69      63     +0d     100      -1d     100        95.1          1.1%     51      68       40
+6h    2210   0.73      66     -1d     100      +0d     100        78.6          1.2%     51      67       40
+8h    2210   0.76      68     -1d     100      +0d     100        68.4          1.2%     50      64       43
+1d    2210   0.90      81     +0d     100      +0d     100        31.0          2.0%     52      58       46
+2d    2210   0.96      87     +0d     100      +1d      95        16.4          2.3%     52      53       52
+3d    2210   0.97      85     +0d      82      +6d      82        10.1          1.8%     51      55       56
+1w    2210   0.91      80     -1d      38     +17d      41         4.0          3.0%     52      57       63
+2w    2210   0.82      69     -8d      15     +20d      13         1.7          2.3%     51      63       67
+1M    2119   0.69      58    +15d      10     +29d       8         1.4         -1.0%     46      65       69
+
+INTRADAY WARNINGS: median RSI of each hourly timeframe at the moment (previous hourly close) a BTC warning fired, versus the median over all hours. Lower than 'all hours' = RSI already weak when the warning came.
+
+                                      n     1h     2h     4h     6h     8h     1d
+all hours                         53035     51     51     51     51     51     51
+FAST DROP BTC                       578     36     39     41     40     43     46
+BTC BELOW 50-DAY LINE                79     44     46     46     46     46     51
+BTC BELOW 200-DAY LINE               13     43     46     48     50     53     63
+BTC NEAR 50-DAY LINE (<1% above)    122     46     47     48     48     50     53
+
+Read: higher AUC and agree% mean the RSI timeframe separates IN from OUT days; small |lag| with high found% means its 50-cross arrives near the regime flip; fewer crosses/yr means fewer false flips; positive fwd14 spread with hit% above the base rate means it carries direction information. The regime rule itself is in the benchmark line above.
