@@ -536,3 +536,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 535,JST,crypto,long,IN ZONE,3,1792461120,20 Oct 02:52,0.14124,0.14044464,0.142895,open,,,,,,,,,
 536,SHIB,crypto,long,BUY SIGNAL,4,1792464077,20 Oct 03:41,5.002e-06,4.9564643e-06,5.1063333e-06,open,,,,,,,,,
 537,PENGU,crypto,long,BUY SIGNAL,3,1792464077,20 Oct 03:41,0.007558,0.0074564964,0.0077935,open,,,,,,,,,
+538,ATOM,crypto,long,IN ZONE - WAIT,4,1792465807,20 Oct 04:10,1.762,1.7331071,1.8455,open,,,,,,,,,
