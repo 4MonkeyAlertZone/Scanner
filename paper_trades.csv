@@ -538,3 +538,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 537,PENGU,crypto,long,BUY SIGNAL,3,1792464077,20 Oct 03:41,0.007558,0.0074564964,0.0077935,open,,,,,,,,,
 538,ATOM,crypto,long,IN ZONE - WAIT,4,1792465807,20 Oct 04:10,1.762,1.7331071,1.8455,open,,,,,,,,,
 539,VIRTUAL,crypto,long,IN ZONE,5,1792467450,20 Oct 04:37,0.6667,0.65805714,0.68475,open,,,,,,,,,
+540,ONDO,crypto,long,BUY SIGNAL,3,1792469352,20 Oct 05:09,0.442,0.43441429,0.4772325,open,,,,,,,,,
