@@ -19,4 +19,14 @@ EQUAL ALT BASKET ($2,000 each in NEAR, ONDO, HBAR, SUI, RENDER): $15,985 (+59.8%
   RENDER   $2,636
   worst closing dip of the basket versus entry: +1.9%
 
+PEAK VALUE OF EACH PORTFOLIO (best daily close since entry) and how far it is now below that peak:
+  BTC         peak $   12,495 on 2026-09-21 (+25.0%)   now $   11,821   -5.4% from peak
+  ETH         peak $   12,327 on 2026-09-21 (+23.3%)   now $   10,689   -13.3% from peak
+  Alt basket  peak $   18,895 on 2026-09-27 (+88.9%)   now $   15,985   -15.4% from peak
+  NEAR        peak $   34,084 on 2026-10-11 (+240.8%)   now $   28,411   -16.6% from peak
+  ONDO        peak $   16,862 on 2026-09-27 (+68.6%)   now $   12,438   -26.2% from peak
+  HBAR        peak $   17,251 on 2026-09-28 (+72.5%)   now $   11,702   -32.2% from peak
+  SUI         peak $   17,957 on 2026-09-27 (+79.6%)   now $   14,190   -21.0% from peak
+  RENDER      peak $   15,589 on 2026-10-06 (+55.9%)   now $   13,182   -15.4% from peak
+
 Prices are daily closes, no fees or slippage; the real fill would be around the 20 Aug morning price.
