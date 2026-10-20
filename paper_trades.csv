@@ -632,3 +632,8 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 631,APH,stock,long,IN ZONE - WAIT,4,1792516539,20 Oct 18:15,78.834999,74.408928,84.125,open,,,,,,,,,
 632,AZO,stock,long,IN ZONE,3,1792516539,20 Oct 18:15,3148.4651,3090.3029,3227.5999,open,,,,,,,,,
 633,TKO,stock,long,IN ZONE - WAIT,5,1792516539,20 Oct 18:15,178.37,173.44607,184.38667,open,,,,,,,,,
+634,CVNA,stock,long,IN ZONE - WAIT,5,1792518280,20 Oct 18:44,60.290001,58.317922,65.114333,open,,,,,,,,,
+635,FERG,stock,long,BUY SIGNAL,5,1792518280,20 Oct 18:44,227.39,215.61678,237.54333,open,,,,,,,,,
+636,FITB,stock,long,IN ZONE - WAIT,3,1792518280,20 Oct 18:44,52.334999,50.701964,55.363999,open,,,,,,,,,
+637,ITW,stock,long,IN ZONE,3,1792518280,20 Oct 18:44,273.95999,270.69625,301.87001,open,,,,,,,,,
+638,URI,stock,long,IN ZONE,3,1792518280,20 Oct 18:44,1048.3199,1028.4429,1104.145,open,,,,,,,,,
