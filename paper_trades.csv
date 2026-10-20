@@ -520,7 +520,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 519,FET,crypto,long,BUY SIGNAL,4,1792439458,19 Oct 20:50,0.189,0.18539071,0.20325,open,,,,,,,,,
 520,SOL,crypto,long,IN ZONE,4,1792447506,19 Oct 23:05,105.06,103.89607,107.79667,open,,,,,,,,,
 521,BNB,crypto,long,IN ZONE - WAIT,4,1792447506,19 Oct 23:05,731.27,718.96929,744.585,open,,,,,,,,,
-522,GRAM,crypto,long,IN ZONE,4,1792447506,19 Oct 23:05,1.362,1.35075,1.3918,open,,,,,,,,,
+522,GRAM,crypto,long,IN ZONE,4,1792447506,19 Oct 23:05,1.362,1.35075,1.3918,closed,1792483013,20 Oct 08:56,1.349,stop,-1.15,-1.15,9.9,-1.40,
 523,APT,crypto,long,IN ZONE - WAIT,4,1792447506,19 Oct 23:05,0.7649,0.74995714,0.80125,open,,,,,,,,,
 524,WLD,crypto,long,IN ZONE - WAIT,3,1792449086,19 Oct 23:31,0.5309,0.51494643,0.5734,open,,,,,,,,,
 525,ARB,crypto,long,IN ZONE,4,1792449086,19 Oct 23:31,0.1963,0.19166929,0.20385667,open,,,,,,,,,
