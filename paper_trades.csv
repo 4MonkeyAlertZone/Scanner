@@ -545,3 +545,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 544,HTX,crypto,long,BUY SIGNAL,3,1792476212,20 Oct 07:03,1.648e-06,1.6376321e-06,1.661e-06,open,,,,,,,,,
 545,TIA,crypto,long,IN ZONE - WAIT,3,1792478215,20 Oct 07:36,0.6316,0.61397071,,open,,,,,,,,,
 546,XDC,crypto,long,IN ZONE - WAIT,3,1792490116,20 Oct 10:55,0.03211,0.031513214,0.033126667,open,,,,,,,,,
+547,ETH,crypto,long,BUY SIGNAL,4,1792491382,20 Oct 11:16,2388.74,2370.6168,2440.07,open,,,,,,,,,
