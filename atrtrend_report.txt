@@ -1,6 +1,6 @@
-ATR TREND PAPER TEST  data to 2026-10-18 (completed daily candles)   started 2026-10-17   universe 73 coins + BTC
+ATR TREND PAPER TEST  data to 2026-10-19 (completed daily candles)   started 2026-10-17   universe 73 coins + BTC
 BTC ABOVE its 200-day average -> new buys allowed. Rule: buy 55-day breakout; sell at 3 x daily-range trailing stop or when BTC falls below its 200-day average.
-Paper account (1000 start, 20 slots, 0.1% per side): 1,000   (+0.0%)   |   BTC held over the same days: 1,008 (+0.8%)
+Paper account (1000 start, 20 slots, 0.1% per side): 1,000   (+0.0%)   |   BTC held over the same days: 1,006 (+0.6%)
 
 OPEN POSITIONS (0):
   none
