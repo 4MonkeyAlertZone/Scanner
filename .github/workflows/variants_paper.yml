@@ -1,0 +1,32 @@
+name: Regime variants paper test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "55 0 * * *"
+  push:
+    paths:
+      - ".github/workflows/variants_paper.yml"
+      - "variants_paper.py"
+concurrency:
+  group: variantspaper
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python variants_paper.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add variants_* basketgate_oi.csv 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Regime variants paper update" && (git pull --rebase -q; git push))
