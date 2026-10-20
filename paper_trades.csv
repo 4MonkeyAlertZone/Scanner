@@ -541,3 +541,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 540,ONDO,crypto,long,BUY SIGNAL,3,1792469352,20 Oct 05:09,0.442,0.43441429,0.4772325,open,,,,,,,,,
 541,HBAR,crypto,long,BUY SIGNAL,3,1792470975,20 Oct 05:36,0.08409,0.080830643,0.08745,open,,,,,,,,,
 542,KCS,crypto,long,IN ZONE,5,1792470975,20 Oct 05:36,7.3808,7.2383786,7.4851667,open,,,,,,,,,
+543,BTW,crypto,long,IN ZONE,3,1792472771,20 Oct 06:06,1.72637,1.4951848,2.71946,open,,,,,,,,,
