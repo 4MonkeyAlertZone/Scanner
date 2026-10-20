@@ -512,7 +512,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 511,STX,crypto,long,IN ZONE - WAIT,4,1792435468,19 Oct 19:44,0.3587,0.34418571,0.377,closed,1792500413,20 Oct 13:46,0.3367,stop,-6.33,-6.33,18.0,-1.57,
 512,CEG,stock,long,IN ZONE - WAIT,4,1792435468,19 Oct 19:44,262.92871,247.55708,281.67916,open,,,,,,,,,
 513,DUK,stock,long,BUY SIGNAL,5,1792437512,19 Oct 20:18,119.365,117.70036,121.395,open,,,,,,,,,
-514,ZEC,crypto,long,IN ZONE - WAIT,4,1792439458,19 Oct 20:50,1128.44,1063.4036,1239.758,open,,,,,,,,,
+514,ZEC,crypto,long,IN ZONE - WAIT,4,1792439458,19 Oct 20:50,1128.44,1063.4036,1239.758,closed,1792530363,20 Oct 22:06,1239.758,target,9.66,9.66,25.3,1.68,
 515,PUMP,crypto,long,BUY SIGNAL,3,1792439458,19 Oct 20:50,0.00436,0.0042552857,0.004678,closed,1792506820,20 Oct 15:33,0.004678,target,7.09,7.09,18.7,2.95,
 516,ASTER,crypto,long,BUY SIGNAL,4,1792439458,19 Oct 20:50,0.7049,0.69172143,0.7208625,open,,,,,,,,,
 517,SKY,crypto,long,BUY SIGNAL,3,1792439458,19 Oct 20:50,0.06941,0.068577143,0.0720175,closed,1792467450,20 Oct 04:37,0.0720175,target,3.56,3.56,7.8,2.96,
@@ -661,3 +661,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 660,JST,crypto,long,CROSS C TP1,,1792526954,20 Oct 21:09,0.13999,0.13614,0.14384,open,,,,,,,,,168
 661,JST,crypto,long,CROSS C TP2,,1792526954,20 Oct 21:09,0.13999,0.13614,0.14769,open,,,,,,,,,168
 662,JST,crypto,long,CROSS C TP3,,1792526954,20 Oct 21:09,0.13999,0.13614,0.15154,open,,,,,,,,,168
+663,AVAX,crypto,long,IN ZONE - WAIT,3,1792530363,20 Oct 22:06,9.772,9.6469643,10.015,open,,,,,,,,,
