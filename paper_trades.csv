@@ -662,3 +662,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 661,JST,crypto,long,CROSS C TP2,,1792526954,20 Oct 21:09,0.13999,0.13614,0.14769,open,,,,,,,,,168
 662,JST,crypto,long,CROSS C TP3,,1792526954,20 Oct 21:09,0.13999,0.13614,0.15154,open,,,,,,,,,168
 663,AVAX,crypto,long,IN ZONE - WAIT,3,1792530363,20 Oct 22:06,9.772,9.6469643,10.015,open,,,,,,,,,
+664,AERO,crypto,long,BUY SIGNAL,4,1792535357,20 Oct 23:29,0.8855,0.83625643,0.92605,open,,,,,,,,,
