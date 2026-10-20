@@ -1,0 +1,5 @@
+date,price,pct_from_ath,days_since_ath,further_low_next_365d_pct,context
+2015-02-18,237.37,-79.0,441,-11.6,in bear 2013-12-04 -> 2015-01-14; 35 d after the low
+2019-02-20,3936.53,-79.5,431,-6.0,in bear 2017-12-16 -> 2018-12-15; 67 d after the low
+2022-09-13,20177.0,-70.1,309,-21.9,in bear 2021-11-08 -> 2022-11-21; 69 d before the low
+2026-05-30,73762.15,-40.9,236,-20.7,in bear 2025-10-06 -> 2026-06-30 (not over); 31 d before the low
