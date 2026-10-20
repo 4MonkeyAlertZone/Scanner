@@ -530,3 +530,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 529,BNB,crypto,long,RECLAIM C TP1,,1792454927,20 Oct 01:08,729.96,704.35846,755.56154,open,,,,,,,,,168
 530,BNB,crypto,long,RECLAIM C TP2,,1792454927,20 Oct 01:08,729.96,704.35846,781.16308,open,,,,,,,,,168
 531,BNB,crypto,long,RECLAIM C TP3,,1792454927,20 Oct 01:08,729.96,704.35846,806.76462,open,,,,,,,,,168
+532,CAKE,crypto,long,IN ZONE - WAIT,3,1792457260,20 Oct 01:47,2.181,2.1167143,2.2775,open,,,,,,,,,
