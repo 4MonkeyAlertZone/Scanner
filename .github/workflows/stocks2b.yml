@@ -1,0 +1,26 @@
+name: Stocks step 2b
+on:
+  workflow_dispatch:
+concurrency:
+  group: stocks2b
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  stocks2b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python backtest_stocks2b.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add stocks2b_summary.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Stocks step 2b results" && (git pull --rebase -q; git push))
