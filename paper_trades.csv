@@ -734,3 +734,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 733,ATOM,crypto,long,RECLAIM B TP2,,1792569972,21 Oct 09:06,1.758,1.62175,2.0305,open,,,,,,,,,168
 734,ATOM,crypto,long,RECLAIM B TP3,,1792569972,21 Oct 09:06,1.758,1.62175,2.16675,open,,,,,,,,,168
 735,GRAM,crypto,long,BUY SIGNAL,3,1792569972,21 Oct 09:06,1.357,1.3275,1.3687143,open,,,,,,,,,
+736,MORPHO,crypto,long,BUY SIGNAL,5,1792574003,21 Oct 10:13,2.335,2.28275,2.4867,open,,,,,,,,,
