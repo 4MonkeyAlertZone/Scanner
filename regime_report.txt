@@ -1,9 +1,9 @@
-ALT REGIME  data to 2026-10-19: IN
-BTC 81,950  200d avg 72,609 (above)  50d avg 81,518 (above)
+ALT REGIME  data to 2026-10-20: IN
+BTC 83,053  200d avg 72,690 (above)  50d avg 81,607 (above)
 OI warning in last 14d: no
 All three conditions clear.
 Signal from the daily close; rule-based prompt, not advice.
 LEVERAGE VIEW (if you opened at the IN price; 0.5% maintenance margin, exchange fees/funding extra):
-BTC since IN 82,116 (now 81,950, -0.2%): 2x liq 41,469 (49% below now); 3x liq 55,155 (33% below now)
-ETH since IN 2,412 (now 2,408, -0.2%): 2x liq 1,218 (49% below now); 3x liq 1,620 (33% below now)
-BTC exit trigger: close below 50-day avg 81,518 (0.5% below now). Past worst dip below entry in IN spells: BTC 10%, ETH 19% (40 spells) - a fast wick can still hit before a daily signal.
+BTC since IN 82,116 (now 83,053, +1.1%): 2x liq 41,469 (50% below now); 3x liq 55,155 (34% below now)
+ETH since IN 2,412 (now 2,449, +1.5%): 2x liq 1,218 (50% below now); 3x liq 1,620 (34% below now)
+BTC exit trigger: close below 50-day avg 81,607 (1.7% below now). Past worst dip below entry in IN spells: BTC 10%, ETH 19% (40 spells) - a fast wick can still hit before a daily signal.
