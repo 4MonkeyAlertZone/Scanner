@@ -5,6 +5,8 @@ BASE 200/50         IN              +1.2%     +1.6%      1        1
 BAND1 (50d +-1%)    IN              +1.2%     +1.6%      1        1
 S100F50             IN              +1.2%     +1.6%      1        1
 VOTE3 of 5 avgs     IN              +1.2%     +1.6%      1        1
+FAST45 200/45       IN              +1.2%     +1.6%      1        1
+RISE50 (200d rising)IN              +1.2%     +1.6%      1        1
 buy and hold                        +1.3%     +1.7%
 
 Accounts start at 0 (percent change since start), 0.1% cost per IN/OUT change, signal at the daily close earning the next day.
