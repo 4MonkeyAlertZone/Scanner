@@ -568,7 +568,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 567,WMT,stock,long,BUY SIGNAL,3,1792505047,20 Oct 15:04,119.38,114.33643,121.405,open,,,,,,,,,
 568,WELL,stock,long,IN ZONE,3,1792505047,20 Oct 15:04,237.77,234.81965,,open,,,,,,,,,
 569,WDAY,stock,long,IN ZONE,4,1792505047,20 Oct 15:04,201.19501,197.47107,211.88,open,,,,,,,,,
-570,XRP,crypto,long,IN ZONE,5,1792506857,20 Oct 15:34,1.3349,1.2991179,1.36065,open,,,,,,,,,
+570,XRP,crypto,long,IN ZONE,5,1792506857,20 Oct 15:34,1.3349,1.2991179,1.36065,closed,1792575803,21 Oct 10:43,1.36065,target,1.73,1.73,19.2,0.65,
 571,BCH,crypto,long,IN ZONE,3,1792506857,20 Oct 15:34,282.9,279.61429,301.95,closed,1792510707,20 Oct 16:38,276.8,stop,-2.36,-2.36,1.1,-2.03,
 572,OKB,crypto,long,IN ZONE,3,1792506857,20 Oct 15:34,115.972,114.89625,118.1285,closed,1792512759,20 Oct 17:12,114.788,stop,-1.22,-1.22,1.6,-1.32,
 573,RENDER,crypto,long,IN ZONE,3,1792506857,20 Oct 15:34,1.893,1.833,1.9808,open,,,,,,,,,
@@ -735,3 +735,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 734,ATOM,crypto,long,RECLAIM B TP3,,1792569972,21 Oct 09:06,1.758,1.62175,2.16675,open,,,,,,,,,168
 735,GRAM,crypto,long,BUY SIGNAL,3,1792569972,21 Oct 09:06,1.357,1.3275,1.3687143,open,,,,,,,,,
 736,MORPHO,crypto,long,BUY SIGNAL,5,1792574003,21 Oct 10:13,2.335,2.28275,2.4867,open,,,,,,,,,
+737,BGB,crypto,long,BUY SIGNAL,4,1792575803,21 Oct 10:43,1.92211,1.8712989,1.952561,open,,,,,,,,,
+738,KCS,crypto,long,IN ZONE,5,1792575803,21 Oct 10:43,7.3354,7.1984214,7.4851667,open,,,,,,,,,
