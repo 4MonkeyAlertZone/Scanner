@@ -878,3 +878,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 877,LUV,stock,long,IN ZONE - WAIT,4,1792602974,21 Oct 18:16,40.7603,39.919821,41.936666,open,,,,,,,,,
 878,GPC,stock,long,IN ZONE,3,1792604576,21 Oct 18:42,124.53,122.06357,129.31625,open,,,,,,,,,
 879,NUE,stock,long,IN ZONE,3,1792604576,21 Oct 18:42,265.72,261.06609,,open,,,,,,,,,
+880,OKB,crypto,long,BUY SIGNAL,3,1792608167,21 Oct 19:42,117.438,116.80532,120.09817,open,,,,,,,,,
+881,APT,crypto,long,IN ZONE - WAIT,4,1792608167,21 Oct 19:42,0.8459,0.83364643,0.8894,open,,,,,,,,,
+882,PENGU,crypto,long,IN ZONE,4,1792608167,21 Oct 19:42,0.008378,0.0082029286,0.00885,open,,,,,,,,,
+883,GE,stock,long,IN ZONE - WAIT,3,1792608167,21 Oct 19:42,296.60999,285.74429,308.584,open,,,,,,,,,
