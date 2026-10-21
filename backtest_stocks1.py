@@ -19,11 +19,14 @@ COST = 0.0005
 def d0(y, m, dd): return calendar.timegm((y, m, dd, 0, 0, 0)) // 86400
 
 def fetch(sym):
-    u = scanner.YAHOO.format(urllib.parse.quote(sym), "1d", "max")
+    u = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?interval=1d&period1=-631152000&period2={int(time.time())}&includePrePost=false"
     j = json.loads(scanner.http(u, headers=scanner.UA))["chart"]["result"][0]
     q = j["indicators"]["quote"][0]["close"]; out = {}
     for t, c in zip(j["timestamp"], q):
         if c: out[int(t // 86400)] = c
+    ks = sorted(out)
+    print(f"{sym}: {len(out)} daily rows {fd(ks[0])} to {fd(ks[-1])}")
+    if (sym != "^VIX" and len(out) < 3000) or (ks[-1] - ks[0]) / max(1, len(out)) > 3: raise SystemExit(f"{sym}: data looks too sparse ({len(out)} rows), stopping")
     return out
 
 def sma(C, k):
