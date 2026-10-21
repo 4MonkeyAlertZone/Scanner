@@ -884,3 +884,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 883,GE,stock,long,IN ZONE - WAIT,3,1792608167,21 Oct 19:42,296.60999,285.74429,308.584,open,,,,,,,,,
 884,LIT,crypto,long,IN ZONE,4,1792610320,21 Oct 20:18,3.8921,3.8105,4.3069,open,,,,,,,,,
 885,TSCO,stock,long,IN ZONE - WAIT,4,1792610320,21 Oct 20:18,32.244999,31.011607,35.965,open,,,,,,,,,
+886,IRM,stock,long,IN ZONE,3,1792612115,21 Oct 20:48,114.7025,112.54807,118.78,open,,,,,,,,,
+887,KVUE,stock,long,BUY SIGNAL,3,1792612115,21 Oct 20:48,19.0898,18.424321,19.245,open,,,,,,,,,
+888,TRMB,stock,long,BUY SIGNAL,4,1792612115,21 Oct 20:48,62.645,60.597678,64.01,open,,,,,,,,,
