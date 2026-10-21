@@ -1,0 +1,37 @@
+STOCKS STEP 2: 30-STOCK BASKET REGIME BACKTEST
+
+Basket (30): MSFT INTC CSCO IBM ORCL AAPL GE XOM CVX JNJ PFE MRK KO PEP PG WMT HD MCD DIS T VZ C JPM BAC WFC AMGN UNH MMM CAT BA.  Dividend-adjusted closes, cash earns 0, 0.1% per unit of weight changed, from 2000-01-03 to 2026-10-21.
+SURVIVORSHIP WARNING: only companies that survived to today are in the basket; failures are missing, so buy-and-hold is flattered and avoidance rules look less valuable than they were.
+
+rule                   all x  CAGR%   DD% flips  in% |   H1 x  CAGR%   DD% |   H2 x  CAGR%   DD%
+BH                     18.29   17.1   -51   0.1  100 |   2.70   11.8   -51 |   6.58   21.9   -35
+IDX200                  5.20    9.3   -23  10.5   72 |   1.48    4.5   -22 |   3.41   13.8   -23
+IDX200 band2            8.66   12.4   -19   2.8   72 |   2.02    8.2   -18 |   4.17   16.2   -19
+IDX200+50               2.06    4.0   -28  23.6   58 |   1.00    0.0   -25 |   2.01    7.6   -28
+BASKET200               5.45    9.6   -37  10.1   82 |   1.51    4.7   -37 |   3.51   14.1   -25
+OWN200                  3.46    7.0   -30  14.5   65 |   1.21    2.2   -30 |   2.80   11.5   -16
+IDX200+OWN200           3.24    6.6   -19  14.5   54 |   1.31    3.0   -19 |   2.43    9.8   -16
+BREADTH>=40             6.07   10.3   -37   9.2   87 |   1.55    5.0   -37 |   3.81   15.1   -32
+BREADTH>=50             5.84   10.0   -36  11.4   80 |   1.79    6.7   -36 |   3.18   12.9   -26
+BREADTH>=60             3.34    6.7   -35  19.7   68 |   1.43    4.1   -35 |   2.27    9.0   -27
+IDX200+BREADTH50        3.62    7.2   -34  12.4   70 |   1.42    4.0   -24 |   2.48   10.0   -34
+
+FOUR BIG FALLS: account change from peak date to trough date (basket buy-and-hold vs each rule)
+rule                  2000-03..2002-10  2007-10..2009-03  2020-02..2020-03  2022-01..2022-10
+BH                                -23%              -50%              -34%              -17%
+IDX200                            -13%               -8%              -17%               -6%
+IDX200 band2                       -3%              -11%              -16%               -8%
+IDX200+50                         -16%               -9%               -4%               -1%
+BASKET200                         -28%              -15%              -11%              -17%
+OWN200                            -25%              -21%              -13%               -7%
+IDX200+OWN200                     -13%               -3%              -10%               -4%
+BREADTH>=40                       -28%              -32%              -22%              -16%
+BREADTH>=50                       -30%              -15%              -15%              -12%
+BREADTH>=60                       -30%              -10%               -7%               -7%
+IDX200+BREADTH50                  -14%               -8%              -15%               -6%
+
+Random-timing null for IDX200 (800 circular shifts): share ending at least as high 0.66; share with a drawdown at least as small 0.00
+
+LIVE STATUS 2026-10-21: S&P 500 7,757, +6.5% vs 200-day, +0.7% vs 50-day; breadth 57% of the 30 above their own 200-day; traffic light would be GREEN (GREEN above 200d and 50d, ORANGE above 200d but below 50d, RED below 200d).
+
+Read: compare each rule's H2 (2013-now) with its H1: a rule that only worked in 2000-12 is not trustworthy. Dividends are included here but cash interest is not, which slightly understates every rule that sits in cash.
