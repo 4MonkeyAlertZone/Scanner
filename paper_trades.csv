@@ -688,3 +688,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 687,LINK,crypto,long,BUY SIGNAL,4,1792547403,21 Oct 02:50,12.44,11.929036,12.688,open,,,,,,,,,
 688,CRO,crypto,long,IN ZONE,4,1792547403,21 Oct 02:50,0.05814,0.057572143,0.059346667,open,,,,,,,,,
 689,LDO,crypto,long,BUY SIGNAL,5,1792548893,21 Oct 03:14,0.4118,0.40445357,0.42876667,open,,,,,,,,,
+690,SKY,crypto,long,BUY SIGNAL,4,1792554121,21 Oct 04:42,0.07569,0.072793929,,open,,,,,,,,,
+691,STABLE,crypto,long,IN ZONE,5,1792554121,21 Oct 04:42,0.027577,0.027002536,0.028467667,open,,,,,,,,,
