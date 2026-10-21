@@ -4,6 +4,8 @@ Compares the live rule (BASE: BTC > 200d and > 50d avg, no OI warning in 14d) wi
   BAND1: 50-day line needs a 1% band (in when close > 50d x1.01, out when close < 50d x0.99; 200d plain)
   S100F50: 100-day and 50-day averages instead of 200 and 50
   VOTE3: BTC above at least 3 of the 50/100/150/200/250-day averages
+  FAST45: 200-day and 45-day averages instead of 200 and 50 (lab 34)
+  RISE50: also enter when BTC is above its 50-day average while the 200-day average is rising over 10 days (exit below 50-day for such entries) (lab 34)
 Paper account per variant and per coin (BTC, ETH): in the market on IN days, cash otherwise, 0.1% cost per change, signal at close earns next day's move.
 Start date is stored in variants_start.txt. Writes variants_report.txt and variants_log.csv. Review on 5 Nov 2026."""
 import os, csv, time
@@ -54,11 +56,23 @@ def main():
         print("OI unavailable:", e); ow = [False] * n
     ma = {k: sma(CB, k) for k in (50, 100, 150, 200, 250)}
     ab = {k: [ma[k][i] is not None and CB[i] > ma[k][i] for i in range(n)] for k in ma}
+    m45 = sma(CB, 45); a45 = [m45[i] is not None and CB[i] > m45[i] for i in range(n)]
+    base = [ab[200][i] and ab[50][i] and not ow[i] for i in range(n)]
+    rise = []; st = False; fl = False
+    for i in range(n):
+        if ma[50][i] is None or ma[200][i] is None or i < 10 or ma[200][i - 10] is None: rise.append(False); continue
+        if base[i]: st = True; fl = False
+        elif st and not fl: st = False
+        elif st and fl and (CB[i] < ma[50][i] or ow[i]): st = False; fl = False
+        if not st and ab[50][i] and ma[200][i] > ma[200][i - 10] and not ow[i]: st = True; fl = True
+        rise.append(st)
     hm = hyst(CB, ma[50], .01)
     V = {"BASE 200/50": [ab[200][i] and ab[50][i] and not ow[i] for i in range(n)],
          "BAND1 (50d +-1%)": [ab[200][i] and hm[i] and not ow[i] for i in range(n)],
          "S100F50": [ab[100][i] and ab[50][i] and not ow[i] for i in range(n)],
-         "VOTE3 of 5 avgs": [sum(ab[k][i] for k in ma) >= 3 and not ow[i] for i in range(n)]}
+         "VOTE3 of 5 avgs": [sum(ab[k][i] for k in ma) >= 3 and not ow[i] for i in range(n)],
+         "FAST45 200/45": [ab[200][i] and a45[i] and not ow[i] for i in range(n)],
+         "RISE50 (200d rising)": rise}
     sp = P("variants_start.txt")
     if not os.path.exists(sp): open(sp, "w").write(str(days[-1]))
     start = int(open(sp).read().strip()); i0 = next((i for i, d in enumerate(days) if d >= start), n - 1)
