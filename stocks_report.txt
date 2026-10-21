@@ -1,0 +1,12 @@
+STOCKS REGIME  data to 2026-10-21  state IN  light GREEN
+S&P 500 7,757: +6.5% vs 200-day (7,284), +0.7% vs 50-day (7,705). Exit if a close is below 7,139 (-8.0%).
+Sector funds, 12m / 6m return: XLE +61%/+22%; XLK +32%/+20%; XLV +26%/+23%; XLB +18%/-0%; XLP +12%/+8%; XLI +11%/-1%; XLF +8%/+8%; XLY -1%/-2%; XLU -6%/-5%
+
+SILENT PAPER TEST since 2026-10-21 (0 days; percent change, cash earns T-bill rate):
+  Nasdaq-100 + regime              +0.0%
+  Top-3 sectors (12m) + regime     +0.0%
+  S&P 500 + regime                 +0.0%
+  Nasdaq-100 buy and hold          +0.0%
+  S&P 500 buy and hold             +0.0%
+
+Early weeks mean nothing; judge after months and after a real fall.
