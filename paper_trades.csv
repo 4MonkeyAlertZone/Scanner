@@ -764,3 +764,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 763,RENDER,crypto,long,RECLAIM C TP3,,1792584854,21 Oct 13:14,1.889,1.714564,2.412308,open,,,,,,,,,168
 764,BTT,crypto,long,BUY SIGNAL,3,1792584854,21 Oct 13:14,3.843e-07,3.7754429e-07,3.8735e-07,open,,,,,,,,,
 765,XPL,crypto,long,BUY SIGNAL,4,1792584854,21 Oct 13:14,0.08087,0.077487012,0.081786667,open,,,,,,,,,
+766,JUP,crypto,long,BUY SIGNAL,5,1792587232,21 Oct 13:53,0.3241,0.30871429,0.34175,open,,,,,,,,,
+767,STX,crypto,long,BUY SIGNAL,3,1792587232,21 Oct 13:53,0.3678,0.34528571,0.377,open,,,,,,,,,
