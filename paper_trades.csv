@@ -602,7 +602,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 601,SPG,stock,long,IN ZONE,3,1792508961,20 Oct 16:09,205.78999,203.45964,208.59333,open,,,,,,,,,
 602,TFC,stock,long,IN ZONE - WAIT,4,1792508961,20 Oct 16:09,47.205002,46.448927,48.852501,open,,,,,,,,,
 603,VMC,stock,long,BUY SIGNAL,5,1792508961,20 Oct 16:09,262.505,246.29893,268.278,open,,,,,,,,,
-604,MNT,crypto,long,IN ZONE - WAIT,3,1792510734,20 Oct 16:38,0.531,0.52031071,0.54695,open,,,,,,,,,
+604,MNT,crypto,long,IN ZONE - WAIT,3,1792510734,20 Oct 16:38,0.531,0.52031071,0.54695,closed,1792589311,21 Oct 14:28,0.54695,target,2.80,2.80,21.8,1.39,
 605,GPC,stock,long,IN ZONE,5,1792510734,20 Oct 16:38,127.97,126.12464,131.855,closed,1792516509,20 Oct 18:15,126.005,stop,-1.74,-1.74,1.6,-1.20,
 606,RL,stock,long,IN ZONE,4,1792510734,20 Oct 16:38,374.47501,361.60089,390.48,open,,,,,,,,,
 607,TER,stock,long,BUY SIGNAL,4,1792510734,20 Oct 16:38,336.20001,314.87464,382.62333,open,,,,,,,,,
@@ -766,3 +766,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 765,XPL,crypto,long,BUY SIGNAL,4,1792584854,21 Oct 13:14,0.08087,0.077487012,0.081786667,open,,,,,,,,,
 766,JUP,crypto,long,BUY SIGNAL,5,1792587232,21 Oct 13:53,0.3241,0.30871429,0.34175,open,,,,,,,,,
 767,STX,crypto,long,BUY SIGNAL,3,1792587232,21 Oct 13:53,0.3678,0.34528571,0.377,open,,,,,,,,,
+768,NIGHT,crypto,long,IN ZONE - WAIT,4,1792589311,21 Oct 14:28,0.04087,0.040085452,0.04333,open,,,,,,,,,
