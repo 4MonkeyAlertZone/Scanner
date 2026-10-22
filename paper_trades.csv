@@ -948,3 +948,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 947,WLFI,crypto,long,IN ZONE - WAIT,5,1792666541,22 Oct 11:55,0.05549,0.054916071,0.056868333,open,,,,,,,,,
 948,ETC,crypto,long,IN ZONE - WAIT,4,1792671537,22 Oct 13:18,7.81,7.6389286,8.0233333,open,,,,,,,,,
 949,STABLE,crypto,long,IN ZONE - WAIT,3,1792671537,22 Oct 13:18,0.02578,0.025440393,0.0264916,open,,,,,,,,,
+950,BNB,crypto,long,IN ZONE - WAIT,3,1792674390,22 Oct 14:06,732.5,719.59893,745.76333,open,,,,,,,,,
