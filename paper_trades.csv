@@ -802,10 +802,10 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 801,RTX,stock,long,BUY SIGNAL,4,1792595361,21 Oct 16:09,191.48,187.83245,205.108,open,,,,,,,,,
 802,SPGI,stock,long,IN ZONE,3,1792595361,21 Oct 16:09,446.01001,440.26291,458.77684,open,,,,,,,,,
 803,XYL,stock,long,BUY SIGNAL,5,1792595361,21 Oct 16:09,106.405,103.93543,109.445,open,,,,,,,,,
-804,BCH,crypto,long,BUY SIGNAL,3,1792597230,21 Oct 16:40,290.1,279.74643,301.95,open,,,,,,,,,
+804,BCH,crypto,long,BUY SIGNAL,3,1792597230,21 Oct 16:40,290.1,279.74643,301.95,closed,1792644484,22 Oct 05:48,279,stop,-4.03,-4.03,13.1,-1.13,
 805,NEXO,crypto,long,BUY SIGNAL,4,1792597230,21 Oct 16:40,0.8295,0.81398214,0.84346,open,,,,,,,,,
 806,FLR,crypto,long,BUY SIGNAL,4,1792597230,21 Oct 16:40,0.006529,0.0063468214,0.0066516,open,,,,,,,,,
-807,GRASS,crypto,long,IN ZONE,3,1792597230,21 Oct 16:40,0.6848,0.6679,0.7431,open,,,,,,,,,
+807,GRASS,crypto,long,IN ZONE,3,1792597230,21 Oct 16:40,0.6848,0.6679,0.7431,closed,1792644484,22 Oct 05:48,0.6679,stop,-2.67,-2.67,13.1,-1.08,
 808,BMY,stock,long,BUY SIGNAL,5,1792597230,21 Oct 16:40,60.814999,59.275915,62.7,open,,,,,,,,,
 809,PEP,stock,long,IN ZONE,4,1792597230,21 Oct 16:40,134.99001,133.53286,139.288,open,,,,,,,,,
 810,SMCI,stock,long,IN ZONE - WAIT,4,1792597230,21 Oct 16:40,35.695,33.574642,38.631667,open,,,,,,,,,
@@ -935,3 +935,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 934,KCS,crypto,long,CROSS C TP1,,1792642605,22 Oct 05:16,7.4339,7.2377571,7.6300429,open,,,,,,,,,168
 935,KCS,crypto,long,CROSS C TP2,,1792642605,22 Oct 05:16,7.4339,7.2377571,7.8261857,open,,,,,,,,,168
 936,KCS,crypto,long,CROSS C TP3,,1792642605,22 Oct 05:16,7.4339,7.2377571,8.0223286,open,,,,,,,,,168
+937,CRO,crypto,long,BUY SIGNAL,4,1792644484,22 Oct 05:48,0.05762,0.057101429,0.059165,open,,,,,,,,,
