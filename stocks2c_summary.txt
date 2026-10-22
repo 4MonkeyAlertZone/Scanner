@@ -1,0 +1,72 @@
+STOCKS STEP 2c: WHERE IS THE MONEY GOING?
+
+Data to 2026-10-22. Dividend-adjusted closes (crypto = spot). Cash earns the T-bill rate.
+
+== 1. SNAPSHOT ==
+asset                       1m%    3m%    6m%   12m%  vs200d% 12m vs SPY $vol trend%
+Energy sector XLE             8     14     20     60       18         45          -4
+Commodities DBC               2     12     12     57       16         42         -10
+Semiconductors (AI) SMH     -13     -7      9     52        2         37           8
+Emerging mkts EEM            -9     -3     -0     16       -3          1         -27
+Nasdaq-100 QQQ               -5      3      8     16        4          1         -16
+S&P 500 SPY                  -1      4      8     15        6          0         -31
+Russell 2000 IWM             -2     -5      1     13       -0         -2         -17
+Developed intl EFA           -2     -0      3     13        1         -2          -3
+Silver SLV                  -15     -6    -28     13      -24         -2         -72
+Real estate VNQ               1     -7     -1      5       -0        -10          26
+Gold GLD                     -6     -1    -14     -2      -11        -17         -36
+Long bonds TLT                2     -1     -3     -7       -2        -22          39
+Bitcoin BTC-USD              -0     31      7    -23       14        -38           -
+Ethereum ETH-USD             -8     33      6    -36       12        -51           -
+(sorted by 12-month return; $vol trend = 20-day vs 250-day average dollar volume; crypto volume not comparable and omitted)
+
+== 2. CRYPTO vs AI ==
+                         1 year  2 years  3 years
+Bitcoin BTC-USD            -23%      25%     196%
+Ethereum ETH-USD           -36%      -5%      58%
+Semiconductors (AI) SMH      52%     110%     258%
+Nasdaq-100 QQQ              16%      45%      95%
+S&P 500 SPY                 15%      34%      82%
+Gold GLD                    -2%      48%     107%
+BTC divided by SMH (a falling ratio = money preferring AI chips over BTC): 1y -49%, 2y -41%, 3y -17%
+Months in the last 24 where BTC beat SMH: 8 of 24
+BTC/SMH ratio is above its own 200-day average (relative trend favours BTC).
+
+== 3. ROTATION BACKTEST (12 ETFs, monthly, from 2007-03) ==
+rule                                  all x  CAGR%   DD%   low flips  in%   [2007-16 CAGR%/DD% | 2017-now CAGR%/DD%]
+SPY buy and hold                       7.79   16.4   -55  0.51   0.1  100   |  10.4/ -55 |  22.6/ -34
+QQQ buy and hold                      19.07   24.3   -53  0.60   0.1  100   |  17.6/ -53 |  31.3/ -35
+QQQ with S&P regime rule               9.82   18.4   -27  0.98   2.9   76   |  15.2/ -17 |  21.5/ -27
+all 12 equal weight                    6.47   14.8   -45  0.66   0.1  100   |   9.5/ -45 |  20.2/ -30
+top 2 by 6m, no filter                 9.73   18.3   -49  0.95   0.1  100   |  23.6/ -36 |  13.1/ -49
+top 2 by 6m, S&P regime                3.67   10.1   -45  0.95   2.9   76   |  12.7/ -26 |   7.5/ -45
+top 2 by 6m, own 200-day               6.97   15.4   -43  0.95   9.5   95   |  20.0/ -28 |  10.9/ -43
+top 3 by 6m, no filter                 7.96   16.6   -40  0.96   0.1  100   |  15.4/ -40 |  17.6/ -33
+top 3 by 6m, S&P regime                4.53   11.8   -30  0.96   2.9   76   |  11.6/ -19 |  11.9/ -30
+top 3 by 6m, own 200-day               5.68   13.7   -31  0.96   6.4   92   |  11.7/ -30 |  15.6/ -31
+top 2 by 12m, no filter                9.01   17.6   -37  0.79   0.1  100   |   4.4/ -37 |  32.5/ -31
+top 2 by 12m, S&P regime               5.46   13.4   -34  0.90   2.9   76   |   5.4/ -33 |  21.8/ -34
+top 2 by 12m, own 200-day              6.95   15.4   -36  0.92  11.9   89   |   3.9/ -36 |  28.1/ -31
+top 3 by 12m, no filter               11.03   19.4   -37  0.86   0.1  100   |  10.5/ -37 |  28.9/ -28
+top 3 by 12m, S&P regime               7.45   16.0   -31  0.95   2.9   76   |  10.6/ -21 |  21.6/ -31
+top 3 by 12m, own 200-day              9.47   18.1   -25  0.96   5.7   88   |  11.5/ -24 |  25.0/ -25
+
+== 3b. WITH BTC AND ETH ADDED (2018-now), against the same rules without crypto over the same dates ==
+rule                                  all x  CAGR%   DD%   low flips  in%
+top 3 by 6m, S&P regime, NO crypto     1.76    9.8   -30  0.79   3.5   79
+top 3 by 6m, S&P regime, WITH crypto     2.67   17.6   -52  0.52   3.5   79
+top 3 by 6m, own 200-day, NO crypto     2.19   13.8   -31  0.73   7.4   92
+top 3 by 6m, own 200-day, WITH crypto     3.35   22.1   -56  0.47   7.8   90
+top 3 by 12m, S&P regime, NO crypto     3.06   20.3   -31  0.87   3.5   79
+top 3 by 12m, S&P regime, WITH crypto     6.92   37.6   -36  0.68   3.5   79
+top 3 by 12m, own 200-day, NO crypto     3.72   24.2   -25  0.82   5.4   88
+top 3 by 12m, own 200-day, WITH crypto     9.50   45.0   -37  0.67   9.4   83
+BTC buy and hold                       5.60   32.9   -81  0.22   0.2  100
+
+== 4. VOLUME TEST: top 3 funds by signal vs the average fund over the NEXT month ==
+  top 3 by dollar-volume trend (20d vs 250d): 234 months, mean excess -0.09%/month, hit rate 46%, t-stat -0.4  (|t| below 2 = indistinguishable from chance)
+  top 3 by 6-month momentum: 234 months, mean excess +0.20%/month, hit rate 53%, t-stat +0.8  (|t| below 2 = indistinguishable from chance)
+
+LIVE: top 3 by 6-month return now: Energy sector (+20% 6m), Commodities (+12% 6m), Semiconductors (AI) (+9% 6m). Stock regime IN.
+
+Read: a rotation rule only matters if it beats QQQ with the regime rule (or SPY) in BOTH halves with a similar or lower drawdown; ETF history is short and covers few regimes. Crypto rows begin in 2018 only.
