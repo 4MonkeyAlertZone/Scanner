@@ -13,6 +13,7 @@ import backtest_stocks2c as C2
 import backtest_portfolio3 as PF
 
 P = lambda f: os.path.join(scanner.HERE, f); fd = B2.fd
+PORTFOLIO_SPLIT = (40, 40, 20)   # core / trend / crypto shares used in the weekly Friday portfolio note (your choice of risk, not a finding)
 SEC = "XLB XLE XLF XLI XLK XLP XLU XLV XLY".split()
 
 def main(data=None, send=None, extra=None):
@@ -65,6 +66,31 @@ def main(data=None, send=None, extra=None):
             sleeve_lines.append(f"{lab} holds now: " + (", ".join(f"{t} {w * 100:.0f}%" for w, t in held) or "nothing") + f"; cash {100 * (1 - sum(w for w, t in held)):.0f}%")
     except Exception as e:
         sleeve_lines.append(f"(trend sleeve paper test unavailable today: {str(e)[:80]})")
+    # ---- silent combined-portfolio paper accounts (40/40/20 and 50/30/20) and the weekly Friday portfolio note
+    pf_note = None
+    try:
+        dx = dict(ex); dx["^GSPC"] = {d: (v, 0) for d, v in data["GSPC"].items()}; dx["^IRX"] = {d: (v, 0) for d, v in data["IRX"].items()}
+        X = PF.setup(dx); Xn = X["n"]; Xi0 = next((i for i, d in enumerate(X["days"]) if d >= start), Xn - 1)
+        for c, t_, k in ((40, 40, 20), (50, 30, 20)):
+            W = [PF.split_weights(c / 100, t_ / 100, k / 100, X, i, X["band"][i], X["cry_in"][i]) for i in range(Xn)]
+            acc[f"Portfolio {c}/{t_}/{k} (core/trend/crypto)"] = B2.run_w(W, X["R"], X["cash"], Xi0, Xn)
+        # live crypto engine = the crypto regime alert's own state (includes the open-interest warning) when available
+        cin = X["cry_in"][-1]; src = "BTC above 200d and 50d"
+        try:
+            cs_ = json.load(open(P("regime_state.json"))); cin = (cs_.get("state") == "IN"); src = "your crypto regime alert"
+        except Exception: pass
+        c, t_, k = PORTFOLIO_SPLIT; core_in = band[-1]; hold = {}
+        if core_in: hold["QQQ (Nasdaq-100)"] = c
+        for s_, tk in enumerate(C2.ETF):
+            if X["Wt"][-1][s_] > 0: hold[tk] = hold.get(tk, 0) + t_ * X["Wt"][-1][s_]
+        if cin: hold["BTC"] = k / 2; hold["ETH"] = k / 2
+        inv = sum(hold.values()); engines_in = sum([bool(core_in), True, bool(cin)])
+        lines = [f"Portfolio split {c}/{t_}/{k} (core/trend/crypto). Engines: core (S&P regime) {'IN' if core_in else 'OUT'}; trend sleeve IN (per-asset); crypto {'IN' if cin else 'OUT'} ({src}).",
+                 "Target weights: " + ", ".join(f"{a} {w:.0f}%" for a, w in sorted(hold.items(), key=lambda x: -x[1])) + f"; cash {100 - inv:.0f}%.", "Backtest 2018-now: this mix returned about the Nasdaq-100 with roughly half the drawdown, but crypto's share of the gain came from one bull run. Not advice."]
+        pf_note = ("PORTFOLIO (weekly): " + f"{engines_in} of 3 engines IN, {inv:.0f}% invested", "\n".join(lines))
+        sleeve_lines.append(lines[1])
+    except Exception as e:
+        sleeve_lines.append(f"(portfolio paper accounts unavailable today: {str(e)[:80]})")
     rep = [f"STOCKS REGIME  data to {fd(last)}  state {state}  light {color}",
            f"S&P 500 {CG[-1]:,.0f}: {gap200:+.1f}% vs 200-day ({m200[-1]:,.0f}), {gap50:+.1f}% vs 50-day ({m50[-1]:,.0f}). " + (f"Exit if a close is below {0.98 * m200[-1]:,.0f} ({(0.98 * m200[-1] / CG[-1] - 1) * 100:.1f}%)." if state == "IN" else f"Re-enter on a close above {1.02 * m200[-1]:,.0f} ({(1.02 * m200[-1] / CG[-1] - 1) * 100:+.1f}%)."),
            f"Sector funds, 12m / 6m return: {allr}", "",
@@ -92,6 +118,9 @@ def main(data=None, send=None, extra=None):
     act = {"GREEN": "ACTION: hold or buy Nasdaq-100 or sector leaders: " + lead + ".", "ORANGE": "ACTION: do not add. Hold what you have; the 200-day exit is " + f"{(0.98 * m200[-1] / CG[-1] - 1) * 100:.1f}% away.", "RED": "ACTION: stay in cash / T-bills until the S&P closes above " + f"{1.02 * m200[-1]:,.0f}."}[color]
     chg = (old or {}).get("color") != color
     send(head, f"{act}\n{body_lines}\nColours: GREEN = IN and above 50-day; ORANGE = IN but below 50-day; RED = below the 200-day band.\nBacktest 1985-2026: this rule cut Nasdaq-100 drawdown from -83% to -36% for about 1% a year of return. Not advice.", scanner.NTFY_TOPIC, EMO[color], 4 if (chg and color == "RED") else (3 if chg else 2))
+    try:
+        if pf_note and (last + 3) % 7 == 4: send(pf_note[0], pf_note[1], scanner.NTFY_TOPIC, "bar_chart", 2)
+    except Exception as e: print("(weekly portfolio note failed:", e, ")")
     json.dump(cur, open(stp, "w"))
 
 if __name__ == "__main__":

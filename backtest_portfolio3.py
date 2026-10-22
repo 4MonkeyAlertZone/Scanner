@@ -47,6 +47,34 @@ def trend_W(pr, univ, n, days_m):
         W.append([wts[s] if fl[s][i] else 0.0 for s in range(N)])
     return W
 
+def setup(data):
+    """shared setup for the engines: returns a dict used by the step 3b test and the live paper accounts."""
+    spy = data["SPY"]; days = [d for d in sorted(spy) if d >= d0(2016, 6, 1)]; n = len(days)
+    B2.days_m = [time.strftime("%Y-%m", time.gmtime(d * 86400)) for d in days]
+    pr = prep(data, days)
+    def col(k):
+        out = []; last = None
+        for d in days:
+            if d in data[k]: last = data[k][d][0]
+            out.append(last)
+        return out
+    gs = [x or 1 for x in col("^GSPC")]; irx = col("^IRX"); cash = [0.0] + [((x or 0) / 100 / 252) for x in irx[1:]]
+    band = B2.hyst(gs, B2.sma(gs, 200), .02)
+    U = list(ETF) + CRY; idx = {t: k for k, t in enumerate(U)}
+    R = [[0.0] + [(pr[t][i] / pr[t][i - 1] - 1) if pr[t][i] and pr[t][i - 1] else 0.0 for i in range(1, n)] for t in U]
+    Wt = trend_W(pr, ETF, n, B2.days_m)
+    btc = pr["BTC-USD"]; m200 = B2.sma([x or 1 for x in btc], 200); m50 = B2.sma([x or 1 for x in btc], 50)
+    cry_in = [bool(btc[i]) and m200[i] is not None and btc[i] > m200[i] and btc[i] > m50[i] for i in range(n)]
+    return dict(days=days, n=n, pr=pr, cash=cash, band=band, U=U, idx=idx, R=R, Wt=Wt, cry_in=cry_in)
+
+def split_weights(c, t, k, X, i, core_in, cry_in_i):
+    """weights over U for day i given shares c/t/k of core/trend/crypto (already adjusted by the caller)."""
+    U, idx, Wt = X["U"], X["idx"], X["Wt"]; w = [0.0] * len(U)
+    if core_in: w[idx["QQQ"]] += c
+    for s, tk in enumerate(ETF): w[idx[tk]] += t * Wt[i][s]
+    if cry_in_i: w[idx["BTC-USD"]] += k / 2; w[idx["ETH-USD"]] += k / 2
+    return w
+
 def main(data=None):
     if data is None:
         data = {"^GSPC": {d: (v, 0) for d, v in B2.fetch("^GSPC", adj=False).items()}, "^IRX": {d: (v, 0) for d, v in B2.fetch("^IRX", adj=False, need=1000).items()}}
