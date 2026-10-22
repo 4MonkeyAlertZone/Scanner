@@ -123,7 +123,7 @@ def main(data=None):
     L += ["", "== 2. MONEY TRADED, IN DOLLARS (average daily dollar volume, $ billions) ==", f"{'asset':<26}{'20d avg':>9}{'250d avg':>10}{'change':>9}{'change %':>10}"]
     rows = []
     for t in [x for x in ETF + EXTRA + CRY if have(x)]:
-        dv = [(pr[t][i] or 0) * (vl[t][i] or 0) / 1e9 for i in range(n - 250, n)]; a20 = sum(dv[-20:]) / 20; a250 = sum(dv) / 250
+        dv = [((vl[t][i] or 0) if t in CRY else (pr[t][i] or 0) * (vl[t][i] or 0)) / 1e9 for i in range(n - 250, n)]; a20 = sum(dv[-20:]) / 20; a250 = sum(dv) / 250
         if a250 > 0: rows.append((a20 - a250, f"{NAMES.get(t, t) + ' ' + t:<26}{a20:>9.2f}{a250:>10.2f}{a20 - a250:>+9.2f}{(a20 / a250 - 1) * 100:>+10.0f}"))
     L += [r for _, r in sorted(rows, reverse=True)] + ["(sorted by dollar change; ETF volume is traded dollars in the fund, not the size of the asset class; BTC/ETH volume is Yahoo's aggregated spot volume)"]
     # ================= 3 seasonality

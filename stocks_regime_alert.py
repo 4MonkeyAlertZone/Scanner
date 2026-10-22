@@ -4,16 +4,18 @@ IN after a close above 1.02 x the 200-day average, OUT after a close below 0.98 
 Traffic light: GREEN = IN and above the 50-day average; ORANGE = IN but below the 50-day average (hold, do not add); RED = OUT (sell to cash / T-bills).
 What to hold when IN (tested in step 2b): Nasdaq-100 (growth, with the S&P as the regime signal) or the top 3 sector funds by 12-month return (listed in the note). A 2x S&P fund is the optional leveraged version.
 Sends: a phone alert when the regime changes (GET IN / GET OUT, loud), a daily traffic-light note (louder when the colour changes). Also runs a SILENT paper test since the first run day (stocks_start.txt):
-accounts for Nasdaq-100 + regime, top-3 sectors by 12m momentum + regime, S&P + regime, versus buy-and-hold of S&P and Nasdaq-100. Writes stocks_state.json, stocks_report.txt, stocks_log.csv.
+accounts for Nasdaq-100 + regime, top-3 sectors by 12m momentum + regime, S&P + regime, two diversified trend sleeves (12 ETFs, with and without BTC/ETH; each asset held while above its own 200-day, inverse-volatility weights), versus buy-and-hold of S&P and Nasdaq-100. Writes stocks_state.json, stocks_report.txt, stocks_log.csv.
 Honest status: backtests are price-based, no hindsight picks in the rule itself, but only ~3 big bear markets (2000-02, 2008, 2020) decide the result. Use as a prompt to look, not an order. Not financial advice."""
 import os, csv, json, time
 import scanner
 import backtest_stocks2b as B2
+import backtest_stocks2c as C2
+import backtest_portfolio3 as PF
 
 P = lambda f: os.path.join(scanner.HERE, f); fd = B2.fd
 SEC = "XLB XLE XLF XLI XLK XLP XLU XLV XLY".split()
 
-def main(data=None, send=None):
+def main(data=None, send=None, extra=None):
     send = send or scanner.notify
     if data is None:
         data = {"GSPC": B2.fetch("^GSPC", adj=False), "NDX": B2.fetch("^NDX", adj=False), "IRX": B2.fetch("^IRX", adj=False, need=1000)}
@@ -49,10 +51,24 @@ def main(data=None, send=None):
            "Top-3 sectors (12m) + regime": B2.run_w(B2.rotate(Pp, names, band, 252, 3, n, i0), Rl, cash, i0, n),
            "S&P 500 + regime": B2.run_w([[1.0 if band[i] else 0.0] for i in range(n)], [RG], cash, i0, n),
            "Nasdaq-100 buy and hold": B2.run_w([[1.0]] * n, [RN], cash, i0, n), "S&P 500 buy and hold": B2.run_w([[1.0]] * n, [RG], cash, i0, n)}
+    # ---- silent trend-sleeve paper test (12 ETFs + BTC/ETH variants), tail of the calendar only; never allowed to break the alert
+    sleeve_lines = []
+    try:
+        ex = extra if extra is not None else {t: C2.fetch_v(t, need=800) for t in C2.ETF + C2.CRY}
+        T = 1500; dts = days[-T:]; B2.days_m = [time.strftime("%Y-%m", time.gmtime(d * 86400)) for d in dts]
+        prs = PF.prep(ex, dts); nt = len(dts); cashT = cash[-T:]; i0t = next((i for i, d in enumerate(dts) if d >= start), nt - 1)
+        Rt = lambda t: [0.0] + [(prs[t][i] / prs[t][i - 1] - 1) if prs[t][i] and prs[t][i - 1] else 0.0 for i in range(1, nt)]
+        for lab, u in (("Trend sleeve: 12 ETFs", list(C2.ETF)), ("Trend sleeve: 12 ETFs + BTC/ETH", list(C2.ETF) + list(C2.CRY))):
+            u = [t for t in u if t in prs]; Wt = PF.trend_W(prs, u, nt, B2.days_m); m = B2.run_w(Wt, [Rt(t) for t in u], cashT, i0t, nt)
+            acc[lab] = m
+            held = sorted(((Wt[-1][s], t) for s, t in enumerate(u) if Wt[-1][s] > 0), reverse=True)
+            sleeve_lines.append(f"{lab} holds now: " + (", ".join(f"{t} {w * 100:.0f}%" for w, t in held) or "nothing") + f"; cash {100 * (1 - sum(w for w, t in held)):.0f}%")
+    except Exception as e:
+        sleeve_lines.append(f"(trend sleeve paper test unavailable today: {str(e)[:80]})")
     rep = [f"STOCKS REGIME  data to {fd(last)}  state {state}  light {color}",
            f"S&P 500 {CG[-1]:,.0f}: {gap200:+.1f}% vs 200-day ({m200[-1]:,.0f}), {gap50:+.1f}% vs 50-day ({m50[-1]:,.0f}). " + (f"Exit if a close is below {0.98 * m200[-1]:,.0f} ({(0.98 * m200[-1] / CG[-1] - 1) * 100:.1f}%)." if state == "IN" else f"Re-enter on a close above {1.02 * m200[-1]:,.0f} ({(1.02 * m200[-1] / CG[-1] - 1) * 100:+.1f}%)."),
            f"Sector funds, 12m / 6m return: {allr}", "",
-           f"SILENT PAPER TEST since {fd(days[i0])} ({n - 1 - i0} days; percent change, cash earns T-bill rate):"] + [f"  {k:<30}{(v['final'] - 1) * 100:>+7.1f}%" for k, v in acc.items()] + ["", "Early weeks mean nothing; judge after months and after a real fall."]
+           f"SILENT PAPER TEST since {fd(days[i0])} ({n - 1 - i0} days; percent change, cash earns T-bill rate):"] + [f"  {k:<30}{(v['final'] - 1) * 100:>+7.1f}%" for k, v in acc.items()] + [""] + sleeve_lines + ["", "Early weeks mean nothing; judge after months and after a real fall."]
     open(P("stocks_report.txt"), "w").write("\n".join(rep) + "\n"); print("\n".join(rep))
     lp = P("stocks_log.csv"); rows = {}
     if os.path.exists(lp):
