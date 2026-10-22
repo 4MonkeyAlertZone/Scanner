@@ -1,0 +1,26 @@
+name: Portfolio step 3b
+on:
+  workflow_dispatch:
+concurrency:
+  group: portfolio3b
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  portfolio3b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python backtest_portfolio3b.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add portfolio3b_summary.txt 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Portfolio step 3b results" && (git pull --rebase -q; git push))
