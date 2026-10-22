@@ -15,6 +15,6 @@ SILENT PAPER TEST since 2026-10-21 (1 days; percent change, cash earns T-bill ra
 
 Trend sleeve: 12 ETFs holds now: SPY 13%, EFA 11%, QQQ 7%, XLE 7%, DBC 6%, SMH 4%; cash 52%
 Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 12%, EFA 10%, QQQ 7%, XLE 6%, DBC 6%, BTC-USD 3%, SMH 3%, ETH-USD 3%; cash 49%
-Target weights: QQQ (Nasdaq-100) 40%, BTC 10%, ETH 10%, SPY 5%, EFA 4%, QQQ 3%, XLE 3%, DBC 3%, SMH 1%; cash 21%.
+Target weights: QQQ 43%, BTC 10%, ETH 10%, SPY 5%, EFA 4%, XLE 3%, DBC 3%, SMH 1%; cash 21%.
 
 Early weeks mean nothing; judge after months and after a real fall.
