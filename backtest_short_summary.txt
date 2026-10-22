@@ -1,63 +1,63 @@
-DATA COVERED  crypto: 2023-11-02 to 2026-10-12 (35 months, 1639 signals); stock: 2021-09-28 to 2026-10-02 (60 months, 1846 signals)
-SHORT-SIGNAL BACKTEST  2026-10-19  (crypto: 36 months of 4H; stocks: 5 years of daily)
+DATA COVERED  crypto: 2023-11-14 to 2026-10-15 (35 months, 1645 signals); stock: 2021-09-30 to 2026-10-07 (60 months, 1847 signals)
+SHORT-SIGNAL BACKTEST  2026-10-22  (crypto: 36 months of 4H; stocks: 5 years of daily)
 R = profit in units of the risk to the stop; costs of 0.2% included. Avg R above 0 means profitable. The +/- is a 95% margin of error.
 Stocks: no borrow fees or dividends are included, and stocks tend to drift up, which is a headwind for shorts.
 
-Price change of BTC over the tested period: +141%
-Price change of ETH over the tested period: +40%
-Price change of SPY over the tested period: +74%
-Price change of QQQ over the tested period: +102%
-Price change of AAPL over the tested period: +130%
-Price change of MSFT over the tested period: +76%
-Price change of NVDA over the tested period: +980%
-Price change of GOOGL over the tested period: +143%
-Price change of AMZN over the tested period: +48%
-Price change of META over the tested period: +106%
-Price change of TSLA over the tested period: +40%
+Price change of BTC over the tested period: +137%
+Price change of ETH over the tested period: +34%
+Price change of SPY over the tested period: +81%
+Price change of QQQ over the tested period: +112%
+Price change of AAPL over the tested period: +138%
+Price change of MSFT over the tested period: +88%
+Price change of NVDA over the tested period: +1046%
+Price change of GOOGL over the tested period: +162%
+Price change of AMZN over the tested period: +58%
+Price change of META over the tested period: +113%
+Price change of TSLA over the tested period: +46%
 
 -- Crypto --
-SHORT SIGNAL (alerts)               873  target  59%  stop  39%  neither   3%  avg R -0.12 (+/-0.06)
-AT TOP - WAIT (watch only)          766  target  60%  stop  39%  neither   1%  avg R -0.14 (+/-0.07)
-random crypto shorts               8195  target  58%  stop  39%  neither   3%  avg R -0.15 (+/-0.02)
+SHORT SIGNAL (alerts)               875  target  59%  stop  39%  neither   3%  avg R -0.12 (+/-0.06)
+AT TOP - WAIT (watch only)          770  target  60%  stop  39%  neither   1%  avg R -0.14 (+/-0.07)
+random crypto shorts               8225  target  58%  stop  39%  neither   3%  avg R -0.16 (+/-0.02)
 
 -- Stocks --
-SHORT SIGNAL (alerts)              1099  target  55%  stop  34%  neither  11%  avg R -0.11 (+/-0.05)
-AT TOP - WAIT (watch only)          747  target  54%  stop  42%  neither   4%  avg R -0.15 (+/-0.07)
-random stock shorts                9230  target  51%  stop  35%  neither  13%  avg R -0.12 (+/-0.02)
+SHORT SIGNAL (alerts)              1096  target  55%  stop  34%  neither  11%  avg R -0.11 (+/-0.05)
+AT TOP - WAIT (watch only)          751  target  54%  stop  42%  neither   4%  avg R -0.15 (+/-0.07)
+random stock shorts                9235  target  51%  stop  36%  neither  13%  avg R -0.13 (+/-0.02)
 
 -- SHORT SIGNAL by symbol --
-BTC                                 466  target  56%  stop  42%  neither   2%  avg R -0.20 (+/-0.08)
-ETH                                 407  target  61%  stop  35%  neither   4%  avg R -0.02 (+/-0.09)
-SPY                                 117  target  58%  stop  32%  neither   9%  avg R -0.12 (+/-0.14)
-QQQ                                 116  target  54%  stop  34%  neither  11%  avg R -0.19 (+/-0.14)
-AAPL                                136  target  56%  stop  33%  neither  11%  avg R -0.09 (+/-0.14)
-MSFT                                117  target  53%  stop  34%  neither  13%  avg R -0.09 (+/-0.15)
-NVDA                                 83  target  49%  stop  41%  neither  10%  avg R -0.22 (+/-0.17)
-GOOGL                               107  target  48%  stop  43%  neither   9%  avg R -0.23 (+/-0.16)
-AMZN                                148  target  59%  stop  33%  neither   8%  avg R -0.09 (+/-0.13)
-META                                126  target  55%  stop  33%  neither  13%  avg R -0.03 (+/-0.15)
+BTC                                 468  target  56%  stop  42%  neither   2%  avg R -0.20 (+/-0.08)
+ETH                                 407  target  61%  stop  35%  neither   4%  avg R -0.03 (+/-0.09)
+SPY                                 118  target  58%  stop  32%  neither  10%  avg R -0.11 (+/-0.15)
+QQQ                                 115  target  55%  stop  34%  neither  11%  avg R -0.19 (+/-0.14)
+AAPL                                134  target  55%  stop  34%  neither  11%  avg R -0.09 (+/-0.14)
+MSFT                                116  target  53%  stop  34%  neither  12%  avg R -0.09 (+/-0.15)
+NVDA                                 82  target  50%  stop  41%  neither   9%  avg R -0.22 (+/-0.17)
+GOOGL                               108  target  47%  stop  44%  neither   9%  avg R -0.24 (+/-0.16)
+AMZN                                147  target  59%  stop  33%  neither   8%  avg R -0.09 (+/-0.13)
+META                                127  target  54%  stop  33%  neither  13%  avg R -0.04 (+/-0.15)
 TSLA                                149  target  58%  stop  29%  neither  13%  avg R +0.01 (+/-0.13)
 
-S&P 500 / Nasdaq ETFs (SPY, QQQ)    233  target  56%  stop  33%  neither  10%  avg R -0.15 (+/-0.10)
-Magnificent 7 stocks                866  target  55%  stop  34%  neither  11%  avg R -0.09 (+/-0.06)
+S&P 500 / Nasdaq ETFs (SPY, QQQ)    233  target  56%  stop  33%  neither  11%  avg R -0.15 (+/-0.10)
+Magnificent 7 stocks                863  target  54%  stop  35%  neither  11%  avg R -0.10 (+/-0.06)
 
 -- SHORT SIGNAL: did the filters help? --
-passed (score>=3, R/R>=1.2)         172  target  28%  stop  61%  neither  11%  avg R -0.19 (+/-0.19)
+passed (score>=3, R/R>=1.2)         171  target  28%  stop  61%  neither  11%  avg R -0.19 (+/-0.19)
 blocked by filters                 1800  target  59%  stop  34%  neither   7%  avg R -0.10 (+/-0.04)
 
 -- SHORT SIGNAL by score --
-score 2/5                          1130  target  57%  stop  36%  neither   7%  avg R -0.11 (+/-0.05)
-score 3/5                           678  target  57%  stop  36%  neither   8%  avg R -0.11 (+/-0.06)
+score 2/5                          1129  target  56%  stop  36%  neither   7%  avg R -0.11 (+/-0.05)
+score 3/5                           678  target  57%  stop  36%  neither   7%  avg R -0.11 (+/-0.06)
 score 4/5                           159  target  55%  stop  38%  neither   6%  avg R -0.13 (+/-0.13)
 score 5/5                             5  target  60%  stop  40%  neither   0%  avg R +0.22 (+/-1.21)
 
 -- SHORT SIGNAL: other factors --
-higher-timeframe zone matched       664  target  56%  stop  35%  neither   9%  avg R -0.11 (+/-0.06)
-no match                           1308  target  57%  stop  37%  neither   6%  avg R -0.11 (+/-0.05)
-RSI >= 65 (overbought)              171  target  53%  stop  43%  neither   4%  avg R -0.11 (+/-0.15)
+higher-timeframe zone matched       666  target  55%  stop  36%  neither   9%  avg R -0.12 (+/-0.06)
+no match                           1305  target  57%  stop  37%  neither   6%  avg R -0.11 (+/-0.05)
+RSI >= 65 (overbought)              170  target  53%  stop  43%  neither   4%  avg R -0.12 (+/-0.15)
 RSI < 65                           1801  target  57%  stop  36%  neither   8%  avg R -0.11 (+/-0.04)
-first half of the period            981  target  57%  stop  35%  neither   8%  avg R -0.09 (+/-0.05)
-second half of the period           991  target  56%  stop  37%  neither   7%  avg R -0.13 (+/-0.06)
+first half of the period            982  target  57%  stop  35%  neither   8%  avg R -0.09 (+/-0.05)
+second half of the period           989  target  56%  stop  37%  neither   7%  avg R -0.13 (+/-0.06)
 
 VERDICTS
 Crypto (BTC, ETH): NO EDGE. It did not beat random shorts. Do not act on it as it stands.
