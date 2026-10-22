@@ -936,3 +936,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 935,KCS,crypto,long,CROSS C TP2,,1792642605,22 Oct 05:16,7.4339,7.2377571,7.8261857,open,,,,,,,,,168
 936,KCS,crypto,long,CROSS C TP3,,1792642605,22 Oct 05:16,7.4339,7.2377571,8.0223286,open,,,,,,,,,168
 937,CRO,crypto,long,BUY SIGNAL,4,1792644484,22 Oct 05:48,0.05762,0.057101429,0.059165,open,,,,,,,,,
+938,HTX,crypto,long,BUY SIGNAL,3,1792646222,22 Oct 06:17,1.645e-06,1.6380964e-06,1.657e-06,open,,,,,,,,,
+939,XTZ,crypto,long,IN ZONE,3,1792646222,22 Oct 06:17,0.3087,0.30023,0.32478,open,,,,,,,,,
