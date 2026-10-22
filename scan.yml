@@ -32,8 +32,8 @@ jobs:
           MIN_SCORE: "3"
           MIN_RR: "1.2"
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+                       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+             TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NTFY_TOPIC_STOCKS: ${{ secrets.NTFY_TOPIC_STOCKS }}
           HOLDINGS: ${{ secrets.HOLDINGS }}
           SHORT_TOKENS: ""   # short alerts switched off: they lost money in the real-data backtest
