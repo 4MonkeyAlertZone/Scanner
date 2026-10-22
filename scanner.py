@@ -182,7 +182,18 @@ def show(o):
         print(f'        zone {fmt(z["lo"])}-{fmt(z["hi"])}  entry ~{fmt(z["entry"])}  stop {fmt(z["stop"])}{rr}  score {z["pts"]}/5')
     if o["note"]: print(f'        {o["note"]}')
 
+def telegram(title, msg):
+    """Also send the alert to Telegram when the TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID secrets exist (never raises)."""
+    tok = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(); chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if not tok or not chat: return
+    try:
+        import urllib.parse
+        text = (title + "\n\n" + msg)[:3900]
+        http(f"https://api.telegram.org/bot{tok}/sendMessage", urllib.parse.urlencode({"chat_id": chat, "text": text, "disable_web_page_preview": "true"}).encode())
+    except Exception as e: print("        (telegram alert failed:", type(e).__name__, ")")   # never print the URL: it contains the token
+
 def notify(title, msg, topic, tag, prio=3):
+    telegram(title, msg)
     if not topic: return
     try: http("https://ntfy.sh/" + topic, msg.encode(), {"Title": title, "Tags": tag, "Priority": str(prio)})
     except Exception as e: print("        (phone alert failed:", e, ")")
