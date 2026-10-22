@@ -1,38 +1,38 @@
-DATA COVERED  crypto: 2025-10-17 to 2026-10-12 (12 months, 5918 signals); stock: 2023-09-28 to 2026-10-02 (36 months, 3568 signals)
-BACKTEST  2026-10-19  (R = profit in units of the risk to the stop; costs of 0.2% included)
+DATA COVERED  crypto: 2025-10-20 to 2026-10-15 (12 months, 5976 signals); stock: 2023-10-03 to 2026-10-07 (36 months, 3568 signals)
+BACKTEST  2026-10-22  (R = profit in units of the risk to the stop; costs of 0.2% included)
 Avg R above 0 means profitable. The +/- is a 95% margin of error: if it is bigger than the average, it is mostly noise.
 
-ALL SIGNALS                        9486  target  47%  stop  50%  neither   4%  avg R -0.09 (+/-0.03)
-random entries, same stop/target  47430  target  45%  stop  50%  neither   5%  avg R -0.11 (+/-0.01)
+ALL SIGNALS                        9544  target  46%  stop  50%  neither   4%  avg R -0.10 (+/-0.03)
+random entries, same stop/target  47720  target  45%  stop  50%  neither   5%  avg R -0.11 (+/-0.01)
 
 -- Did the filters help? --
-passed filters (score>=3, R/R>=1.2) 5786  target  35%  stop  59%  neither   5%  avg R -0.09 (+/-0.04)
-blocked by filters                 3700  target  64%  stop  35%  neither   1%  avg R -0.10 (+/-0.02)
+passed filters (score>=3, R/R>=1.2) 5823  target  35%  stop  59%  neither   5%  avg R -0.10 (+/-0.04)
+blocked by filters                 3721  target  64%  stop  35%  neither   1%  avg R -0.10 (+/-0.02)
 
 -- By verdict --
-BUY SIGNAL                         5801  target  42%  stop  54%  neither   4%  avg R -0.09 (+/-0.04)
-IN ZONE                            1054  target  51%  stop  46%  neither   3%  avg R -0.14 (+/-0.06)
-IN ZONE - WAIT                     2631  target  55%  stop  42%  neither   3%  avg R -0.09 (+/-0.04)
+BUY SIGNAL                         5833  target  42%  stop  54%  neither   4%  avg R -0.09 (+/-0.04)
+IN ZONE                            1052  target  51%  stop  46%  neither   3%  avg R -0.14 (+/-0.06)
+IN ZONE - WAIT                     2659  target  55%  stop  42%  neither   3%  avg R -0.09 (+/-0.04)
 
 -- By score --
 score 2/5                             0
-score 3/5                          4705  target  46%  stop  51%  neither   4%  avg R -0.08 (+/-0.04)
-score 4/5                          3835  target  47%  stop  49%  neither   3%  avg R -0.11 (+/-0.04)
-score 5/5                           946  target  48%  stop  47%  neither   4%  avg R -0.09 (+/-0.07)
+score 3/5                          4750  target  45%  stop  51%  neither   4%  avg R -0.09 (+/-0.04)
+score 4/5                          3849  target  47%  stop  49%  neither   3%  avg R -0.11 (+/-0.04)
+score 5/5                           945  target  48%  stop  48%  neither   4%  avg R -0.09 (+/-0.07)
 
 -- Other factors --
-1D/weekly zone matched             3475  target  44%  stop  50%  neither   5%  avg R -0.09 (+/-0.04)
-no higher-timeframe match          6011  target  48%  stop  49%  neither   3%  avg R -0.10 (+/-0.03)
-fib level matched                  6957  target  47%  stop  49%  neither   4%  avg R -0.08 (+/-0.03)
-no fib match                       2529  target  45%  stop  51%  neither   3%  avg R -0.13 (+/-0.05)
-risk/reward < 1.2                  3681  target  64%  stop  35%  neither   1%  avg R -0.10 (+/-0.02)
-risk/reward 1.2 - 2                2496  target  47%  stop  51%  neither   1%  avg R -0.13 (+/-0.04)
-risk/reward >= 2                   2913  target  30%  stop  66%  neither   4%  avg R -0.11 (+/-0.06)
+1D/weekly zone matched             3499  target  44%  stop  51%  neither   5%  avg R -0.09 (+/-0.04)
+no higher-timeframe match          6045  target  48%  stop  49%  neither   3%  avg R -0.10 (+/-0.03)
+fib level matched                  6972  target  47%  stop  49%  neither   4%  avg R -0.08 (+/-0.03)
+no fib match                       2572  target  45%  stop  52%  neither   3%  avg R -0.13 (+/-0.05)
+risk/reward < 1.2                  3702  target  64%  stop  35%  neither   1%  avg R -0.10 (+/-0.02)
+risk/reward 1.2 - 2                2524  target  47%  stop  52%  neither   1%  avg R -0.13 (+/-0.04)
+risk/reward >= 2                   2922  target  30%  stop  66%  neither   4%  avg R -0.11 (+/-0.06)
 
 -- By market and time (is it stable?) --
-crypto                             5918  target  45%  stop  54%  neither   1%  avg R -0.18 (+/-0.03)
+crypto                             5976  target  45%  stop  54%  neither   1%  avg R -0.19 (+/-0.03)
 stocks                             3568  target  49%  stop  43%  neither   8%  avg R +0.05 (+/-0.04)
-first half of the period           4740  target  45%  stop  50%  neither   5%  avg R -0.09 (+/-0.03)
-second half of the period          4746  target  48%  stop  50%  neither   2%  avg R -0.10 (+/-0.04)
+first half of the period           4769  target  45%  stop  50%  neither   5%  avg R -0.10 (+/-0.03)
+second half of the period          4775  target  48%  stop  50%  neither   2%  avg R -0.10 (+/-0.04)
 
 Could not test 5: TRX (list index out of range), XMR (not enough history), WBT (not enough history), RAIN (not enough history), BTW (not enough history)
