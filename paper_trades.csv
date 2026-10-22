@@ -943,3 +943,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 942,AAVE,crypto,long,IN ZONE - WAIT,4,1792656923,22 Oct 09:15,148.41,142.26821,156.855,open,,,,,,,,,
 943,PUMP,crypto,long,IN ZONE - WAIT,3,1792656923,22 Oct 09:15,0.004789,0.0045141786,0.00510025,open,,,,,,,,,
 944,AKE,crypto,long,BUY SIGNAL,3,1792656923,22 Oct 09:15,0.0260638,0.022676239,0.03090768,open,,,,,,,,,
+945,XRP,crypto,long,IN ZONE - WAIT,5,1792664637,22 Oct 11:23,1.3343,1.2985214,1.36065,open,,,,,,,,,
+946,U,crypto,long,BUY SIGNAL,4,1792664637,22 Oct 11:23,0.9967,0.98955714,1.2083,open,,,,,,,,,
