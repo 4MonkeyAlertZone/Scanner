@@ -1028,3 +1028,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1027,FIL,crypto,long,IN ZONE - WAIT,4,1792705283,22 Oct 22:41,0.9862,0.96256429,1.0335667,open,,,,,,,,,
 1028,VET,crypto,long,IN ZONE - WAIT,3,1792705283,22 Oct 22:41,0.007118,0.0069536429,0.0073846667,open,,,,,,,,,
 1029,PENGU,crypto,long,IN ZONE,3,1792708509,22 Oct 23:35,0.007793,0.0076702202,0.00806025,open,,,,,,,,,
+1030,LIT,crypto,long,IN ZONE - WAIT,5,1792713225,23 Oct 00:53,3.403,3.2473286,3.5929333,open,,,,,,,,,
+1031,TRUMP,crypto,long,BUY SIGNAL,3,1792713225,23 Oct 00:53,1.735,1.7122929,1.8,open,,,,,,,,,
