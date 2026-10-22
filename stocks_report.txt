@@ -8,5 +8,10 @@ SILENT PAPER TEST since 2026-10-21 (1 days; percent change, cash earns T-bill ra
   S&P 500 + regime                 -1.3%
   Nasdaq-100 buy and hold          -3.0%
   S&P 500 buy and hold             -1.3%
+  Trend sleeve: 12 ETFs            -0.9%
+  Trend sleeve: 12 ETFs + BTC/ETH   -1.1%
+
+Trend sleeve: 12 ETFs holds now: SPY 13%, EFA 11%, QQQ 7%, XLE 7%, DBC 6%, SMH 4%; cash 52%
+Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 12%, EFA 10%, QQQ 7%, XLE 6%, DBC 6%, BTC-USD 3%, SMH 3%, ETH-USD 3%; cash 49%
 
 Early weeks mean nothing; judge after months and after a real fall.
