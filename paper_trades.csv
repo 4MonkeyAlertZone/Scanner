@@ -1027,3 +1027,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1026,KAS,crypto,long,IN ZONE - WAIT,4,1792703638,22 Oct 22:13,0.037409,0.036787786,0.039264,open,,,,,,,,,
 1027,FIL,crypto,long,IN ZONE - WAIT,4,1792705283,22 Oct 22:41,0.9862,0.96256429,1.0335667,open,,,,,,,,,
 1028,VET,crypto,long,IN ZONE - WAIT,3,1792705283,22 Oct 22:41,0.007118,0.0069536429,0.0073846667,open,,,,,,,,,
+1029,PENGU,crypto,long,IN ZONE,3,1792708509,22 Oct 23:35,0.007793,0.0076702202,0.00806025,open,,,,,,,,,
