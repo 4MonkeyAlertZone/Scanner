@@ -1024,3 +1024,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1023,UBER,stock,long,IN ZONE - WAIT,5,1792698808,22 Oct 20:53,68.849998,67.581263,71.9825,open,,,,,,,,,
 1024,SOL,crypto,long,IN ZONE - WAIT,3,1792700134,22 Oct 21:15,103.44,100.99179,105.60333,open,,,,,,,,,
 1025,CC,crypto,long,IN ZONE - WAIT,3,1792701902,22 Oct 21:45,0.10153,0.098124286,0.105902,open,,,,,,,,,
+1026,KAS,crypto,long,IN ZONE - WAIT,4,1792703638,22 Oct 22:13,0.037409,0.036787786,0.039264,open,,,,,,,,,
