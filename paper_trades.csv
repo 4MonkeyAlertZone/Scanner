@@ -908,7 +908,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 907,QNT,crypto,long,RECLAIM C TP1,,1792624919,22 Oct 00:21,205.67,181.52622,229.81378,open,,,,,,,,,168
 908,QNT,crypto,long,RECLAIM C TP2,,1792624919,22 Oct 00:21,205.67,181.52622,253.95756,open,,,,,,,,,168
 909,QNT,crypto,long,RECLAIM C TP3,,1792624919,22 Oct 00:21,205.67,181.52622,278.10134,open,,,,,,,,,168
-910,ARB,crypto,long,IN ZONE - WAIT,5,1792624919,22 Oct 00:21,0.18899,0.18278321,0.19649,open,,,,,,,,,
+910,ARB,crypto,long,IN ZONE - WAIT,5,1792624919,22 Oct 00:21,0.18899,0.18278321,0.19649,closed,1792648017,22 Oct 06:46,0.18247,stop,-3.65,-3.65,6.4,-1.11,
 911,PUMP,crypto,long,CROSS A TP1,,1792627641,22 Oct 01:07,0.00519,0.0046403571,0.0057396429,open,,,,,,,,,168
 912,PUMP,crypto,long,CROSS A TP2,,1792627641,22 Oct 01:07,0.00519,0.0046403571,0.0062892857,open,,,,,,,,,168
 913,PUMP,crypto,long,CROSS A TP3,,1792627641,22 Oct 01:07,0.00519,0.0046403571,0.0068389286,open,,,,,,,,,168
@@ -938,3 +938,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 937,CRO,crypto,long,BUY SIGNAL,4,1792644484,22 Oct 05:48,0.05762,0.057101429,0.059165,open,,,,,,,,,
 938,HTX,crypto,long,BUY SIGNAL,3,1792646222,22 Oct 06:17,1.645e-06,1.6380964e-06,1.657e-06,open,,,,,,,,,
 939,XTZ,crypto,long,IN ZONE,3,1792646222,22 Oct 06:17,0.3087,0.30023,0.32478,open,,,,,,,,,
+940,VIRTUAL,crypto,long,IN ZONE,5,1792648017,22 Oct 06:46,0.6691,0.65902857,0.68475,open,,,,,,,,,
