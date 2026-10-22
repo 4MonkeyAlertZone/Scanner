@@ -946,3 +946,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 945,XRP,crypto,long,IN ZONE - WAIT,5,1792664637,22 Oct 11:23,1.3343,1.2985214,1.36065,open,,,,,,,,,
 946,U,crypto,long,BUY SIGNAL,4,1792664637,22 Oct 11:23,0.9967,0.98955714,1.2083,open,,,,,,,,,
 947,WLFI,crypto,long,IN ZONE - WAIT,5,1792666541,22 Oct 11:55,0.05549,0.054916071,0.056868333,open,,,,,,,,,
+948,ETC,crypto,long,IN ZONE - WAIT,4,1792671537,22 Oct 13:18,7.81,7.6389286,8.0233333,open,,,,,,,,,
+949,STABLE,crypto,long,IN ZONE - WAIT,3,1792671537,22 Oct 13:18,0.02578,0.025440393,0.0264916,open,,,,,,,,,
