@@ -80,7 +80,7 @@ def main(data=None, send=None, extra=None):
             cs_ = json.load(open(P("regime_state.json"))); cin = (cs_.get("state") == "IN"); src = "your crypto regime alert"
         except Exception: pass
         c, t_, k = PORTFOLIO_SPLIT; core_in = band[-1]; hold = {}
-        if core_in: hold["QQQ (Nasdaq-100)"] = c
+        if core_in: hold["QQQ"] = c
         for s_, tk in enumerate(C2.ETF):
             if X["Wt"][-1][s_] > 0: hold[tk] = hold.get(tk, 0) + t_ * X["Wt"][-1][s_]
         if cin: hold["BTC"] = k / 2; hold["ETH"] = k / 2
