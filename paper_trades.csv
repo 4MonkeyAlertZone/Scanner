@@ -1003,7 +1003,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1002,DOW,stock,long,IN ZONE,3,1792686149,22 Oct 17:22,30.709499,30.086465,32.559999,open,,,,,,,,,
 1003,GEN,stock,long,IN ZONE,3,1792686149,22 Oct 17:22,25.115,24.603928,25.7875,open,,,,,,,,,
 1004,NXPI,stock,long,BUY SIGNAL,4,1792686149,22 Oct 17:22,240.355,234.35429,247.875,open,,,,,,,,,
-1005,LINK,crypto,long,IN ZONE - WAIT,4,1792688225,22 Oct 17:57,11.88,11.682679,12.162571,open,,,,,,,,,
+1005,LINK,crypto,long,IN ZONE - WAIT,4,1792688225,22 Oct 17:57,11.88,11.682679,12.162571,closed,1792724219,23 Oct 03:56,12.162571,target,2.18,2.18,10.0,1.31,
 1006,MNT,crypto,long,IN ZONE - WAIT,3,1792688225,22 Oct 17:57,0.5329,0.52023214,0.54695,open,,,,,,,,,
 1007,BG,stock,long,IN ZONE - WAIT,3,1792688225,22 Oct 17:57,102.68,101.06179,110.67333,open,,,,,,,,,
 1008,NDAQ,stock,long,IN ZONE,3,1792688225,22 Oct 17:57,102.42,99.847145,,open,,,,,,,,,
@@ -1037,3 +1037,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1036,SHIB,crypto,long,IN ZONE - WAIT,4,1792720768,23 Oct 02:59,5.003e-06,4.9619643e-06,5.1063333e-06,open,,,,,,,,,
 1037,ATOM,crypto,long,IN ZONE,4,1792720768,23 Oct 02:59,1.767,1.7380357,1.8455,open,,,,,,,,,
 1038,APT,crypto,long,IN ZONE - WAIT,3,1792720768,23 Oct 02:59,0.7646,0.75202857,0.80125,open,,,,,,,,,
+1039,TAO,crypto,long,IN ZONE - WAIT,3,1792724219,23 Oct 03:56,262.2,257.62646,276.636,open,,,,,,,,,
