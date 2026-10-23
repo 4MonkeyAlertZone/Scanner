@@ -1139,3 +1139,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1138,DLR,stock,long,IN ZONE - WAIT,4,1792775919,23 Oct 18:18,170.63,165.54661,177.45556,open,,,,,,,,,
 1139,EXR,stock,long,BUY SIGNAL,4,1792775919,23 Oct 18:18,142.73,140.75714,145.39,open,,,,,,,,,
 1140,HON,stock,long,BUY SIGNAL,5,1792775919,23 Oct 18:18,219.05,213.33768,227.07155,open,,,,,,,,,
+1141,J,stock,long,BUY SIGNAL,3,1792777609,23 Oct 18:46,146.315,138.36357,151.62119,open,,,,,,,,,
