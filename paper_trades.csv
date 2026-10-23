@@ -1054,3 +1054,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1053,ETH,crypto,long,BUY SIGNAL,4,1792748760,23 Oct 10:46,2398.72,2371.8796,2440.07,open,,,,,,,,,
 1054,AERO,crypto,long,IN ZONE - WAIT,3,1792752278,23 Oct 11:44,0.7866,0.75015357,0.8561,open,,,,,,,,,
 1055,BCH,crypto,long,BUY SIGNAL,3,1792753970,23 Oct 12:12,283.9,279.81786,289.75,open,,,,,,,,,
+1056,ASTER,crypto,long,IN ZONE,4,1792755787,23 Oct 12:43,0.7079,0.70318571,0.71906667,open,,,,,,,,,
