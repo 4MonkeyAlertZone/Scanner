@@ -1,3 +1,4 @@
 date,state,light,sp500,gap200_pct,gap50_pct,Nasdaq-100 + regime,Top-3 sectors (12m) + regime,S&P 500 + regime,Nasdaq-100 buy and hold,S&P 500 buy and hold,Trend sleeve: 12 ETFs,Trend sleeve: 12 ETFs + BTC/ETH,Portfolio 40/40/20 (core/trend/crypto),Portfolio 50/30/20 (core/trend/crypto)
 2026-10-21,IN,GREEN,7757.17,6.49,0.68,0.00,0.00,0.00,0.00,0.00
 2026-10-22,IN,ORANGE,7663.43,5.15,-0.52,-3.00,-0.10,-1.31,-3.00,-1.31,-0.05,-0.05,0.00,0.00
+2026-10-23,IN,ORANGE,7623.68,4.56,-0.99,-3.00,-0.39,-1.82,-3.00,-1.82,-0.77,-0.92,-2.14,-2.36
