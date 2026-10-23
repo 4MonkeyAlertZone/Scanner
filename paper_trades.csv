@@ -1140,3 +1140,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1139,EXR,stock,long,BUY SIGNAL,4,1792775919,23 Oct 18:18,142.73,140.75714,145.39,open,,,,,,,,,
 1140,HON,stock,long,BUY SIGNAL,5,1792775919,23 Oct 18:18,219.05,213.33768,227.07155,open,,,,,,,,,
 1141,J,stock,long,BUY SIGNAL,3,1792777609,23 Oct 18:46,146.315,138.36357,151.62119,open,,,,,,,,,
+1142,HII,stock,long,BUY SIGNAL,5,1792779040,23 Oct 19:10,274.8725,271.31536,286.965,open,,,,,,,,,
+1143,PPL,stock,long,BUY SIGNAL,5,1792779040,23 Oct 19:10,34.91,34.570358,35.865,open,,,,,,,,,
+1144,PGR,stock,long,BUY SIGNAL,4,1792779040,23 Oct 19:10,228.575,217.84843,238.46222,open,,,,,,,,,
