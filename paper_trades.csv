@@ -440,7 +440,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 439,NIGHT,crypto,long,IN ZONE - WAIT,3,1792377922,19 Oct 03:45,0.04102,0.039969381,0.04333,closed,1792406393,19 Oct 11:39,0.03976,stop,-3.27,-3.27,7.9,-1.28,
 440,PEPE,crypto,long,RECLAIM C TP1,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.325536e-06,closed,1792505022,20 Oct 15:03,4.325536e-06,target,6.79,6.79,33.8,0.97,168
 441,PEPE,crypto,long,RECLAIM C TP2,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.608072e-06,closed,1792516509,20 Oct 18:15,4.608072e-06,target,13.78,13.78,37.0,1.97,168
-442,PEPE,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.890608e-06,open,,,,,,,,,168
+442,PEPE,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,4.043e-06,3.760464e-06,4.890608e-06,closed,1792748760,23 Oct 10:46,4.890608e-06,target,20.76,20.76,101.5,2.97,168
 443,ARB,crypto,long,RECLAIM C TP1,,1792383321,19 Oct 05:15,0.19277,0.16966,0.21588,open,,,,,,,,,168
 444,ARB,crypto,long,RECLAIM C TP2,,1792383321,19 Oct 05:15,0.19277,0.16966,0.23899,open,,,,,,,,,168
 445,ARB,crypto,long,RECLAIM C TP3,,1792383321,19 Oct 05:15,0.19277,0.16966,0.2621,open,,,,,,,,,168
@@ -1038,7 +1038,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1037,ATOM,crypto,long,IN ZONE,4,1792720768,23 Oct 02:59,1.767,1.7380357,1.8455,open,,,,,,,,,
 1038,APT,crypto,long,IN ZONE - WAIT,3,1792720768,23 Oct 02:59,0.7646,0.75202857,0.80125,open,,,,,,,,,
 1039,TAO,crypto,long,IN ZONE - WAIT,3,1792724219,23 Oct 03:56,262.2,257.62646,276.636,open,,,,,,,,,
-1040,INJ,crypto,long,IN ZONE - WAIT,4,1792727774,23 Oct 04:56,8.248,8.0341071,8.7645,open,,,,,,,,,
+1040,INJ,crypto,long,IN ZONE - WAIT,4,1792727774,23 Oct 04:56,8.248,8.0341071,8.7645,closed,1792748760,23 Oct 10:46,8.008,stop,-3.11,-3.11,5.8,-1.20,
 1041,LDO,crypto,long,IN ZONE,3,1792727774,23 Oct 04:56,0.3918,0.38616512,0.40143333,open,,,,,,,,,
 1042,ZRO,crypto,long,IN ZONE - WAIT,3,1792731246,23 Oct 05:54,1.7708,1.6625929,1.89775,open,,,,,,,,,
 1043,WBT,crypto,long,BUY SIGNAL,3,1792734524,23 Oct 06:48,79.265,78.792286,79.926,open,,,,,,,,,
@@ -1051,3 +1051,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1050,ICP,crypto,long,BUY SIGNAL,3,1792744967,23 Oct 09:42,2.781,2.6705,2.8528,open,,,,,,,,,
 1051,CRO,crypto,long,BUY SIGNAL,3,1792746905,23 Oct 10:15,0.05705,0.056218929,0.05834,open,,,,,,,,,
 1052,VIRTUAL,crypto,long,BUY SIGNAL,3,1792746905,23 Oct 10:15,0.6641,0.64508571,0.67308,open,,,,,,,,,
+1053,ETH,crypto,long,BUY SIGNAL,4,1792748760,23 Oct 10:46,2398.72,2371.8796,2440.07,open,,,,,,,,,
