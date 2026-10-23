@@ -1047,3 +1047,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1046,PI,crypto,long,RECLAIM C TP2,,1792743124,23 Oct 09:12,0.07952,0.0766963,0.0851674,open,,,,,,,,,168
 1047,PI,crypto,long,RECLAIM C TP3,,1792743124,23 Oct 09:12,0.07952,0.0766963,0.0879911,open,,,,,,,,,168
 1048,MORPHO,crypto,long,BUY SIGNAL,3,1792743124,23 Oct 09:12,2.2866,2.2139286,2.411625,open,,,,,,,,,
+1049,DOGE,crypto,long,IN ZONE,5,1792744967,23 Oct 09:42,0.08012,0.079520357,0.08239,open,,,,,,,,,
+1050,ICP,crypto,long,BUY SIGNAL,3,1792744967,23 Oct 09:42,2.781,2.6705,2.8528,open,,,,,,,,,
