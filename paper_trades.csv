@@ -1032,3 +1032,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1031,TRUMP,crypto,long,BUY SIGNAL,3,1792713225,23 Oct 00:53,1.735,1.7122929,1.8,open,,,,,,,,,
 1032,ENA,crypto,long,IN ZONE - WAIT,5,1792714243,23 Oct 01:10,0.19848,0.19008,0.22307667,open,,,,,,,,,
 1033,WLD,crypto,long,BUY SIGNAL,3,1792714243,23 Oct 01:10,0.5449,0.5149,0.5734,open,,,,,,,,,
+1034,HYPE,crypto,long,IN ZONE - WAIT,3,1792716656,23 Oct 01:50,77.78,76.815,80.11,open,,,,,,,,,
