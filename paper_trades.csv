@@ -1143,3 +1143,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1142,HII,stock,long,BUY SIGNAL,5,1792779040,23 Oct 19:10,274.8725,271.31536,286.965,open,,,,,,,,,
 1143,PPL,stock,long,BUY SIGNAL,5,1792779040,23 Oct 19:10,34.91,34.570358,35.865,open,,,,,,,,,
 1144,PGR,stock,long,BUY SIGNAL,4,1792779040,23 Oct 19:10,228.575,217.84843,238.46222,open,,,,,,,,,
+1145,ETR,stock,long,BUY SIGNAL,4,1792780961,23 Oct 19:42,107.22,105.81893,109.65,open,,,,,,,,,
+1146,EXE,stock,long,BUY SIGNAL,4,1792780961,23 Oct 19:42,93.160004,91.501033,95.556666,open,,,,,,,,,
+1147,KMB,stock,long,BUY SIGNAL,3,1792780961,23 Oct 19:42,110.035,108.72615,116.145,open,,,,,,,,,
+1148,TPL,stock,long,IN ZONE - WAIT,3,1792780961,23 Oct 19:42,338.35999,329.06108,353.07917,open,,,,,,,,,
