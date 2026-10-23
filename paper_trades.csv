@@ -1042,3 +1042,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1041,LDO,crypto,long,IN ZONE,3,1792727774,23 Oct 04:56,0.3918,0.38616512,0.40143333,open,,,,,,,,,
 1042,ZRO,crypto,long,IN ZONE - WAIT,3,1792731246,23 Oct 05:54,1.7708,1.6625929,1.89775,open,,,,,,,,,
 1043,WBT,crypto,long,BUY SIGNAL,3,1792734524,23 Oct 06:48,79.265,78.792286,79.926,open,,,,,,,,,
+1044,DOT,crypto,long,BUY SIGNAL,4,1792738646,23 Oct 07:57,1.1788,1.1218576,1.1882333,open,,,,,,,,,
