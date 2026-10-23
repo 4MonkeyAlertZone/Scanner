@@ -1038,3 +1038,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1037,ATOM,crypto,long,IN ZONE,4,1792720768,23 Oct 02:59,1.767,1.7380357,1.8455,open,,,,,,,,,
 1038,APT,crypto,long,IN ZONE - WAIT,3,1792720768,23 Oct 02:59,0.7646,0.75202857,0.80125,open,,,,,,,,,
 1039,TAO,crypto,long,IN ZONE - WAIT,3,1792724219,23 Oct 03:56,262.2,257.62646,276.636,open,,,,,,,,,
+1040,INJ,crypto,long,IN ZONE - WAIT,4,1792727774,23 Oct 04:56,8.248,8.0341071,8.7645,open,,,,,,,,,
+1041,LDO,crypto,long,IN ZONE,3,1792727774,23 Oct 04:56,0.3918,0.38616512,0.40143333,open,,,,,,,,,
