@@ -1190,3 +1190,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1189,TIA,crypto,long,IN ZONE - WAIT,4,1792855771,24 Oct 16:29,0.5255,0.49551786,0.6327,open,,,,,,,,,
 1190,STABLE,crypto,long,BUY SIGNAL,3,1792871228,24 Oct 20:47,0.026853,0.025361964,0.027712538,open,,,,,,,,,
 1191,PEPE,crypto,long,BUY SIGNAL,4,1792874913,24 Oct 21:48,4.505e-06,4.379e-06,4.7705e-06,open,,,,,,,,,
+1192,PENDLE,crypto,long,BUY SIGNAL,4,1792877477,24 Oct 22:31,1.999,1.9473571,2.0675,open,,,,,,,,,
