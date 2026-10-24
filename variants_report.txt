@@ -1,13 +1,13 @@
-REGIME VARIANTS PAPER TEST  data to 2026-10-22  started 2026-10-19  (3 days of live record so far)
+REGIME VARIANTS PAPER TEST  data to 2026-10-23  started 2026-10-19  (4 days of live record so far)
 
 variant             state now    BTC acct  ETH acct  flips  days in
-BASE 200/50         OUT             -0.8%     -0.9%      1        3
-BAND1 (50d +-1%)    IN              -0.8%     -0.9%      1        3
-S100F50             OUT             -0.8%     -0.9%      1        3
-VOTE3 of 5 avgs     IN              -0.8%     -0.9%      1        3
-FAST45 200/45       OUT             -0.8%     -0.9%      1        3
-RISE50 (200d rising)OUT             -0.8%     -0.9%      1        3
-buy and hold                        -0.7%     -0.8%
+BASE 200/50         OUT             -0.9%     -1.0%      2        3
+BAND1 (50d +-1%)    IN              -1.0%     -0.9%      1        4
+S100F50             OUT             -0.9%     -1.0%      2        3
+VOTE3 of 5 avgs     IN              -1.0%     -0.9%      1        4
+FAST45 200/45       OUT             -0.9%     -1.0%      2        3
+RISE50 (200d rising)OUT             -0.9%     -1.0%      2        3
+buy and hold                        -0.9%     -0.8%
 
 Accounts start at 0 (percent change since start), 0.1% cost per IN/OUT change, signal at the daily close earning the next day.
 Early weeks are not evidence: a few days of difference means nothing. Lab 33 history suggested these variants are close to BASE; this is a live check for the 5 Nov review.
