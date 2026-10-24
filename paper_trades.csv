@@ -1195,3 +1195,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1194,HYPE,crypto,long,BUY SIGNAL,3,1792882702,24 Oct 23:58,76.47,75.4925,78.462857,open,,,,,,,,,
 1195,POL,crypto,long,IN ZONE - WAIT,4,1792882702,24 Oct 23:58,0.08954,0.088615714,0.094653333,open,,,,,,,,,
 1196,ATOM,crypto,long,BUY SIGNAL,3,1792882702,24 Oct 23:58,1.629,1.5864286,1.683,open,,,,,,,,,
+1197,CAKE,crypto,long,IN ZONE - WAIT,3,1792883661,25 Oct 00:14,2.071,2.047481,2.1035,open,,,,,,,,,
+1198,VET,crypto,long,BUY SIGNAL,4,1792883661,25 Oct 00:14,0.006833,0.0066283929,0.007232,open,,,,,,,,,
