@@ -1191,3 +1191,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1190,STABLE,crypto,long,BUY SIGNAL,3,1792871228,24 Oct 20:47,0.026853,0.025361964,0.027712538,open,,,,,,,,,
 1191,PEPE,crypto,long,BUY SIGNAL,4,1792874913,24 Oct 21:48,4.505e-06,4.379e-06,4.7705e-06,open,,,,,,,,,
 1192,PENDLE,crypto,long,BUY SIGNAL,4,1792877477,24 Oct 22:31,1.999,1.9473571,2.0675,open,,,,,,,,,
+1193,XRP,crypto,long,BUY SIGNAL,3,1792882702,24 Oct 23:58,1.2932,1.2744071,1.31586,open,,,,,,,,,
+1194,HYPE,crypto,long,BUY SIGNAL,3,1792882702,24 Oct 23:58,76.47,75.4925,78.462857,open,,,,,,,,,
+1195,POL,crypto,long,IN ZONE - WAIT,4,1792882702,24 Oct 23:58,0.08954,0.088615714,0.094653333,open,,,,,,,,,
+1196,ATOM,crypto,long,BUY SIGNAL,3,1792882702,24 Oct 23:58,1.629,1.5864286,1.683,open,,,,,,,,,
