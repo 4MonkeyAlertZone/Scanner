@@ -1165,3 +1165,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1164,XLM,crypto,long,IN ZONE - WAIT,4,1792795898,23 Oct 23:51,0.1712,0.16851429,0.175575,open,,,,,,,,,
 1165,HBAR,crypto,long,IN ZONE - WAIT,3,1792795898,23 Oct 23:51,0.07676,0.074777143,0.07995,open,,,,,,,,,
 1166,PI,crypto,long,IN ZONE - WAIT,3,1792795898,23 Oct 23:51,0.07794,0.076371786,0.08063,open,,,,,,,,,
+1167,XTZ,crypto,long,BUY SIGNAL,3,1792808110,24 Oct 03:15,0.3039,0.30097857,0.32478,open,,,,,,,,,
