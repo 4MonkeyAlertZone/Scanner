@@ -1225,3 +1225,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,open,,,,,,,,,
 1225,BGB,crypto,long,IN ZONE,4,1792940106,25 Oct 14:55,1.8795,1.8696211,1.898672,open,,,,,,,,,
 1226,BDX,crypto,long,IN ZONE - WAIT,4,1792941212,25 Oct 15:13,0.07507,0.073656429,0.079177333,open,,,,,,,,,
+1227,SOL,crypto,long,IN ZONE - WAIT,3,1792942856,25 Oct 15:40,101.76,101.02536,105.54714,open,,,,,,,,,
+1228,WLD,crypto,long,IN ZONE - WAIT,5,1792942856,25 Oct 15:40,0.4591,0.44846071,0.47775,open,,,,,,,,,
+1229,NEXO,crypto,long,IN ZONE - WAIT,4,1792942856,25 Oct 15:40,0.8099,0.79108929,0.82253077,open,,,,,,,,,
