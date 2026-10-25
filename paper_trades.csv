@@ -1201,3 +1201,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1200,DOGE,crypto,long,IN ZONE - WAIT,4,1792884991,25 Oct 00:36,0.07774,0.077044643,0.080525,open,,,,,,,,,
 1201,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1792884991,25 Oct 00:36,0.6302,0.62221429,0.654425,open,,,,,,,,,
 1202,CRV,crypto,long,IN ZONE - WAIT,3,1792886093,25 Oct 00:54,0.3526,0.34811429,0.36476,open,,,,,,,,,
+1203,CRO,crypto,long,BUY SIGNAL,5,1792886866,25 Oct 01:07,0.05573,0.054268571,0.0569775,open,,,,,,,,,
