@@ -1215,7 +1215,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1214,U,crypto,long,RECLAIM C TP3,,1792915521,25 Oct 08:05,0.9995,0.9099764,1.2680708,open,,,,,,,,,168
 1215,XTZ,crypto,long,IN ZONE - WAIT,3,1792915521,25 Oct 08:05,0.2922,0.28902143,0.30465,closed,1792918759,25 Oct 08:59,0.2884,stop,-1.50,-1.50,0.9,-1.38,
 1216,ONDO,crypto,long,IN ZONE - WAIT,3,1792917063,25 Oct 08:31,0.40085,0.39118607,0.423165,open,,,,,,,,,
-1217,ENA,crypto,long,BUY SIGNAL,4,1792920078,25 Oct 09:21,0.18941,0.18457036,0.196202,open,,,,,,,,,
+1217,ENA,crypto,long,BUY SIGNAL,4,1792920078,25 Oct 09:21,0.18941,0.18457036,0.196202,closed,1792940106,25 Oct 14:55,0.196202,target,3.39,3.39,5.6,1.33,
 1218,SEI,crypto,long,IN ZONE - WAIT,3,1792920078,25 Oct 09:21,0.05199,0.050250357,0.056795,open,,,,,,,,,
 1219,ETC,crypto,long,IN ZONE - WAIT,4,1792921879,25 Oct 09:51,7.49,7.3189286,7.624,open,,,,,,,,,
 1220,USDGO,crypto,long,CROSS C TP1,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0012786,open,,,,,,,,,168
@@ -1223,3 +1223,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1222,USDGO,crypto,long,CROSS C TP3,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0016357,open,,,,,,,,,168
 1223,VVV,crypto,long,BUY SIGNAL,3,1792930149,25 Oct 12:09,24.7229,24.321557,25.590433,open,,,,,,,,,
 1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,open,,,,,,,,,
+1225,BGB,crypto,long,IN ZONE,4,1792940106,25 Oct 14:55,1.8795,1.8696211,1.898672,open,,,,,,,,,
