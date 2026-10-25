@@ -1217,3 +1217,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1216,ONDO,crypto,long,IN ZONE - WAIT,3,1792917063,25 Oct 08:31,0.40085,0.39118607,0.423165,open,,,,,,,,,
 1217,ENA,crypto,long,BUY SIGNAL,4,1792920078,25 Oct 09:21,0.18941,0.18457036,0.196202,open,,,,,,,,,
 1218,SEI,crypto,long,IN ZONE - WAIT,3,1792920078,25 Oct 09:21,0.05199,0.050250357,0.056795,open,,,,,,,,,
+1219,ETC,crypto,long,IN ZONE - WAIT,4,1792921879,25 Oct 09:51,7.49,7.3189286,7.624,open,,,,,,,,,
