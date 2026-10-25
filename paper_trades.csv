@@ -1203,3 +1203,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1202,CRV,crypto,long,IN ZONE - WAIT,3,1792886093,25 Oct 00:54,0.3526,0.34811429,0.36476,open,,,,,,,,,
 1203,CRO,crypto,long,BUY SIGNAL,5,1792886866,25 Oct 01:07,0.05573,0.054268571,0.0569775,open,,,,,,,,,
 1204,XDC,crypto,long,IN ZONE - WAIT,3,1792888939,25 Oct 01:42,0.03303,0.0326425,0.034526667,open,,,,,,,,,
+1205,ZEC,crypto,long,IN ZONE,3,1792894255,25 Oct 02:10,1222.37,1199.4754,1257.19,open,,,,,,,,,
