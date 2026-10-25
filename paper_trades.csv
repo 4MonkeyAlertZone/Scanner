@@ -1204,3 +1204,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1203,CRO,crypto,long,BUY SIGNAL,5,1792886866,25 Oct 01:07,0.05573,0.054268571,0.0569775,open,,,,,,,,,
 1204,XDC,crypto,long,IN ZONE - WAIT,3,1792888939,25 Oct 01:42,0.03303,0.0326425,0.034526667,open,,,,,,,,,
 1205,ZEC,crypto,long,IN ZONE,3,1792894255,25 Oct 02:10,1222.37,1199.4754,1257.19,open,,,,,,,,,
+1206,ASTER,crypto,long,BUY SIGNAL,4,1792902776,25 Oct 04:32,0.7084,0.70250357,0.71906667,open,,,,,,,,,
+1207,GRASS,crypto,long,IN ZONE,3,1792902776,25 Oct 04:32,0.6808,0.66674286,0.7309,open,,,,,,,,,
