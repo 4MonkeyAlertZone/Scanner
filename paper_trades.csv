@@ -1240,3 +1240,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1239,TRX,crypto,long,RECLAIM C TP1,,1792958550,25 Oct 20:02,0.3313,0.3270446,0.3355554,open,,,,,,,,,168
 1240,TRX,crypto,long,RECLAIM C TP2,,1792958550,25 Oct 20:02,0.3313,0.3270446,0.3398108,open,,,,,,,,,168
 1241,TRX,crypto,long,RECLAIM C TP3,,1792958550,25 Oct 20:02,0.3313,0.3270446,0.3440662,open,,,,,,,,,168
+1242,UNI,crypto,long,BUY SIGNAL,3,1792959800,25 Oct 20:23,6.984,6.6377857,7.146,open,,,,,,,,,
