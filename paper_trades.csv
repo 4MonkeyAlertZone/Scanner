@@ -1228,3 +1228,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1227,SOL,crypto,long,IN ZONE - WAIT,3,1792942856,25 Oct 15:40,101.76,101.02536,105.54714,open,,,,,,,,,
 1228,WLD,crypto,long,IN ZONE - WAIT,5,1792942856,25 Oct 15:40,0.4591,0.44846071,0.47775,open,,,,,,,,,
 1229,NEXO,crypto,long,IN ZONE - WAIT,4,1792942856,25 Oct 15:40,0.8099,0.79108929,0.82253077,open,,,,,,,,,
+1230,ENA,crypto,long,RECLAIM C TP1,,1792944347,25 Oct 16:05,0.20353,0.18360206,0.22345794,open,,,,,,,,,168
+1231,ENA,crypto,long,RECLAIM C TP2,,1792944347,25 Oct 16:05,0.20353,0.18360206,0.24338588,open,,,,,,,,,168
+1232,ENA,crypto,long,RECLAIM C TP3,,1792944347,25 Oct 16:05,0.20353,0.18360206,0.26331382,open,,,,,,,,,168
