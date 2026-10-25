@@ -1218,3 +1218,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1217,ENA,crypto,long,BUY SIGNAL,4,1792920078,25 Oct 09:21,0.18941,0.18457036,0.196202,open,,,,,,,,,
 1218,SEI,crypto,long,IN ZONE - WAIT,3,1792920078,25 Oct 09:21,0.05199,0.050250357,0.056795,open,,,,,,,,,
 1219,ETC,crypto,long,IN ZONE - WAIT,4,1792921879,25 Oct 09:51,7.49,7.3189286,7.624,open,,,,,,,,,
+1220,USDGO,crypto,long,CROSS C TP1,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0012786,open,,,,,,,,,168
+1221,USDGO,crypto,long,CROSS C TP2,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0014571,open,,,,,,,,,168
+1222,USDGO,crypto,long,CROSS C TP3,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0016357,open,,,,,,,,,168
+1223,VVV,crypto,long,BUY SIGNAL,3,1792930149,25 Oct 12:09,24.7229,24.321557,25.590433,open,,,,,,,,,
