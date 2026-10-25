@@ -1222,3 +1222,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1221,USDGO,crypto,long,CROSS C TP2,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0014571,open,,,,,,,,,168
 1222,USDGO,crypto,long,CROSS C TP3,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0016357,open,,,,,,,,,168
 1223,VVV,crypto,long,BUY SIGNAL,3,1792930149,25 Oct 12:09,24.7229,24.321557,25.590433,open,,,,,,,,,
+1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,open,,,,,,,,,
