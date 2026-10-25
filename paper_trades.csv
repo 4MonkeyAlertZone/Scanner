@@ -1232,3 +1232,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1231,ENA,crypto,long,RECLAIM C TP2,,1792944347,25 Oct 16:05,0.20353,0.18360206,0.24338588,open,,,,,,,,,168
 1232,ENA,crypto,long,RECLAIM C TP3,,1792944347,25 Oct 16:05,0.20353,0.18360206,0.26331382,open,,,,,,,,,168
 1233,NEAR,crypto,long,BUY SIGNAL,3,1792945880,25 Oct 16:31,4.564,4.4574036,4.7699,open,,,,,,,,,
+1234,BTC,crypto,long,IN ZONE,4,1792947513,25 Oct 16:58,80827.77,80492.278,81986.42,open,,,,,,,,,
+1235,OKB,crypto,long,IN ZONE - WAIT,4,1792947513,25 Oct 16:58,108.154,107.13793,109.85575,open,,,,,,,,,
