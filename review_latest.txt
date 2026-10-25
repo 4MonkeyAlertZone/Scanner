@@ -1,10 +1,28 @@
-Paper review 18 Oct 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
+Paper review 25 Oct 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
 
-CROSS C: 6 legs opened, 3 closed, 3 open, average -1.05R, win rate 0%
-    TP1: 1 closed, average -1.05R, hit target 0%
-    TP2: 1 closed, average -1.05R, hit target 0%
-    TP3: 1 closed, average -1.05R, hit target 0%
-RECLAIM A: 15 legs opened, 0 closed, 15 open
-RECLAIM C: 30 legs opened, 0 closed, 30 open
+CROSS A: 6 legs opened, 6 closed, 0 open, average -1.11R, win rate 0%
+    TP1: 2 closed, average -1.11R, hit target 0%
+    TP2: 2 closed, average -1.11R, hit target 0%
+    TP3: 2 closed, average -1.11R, hit target 0%
+CROSS B: 12 legs opened, 12 closed, 0 open, average -1.09R, win rate 0%
+    TP1: 4 closed, average -1.09R, hit target 0%
+    TP2: 4 closed, average -1.09R, hit target 0%
+    TP3: 4 closed, average -1.09R, hit target 0%
+CROSS C: 30 legs opened, 22 closed, 8 open, average -1.19R, win rate 5%
+    TP1: 8 closed, average -1.01R, hit target 12%
+    TP2: 7 closed, average -1.29R, hit target 0%
+    TP3: 7 closed, average -1.29R, hit target 0%
+RECLAIM A: 54 legs opened, 42 closed, 12 open, average -0.95R, win rate 7%
+    TP1: 14 closed, average -0.95R, hit target 0%
+    TP2: 14 closed, average -0.95R, hit target 0%
+    TP3: 14 closed, average -0.95R, hit target 0%
+RECLAIM B: 60 legs opened, 48 closed, 12 open, average -1.08R, win rate 0%
+    TP1: 16 closed, average -1.08R, hit target 0%
+    TP2: 16 closed, average -1.08R, hit target 0%
+    TP3: 16 closed, average -1.08R, hit target 0%
+RECLAIM C: 138 legs opened, 102 closed, 36 open, average -0.91R, win rate 6%
+    TP1: 34 closed, average -0.94R, hit target 3%
+    TP2: 34 closed, average -0.91R, hit target 3%
+    TP3: 34 closed, average -0.88R, hit target 3%
 
 Backtest expectation: about +0.1R to +0.15R per trade for RECLAIM A; B slightly lower; C close to zero. Small samples swing wildly, so do not act on a handful of trades.
