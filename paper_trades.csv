@@ -1183,7 +1183,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1182,BTT,crypto,long,IN ZONE,4,1792848647,24 Oct 14:30,3.667e-07,3.5728929e-07,3.76925e-07,open,,,,,,,,,
 1183,LTC,crypto,long,IN ZONE - WAIT,3,1792852891,24 Oct 15:41,56.04,54.702107,56.62,closed,1792871228,24 Oct 20:47,56.62,target,0.83,0.83,5.1,0.35,
 1184,TAO,crypto,long,IN ZONE - WAIT,3,1792852891,24 Oct 15:41,247.81,243.05607,254.5375,open,,,,,,,,,
-1185,INJ,crypto,long,IN ZONE - WAIT,4,1792852891,24 Oct 15:41,7.59,7.3321798,7.8764,open,,,,,,,,,
+1185,INJ,crypto,long,IN ZONE - WAIT,4,1792852891,24 Oct 15:41,7.59,7.3321798,7.8764,closed,1792950337,25 Oct 17:45,7.8764,target,3.57,3.57,27.1,1.05,
 1186,UNI,crypto,long,IN ZONE - WAIT,3,1792855771,24 Oct 16:29,6.551,6.4098726,6.7818,closed,1792872185,24 Oct 21:03,6.7818,target,3.32,3.32,4.6,1.54,
 1187,SHIB,crypto,long,IN ZONE - WAIT,3,1792855771,24 Oct 16:29,4.78e-06,4.7035357e-06,4.9225e-06,closed,1792872185,24 Oct 21:03,4.9225e-06,target,2.78,2.78,4.6,1.74,
 1188,DOT,crypto,long,IN ZONE - WAIT,3,1792855771,24 Oct 16:29,1.0351,1.0139893,1.07515,open,,,,,,,,,
@@ -1222,7 +1222,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1221,USDGO,crypto,long,CROSS C TP2,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0014571,open,,,,,,,,,168
 1222,USDGO,crypto,long,CROSS C TP3,,1792930149,25 Oct 12:09,1.0011,1.0009214,1.0016357,open,,,,,,,,,168
 1223,VVV,crypto,long,BUY SIGNAL,3,1792930149,25 Oct 12:09,24.7229,24.321557,25.590433,open,,,,,,,,,
-1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,open,,,,,,,,,
+1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,closed,1792950337,25 Oct 17:45,0.3019,target,2.84,2.84,3.3,1.03,
 1225,BGB,crypto,long,IN ZONE,4,1792940106,25 Oct 14:55,1.8795,1.8696211,1.898672,open,,,,,,,,,
 1226,BDX,crypto,long,IN ZONE - WAIT,4,1792941212,25 Oct 15:13,0.07507,0.073656429,0.079177333,open,,,,,,,,,
 1227,SOL,crypto,long,IN ZONE - WAIT,3,1792942856,25 Oct 15:40,101.76,101.02536,105.54714,open,,,,,,,,,
@@ -1235,3 +1235,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1234,BTC,crypto,long,IN ZONE,4,1792947513,25 Oct 16:58,80827.77,80492.278,81986.42,open,,,,,,,,,
 1235,OKB,crypto,long,IN ZONE - WAIT,4,1792947513,25 Oct 16:58,108.154,107.13793,109.85575,open,,,,,,,,,
 1236,ETHFI,crypto,long,IN ZONE - WAIT,4,1792948744,25 Oct 17:19,0.6305,0.61925357,0.65545,open,,,,,,,,,
+1237,MNT,crypto,long,IN ZONE,3,1792950337,25 Oct 17:45,0.5255,0.52134643,0.54624,open,,,,,,,,,
+1238,SKY,crypto,long,IN ZONE - WAIT,4,1792950337,25 Oct 17:45,0.06955,0.068730357,0.071833333,open,,,,,,,,,
