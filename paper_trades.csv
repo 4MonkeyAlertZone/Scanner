@@ -1224,3 +1224,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1223,VVV,crypto,long,BUY SIGNAL,3,1792930149,25 Oct 12:09,24.7229,24.321557,25.590433,open,,,,,,,,,
 1224,STX,crypto,long,IN ZONE - WAIT,3,1792938501,25 Oct 14:28,0.293,0.28488976,0.3019,open,,,,,,,,,
 1225,BGB,crypto,long,IN ZONE,4,1792940106,25 Oct 14:55,1.8795,1.8696211,1.898672,open,,,,,,,,,
+1226,BDX,crypto,long,IN ZONE - WAIT,4,1792941212,25 Oct 15:13,0.07507,0.073656429,0.079177333,open,,,,,,,,,
