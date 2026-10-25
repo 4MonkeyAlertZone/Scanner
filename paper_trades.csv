@@ -1210,3 +1210,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1209,PUMP,crypto,long,BUY SIGNAL,3,1792912024,25 Oct 07:07,0.004238,0.0040945357,0.00442325,open,,,,,,,,,
 1210,AAVE,crypto,long,IN ZONE - WAIT,3,1792913947,25 Oct 07:39,136.57,131.70107,140.05,open,,,,,,,,,
 1211,FLR,crypto,long,IN ZONE,3,1792913947,25 Oct 07:39,0.006166,0.0061319286,0.0063016667,open,,,,,,,,,
+1212,U,crypto,long,RECLAIM C TP1,,1792915521,25 Oct 08:05,0.9995,0.9099764,1.0890236,open,,,,,,,,,168
+1213,U,crypto,long,RECLAIM C TP2,,1792915521,25 Oct 08:05,0.9995,0.9099764,1.1785472,open,,,,,,,,,168
+1214,U,crypto,long,RECLAIM C TP3,,1792915521,25 Oct 08:05,0.9995,0.9099764,1.2680708,open,,,,,,,,,168
+1215,XTZ,crypto,long,IN ZONE - WAIT,3,1792915521,25 Oct 08:05,0.2922,0.28902143,0.30465,open,,,,,,,,,
