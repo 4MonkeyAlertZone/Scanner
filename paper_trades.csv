@@ -1135,7 +1135,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1134,BF-B,stock,long,BUY SIGNAL,3,1792774151,23 Oct 17:49,29.469999,28.580713,30.665,open,,,,,,,,,
 1135,MET,stock,long,IN ZONE,3,1792774151,23 Oct 17:49,99.839996,96.728931,,open,,,,,,,,,
 1136,PG,stock,long,BUY SIGNAL,5,1792774151,23 Oct 17:49,161.07001,157.33607,166.805,open,,,,,,,,,
-1137,DG,stock,long,IN ZONE,3,1792775919,23 Oct 18:18,131.05,128.38465,151.955,open,,,,,,,,,
+1137,DG,stock,long,IN ZONE,3,1792775919,23 Oct 18:18,131.05,128.38465,151.955,closed,1793037926,26 Oct 18:05,126.8,stop,-3.44,-3.44,72.8,-1.69,
 1138,DLR,stock,long,IN ZONE - WAIT,4,1792775919,23 Oct 18:18,170.63,165.54661,177.45556,open,,,,,,,,,
 1139,EXR,stock,long,BUY SIGNAL,4,1792775919,23 Oct 18:18,142.73,140.75714,145.39,open,,,,,,,,,
 1140,HON,stock,long,BUY SIGNAL,5,1792775919,23 Oct 18:18,219.05,213.33768,227.07155,open,,,,,,,,,
@@ -1317,3 +1317,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1316,DVN,stock,long,BUY SIGNAL,3,1793035770,26 Oct 17:29,51.689999,48.986428,,open,,,,,,,,,
 1317,EQT,stock,long,BUY SIGNAL,4,1793035770,26 Oct 17:29,54.490002,53.746786,56.883749,open,,,,,,,,,
 1318,PSA,stock,long,BUY SIGNAL,4,1793035770,26 Oct 17:29,306.47501,301.80778,312.58333,open,,,,,,,,,
+1319,ISRG,stock,long,BUY SIGNAL,3,1793037974,26 Oct 18:06,448.30499,437.24214,462.03166,open,,,,,,,,,
