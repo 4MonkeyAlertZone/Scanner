@@ -1246,3 +1246,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1245,LINK,crypto,long,IN ZONE - WAIT,3,1792978320,26 Oct 01:32,11.402,11.128405,11.511333,open,,,,,,,,,
 1246,LDO,crypto,long,IN ZONE - WAIT,3,1792984409,26 Oct 03:13,0.3634,0.35488571,0.3768375,open,,,,,,,,,
 1247,PENGU,crypto,long,IN ZONE - WAIT,3,1792986290,26 Oct 03:44,0.007355,0.0071994643,0.0075933333,open,,,,,,,,,
+1248,BNB,crypto,long,IN ZONE,5,1792990491,26 Oct 04:54,742.33,737.05643,751.575,open,,,,,,,,,
+1249,M,crypto,long,IN ZONE - WAIT,5,1792990491,26 Oct 04:54,0.96582,0.93026,1.0670227,open,,,,,,,,,
