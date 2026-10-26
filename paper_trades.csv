@@ -1326,3 +1326,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1325,JUP,crypto,long,IN ZONE - WAIT,3,1793046291,26 Oct 20:24,0.2783,0.27079643,0.2884,open,,,,,,,,,
 1326,SKY,crypto,long,IN ZONE - WAIT,3,1793051736,26 Oct 21:55,0.06801,0.066777143,0.070025,open,,,,,,,,,
 1327,FLR,crypto,long,IN ZONE - WAIT,3,1793056631,26 Oct 23:17,0.006059,0.0059329643,0.0061255,open,,,,,,,,,
+1328,BTC,crypto,long,IN ZONE,5,1793058321,26 Oct 23:45,80160.02,79773.236,81184.72,open,,,,,,,,,
+1329,ETHFI,crypto,long,BUY SIGNAL,4,1793058321,26 Oct 23:45,0.6516,0.619875,0.67103333,open,,,,,,,,,
