@@ -1248,3 +1248,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1247,PENGU,crypto,long,IN ZONE - WAIT,3,1792986290,26 Oct 03:44,0.007355,0.0071994643,0.0075933333,open,,,,,,,,,
 1248,BNB,crypto,long,IN ZONE,5,1792990491,26 Oct 04:54,742.33,737.05643,751.575,open,,,,,,,,,
 1249,M,crypto,long,IN ZONE - WAIT,5,1792990491,26 Oct 04:54,0.96582,0.93026,1.0670227,open,,,,,,,,,
+1250,XDC,crypto,long,IN ZONE - WAIT,3,1792999182,26 Oct 07:19,0.03214,0.031446071,0.033126667,open,,,,,,,,,
