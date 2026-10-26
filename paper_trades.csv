@@ -1321,3 +1321,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1320,PEPE,crypto,long,IN ZONE - WAIT,4,1793040433,26 Oct 18:47,4.3e-06,4.1443214e-06,4.5235e-06,open,,,,,,,,,
 1321,TGT,stock,long,IN ZONE,5,1793040433,26 Oct 18:47,147.63,140.60251,153.755,open,,,,,,,,,
 1322,WM,stock,long,BUY SIGNAL,3,1793040433,26 Oct 18:47,240.455,233.44285,247.64,open,,,,,,,,,
+1323,MORPHO,crypto,long,IN ZONE,3,1793044800,26 Oct 20:00,2.1237,2.096375,2.2281167,open,,,,,,,,,
+1324,RDDT,stock,long,IN ZONE - WAIT,3,1793044800,26 Oct 20:00,138.58501,133.93743,156.24075,open,,,,,,,,,
