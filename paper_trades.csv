@@ -1255,3 +1255,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1254,SPX,crypto,long,IN ZONE,3,1793006700,26 Oct 09:25,0.3788,0.3715975,0.39363333,open,,,,,,,,,
 1255,ASTER,crypto,long,BUY SIGNAL,4,1793009286,26 Oct 10:08,0.71,0.70294286,0.71906667,open,,,,,,,,,
 1256,XTZ,crypto,long,IN ZONE - WAIT,3,1793009286,26 Oct 10:08,0.2828,0.27454286,0.29315,open,,,,,,,,,
+1257,ZEC,crypto,long,IN ZONE,3,1793013696,26 Oct 11:21,1224.77,1199.0775,1257.19,open,,,,,,,,,
