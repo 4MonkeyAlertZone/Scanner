@@ -1404,3 +1404,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1403,UNI,crypto,long,IN ZONE,3,1793137027,27 Oct 21:37,7.139,7.0153929,7.483,open,,,,,,,,,
 1404,SUI,crypto,long,IN ZONE,3,1793137027,27 Oct 21:37,0.9338,0.92522071,0.96023333,open,,,,,,,,,
 1405,PENDLE,crypto,long,BUY SIGNAL,5,1793139063,27 Oct 22:11,1.985,1.953,2.0675,open,,,,,,,,,
+1406,CRO,crypto,long,IN ZONE - WAIT,3,1793140844,27 Oct 22:40,0.05368,0.053110071,0.0549425,open,,,,,,,,,
