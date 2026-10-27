@@ -1331,3 +1331,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1330,BGB,crypto,long,IN ZONE,4,1793064441,27 Oct 01:27,1.87773,1.8700782,1.898672,open,,,,,,,,,
 1331,INJ,crypto,long,BUY SIGNAL,4,1793064441,27 Oct 01:27,7.878,7.7004643,8.174,open,,,,,,,,,
 1332,AKE,crypto,long,IN ZONE,3,1793070369,27 Oct 03:06,0.0317018,0.030380104,0.03372275,open,,,,,,,,,
+1333,TAO,crypto,long,IN ZONE - WAIT,3,1793074243,27 Oct 04:10,248.36,243.56429,254.5375,open,,,,,,,,,
