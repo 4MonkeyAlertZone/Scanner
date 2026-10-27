@@ -1328,3 +1328,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1327,FLR,crypto,long,IN ZONE - WAIT,3,1793056631,26 Oct 23:17,0.006059,0.0059329643,0.0061255,open,,,,,,,,,
 1328,BTC,crypto,long,IN ZONE,5,1793058321,26 Oct 23:45,80160.02,79773.236,81184.72,open,,,,,,,,,
 1329,ETHFI,crypto,long,BUY SIGNAL,4,1793058321,26 Oct 23:45,0.6516,0.619875,0.67103333,open,,,,,,,,,
+1330,BGB,crypto,long,IN ZONE,4,1793064441,27 Oct 01:27,1.87773,1.8700782,1.898672,open,,,,,,,,,
+1331,INJ,crypto,long,BUY SIGNAL,4,1793064441,27 Oct 01:27,7.878,7.7004643,8.174,open,,,,,,,,,
