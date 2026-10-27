@@ -1333,3 +1333,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1332,AKE,crypto,long,IN ZONE,3,1793070369,27 Oct 03:06,0.0317018,0.030380104,0.03372275,closed,1793083687,27 Oct 06:48,0.03033,stop,-4.53,-4.53,3.7,-1.09,
 1333,TAO,crypto,long,IN ZONE - WAIT,3,1793074243,27 Oct 04:10,248.36,243.56429,254.5375,open,,,,,,,,,
 1334,VVV,crypto,long,IN ZONE,3,1793077903,27 Oct 05:11,24.7158,23.823432,25.79275,open,,,,,,,,,
+1335,BDX,crypto,long,BUY SIGNAL,4,1793088924,27 Oct 08:15,0.07481,0.073150714,0.077032727,open,,,,,,,,,
+1336,VET,crypto,long,IN ZONE - WAIT,3,1793088924,27 Oct 08:15,0.006358,0.00627425,0.0065888,open,,,,,,,,,
