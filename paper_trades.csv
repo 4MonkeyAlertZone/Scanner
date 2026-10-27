@@ -1283,7 +1283,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1282,UAL,stock,long,IN ZONE - WAIT,4,1793022014,26 Oct 13:40,100.8,98.28536,109.61546,open,,,,,,,,,
 1283,XYL,stock,long,BUY SIGNAL,5,1793022014,26 Oct 13:40,109.2,103.93964,113.38667,open,,,,,,,,,
 1284,ZBH,stock,long,BUY SIGNAL,4,1793022014,26 Oct 13:40,97.580002,95.798569,99.909999,open,,,,,,,,,
-1285,DOGE,crypto,long,IN ZONE - WAIT,4,1793028017,26 Oct 15:20,0.078,0.077117143,0.080525,open,,,,,,,,,
+1285,DOGE,crypto,long,IN ZONE - WAIT,4,1793028017,26 Oct 15:20,0.078,0.077117143,0.080525,closed,1793095426,27 Oct 10:03,0.07692,stop,-1.58,-1.58,18.7,-1.40,
 1286,PENDLE,crypto,long,IN ZONE - WAIT,5,1793028017,26 Oct 15:20,2.003,1.9516786,2.0675,closed,1793049879,26 Oct 21:24,1.948,stop,-2.95,-2.95,6.1,-1.15,
 1287,ANET,stock,long,IN ZONE - WAIT,4,1793028017,26 Oct 15:20,177.89,170.55707,187.9635,open,,,,,,,,,
 1288,CCL,stock,long,IN ZONE,3,1793028017,26 Oct 15:20,26.905001,26.407679,28.036667,open,,,,,,,,,
@@ -1335,3 +1335,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1334,VVV,crypto,long,IN ZONE,3,1793077903,27 Oct 05:11,24.7158,23.823432,25.79275,open,,,,,,,,,
 1335,BDX,crypto,long,BUY SIGNAL,4,1793088924,27 Oct 08:15,0.07481,0.073150714,0.077032727,open,,,,,,,,,
 1336,VET,crypto,long,IN ZONE - WAIT,3,1793088924,27 Oct 08:15,0.006358,0.00627425,0.0065888,open,,,,,,,,,
+1337,XDC,crypto,long,BUY SIGNAL,3,1793095426,27 Oct 10:03,0.03463,0.032533571,0.03571875,open,,,,,,,,,
