@@ -1397,3 +1397,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1396,BTW,crypto,long,IN ZONE,3,1793131237,27 Oct 20:00,1.615238,1.5235358,1.9547485,open,,,,,,,,,
 1397,JBHT,stock,long,IN ZONE - WAIT,4,1793131237,27 Oct 20:00,231.95,228.33714,255.68,open,,,,,,,,,
 1398,CAKE,crypto,long,BUY SIGNAL,3,1793133046,27 Oct 20:30,2.074,2.0516131,2.1035,open,,,,,,,,,
+1399,NIGHT,crypto,long,IN ZONE,4,1793135145,27 Oct 21:05,0.0411,0.040026429,0.04331,open,,,,,,,,,
+1400,SPX,crypto,long,BUY SIGNAL,4,1793135145,27 Oct 21:05,0.3851,0.37200607,0.392075,open,,,,,,,,,
