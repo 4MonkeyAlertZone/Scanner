@@ -1341,3 +1341,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1340,U,crypto,long,CROSS C TP1,,1793103517,27 Oct 12:18,0.9995,0.99401786,1.0049821,open,,,,,,,,,168
 1341,U,crypto,long,CROSS C TP2,,1793103517,27 Oct 12:18,0.9995,0.99401786,1.0104643,open,,,,,,,,,168
 1342,U,crypto,long,CROSS C TP3,,1793103517,27 Oct 12:18,0.9995,0.99401786,1.0159464,open,,,,,,,,,168
+1343,BNB,crypto,long,IN ZONE,5,1793106466,27 Oct 13:07,741.55,737.42321,751.575,open,,,,,,,,,
+1344,NEAR,crypto,long,IN ZONE - WAIT,3,1793106466,27 Oct 13:07,4.5511,4.4614464,4.71645,open,,,,,,,,,
