@@ -1390,3 +1390,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1389,ORCL,stock,long,IN ZONE - WAIT,3,1793122233,27 Oct 17:30,131.6234,128.185,148.005,open,,,,,,,,,
 1390,PFG,stock,long,IN ZONE,3,1793122233,27 Oct 17:30,111.66,109.26232,115.77,open,,,,,,,,,
 1391,SYF,stock,long,IN ZONE,3,1793122233,27 Oct 17:30,75.650002,74.59094,77.300003,open,,,,,,,,,
+1392,PAYX,stock,long,IN ZONE,5,1793124363,27 Oct 18:06,110.27,106.28322,114.17667,open,,,,,,,,,
