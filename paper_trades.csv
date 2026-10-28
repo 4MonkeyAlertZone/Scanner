@@ -1426,3 +1426,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1425,MORPHO,crypto,long,RECLAIM C TP3,,1793161343,28 Oct 04:22,2.2221,1.996,2.9004,open,,,,,,,,,168
 1426,BTC,crypto,long,BUY SIGNAL,4,1793163911,28 Oct 05:05,80935.99,79784.501,81986.42,open,,,,,,,,,
 1427,NEXO,crypto,long,IN ZONE - WAIT,4,1793166137,28 Oct 05:42,0.7923,0.78229643,0.82062222,open,,,,,,,,,
+1428,AAVE,crypto,long,BUY SIGNAL,3,1793171793,28 Oct 07:16,134.93,131.98286,139.67667,open,,,,,,,,,
+1429,RENDER,crypto,long,IN ZONE - WAIT,3,1793171793,28 Oct 07:16,1.673,1.6127143,1.7675,open,,,,,,,,,
