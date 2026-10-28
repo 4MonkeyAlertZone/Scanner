@@ -1424,3 +1424,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1423,MORPHO,crypto,long,RECLAIM C TP1,,1793161343,28 Oct 04:22,2.2221,1.996,2.4482,open,,,,,,,,,168
 1424,MORPHO,crypto,long,RECLAIM C TP2,,1793161343,28 Oct 04:22,2.2221,1.996,2.6743,open,,,,,,,,,168
 1425,MORPHO,crypto,long,RECLAIM C TP3,,1793161343,28 Oct 04:22,2.2221,1.996,2.9004,open,,,,,,,,,168
+1426,BTC,crypto,long,BUY SIGNAL,4,1793163911,28 Oct 05:05,80935.99,79784.501,81986.42,open,,,,,,,,,
