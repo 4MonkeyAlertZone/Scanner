@@ -10,6 +10,11 @@ A3 = A2, BTC IN only                         5.51        -67    5.91    0.93    
 A4 = A3, best 10 by 90d strength             6.24        -67    7.06    0.88       2.9       38
 BASE equal-weight buy&hold all coins         1.76        -81    1.41    1.25      44.2      100
 BASE BTC buy&hold                            1.42        -77    0.73    1.94       1.0      100
+COST CHECK: same rows with ZERO trading cost (if these are far better, turnover/costs are what hurts; if not, the rule itself is the problem):
+A0 trend coins (no cost)                     0.14        -96    0.26    0.57      10.3       90
+A1 trend coins, BTC IN only (no cost)        4.84        -56    3.82    1.27       7.9       38
+A3 = A2, BTC IN only (no cost)               7.59        -64    6.78    1.12       4.8       38
+A0 turnover: average 31.7% of the portfolio traded per day = 11561% per year; cost drag about 12 points per year.
 
 PART B: ENTRY EVENTS (buy at the cross close, sell at first close below the 50-day; fixed 30d forward return alongside)
 reference: random coin-days with a 200-day average: avg 30d 2.6%, win 43%  (n=80787)
@@ -17,7 +22,7 @@ reference: random coin-days with a 200-day average: avg 30d 2.6%, win 43%  (n=80
 trigger                            events dates trade avg%  median%  win% days held 30d avg% 30d win% pctile by-date 30d% H1 30d% H2 30d%
 B1 cross only                         662   396        6.0     -3.8    17        12      5.2       39     95          4.5     7.5     3.6
 B2 cross + volume>=1.5x               248   179       14.7     -4.9    25        18     12.7       42    100          6.8    14.2    11.8
-B3 = B2 + beats BTC 90d               147   120        7.1     -6.0    24        17      4.8       37     78          4.9    10.2     2.4
+B3 = B2 + beats BTC 90d               147   120        7.1     -6.0    24        17      4.8       37     77          4.9    10.2     2.4
 B4 = B3 + BTC IN                       78    55       11.2     -5.3    29        19     12.5       37     98         14.8    28.0     8.1
 B5 = B1 + BTC IN                      437   211        8.4     -3.6    20        13      9.3       41    100          9.5    13.9     6.3
 
