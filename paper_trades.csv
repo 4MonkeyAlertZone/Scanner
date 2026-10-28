@@ -1412,3 +1412,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1411,SKY,crypto,long,IN ZONE - WAIT,4,1793154183,28 Oct 02:23,0.06623,0.065508571,0.068236667,open,,,,,,,,,
 1412,ZRO,crypto,long,IN ZONE - WAIT,3,1793154183,28 Oct 02:23,1.7246,1.6691536,1.80005,open,,,,,,,,,
 1413,MNT,crypto,long,IN ZONE,4,1793156650,28 Oct 03:04,0.528,0.52092143,0.54695,open,,,,,,,,,
+1414,LINK,crypto,long,IN ZONE,4,1793159014,28 Oct 03:43,11.804,11.688393,12.0312,open,,,,,,,,,
+1415,FET,crypto,long,IN ZONE,4,1793159014,28 Oct 03:43,0.1838,0.18142,0.18995,open,,,,,,,,,
+1416,LDO,crypto,long,BUY SIGNAL,4,1793159014,28 Oct 03:43,0.3771,0.36955714,0.39285,open,,,,,,,,,
