@@ -67,14 +67,14 @@ def main(data=None):
     L = [f"LAB 36: TOP-100 SWING SCANNER  data {fd(days[0])} to {fd(days[-1])}; {len(coins)} coins with 450+ days; portfolio tests start {fd(days[i0])} (20+ coins have a 200-day average), halves split at {fd(days[split])}",
          "SURVIVORSHIP: only coins that are in the top 100 today. Dead coins are missing, so baselines and also trend rows look better than a real-time scan would have.", ""]
     # ---------- Part A
-    def sim(sel):
+    def sim(sel, ct=CT):
         eq = 1.0; curve = [1.0]; prev = {}; h1 = h2 = 1.0; held = []; inm = 0
         for i in range(i0, n - 1):
             w = sel(i); cnt = len(w); r = 0.0; newprev = {}
             for s in w:
                 x = RET[s][i + 1]; r += (x or 0.0) / cnt; newprev[s] = 1.0 / cnt
             turn = sum(abs(newprev.get(s, 0) - prev.get(s, 0)) for s in set(newprev) | set(prev))
-            r -= CT * turn; eq *= 1 + r; curve.append(eq); prev = newprev; held.append(cnt); inm += cnt > 0
+            r -= ct * turn; eq *= 1 + r; curve.append(eq); prev = newprev; held.append(cnt); inm += cnt > 0
             if i + 1 < split: h1 *= 1 + r
             else: h2 *= 1 + r
         return eq, metrics(curve), h1, h2, S.mean(held), 100 * inm / len(held)
@@ -90,6 +90,15 @@ def main(data=None):
     L.append("PART A: PORTFOLIO"); L.append(f"{'row':<40}{'final x':>9}{'worst DD%':>11}{'H1 x':>8}{'H2 x':>8}{'avg held':>10}{'in-mkt%':>9}")
     for nm, f in A.items():
         e, d, h1, h2, ah, im = sim(f); L.append(f"{nm:<40}{e:>9.2f}{d:>11.0f}{h1:>8.2f}{h2:>8.2f}{ah:>10.1f}{im:>9.0f}")
+    L.append("COST CHECK: same rows with ZERO trading cost (if these are far better, turnover/costs are what hurts; if not, the rule itself is the problem):")
+    for nm in ("A0 trend coins", "A1 trend coins, BTC IN only", "A3 = A2, BTC IN only"):
+        e, d, h1, h2, ah, im = sim(A[nm], 0.0); L.append(f"{nm + ' (no cost)':<40}{e:>9.2f}{d:>11.0f}{h1:>8.2f}{h2:>8.2f}{ah:>10.1f}{im:>9.0f}")
+    to = []
+    prevw = {}
+    for i in range(i0, n - 1):
+        w = A["A0 trend coins"](i); c = len(w); nw = {s: 1.0 / c for s in w} if c else {}
+        to.append(sum(abs(nw.get(s, 0) - prevw.get(s, 0)) for s in set(nw) | set(prevw))); prevw = nw
+    L.append(f"A0 turnover: average {S.mean(to) * 100:.1f}% of the portfolio traded per day = {S.mean(to) * 365 * 100:.0f}% per year; cost drag about {S.mean(to) * 365 * CT * 100:.0f} points per year.")
     # ---------- Part B
     def events(cond):
         ev = []
