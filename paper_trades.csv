@@ -1396,7 +1396,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1395,SBUX,stock,long,BUY SIGNAL,5,1793129231,27 Oct 19:27,102.8195,99.921426,108.8275,open,,,,,,,,,
 1396,BTW,crypto,long,IN ZONE,3,1793131237,27 Oct 20:00,1.615238,1.5235358,1.9547485,open,,,,,,,,,
 1397,JBHT,stock,long,IN ZONE - WAIT,4,1793131237,27 Oct 20:00,231.95,228.33714,255.68,open,,,,,,,,,
-1398,CAKE,crypto,long,BUY SIGNAL,3,1793133046,27 Oct 20:30,2.074,2.0516131,2.1035,open,,,,,,,,,
+1398,CAKE,crypto,long,BUY SIGNAL,3,1793133046,27 Oct 20:30,2.074,2.0516131,2.1035,closed,1793182745,28 Oct 10:19,2.1035,target,1.22,1.22,13.8,1.13,
 1399,NIGHT,crypto,long,IN ZONE,4,1793135145,27 Oct 21:05,0.0411,0.040026429,0.04331,open,,,,,,,,,
 1400,SPX,crypto,long,BUY SIGNAL,4,1793135145,27 Oct 21:05,0.3851,0.37200607,0.392075,closed,1793154183,28 Oct 02:23,0.392075,target,1.61,1.61,5.3,0.47,
 1401,ETH,crypto,long,IN ZONE - WAIT,5,1793137027,27 Oct 21:37,2359.01,2341.8643,2405.6825,open,,,,,,,,,
@@ -1440,3 +1440,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1439,HTX,crypto,long,IN ZONE - WAIT,3,1793175007,28 Oct 08:10,1.627e-06,1.60725e-06,1.6331667e-06,open,,,,,,,,,
 1440,ALGO,crypto,long,IN ZONE - WAIT,3,1793175007,28 Oct 08:10,0.1034,0.10111821,0.1062725,open,,,,,,,,,
 1441,CC,crypto,long,IN ZONE,3,1793179922,28 Oct 09:32,0.10245,0.10020714,0.105548,open,,,,,,,,,
+1442,DOGE,crypto,long,IN ZONE,5,1793182745,28 Oct 10:19,0.08038,0.079609286,0.08239,open,,,,,,,,,
