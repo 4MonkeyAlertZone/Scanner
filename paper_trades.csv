@@ -1439,3 +1439,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1438,SHIB,crypto,long,RECLAIM C TP3,,1793175007,28 Oct 08:10,4.967e-06,4.752476e-06,5.610572e-06,open,,,,,,,,,168
 1439,HTX,crypto,long,IN ZONE - WAIT,3,1793175007,28 Oct 08:10,1.627e-06,1.60725e-06,1.6331667e-06,open,,,,,,,,,
 1440,ALGO,crypto,long,IN ZONE - WAIT,3,1793175007,28 Oct 08:10,0.1034,0.10111821,0.1062725,open,,,,,,,,,
+1441,CC,crypto,long,IN ZONE,3,1793179922,28 Oct 09:32,0.10245,0.10020714,0.105548,open,,,,,,,,,
