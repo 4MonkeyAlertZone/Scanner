@@ -1520,3 +1520,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1519,GRASS,crypto,long,IN ZONE,4,1793219871,28 Oct 20:37,0.6889,0.66656786,0.738175,open,,,,,,,,,
 1520,PI,crypto,long,IN ZONE,3,1793224374,28 Oct 21:52,0.07692,0.076493929,0.078005,open,,,,,,,,,
 1521,ETHFI,crypto,long,BUY SIGNAL,4,1793224374,28 Oct 21:52,0.6818,0.64268929,0.72265714,open,,,,,,,,,
+1522,KAS,crypto,long,IN ZONE,4,1793228320,28 Oct 22:58,0.037462,0.036958,0.03941375,open,,,,,,,,,
