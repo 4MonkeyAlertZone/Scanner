@@ -1534,3 +1534,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1533,PEPE,crypto,long,CROSS C TP3,,1793248035,29 Oct 04:27,5.021e-06,4.5679643e-06,6.3801071e-06,open,,,,,,,,,168
 1534,CRV,crypto,long,IN ZONE - WAIT,4,1793250659,29 Oct 05:10,0.3277,0.32283214,0.3368,open,,,,,,,,,
 1535,PENGU,crypto,long,IN ZONE,4,1793250659,29 Oct 05:10,0.007792,0.0076759774,0.00806025,open,,,,,,,,,
+1536,BDX,crypto,long,IN ZONE - WAIT,4,1793255057,29 Oct 06:24,0.07243,0.070782857,0.0753175,open,,,,,,,,,
