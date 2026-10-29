@@ -1538,3 +1538,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1537,STX,crypto,long,IN ZONE - WAIT,3,1793258907,29 Oct 07:28,0.279,0.268425,0.2919,open,,,,,,,,,
 1538,STABLE,crypto,long,IN ZONE - WAIT,4,1793265031,29 Oct 09:10,0.027496,0.027090571,0.028107333,open,,,,,,,,,
 1539,BSV,crypto,long,IN ZONE,4,1793265031,29 Oct 09:10,17.6,17.06,18.0425,open,,,,,,,,,
+1540,PEPE,crypto,long,IN ZONE - WAIT,3,1793269851,29 Oct 10:30,4.841e-06,4.6358107e-06,,open,,,,,,,,,
