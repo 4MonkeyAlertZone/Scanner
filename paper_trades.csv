@@ -1525,3 +1525,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1524,KCS,crypto,long,IN ZONE,5,1793231887,28 Oct 23:58,7.5721,7.3837071,7.7017,open,,,,,,,,,
 1525,TAO,crypto,long,BUY SIGNAL,5,1793237513,29 Oct 01:31,254.56,250.75964,262.145,closed,1793240418,29 Oct 02:20,248.21,stop,-2.69,-2.69,0.8,-1.80,
 1526,OKB,crypto,long,IN ZONE,3,1793240418,29 Oct 02:20,109.892,109.04839,111.886,open,,,,,,,,,
+1527,SPX,crypto,long,BUY SIGNAL,4,1793243115,29 Oct 03:05,0.3956,0.38191429,0.41855,open,,,,,,,,,
+1528,DRV,crypto,long,IN ZONE,3,1793243115,29 Oct 03:05,0.369,0.36221071,0.3805,open,,,,,,,,,
