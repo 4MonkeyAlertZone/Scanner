@@ -1691,3 +1691,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1690,ENA,crypto,long,BUY SIGNAL,3,1793324393,30 Oct 01:39,0.17825,0.168635,0.19446111,open,,,,,,,,,
 1691,PI,crypto,long,BUY SIGNAL,4,1793324393,30 Oct 01:39,0.07697,0.076060714,0.0804825,open,,,,,,,,,
 1692,XDC,crypto,long,IN ZONE - WAIT,3,1793324393,30 Oct 01:39,0.03197,0.031401071,0.033126667,open,,,,,,,,,
+1693,ZEC,crypto,long,IN ZONE,5,1793326995,30 Oct 02:23,1254.97,1220.8168,1346.4933,open,,,,,,,,,
+1694,KAS,crypto,long,BUY SIGNAL,5,1793326995,30 Oct 02:23,0.034019,0.03330775,0.035194,open,,,,,,,,,
