@@ -1692,7 +1692,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1691,PI,crypto,long,BUY SIGNAL,4,1793324393,30 Oct 01:39,0.07697,0.076060714,0.0804825,open,,,,,,,,,
 1692,XDC,crypto,long,IN ZONE - WAIT,3,1793324393,30 Oct 01:39,0.03197,0.031401071,0.033126667,closed,1793329697,30 Oct 03:08,0.03133,stop,-2.20,-2.20,1.5,-1.24,
 1693,ZEC,crypto,long,IN ZONE,5,1793326995,30 Oct 02:23,1254.97,1220.8168,1346.4933,open,,,,,,,,,
-1694,KAS,crypto,long,BUY SIGNAL,5,1793326995,30 Oct 02:23,0.034019,0.03330775,0.035194,open,,,,,,,,,
+1694,KAS,crypto,long,BUY SIGNAL,5,1793326995,30 Oct 02:23,0.034019,0.03330775,0.035194,closed,1793356536,30 Oct 10:35,0.03328,stop,-2.37,-2.37,8.2,-1.13,
 1695,UNI,crypto,long,IN ZONE - WAIT,4,1793332207,30 Oct 03:50,6.75,6.5780357,7.12325,open,,,,,,,,,
 1696,ETC,crypto,long,BUY SIGNAL,3,1793332207,30 Oct 03:50,7.15,6.979,7.4190909,open,,,,,,,,,
 1697,LIT,crypto,long,IN ZONE - WAIT,4,1793332207,30 Oct 03:50,2.9375,2.7367036,3.2291167,open,,,,,,,,,
@@ -1706,3 +1706,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1705,RENDER,crypto,long,IN ZONE - WAIT,4,1793337210,30 Oct 05:13,1.58,1.5383214,1.6494,open,,,,,,,,,
 1706,ARB,crypto,long,IN ZONE - WAIT,4,1793345427,30 Oct 07:30,0.16404,0.15668321,0.17337,open,,,,,,,,,
 1707,APT,crypto,long,BUY SIGNAL,3,1793351547,30 Oct 09:12,0.6155,0.56681071,0.67256,open,,,,,,,,,
+1708,HBAR,crypto,long,IN ZONE,4,1793356536,30 Oct 10:35,0.07226,0.0708625,0.076119,open,,,,,,,,,
