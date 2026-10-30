@@ -1704,3 +1704,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1703,TAO,crypto,long,IN ZONE - WAIT,3,1793337210,30 Oct 05:13,239.5,235.22679,253.43714,open,,,,,,,,,
 1704,ALGO,crypto,long,BUY SIGNAL,3,1793337210,30 Oct 05:13,0.09537,0.089425357,0.101992,open,,,,,,,,,
 1705,RENDER,crypto,long,IN ZONE - WAIT,4,1793337210,30 Oct 05:13,1.58,1.5383214,1.6494,open,,,,,,,,,
+1706,ARB,crypto,long,IN ZONE - WAIT,4,1793345427,30 Oct 07:30,0.16404,0.15668321,0.17337,open,,,,,,,,,
