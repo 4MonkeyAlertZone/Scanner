@@ -1693,3 +1693,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1692,XDC,crypto,long,IN ZONE - WAIT,3,1793324393,30 Oct 01:39,0.03197,0.031401071,0.033126667,closed,1793329697,30 Oct 03:08,0.03133,stop,-2.20,-2.20,1.5,-1.24,
 1693,ZEC,crypto,long,IN ZONE,5,1793326995,30 Oct 02:23,1254.97,1220.8168,1346.4933,open,,,,,,,,,
 1694,KAS,crypto,long,BUY SIGNAL,5,1793326995,30 Oct 02:23,0.034019,0.03330775,0.035194,open,,,,,,,,,
+1695,UNI,crypto,long,IN ZONE - WAIT,4,1793332207,30 Oct 03:50,6.75,6.5780357,7.12325,open,,,,,,,,,
+1696,ETC,crypto,long,BUY SIGNAL,3,1793332207,30 Oct 03:50,7.15,6.979,7.4190909,open,,,,,,,,,
+1697,LIT,crypto,long,IN ZONE - WAIT,4,1793332207,30 Oct 03:50,2.9375,2.7367036,3.2291167,open,,,,,,,,,
+1698,NIGHT,crypto,long,IN ZONE - WAIT,3,1793332207,30 Oct 03:50,0.03792,0.036950714,0.041094,open,,,,,,,,,
