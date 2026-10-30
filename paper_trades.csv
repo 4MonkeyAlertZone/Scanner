@@ -1688,3 +1688,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1687,ICP,crypto,long,BUY SIGNAL,4,1793318429,30 Oct 00:00,2.413,2.3603214,2.4925,closed,1793320873,30 Oct 00:41,2.353,stop,-2.69,-2.69,0.7,-1.23,
 1688,DOT,crypto,long,IN ZONE - WAIT,3,1793320873,30 Oct 00:41,0.8886,0.85335714,0.9868,open,,,,,,,,,
 1689,WLD,crypto,long,IN ZONE - WAIT,3,1793320873,30 Oct 00:41,0.3701,0.35833929,0.394325,open,,,,,,,,,
+1690,ENA,crypto,long,BUY SIGNAL,3,1793324393,30 Oct 01:39,0.17825,0.168635,0.19446111,open,,,,,,,,,
+1691,PI,crypto,long,BUY SIGNAL,4,1793324393,30 Oct 01:39,0.07697,0.076060714,0.0804825,open,,,,,,,,,
+1692,XDC,crypto,long,IN ZONE - WAIT,3,1793324393,30 Oct 01:39,0.03197,0.031401071,0.033126667,open,,,,,,,,,
