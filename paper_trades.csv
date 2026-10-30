@@ -1707,3 +1707,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1706,ARB,crypto,long,IN ZONE - WAIT,4,1793345427,30 Oct 07:30,0.16404,0.15668321,0.17337,open,,,,,,,,,
 1707,APT,crypto,long,BUY SIGNAL,3,1793351547,30 Oct 09:12,0.6155,0.56681071,0.67256,open,,,,,,,,,
 1708,HBAR,crypto,long,IN ZONE,4,1793356536,30 Oct 10:35,0.07226,0.0708625,0.076119,open,,,,,,,,,
+1709,SKY,crypto,long,RECLAIM C TP1,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.07492484,open,,,,,,,,,168
+1710,SKY,crypto,long,RECLAIM C TP2,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.08123968,open,,,,,,,,,168
+1711,SKY,crypto,long,RECLAIM C TP3,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.08755452,open,,,,,,,,,168
