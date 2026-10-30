@@ -1,11 +1,12 @@
-SWING SCANNER  data to 2026-10-28  BTC regime OUT (live regime)  scanned 70 coins (29 without enough history)
+SWING SCANNER  data to 2026-10-29  BTC regime OUT (live regime)  scanned 70 coins (29 without enough history)
 
-Signals today: 0
+Signals today: 1 (HYPE)  SILENT, BTC OUT
 
-Open paper trades (0):
+Open paper trades (1):
+  HYPE     since 2026-10-29  entry 89.05  now +0.0%  silent (BTC OUT)
 
 ALERTED (BTC IN): 0 signals, 0 closed
 
-SILENT (BTC OUT): 0 signals, 0 closed
+SILENT (BTC OUT): 1 signals, 0 closed
 
 Lab 36 reference: avg trade about +11%, win about 25-30%, 30-day avg +12% (BTC IN). Early live numbers mean nothing; judge after 30+ closed trades.

@@ -1,1 +1,1 @@
-{"trades": [], "last": {}}
+{"trades": [{"coin": "HYPE", "day": 20755, "entry": 89.05, "m50": 84.925, "m200": 66.20125, "volx": 6.5899110136220145, "atr": 4.396428571428572, "alerted": false, "exit": null, "status": "open"}], "last": {"HYPE": 20755}}
