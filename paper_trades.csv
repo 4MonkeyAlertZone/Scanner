@@ -1782,3 +1782,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1781,AOS,stock,long,BUY SIGNAL,4,1793390049,30 Oct 19:54,63.125,61.775716,64.798748,open,,,,,,,,,
 1782,DTE,stock,long,BUY SIGNAL,3,1793390049,30 Oct 19:54,135.25,131.0439,136.70166,open,,,,,,,,,
 1783,YUM,stock,long,IN ZONE,5,1793390049,30 Oct 19:54,155.175,152.89139,158.06667,open,,,,,,,,,
+1784,AAVE,crypto,long,BUY SIGNAL,4,1793395760,30 Oct 21:29,128.23,124.03393,134.47429,open,,,,,,,,,
+1785,ETHFI,crypto,long,IN ZONE - WAIT,4,1793395760,30 Oct 21:29,0.6011,0.58685,0.6418,open,,,,,,,,,
+1786,STABLE,crypto,long,BUY SIGNAL,3,1793395760,30 Oct 21:29,0.026272,0.02596375,0.0275861,open,,,,,,,,,
+1787,CRV,crypto,long,IN ZONE - WAIT,3,1793395760,30 Oct 21:29,0.2865,0.27856119,0.30073333,open,,,,,,,,,
