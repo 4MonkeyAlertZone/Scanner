@@ -1697,3 +1697,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1696,ETC,crypto,long,BUY SIGNAL,3,1793332207,30 Oct 03:50,7.15,6.979,7.4190909,open,,,,,,,,,
 1697,LIT,crypto,long,IN ZONE - WAIT,4,1793332207,30 Oct 03:50,2.9375,2.7367036,3.2291167,open,,,,,,,,,
 1698,NIGHT,crypto,long,IN ZONE - WAIT,3,1793332207,30 Oct 03:50,0.03792,0.036950714,0.041094,open,,,,,,,,,
+1699,SUI,crypto,long,IN ZONE - WAIT,3,1793334541,30 Oct 04:29,0.8886,0.87215357,0.94206667,open,,,,,,,,,
+1700,INJ,crypto,long,BUY SIGNAL,3,1793334541,30 Oct 04:29,7.347,7.1191786,7.8764,open,,,,,,,,,
