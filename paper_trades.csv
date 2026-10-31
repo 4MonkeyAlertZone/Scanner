@@ -1766,7 +1766,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1765,JST,crypto,long,BUY SIGNAL,3,1793382896,30 Oct 17:54,0.13654,0.13517964,0.138745,open,,,,,,,,,
 1766,GS,stock,long,IN ZONE - WAIT,3,1793382896,30 Oct 17:54,883.46002,845.47682,921.2625,open,,,,,,,,,
 1767,KKR,stock,long,BUY SIGNAL,3,1793382896,30 Oct 17:54,94.43,91.689835,97.863335,open,,,,,,,,,
-1768,FET,crypto,long,BUY SIGNAL,4,1793384782,30 Oct 18:26,0.1653,0.16045357,0.1777,open,,,,,,,,,
+1768,FET,crypto,long,BUY SIGNAL,4,1793384782,30 Oct 18:26,0.1653,0.16045357,0.1777,closed,1793480374,31 Oct 20:59,0.1603,stop,-3.22,-3.22,26.6,-1.10,
 1769,AKAM,stock,long,IN ZONE - WAIT,3,1793384782,30 Oct 18:26,92.099998,88.25411,96.746668,open,,,,,,,,,
 1770,BAX,stock,long,IN ZONE - WAIT,3,1793384782,30 Oct 18:26,22.605,21.867732,23.516,open,,,,,,,,,
 1771,HONA,stock,long,IN ZONE - WAIT,4,1793384782,30 Oct 18:26,151.89,144.78972,170.31001,open,,,,,,,,,
@@ -1816,3 +1816,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1815,FF,crypto,long,BUY SIGNAL,4,1793465749,31 Oct 16:55,0.09168,0.0888175,0.095623333,open,,,,,,,,,
 1816,TAO,crypto,long,IN ZONE,3,1793470666,31 Oct 18:17,239.34,235.53036,253.43714,open,,,,,,,,,
 1817,BTT,crypto,long,IN ZONE,4,1793473185,31 Oct 18:59,3.599e-07,3.5715357e-07,3.669e-07,open,,,,,,,,,
+1818,CC,crypto,long,BUY SIGNAL,3,1793480374,31 Oct 20:59,0.09739,0.095350357,0.102202,open,,,,,,,,,
