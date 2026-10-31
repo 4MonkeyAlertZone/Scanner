@@ -1810,3 +1810,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1809,BTC,crypto,long,IN ZONE - WAIT,3,1793447705,31 Oct 11:55,77583.17,75509.04,79512.911,open,,,,,,,,,
 1810,BSV,crypto,long,IN ZONE - WAIT,4,1793449437,31 Oct 12:23,17.07,16.801071,17.571667,open,,,,,,,,,
 1811,RENDER,crypto,long,IN ZONE - WAIT,3,1793460079,31 Oct 15:21,1.577,1.5413929,1.642,open,,,,,,,,,
+1812,INJ,crypto,long,IN ZONE - WAIT,3,1793462069,31 Oct 15:54,7.439,7.2203929,7.8764,open,,,,,,,,,
+1813,ZRO,crypto,long,IN ZONE,3,1793462069,31 Oct 15:54,1.8007,1.7307575,1.8921,open,,,,,,,,,
