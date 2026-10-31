@@ -1,9 +1,9 @@
-SWING SCANNER  data to 2026-10-29  BTC regime OUT (live regime)  scanned 70 coins (29 without enough history)
+SWING SCANNER  data to 2026-10-30  BTC regime OUT (live regime)  scanned 70 coins (29 without enough history)
 
-Signals today: 1 (HYPE)  SILENT, BTC OUT
+Signals today: 0
 
 Open paper trades (1):
-  HYPE     since 2026-10-29  entry 89.05  now +0.0%  silent (BTC OUT)
+  HYPE     since 2026-10-29  entry 89.05  now +1.3%  silent (BTC OUT)
 
 ALERTED (BTC IN): 0 signals, 0 closed
 
