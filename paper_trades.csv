@@ -1710,7 +1710,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1709,SKY,crypto,long,RECLAIM C TP1,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.07492484,open,,,,,,,,,168
 1710,SKY,crypto,long,RECLAIM C TP2,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.08123968,open,,,,,,,,,168
 1711,SKY,crypto,long,RECLAIM C TP3,,1793363089,30 Oct 12:24,0.06861,0.06229516,0.08755452,open,,,,,,,,,168
-1712,HYPE,crypto,long,BUY SIGNAL,3,1793366644,30 Oct 13:24,90.92,87.846429,94.9875,open,,,,,,,,,
+1712,HYPE,crypto,long,BUY SIGNAL,3,1793366644,30 Oct 13:24,90.92,87.846429,94.9875,closed,1793436215,31 Oct 08:43,86.42,stop,-5.15,-5.15,19.3,-1.52,
 1713,AES,stock,long,IN ZONE,5,1793369966,30 Oct 14:19,14.865,14.670714,15.006667,open,,,,,,,,,
 1714,AMCR,stock,long,BUY SIGNAL,3,1793369966,30 Oct 14:19,47.049999,45.514643,48.225,open,,,,,,,,,
 1715,T,stock,long,IN ZONE - WAIT,3,1793369966,30 Oct 14:19,21.475,20.993213,22.48,open,,,,,,,,,
@@ -1803,3 +1803,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1802,TIA,crypto,long,BUY SIGNAL,3,1793425880,31 Oct 05:51,0.4614,0.43683929,0.49208889,open,,,,,,,,,
 1803,ONDO,crypto,long,IN ZONE,4,1793431295,31 Oct 07:21,0.41976,0.40231357,0.441515,open,,,,,,,,,
 1804,SPX,crypto,long,IN ZONE - WAIT,4,1793431295,31 Oct 07:21,0.3537,0.3349025,0.37445,open,,,,,,,,,
+1805,BNB,crypto,long,IN ZONE - WAIT,4,1793436215,31 Oct 08:43,699.1,686.44607,722.12,open,,,,,,,,,
+1806,BCH,crypto,long,IN ZONE - WAIT,4,1793436215,31 Oct 08:43,287.5,277.88214,302.16,open,,,,,,,,,
+1807,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1793436215,31 Oct 08:43,0.5783,0.55909643,0.60786,open,,,,,,,,,
