@@ -1,0 +1,20 @@
+LAB 38: PORTFOLIO SIMULATION OF THE LIVE SWING RULES  data 2019-09-23 to 2026-10-30; 61 coins; account starts 2021-03-08, halves split at 2024-01-03
+Live-rule signals while BTC IN: 152 over 801 BTC-IN days (0.190 per day). Max 5 open, 1% risk to the 50-day, 25% cap, 0.1% cost per side.
+
+row                                            final x worst DD%   H1 x   H2 x trades  win%   avg%   med%  days in-pos% top3 share%
+S1 live rules, enter at signal close              1.81       -51   1.52   1.19    111    23    7.7   -4.9    17      33         137
+S2 enter at NEXT day's close                      2.53       -52   2.37   1.07     91    23    9.8   -4.7    19      32         126
+S3 = S1 + exit when BTC turns OUT                 1.99       -49   1.66   1.20    114    26    7.9   -3.9    14      25         125
+S4 = S1, fixed 20% per position                   3.38       -56   1.82   1.86    111    23    7.7   -4.9    17      33          85
+S5 PLACEBO random uptrend coins, 30 seeds         1.56  median; 10th-90th pct 0.91 to 2.63; H2 median 1.13 (0.82 to 1.83)
+
+BENCHMARKS (same dates, same cost per unit traded)
+BTC held only while BTC IN                        3.32       -43   1.76   1.88                                       39            
+ETH held only while BTC IN                        4.59       -40   2.23   2.06                                       39            
+BTC buy&hold                                      1.52       -77   0.88   1.72                                      100            
+
+Read:
+- S1 vs S5: if S1 is not clearly above the placebo range, the volume cross adds nothing beyond 'coin in an uptrend while BTC is IN'.
+- S1 vs the BTC/ETH benchmarks in BOTH halves, and in drawdown: the scanner is only worth running if it beats simply holding BTC or ETH while BTC is IN.
+- S2 shows how much a one-day delay costs. top3 share close to 100 means a few trades carry the whole result.
+SURVIVORSHIP and 37 labs of selection both flatter these numbers. Treat as an upper bound. Not financial advice.
