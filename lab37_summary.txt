@@ -1,0 +1,22 @@
+LAB 37: CONTROLS AND CONFIDENCE  data 2019-09-23 to 2026-10-30; 61 coins; tests start 2021-03-08, halves split at 2024-01-03
+SURVIVORSHIP: universe is today's top 100 (dead coins missing). SELECTION: 36 earlier labs used this same data.
+
+PART A: IS THE VALUE IN THE BTC GATE OR IN THE COIN RULES?
+row                                       final x  worst DD%    H1 x    H2 x  avg held  in-mkt%
+A1 trend coins, BTC IN only                  4.10        -60    4.10    1.00       8.0       39
+C1 BTC only, BTC IN only                     3.23        -43    1.71    1.88       0.4       39
+C2 ETH only, BTC IN only                     4.32        -40    2.10    2.06       0.4       39
+C3 ALL coins equal wt, BTC IN only           7.13        -61    6.29    1.13      17.5       39
+C4 coins above own 200d, BTC IN only         5.19        -59    4.49    1.15       9.8       39
+BASE equal-weight buy&hold all coins         2.04        -81    1.69    1.20      44.3      100
+BASE BTC buy&hold                            1.48        -77    0.86    1.72       1.0      100
+Read: if A1 does not beat C1 and C3 in BOTH H1 and H2, the coin-level 200/50 rule adds nothing; the BTC gate is doing the work.
+
+PART B: LIVE TRIGGER WITH BOOTSTRAP (resampled by distinct date, 5000 draws). Random coin-day 30d average = 2.9% (n=82183)
+trigger                            events dates 30d avg%  median%  win%  95% low 95% high p(<=rand) no top3 dates  H1 avg%  H2 avg%
+B2  cross + volume>=1.5x              248   176     13.8     -5.4    42      3.4     25.3     0.018           7.6     16.1     12.5
+B2g B2 + BTC IN (LIVE scanner)        162    98     22.0     -3.8    45      7.1     38.5     0.006          12.8     26.1     20.1
+B4  B2 + beats BTC 90d + BTC IN        77    52     13.4     -9.9    38     -2.4     33.5     0.109           3.4     40.2      7.9
+
+Read: 'no top3 dates' removes the 3 best dates; if the average collapses, a few dates carry the result. 'p(<=rand)' = share of bootstrap averages at or below the random-day average (small = unlikely to be chance), but 36 earlier labs mean this is optimistic.
+A trigger is worth trusting only if: the 95% low is above the random average, H1 and H2 both beat random, and the average survives removing the top 3 dates. Not financial advice.
