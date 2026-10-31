@@ -1815,3 +1815,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1814,WLD,crypto,long,BUY SIGNAL,3,1793463663,31 Oct 16:21,0.4017,0.39086786,0.42251667,open,,,,,,,,,
 1815,FF,crypto,long,BUY SIGNAL,4,1793465749,31 Oct 16:55,0.09168,0.0888175,0.095623333,open,,,,,,,,,
 1816,TAO,crypto,long,IN ZONE,3,1793470666,31 Oct 18:17,239.34,235.53036,253.43714,open,,,,,,,,,
+1817,BTT,crypto,long,IN ZONE,4,1793473185,31 Oct 18:59,3.599e-07,3.5715357e-07,3.669e-07,open,,,,,,,,,
