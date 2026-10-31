@@ -1806,3 +1806,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1805,BNB,crypto,long,IN ZONE - WAIT,4,1793436215,31 Oct 08:43,699.1,686.44607,722.12,open,,,,,,,,,
 1806,BCH,crypto,long,IN ZONE - WAIT,4,1793436215,31 Oct 08:43,287.5,277.88214,302.16,open,,,,,,,,,
 1807,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1793436215,31 Oct 08:43,0.5783,0.55909643,0.60786,open,,,,,,,,,
+1808,XDC,crypto,long,IN ZONE - WAIT,3,1793444216,31 Oct 10:56,0.03107,0.030368929,0.031986,open,,,,,,,,,
