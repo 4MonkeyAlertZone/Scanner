@@ -1800,3 +1800,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1799,TRX,crypto,long,BUY SIGNAL,5,1793423724,31 Oct 05:15,0.324,0.31632143,0.34246667,open,,,,,,,,,
 1800,PEPE,crypto,long,IN ZONE - WAIT,4,1793423724,31 Oct 05:15,4.835e-06,4.2852857e-06,,open,,,,,,,,,
 1801,UB,crypto,long,IN ZONE - WAIT,4,1793423724,31 Oct 05:15,0.11356,0.11118929,0.11941714,open,,,,,,,,,
+1802,TIA,crypto,long,BUY SIGNAL,3,1793425880,31 Oct 05:51,0.4614,0.43683929,0.49208889,open,,,,,,,,,
