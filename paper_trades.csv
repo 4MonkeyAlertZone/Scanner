@@ -1793,3 +1793,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1792,XMR,crypto,long,CROSS C TP3,,1793405597,31 Oct 00:13,587.75,536.20714,742.37857,open,,,,,,,,,168
 1793,XRP,crypto,long,BUY SIGNAL,4,1793405597,31 Oct 00:13,1.2586,1.2361677,1.286,open,,,,,,,,,
 1794,MORPHO,crypto,long,BUY SIGNAL,3,1793405597,31 Oct 00:13,2.0753,2.0049736,2.1416333,open,,,,,,,,,
+1795,POL,crypto,long,BUY SIGNAL,5,1793408702,31 Oct 01:05,0.09462,0.093126429,0.097782,open,,,,,,,,,
