@@ -1,10 +1,12 @@
-ATR TREND PAPER TEST  data to 2026-10-29 (completed daily candles)   started 2026-10-17   universe 73 coins + BTC
+ATR TREND PAPER TEST  data to 2026-10-30 (completed daily candles)   started 2026-10-17   universe 73 coins + BTC
 BTC ABOVE its 200-day average -> new buys allowed. Rule: buy 55-day breakout; sell at 3 x daily-range trailing stop or when BTC falls below its 200-day average.
-Paper account (1000 start, 20 slots, 0.1% per side): 1,000   (+0.0%)   |   BTC held over the same days: 957 (-4.3%)
+Paper account (1000 start, 20 slots, 0.1% per side): 993   (-0.7%)   |   BTC held over the same days: 949 (-5.1%)
 
-OPEN POSITIONS (1):
-  TRX      bought 2026-10-29 at 0.4006   now 0.4006 (+0.0%)   trailing stop about 0.372325
+OPEN POSITIONS (0):
+  none
 
-CLOSED TRADES (0), after 0.2% round-trip cost:
+CLOSED TRADES (1), after 0.2% round-trip cost:
+  win rate 0%   average -14.9%   best -14.9%   worst -14.9%
+  TRX      2026-10-29 -> 2026-10-30  -14.9%  (1d, trailing stop)
 
 Prices are the signal day's close; a real order would be placed the next morning. Judge the strategy only after many trades (the lab 15 test suggested a low win rate with a few large winners, so long quiet or losing stretches are normal).

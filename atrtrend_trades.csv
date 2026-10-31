@@ -1,0 +1,2 @@
+coin,entry_date,entry_px,exit_date,exit_px,ret_pct,reason,days
+TRX,2026-10-29,0.4006,2026-10-30,0.3417,-14.9,trailing stop,1
