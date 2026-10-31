@@ -1,22 +1,22 @@
-BTC-GATED BASKET PAPER TEST  data to 2026-10-29 (completed daily candles)   started 2026-10-18   universe 72 coins
+BTC-GATED BASKET PAPER TEST  data to 2026-10-30 (completed daily candles)   started 2026-10-18   universe 72 coins
 BTC ABOVE its 200-day average -> basket held. Rule: top-10 coins by market size order, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
-Paper account (1000 start, 0.1% per side): 947 (-5.3%)   |   same basket WITHOUT the BTC switch: 947 (-5.3%)   |   BTC held: 949 (-5.1%)
+Paper account (1000 start, 0.1% per side): 970 (-3.0%)   |   same basket WITHOUT the BTC switch: 970 (-3.0%)   |   BTC held: 942 (-5.8%)
 
 HOLDING (10 coins, last refreshed 2026-10-18):
-  HYPE     11.9% of account   price 89.05
-  ZEC      11.4% of account   price 1225.85
-  BNB      10.2% of account   price 698.31
-  DOGE     10.0% of account   price 0.07536
-  XRP      10.0% of account   price 1.2379
-  ETH       9.9% of account   price 2253.39
-  SOL       9.7% of account   price 95.66
-  LINK      9.3% of account   price 10.636
-  ADA       9.1% of account   price 0.19089
-  NEAR      8.5% of account   price 4.052
+  HYPE     11.8% of account   price 90.18
+  ZEC      11.6% of account   price 1270.56
+  BNB      10.0% of account   price 704.4
+  XRP       9.9% of account   price 1.2565
+  DOGE      9.9% of account   price 0.07599
+  LINK      9.8% of account   price 11.467
+  ETH       9.6% of account   price 2245.19
+  SOL       9.5% of account   price 96.39
+  ADA       9.1% of account   price 0.19542
+  NEAR      8.8% of account   price 4.298
 
-OI WARNING VARIANTS (OI data to 2026-10-28; cash 7 days after a warning, on top of the BTC switch):
-  A: OI up 15%+ in 30 days       account 947 (-5.3%)   holding 10 coins   warning today: no   warning days since start: 0
-  B: OI at a new 180-day high    account 947 (-5.3%)   holding 10 coins   warning today: no   warning days since start: 0
+OI WARNING VARIANTS (OI data to 2026-10-29; cash 7 days after a warning, on top of the BTC switch):
+  A: OI up 15%+ in 30 days       account 970 (-3.0%)   holding 10 coins   warning today: no   warning days since start: 0
+  B: OI at a new 180-day high    account 970 (-3.0%)   holding 10 coins   warning today: no   warning days since start: 0
 
 ACTIONS (1):
   2026-10-18  ENTER         ETH BNB XRP SOL ZEC HYPE DOGE LINK ADA NEAR   account 999.0
