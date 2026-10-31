@@ -1808,3 +1808,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1807,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1793436215,31 Oct 08:43,0.5783,0.55909643,0.60786,open,,,,,,,,,
 1808,XDC,crypto,long,IN ZONE - WAIT,3,1793444216,31 Oct 10:56,0.03107,0.030368929,0.031986,open,,,,,,,,,
 1809,BTC,crypto,long,IN ZONE - WAIT,3,1793447705,31 Oct 11:55,77583.17,75509.04,79512.911,open,,,,,,,,,
+1810,BSV,crypto,long,IN ZONE - WAIT,4,1793449437,31 Oct 12:23,17.07,16.801071,17.571667,open,,,,,,,,,
