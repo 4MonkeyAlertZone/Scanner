@@ -1797,3 +1797,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1796,LINK,crypto,long,IN ZONE - WAIT,5,1793411750,31 Oct 01:55,11.633,11.268964,12.1066,open,,,,,,,,,
 1797,SUN,crypto,long,IN ZONE - WAIT,3,1793411750,31 Oct 01:55,0.016025,0.015838071,0.016613706,open,,,,,,,,,
 1798,ICP,crypto,long,BUY SIGNAL,4,1793413992,31 Oct 02:33,2.516,2.4468214,2.6826667,open,,,,,,,,,
+1799,TRX,crypto,long,BUY SIGNAL,5,1793423724,31 Oct 05:15,0.324,0.31632143,0.34246667,open,,,,,,,,,
+1800,PEPE,crypto,long,IN ZONE - WAIT,4,1793423724,31 Oct 05:15,4.835e-06,4.2852857e-06,,open,,,,,,,,,
+1801,UB,crypto,long,IN ZONE - WAIT,4,1793423724,31 Oct 05:15,0.11356,0.11118929,0.11941714,open,,,,,,,,,
