@@ -1,0 +1,62 @@
+LAB 39: BTC REGIME GATE ROBUSTNESS  data 2019-09-23 to 2026-10-30 (2595 days); all rows start 2020-07-20 so every setting has its average; cost 0.1% per unit of turnover unless stated
+BENCHMARKS (buy&hold, no cost): BTC 8.40x, DD -77%, Calmar 0.53; ETH 9.39x, DD -79%, Calmar 0.54; 50/50 10.42x, DD -76%, Calmar 0.59
+
+PART 1: PARAMETER PLATEAU (final x / Calmar per cell; * = live setting 200/50; cells beating buy&hold Calmar marked +)
+  held asset BTC   (buy&hold: 8.40x, Calmar 0.53)
+  slow\fast              none              20              50             100
+  100            12.71/1.30 +     8.44/0.97 +    19.35/1.91 +               -
+  125            20.81/1.87 +     8.30/0.99 +    17.89/1.79 +    12.55/1.26 +
+  150            13.90/1.18 +     6.14/0.72 +    16.64/1.42 +    12.60/1.08 +
+  175            14.11/1.05 +     5.88/0.68 +    17.44/1.40 +    12.35/1.13 +
+  200             7.98/0.61 +     5.34/0.62 +    16.70/1.33*+    10.55/0.97 +
+  250             6.48/0.53 +     4.15/0.44      15.99/1.64 +    11.51/1.36 +
+  300             8.68/0.60 +     4.45/0.47      17.18/1.76 +     9.11/0.98 +
+  BTC: 27 cells; final x min 4.15 median 12.35 max 20.81; Calmar min 0.44 median 1.08 max 1.91; 25 of 27 cells beat buy&hold Calmar; 19 beat its final x; live setting ranks 9 of 27 on Calmar
+
+  held asset ETH   (buy&hold: 9.39x, Calmar 0.54)
+  slow\fast              none              20              50             100
+  100            34.94/1.69 +    21.44/1.63 +    41.62/2.06 +               -
+  125            67.70/2.35 +    18.38/1.53 +    37.05/1.98 +    32.88/1.65 +
+  150            33.38/1.57 +    11.94/1.19 +    32.20/1.95 +    31.35/1.62 +
+  175            44.74/1.89 +    12.05/1.18 +    35.74/2.06 +    31.42/1.59 +
+  200            16.16/0.89 +    10.43/0.98 +    35.07/1.89*+    27.61/1.43 +
+  250            11.45/0.69 +     7.78/0.74 +    35.92/1.92 +    36.97/1.72 +
+  300            12.58/0.74 +    10.28/0.87 +    42.42/2.00 +    33.14/1.66 +
+  ETH: 27 cells; final x min 7.78 median 32.20 max 67.70; Calmar min 0.69 median 1.63 max 2.35; 27 of 27 cells beat buy&hold Calmar; 26 beat its final x; live setting ranks 8 of 27 on Calmar
+
+  held asset 50/50   (buy&hold: 10.42x, Calmar 0.59)
+  slow\fast              none              20              50             100
+  100            23.32/1.76 +    14.52/1.51 +    30.90/2.46 +               -
+  125            41.64/2.46 +    13.32/1.45 +    28.00/2.27 +    22.45/1.66 +
+  150            23.94/1.77 +     9.23/1.17 +    25.17/2.16 +    21.95/1.84 +
+  175            27.96/1.79 +     9.07/1.16 +    27.13/2.11 +    21.74/1.58 +
+  200            12.69/0.84 +     8.04/1.09 +    26.29/1.97*+    18.83/1.44 +
+  250             9.73/0.78 +     6.15/0.66 +    26.09/2.18 +    22.79/1.77 +
+  300            11.87/0.84 +     7.33/0.89 +    29.41/2.16 +    19.20/1.62 +
+  50/50: 27 cells; final x min 6.15 median 21.95 max 41.64; Calmar min 0.66 median 1.66 max 2.46; 27 of 27 cells beat buy&hold Calmar; 21 beat its final x; live setting ranks 8 of 27 on Calmar
+
+PART 2: TIME-SHIFT PLACEBO (500 shifts of the live gate; same time IN, same episode lengths, link to price broken)
+  BTC: real final 16.70x -> percentile 98 (shifted median 1.90, 5th-95th 0.47 to 8.63); real Calmar 1.33 -> percentile 97 (shifted median 0.17, 5th-95th -0.15 to 0.95)
+  ETH: real final 35.07x -> percentile 99 (shifted median 2.36, 5th-95th 0.32 to 10.25); real Calmar 1.89 -> percentile 99 (shifted median 0.22, 5th-95th -0.19 to 0.94)
+  50/50: real final 26.29x -> percentile 99 (shifted median 2.23, 5th-95th 0.46 to 9.87); real Calmar 1.97 -> percentile 99 (shifted median 0.22, 5th-95th -0.15 to 0.92)
+
+PART 3: EXECUTION STRESS (live setting 200/50; final x / worst DD% per held asset)
+  case                                             BTC               ETH             50/50
+  cost 0.1%, signal 0 day(s) late        16.70x / -43%     35.07x / -40%     26.29x / -35%
+  cost 0.3%, signal 0 day(s) late        14.17x / -45%     29.78x / -42%     22.32x / -37%
+  cost 0.5%, signal 0 day(s) late        12.03x / -47%     25.28x / -44%     18.94x / -39%
+  cost 0.1%, signal 1 day(s) late        16.44x / -28%     33.56x / -43%     25.55x / -34%
+  cost 0.1%, signal 2 day(s) late        11.02x / -40%     27.37x / -50%     18.97x / -40%
+  cost 0.5%, signal 2 day(s) late         7.93x / -45%     19.70x / -54%     13.66x / -44%
+
+PART 4: STABILITY IN THIRDS OF THE HISTORY (final x in each third, live gate vs buy&hold)
+  BTC: 2020-07..2022-08 gate 4.30x vs hold 2.32x | 2022-08..2024-09 gate 2.43x vs hold 2.95x | 2024-09..2026-10 gate 1.60x vs hold 1.23x
+  ETH: 2020-07..2022-08 gate 9.70x vs hold 6.79x | 2022-08..2024-09 gate 2.00x vs hold 1.59x | 2024-09..2026-10 gate 1.81x vs hold 0.87x
+  50/50: 2020-07..2022-08 gate 6.76x vs hold 4.35x | 2022-08..2024-09 gate 2.24x vs hold 2.23x | 2024-09..2026-10 gate 1.74x vs hold 1.08x
+  IN episodes in the live gate: 41 (separate decisions that carry the whole result); IN 43% of days
+
+Read:
+- Plateau: many cells beating buy&hold on Calmar, with the live setting near the median rather than the top, means the gate is robust. One standout cell among weak neighbours means a lucky parameter.
+- Placebo: a real-gate percentile near 50 means the timing carries no information beyond being out of the market part of the time; 95+ is unusual, but with so few episodes treat even that as suggestive only.
+- Execution: if 0.5% cost or a 2-day delay erases the advantage, it will not survive real trading.
+- Few IN episodes (a handful) means little independent evidence. SURVIVORSHIP (BTC and ETH chosen in hindsight) and 38 earlier labs on this history flatter these numbers. Not financial advice.
