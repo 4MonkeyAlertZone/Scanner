@@ -1817,3 +1817,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1816,TAO,crypto,long,IN ZONE,3,1793470666,31 Oct 18:17,239.34,235.53036,253.43714,open,,,,,,,,,
 1817,BTT,crypto,long,IN ZONE,4,1793473185,31 Oct 18:59,3.599e-07,3.5715357e-07,3.669e-07,open,,,,,,,,,
 1818,CC,crypto,long,BUY SIGNAL,3,1793480374,31 Oct 20:59,0.09739,0.095350357,0.102202,open,,,,,,,,,
+1819,UNI,crypto,long,BUY SIGNAL,4,1793490720,31 Oct 23:52,7.081,6.8453214,7.5805,open,,,,,,,,,
