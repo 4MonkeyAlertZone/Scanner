@@ -1792,7 +1792,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1791,XMR,crypto,long,CROSS C TP2,,1793405597,31 Oct 00:13,587.75,536.20714,690.83571,open,,,,,,,,,168
 1792,XMR,crypto,long,CROSS C TP3,,1793405597,31 Oct 00:13,587.75,536.20714,742.37857,open,,,,,,,,,168
 1793,XRP,crypto,long,BUY SIGNAL,4,1793405597,31 Oct 00:13,1.2586,1.2361677,1.286,open,,,,,,,,,
-1794,MORPHO,crypto,long,BUY SIGNAL,3,1793405597,31 Oct 00:13,2.0753,2.0049736,2.1416333,open,,,,,,,,,
+1794,MORPHO,crypto,long,BUY SIGNAL,3,1793405597,31 Oct 00:13,2.0753,2.0049736,2.1416333,closed,1793447705,31 Oct 11:55,2.1416333,target,3.00,3.00,11.7,0.88,
 1795,POL,crypto,long,BUY SIGNAL,5,1793408702,31 Oct 01:05,0.09462,0.093126429,0.097782,closed,1793419107,31 Oct 03:58,0.09291,stop,-2.01,-2.01,2.9,-1.27,
 1796,LINK,crypto,long,IN ZONE - WAIT,5,1793411750,31 Oct 01:55,11.633,11.268964,12.1066,open,,,,,,,,,
 1797,SUN,crypto,long,IN ZONE - WAIT,3,1793411750,31 Oct 01:55,0.016025,0.015838071,0.016613706,open,,,,,,,,,
@@ -1807,3 +1807,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1806,BCH,crypto,long,IN ZONE - WAIT,4,1793436215,31 Oct 08:43,287.5,277.88214,302.16,open,,,,,,,,,
 1807,VIRTUAL,crypto,long,IN ZONE - WAIT,3,1793436215,31 Oct 08:43,0.5783,0.55909643,0.60786,open,,,,,,,,,
 1808,XDC,crypto,long,IN ZONE - WAIT,3,1793444216,31 Oct 10:56,0.03107,0.030368929,0.031986,open,,,,,,,,,
+1809,BTC,crypto,long,IN ZONE - WAIT,3,1793447705,31 Oct 11:55,77583.17,75509.04,79512.911,open,,,,,,,,,
