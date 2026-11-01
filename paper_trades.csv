@@ -1834,3 +1834,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1833,ATOM,crypto,long,IN ZONE - WAIT,3,1793524060,01 Nov 09:07,1.483,1.4443929,1.5142,open,,,,,,,,,
 1834,HYPE,crypto,long,IN ZONE - WAIT,3,1793535778,01 Nov 12:22,87.97,87.006107,89.875,open,,,,,,,,,
 1835,MORPHO,crypto,long,IN ZONE,4,1793535778,01 Nov 12:22,2.283,2.2378893,2.3417,open,,,,,,,,,
+1836,AAVE,crypto,long,IN ZONE,3,1793546657,01 Nov 15:24,138.56,137.00714,144.93,open,,,,,,,,,
