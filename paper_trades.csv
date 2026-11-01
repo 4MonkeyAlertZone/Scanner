@@ -1840,3 +1840,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1839,UB,crypto,long,BUY SIGNAL,5,1793555576,01 Nov 17:52,0.11721,0.11554429,0.12292714,open,,,,,,,,,
 1840,GRASS,crypto,long,IN ZONE - WAIT,3,1793561893,01 Nov 19:38,0.5757,0.55593929,0.65755,open,,,,,,,,,
 1841,POL,crypto,long,IN ZONE - WAIT,4,1793563762,01 Nov 20:09,0.09067,0.089800976,0.09244,open,,,,,,,,,
+1842,QNT,crypto,long,IN ZONE,3,1793569418,01 Nov 21:43,201.15,198.43571,214.425,open,,,,,,,,,
