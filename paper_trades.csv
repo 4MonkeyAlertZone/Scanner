@@ -1825,3 +1825,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1824,VVV,crypto,long,BUY SIGNAL,3,1793507635,01 Nov 04:33,23.5546,23.067736,24.4365,open,,,,,,,,,
 1825,KCS,crypto,long,BUY SIGNAL,3,1793507635,01 Nov 04:33,7.1018,7.0467,7.18195,open,,,,,,,,,
 1826,LIT,crypto,long,IN ZONE - WAIT,3,1793507635,01 Nov 04:33,3.1807,3.0992643,3.3498167,open,,,,,,,,,
+1827,ZEC,crypto,long,IN ZONE,5,1793510427,01 Nov 05:20,1248.22,1228.7068,1300.0733,open,,,,,,,,,
