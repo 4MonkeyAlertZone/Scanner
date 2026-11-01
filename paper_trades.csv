@@ -1830,3 +1830,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1829,AVAX,crypto,long,RECLAIM C TP2,,1793521477,01 Nov 08:24,8.801,7.984,10.435,open,,,,,,,,,168
 1830,AVAX,crypto,long,RECLAIM C TP3,,1793521477,01 Nov 08:24,8.801,7.984,11.252,open,,,,,,,,,168
 1831,XPL,crypto,long,BUY SIGNAL,3,1793521477,01 Nov 08:24,0.07329,0.071258214,0.078414,open,,,,,,,,,
+1832,ENA,crypto,long,IN ZONE - WAIT,5,1793524060,01 Nov 09:07,0.18925,0.18554464,0.19826667,open,,,,,,,,,
+1833,ATOM,crypto,long,IN ZONE - WAIT,3,1793524060,01 Nov 09:07,1.483,1.4443929,1.5142,open,,,,,,,,,
