@@ -1763,7 +1763,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1762,DOC,stock,long,IN ZONE,5,1793380629,30 Oct 17:17,19.155001,18.88847,19.838572,open,,,,,,,,,
 1763,ORLY,stock,long,IN ZONE,5,1793380629,30 Oct 17:17,89.394997,88.015003,93.224266,open,,,,,,,,,
 1764,OKE,stock,long,IN ZONE,3,1793380629,30 Oct 17:17,97.029999,94.766069,99.950001,open,,,,,,,,,
-1765,JST,crypto,long,BUY SIGNAL,3,1793382896,30 Oct 17:54,0.13654,0.13517964,0.138745,open,,,,,,,,,
+1765,JST,crypto,long,BUY SIGNAL,3,1793382896,30 Oct 17:54,0.13654,0.13517964,0.138745,closed,1793585575,02 Nov 02:12,0.138745,target,1.41,1.41,56.3,1.42,
 1766,GS,stock,long,IN ZONE - WAIT,3,1793382896,30 Oct 17:54,883.46002,845.47682,921.2625,open,,,,,,,,,
 1767,KKR,stock,long,BUY SIGNAL,3,1793382896,30 Oct 17:54,94.43,91.689835,97.863335,open,,,,,,,,,
 1768,FET,crypto,long,BUY SIGNAL,4,1793384782,30 Oct 18:26,0.1653,0.16045357,0.1777,closed,1793480374,31 Oct 20:59,0.1603,stop,-3.22,-3.22,26.6,-1.10,
@@ -1843,3 +1843,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1842,QNT,crypto,long,IN ZONE,3,1793569418,01 Nov 21:43,201.15,198.43571,214.425,open,,,,,,,,,
 1843,TRUMP,crypto,long,IN ZONE - WAIT,3,1793574949,01 Nov 23:15,1.731,1.695,1.801,open,,,,,,,,,
 1844,ETHFI,crypto,long,IN ZONE - WAIT,4,1793578403,02 Nov 00:13,0.6137,0.593825,0.63506,open,,,,,,,,,
+1845,BDX,crypto,long,IN ZONE - WAIT,3,1793585575,02 Nov 02:12,0.07294,0.072246786,0.07493375,open,,,,,,,,,
