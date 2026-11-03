@@ -1939,7 +1939,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1938,ISRG,stock,long,IN ZONE - WAIT,3,1793643145,02 Nov 18:12,444.73001,436.9275,461.58143,open,,,,,,,,,
 1939,NI,stock,long,IN ZONE - WAIT,5,1793643145,02 Nov 18:12,44.895,44.412858,46.42,open,,,,,,,,,
 1940,SYK,stock,long,IN ZONE - WAIT,3,1793643145,02 Nov 18:12,305.5,300.19615,318.82,open,,,,,,,,,
-1941,AAVE,crypto,long,IN ZONE - WAIT,3,1793646011,02 Nov 19:00,127.82,125.18071,131.4,open,,,,,,,,,
+1941,AAVE,crypto,long,IN ZONE - WAIT,3,1793646011,02 Nov 19:00,127.82,125.18071,131.4,closed,1793676002,03 Nov 03:20,124.68,stop,-2.66,-2.66,8.3,-1.29,
 1942,ANET,stock,long,IN ZONE - WAIT,3,1793646011,02 Nov 19:00,164.17,151.44576,179.30857,open,,,,,,,,,
 1943,SCHW,stock,long,IN ZONE - WAIT,5,1793646011,02 Nov 19:00,89.360001,88.323927,92.064999,open,,,,,,,,,
 1944,KHC,stock,long,IN ZONE,5,1793646011,02 Nov 19:00,24.879999,24.470892,25.7875,open,,,,,,,,,
