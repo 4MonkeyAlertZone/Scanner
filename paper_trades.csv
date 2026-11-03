@@ -1958,7 +1958,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1957,JST,crypto,long,IN ZONE,4,1793692230,03 Nov 07:50,0.14152,0.14064429,0.14263,closed,1793730636,03 Nov 18:30,0.14263,target,0.58,0.58,10.7,0.94,
 1958,ENA,crypto,long,IN ZONE - WAIT,3,1793695344,03 Nov 08:42,0.16772,0.16256664,0.182505,open,,,,,,,,,
 1959,CC,crypto,long,IN ZONE - WAIT,3,1793698279,03 Nov 09:31,0.09466,0.093372143,0.09798,open,,,,,,,,,
-1960,BDX,crypto,long,IN ZONE - WAIT,4,1793704609,03 Nov 11:16,0.07297,0.072235357,0.07493375,open,,,,,,,,,
+1960,BDX,crypto,long,IN ZONE - WAIT,4,1793704609,03 Nov 11:16,0.07297,0.072235357,0.07493375,closed,1793750324,03 Nov 23:58,0.07223,stop,-1.21,-1.21,12.7,-1.21,
 1961,ASTER,crypto,long,RECLAIM C TP1,,1793710164,03 Nov 12:49,0.7015,0.6568836,0.7461164,open,,,,,,,,,168
 1962,ASTER,crypto,long,RECLAIM C TP2,,1793710164,03 Nov 12:49,0.7015,0.6568836,0.7907328,open,,,,,,,,,168
 1963,ASTER,crypto,long,RECLAIM C TP3,,1793710164,03 Nov 12:49,0.7015,0.6568836,0.8353492,open,,,,,,,,,168
@@ -2056,3 +2056,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2055,SUI,crypto,long,IN ZONE,3,1793741245,03 Nov 21:27,0.9018,0.89256786,0.93615,open,,,,,,,,,
 2056,ONDO,crypto,long,IN ZONE,3,1793741245,03 Nov 21:27,0.3921,0.3879875,0.4015725,open,,,,,,,,,
 2057,FET,crypto,long,IN ZONE - WAIT,3,1793741245,03 Nov 21:27,0.1569,0.15493929,0.1607,open,,,,,,,,,
+2058,PENGU,crypto,long,IN ZONE,3,1793750324,03 Nov 23:58,0.007116,0.0069930357,0.0073418333,open,,,,,,,,,
