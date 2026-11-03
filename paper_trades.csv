@@ -1957,3 +1957,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1956,INJ,crypto,long,IN ZONE - WAIT,3,1793681977,03 Nov 04:59,7.039,6.9416071,7.3166667,open,,,,,,,,,
 1957,JST,crypto,long,IN ZONE,4,1793692230,03 Nov 07:50,0.14152,0.14064429,0.14263,open,,,,,,,,,
 1958,ENA,crypto,long,IN ZONE - WAIT,3,1793695344,03 Nov 08:42,0.16772,0.16256664,0.182505,open,,,,,,,,,
+1959,CC,crypto,long,IN ZONE - WAIT,3,1793698279,03 Nov 09:31,0.09466,0.093372143,0.09798,open,,,,,,,,,
