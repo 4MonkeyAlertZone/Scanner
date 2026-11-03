@@ -1952,3 +1952,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 1951,LHX,stock,long,IN ZONE - WAIT,3,1793651345,02 Nov 20:29,279.60001,275.79535,293.67751,open,,,,,,,,,
 1952,NXPI,stock,long,BUY SIGNAL,3,1793651345,02 Nov 20:29,260.07999,249.21584,281.53333,open,,,,,,,,,
 1953,VVV,crypto,long,BUY SIGNAL,4,1793653670,02 Nov 21:07,21.2528,20.902034,21.7069,open,,,,,,,,,
+1954,PIEVERSE,crypto,long,BUY SIGNAL,5,1793670388,03 Nov 01:46,1.0948,1.0216536,1.16365,open,,,,,,,,,
