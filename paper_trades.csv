@@ -2074,3 +2074,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2073,VVV,crypto,long,IN ZONE,3,1793781775,04 Nov 08:42,24.4133,23.803914,25.869175,open,,,,,,,,,
 2074,PI,crypto,long,BUY SIGNAL,3,1793781775,04 Nov 08:42,0.07557,0.073343214,0.076971667,open,,,,,,,,,
 2075,DASH,crypto,long,IN ZONE,3,1793781775,04 Nov 08:42,47.42,46.639643,49.077143,open,,,,,,,,,
+2076,JUP,crypto,long,IN ZONE,3,1793788983,04 Nov 10:43,0.2555,0.251075,0.26396667,open,,,,,,,,,
+2077,FF,crypto,long,IN ZONE,3,1793788983,04 Nov 10:43,0.09077,0.0898775,0.092505,open,,,,,,,,,
