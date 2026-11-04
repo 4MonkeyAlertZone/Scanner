@@ -2220,7 +2220,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2219,LTC,crypto,long,RECLAIM C TP2,,1793811905,04 Nov 17:05,56.25,52.00578,64.73844,open,,,,,,,,,168
 2220,LTC,crypto,long,RECLAIM C TP3,,1793811905,04 Nov 17:05,56.25,52.00578,68.98266,open,,,,,,,,,168
 2221,LINK,crypto,long,BUY SIGNAL,4,1793811905,04 Nov 17:05,11.564,11.008464,11.890444,open,,,,,,,,,
-2222,NEXO,crypto,long,IN ZONE,4,1793811905,04 Nov 17:05,0.7856,0.77066071,0.80721667,open,,,,,,,,,
+2222,NEXO,crypto,long,IN ZONE,4,1793811905,04 Nov 17:05,0.7856,0.77066071,0.80721667,closed,1793829337,04 Nov 21:55,0.77,stop,-2.19,-2.19,4.8,-1.15,
 2223,CARR,stock,long,BUY SIGNAL,4,1793811905,04 Nov 17:05,56.775002,52.726179,58.695,open,,,,,,,,,
 2224,COP,stock,long,IN ZONE,3,1793811905,04 Nov 17:05,135.89,132.99055,,open,,,,,,,,,
 2225,MCD,stock,long,IN ZONE,3,1793811905,04 Nov 17:05,276.995,273.67821,284.708,open,,,,,,,,,
