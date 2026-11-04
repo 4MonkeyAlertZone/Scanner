@@ -2064,3 +2064,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2063,LTC,crypto,long,IN ZONE - WAIT,3,1793752766,04 Nov 00:39,53.31,52.501786,54.336667,open,,,,,,,,,
 2064,AVAX,crypto,long,IN ZONE,3,1793756502,04 Nov 01:41,8.377,8.1268571,8.6745,open,,,,,,,,,
 2065,ICP,crypto,long,IN ZONE - WAIT,4,1793756502,04 Nov 01:41,2.454,2.3906429,2.4925,open,,,,,,,,,
+2066,JST,crypto,long,CROSS C TP1,,1793764966,04 Nov 04:02,0.14278,0.14054071,0.14501929,open,,,,,,,,,168
+2067,JST,crypto,long,CROSS C TP2,,1793764966,04 Nov 04:02,0.14278,0.14054071,0.14725857,open,,,,,,,,,168
+2068,JST,crypto,long,CROSS C TP3,,1793764966,04 Nov 04:02,0.14278,0.14054071,0.14949786,open,,,,,,,,,168
