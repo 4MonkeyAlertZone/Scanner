@@ -2257,3 +2257,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2256,KCS,crypto,long,BUY SIGNAL,5,1793843218,05 Nov 01:46,7.43,7.3789786,7.5704571,open,,,,,,,,,
 2257,FLR,crypto,long,BUY SIGNAL,3,1793843218,05 Nov 01:46,0.006035,0.0059933214,0.0061944,open,,,,,,,,,
 2258,PENGU,crypto,long,IN ZONE,4,1793843218,05 Nov 01:46,0.007354,0.00718925,0.0075986,open,,,,,,,,,
+2259,PUMP,crypto,long,BUY SIGNAL,4,1793846289,05 Nov 02:38,0.004354,0.0040608571,0.004675,open,,,,,,,,,
+2260,FIL,crypto,long,BUY SIGNAL,3,1793846289,05 Nov 02:38,0.8716,0.83905714,0.88535,open,,,,,,,,,
