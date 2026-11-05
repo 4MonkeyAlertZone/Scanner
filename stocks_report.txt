@@ -1,20 +1,20 @@
-STOCKS REGIME  data to 2026-11-04  state IN  light ORANGE
-S&P 500 7,689: +5.0% vs 200-day (7,320), -0.1% vs 50-day (7,693). Exit if a close is below 7,174 (-6.7%).
-Sector funds, 12m / 6m return: XLE +48%/+13%; XLV +33%/+32%; XLB +29%/+4%; XLP +25%/+11%; XLK +18%/+4%; XLF +15%/+15%; XLI +11%/-4%; XLY +2%/+2%; XLU +1%/-3%
+STOCKS REGIME  data to 2026-11-05  state IN  light ORANGE
+S&P 500 7,354: +0.4% vs 200-day (7,323), -4.3% vs 50-day (7,687). Exit if a close is below 7,176 (-2.4%).
+Sector funds, 12m / 6m return: XLE +45%/+12%; XLV +30%/+29%; XLB +26%/+3%; XLP +23%/+10%; XLF +11%/+12%; XLK +11%/-4%; XLI +8%/-6%; XLU +0%/-3%; XLY -0%/-1%
 
-SILENT PAPER TEST since 2026-10-21 (10 days; percent change, cash earns T-bill rate):
-  Nasdaq-100 + regime              -4.7%
-  Top-3 sectors (12m) + regime     -1.3%
-  S&P 500 + regime                 -1.0%
-  Nasdaq-100 buy and hold          -4.7%
-  S&P 500 buy and hold             -1.0%
-  Trend sleeve: 12 ETFs            -1.2%
-  Trend sleeve: 12 ETFs + BTC/ETH   -1.4%
-  Portfolio 40/40/20 (core/trend/crypto)   -4.3%
-  Portfolio 50/30/20 (core/trend/crypto)   -4.6%
+SILENT PAPER TEST since 2026-10-21 (11 days; percent change, cash earns T-bill rate):
+  Nasdaq-100 + regime             -10.8%
+  Top-3 sectors (12m) + regime     -4.0%
+  S&P 500 + regime                 -5.3%
+  Nasdaq-100 buy and hold         -10.8%
+  S&P 500 buy and hold             -5.3%
+  Trend sleeve: 12 ETFs            -3.4%
+  Trend sleeve: 12 ETFs + BTC/ETH   -3.8%
+  Portfolio 40/40/20 (core/trend/crypto)   -7.6%
+  Portfolio 50/30/20 (core/trend/crypto)   -8.3%
 
-Trend sleeve: 12 ETFs holds now: SPY 14%, EFA 12%, VNQ 10%, IWM 10%, DBC 8%, QQQ 8%, XLE 6%; cash 32%
-Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 13%, EFA 12%, VNQ 10%, IWM 10%, DBC 7%, QQQ 7%, XLE 6%, BTC-USD 3%, ETH-USD 2%; cash 30%
-Target weights: QQQ 43%, SPY 5%, EFA 5%, VNQ 4%, IWM 4%, DBC 3%, XLE 3%; cash 33%.
+Trend sleeve: 12 ETFs holds now: SPY 14%, EFA 12%, VNQ 10%, DBC 8%, XLE 6%; cash 50%
+Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 13%, EFA 12%, VNQ 10%, DBC 7%, XLE 6%, BTC-USD 3%, ETH-USD 2%; cash 47%
+Target weights: QQQ 40%, SPY 5%, EFA 5%, VNQ 4%, DBC 3%, XLE 3%; cash 40%.
 
 Early weeks mean nothing; judge after months and after a real fall.
