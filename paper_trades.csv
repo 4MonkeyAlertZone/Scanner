@@ -2253,3 +2253,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2252,RENDER,crypto,long,RECLAIM C TP3,,1793838887,05 Nov 00:34,1.616,1.443108,2.134676,open,,,,,,,,,168
 2253,JST,crypto,long,IN ZONE - WAIT,3,1793838887,05 Nov 00:34,0.13977,0.1376875,0.14165667,open,,,,,,,,,
 2254,BDX,crypto,long,IN ZONE - WAIT,4,1793838887,05 Nov 00:34,0.07293,0.072325,0.07493375,open,,,,,,,,,
+2255,SUI,crypto,long,IN ZONE,4,1793843218,05 Nov 01:46,0.933,0.92140429,0.960925,open,,,,,,,,,
+2256,KCS,crypto,long,BUY SIGNAL,5,1793843218,05 Nov 01:46,7.43,7.3789786,7.5704571,open,,,,,,,,,
+2257,FLR,crypto,long,BUY SIGNAL,3,1793843218,05 Nov 01:46,0.006035,0.0059933214,0.0061944,open,,,,,,,,,
+2258,PENGU,crypto,long,IN ZONE,4,1793843218,05 Nov 01:46,0.007354,0.00718925,0.0075986,open,,,,,,,,,
