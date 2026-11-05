@@ -2281,3 +2281,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2280,JUP,crypto,long,RECLAIM C TP3,,1793852559,05 Nov 04:22,0.2615,0.2368254,0.3355238,open,,,,,,,,,168
 2281,GRASS,crypto,long,IN ZONE - WAIT,3,1793852559,05 Nov 04:22,0.5705,0.54039286,0.61346667,open,,,,,,,,,
 2282,ICP,crypto,long,BUY SIGNAL,3,1793859607,05 Nov 06:20,2.625,2.5159643,2.676,open,,,,,,,,,
+2283,ENA,crypto,long,BUY SIGNAL,3,1793864459,05 Nov 07:40,0.18011,0.17653143,0.19255833,open,,,,,,,,,
