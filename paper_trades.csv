@@ -2485,3 +2485,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2484,NIGHT,crypto,long,IN ZONE - WAIT,3,1793935666,06 Nov 03:27,0.03861,0.0369875,0.041094,open,,,,,,,,,
 2485,PIEVERSE,crypto,long,IN ZONE - WAIT,3,1793942498,06 Nov 05:21,1.3704,1.3183754,1.48685,open,,,,,,,,,
 2486,HBAR,crypto,long,IN ZONE - WAIT,3,1793950682,06 Nov 07:38,0.06787,0.065296786,0.073164286,open,,,,,,,,,
+2487,GNO,crypto,long,BUY SIGNAL,4,1793953965,06 Nov 08:32,115.12,114.18321,118.37,open,,,,,,,,,
