@@ -1,0 +1,43 @@
+LAB 40: REGIME EPISODE DURATIONS AND LONG-HISTORY GATE TEST  source Binance US/OKX BTC daily (fallback, shorter history); 2019-09-23 to 2026-11-05 (2601 days); gate decisions from 2020-04-09
+87 completed episodes (44 IN, 43 OUT). Cost 0.1% per switch.
+
+PART 1: COMPLETED EPISODES (days)
+state    n  median   mean   25%   75%   90%   max  <=5d%  <=10d%  share of days%  BTC ret avg%  median%
+IN      44       5     24     2    48    64   192     52      57              44          13.0     -1.3
+OUT     43       7     31     1    21    75   421     47      56              56          -0.3      2.1
+BTC ret = close-to-close change from the first to the last day of the episode. For OUT episodes a NEGATIVE number means the gate avoided a fall; a positive one means it sat out a rise.
+
+PART 2: HOW MUCH LONGER, GIVEN AGE SO FAR (completed episodes; remaining = total days minus age)
+state  age k reached k  median remaining  ended within 10d %  ended within 30d %
+IN         0        44                 5                  57                  70
+IN         5        21                43                  19                  38
+IN        10        19                38                  21                  37
+IN        20        15                29                  13                  53
+IN        40        12                15                  42                  75
+IN        80         2  too few
+OUT        0        43                 7                  56                  81
+OUT        5        23                14                  48                  74
+OUT       10        19                17                  42                  68
+OUT       20        11                24                  27                  55
+OUT       40         6                44                  17                  17
+OUT       80         3  too few
+
+PART 3: BY ERA (median days, number of completed episodes)
+  start..2016: IN n=0; OUT n=0
+  2017..2019: IN n=0; OUT n=0
+  2020..2022: IN n=15 median 3; OUT n=15 median 3
+  2023..now: IN n=29 median 8; OUT n=28 median 8
+
+PART 4: BTC HELD WHILE IN, CASH WHILE OUT (vs buy&hold)
+period                        gate x   DD%  Calmar    hold x   DD%  Calmar
+whole history                  16.59   -43    1.25     10.45   -77    0.56
+2020..2022                      4.27   -43    1.65      2.27   -77    0.46
+2023..now                       3.88   -24    1.75      4.61   -53    0.92
+Switches over the history: 88 (about 13.4 per year).
+
+NOW: OUT for 15 days (since 2026-10-22). Past completed OUT episodes: median 7 days, 72% were shorter than the current one so far.
+
+Read:
+- Whipsaw share (<=5 and <=10 day episodes) tells you how many flips are noise; expect many short OUT/IN flips around the averages.
+- Part 2: if the median remaining time barely changes with age, the age of an episode does not predict its end; do not use it as a timing signal.
+- Part 4 over a longer history is the real test of the gate: it needs to hold up in the 2013-15 and 2018 bears, not only 2022. SURVIVORSHIP: BTC is the one survivor; 40 labs on this history. Not financial advice.
