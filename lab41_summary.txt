@@ -1,0 +1,15 @@
+LAB 41: SAME-WEEKS RANDOM-ENTRY PLACEBO FOR THE CRYPTO PAPER RULES  ledger from 2026-10-15; 1210 closed crypto legs; 77/103 tokens with 4h candles; 40 random entries per trade, cost 0.2% round trip
+
+group                      trades  days  actual R  random R   edge R  95% low 95% high  verdict
+RECLAIM A (legs)               48     2     -0.95     -0.66    -0.28    -0.40    -0.04  rule worse than random
+RECLAIM B (legs)              108     4     -1.11     -0.68    -0.43    -0.57    -0.36  rule worse than random
+RECLAIM C (legs)              199    15     -0.90     -0.60    -0.31    -0.40    -0.19  rule worse than random
+CROSS A/B/C (legs)             48     8     -1.05     -0.31    -0.74    -1.12    -0.43  rule worse than random
+crypto BUY SIGNAL             214    22     -0.87     -0.37    -0.51    -0.86    -0.15  rule worse than random
+crypto IN ZONE (+WAIT)        379    23     -0.52     -0.34    -0.18    -0.46     0.10  cannot tell from random
+
+Read:
+- random R below zero too: the live weeks were hostile to any long entry; the rule is not the main problem.
+- edge clearly negative: the rule chose worse moments than random in the same weeks; check the live entry timing and the backtest definition.
+- 'days' is the real sample size. RECLAIM A and B each rest on only a few days, so a 95% interval that includes zero is expected there.
+SURVIVORSHIP: random entries use only tokens that appear in the ledger. Not financial advice.
