@@ -2580,3 +2580,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2579,IFF,stock,long,IN ZONE - WAIT,5,1793996448,06 Nov 20:20,83.25,80.831432,86.346667,open,,,,,,,,,
 2580,ISRG,stock,long,BUY SIGNAL,4,1793996448,06 Nov 20:20,451.19,434.84401,473.53,open,,,,,,,,,
 2581,INVH,stock,long,BUY SIGNAL,3,1793996448,06 Nov 20:20,27.115,26.596071,27.77625,open,,,,,,,,,
+2582,U,crypto,long,IN ZONE,4,1793998926,06 Nov 21:02,0.9979,0.99288214,1.00405,open,,,,,,,,,
