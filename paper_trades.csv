@@ -2582,3 +2582,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2581,INVH,stock,long,BUY SIGNAL,3,1793996448,06 Nov 20:20,27.115,26.596071,27.77625,open,,,,,,,,,
 2582,U,crypto,long,IN ZONE,4,1793998926,06 Nov 21:02,0.9979,0.99288214,1.00405,open,,,,,,,,,
 2583,BTT,crypto,long,IN ZONE - WAIT,3,1794001041,06 Nov 21:37,3.547e-07,3.4837012e-07,3.586e-07,open,,,,,,,,,
+2584,ICP,crypto,long,IN ZONE - WAIT,5,1794003478,06 Nov 22:17,2.46,2.3349286,2.5611667,open,,,,,,,,,
