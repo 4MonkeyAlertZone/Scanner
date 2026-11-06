@@ -2560,7 +2560,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2559,OXY,stock,long,IN ZONE - WAIT,3,1793985466,06 Nov 17:17,56.845001,54.739644,60.843334,open,,,,,,,,,
 2560,VRSK,stock,long,BUY SIGNAL,4,1793985466,06 Nov 17:17,204.22,199.85916,216.02667,open,,,,,,,,,
 2561,PUMP,crypto,long,BUY SIGNAL,4,1793987938,06 Nov 17:58,0.004,0.0038205,0.0042158333,open,,,,,,,,,
-2562,KCS,crypto,long,IN ZONE,3,1793987938,06 Nov 17:58,7.1045,7.0429857,7.2020714,open,,,,,,,,,
+2562,KCS,crypto,long,IN ZONE,3,1793987938,06 Nov 17:58,7.1045,7.0429857,7.2020714,closed,1794001041,06 Nov 21:37,7.0367,stop,-1.15,-1.15,3.6,-1.33,
 2563,RAY,crypto,long,IN ZONE,4,1793987938,06 Nov 17:58,1.8234,1.7651321,1.943275,open,,,,,,,,,
 2564,AMCR,stock,long,IN ZONE - WAIT,3,1793987938,06 Nov 17:58,44.915001,43.514643,46.68125,open,,,,,,,,,
 2565,AIG,stock,long,IN ZONE,4,1793987938,06 Nov 17:58,78.830002,77.148929,81.545555,open,,,,,,,,,
@@ -2581,3 +2581,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2580,ISRG,stock,long,BUY SIGNAL,4,1793996448,06 Nov 20:20,451.19,434.84401,473.53,open,,,,,,,,,
 2581,INVH,stock,long,BUY SIGNAL,3,1793996448,06 Nov 20:20,27.115,26.596071,27.77625,open,,,,,,,,,
 2582,U,crypto,long,IN ZONE,4,1793998926,06 Nov 21:02,0.9979,0.99288214,1.00405,open,,,,,,,,,
+2583,BTT,crypto,long,IN ZONE - WAIT,3,1794001041,06 Nov 21:37,3.547e-07,3.4837012e-07,3.586e-07,open,,,,,,,,,
