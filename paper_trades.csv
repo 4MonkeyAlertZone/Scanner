@@ -2483,3 +2483,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2482,RENDER,crypto,long,IN ZONE - WAIT,4,1793920733,05 Nov 23:18,1.484,1.4150357,1.5848333,open,,,,,,,,,
 2483,ARB,crypto,long,IN ZONE - WAIT,4,1793925440,06 Nov 00:37,0.16206,0.15686571,0.16842,open,,,,,,,,,
 2484,NIGHT,crypto,long,IN ZONE - WAIT,3,1793935666,06 Nov 03:27,0.03861,0.0369875,0.041094,open,,,,,,,,,
+2485,PIEVERSE,crypto,long,IN ZONE - WAIT,3,1793942498,06 Nov 05:21,1.3704,1.3183754,1.48685,open,,,,,,,,,
