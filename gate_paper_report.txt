@@ -1,12 +1,12 @@
-GATE PAPER BOT  data to 2026-11-04  state OUT since 2026-10-30  (5 days)  started 2026-10-30 (5 days)
+GATE PAPER BOT  data to 2026-11-05  state OUT since 2026-10-30  (6 days)  started 2026-10-30 (6 days)
 
-BTC 80,478   200-day 73,230 (+9.9%)   50-day 82,063 (-1.9%)
-To flip IN: a close above 82,063 (+2.0% from here, using today's averages).
+BTC 76,107   200-day 73,241 (+3.9%)   50-day 82,061 (-7.3%)
+To flip IN: a close above 82,061 (+7.8% from here, using today's averages).
 
 account                     equity x  worst DD%  buy&hold x
-BTC when IN                    1.000        0.0       1.040
-ETH when IN                    1.000        0.0       1.080
-50/50 BTC+ETH when IN          1.000        0.0       1.060
+BTC when IN                    1.000        0.0       0.984
+ETH when IN                    1.000        0.0       0.997
+50/50 BTC+ETH when IN          1.000        0.0       0.990
 
 Gate flips so far: 0. Equity is net of 0.1% per switch; buy&hold has no cost.
 Judge only after at least one full IN and OUT cycle and ideally 6+ months: early numbers mean nothing. Lab 39 expectation: roughly half of buy&hold's drawdown, many small whipsaws. Paper only. Not financial advice.
