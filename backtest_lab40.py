@@ -1,47 +1,36 @@
 #!/usr/bin/env python3
 """Lab 40: HOW LONG DO IN AND OUT PERIODS LAST, AND DOES THE GATE HOLD UP OVER A MUCH LONGER HISTORY?
 Rule (same as the gate paper bot and lab 39): IN while BTC's daily close is above BOTH its 200-day and 50-day average, OUT otherwise. Decisions are made at the daily close, so durations are whole DAYS (24-hour steps); hours have no meaning here because every flip is stamped at the 00:00 UTC close.
-Data: BTC/USD daily closes from Bitstamp (back to 2011) when reachable, otherwise the same Binance US/OKX history as the other labs (from 2019). The source and date range are printed first. A longer history adds the 2013-15 and 2018 bear markets, which the 2019+ data lacks.
+Data: BTC/USD daily closes from Bitstamp (back to 2011) via lab 32's loader, then Yahoo BTC-USD (from 2014), then the Binance US/OKX history of the other labs (from 2019). The source and date range are printed first. A longer history adds the 2013-15 and 2018 bear markets, which the 2019+ data lacks.
  PART 1  EPISODES. Every completed IN and OUT episode (the one in progress and the first, partial one are excluded because their length is not known): count, median/mean/quartiles/90th percentile/longest, share lasting 5 days or less and 10 days or less (whipsaws), and what BTC did during the episode.
  PART 2  AGE AND REMAINING TIME. For an episode that has already lasted k days, how much longer did it usually last? Shown for k = 0, 5, 10, 20, 40, 80 with counts. If the remaining time does not shrink as the age grows, then 'it has been OUT for a while' tells you nothing about when it ends.
  PART 3  ERAS. The same medians for each era, to see whether durations are stable or just one cycle.
  PART 4  THE GATE OVER THE LONG HISTORY. Hold BTC while IN, cash while OUT (0.1% per switch; a decision at close i-1 earns day i), against buy&hold: final x, worst drawdown, Calmar, and the same by era.
  NOW  the current state, its age in days, and where that age sits among past episodes of the same state.
 CAUTION: durations describe the past distribution; they are not a timer. Few episodes, heavy tails and one asset mean the percentiles are rough. Do not trade 'it has been OUT for N days'. Not financial advice. Writes lab40_summary.txt."""
-import os, json, time, statistics as S
+import os, time, statistics as S
 import scanner
 import backtest as B
 import backtest_lab36 as L36
 import backtest_lab39 as L39
+import backtest_lab32 as L32
 
 OUT = scanner.HERE; CT = L36.CT
-fd = L36.fd; UA = getattr(scanner, "UA", {"User-Agent": "Mozilla/5.0"})
-
-def bitstamp_daily():
-    """Daily BTC/USD closes from Bitstamp, oldest first, as {day_number: close}. Raises if anything looks wrong."""
-    got = {}; start = 1313366400; today = int(time.time() // 86400)
-    for _ in range(12):
-        j = json.loads(scanner.http(f"https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=86400&limit=1000&start={start}", headers=UA))
-        rows = j["data"]["ohlc"]
-        if not rows: break
-        for r in rows:
-            d = int(r["timestamp"]) // 86400
-            if d < today and float(r["close"]) > 0: got[d] = float(r["close"])
-        nxt = int(rows[-1]["timestamp"]) + 86400
-        if nxt <= start or len(rows) < 1000: break
-        start = nxt; time.sleep(0.3)
-    if len(got) < 1500: raise RuntimeError(f"Bitstamp returned only {len(got)} days")
-    return got
+fd = L36.fd
 
 def load():
-    try:
-        got = bitstamp_daily(); src = "Bitstamp BTC/USD daily"
-    except Exception as e:
-        print("Bitstamp history failed:", str(e)[:80], "-> using Binance US/OKX history")
+    """Longest available BTC daily closes: Bitstamp (from 2011), else Yahoo BTC-USD (from 2014), else Binance US/OKX (from 2019). Uses lab 32's loaders, which are known to work in Actions. Today's still-forming day is dropped."""
+    today = int(time.time() // 86400); got = {}; src = None
+    for nm, fn in (("Bitstamp BTC/USD daily", L32.bitstamp), ("Yahoo BTC-USD daily", L32.yahoo)):
+        try:
+            d = fn(); g = {k: v[0] for k, v in d.items() if k < today and v[0] > 0}
+            if len(g) > 1500: got, src = g, nm; break
+            print(nm, "returned only", len(g), "days")
+        except Exception as e: print(nm, "failed:", str(e)[:100])
+    if not got:
         rows = B.hist_crypto("BTC", "1d", 2700); got = {int(r[0] // 86400): r[4] for r in rows}; src = "Binance US/OKX BTC daily (fallback, shorter history)"
     days = sorted(got)
-    # keep one unbroken run of consecutive days (fill nothing)
-    run = [days[0]]
+    run = [days[0]]                       # keep the latest unbroken run of consecutive days
     for d in days[1:]:
         if d == run[-1] + 1: run.append(d)
         else: run = [d]
