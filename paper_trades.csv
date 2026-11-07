@@ -2590,3 +2590,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2589,POL,crypto,long,BUY SIGNAL,4,1794011920,07 Nov 00:38,0.09241,0.091318929,0.095105,open,,,,,,,,,
 2590,LIT,crypto,long,IN ZONE - WAIT,5,1794011920,07 Nov 00:38,3.335,3.2466929,3.5555429,open,,,,,,,,,
 2591,VIRTUAL,crypto,long,IN ZONE - WAIT,5,1794011920,07 Nov 00:38,0.5692,0.56116071,0.60443333,open,,,,,,,,,
+2592,AAVE,crypto,long,IN ZONE,4,1794034639,07 Nov 06:57,131.81,129.81071,137.605,open,,,,,,,,,
