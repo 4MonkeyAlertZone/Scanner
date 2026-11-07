@@ -2593,3 +2593,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2592,AAVE,crypto,long,IN ZONE,4,1794034639,07 Nov 06:57,131.81,129.81071,137.605,open,,,,,,,,,
 2593,QNT,crypto,long,IN ZONE,3,1794037728,07 Nov 07:48,202.47,197.91786,210.77333,open,,,,,,,,,
 2594,UB,crypto,long,IN ZONE,3,1794037728,07 Nov 07:48,0.11075,0.10804643,0.1150825,open,,,,,,,,,
+2595,BCH,crypto,long,IN ZONE - WAIT,4,1794040309,07 Nov 08:31,261.8,257.81071,272.1125,open,,,,,,,,,
