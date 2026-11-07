@@ -2570,7 +2570,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2569,KEY,stock,long,IN ZONE - WAIT,4,1793987938,06 Nov 17:58,20.844999,20.23375,21.3,open,,,,,,,,,
 2570,SHW,stock,long,IN ZONE - WAIT,4,1793987938,06 Nov 17:58,343.75,328.93847,363.7975,open,,,,,,,,,
 2571,TTWO,stock,long,IN ZONE - WAIT,3,1793987938,06 Nov 17:58,215.8,212.1779,222.61,open,,,,,,,,,
-2572,STX,crypto,long,BUY SIGNAL,4,1793990512,06 Nov 18:41,0.3369,0.32664286,0.354975,open,,,,,,,,,
+2572,STX,crypto,long,BUY SIGNAL,4,1793990512,06 Nov 18:41,0.3369,0.32664286,0.354975,closed,1794057466,07 Nov 13:17,0.3252,stop,-3.67,-3.67,18.6,-1.21,
 2573,XTZ,crypto,long,IN ZONE - WAIT,4,1793990512,06 Nov 18:41,0.275,0.26616071,0.29862,closed,1794023737,07 Nov 03:55,0.265,stop,-3.84,-3.84,9.2,-1.19,
 2574,DD,stock,long,IN ZONE - WAIT,3,1793990512,06 Nov 18:41,146.87,144.68144,,open,,,,,,,,,
 2575,ZBH,stock,long,BUY SIGNAL,5,1793990512,06 Nov 18:41,106.91,98.831069,113.92,open,,,,,,,,,
