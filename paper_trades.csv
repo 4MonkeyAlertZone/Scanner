@@ -2454,7 +2454,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2453,ILMN,stock,long,IN ZONE - WAIT,3,1793902223,05 Nov 18:10,206.98,187.51822,,open,,,,,,,,,
 2454,ON,stock,long,IN ZONE - WAIT,3,1793902223,05 Nov 18:10,63.23,60.64875,70.833333,open,,,,,,,,,
 2455,TT,stock,long,IN ZONE - WAIT,4,1793902223,05 Nov 18:10,400.315,385.98269,419.88417,open,,,,,,,,,
-2456,XMR,crypto,long,IN ZONE,4,1793905121,05 Nov 18:58,609.13,600.15964,630.725,open,,,,,,,,,
+2456,XMR,crypto,long,IN ZONE,4,1793905121,05 Nov 18:58,609.13,600.15964,630.725,closed,1794088515,07 Nov 21:55,597.59,stop,-2.09,-2.09,50.9,-1.42,
 2457,ADP,stock,long,BUY SIGNAL,4,1793905121,05 Nov 18:58,306.20999,298.66357,328.95999,open,,,,,,,,,
 2458,D,stock,long,BUY SIGNAL,3,1793905121,05 Nov 18:58,69.550003,68.195715,,open,,,,,,,,,
 2459,DOW,stock,long,IN ZONE,3,1793905121,05 Nov 18:58,32.145,31.0945,33.422501,open,,,,,,,,,
