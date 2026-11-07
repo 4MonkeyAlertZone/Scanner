@@ -2597,3 +2597,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2596,MNT,crypto,long,IN ZONE,3,1794043116,07 Nov 09:18,0.4533,0.44907143,0.48135,open,,,,,,,,,
 2597,BNB,crypto,long,IN ZONE - WAIT,3,1794054276,07 Nov 12:24,694.98,680.34071,706.10333,open,,,,,,,,,
 2598,UNI,crypto,long,BUY SIGNAL,4,1794054276,07 Nov 12:24,7.055,6.8931429,7.3476667,open,,,,,,,,,
+2599,BSV,crypto,long,IN ZONE - WAIT,5,1794066501,07 Nov 15:48,16.78,16.351071,17.31,open,,,,,,,,,
