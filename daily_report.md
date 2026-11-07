@@ -1,19 +1,19 @@
 # Signal performance report
-Generated 06 Nov 2026 07:38. Times are Europe/London.
+Generated 07 Nov 2026 07:48. Times are Europe/London.
 
 Method: every alert that passed your filters is an imagined $100 trade. Longs are bought at the alert price and sold at the target (nearest resistance), the stop, or after the time limit (14 days; 7 days for CROSS and RECLAIM trend trades, a paper-only test). Costs 0.2% per trade. Prices are checked every ~5 minutes, so real fills can be worse, especially for stops.
 
 ## Summary
 
-All trades: 2178 trades, 33% won, avg -2.00%, total -4361$, avg hold 2.8d
-Longs: 2178 trades, 33% won, avg -2.00%, total -4361$, avg hold 2.8d
+All trades: 2240 trades, 33% won, avg -1.98%, total -4442$, avg hold 2.8d
+Longs: 2240 trades, 33% won, avg -1.98%, total -4442$, avg hold 2.8d
 Shorts: none yet
-Crypto: 1219 trades, 20% won, avg -3.57%, total -4352$, avg hold 40h
-Stocks: 959 trades, 51% won, avg -0.01%, total -8$, avg hold 4.2d
+Crypto: 1237 trades, 20% won, avg -3.52%, total -4348$, avg hold 41h
+Stocks: 1003 trades, 49% won, avg -0.09%, total -93$, avg hold 4.2d
 
 ## By signal type
 
-BUY SIGNAL: 714 trades, 47% won, avg -0.58%, total -413$, avg hold 3.7d
+BUY SIGNAL: 742 trades, 47% won, avg -0.62%, total -459$, avg hold 3.7d
 CROSS A TP1: 2 trades, 0% won, avg -10.60%, total -21$, avg hold 18h
 CROSS A TP2: 2 trades, 0% won, avg -10.60%, total -21$, avg hold 18h
 CROSS A TP3: 2 trades, 0% won, avg -10.60%, total -21$, avg hold 18h
@@ -21,31 +21,33 @@ CROSS B TP1: 6 trades, 0% won, avg -7.21%, total -43$, avg hold 26h
 CROSS B TP2: 6 trades, 0% won, avg -7.21%, total -43$, avg hold 26h
 CROSS B TP3: 6 trades, 0% won, avg -7.21%, total -43$, avg hold 26h
 CROSS C TP1: 18 trades, 17% won, avg -3.06%, total -55$, avg hold 47h
-CROSS C TP2: 17 trades, 6% won, avg -5.25%, total -89$, avg hold 2.2d
-CROSS C TP3: 17 trades, 6% won, avg -5.26%, total -89$, avg hold 2.4d
-IN ZONE: 471 trades, 36% won, avg -0.61%, total -287$, avg hold 2.3d
-IN ZONE - WAIT: 506 trades, 37% won, avg -0.76%, total -383$, avg hold 2.0d
+CROSS C TP2: 18 trades, 11% won, avg -4.75%, total -86$, avg hold 2.5d
+CROSS C TP3: 18 trades, 11% won, avg -4.76%, total -86$, avg hold 2.7d
+IN ZONE: 485 trades, 35% won, avg -0.61%, total -295$, avg hold 2.3d
+IN ZONE - WAIT: 521 trades, 36% won, avg -0.78%, total -406$, avg hold 2.0d
 RECLAIM A TP1: 18 trades, 11% won, avg -7.57%, total -136$, avg hold 3.6d
 RECLAIM A TP2: 18 trades, 11% won, avg -7.57%, total -136$, avg hold 3.6d
 RECLAIM A TP3: 18 trades, 11% won, avg -7.57%, total -136$, avg hold 3.6d
 RECLAIM B TP1: 41 trades, 2% won, avg -7.62%, total -312$, avg hold 2.0d
 RECLAIM B TP2: 41 trades, 2% won, avg -7.62%, total -312$, avg hold 2.0d
 RECLAIM B TP3: 41 trades, 2% won, avg -7.62%, total -312$, avg hold 2.0d
-RECLAIM C TP1: 79 trades, 10% won, avg -6.35%, total -502$, avg hold 3.2d
-RECLAIM C TP2: 78 trades, 8% won, avg -6.45%, total -503$, avg hold 3.2d
-RECLAIM C TP3: 77 trades, 6% won, avg -6.48%, total -499$, avg hold 3.3d
+RECLAIM C TP1: 80 trades, 10% won, avg -6.32%, total -506$, avg hold 3.2d
+RECLAIM C TP2: 79 trades, 8% won, avg -6.42%, total -507$, avg hold 3.3d
+RECLAIM C TP3: 78 trades, 6% won, avg -6.45%, total -503$, avg hold 3.4d
 
 ## By token (closed trades)
 
 MRNA: 1 trade, 100% won, avg +29.81%, total +30$, avg hold 14.0d
 PEPE: 17 trades, 59% won, avg +1.47%, total +25$, avg hold 44h
 FDXF: 1 trade, 100% won, avg +22.73%, total +23$, avg hold 14.0d
+XMR: 8 trades, 75% won, avg +2.46%, total +20$, avg hold 4.1d
 HAS: 1 trade, 100% won, avg +18.86%, total +19$, avg hold 14.0d
+SWK: 2 trades, 100% won, avg +9.41%, total +19$, avg hold 10.0d
 CSGP: 4 trades, 75% won, avg +3.94%, total +16$, avg hold 3.4d
 M: 3 trades, 67% won, avg +5.22%, total +16$, avg hold 20h
 NCLH: 2 trades, 50% won, avg +7.34%, total +15$, avg hold 3.4d
 PHM: 5 trades, 80% won, avg +2.53%, total +13$, avg hold 2.6d
-XMR: 6 trades, 67% won, avg +2.06%, total +12$, avg hold 3.2d
+PIEVERSE: 3 trades, 67% won, avg +4.03%, total +12$, avg hold 10h
 SBUX: 3 trades, 100% won, avg +3.78%, total +11$, avg hold 5.7d
 VVV: 9 trades, 56% won, avg +1.18%, total +11$, avg hold 12h
 LEN: 2 trades, 100% won, avg +5.23%, total +10$, avg hold 8.0d
@@ -57,11 +59,13 @@ BALL: 3 trades, 100% won, avg +3.31%, total +10$, avg hold 5.6d
 ARES: 2 trades, 100% won, avg +4.89%, total +10$, avg hold 8.0d
 ROP: 2 trades, 100% won, avg +4.86%, total +10$, avg hold 4.5d
 ACN: 1 trade, 100% won, avg +9.65%, total +10$, avg hold 10.9d
+MOS: 1 trade, 100% won, avg +9.53%, total +10$, avg hold 46h
 CCL: 5 trades, 60% won, avg +1.90%, total +10$, avg hold 2.2d
 GEHC: 3 trades, 100% won, avg +3.11%, total +9$, avg hold 5.3d
 PPG: 3 trades, 100% won, avg +3.10%, total +9$, avg hold 4.0d
 MAS: 3 trades, 100% won, avg +2.93%, total +9$, avg hold 5.0d
 TROW: 4 trades, 75% won, avg +2.19%, total +9$, avg hold 3.5d
+EL: 3 trades, 100% won, avg +2.90%, total +9$, avg hold 39h
 LMT: 1 trade, 100% won, avg +8.60%, total +9$, avg hold 3.0d
 PAYX: 4 trades, 75% won, avg +2.13%, total +9$, avg hold 4.0d
 CBOE: 1 trade, 100% won, avg +8.41%, total +8$, avg hold 14.0d
@@ -71,21 +75,20 @@ BF-B: 4 trades, 75% won, avg +1.99%, total +8$, avg hold 3.8d
 VZ: 2 trades, 100% won, avg +3.95%, total +8$, avg hold 5.0d
 SPG: 3 trades, 67% won, avg +2.62%, total +8$, avg hold 6.0d
 EXR: 4 trades, 100% won, avg +1.92%, total +8$, avg hold 3.7d
-EL: 2 trades, 100% won, avg +3.84%, total +8$, avg hold 47h
-IBM: 2 trades, 100% won, avg +3.73%, total +7$, avg hold 7.5d
 PGR: 2 trades, 100% won, avg +3.52%, total +7$, avg hold 9.4d
 REGN: 2 trades, 100% won, avg +3.51%, total +7$, avg hold 5.0d
 AWK: 3 trades, 100% won, avg +2.32%, total +7$, avg hold 5.8d
 BAX: 3 trades, 67% won, avg +2.31%, total +7$, avg hold 4.3d
+HSY: 5 trades, 60% won, avg +1.37%, total +7$, avg hold 2.0d
 FDS: 1 trade, 100% won, avg +6.81%, total +7$, avg hold 14.0d
 CMCSA: 1 trade, 100% won, avg +6.78%, total +7$, avg hold 5.0d
-NXPI: 2 trades, 100% won, avg +3.34%, total +7$, avg hold 4.6d
 FTV: 2 trades, 100% won, avg +3.30%, total +7$, avg hold 2.5d
 AJG: 4 trades, 75% won, avg +1.63%, total +7$, avg hold 3.8d
 SNA: 2 trades, 100% won, avg +3.23%, total +6$, avg hold 6.0d
 HLT: 1 trade, 100% won, avg +6.41%, total +6$, avg hold 14.0d
 TSN: 3 trades, 100% won, avg +2.13%, total +6$, avg hold 3.1d
 SBAC: 5 trades, 60% won, avg +1.27%, total +6$, avg hold 42h
+ED: 2 trades, 100% won, avg +3.17%, total +6$, avg hold 10.0d
 KR: 3 trades, 67% won, avg +2.11%, total +6$, avg hold 2.6d
 JKHY: 2 trades, 100% won, avg +3.13%, total +6$, avg hold 7.6d
 MRSH: 3 trades, 67% won, avg +2.07%, total +6$, avg hold 5.4d
@@ -98,9 +101,7 @@ GS: 2 trades, 100% won, avg +2.94%, total +6$, avg hold 8.5d
 UPS: 2 trades, 100% won, avg +2.93%, total +6$, avg hold 5.0d
 BRO: 4 trades, 75% won, avg +1.46%, total +6$, avg hold 3.5d
 IDXX: 2 trades, 100% won, avg +2.91%, total +6$, avg hold 7.1d
-OMC: 4 trades, 75% won, avg +1.45%, total +6$, avg hold 4.0d
 ADSK: 4 trades, 75% won, avg +1.44%, total +6$, avg hold 3.2d
-PODD: 1 trade, 100% won, avg +5.75%, total +6$, avg hold 9.2d
 PSA: 4 trades, 75% won, avg +1.43%, total +6$, avg hold 2.7d
 RTX: 2 trades, 50% won, avg +2.83%, total +6$, avg hold 8.0d
 HWM: 3 trades, 67% won, avg +1.88%, total +6$, avg hold 33h
@@ -121,9 +122,9 @@ GEV: 3 trades, 67% won, avg +1.71%, total +5$, avg hold 3.2d
 CLX: 1 trade, 100% won, avg +5.12%, total +5$, avg hold 26h
 JNJ: 1 trade, 100% won, avg +5.05%, total +5$, avg hold 8.0d
 ES: 3 trades, 67% won, avg +1.67%, total +5$, avg hold 5.0d
-DXCM: 3 trades, 67% won, avg +1.67%, total +5$, avg hold 3.3d
 EVRG: 3 trades, 67% won, avg +1.64%, total +5$, avg hold 5.0d
 MSI: 4 trades, 75% won, avg +1.23%, total +5$, avg hold 3.1d
+IBM: 3 trades, 67% won, avg +1.64%, total +5$, avg hold 6.0d
 DRI: 2 trades, 100% won, avg +2.44%, total +5$, avg hold 9.1d
 AVY: 3 trades, 100% won, avg +1.61%, total +5$, avg hold 4.7d
 BXP: 3 trades, 67% won, avg +1.59%, total +5$, avg hold 3.7d
@@ -139,14 +140,11 @@ VTR: 3 trades, 67% won, avg +1.45%, total +4$, avg hold 4.6d
 STE: 2 trades, 100% won, avg +2.12%, total +4$, avg hold 9.0d
 VLTO: 2 trades, 100% won, avg +2.10%, total +4$, avg hold 6.5d
 MSCI: 3 trades, 67% won, avg +1.40%, total +4$, avg hold 3.9d
-FDX: 2 trades, 100% won, avg +2.09%, total +4$, avg hold 6.0d
-HSY: 4 trades, 50% won, avg +1.01%, total +4$, avg hold 2.3d
 BX: 1 trade, 100% won, avg +4.01%, total +4$, avg hold 5.9d
 HCA: 1 trade, 100% won, avg +4.00%, total +4$, avg hold 7.0d
 DLTR: 1 trade, 100% won, avg +3.96%, total +4$, avg hold 3.2d
 F: 1 trade, 100% won, avg +3.95%, total +4$, avg hold 6.0d
 PM: 1 trade, 100% won, avg +3.91%, total +4$, avg hold 7.0d
-PIEVERSE: 2 trades, 50% won, avg +1.90%, total +4$, avg hold 3h
 MA: 1 trade, 100% won, avg +3.70%, total +4$, avg hold 14.0d
 ECL: 1 trade, 100% won, avg +3.68%, total +4$, avg hold 4.0d
 CL: 2 trades, 100% won, avg +1.84%, total +4$, avg hold 47h
@@ -173,7 +171,6 @@ AMCR: 4 trades, 50% won, avg +0.75%, total +3$, avg hold 2.6d
 AKE: 3 trades, 33% won, avg +0.98%, total +3$, avg hold 5h
 KIM: 4 trades, 50% won, avg +0.73%, total +3$, avg hold 3.3d
 ORLY: 3 trades, 67% won, avg +0.94%, total +3$, avg hold 4.4d
-ADI: 1 trade, 100% won, avg +2.83%, total +3$, avg hold 3.8d
 AON: 1 trade, 100% won, avg +2.82%, total +3$, avg hold 23h
 AMT: 1 trade, 100% won, avg +2.79%, total +3$, avg hold 47h
 ETR: 3 trades, 67% won, avg +0.92%, total +3$, avg hold 4.4d
@@ -183,22 +180,18 @@ FAST: 1 trade, 100% won, avg +2.67%, total +3$, avg hold 5.1d
 SPGI: 1 trade, 100% won, avg +2.66%, total +3$, avg hold 8.1d
 HAL: 2 trades, 50% won, avg +1.33%, total +3$, avg hold 7.7d
 TXT: 3 trades, 67% won, avg +0.88%, total +3$, avg hold 4.7d
-EXPE: 2 trades, 50% won, avg +1.32%, total +3$, avg hold 7.5d
 PNC: 1 trade, 100% won, avg +2.63%, total +3$, avg hold 9.9d
 PPL: 3 trades, 67% won, avg +0.87%, total +3$, avg hold 4.0d
 VRTX: 2 trades, 50% won, avg +1.31%, total +3$, avg hold 4.1d
 PFE: 1 trade, 100% won, avg +2.61%, total +3$, avg hold 14.0d
 URI: 2 trades, 50% won, avg +1.29%, total +3$, avg hold 2.5d
-HD: 2 trades, 50% won, avg +1.28%, total +3$, avg hold 6.0d
+FDX: 3 trades, 67% won, avg +0.85%, total +3$, avg hold 6.3d
 WRB: 3 trades, 67% won, avg +0.81%, total +2$, avg hold 5.0d
 KVUE: 2 trades, 100% won, avg +1.20%, total +2$, avg hold 2.5d
 INTU: 2 trades, 50% won, avg +1.20%, total +2$, avg hold 6.0d
 YUM: 5 trades, 60% won, avg +0.48%, total +2$, avg hold 2.6d
-SWK: 1 trade, 100% won, avg +2.35%, total +2$, avg hold 6.1d
 ALLE: 2 trades, 50% won, avg +1.17%, total +2$, avg hold 25h
 EXC: 3 trades, 67% won, avg +0.78%, total +2$, avg hold 3.6d
-GNO: 1 trade, 100% won, avg +2.33%, total +2$, avg hold 13h
-ED: 1 trade, 100% won, avg +2.23%, total +2$, avg hold 6.0d
 DTE: 2 trades, 100% won, avg +1.11%, total +2$, avg hold 4.1d
 CPAY: 1 trade, 100% won, avg +2.21%, total +2$, avg hold 2.1d
 TGT: 2 trades, 50% won, avg +1.10%, total +2$, avg hold 3.4d
@@ -206,41 +199,40 @@ ACGL: 1 trade, 100% won, avg +2.17%, total +2$, avg hold 6.1d
 WAB: 4 trades, 50% won, avg +0.54%, total +2$, avg hold 4.0d
 OTIS: 2 trades, 50% won, avg +1.05%, total +2$, avg hold 5.5d
 DG: 2 trades, 50% won, avg +1.00%, total +2$, avg hold 4.1d
-WEC: 2 trades, 100% won, avg +1.00%, total +2$, avg hold 3.0d
 STZ: 4 trades, 50% won, avg +0.49%, total +2$, avg hold 2.7d
 CF: 1 trade, 100% won, avg +1.95%, total +2$, avg hold 14.0d
 TDY: 5 trades, 60% won, avg +0.37%, total +2$, avg hold 39h
-L: 1 trade, 100% won, avg +1.85%, total +2$, avg hold 6.0d
 IR: 4 trades, 50% won, avg +0.46%, total +2$, avg hold 2.8d
 DOV: 1 trade, 100% won, avg +1.84%, total +2$, avg hold 7.0d
 DLR: 4 trades, 50% won, avg +0.46%, total +2$, avg hold 3.2d
 FE: 1 trade, 100% won, avg +1.82%, total +2$, avg hold 14.0d
-PNW: 1 trade, 100% won, avg +1.81%, total +2$, avg hold 6.0d
 XEL: 2 trades, 50% won, avg +0.88%, total +2$, avg hold 8.5d
 PEP: 2 trades, 50% won, avg +0.88%, total +2$, avg hold 5.6d
 CI: 2 trades, 50% won, avg +0.87%, total +2$, avg hold 7.5d
-ZTS: 2 trades, 50% won, avg +0.86%, total +2$, avg hold 7.0d
 PCAR: 2 trades, 50% won, avg +0.84%, total +2$, avg hold 3.7d
+CHD: 1 trade, 100% won, avg +1.69%, total +2$, avg hold 14.0d
 COR: 1 trade, 100% won, avg +1.66%, total +2$, avg hold 4.1d
 APO: 3 trades, 67% won, avg +0.54%, total +2$, avg hold 8h
 MS: 2 trades, 50% won, avg +0.80%, total +2$, avg hold 3.1d
 ZBH: 4 trades, 50% won, avg +0.39%, total +2$, avg hold 2.5d
+JST: 19 trades, 53% won, avg +0.08%, total +2$, avg hold 2.8d
 ALGN: 4 trades, 50% won, avg +0.38%, total +2$, avg hold 2.5d
 CVNA: 4 trades, 50% won, avg +0.38%, total +2$, avg hold 3.2d
 CMG: 2 trades, 50% won, avg +0.75%, total +1$, avg hold 4.0d
 CINF: 1 trade, 100% won, avg +1.44%, total +1$, avg hold 5.0d
 DOW: 3 trades, 33% won, avg +0.47%, total +1$, avg hold 3.7d
-O: 1 trade, 100% won, avg +1.39%, total +1$, avg hold 3.2d
-MNST: 1 trade, 100% won, avg +1.38%, total +1$, avg hold 14.0d
 MMM: 1 trade, 100% won, avg +1.34%, total +1$, avg hold 4.1d
 LITE: 2 trades, 50% won, avg +0.65%, total +1$, avg hold 2.6d
 NVR: 2 trades, 50% won, avg +0.64%, total +1$, avg hold 3.4d
 HSIC: 1 trade, 100% won, avg +1.24%, total +1$, avg hold 14.0d
 CTSH: 2 trades, 50% won, avg +0.59%, total +1$, avg hold 2.3d
+OMC: 5 trades, 60% won, avg +0.23%, total +1$, avg hold 3.4d
+NXPI: 3 trades, 67% won, avg +0.39%, total +1$, avg hold 4.3d
 EQIX: 3 trades, 33% won, avg +0.38%, total +1$, avg hold 42h
-MKC: 2 trades, 50% won, avg +0.55%, total +1$, avg hold 7.5d
+EG: 1 trade, 100% won, avg +1.10%, total +1$, avg hold 14.0d
 UDR: 2 trades, 50% won, avg +0.54%, total +1$, avg hold 6.0d
 FERG: 2 trades, 50% won, avg +0.53%, total +1$, avg hold 6.0d
+GNO: 2 trades, 50% won, avg +0.52%, total +1$, avg hold 8h
 PLD: 1 trade, 100% won, avg +0.98%, total +1$, avg hold 14.0d
 BNB: 14 trades, 57% won, avg +0.07%, total +1$, avg hold 2.2d
 CSX: 1 trade, 100% won, avg +0.90%, total +1$, avg hold 6.0d
@@ -253,18 +245,16 @@ LYV: 2 trades, 50% won, avg +0.36%, total +1$, avg hold 7.1d
 VEEV: 1 trade, 100% won, avg +0.73%, total +1$, avg hold 14.0d
 RAY: 2 trades, 50% won, avg +0.34%, total +1$, avg hold 27h
 ANET: 4 trades, 50% won, avg +0.17%, total +1$, avg hold 2.7d
-JST: 18 trades, 50% won, avg +0.04%, total +1$, avg hold 2.9d
 SLB: 4 trades, 75% won, avg +0.16%, total +1$, avg hold 3.5d
 CMS: 2 trades, 50% won, avg +0.31%, total +1$, avg hold 2.5d
+PODD: 2 trades, 50% won, avg +0.29%, total +1$, avg hold 6.6d
 LUV: 3 trades, 33% won, avg +0.18%, total +1$, avg hold 34h
 HON: 2 trades, 50% won, avg +0.23%, total +0$, avg hold 9.0d
-EQT: 2 trades, 50% won, avg +0.22%, total +0$, avg hold 7.9d
 HIG: 3 trades, 67% won, avg +0.14%, total +0$, avg hold 4.0d
 WM: 3 trades, 67% won, avg +0.14%, total +0$, avg hold 4.0d
 DD: 4 trades, 50% won, avg +0.08%, total +0$, avg hold 4.0d
 MDLZ: 2 trades, 50% won, avg +0.12%, total +0$, avg hold 38h
 HII: 3 trades, 67% won, avg +0.05%, total +0$, avg hold 4.3d
-BDX: 8 trades, 25% won, avg +0.01%, total +0$, avg hold 37h
 ATO: 2 trades, 50% won, avg -0.01%, total -0$, avg hold 4.1d
 GPN: 1 trade, 0% won, avg -0.06%, total -0$, avg hold 14.0d
 TECH: 1 trade, 0% won, avg -0.08%, total -0$, avg hold 14.0d
@@ -275,10 +265,13 @@ NI: 4 trades, 50% won, avg -0.04%, total -0$, avg hold 3.2d
 SRE: 3 trades, 33% won, avg -0.09%, total -0$, avg hold 4.0d
 REG: 3 trades, 33% won, avg -0.10%, total -0$, avg hold 3.4d
 RL: 3 trades, 33% won, avg -0.12%, total -0$, avg hold 6.0d
+O: 2 trades, 50% won, avg -0.24%, total -0$, avg hold 2.1d
 SPX: 9 trades, 44% won, avg -0.06%, total -1$, avg hold 25h
 AMP: 3 trades, 67% won, avg -0.18%, total -1$, avg hold 5.7d
 RMD: 4 trades, 50% won, avg -0.15%, total -1$, avg hold 37h
+MET: 1 trade, 0% won, avg -0.64%, total -1$, avg hold 14.0d
 FITB: 2 trades, 50% won, avg -0.34%, total -1$, avg hold 7.0d
+WEC: 3 trades, 67% won, avg -0.23%, total -1$, avg hold 2.4d
 NOC: 4 trades, 50% won, avg -0.18%, total -1$, avg hold 4.3d
 PRU: 2 trades, 50% won, avg -0.39%, total -1$, avg hold 8.5d
 SO: 2 trades, 50% won, avg -0.39%, total -1$, avg hold 7.5d
@@ -286,7 +279,6 @@ EBAY: 1 trade, 0% won, avg -0.80%, total -1$, avg hold 14.0d
 SUN: 2 trades, 50% won, avg -0.41%, total -1$, avg hold 6h
 LIN: 2 trades, 50% won, avg -0.42%, total -1$, avg hold 4.5d
 OXY: 2 trades, 50% won, avg -0.44%, total -1$, avg hold 8.0d
-DOC: 3 trades, 33% won, avg -0.30%, total -1$, avg hold 4.3d
 SJM: 1 trade, 0% won, avg -0.92%, total -1$, avg hold 14.0d
 GD: 4 trades, 50% won, avg -0.23%, total -1$, avg hold 4.2d
 RF: 4 trades, 50% won, avg -0.24%, total -1$, avg hold 2.8d
@@ -301,29 +293,36 @@ DIS: 3 trades, 33% won, avg -0.40%, total -1$, avg hold 5.0d
 USDGO: 7 trades, 0% won, avg -0.17%, total -1$, avg hold 3.4d
 BTT: 5 trades, 60% won, avg -0.25%, total -1$, avg hold 2.1d
 DASH: 4 trades, 50% won, avg -0.32%, total -1$, avg hold 3.9d
-UNH: 2 trades, 50% won, avg -0.68%, total -1$, avg hold 9.0d
+ADI: 2 trades, 50% won, avg -0.65%, total -1$, avg hold 2.4d
+BDX: 9 trades, 22% won, avg -0.15%, total -1$, avg hold 33h
+GL: 1 trade, 0% won, avg -1.34%, total -1$, avg hold 14.0d
 SYK: 3 trades, 33% won, avg -0.48%, total -1$, avg hold 2.6d
+PNW: 2 trades, 50% won, avg -0.76%, total -2$, avg hold 10.0d
 CNP: 2 trades, 50% won, avg -0.78%, total -2$, avg hold 8.0d
 MTB: 1 trade, 0% won, avg -1.57%, total -2$, avg hold 5.0d
 ESS: 3 trades, 67% won, avg -0.53%, total -2$, avg hold 5.6d
+BEN: 5 trades, 40% won, avg -0.32%, total -2$, avg hold 29h
 SCHW: 3 trades, 33% won, avg -0.55%, total -2$, avg hold 4.4d
-KHC: 3 trades, 33% won, avg -0.56%, total -2$, avg hold 2.3d
+L: 2 trades, 50% won, avg -0.84%, total -2$, avg hold 10.0d
 PEG: 1 trade, 0% won, avg -1.70%, total -2$, avg hold 2.9d
 VMRK: 1 trade, 0% won, avg -1.72%, total -2$, avg hold 4.9d
 CSCO: 1 trade, 0% won, avg -1.72%, total -2$, avg hold 24h
+MCD: 1 trade, 0% won, avg -1.74%, total -2$, avg hold 46h
 MCHP: 3 trades, 33% won, avg -0.59%, total -2$, avg hold 3.1d
 J: 4 trades, 50% won, avg -0.45%, total -2$, avg hold 4.1d
 UHS: 2 trades, 50% won, avg -0.93%, total -2$, avg hold 8.5d
 EMR: 1 trade, 0% won, avg -1.85%, total -2$, avg hold 9.0d
 EOG: 2 trades, 50% won, avg -0.93%, total -2$, avg hold 7.4d
 INVH: 1 trade, 0% won, avg -1.90%, total -2$, avg hold 2h
+DXCM: 4 trades, 50% won, avg -0.48%, total -2$, avg hold 2.7d
 UBER: 3 trades, 33% won, avg -0.67%, total -2$, avg hold 33h
 JCI: 3 trades, 67% won, avg -0.68%, total -2$, avg hold 5.0d
 FISV: 1 trade, 0% won, avg -2.04%, total -2$, avg hold 4.1d
-CARR: 2 trades, 50% won, avg -1.02%, total -2$, avg hold 5.5d
+PNR: 1 trade, 0% won, avg -2.18%, total -2$, avg hold 3.9d
 RJF: 3 trades, 33% won, avg -0.74%, total -2$, avg hold 3.7d
 NTRS: 1 trade, 0% won, avg -2.23%, total -2$, avg hold 4.1d
 CRH: 1 trade, 0% won, avg -2.27%, total -2$, avg hold 25h
+ITW: 3 trades, 33% won, avg -0.78%, total -2$, avg hold 6.3d
 LYB: 3 trades, 33% won, avg -0.78%, total -2$, avg hold 4.1d
 CDW: 3 trades, 33% won, avg -0.81%, total -2$, avg hold 2.7d
 AEP: 3 trades, 33% won, avg -0.83%, total -2$, avg hold 6.0d
@@ -331,18 +330,25 @@ COO: 1 trade, 0% won, avg -2.51%, total -3$, avg hold 2h
 KEY: 5 trades, 40% won, avg -0.50%, total -3$, avg hold 2.2d
 CTAS: 3 trades, 67% won, avg -0.85%, total -3$, avg hold 2.6d
 TKO: 5 trades, 40% won, avg -0.52%, total -3$, avg hold 2.3d
+ZTS: 3 trades, 33% won, avg -0.89%, total -3$, avg hold 5.7d
+EQT: 3 trades, 33% won, avg -0.89%, total -3$, avg hold 5.6d
 NKE: 1 trade, 0% won, avg -2.70%, total -3$, avg hold 22h
 FANG: 1 trade, 0% won, avg -2.73%, total -3$, avg hold 3.0d
 ELV: 3 trades, 33% won, avg -0.93%, total -3$, avg hold 4.3d
+CPRT: 1 trade, 0% won, avg -2.80%, total -3$, avg hold 47h
 STLD: 1 trade, 0% won, avg -2.81%, total -3$, avg hold 7.0d
+EXPE: 3 trades, 33% won, avg -0.94%, total -3$, avg hold 5.3d
 CFG: 1 trade, 0% won, avg -2.83%, total -3$, avg hold <1h
 U: 8 trades, 0% won, avg -0.36%, total -3$, avg hold 7.7d
+HD: 3 trades, 33% won, avg -0.95%, total -3$, avg hold 4.3d
 WY: 1 trade, 0% won, avg -2.88%, total -3$, avg hold 25h
+DOC: 4 trades, 25% won, avg -0.74%, total -3$, avg hold 3.5d
 AXON: 5 trades, 40% won, avg -0.60%, total -3$, avg hold 2.0d
 USB: 3 trades, 33% won, avg -1.02%, total -3$, avg hold 4.7d
+CHRW: 1 trade, 0% won, avg -3.10%, total -3$, avg hold 2.9d
 WFC: 3 trades, 33% won, avg -1.05%, total -3$, avg hold 5.4d
-KMB: 5 trades, 20% won, avg -0.63%, total -3$, avg hold 35h
 PKG: 1 trade, 0% won, avg -3.15%, total -3$, avg hold 2h
+NSC: 1 trade, 0% won, avg -3.16%, total -3$, avg hold 14.0d
 VRSN: 1 trade, 0% won, avg -3.19%, total -3$, avg hold 2h
 HUBB: 3 trades, 33% won, avg -1.07%, total -3$, avg hold 2.7d
 BTC: 8 trades, 38% won, avg -0.41%, total -3$, avg hold 32h
@@ -354,16 +360,17 @@ WTW: 4 trades, 25% won, avg -0.92%, total -4$, avg hold 2.8d
 APH: 4 trades, 50% won, avg -0.94%, total -4$, avg hold 3.2d
 APTV: 3 trades, 33% won, avg -1.25%, total -4$, avg hold 3.5d
 C: 3 trades, 33% won, avg -1.25%, total -4$, avg hold 4.4d
-ADBE: 3 trades, 33% won, avg -1.25%, total -4$, avg hold 5.0d
 PLTR: 2 trades, 50% won, avg -1.91%, total -4$, avg hold 8.0d
 SNPS: 3 trades, 33% won, avg -1.28%, total -4$, avg hold 5.0d
-ITW: 2 trades, 0% won, avg -1.94%, total -4$, avg hold 2.4d
 AVGO: 1 trade, 0% won, avg -3.99%, total -4$, avg hold 3.0d
+UNH: 3 trades, 33% won, avg -1.34%, total -4$, avg hold 6.3d
 TDG: 2 trades, 0% won, avg -2.04%, total -4$, avg hold 46h
 LDOS: 2 trades, 50% won, avg -2.05%, total -4$, avg hold 4.0d
 KMI: 1 trade, 0% won, avg -4.23%, total -4$, avg hold 24h
 CCI: 1 trade, 0% won, avg -4.25%, total -4$, avg hold 5.0d
+MNST: 2 trades, 50% won, avg -2.16%, total -4$, avg hold 9.0d
 TT: 4 trades, 25% won, avg -1.09%, total -4$, avg hold 3.5d
+KHC: 4 trades, 25% won, avg -1.10%, total -4$, avg hold 46h
 NFLX: 2 trades, 0% won, avg -2.25%, total -4$, avg hold 38h
 HUM: 1 trade, 0% won, avg -4.52%, total -5$, avg hold 10.9d
 LULU: 2 trades, 0% won, avg -2.26%, total -5$, avg hold 26h
@@ -374,12 +381,12 @@ DDOG: 1 trade, 0% won, avg -4.77%, total -5$, avg hold 2.1d
 ROST: 3 trades, 33% won, avg -1.60%, total -5$, avg hold 5.4d
 IP: 3 trades, 33% won, avg -1.63%, total -5$, avg hold 3.4d
 AKAM: 3 trades, 33% won, avg -1.64%, total -5$, avg hold 5.0d
-BEN: 4 trades, 25% won, avg -1.23%, total -5$, avg hold 30h
 ETN: 3 trades, 33% won, avg -1.65%, total -5$, avg hold 5.0d
 SYY: 2 trades, 50% won, avg -2.48%, total -5$, avg hold 3.4d
+MKC: 3 trades, 33% won, avg -1.68%, total -5$, avg hold 5.4d
 CAKE: 4 trades, 50% won, avg -1.26%, total -5$, avg hold 2.2d
-OKE: 2 trades, 0% won, avg -2.56%, total -5$, avg hold 4.0d
 TJX: 2 trades, 0% won, avg -2.57%, total -5$, avg hold 2.5d
+KMB: 6 trades, 17% won, avg -0.86%, total -5$, avg hold 32h
 SHW: 3 trades, 33% won, avg -1.76%, total -5$, avg hold 5.7d
 CNC: 3 trades, 33% won, avg -1.77%, total -5$, avg hold 4.4d
 SOLV: 2 trades, 0% won, avg -2.79%, total -6$, avg hold 2.1d
@@ -394,7 +401,6 @@ LHX: 2 trades, 0% won, avg -3.07%, total -6$, avg hold 32h
 GM: 2 trades, 50% won, avg -3.09%, total -6$, avg hold 2.6d
 STABLE: 10 trades, 40% won, avg -0.64%, total -6$, avg hold 23h
 CPT: 3 trades, 0% won, avg -2.14%, total -6$, avg hold 2.3d
-ODFL: 5 trades, 20% won, avg -1.29%, total -6$, avg hold 2.0d
 TTWO: 2 trades, 0% won, avg -3.30%, total -7$, avg hold 5.0d
 ON: 2 trades, 0% won, avg -3.31%, total -7$, avg hold 7.1d
 TEL: 4 trades, 25% won, avg -1.66%, total -7$, avg hold 3.0d
@@ -402,16 +408,17 @@ NVDA: 2 trades, 0% won, avg -3.43%, total -7$, avg hold 7.1d
 IRM: 4 trades, 25% won, avg -1.77%, total -7$, avg hold 2.5d
 BAC: 4 trades, 25% won, avg -1.79%, total -7$, avg hold 3.6d
 ASTER: 12 trades, 25% won, avg -0.62%, total -7$, avg hold 2.8d
+ADBE: 4 trades, 25% won, avg -1.86%, total -7$, avg hold 4.0d
 PCG: 3 trades, 0% won, avg -2.49%, total -7$, avg hold 34h
 AME: 2 trades, 0% won, avg -3.79%, total -8$, avg hold 9.0d
 NIGHT: 7 trades, 29% won, avg -1.11%, total -8$, avg hold 19h
-PENGU: 13 trades, 38% won, avg -0.60%, total -8$, avg hold 12h
 SWKS: 2 trades, 50% won, avg -3.92%, total -8$, avg hold 6.9d
 COHR: 1 trade, 0% won, avg -7.85%, total -8$, avg hold 11.2d
 GPC: 4 trades, 0% won, avg -2.01%, total -8$, avg hold 2.5d
 ECHO: 1 trade, 0% won, avg -8.14%, total -8$, avg hold 6.8d
 CBRE: 5 trades, 20% won, avg -1.63%, total -8$, avg hold 2.4d
 GOOG: 2 trades, 0% won, avg -4.13%, total -8$, avg hold 35h
+OKE: 3 trades, 0% won, avg -2.75%, total -8$, avg hold 3.3d
 NWS: 2 trades, 0% won, avg -4.17%, total -8$, avg hold 6.5d
 XYL: 3 trades, 33% won, avg -2.79%, total -8$, avg hold 25h
 STX: 9 trades, 44% won, avg -0.93%, total -8$, avg hold 11h
@@ -421,13 +428,12 @@ EXE: 4 trades, 0% won, avg -2.20%, total -9$, avg hold 2.2d
 ISRG: 3 trades, 0% won, avg -2.95%, total -9$, avg hold 3.3d
 TER: 3 trades, 33% won, avg -2.97%, total -9$, avg hold 46h
 EME: 4 trades, 25% won, avg -2.23%, total -9$, avg hold 3.2d
-BKNG: 2 trades, 0% won, avg -4.52%, total -9$, avg hold 3.0d
 NUE: 2 trades, 0% won, avg -4.55%, total -9$, avg hold 5.0d
 ZRO: 9 trades, 33% won, avg -1.04%, total -9$, avg hold 22h
 IVZ: 2 trades, 0% won, avg -4.68%, total -9$, avg hold 7.0d
 MPWR: 2 trades, 0% won, avg -4.68%, total -9$, avg hold 4.5d
+CARR: 3 trades, 33% won, avg -3.13%, total -9$, avg hold 4.4d
 CARDS: 1 trade, 0% won, avg -9.41%, total -9$, avg hold 4h
-WDAY: 2 trades, 0% won, avg -4.81%, total -10$, avg hold 5.0d
 NEM: 4 trades, 25% won, avg -2.42%, total -10$, avg hold 2.0d
 CDNS: 4 trades, 25% won, avg -2.45%, total -10$, avg hold 3.5d
 XRP: 12 trades, 33% won, avg -0.82%, total -10$, avg hold 2.7d
@@ -436,13 +442,15 @@ ADM: 2 trades, 0% won, avg -5.07%, total -10$, avg hold 4.5d
 META: 2 trades, 0% won, avg -5.08%, total -10$, avg hold 2.1d
 JBL: 2 trades, 0% won, avg -5.10%, total -10$, avg hold 4.5d
 FCX: 3 trades, 0% won, avg -3.43%, total -10$, avg hold 3.3d
-DVN: 3 trades, 0% won, avg -3.52%, total -11$, avg hold 3.0d
+PENGU: 14 trades, 36% won, avg -0.76%, total -11$, avg hold 12h
 VIRTUAL: 10 trades, 30% won, avg -1.06%, total -11$, avg hold 22h
+ODFL: 6 trades, 17% won, avg -1.77%, total -11$, avg hold 44h
 GOOGL: 4 trades, 0% won, avg -2.67%, total -11$, avg hold 19h
 XYZ: 3 trades, 0% won, avg -3.56%, total -11$, avg hold 4.0d
 PWR: 2 trades, 0% won, avg -5.54%, total -11$, avg hold 25h
 INJ: 11 trades, 36% won, avg -1.01%, total -11$, avg hold 17h
 T: 3 trades, 0% won, avg -3.76%, total -11$, avg hold 40h
+BKNG: 3 trades, 0% won, avg -3.80%, total -11$, avg hold 2.7d
 QCOM: 2 trades, 0% won, avg -5.70%, total -11$, avg hold 12h
 IBKR: 4 trades, 0% won, avg -2.87%, total -11$, avg hold 26h
 DRV: 5 trades, 40% won, avg -2.30%, total -12$, avg hold 38h
@@ -464,6 +472,8 @@ VRT: 2 trades, 0% won, avg -7.03%, total -14$, avg hold 35h
 COIN: 3 trades, 33% won, avg -4.70%, total -14$, avg hold 5.0d
 TRUMP: 7 trades, 14% won, avg -2.02%, total -14$, avg hold 12h
 RDDT: 3 trades, 0% won, avg -4.75%, total -14$, avg hold 2.0d
+DVN: 4 trades, 0% won, avg -3.66%, total -15$, avg hold 2.5d
+WDAY: 3 trades, 0% won, avg -4.91%, total -15$, avg hold 4.0d
 FLR: 12 trades, 17% won, avg -1.25%, total -15$, avg hold 13h
 NEXO: 7 trades, 0% won, avg -2.15%, total -15$, avg hold 23h
 VST: 2 trades, 0% won, avg -7.78%, total -16$, avg hold 9.0d
@@ -472,21 +482,21 @@ SMCI: 3 trades, 0% won, avg -5.63%, total -17$, avg hold 2.7d
 KLAC: 2 trades, 0% won, avg -8.46%, total -17$, avg hold 3.5d
 CRM: 4 trades, 0% won, avg -4.28%, total -17$, avg hold 43h
 PENDLE: 9 trades, 11% won, avg -1.95%, total -18$, avg hold 13h
-FIL: 5 trades, 20% won, avg -3.58%, total -18$, avg hold 2.1d
 WBT: 11 trades, 27% won, avg -1.63%, total -18$, avg hold 39h
 PI: 8 trades, 12% won, avg -2.27%, total -18$, avg hold 28h
 HPQ: 4 trades, 25% won, avg -4.58%, total -18$, avg hold 2.4d
 XPL: 8 trades, 25% won, avg -2.30%, total -18$, avg hold 16h
 ICP: 9 trades, 22% won, avg -2.09%, total -19$, avg hold 22h
 SEI: 5 trades, 0% won, avg -3.93%, total -20$, avg hold 27h
-ETC: 11 trades, 36% won, avg -1.80%, total -20$, avg hold 2.4d
 DOT: 14 trades, 29% won, avg -1.46%, total -20$, avg hold 3.7d
 CRV: 8 trades, 12% won, avg -2.60%, total -21$, avg hold 23h
-XTZ: 7 trades, 14% won, avg -2.99%, total -21$, avg hold 23h
+FIL: 6 trades, 17% won, avg -3.46%, total -21$, avg hold 44h
+ETC: 12 trades, 33% won, avg -1.82%, total -22$, avg hold 2.3d
+XTZ: 8 trades, 12% won, avg -3.10%, total -25$, avg hold 21h
 AERO: 6 trades, 17% won, avg -4.22%, total -25$, avg hold 12h
 HOOD: 3 trades, 0% won, avg -8.84%, total -27$, avg hold 4.4d
-KCS: 32 trades, 44% won, avg -0.84%, total -27$, avg hold 2.8d
 NOW: 4 trades, 25% won, avg -6.82%, total -27$, avg hold 25h
+KCS: 33 trades, 42% won, avg -0.85%, total -28$, avg hold 2.8d
 GRASS: 8 trades, 12% won, avg -3.61%, total -29$, avg hold 12h
 ENA: 13 trades, 31% won, avg -2.30%, total -30$, avg hold 37h
 BGB: 15 trades, 7% won, avg -2.05%, total -31$, avg hold 4.7d
@@ -500,349 +510,395 @@ WLFI: 11 trades, 18% won, avg -3.50%, total -39$, avg hold 18h
 HYPE: 15 trades, 20% won, avg -2.67%, total -40$, avg hold 29h
 ETH: 18 trades, 11% won, avg -3.21%, total -58$, avg hold 27h
 Q: 2 trades, 0% won, avg -29.22%, total -58$, avg hold 2.0d
-SKY: 14 trades, 7% won, avg -4.28%, total -60$, avg hold 2.1d
 SHIB: 19 trades, 21% won, avg -3.39%, total -64$, avg hold 31h
 KAS: 16 trades, 6% won, avg -4.11%, total -66$, avg hold 41h
+SKY: 17 trades, 6% won, avg -4.25%, total -72$, avg hold 2.9d
 JUP: 14 trades, 14% won, avg -5.21%, total -73$, avg hold 20h
 AVAX: 14 trades, 7% won, avg -5.47%, total -77$, avg hold 19h
 SUI: 14 trades, 0% won, avg -5.85%, total -82$, avg hold 35h
 BCH: 25 trades, 32% won, avg -3.29%, total -82$, avg hold 2.4d
 HBAR: 16 trades, 12% won, avg -5.25%, total -84$, avg hold 45h
-XLM: 21 trades, 5% won, avg -4.07%, total -86$, avg hold 29h
+XLM: 22 trades, 5% won, avg -4.00%, total -88$, avg hold 28h
 OKB: 24 trades, 12% won, avg -3.72%, total -89$, avg hold 2.3d
 AAVE: 20 trades, 15% won, avg -4.54%, total -91$, avg hold 32h
 MNT: 19 trades, 11% won, avg -4.84%, total -92$, avg hold 34h
+ZEC: 22 trades, 18% won, avg -4.35%, total -96$, avg hold 16h
 LTC: 20 trades, 20% won, avg -4.96%, total -99$, avg hold 36h
 ALGO: 12 trades, 0% won, avg -8.36%, total -100$, avg hold 48h
 DOGE: 22 trades, 9% won, avg -4.63%, total -102$, avg hold 27h
-ZEC: 21 trades, 14% won, avg -4.91%, total -103$, avg hold 15h
 LINK: 24 trades, 12% won, avg -4.33%, total -104$, avg hold 32h
 WLD: 20 trades, 25% won, avg -5.22%, total -104$, avg hold 36h
 SOL: 23 trades, 4% won, avg -4.54%, total -105$, avg hold 37h
+RENDER: 16 trades, 6% won, avg -6.64%, total -106$, avg hold 46h
 ATOM: 18 trades, 0% won, avg -5.99%, total -108$, avg hold 2.4d
 QNT: 11 trades, 9% won, avg -9.90%, total -109$, avg hold 35h
 ONDO: 18 trades, 6% won, avg -6.10%, total -110$, avg hold 30h
-RENDER: 15 trades, 0% won, avg -7.52%, total -113$, avg hold 48h
 POL: 29 trades, 17% won, avg -4.45%, total -129$, avg hold 24h
 TAO: 23 trades, 9% won, avg -5.64%, total -130$, avg hold 36h
 MORPHO: 25 trades, 8% won, avg -5.26%, total -131$, avg hold 3.2d
 CRO: 23 trades, 0% won, avg -5.78%, total -133$, avg hold 3.2d
+ARB: 20 trades, 15% won, avg -6.93%, total -139$, avg hold 32h
 ADA: 22 trades, 9% won, avg -6.46%, total -142$, avg hold 34h
-ARB: 19 trades, 11% won, avg -7.49%, total -142$, avg hold 33h
 NEAR: 17 trades, 6% won, avg -8.44%, total -143$, avg hold 2.3d
 CC: 25 trades, 12% won, avg -7.10%, total -178$, avg hold 2.6d
 PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 
 ## Open positions
 
-- CHD long (BUY SIGNAL) opened 23 Oct 14:59 at 106.98, stop 102.95468, target 113.705: +3.9% so far
-- EG long (BUY SIGNAL) opened 23 Oct 14:59 at 404.64001, stop 384.05893, target none: +3.0% so far
-- ITW long (BUY SIGNAL) opened 23 Oct 14:59 at 276.75, stop 270.58214, target 301.87001: +2.9% so far
-- L long (BUY SIGNAL) opened 23 Oct 14:59 at 113.175, stop 109.2325, target none: -2.0% so far
-- PNW long (BUY SIGNAL) opened 23 Oct 14:59 at 105.94, stop 100.84714, target 110.785: -2.2% so far
-- ED long (BUY SIGNAL) opened 23 Oct 15:31 at 115.31, stop 113.79215, target none: +5.1% so far
-- GL long (IN ZONE - WAIT) opened 23 Oct 15:31 at 159.36, stop 153.27464, target 168.35: -0.3% so far
-- NSC long (BUY SIGNAL) opened 23 Oct 16:08 at 331.14999, stop 325.99, target 357.295: -0.8% so far
-- SWK long (BUY SIGNAL) opened 23 Oct 16:41 at 98.684998, stop 95.074894, target none: +16.6% so far
-- MET long (IN ZONE) opened 23 Oct 17:49 at 99.839996, stop 96.728931, target none: -0.3% so far
-- AMT long (BUY SIGNAL) opened 26 Oct 13:40 at 190.22501, stop 176.61125, target 196.24857: +1.8% so far
-- BX long (BUY SIGNAL) opened 26 Oct 13:40 at 118.52, stop 113.16754, target 129.68667: +0.9% so far
-- VYLR long (IN ZONE - WAIT) opened 26 Oct 15:20 at 71.690002, stop 68.808357, target 77.389999: -4.6% so far
-- PNC long (IN ZONE) opened 27 Oct 15:22 at 226.075, stop 223.73571, target 245.83667: +0.1% so far
-- GDDY long (IN ZONE) opened 27 Oct 16:46 at 105.81, stop 103.54021, target 123.545: +13.3% so far
-- ACGL long (IN ZONE) opened 28 Oct 14:52 at 103.17, stop 101.84768, target none: +7.0% so far
-- MTB long (BUY SIGNAL) opened 28 Oct 15:37 at 220.2, stop 217.25429, target 232.515: -0.4% so far
-- TYL long (IN ZONE - WAIT) opened 28 Oct 18:27 at 373.44, stop 360.77361, target 449.39667: +15.0% so far
-- FTV long (BUY SIGNAL) opened 29 Oct 14:23 at 64.504997, stop 60.811071, target none: +1.2% so far
-- VTRS long (BUY SIGNAL) opened 29 Oct 14:23 at 19.02, stop 18.097303, target none: -0.5% so far
-- CCI long (BUY SIGNAL) opened 29 Oct 15:15 at 87.794998, stop 85.365721, target 92.163636: +3.4% so far
-- META long (IN ZONE - WAIT) opened 29 Oct 19:07 at 628.60999, stop 592.66571, target 682.07223: -3.9% so far
-- OTIS long (IN ZONE) opened 29 Oct 19:52 at 74.510002, stop 73.639886, target 84.126499: +6.5% so far
-- ALGO long (BUY SIGNAL) opened 30 Oct 05:13 at 0.09537, stop 0.089425357, target 0.101992: -2.5% so far
-- APT long (BUY SIGNAL) opened 30 Oct 09:12 at 0.6155, stop 0.56681071, target 0.67256: -3.0% so far
-- SKY long (RECLAIM C TP1) opened 30 Oct 12:24 at 0.06861, stop 0.06229516, target 0.07492484: -5.1% so far
-- SKY long (RECLAIM C TP2) opened 30 Oct 12:24 at 0.06861, stop 0.06229516, target 0.08123968: -5.1% so far
-- SKY long (RECLAIM C TP3) opened 30 Oct 12:24 at 0.06861, stop 0.06229516, target 0.08755452: -5.1% so far
-- AES long (IN ZONE) opened 30 Oct 14:19 at 14.865, stop 14.670714, target 15.006667: -0.0% so far
-- T long (IN ZONE - WAIT) opened 30 Oct 14:19 at 21.475, stop 20.993213, target 22.48: +1.4% so far
-- CTSH long (IN ZONE - WAIT) opened 30 Oct 14:19 at 64.720001, stop 63.112501, target 68.474998: +2.6% so far
-- VRSN long (IN ZONE - WAIT) opened 30 Oct 15:10 at 311.42499, stop 305.42576, target none: +0.0% so far
-- ATO long (IN ZONE) opened 30 Oct 16:34 at 172.67999, stop 169.93571, target 180.775: +1.1% so far
-- FDX long (IN ZONE) opened 30 Oct 16:34 at 317.17001, stop 312.74622, target 342.2575: -0.3% so far
-- HONA long (IN ZONE - WAIT) opened 30 Oct 18:26 at 151.89, stop 144.78972, target 170.31001: -1.7% so far
-- XMR long (CROSS C TP2) opened 31 Oct 00:13 at 587.75, stop 536.20714, target 690.83571: +4.2% so far
-- XMR long (CROSS C TP3) opened 31 Oct 00:13 at 587.75, stop 536.20714, target 742.37857: +4.2% so far
-- PEPE long (IN ZONE - WAIT) opened 31 Oct 05:15 at 4.835e-06, stop 4.2852857e-06, target none: +1.3% so far
-- AVAX long (RECLAIM C TP1) opened 01 Nov 08:24 at 8.801, stop 7.984, target 9.618: -6.8% so far
-- AVAX long (RECLAIM C TP2) opened 01 Nov 08:24 at 8.801, stop 7.984, target 10.435: -6.8% so far
-- AVAX long (RECLAIM C TP3) opened 01 Nov 08:24 at 8.801, stop 7.984, target 11.252: -6.8% so far
-- ACN long (BUY SIGNAL) opened 02 Nov 14:31 at 254.83, stop 248.79536, target 276.31429: +3.9% so far
-- BMY long (BUY SIGNAL) opened 02 Nov 14:31 at 62.379902, stop 59.356786, target 68.326665: +1.0% so far
-- CHTR long (IN ZONE) opened 02 Nov 14:31 at 111.825, stop 109.38189, target 136.805: +12.4% so far
-- DOV long (BUY SIGNAL) opened 02 Nov 14:31 at 212.86, stop 201.55786, target 218.73: -5.0% so far
-- EBAY long (BUY SIGNAL) opened 02 Nov 14:31 at 121.23, stop 115.86357, target none: +1.5% so far
-- GM long (BUY SIGNAL) opened 02 Nov 14:31 at 88.239998, stop 83.643437, target none: +1.0% so far
-- MDT long (BUY SIGNAL) opened 02 Nov 14:31 at 97.105003, stop 93.017844, target 105.915: +7.8% so far
-- MNST long (BUY SIGNAL) opened 02 Nov 14:31 at 47.93, stop 46.782929, target 49.486668: -0.4% so far
-- NTRS long (IN ZONE) opened 02 Nov 14:31 at 171.02, stop 168.10179, target 189.98: +0.0% so far
-- PPL long (BUY SIGNAL) opened 02 Nov 14:31 at 35.630001, stop 34.602501, target 36.745385: +0.8% so far
-- PODD long (IN ZONE - WAIT) opened 02 Nov 15:24 at 153.11, stop 149.098, target 168.83501: +1.8% so far
-- PLD long (BUY SIGNAL) opened 02 Nov 15:24 at 129.955, stop 123.63696, target 136.21334: -1.3% so far
-- SPGI long (BUY SIGNAL) opened 02 Nov 15:24 at 474.78, stop 452.04814, target 484.64759: -0.7% so far
-- EQIX long (IN ZONE - WAIT) opened 02 Nov 16:25 at 999.81, stop 960.57999, target 1049.7513: -0.4% so far
-- FE long (BUY SIGNAL) opened 02 Nov 16:25 at 46.990002, stop 45.722389, target 48.0925: +0.0% so far
-- PNR long (IN ZONE) opened 02 Nov 16:25 at 70.169998, stop 68.794286, target 76.120003: -0.8% so far
-- NXPI long (BUY SIGNAL) opened 02 Nov 20:29 at 260.07999, stop 249.21584, target 281.53333: -6.2% so far
-- ASTER long (RECLAIM C TP1) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.7461164: -3.1% so far
-- ASTER long (RECLAIM C TP2) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.7907328: -3.1% so far
-- ASTER long (RECLAIM C TP3) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.8353492: -3.1% so far
-- MO long (BUY SIGNAL) opened 03 Nov 14:42 at 75.919998, stop 72.851072, target none: +2.0% so far
-- ARES long (BUY SIGNAL) opened 03 Nov 14:42 at 130.37, stop 125.86968, target 138.505: +2.4% so far
-- MGM long (IN ZONE - WAIT) opened 03 Nov 14:42 at 31.35, stop 30.635178, target 33.342499: +3.6% so far
-- VEEV long (IN ZONE - WAIT) opened 03 Nov 14:42 at 300.095, stop 285.88295, target none: +3.1% so far
-- EIX long (BUY SIGNAL) opened 03 Nov 15:24 at 59.634998, stop 58.947321, target 66.440002: +1.9% so far
-- LYV long (BUY SIGNAL) opened 03 Nov 15:24 at 176.4101, stop 169.06991, target 188.3525: +2.5% so far
-- MAS long (BUY SIGNAL) opened 03 Nov 15:24 at 82.355003, stop 80.617139, target none: +1.6% so far
-- CHRW long (IN ZONE - WAIT) opened 03 Nov 16:18 at 130.81, stop 127.32536, target 139.00334: -2.1% so far
-- IBM long (BUY SIGNAL) opened 03 Nov 16:18 at 249.67, stop 245.33678, target 260.276: -1.2% so far
-- PYPL long (BUY SIGNAL) opened 03 Nov 16:18 at 58.945, stop 56.940849, target 62.775: -0.2% so far
+- AMT long (BUY SIGNAL) opened 26 Oct 13:40 at 190.22501, stop 176.61125, target 196.24857: -1.0% so far
+- BX long (BUY SIGNAL) opened 26 Oct 13:40 at 118.52, stop 113.16754, target 129.68667: +0.6% so far
+- VYLR long (IN ZONE - WAIT) opened 26 Oct 15:20 at 71.690002, stop 68.808357, target 77.389999: -2.4% so far
+- PNC long (IN ZONE) opened 27 Oct 15:22 at 226.075, stop 223.73571, target 245.83667: -0.5% so far
+- GDDY long (IN ZONE) opened 27 Oct 16:46 at 105.81, stop 103.54021, target 123.545: +7.9% so far
+- ACGL long (IN ZONE) opened 28 Oct 14:52 at 103.17, stop 101.84768, target none: +3.8% so far
+- MTB long (BUY SIGNAL) opened 28 Oct 15:37 at 220.2, stop 217.25429, target 232.515: -1.3% so far
+- TYL long (IN ZONE - WAIT) opened 28 Oct 18:27 at 373.44, stop 360.77361, target 449.39667: +12.4% so far
+- FTV long (BUY SIGNAL) opened 29 Oct 14:23 at 64.504997, stop 60.811071, target none: +1.1% so far
+- VTRS long (BUY SIGNAL) opened 29 Oct 14:23 at 19.02, stop 18.097303, target none: +4.5% so far
+- CCI long (BUY SIGNAL) opened 29 Oct 15:15 at 87.794998, stop 85.365721, target 92.163636: +0.7% so far
+- META long (IN ZONE - WAIT) opened 29 Oct 19:07 at 628.60999, stop 592.66571, target 682.07223: -3.1% so far
+- OTIS long (IN ZONE) opened 29 Oct 19:52 at 74.510002, stop 73.639886, target 84.126499: +5.8% so far
+- ALGO long (BUY SIGNAL) opened 30 Oct 05:13 at 0.09537, stop 0.089425357, target 0.101992: -0.3% so far
+- APT long (BUY SIGNAL) opened 30 Oct 09:12 at 0.6155, stop 0.56681071, target 0.67256: -2.6% so far
+- AES long (IN ZONE) opened 30 Oct 14:19 at 14.865, stop 14.670714, target 15.006667: -0.2% so far
+- T long (IN ZONE - WAIT) opened 30 Oct 14:19 at 21.475, stop 20.993213, target 22.48: +0.5% so far
+- CTSH long (IN ZONE - WAIT) opened 30 Oct 14:19 at 64.720001, stop 63.112501, target 68.474998: -0.2% so far
+- VRSN long (IN ZONE - WAIT) opened 30 Oct 15:10 at 311.42499, stop 305.42576, target none: -1.1% so far
+- ATO long (IN ZONE) opened 30 Oct 16:34 at 172.67999, stop 169.93571, target 180.775: +0.1% so far
+- HONA long (IN ZONE - WAIT) opened 30 Oct 18:26 at 151.89, stop 144.78972, target 170.31001: +0.5% so far
+- PEPE long (IN ZONE - WAIT) opened 31 Oct 05:15 at 4.835e-06, stop 4.2852857e-06, target none: +1.7% so far
+- AVAX long (RECLAIM C TP1) opened 01 Nov 08:24 at 8.801, stop 7.984, target 9.618: -5.3% so far
+- AVAX long (RECLAIM C TP2) opened 01 Nov 08:24 at 8.801, stop 7.984, target 10.435: -5.3% so far
+- AVAX long (RECLAIM C TP3) opened 01 Nov 08:24 at 8.801, stop 7.984, target 11.252: -5.3% so far
+- ACN long (BUY SIGNAL) opened 02 Nov 14:31 at 254.83, stop 248.79536, target 276.31429: +2.0% so far
+- BMY long (BUY SIGNAL) opened 02 Nov 14:31 at 62.379902, stop 59.356786, target 68.326665: -0.6% so far
+- CHTR long (IN ZONE) opened 02 Nov 14:31 at 111.825, stop 109.38189, target 136.805: +5.4% so far
+- DOV long (BUY SIGNAL) opened 02 Nov 14:31 at 212.86, stop 201.55786, target 218.73: -4.4% so far
+- EBAY long (BUY SIGNAL) opened 02 Nov 14:31 at 121.23, stop 115.86357, target none: +0.4% so far
+- GM long (BUY SIGNAL) opened 02 Nov 14:31 at 88.239998, stop 83.643437, target none: -2.6% so far
+- MDT long (BUY SIGNAL) opened 02 Nov 14:31 at 97.105003, stop 93.017844, target 105.915: +4.6% so far
+- NTRS long (IN ZONE) opened 02 Nov 14:31 at 171.02, stop 168.10179, target 189.98: +0.8% so far
+- PPL long (BUY SIGNAL) opened 02 Nov 14:31 at 35.630001, stop 34.602501, target 36.745385: +0.3% so far
+- PLD long (BUY SIGNAL) opened 02 Nov 15:24 at 129.955, stop 123.63696, target 136.21334: -2.5% so far
+- SPGI long (BUY SIGNAL) opened 02 Nov 15:24 at 474.78, stop 452.04814, target 484.64759: -1.7% so far
+- EQIX long (IN ZONE - WAIT) opened 02 Nov 16:25 at 999.81, stop 960.57999, target 1049.7513: +1.1% so far
+- FE long (BUY SIGNAL) opened 02 Nov 16:25 at 46.990002, stop 45.722389, target 48.0925: -1.4% so far
+- ASTER long (RECLAIM C TP1) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.7461164: -3.5% so far
+- ASTER long (RECLAIM C TP2) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.7907328: -3.5% so far
+- ASTER long (RECLAIM C TP3) opened 03 Nov 12:49 at 0.7015, stop 0.6568836, target 0.8353492: -3.5% so far
+- MO long (BUY SIGNAL) opened 03 Nov 14:42 at 75.919998, stop 72.851072, target none: +0.1% so far
+- ARES long (BUY SIGNAL) opened 03 Nov 14:42 at 130.37, stop 125.86968, target 138.505: +2.6% so far
+- MGM long (IN ZONE - WAIT) opened 03 Nov 14:42 at 31.35, stop 30.635178, target 33.342499: +3.0% so far
+- VEEV long (IN ZONE - WAIT) opened 03 Nov 14:42 at 300.095, stop 285.88295, target none: +1.0% so far
+- EIX long (BUY SIGNAL) opened 03 Nov 15:24 at 59.634998, stop 58.947321, target 66.440002: -0.6% so far
+- LYV long (BUY SIGNAL) opened 03 Nov 15:24 at 176.4101, stop 169.06991, target 188.3525: -0.9% so far
+- MAS long (BUY SIGNAL) opened 03 Nov 15:24 at 82.355003, stop 80.617139, target none: -0.4% so far
+- PYPL long (BUY SIGNAL) opened 03 Nov 16:18 at 58.945, stop 56.940849, target 62.775: +0.3% so far
 - LUV long (IN ZONE) opened 03 Nov 16:18 at 44.27, stop 43.320574, target 49.886667: +0.2% so far
-- GPN long (BUY SIGNAL) opened 03 Nov 17:11 at 98.220001, stop 93.150024, target 106.14333: -3.5% so far
-- HUM long (BUY SIGNAL) opened 03 Nov 17:11 at 416.55499, stop 401.05607, target none: -1.3% so far
-- UAL long (BUY SIGNAL) opened 03 Nov 17:11 at 107.695, stop 102.51928, target 117.43625: +2.4% so far
-- ZTS long (BUY SIGNAL) opened 03 Nov 17:11 at 83.125, stop 81.203981, target 115.42: -1.4% so far
-- FOXA long (IN ZONE - WAIT) opened 03 Nov 17:55 at 67.459999, stop 65.988146, target 71.588331: +0.1% so far
-- IDXX long (BUY SIGNAL) opened 03 Nov 17:55 at 674.09998, stop 630.23616, target 730.70499: -0.7% so far
-- CTAS long (IN ZONE) opened 03 Nov 19:25 at 225.17999, stop 222.19921, target none: +0.3% so far
-- FISV long (IN ZONE) opened 03 Nov 19:25 at 59.154999, stop 58.129645, target 64.488333: +5.9% so far
-- TRX long (RECLAIM C TP1) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3481002: -1.8% so far
-- TRX long (RECLAIM C TP2) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3724004: -1.8% so far
-- TRX long (RECLAIM C TP3) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3967006: -1.8% so far
-- KCS long (RECLAIM C TP3) opened 04 Nov 00:39 at 7.1595, stop 6.9860998, target 7.6797006: +0.0% so far
-- ICP long (RECLAIM C TP1) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 2.7526: -5.2% so far
-- ICP long (RECLAIM C TP2) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 2.9812: -5.2% so far
-- ICP long (RECLAIM C TP3) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 3.2098: -5.2% so far
-- AOS long (BUY SIGNAL) opened 04 Nov 14:33 at 66.07, stop 62.007857, target 69.47: +0.6% so far
-- ARE long (IN ZONE) opened 04 Nov 14:33 at 44.009998, stop 43.001786, target 49.199999: +2.4% so far
-- AXP long (BUY SIGNAL) opened 04 Nov 14:33 at 334.79001, stop 319.53357, target 351.23: -3.1% so far
-- APA long (IN ZONE) opened 04 Nov 14:33 at 45.875, stop 44.123213, target none: -5.4% so far
-- AON long (IN ZONE) opened 04 Nov 14:33 at 336.88, stop 332.29749, target 349.00562: +2.0% so far
-- BKNG long (IN ZONE) opened 04 Nov 14:33 at 168.5, stop 165.53608, target 176.9132: -0.1% so far
-- FANG long (IN ZONE - WAIT) opened 04 Nov 14:33 at 187.53, stop 177.59572, target 204.955: -4.4% so far
-- GEN long (BUY SIGNAL) opened 04 Nov 14:33 at 30.445, stop 28.615428, target 31.794: +0.3% so far
-- GIS long (IN ZONE) opened 04 Nov 14:33 at 35.470001, stop 34.703214, target 38.233334: +2.6% so far
-- HAL long (IN ZONE - WAIT) opened 04 Nov 14:33 at 33.369999, stop 31.471784, target 35.878: -4.5% so far
-- TGT long (IN ZONE) opened 04 Nov 14:33 at 159.07001, stop 156.07535, target none: -0.9% so far
-- ADM long (BUY SIGNAL) opened 04 Nov 15:22 at 70.170097, stop 68.676071, target 73.955002: +0.2% so far
-- BG long (IN ZONE) opened 04 Nov 15:22 at 98.324997, stop 95.833572, target 103.3975: +0.0% so far
-- LDOS long (BUY SIGNAL) opened 04 Nov 15:22 at 133.38, stop 129.70213, target 138.05: +1.6% so far
-- MSCI long (BUY SIGNAL) opened 04 Nov 15:22 at 663.07001, stop 626.55607, target none: -1.3% so far
-- PSA long (BUY SIGNAL) opened 04 Nov 15:22 at 337.47, stop 325.19251, target none: +0.7% so far
-- SW long (BUY SIGNAL) opened 04 Nov 15:22 at 44.32, stop 40.924, target 47.243714: +0.2% so far
-- SYY long (IN ZONE - WAIT) opened 04 Nov 15:22 at 75.699997, stop 74.528929, target 79.448889: -0.8% so far
-- TRMB long (IN ZONE - WAIT) opened 04 Nov 15:22 at 53.220001, stop 51.514285, target 56.059999: +0.6% so far
-- WELL long (BUY SIGNAL) opened 04 Nov 15:22 at 242.44501, stop 234.21661, target none: +1.0% so far
-- BNB long (RECLAIM B TP1) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 758.10862: -4.5% so far
-- BNB long (RECLAIM B TP2) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 798.18724: -4.5% so far
-- BNB long (RECLAIM B TP3) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 838.26586: -4.5% so far
-- BNB long (RECLAIM C TP1) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 758.10862: -4.5% so far
-- BNB long (RECLAIM C TP2) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 798.18724: -4.5% so far
-- BNB long (RECLAIM C TP3) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 838.26586: -4.5% so far
-- AVAX long (RECLAIM B TP1) opened 04 Nov 16:16 at 8.982, stop 7.984, target 9.98: -8.7% so far
-- AVAX long (RECLAIM B TP2) opened 04 Nov 16:16 at 8.982, stop 7.984, target 10.978: -8.7% so far
-- AVAX long (RECLAIM B TP3) opened 04 Nov 16:16 at 8.982, stop 7.984, target 11.976: -8.7% so far
-- HBAR long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.07970266: -7.2% so far
-- HBAR long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.08645532: -7.2% so far
-- HBAR long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.09320798: -7.2% so far
-- HBAR long (RECLAIM C TP1) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.07970266: -7.2% so far
-- HBAR long (RECLAIM C TP2) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.08645532: -7.2% so far
-- HBAR long (RECLAIM C TP3) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.09320798: -7.2% so far
-- SHIB long (RECLAIM C TP1) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.127926e-06: -5.2% so far
-- SHIB long (RECLAIM C TP2) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.464852e-06: -5.2% so far
-- SHIB long (RECLAIM C TP3) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.801778e-06: -5.2% so far
-- SKY long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0746228: -4.2% so far
-- SKY long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0812956: -4.2% so far
-- SKY long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0879684: -4.2% so far
-- ETC long (RECLAIM B TP1) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 7.77364: -4.7% so far
-- ETC long (RECLAIM B TP2) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.25728: -4.7% so far
-- ETC long (RECLAIM B TP3) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.74092: -4.7% so far
-- ETC long (RECLAIM C TP1) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 7.77364: -4.7% so far
-- ETC long (RECLAIM C TP2) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.25728: -4.7% so far
-- ETC long (RECLAIM C TP3) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.74092: -4.7% so far
-- ALGO long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.10888982: -6.4% so far
-- ALGO long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.11846964: -6.4% so far
-- ALGO long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.12804946: -6.4% so far
-- ALGO long (RECLAIM C TP1) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.10888982: -6.4% so far
-- ALGO long (RECLAIM C TP2) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.11846964: -6.4% so far
-- ALGO long (RECLAIM C TP3) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.12804946: -6.4% so far
-- CPRT long (IN ZONE - WAIT) opened 04 Nov 16:16 at 32.474998, stop 31.722858, target 34.234286: -0.2% so far
-- DHI long (IN ZONE - WAIT) opened 04 Nov 16:16 at 155.655, stop 151.29429, target 162.11: +1.1% so far
-- EXC long (IN ZONE) opened 04 Nov 16:16 at 46.224998, stop 45.596071, target 47.5075: +0.5% so far
-- MDLZ long (BUY SIGNAL) opened 04 Nov 16:16 at 67.620003, stop 63.515358, target 68.774001: -1.4% so far
-- SYF long (IN ZONE) opened 04 Nov 16:16 at 73.550003, stop 72.319251, target 77.300003: +0.5% so far
-- VMRK long (IN ZONE) opened 04 Nov 16:16 at 63.32, stop 62.670002, target 65.717501: +2.8% so far
-- LINK long (RECLAIM C TP1) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 12.866564: -7.8% so far
-- LINK long (RECLAIM C TP2) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 14.169128: -7.8% so far
-- LINK long (RECLAIM C TP3) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 15.471692: -7.8% so far
-- CARR long (BUY SIGNAL) opened 04 Nov 17:05 at 56.775002, stop 52.726179, target 58.695: -6.5% so far
-- COP long (IN ZONE) opened 04 Nov 17:05 at 135.89, stop 132.99055, target none: -0.5% so far
-- MCD long (IN ZONE) opened 04 Nov 17:05 at 276.995, stop 273.67821, target 284.708: +0.2% so far
-- OKE long (IN ZONE - WAIT) opened 04 Nov 17:05 at 88.360001, stop 86.058036, target 91.729999: -2.6% so far
-- REG long (IN ZONE) opened 04 Nov 17:05 at 76.480003, stop 74.663999, target 78.496666: -0.5% so far
-- MOS long (IN ZONE) opened 04 Nov 17:54 at 20.530001, stop 20.019643, target 22.526667: +8.6% so far
-- WDAY long (IN ZONE) opened 04 Nov 17:54 at 203.41, stop 197.13839, target 212.086: -1.8% so far
-- TECH long (IN ZONE) opened 04 Nov 19:38 at 72.794998, stop 71.828928, target 79.209999: -0.4% so far
-- RENDER long (RECLAIM B TP1) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.788892: -6.3% so far
-- RENDER long (RECLAIM B TP2) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.961784: -6.3% so far
-- RENDER long (RECLAIM B TP3) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 2.134676: -6.3% so far
-- RENDER long (RECLAIM C TP1) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.788892: -6.3% so far
-- RENDER long (RECLAIM C TP2) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.961784: -6.3% so far
-- RENDER long (RECLAIM C TP3) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 2.134676: -6.3% so far
-- ARB long (RECLAIM C TP1) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.179156: +0.8% so far
-- ARB long (RECLAIM C TP2) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.194882: +0.8% so far
-- ARB long (RECLAIM C TP3) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.210608: +0.8% so far
-- PI long (RECLAIM B TP1) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08317234: -2.7% so far
-- PI long (RECLAIM B TP2) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08924468: -2.7% so far
-- PI long (RECLAIM B TP3) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.09531702: -2.7% so far
-- PI long (RECLAIM C TP1) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08317234: -2.7% so far
-- PI long (RECLAIM C TP2) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08924468: -2.7% so far
-- PI long (RECLAIM C TP3) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.09531702: -2.7% so far
-- AAVE long (RECLAIM B TP1) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 145.50066: -0.9% so far
-- AAVE long (RECLAIM B TP2) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 160.70132: -0.9% so far
-- AAVE long (RECLAIM B TP3) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 175.90198: -0.9% so far
-- AAVE long (RECLAIM C TP1) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 145.50066: -0.9% so far
-- AAVE long (RECLAIM C TP2) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 160.70132: -0.9% so far
-- AAVE long (RECLAIM C TP3) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 175.90198: -0.9% so far
-- ADBE long (BUY SIGNAL) opened 05 Nov 14:34 at 247.91, stop 243.06714, target 259.095: -0.8% so far
-- AMP long (BUY SIGNAL) opened 05 Nov 14:34 at 536.57001, stop 503.23929, target 546.122: -5.3% so far
-- AZO long (BUY SIGNAL) opened 05 Nov 14:34 at 3353.4875, stop 3197.3415, target 3468.94: -1.5% so far
-- ETR long (BUY SIGNAL) opened 05 Nov 14:34 at 112.37, stop 108.09965, target 117.18: -2.0% so far
-- P long (IN ZONE - WAIT) opened 05 Nov 14:34 at 101.26, stop 90.653536, target 119.125: -7.9% so far
-- HD long (BUY SIGNAL) opened 05 Nov 14:34 at 361.29251, stop 347.8325, target 376.91286: -3.3% so far
-- LULU long (BUY SIGNAL) opened 05 Nov 14:34 at 113.17, stop 107.04311, target 115.66: -1.4% so far
-- MKC long (BUY SIGNAL) opened 05 Nov 14:34 at 51.299999, stop 48.955713, target 54.23: -2.6% so far
-- NEE long (BUY SIGNAL) opened 05 Nov 14:34 at 89.43, stop 85.364285, target 96.060001: -1.5% so far
-- OMC long (BUY SIGNAL) opened 05 Nov 14:34 at 88.764999, stop 85.728927, target none: -2.1% so far
-- PPG long (BUY SIGNAL) opened 05 Nov 14:34 at 128.09, stop 119.34857, target none: -4.0% so far
-- SBAC long (BUY SIGNAL) opened 05 Nov 14:34 at 195.55, stop 181.38108, target 204.58889: -1.5% so far
-- SMCI long (IN ZONE - WAIT) opened 05 Nov 14:34 at 28.43, stop 26.436072, target 31.645: -4.9% so far
-- VTR long (BUY SIGNAL) opened 05 Nov 14:34 at 89.540001, stop 85.707855, target 94.549999: -0.8% so far
-- UHS long (BUY SIGNAL) opened 05 Nov 14:34 at 201.10001, stop 185.4325, target 211.58: -1.4% so far
-- AVAX long (IN ZONE - WAIT) opened 05 Nov 15:28 at 8.273, stop 8.0919643, target 8.6745: -0.8% so far
-- XDC long (IN ZONE - WAIT) opened 05 Nov 15:28 at 0.03088, stop 0.030130357, target 0.031937143: +1.2% so far
+- GPN long (BUY SIGNAL) opened 03 Nov 17:11 at 98.220001, stop 93.150024, target 106.14333: -1.0% so far
+- HUM long (BUY SIGNAL) opened 03 Nov 17:11 at 416.55499, stop 401.05607, target none: +3.9% so far
+- UAL long (BUY SIGNAL) opened 03 Nov 17:11 at 107.695, stop 102.51928, target 117.43625: +4.5% so far
+- FOXA long (IN ZONE - WAIT) opened 03 Nov 17:55 at 67.459999, stop 65.988146, target 71.588331: -1.4% so far
+- IDXX long (BUY SIGNAL) opened 03 Nov 17:55 at 674.09998, stop 630.23616, target 730.70499: +0.1% so far
+- CTAS long (IN ZONE) opened 03 Nov 19:25 at 225.17999, stop 222.19921, target none: -1.5% so far
+- FISV long (IN ZONE) opened 03 Nov 19:25 at 59.154999, stop 58.129645, target 64.488333: +6.1% so far
+- TRX long (RECLAIM C TP1) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3481002: -1.9% so far
+- TRX long (RECLAIM C TP2) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3724004: -1.9% so far
+- TRX long (RECLAIM C TP3) opened 03 Nov 20:13 at 0.3238, stop 0.2994998, target 0.3967006: -1.9% so far
+- KCS long (RECLAIM C TP3) opened 04 Nov 00:39 at 7.1595, stop 6.9860998, target 7.6797006: -0.6% so far
+- ICP long (RECLAIM C TP1) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 2.7526: -3.4% so far
+- ICP long (RECLAIM C TP2) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 2.9812: -3.4% so far
+- ICP long (RECLAIM C TP3) opened 04 Nov 12:19 at 2.524, stop 2.2954, target 3.2098: -3.4% so far
+- AOS long (BUY SIGNAL) opened 04 Nov 14:33 at 66.07, stop 62.007857, target 69.47: -2.5% so far
+- ARE long (IN ZONE) opened 04 Nov 14:33 at 44.009998, stop 43.001786, target 49.199999: +1.6% so far
+- AXP long (BUY SIGNAL) opened 04 Nov 14:33 at 334.79001, stop 319.53357, target 351.23: -4.3% so far
+- APA long (IN ZONE) opened 04 Nov 14:33 at 45.875, stop 44.123213, target none: -2.9% so far
+- AON long (IN ZONE) opened 04 Nov 14:33 at 336.88, stop 332.29749, target 349.00562: -0.8% so far
+- FANG long (IN ZONE - WAIT) opened 04 Nov 14:33 at 187.53, stop 177.59572, target 204.955: -4.8% so far
+- GEN long (BUY SIGNAL) opened 04 Nov 14:33 at 30.445, stop 28.615428, target 31.794: -2.4% so far
+- GIS long (IN ZONE) opened 04 Nov 14:33 at 35.470001, stop 34.703214, target 38.233334: -0.1% so far
+- HAL long (IN ZONE - WAIT) opened 04 Nov 14:33 at 33.369999, stop 31.471784, target 35.878: -4.8% so far
+- TGT long (IN ZONE) opened 04 Nov 14:33 at 159.07001, stop 156.07535, target none: -0.6% so far
+- ADM long (BUY SIGNAL) opened 04 Nov 15:22 at 70.170097, stop 68.676071, target 73.955002: -0.5% so far
+- BG long (IN ZONE) opened 04 Nov 15:22 at 98.324997, stop 95.833572, target 103.3975: +0.6% so far
+- LDOS long (BUY SIGNAL) opened 04 Nov 15:22 at 133.38, stop 129.70213, target 138.05: -0.7% so far
+- MSCI long (BUY SIGNAL) opened 04 Nov 15:22 at 663.07001, stop 626.55607, target none: -3.5% so far
+- PSA long (BUY SIGNAL) opened 04 Nov 15:22 at 337.47, stop 325.19251, target none: -0.2% so far
+- SW long (BUY SIGNAL) opened 04 Nov 15:22 at 44.32, stop 40.924, target 47.243714: -0.7% so far
+- SYY long (IN ZONE - WAIT) opened 04 Nov 15:22 at 75.699997, stop 74.528929, target 79.448889: +1.3% so far
+- TRMB long (IN ZONE - WAIT) opened 04 Nov 15:22 at 53.220001, stop 51.514285, target 56.059999: +1.5% so far
+- WELL long (BUY SIGNAL) opened 04 Nov 15:22 at 242.44501, stop 234.21661, target none: +0.9% so far
+- BNB long (RECLAIM B TP1) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 758.10862: -3.4% so far
+- BNB long (RECLAIM B TP2) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 798.18724: -3.4% so far
+- BNB long (RECLAIM B TP3) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 838.26586: -3.4% so far
+- BNB long (RECLAIM C TP1) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 758.10862: -3.4% so far
+- BNB long (RECLAIM C TP2) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 798.18724: -3.4% so far
+- BNB long (RECLAIM C TP3) opened 04 Nov 16:16 at 718.03, stop 677.95138, target 838.26586: -3.4% so far
+- AVAX long (RECLAIM B TP1) opened 04 Nov 16:16 at 8.982, stop 7.984, target 9.98: -7.2% so far
+- AVAX long (RECLAIM B TP2) opened 04 Nov 16:16 at 8.982, stop 7.984, target 10.978: -7.2% so far
+- AVAX long (RECLAIM B TP3) opened 04 Nov 16:16 at 8.982, stop 7.984, target 11.976: -7.2% so far
+- HBAR long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.07970266: -6.9% so far
+- HBAR long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.08645532: -6.9% so far
+- HBAR long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.09320798: -6.9% so far
+- HBAR long (RECLAIM C TP1) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.07970266: -6.9% so far
+- HBAR long (RECLAIM C TP2) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.08645532: -6.9% so far
+- HBAR long (RECLAIM C TP3) opened 04 Nov 16:16 at 0.07295, stop 0.06619734, target 0.09320798: -6.9% so far
+- SHIB long (RECLAIM C TP1) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.127926e-06: -5.9% so far
+- SHIB long (RECLAIM C TP2) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.464852e-06: -5.9% so far
+- SHIB long (RECLAIM C TP3) opened 04 Nov 16:16 at 4.791e-06, stop 4.454074e-06, target 5.801778e-06: -5.9% so far
+- SKY long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0746228: -5.7% so far
+- SKY long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0812956: -5.7% so far
+- SKY long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.06795, stop 0.0612772, target 0.0879684: -5.7% so far
+- ETC long (RECLAIM B TP1) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 7.77364: -4.5% so far
+- ETC long (RECLAIM B TP2) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.25728: -4.5% so far
+- ETC long (RECLAIM B TP3) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.74092: -4.5% so far
+- ETC long (RECLAIM C TP1) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 7.77364: -4.5% so far
+- ETC long (RECLAIM C TP2) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.25728: -4.5% so far
+- ETC long (RECLAIM C TP3) opened 04 Nov 16:16 at 7.29, stop 6.80636, target 8.74092: -4.5% so far
+- ALGO long (RECLAIM B TP1) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.10888982: -4.2% so far
+- ALGO long (RECLAIM B TP2) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.11846964: -4.2% so far
+- ALGO long (RECLAIM B TP3) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.12804946: -4.2% so far
+- ALGO long (RECLAIM C TP1) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.10888982: -4.2% so far
+- ALGO long (RECLAIM C TP2) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.11846964: -4.2% so far
+- ALGO long (RECLAIM C TP3) opened 04 Nov 16:16 at 0.09931, stop 0.08973018, target 0.12804946: -4.2% so far
+- DHI long (IN ZONE - WAIT) opened 04 Nov 16:16 at 155.655, stop 151.29429, target 162.11: -2.4% so far
+- EXC long (IN ZONE) opened 04 Nov 16:16 at 46.224998, stop 45.596071, target 47.5075: -1.5% so far
+- MDLZ long (BUY SIGNAL) opened 04 Nov 16:16 at 67.620003, stop 63.515358, target 68.774001: -2.6% so far
+- SYF long (IN ZONE) opened 04 Nov 16:16 at 73.550003, stop 72.319251, target 77.300003: +0.1% so far
+- VMRK long (IN ZONE) opened 04 Nov 16:16 at 63.32, stop 62.670002, target 65.717501: +3.3% so far
+- LINK long (RECLAIM C TP1) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 12.866564: -6.1% so far
+- LINK long (RECLAIM C TP2) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 14.169128: -6.1% so far
+- LINK long (RECLAIM C TP3) opened 04 Nov 17:05 at 11.564, stop 10.261436, target 15.471692: -6.1% so far
+- COP long (IN ZONE) opened 04 Nov 17:05 at 135.89, stop 132.99055, target none: +0.1% so far
+- REG long (IN ZONE) opened 04 Nov 17:05 at 76.480003, stop 74.663999, target 78.496666: -2.3% so far
+- TECH long (IN ZONE) opened 04 Nov 19:38 at 72.794998, stop 71.828928, target 79.209999: -0.2% so far
+- RENDER long (RECLAIM B TP1) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.788892: -2.5% so far
+- RENDER long (RECLAIM B TP2) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.961784: -2.5% so far
+- RENDER long (RECLAIM B TP3) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 2.134676: -2.5% so far
+- RENDER long (RECLAIM C TP1) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.788892: -2.5% so far
+- RENDER long (RECLAIM C TP2) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 1.961784: -2.5% so far
+- RENDER long (RECLAIM C TP3) opened 05 Nov 00:34 at 1.616, stop 1.443108, target 2.134676: -2.5% so far
+- ARB long (RECLAIM C TP1) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.179156: +1.9% so far
+- ARB long (RECLAIM C TP2) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.194882: +1.9% so far
+- ARB long (RECLAIM C TP3) opened 05 Nov 04:22 at 0.16343, stop 0.147704, target 0.210608: +1.9% so far
+- PI long (RECLAIM B TP1) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08317234: -3.0% so far
+- PI long (RECLAIM B TP2) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08924468: -3.0% so far
+- PI long (RECLAIM B TP3) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.09531702: -3.0% so far
+- PI long (RECLAIM C TP1) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08317234: -3.0% so far
+- PI long (RECLAIM C TP2) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.08924468: -3.0% so far
+- PI long (RECLAIM C TP3) opened 05 Nov 12:19 at 0.0771, stop 0.07102766, target 0.09531702: -3.0% so far
+- AAVE long (RECLAIM B TP1) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 145.50066: +1.2% so far
+- AAVE long (RECLAIM B TP2) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 160.70132: +1.2% so far
+- AAVE long (RECLAIM B TP3) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 175.90198: +1.2% so far
+- AAVE long (RECLAIM C TP1) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 145.50066: +1.2% so far
+- AAVE long (RECLAIM C TP2) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 160.70132: +1.2% so far
+- AAVE long (RECLAIM C TP3) opened 05 Nov 13:34 at 130.3, stop 115.09934, target 175.90198: +1.2% so far
+- AMP long (BUY SIGNAL) opened 05 Nov 14:34 at 536.57001, stop 503.23929, target 546.122: -6.7% so far
+- AZO long (BUY SIGNAL) opened 05 Nov 14:34 at 3353.4875, stop 3197.3415, target 3468.94: -4.3% so far
+- ETR long (BUY SIGNAL) opened 05 Nov 14:34 at 112.37, stop 108.09965, target 117.18: -1.8% so far
+- P long (IN ZONE - WAIT) opened 05 Nov 14:34 at 101.26, stop 90.653536, target 119.125: -4.7% so far
+- LULU long (BUY SIGNAL) opened 05 Nov 14:34 at 113.17, stop 107.04311, target 115.66: -2.3% so far
+- NEE long (BUY SIGNAL) opened 05 Nov 14:34 at 89.43, stop 85.364285, target 96.060001: -3.0% so far
+- PPG long (BUY SIGNAL) opened 05 Nov 14:34 at 128.09, stop 119.34857, target none: -4.7% so far
+- SBAC long (BUY SIGNAL) opened 05 Nov 14:34 at 195.55, stop 181.38108, target 204.58889: -3.3% so far
+- SMCI long (IN ZONE - WAIT) opened 05 Nov 14:34 at 28.43, stop 26.436072, target 31.645: +1.0% so far
+- VTR long (BUY SIGNAL) opened 05 Nov 14:34 at 89.540001, stop 85.707855, target 94.549999: -1.1% so far
+- UHS long (BUY SIGNAL) opened 05 Nov 14:34 at 201.10001, stop 185.4325, target 211.58: -3.0% so far
+- AVAX long (IN ZONE - WAIT) opened 05 Nov 15:28 at 8.273, stop 8.0919643, target 8.6745: +0.8% so far
+- XDC long (IN ZONE - WAIT) opened 05 Nov 15:28 at 0.03088, stop 0.030130357, target 0.031937143: +1.6% so far
 - FF long (IN ZONE - WAIT) opened 05 Nov 15:28 at 0.08812, stop 0.085556143, target 0.090795: -2.2% so far
-- AMZN long (BUY SIGNAL) opened 05 Nov 15:28 at 255.9201, stop 237.48161, target 266.45: +1.5% so far
-- ADI long (IN ZONE - WAIT) opened 05 Nov 15:28 at 379.76001, stop 369.73389, target 402.00334: -5.1% so far
-- ANET long (IN ZONE - WAIT) opened 05 Nov 15:28 at 162.34, stop 151.22447, target 179.30857: -2.2% so far
-- BLK long (BUY SIGNAL) opened 05 Nov 15:28 at 1187.64, stop 1156.5827, target none: -1.6% so far
-- COF long (BUY SIGNAL) opened 05 Nov 15:28 at 206.78999, stop 200.57251, target 215.254: -1.6% so far
-- CMCSA long (BUY SIGNAL) opened 05 Nov 15:28 at 25.08, stop 23.737905, target 26.410497: -0.7% so far
-- ETN long (IN ZONE - WAIT) opened 05 Nov 15:28 at 330.62, stop 317.59893, target 358.41: -1.3% so far
-- FRT long (BUY SIGNAL) opened 05 Nov 15:28 at 115.06, stop 109.48682, target 115.92: -1.8% so far
-- GEHC long (BUY SIGNAL) opened 05 Nov 15:28 at 85.144997, stop 80.417676, target 86.330002: -1.8% so far
-- DOC long (IN ZONE) opened 05 Nov 15:28 at 20.295, stop 19.997857, target 20.836666: -1.1% so far
-- HWM long (BUY SIGNAL) opened 05 Nov 15:28 at 207.145, stop 198.72035, target 223.47: -3.2% so far
-- JKHY long (BUY SIGNAL) opened 05 Nov 15:28 at 182.92, stop 172.21108, target 188.56: -1.7% so far
-- JCI long (IN ZONE - WAIT) opened 05 Nov 15:28 at 135.395, stop 130.50446, target 141.9: -3.1% so far
-- LEN long (BUY SIGNAL) opened 05 Nov 15:28 at 91.835098, stop 86.356427, target 95.625: -0.5% so far
-- LOW long (BUY SIGNAL) opened 05 Nov 15:28 at 230.53999, stop 215.68679, target 238.39571: -1.6% so far
-- PH long (BUY SIGNAL) opened 05 Nov 15:28 at 927, stop 891.26069, target 993.23749: -3.9% so far
-- O long (IN ZONE) opened 05 Nov 15:28 at 59.84, stop 58.970714, target 61.038: -0.8% so far
-- SLB long (BUY SIGNAL) opened 05 Nov 15:28 at 50.735001, stop 49.380947, target 52.405: -2.4% so far
-- SO long (BUY SIGNAL) opened 05 Nov 15:28 at 95.300003, stop 91.418569, target 98.405: -2.3% so far
-- STE long (BUY SIGNAL) opened 05 Nov 15:28 at 257.60001, stop 243.18892, target 267.886: -1.6% so far
-- TROW long (BUY SIGNAL) opened 05 Nov 15:28 at 110.1963, stop 104.56697, target 112.936: -1.5% so far
-- TDY long (IN ZONE - WAIT) opened 05 Nov 15:28 at 601.07001, stop 579.19605, target 627.98: -1.8% so far
-- UBER long (BUY SIGNAL) opened 05 Nov 15:28 at 68.709999, stop 67.483392, target 71.9825: -0.1% so far
-- WEC long (IN ZONE) opened 05 Nov 15:28 at 119.53, stop 117.05679, target none: -1.2% so far
-- WY long (BUY SIGNAL) opened 05 Nov 15:28 at 21.815001, stop 20.764245, target 22.42: -1.0% so far
-- ZBRA long (BUY SIGNAL) opened 05 Nov 15:28 at 324.57999, stop 314.51358, target 336.80667: -1.1% so far
-- VVV long (IN ZONE - WAIT) opened 05 Nov 16:29 at 20.7306, stop 19.936975, target 22.01535: -0.3% so far
-- PI long (IN ZONE - WAIT) opened 05 Nov 16:29 at 0.07547, stop 0.074548929, target 0.076971667: -0.6% so far
+- AMZN long (BUY SIGNAL) opened 05 Nov 15:28 at 255.9201, stop 237.48161, target 266.45: +1.1% so far
+- ANET long (IN ZONE - WAIT) opened 05 Nov 15:28 at 162.34, stop 151.22447, target 179.30857: +5.0% so far
+- BLK long (BUY SIGNAL) opened 05 Nov 15:28 at 1187.64, stop 1156.5827, target none: -0.9% so far
+- COF long (BUY SIGNAL) opened 05 Nov 15:28 at 206.78999, stop 200.57251, target 215.254: -2.6% so far
+- CMCSA long (BUY SIGNAL) opened 05 Nov 15:28 at 25.08, stop 23.737905, target 26.410497: -3.0% so far
+- ETN long (IN ZONE - WAIT) opened 05 Nov 15:28 at 330.62, stop 317.59893, target 358.41: +3.2% so far
+- FRT long (BUY SIGNAL) opened 05 Nov 15:28 at 115.06, stop 109.48682, target 115.92: -2.4% so far
+- GEHC long (BUY SIGNAL) opened 05 Nov 15:28 at 85.144997, stop 80.417676, target 86.330002: -3.4% so far
+- HWM long (BUY SIGNAL) opened 05 Nov 15:28 at 207.145, stop 198.72035, target 223.47: -0.8% so far
+- JKHY long (BUY SIGNAL) opened 05 Nov 15:28 at 182.92, stop 172.21108, target 188.56: -5.5% so far
+- JCI long (IN ZONE - WAIT) opened 05 Nov 15:28 at 135.395, stop 130.50446, target 141.9: -0.5% so far
+- LEN long (BUY SIGNAL) opened 05 Nov 15:28 at 91.835098, stop 86.356427, target 95.625: -3.6% so far
+- LOW long (BUY SIGNAL) opened 05 Nov 15:28 at 230.53999, stop 215.68679, target 238.39571: -2.8% so far
+- PH long (BUY SIGNAL) opened 05 Nov 15:28 at 927, stop 891.26069, target 993.23749: -1.2% so far
+- SLB long (BUY SIGNAL) opened 05 Nov 15:28 at 50.735001, stop 49.380947, target 52.405: -1.8% so far
+- SO long (BUY SIGNAL) opened 05 Nov 15:28 at 95.300003, stop 91.418569, target 98.405: -3.3% so far
+- STE long (BUY SIGNAL) opened 05 Nov 15:28 at 257.60001, stop 243.18892, target 267.886: -2.3% so far
+- TROW long (BUY SIGNAL) opened 05 Nov 15:28 at 110.1963, stop 104.56697, target 112.936: -1.8% so far
+- TDY long (IN ZONE - WAIT) opened 05 Nov 15:28 at 601.07001, stop 579.19605, target 627.98: +2.7% so far
+- UBER long (BUY SIGNAL) opened 05 Nov 15:28 at 68.709999, stop 67.483392, target 71.9825: -0.4% so far
+- WY long (BUY SIGNAL) opened 05 Nov 15:28 at 21.815001, stop 20.764245, target 22.42: -4.0% so far
+- ZBRA long (BUY SIGNAL) opened 05 Nov 15:28 at 324.57999, stop 314.51358, target 336.80667: -1.0% so far
+- VVV long (IN ZONE - WAIT) opened 05 Nov 16:29 at 20.7306, stop 19.936975, target 22.01535: +0.7% so far
+- PI long (IN ZONE - WAIT) opened 05 Nov 16:29 at 0.07547, stop 0.074548929, target 0.076971667: -0.9% so far
 - KAS long (IN ZONE - WAIT) opened 05 Nov 16:29 at 0.030272, stop 0.029052393, target 0.031918667: -1.0% so far
-- AVY long (BUY SIGNAL) opened 05 Nov 16:29 at 190.205, stop 181.91179, target 196.51333: -0.5% so far
-- COR long (BUY SIGNAL) opened 05 Nov 16:29 at 346.11249, stop 329.0248, target 350.76999: -2.1% so far
-- SCHW long (BUY SIGNAL) opened 05 Nov 16:29 at 92.980003, stop 88.378035, target 94.344: -0.6% so far
-- CSGP long (BUY SIGNAL) opened 05 Nov 16:29 at 31.530001, stop 30.046786, target 33.31: +1.4% so far
-- DXCM long (BUY SIGNAL) opened 05 Nov 16:29 at 85.269997, stop 79.965895, target 89.885: -1.1% so far
-- DPZ long (BUY SIGNAL) opened 05 Nov 16:29 at 336.88, stop 321.78643, target 348.155: +1.2% so far
-- EME long (IN ZONE - WAIT) opened 05 Nov 16:29 at 593.73999, stop 572.11802, target 645.705: +0.1% so far
-- EXPE long (IN ZONE - WAIT) opened 05 Nov 16:29 at 277.62, stop 267.52928, target 299.34333: -2.1% so far
-- GS long (IN ZONE - WAIT) opened 05 Nov 16:29 at 874.98999, stop 844.91557, target 921.2625: -0.9% so far
-- HSIC long (BUY SIGNAL) opened 05 Nov 16:29 at 86.629997, stop 81.028569, target 89.314999: -1.7% so far
-- HRL long (BUY SIGNAL) opened 05 Nov 16:29 at 22.695, stop 21.757822, target 23.156666: -0.6% so far
-- HBAN long (IN ZONE - WAIT) opened 05 Nov 16:29 at 15.7663, stop 15.370357, target 16.258: -1.2% so far
-- LIN long (BUY SIGNAL) opened 05 Nov 16:29 at 526.23499, stop 516.78052, target none: -1.2% so far
-- MCO long (BUY SIGNAL) opened 05 Nov 16:29 at 518.14001, stop 485.35679, target 535.965: -0.7% so far
-- NVDA long (IN ZONE) opened 05 Nov 16:29 at 186.62981, stop 180.74214, target 195.89778: -2.9% so far
-- PLTR long (IN ZONE - WAIT) opened 05 Nov 16:29 at 156.94, stop 150.63274, target 170.33667: -1.4% so far
-- PAYX long (BUY SIGNAL) opened 05 Nov 16:29 at 120.305, stop 115.85375, target 125.32: -0.9% so far
-- TSCO long (BUY SIGNAL) opened 05 Nov 16:29 at 36.130001, stop 34.221427, target 46.765: +1.1% so far
-- TFC long (BUY SIGNAL) opened 05 Nov 16:29 at 50.415001, stop 47.894644, target 50.825001: -1.3% so far
-- WRB long (BUY SIGNAL) opened 05 Nov 16:29 at 77.800003, stop 74.588574, target 78.720001: -1.3% so far
-- WMT long (BUY SIGNAL) opened 05 Nov 16:29 at 129.71001, stop 124.48465, target 132.915: -1.7% so far
-- ZEC long (IN ZONE) opened 05 Nov 17:32 at 1250.56, stop 1219.7818, target 1347.1186: -0.0% so far
-- SEI long (BUY SIGNAL) opened 05 Nov 17:32 at 0.04515, stop 0.044230714, target 0.04737: +0.5% so far
-- MMM long (BUY SIGNAL) opened 05 Nov 17:32 at 190.78, stop 181.07886, target none: -1.8% so far
-- ALGN long (BUY SIGNAL) opened 05 Nov 17:32 at 158.17999, stop 147.41089, target 165.452: +0.6% so far
-- XYZ long (BUY SIGNAL) opened 05 Nov 17:32 at 84.489998, stop 77.389193, target 94.040001: -0.7% so far
-- CVS long (BUY SIGNAL) opened 05 Nov 17:32 at 80.589996, stop 77.614286, target 84.460002: +0.7% so far
-- DVN long (IN ZONE - WAIT) opened 05 Nov 17:32 at 43.875, stop 42.779734, target 46.02: -2.5% so far
-- EQT long (IN ZONE - WAIT) opened 05 Nov 17:32 at 51.285, stop 49.821073, target 53.30375: -1.5% so far
-- HSY long (BUY SIGNAL) opened 05 Nov 17:32 at 173.19501, stop 168.85214, target 178.44571: +2.2% so far
-- INTU long (BUY SIGNAL) opened 05 Nov 17:32 at 352.38501, stop 329.92286, target 360.605: +0.5% so far
-- KDP long (BUY SIGNAL) opened 05 Nov 17:32 at 36.955002, stop 34.880894, target none: -0.4% so far
-- KHC long (BUY SIGNAL) opened 05 Nov 17:32 at 25.129999, stop 24.610178, target 25.911429: +0.6% so far
-- LII long (IN ZONE - WAIT) opened 05 Nov 17:32 at 351.01999, stop 332.01019, target 377.55666: -0.8% so far
-- LYB long (IN ZONE) opened 05 Nov 17:32 at 62.014999, stop 59.827858, target 65.71667: -0.8% so far
-- MRSH long (BUY SIGNAL) opened 05 Nov 17:32 at 208.705, stop 204.69751, target 215.13334: +0.1% so far
-- ODFL long (BUY SIGNAL) opened 05 Nov 17:32 at 175.33501, stop 169.86964, target 182.08333: -2.9% so far
-- RMD long (BUY SIGNAL) opened 05 Nov 17:32 at 234.14, stop 226.805, target 246.77625: +2.0% so far
-- RTX long (IN ZONE - WAIT) opened 05 Nov 17:32 at 193.435, stop 189.50464, target 205.108: -1.0% so far
-- SYK long (BUY SIGNAL) opened 05 Nov 17:32 at 332.92999, stop 321.90323, target 350.52666: +0.4% so far
+- AVY long (BUY SIGNAL) opened 05 Nov 16:29 at 190.205, stop 181.91179, target 196.51333: -2.0% so far
+- COR long (BUY SIGNAL) opened 05 Nov 16:29 at 346.11249, stop 329.0248, target 350.76999: -3.8% so far
+- SCHW long (BUY SIGNAL) opened 05 Nov 16:29 at 92.980003, stop 88.378035, target 94.344: -1.8% so far
+- CSGP long (BUY SIGNAL) opened 05 Nov 16:29 at 31.530001, stop 30.046786, target 33.31: -3.3% so far
+- DPZ long (BUY SIGNAL) opened 05 Nov 16:29 at 336.88, stop 321.78643, target 348.155: -1.0% so far
+- EME long (IN ZONE - WAIT) opened 05 Nov 16:29 at 593.73999, stop 572.11802, target 645.705: +2.3% so far
+- GS long (IN ZONE - WAIT) opened 05 Nov 16:29 at 874.98999, stop 844.91557, target 921.2625: -1.2% so far
+- HSIC long (BUY SIGNAL) opened 05 Nov 16:29 at 86.629997, stop 81.028569, target 89.314999: -0.9% so far
+- HRL long (BUY SIGNAL) opened 05 Nov 16:29 at 22.695, stop 21.757822, target 23.156666: -3.5% so far
+- HBAN long (IN ZONE - WAIT) opened 05 Nov 16:29 at 15.7663, stop 15.370357, target 16.258: -2.1% so far
+- LIN long (BUY SIGNAL) opened 05 Nov 16:29 at 526.23499, stop 516.78052, target none: -2.3% so far
+- MCO long (BUY SIGNAL) opened 05 Nov 16:29 at 518.14001, stop 485.35679, target 535.965: -2.6% so far
+- NVDA long (IN ZONE) opened 05 Nov 16:29 at 186.62981, stop 180.74214, target 195.89778: -0.2% so far
+- PLTR long (IN ZONE - WAIT) opened 05 Nov 16:29 at 156.94, stop 150.63274, target 170.33667: +2.0% so far
+- PAYX long (BUY SIGNAL) opened 05 Nov 16:29 at 120.305, stop 115.85375, target 125.32: -2.9% so far
+- TSCO long (BUY SIGNAL) opened 05 Nov 16:29 at 36.130001, stop 34.221427, target 46.765: +0.4% so far
+- TFC long (BUY SIGNAL) opened 05 Nov 16:29 at 50.415001, stop 47.894644, target 50.825001: -2.3% so far
+- WRB long (BUY SIGNAL) opened 05 Nov 16:29 at 77.800003, stop 74.588574, target 78.720001: -3.5% so far
+- WMT long (BUY SIGNAL) opened 05 Nov 16:29 at 129.71001, stop 124.48465, target 132.915: -3.4% so far
+- SEI long (BUY SIGNAL) opened 05 Nov 17:32 at 0.04515, stop 0.044230714, target 0.04737: +2.0% so far
+- MMM long (BUY SIGNAL) opened 05 Nov 17:32 at 190.78, stop 181.07886, target none: -3.2% so far
+- ALGN long (BUY SIGNAL) opened 05 Nov 17:32 at 158.17999, stop 147.41089, target 165.452: +4.7% so far
+- XYZ long (BUY SIGNAL) opened 05 Nov 17:32 at 84.489998, stop 77.389193, target 94.040001: +1.0% so far
+- CVS long (BUY SIGNAL) opened 05 Nov 17:32 at 80.589996, stop 77.614286, target 84.460002: +3.8% so far
+- INTU long (BUY SIGNAL) opened 05 Nov 17:32 at 352.38501, stop 329.92286, target 360.605: -3.3% so far
+- KDP long (BUY SIGNAL) opened 05 Nov 17:32 at 36.955002, stop 34.880894, target none: -1.1% so far
+- LII long (IN ZONE - WAIT) opened 05 Nov 17:32 at 351.01999, stop 332.01019, target 377.55666: -2.8% so far
+- LYB long (IN ZONE) opened 05 Nov 17:32 at 62.014999, stop 59.827858, target 65.71667: -2.3% so far
+- MRSH long (BUY SIGNAL) opened 05 Nov 17:32 at 208.705, stop 204.69751, target 215.13334: -2.1% so far
+- RMD long (BUY SIGNAL) opened 05 Nov 17:32 at 234.14, stop 226.805, target 246.77625: +0.3% so far
+- RTX long (IN ZONE - WAIT) opened 05 Nov 17:32 at 193.435, stop 189.50464, target 205.108: -2.2% so far
+- SYK long (BUY SIGNAL) opened 05 Nov 17:32 at 332.92999, stop 321.90323, target 350.52666: -2.3% so far
 - TPL long (BUY SIGNAL) opened 05 Nov 17:32 at 282.48999, stop 271.9887, target 300.55917: -3.8% so far
-- TXT long (BUY SIGNAL) opened 05 Nov 17:32 at 84.974998, stop 82.841428, target 88.456668: +0.1% so far
-- URI long (IN ZONE - WAIT) opened 05 Nov 17:32 at 1053.5699, stop 1019.8869, target 1104.145: -1.1% so far
-- UNH long (BUY SIGNAL) opened 05 Nov 17:32 at 401.595, stop 392.06086, target 415.175: -1.7% so far
-- STRK long (IN ZONE - WAIT) opened 05 Nov 18:10 at 0.03969, stop 0.038773571, target 0.04233: +0.8% so far
-- ADSK long (BUY SIGNAL) opened 05 Nov 18:10 at 267.41, stop 250.5075, target 273.41: +0.5% so far
-- BF-B long (BUY SIGNAL) opened 05 Nov 18:10 at 30.459999, stop 29.685001, target 31.448572: +1.4% so far
-- CVNA long (BUY SIGNAL) opened 05 Nov 18:10 at 70.949997, stop 67.090675, target 76.142776: +1.4% so far
-- ESS long (BUY SIGNAL) opened 05 Nov 18:10 at 269.72501, stop 264.51374, target 277.32556: +0.4% so far
-- EL long (BUY SIGNAL) opened 05 Nov 18:10 at 108.14, stop 101.40516, target 109.45667: -0.7% so far
-- FLEX long (IN ZONE - WAIT) opened 05 Nov 18:10 at 66.540001, stop 61.584999, target 72.850002: +0.1% so far
-- BEN long (BUY SIGNAL) opened 05 Nov 18:10 at 32, stop 31.104642, target 33.12: +0.5% so far
-- HCA long (BUY SIGNAL) opened 05 Nov 18:10 at 502.60049, stop 468.88286, target 520.846: +0.8% so far
-- ILMN long (IN ZONE - WAIT) opened 05 Nov 18:10 at 206.98, stop 187.51822, target none: +0.3% so far
-- ON long (IN ZONE - WAIT) opened 05 Nov 18:10 at 63.23, stop 60.64875, target 70.833333: -0.5% so far
-- TT long (IN ZONE - WAIT) opened 05 Nov 18:10 at 400.315, stop 385.98269, target 419.88417: -2.2% so far
-- XMR long (IN ZONE) opened 05 Nov 18:58 at 609.13, stop 600.15964, target 630.725: +0.6% so far
-- ADP long (BUY SIGNAL) opened 05 Nov 18:58 at 306.20999, stop 298.66357, target 328.95999: +0.1% so far
-- D long (BUY SIGNAL) opened 05 Nov 18:58 at 69.550003, stop 68.195715, target none: -0.1% so far
-- DOW long (IN ZONE) opened 05 Nov 18:58 at 32.145, stop 31.0945, target 33.422501: -0.7% so far
-- EXR long (BUY SIGNAL) opened 05 Nov 18:58 at 159.755, stop 150.91875, target 161.53667: +0.0% so far
-- IEX long (IN ZONE - WAIT) opened 05 Nov 18:58 at 224.47, stop 219.48821, target 230.93999: -1.0% so far
-- TSN long (BUY SIGNAL) opened 05 Nov 18:58 at 59.880001, stop 57.978929, target 62.42: +0.2% so far
-- YUM long (BUY SIGNAL) opened 05 Nov 18:58 at 163.81, stop 159.6375, target 169.765: +1.2% so far
-- JUP long (BUY SIGNAL) opened 05 Nov 19:45 at 0.2448, stop 0.23024286, target 0.25555: +0.7% so far
-- DLR long (BUY SIGNAL) opened 05 Nov 19:45 at 176.425, stop 171.50072, target 184.002: -1.2% so far
-- HON long (IN ZONE) opened 05 Nov 19:45 at 218.28999, stop 214.26112, target 230.01309: -1.3% so far
-- KMB long (IN ZONE) opened 05 Nov 19:45 at 110.155, stop 108.32286, target 116.82333: +0.1% so far
-- SWKS long (BUY SIGNAL) opened 05 Nov 19:45 at 82.300003, stop 80.134104, target 86.670002: -1.5% so far
-- CC long (RECLAIM C TP2) opened 05 Nov 20:29 at 0.09712, stop 0.09200562, target 0.10734876: +7.1% so far
-- CC long (RECLAIM C TP3) opened 05 Nov 20:29 at 0.09712, stop 0.09200562, target 0.11246314: +7.1% so far
-- DTE long (IN ZONE) opened 05 Nov 20:29 at 134.2832, stop 130.91997, target 137.055: +0.2% so far
-- KMI long (IN ZONE - WAIT) opened 05 Nov 20:29 at 30.419901, stop 29.893929, target 31.495: -1.0% so far
-- MSFT long (BUY SIGNAL) opened 05 Nov 20:29 at 534.70001, stop 505.78964, target 553.44: +0.0% so far
-- SRE long (IN ZONE - WAIT) opened 05 Nov 20:29 at 79.105003, stop 78.106429, target 82.195: +0.7% so far
-- ZRO long (IN ZONE - WAIT) opened 05 Nov 21:14 at 1.6178, stop 1.5598714, target 1.7234: -1.1% so far
-- BTC long (IN ZONE - WAIT) opened 05 Nov 23:18 at 75509.33, stop 74285.997, target 77298.307: -0.3% so far
-- DOT long (BUY SIGNAL) opened 05 Nov 23:18 at 0.8998, stop 0.87836071, target 0.9756: +1.6% so far
-- RENDER long (IN ZONE - WAIT) opened 05 Nov 23:18 at 1.484, stop 1.4150357, target 1.5848333: +2.1% so far
-- ARB long (IN ZONE - WAIT) opened 06 Nov 00:37 at 0.16206, stop 0.15686571, target 0.16842: +1.6% so far
-- NIGHT long (IN ZONE - WAIT) opened 06 Nov 03:27 at 0.03861, stop 0.0369875, target 0.041094: +1.1% so far
-- PIEVERSE long (IN ZONE - WAIT) opened 06 Nov 05:21 at 1.3704, stop 1.3183754, target 1.48685: +2.1% so far
-- HBAR long (IN ZONE - WAIT) opened 06 Nov 07:38 at 0.06787, stop 0.065296786, target 0.073164286: -0.2% so far
+- TXT long (BUY SIGNAL) opened 05 Nov 17:32 at 84.974998, stop 82.841428, target 88.456668: -1.9% so far
+- URI long (IN ZONE - WAIT) opened 05 Nov 17:32 at 1053.5699, stop 1019.8869, target 1104.145: -0.0% so far
+- STRK long (IN ZONE - WAIT) opened 05 Nov 18:10 at 0.03969, stop 0.038773571, target 0.04233: +5.0% so far
+- ADSK long (BUY SIGNAL) opened 05 Nov 18:10 at 267.41, stop 250.5075, target 273.41: -2.3% so far
+- BF-B long (BUY SIGNAL) opened 05 Nov 18:10 at 30.459999, stop 29.685001, target 31.448572: +0.2% so far
+- CVNA long (BUY SIGNAL) opened 05 Nov 18:10 at 70.949997, stop 67.090675, target 76.142776: +3.5% so far
+- ESS long (BUY SIGNAL) opened 05 Nov 18:10 at 269.72501, stop 264.51374, target 277.32556: +0.7% so far
+- FLEX long (IN ZONE - WAIT) opened 05 Nov 18:10 at 66.540001, stop 61.584999, target 72.850002: +4.7% so far
+- HCA long (BUY SIGNAL) opened 05 Nov 18:10 at 502.60049, stop 468.88286, target 520.846: -1.7% so far
+- ILMN long (IN ZONE - WAIT) opened 05 Nov 18:10 at 206.98, stop 187.51822, target none: +2.8% so far
+- ON long (IN ZONE - WAIT) opened 05 Nov 18:10 at 63.23, stop 60.64875, target 70.833333: -0.1% so far
+- TT long (IN ZONE - WAIT) opened 05 Nov 18:10 at 400.315, stop 385.98269, target 419.88417: +0.2% so far
+- XMR long (IN ZONE) opened 05 Nov 18:58 at 609.13, stop 600.15964, target 630.725: +0.4% so far
+- ADP long (BUY SIGNAL) opened 05 Nov 18:58 at 306.20999, stop 298.66357, target 328.95999: -1.1% so far
+- D long (BUY SIGNAL) opened 05 Nov 18:58 at 69.550003, stop 68.195715, target none: -1.6% so far
+- DOW long (IN ZONE) opened 05 Nov 18:58 at 32.145, stop 31.0945, target 33.422501: -2.5% so far
+- EXR long (BUY SIGNAL) opened 05 Nov 18:58 at 159.755, stop 150.91875, target 161.53667: -0.6% so far
+- IEX long (IN ZONE - WAIT) opened 05 Nov 18:58 at 224.47, stop 219.48821, target 230.93999: +0.9% so far
+- TSN long (BUY SIGNAL) opened 05 Nov 18:58 at 59.880001, stop 57.978929, target 62.42: -0.5% so far
+- YUM long (BUY SIGNAL) opened 05 Nov 18:58 at 163.81, stop 159.6375, target 169.765: -1.8% so far
+- JUP long (BUY SIGNAL) opened 05 Nov 19:45 at 0.2448, stop 0.23024286, target 0.25555: -1.1% so far
+- DLR long (BUY SIGNAL) opened 05 Nov 19:45 at 176.425, stop 171.50072, target 184.002: -1.5% so far
+- HON long (IN ZONE) opened 05 Nov 19:45 at 218.28999, stop 214.26112, target 230.01309: +0.6% so far
+- SWKS long (BUY SIGNAL) opened 05 Nov 19:45 at 82.300003, stop 80.134104, target 86.670002: -0.3% so far
+- CC long (RECLAIM C TP2) opened 05 Nov 20:29 at 0.09712, stop 0.09200562, target 0.10734876: -2.2% so far
+- CC long (RECLAIM C TP3) opened 05 Nov 20:29 at 0.09712, stop 0.09200562, target 0.11246314: -2.2% so far
+- DTE long (IN ZONE) opened 05 Nov 20:29 at 134.2832, stop 130.91997, target 137.055: +0.4% so far
+- KMI long (IN ZONE - WAIT) opened 05 Nov 20:29 at 30.419901, stop 29.893929, target 31.495: -1.7% so far
+- MSFT long (BUY SIGNAL) opened 05 Nov 20:29 at 534.70001, stop 505.78964, target 553.44: -1.0% so far
+- SRE long (IN ZONE - WAIT) opened 05 Nov 20:29 at 79.105003, stop 78.106429, target 82.195: -1.4% so far
+- ZRO long (IN ZONE - WAIT) opened 05 Nov 21:14 at 1.6178, stop 1.5598714, target 1.7234: +2.4% so far
+- BTC long (IN ZONE - WAIT) opened 05 Nov 23:18 at 75509.33, stop 74285.997, target 77298.307: +0.5% so far
+- DOT long (BUY SIGNAL) opened 05 Nov 23:18 at 0.8998, stop 0.87836071, target 0.9756: +1.0% so far
+- NIGHT long (IN ZONE - WAIT) opened 06 Nov 03:27 at 0.03861, stop 0.0369875, target 0.041094: +2.8% so far
+- HBAR long (IN ZONE - WAIT) opened 06 Nov 07:38 at 0.06787, stop 0.065296786, target 0.073164286: +0.1% so far
+- INJ long (BUY SIGNAL) opened 06 Nov 10:27 at 8.231, stop 7.9828929, target 8.702: +1.1% so far
+- TAO long (IN ZONE - WAIT) opened 06 Nov 11:21 at 225.38, stop 220.65571, target 232.355: +0.4% so far
+- ZEC long (CROSS C TP1) opened 06 Nov 12:07 at 1290.08, stop 1150.0818, target 1430.0782: +2.2% so far
+- ZEC long (CROSS C TP2) opened 06 Nov 12:07 at 1290.08, stop 1150.0818, target 1570.0764: +2.2% so far
+- ZEC long (CROSS C TP3) opened 06 Nov 12:07 at 1290.08, stop 1150.0818, target 1710.0746: +2.2% so far
+- USDF long (CROSS C TP1) opened 06 Nov 12:07 at 0.9952, stop 0.99416429, target 0.99623571: -0.2% so far
+- USDF long (CROSS C TP2) opened 06 Nov 12:07 at 0.9952, stop 0.99416429, target 0.99727143: -0.2% so far
+- USDF long (CROSS C TP3) opened 06 Nov 12:07 at 0.9952, stop 0.99416429, target 0.99830714: -0.2% so far
+- LTC long (BUY SIGNAL) opened 06 Nov 12:07 at 53.08, stop 52.272857, target 54.336667: -1.6% so far
+- SKY long (BUY SIGNAL) opened 06 Nov 13:03 at 0.06592, stop 0.062638929, target 0.06670375: -2.8% so far
+- AWK long (BUY SIGNAL) opened 06 Nov 14:57 at 148.5601, stop 142.15393, target none: +1.0% so far
+- CF long (BUY SIGNAL) opened 06 Nov 14:57 at 118.71, stop 111.01571, target 122.785: +0.4% so far
+- CLX long (BUY SIGNAL) opened 06 Nov 14:57 at 98.610001, stop 95.044647, target 108.678: +1.2% so far
+- DHR long (IN ZONE - WAIT) opened 06 Nov 14:57 at 227.66, stop 223.46928, target 238.242: +0.9% so far
+- DASH long (BUY SIGNAL) opened 06 Nov 14:57 at 181.34, stop 169.74143, target 195.361: -1.1% so far
+- ES long (BUY SIGNAL) opened 06 Nov 14:57 at 70.639999, stop 69.654287, target 72.547501: -1.3% so far
+- HIG long (BUY SIGNAL) opened 06 Nov 14:57 at 134.89999, stop 132.50215, target 140.29333: -0.9% so far
+- IR long (IN ZONE - WAIT) opened 06 Nov 14:57 at 82.599998, stop 80.909823, target 85.985001: +0.3% so far
+- MLM long (BUY SIGNAL) opened 06 Nov 14:57 at 523.1275, stop 513.36361, target 556.97333: -1.2% so far
+- PEP long (BUY SIGNAL) opened 06 Nov 14:57 at 140.145, stop 138.20679, target 145.892: +0.7% so far
+- PFG long (IN ZONE - WAIT) opened 06 Nov 14:57 at 111.9348, stop 108.97357, target 115.77: -1.1% so far
+- PHM long (BUY SIGNAL) opened 06 Nov 14:57 at 132.85001, stop 128.95143, target 138.4875: -0.5% so far
+- QCOM long (IN ZONE - WAIT) opened 06 Nov 14:57 at 162.03999, stop 154.38286, target 174.24125: +1.9% so far
+- SNPS long (BUY SIGNAL) opened 06 Nov 14:57 at 444, stop 428.01893, target 466.91601: +1.3% so far
+- UDR long (BUY SIGNAL) opened 06 Nov 14:57 at 36.490002, stop 35.791428, target 37.73: +0.0% so far
+- LINK long (BUY SIGNAL) opened 06 Nov 15:37 at 10.872, stop 10.418854, target 10.99: -0.1% so far
+- HYPE long (BUY SIGNAL) opened 06 Nov 15:37 at 77.8, stop 75.480357, target 80.61: +1.5% so far
+- ENA long (BUY SIGNAL) opened 06 Nov 15:37 at 0.16638, stop 0.16144036, target 0.182505: -1.4% so far
+- ONDO long (IN ZONE - WAIT) opened 06 Nov 15:37 at 0.37512, stop 0.35354536, target 0.394795: -1.6% so far
+- WLD long (BUY SIGNAL) opened 06 Nov 15:37 at 0.3438, stop 0.33547857, target 0.371375: -1.0% so far
+- ETHFI long (BUY SIGNAL) opened 06 Nov 15:37 at 0.5728, stop 0.55468929, target 0.6019875: +2.8% so far
+- SPX long (BUY SIGNAL) opened 06 Nov 15:37 at 0.3574, stop 0.34101893, target 0.37165: +1.8% so far
+- AMD long (IN ZONE - WAIT) opened 06 Nov 15:37 at 438.69379, stop 405.02, target 491.288: +2.2% so far
+- LNT long (BUY SIGNAL) opened 06 Nov 15:37 at 72.730003, stop 71.451119, target 74.535: -0.3% so far
+- APO long (BUY SIGNAL) opened 06 Nov 15:37 at 116.035, stop 111.60768, target 122.02556: +0.4% so far
+- APP long (BUY SIGNAL) opened 06 Nov 15:37 at 378.01999, stop 341.99629, target 423.83375: +3.3% so far
+- CDW long (BUY SIGNAL) opened 06 Nov 15:37 at 153.24249, stop 146.10429, target 162.60625: +2.3% so far
+- CNC long (BUY SIGNAL) opened 06 Nov 15:37 at 70.550003, stop 64.17607, target none: -1.3% so far
+- ECHO long (IN ZONE - WAIT) opened 06 Nov 15:37 at 93.625, stop 89.207678, target 104.14: +0.9% so far
+- ERIE long (BUY SIGNAL) opened 06 Nov 15:37 at 277.5, stop 268.61, target 290.83667: -1.8% so far
+- FOX long (BUY SIGNAL) opened 06 Nov 15:37 at 59.490002, stop 57.894143, target 62.35: -0.2% so far
+- GNRC long (IN ZONE - WAIT) opened 06 Nov 15:37 at 176.42999, stop 166.77789, target 192.51375: -0.0% so far
+- HPQ long (BUY SIGNAL) opened 06 Nov 15:37 at 29.17, stop 28.031143, target 30.825: -2.6% so far
+- IVZ long (IN ZONE - WAIT) opened 06 Nov 15:37 at 27.33, stop 26.630357, target 28.655: -1.1% so far
+- KKR long (BUY SIGNAL) opened 06 Nov 15:37 at 97.449997, stop 95.622311, target 101.1: -1.2% so far
+- MAA long (BUY SIGNAL) opened 06 Nov 15:37 at 121.07, stop 118.92072, target 125.45: -2.0% so far
+- NWS long (IN ZONE - WAIT) opened 06 Nov 15:37 at 29.219999, stop 28.578751, target 31.156471: -1.1% so far
+- NEM long (IN ZONE) opened 06 Nov 15:37 at 120.22, stop 117.60679, target 127.715: +0.4% so far
+- NUE long (IN ZONE) opened 06 Nov 15:37 at 248.095, stop 239.72643, target 268.03: -1.5% so far
+- NVR long (BUY SIGNAL) opened 06 Nov 15:37 at 6352.1499, stop 6172.6662, target 6952.8926: -1.0% so far
+- PRU long (BUY SIGNAL) opened 06 Nov 15:37 at 120.495, stop 118.14715, target 123.85: -1.2% so far
+- SPG long (IN ZONE) opened 06 Nov 15:37 at 228.995, stop 226.36089, target none: -0.5% so far
+- TEL long (IN ZONE - WAIT) opened 06 Nov 15:37 at 207.10989, stop 202.50053, target 221.39375: -0.2% so far
+- PEPE long (CROSS C TP1) opened 06 Nov 16:27 at 5.087e-06, stop 4.5850357e-06, target 5.5889643e-06: -3.3% so far
+- PEPE long (CROSS C TP2) opened 06 Nov 16:27 at 5.087e-06, stop 4.5850357e-06, target 6.0909286e-06: -3.3% so far
+- PEPE long (CROSS C TP3) opened 06 Nov 16:27 at 5.087e-06, stop 4.5850357e-06, target 6.5928929e-06: -3.3% so far
+- AKAM long (IN ZONE - WAIT) opened 06 Nov 16:27 at 84.925003, stop 82.062144, target 91.876667: -2.4% so far
+- DLTR long (IN ZONE) opened 06 Nov 16:27 at 133.02, stop 129.07286, target 137.99001: -1.6% so far
+- FSLR long (IN ZONE) opened 06 Nov 16:27 at 201.86, stop 190.60918, target 216.81727: -0.6% so far
+- IRM long (IN ZONE - WAIT) opened 06 Nov 16:27 at 105.605, stop 101.60857, target 110.972: +0.7% so far
+- ORLY long (IN ZONE - WAIT) opened 06 Nov 16:27 at 89.900002, stop 86.939641, target 93.464389: -0.2% so far
+- WM long (BUY SIGNAL) opened 06 Nov 16:27 at 235.41, stop 229.53786, target 242.55333: +0.2% so far
+- CC long (IN ZONE - WAIT) opened 06 Nov 17:17 at 0.09585, stop 0.091922857, target 0.101419: -1.0% so far
+- FET long (BUY SIGNAL) opened 06 Nov 17:17 at 0.1508, stop 0.14578929, target 0.15916667: -2.2% so far
+- NWSA long (IN ZONE - WAIT) opened 06 Nov 17:17 at 26.665001, stop 26.074999, target 27.918889: -1.2% so far
+- OXY long (IN ZONE - WAIT) opened 06 Nov 17:17 at 56.845001, stop 54.739644, target 60.843334: -1.0% so far
+- VRSK long (BUY SIGNAL) opened 06 Nov 17:17 at 204.22, stop 199.85916, target 216.02667: -0.0% so far
+- PUMP long (BUY SIGNAL) opened 06 Nov 17:58 at 0.004, stop 0.0038205, target 0.0042158333: -2.0% so far
+- RAY long (IN ZONE) opened 06 Nov 17:58 at 1.8234, stop 1.7651321, target 1.943275: -1.6% so far
+- AMCR long (IN ZONE - WAIT) opened 06 Nov 17:58 at 44.915001, stop 43.514643, target 46.68125: -0.3% so far
+- AIG long (IN ZONE) opened 06 Nov 17:58 at 78.830002, stop 77.148929, target 81.545555: -1.6% so far
+- BSX long (IN ZONE - WAIT) opened 06 Nov 17:58 at 43.150002, stop 40.408749, target 46.36: -1.1% so far
+- CDNS long (BUY SIGNAL) opened 06 Nov 17:58 at 312.10001, stop 302.3418, target 327.055: +2.3% so far
+- HII long (IN ZONE - WAIT) opened 06 Nov 17:58 at 288.92999, stop 280.3741, target 331.252: -0.3% so far
+- KEY long (IN ZONE - WAIT) opened 06 Nov 17:58 at 20.844999, stop 20.23375, target 21.3: -0.2% so far
+- SHW long (IN ZONE - WAIT) opened 06 Nov 17:58 at 343.75, stop 328.93847, target 363.7975: -0.1% so far
+- TTWO long (IN ZONE - WAIT) opened 06 Nov 17:58 at 215.8, stop 212.1779, target 222.61: -0.6% so far
+- STX long (BUY SIGNAL) opened 06 Nov 18:41 at 0.3369, stop 0.32664286, target 0.354975: +1.2% so far
+- DD long (IN ZONE - WAIT) opened 06 Nov 18:41 at 146.87, stop 144.68144, target none: -0.4% so far
+- ZBH long (BUY SIGNAL) opened 06 Nov 18:41 at 106.91, stop 98.831069, target 113.92: -1.4% so far
+- GD long (IN ZONE) opened 06 Nov 19:36 at 356.47, stop 351.9312, target 367.81667: -0.9% so far
+- MCHP long (IN ZONE - WAIT) opened 06 Nov 19:36 at 58.174999, stop 55.590892, target 69.128666: +0.1% so far
+- TPR long (IN ZONE) opened 06 Nov 19:36 at 135.045, stop 132.74607, target 148.368: -1.9% so far
+- IFF long (IN ZONE - WAIT) opened 06 Nov 20:20 at 83.25, stop 80.831432, target 86.346667: -1.0% so far
+- ISRG long (BUY SIGNAL) opened 06 Nov 20:20 at 451.19, stop 434.84401, target 473.53: +0.2% so far
+- INVH long (BUY SIGNAL) opened 06 Nov 20:20 at 27.115, stop 26.596071, target 27.77625: -0.3% so far
+- U long (IN ZONE) opened 06 Nov 21:02 at 0.9979, stop 0.99288214, target 1.00405: -0.1% so far
+- BTT long (IN ZONE - WAIT) opened 06 Nov 21:37 at 3.547e-07, stop 3.4837012e-07, target 3.586e-07: +0.1% so far
+- ICP long (IN ZONE - WAIT) opened 06 Nov 22:17 at 2.46, stop 2.3349286, target 2.5611667: -0.9% so far
+- DOGE long (BUY SIGNAL) opened 06 Nov 23:26 at 0.0724, stop 0.071508571, target 0.076205: -0.6% so far
+- ASTER long (BUY SIGNAL) opened 06 Nov 23:26 at 0.6817, stop 0.67355, target 0.7: -0.7% so far
+- STABLE long (IN ZONE - WAIT) opened 06 Nov 23:26 at 0.024815, stop 0.02426325, target 0.026150857: +4.1% so far
+- SHIB long (IN ZONE - WAIT) opened 07 Nov 00:38 at 4.552e-06, stop 4.3937143e-06, target 4.7794286e-06: -0.9% so far
+- POL long (BUY SIGNAL) opened 07 Nov 00:38 at 0.09241, stop 0.091318929, target 0.095105: -0.4% so far
+- LIT long (IN ZONE - WAIT) opened 07 Nov 00:38 at 3.335, stop 3.2466929, target 3.5555429: +6.1% so far
+- VIRTUAL long (IN ZONE - WAIT) opened 07 Nov 00:38 at 0.5692, stop 0.56116071, target 0.60443333: +0.0% so far
+- AAVE long (IN ZONE) opened 07 Nov 06:57 at 131.81, stop 129.81071, target 137.605: -0.0% so far
+- QNT long (IN ZONE) opened 07 Nov 07:48 at 202.47, stop 197.91786, target 210.77333: -0.2% so far
+- UB long (IN ZONE) opened 07 Nov 07:48 at 0.11075, stop 0.10804643, target 0.1150825: -0.2% so far
 
 ## Every closed trade, by token
 
@@ -903,8 +959,10 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 16 Oct 15:06 at 250.895 -> 22 Oct 14:47 at 259.095  +3.07% (+3.07$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 23 Oct 14:59 at 269.45499 -> 26 Oct 15:19 at 257.89001  -4.49% (-4.49$ per $100), held 3.1d, exit: stop
 - LONG IN ZONE: 28 Oct 14:03 at 247.82001 -> 03 Nov 14:41 at 242.515  -2.34% (-2.34$ per $100), held 6.0d, exit: stop
+- LONG BUY SIGNAL: 05 Nov 14:34 at 247.91 -> 06 Nov 14:56 at 239.25999  -3.69% (-3.69$ per $100), held 24h, exit: stop
 ### ADI
 - LONG IN ZONE - WAIT: 22 Oct 20:21 at 387.07501 -> 26 Oct 15:19 at 398.82001  +2.83% (+2.83$ per $100), held 3.8d, exit: target
+- LONG IN ZONE - WAIT: 05 Nov 15:28 at 379.76001 -> 06 Nov 14:56 at 364.87  -4.12% (-4.12$ per $100), held 24h, exit: stop
 ### ADM
 - LONG IN ZONE: 16 Oct 14:46 at 83.779999 -> 19 Oct 15:42 at 81.260002  -3.21% (-3.21$ per $100), held 3.0d, exit: stop
 - LONG IN ZONE: 28 Oct 14:52 at 77.580002 -> 03 Nov 14:41 at 72.360001  -6.93% (-6.93$ per $100), held 6.0d, exit: stop
@@ -1051,6 +1109,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG RECLAIM B TP3: 29 Oct 16:05 at 0.17395 -> 29 Oct 21:10 at 0.15592  -10.57% (-10.57$ per $100), held 5h, exit: stop
 - LONG IN ZONE - WAIT: 30 Oct 07:30 at 0.16404 -> 02 Nov 18:59 at 0.15633  -4.90% (-4.90$ per $100), held 3.5d, exit: stop
 - LONG IN ZONE: 04 Nov 06:40 at 0.16075 -> 04 Nov 11:36 at 0.16403  +1.84% (+1.84$ per $100), held 5h, exit: target
+- LONG IN ZONE - WAIT: 06 Nov 00:37 at 0.16206 -> 06 Nov 10:27 at 0.16842  +3.72% (+3.72$ per $100), held 10h, exit: target
 ### ARES
 - LONG IN ZONE - WAIT: 16 Oct 17:39 at 112.62 -> 22 Oct 14:47 at 118.90875  +5.38% (+5.38$ per $100), held 5.9d, exit: target
 - LONG BUY SIGNAL: 23 Oct 14:59 at 122.96 -> 02 Nov 14:31 at 128.62  +4.40% (+4.40$ per $100), held 10.0d, exit: target
@@ -1180,11 +1239,13 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 02 Nov 02:12 at 0.07294 -> 02 Nov 05:35 at 0.07207  -1.39% (-1.39$ per $100), held 3h, exit: stop
 - LONG IN ZONE - WAIT: 03 Nov 11:16 at 0.07297 -> 03 Nov 23:58 at 0.07223  -1.21% (-1.21$ per $100), held 13h, exit: stop
 - LONG IN ZONE - WAIT: 05 Nov 00:34 at 0.07293 -> 05 Nov 16:29 at 0.07231  -1.05% (-1.05$ per $100), held 16h, exit: stop
+- LONG IN ZONE: 06 Nov 17:17 at 0.07422 -> 06 Nov 20:20 at 0.07336  -1.36% (-1.36$ per $100), held 3h, exit: stop
 ### BEN
 - LONG IN ZONE - WAIT: 16 Oct 14:46 at 31.75 -> 16 Oct 17:38 at 31.055  -2.39% (-2.39$ per $100), held 3h, exit: stop
 - LONG IN ZONE - WAIT: 21 Oct 18:16 at 31.605 -> 23 Oct 15:31 at 30.995001  -2.13% (-2.13$ per $100), held 45h, exit: stop
 - LONG IN ZONE: 29 Oct 15:15 at 32.34 -> 30 Oct 14:18 at 31.530001  -2.70% (-2.70$ per $100), held 23h, exit: stop
 - LONG BUY SIGNAL: 02 Nov 15:24 at 32.450001 -> 04 Nov 17:04 at 33.264999  +2.31% (+2.31$ per $100), held 2.1d, exit: target
+- LONG BUY SIGNAL: 05 Nov 18:10 at 32 -> 06 Nov 16:26 at 33.12  +3.30% (+3.30$ per $100), held 22h, exit: target
 ### BF-B
 - LONG BUY SIGNAL: 16 Oct 15:06 at 29.190001 -> 22 Oct 17:21 at 29.690001  +1.51% (+1.51$ per $100), held 6.1d, exit: target
 - LONG BUY SIGNAL: 23 Oct 17:49 at 29.469999 -> 27 Oct 18:43 at 28.48  -3.56% (-3.56$ per $100), held 4.1d, exit: stop
@@ -1213,6 +1274,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### BKNG
 - LONG BUY SIGNAL: 16 Oct 14:46 at 167.10001 -> 21 Oct 15:36 at 157.64  -5.86% (-5.86$ per $100), held 5.0d, exit: stop
 - LONG IN ZONE - WAIT: 22 Oct 15:55 at 162.6412 -> 23 Oct 14:59 at 157.795  -3.18% (-3.18$ per $100), held 23h, exit: stop
+- LONG IN ZONE: 04 Nov 14:33 at 168.5 -> 06 Nov 15:36 at 164.88  -2.35% (-2.35$ per $100), held 2.0d, exit: stop
 ### BKR
 - LONG BUY SIGNAL: 16 Oct 14:46 at 55.369999 -> 22 Oct 16:22 at 52.904999  -4.65% (-4.65$ per $100), held 6.1d, exit: stop
 - LONG BUY SIGNAL: 26 Oct 13:40 at 55.369999 -> 03 Nov 20:54 at 52.959999  -4.55% (-4.55$ per $100), held 8.3d, exit: stop
@@ -1293,6 +1355,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### CARR
 - LONG BUY SIGNAL: 22 Oct 17:22 at 56.560001 -> 29 Oct 14:22 at 53.75  -5.17% (-5.17$ per $100), held 6.9d, exit: stop
 - LONG IN ZONE - WAIT: 30 Oct 15:10 at 53.450001 -> 03 Nov 15:24 at 55.231667  +3.13% (+3.13$ per $100), held 4.0d, exit: target
+- LONG BUY SIGNAL: 04 Nov 17:05 at 56.775002 -> 06 Nov 20:20 at 52.715  -7.35% (-7.35$ per $100), held 2.1d, exit: stop
 ### CBOE
 - LONG BUY SIGNAL: 16 Oct 19:23 at 313.67999 -> 30 Oct 18:25 at 340.70001  +8.41% (+8.41$ per $100), held 14.0d, exit: time limit
 ### CBRE
@@ -1352,6 +1415,10 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE: 20 Oct 16:09 at 115.915 -> 03 Nov 15:24 at 118.405  +1.95% (+1.95$ per $100), held 14.0d, exit: time limit
 ### CFG
 - LONG IN ZONE: 05 Nov 14:34 at 67.360001 -> 05 Nov 15:28 at 65.589996  -2.83% (-2.83$ per $100), held <1h, exit: stop
+### CHD
+- LONG BUY SIGNAL: 23 Oct 14:59 at 106.98 -> 06 Nov 14:56 at 108.9989  +1.69% (+1.69$ per $100), held 14.0d, exit: time limit
+### CHRW
+- LONG IN ZONE - WAIT: 03 Nov 16:18 at 130.81 -> 06 Nov 14:56 at 127.015  -3.10% (-3.10$ per $100), held 2.9d, exit: stop
 ### CI
 - LONG IN ZONE: 20 Oct 15:04 at 305.04999 -> 27 Oct 18:43 at 298.745  -2.27% (-2.27$ per $100), held 7.2d, exit: stop
 - LONG IN ZONE: 28 Oct 19:21 at 294.95999 -> 05 Nov 14:33 at 307.37917  +4.01% (+4.01$ per $100), held 7.8d, exit: target
@@ -1403,6 +1470,8 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 02 Nov 18:12 at 1039.1899 -> 05 Nov 15:28 at 1066.54  +2.43% (+2.43$ per $100), held 2.9d, exit: target
 ### CPAY
 - LONG IN ZONE - WAIT: 28 Oct 14:52 at 391.72 -> 30 Oct 16:33 at 401.16499  +2.21% (+2.21$ per $100), held 2.1d, exit: target
+### CPRT
+- LONG IN ZONE - WAIT: 04 Nov 16:16 at 32.474998 -> 06 Nov 14:56 at 31.629999  -2.80% (-2.80$ per $100), held 47h, exit: stop
 ### CPT
 - LONG IN ZONE: 22 Oct 15:20 at 102.04 -> 28 Oct 14:03 at 99.809998  -2.39% (-2.39$ per $100), held 6.0d, exit: stop
 - LONG IN ZONE - WAIT: 02 Nov 18:12 at 101.96 -> 03 Nov 14:41 at 99.760002  -2.36% (-2.36$ per $100), held 20h, exit: stop
@@ -1511,6 +1580,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 16 Oct 14:46 at 19.049999 -> 19 Oct 15:09 at 18.635  -2.38% (-2.38$ per $100), held 3.0d, exit: stop
 - LONG IN ZONE: 22 Oct 20:21 at 19.1999 -> 27 Oct 17:29 at 18.875  -1.89% (-1.89$ per $100), held 4.9d, exit: stop
 - LONG IN ZONE: 30 Oct 17:17 at 19.155001 -> 04 Nov 14:32 at 19.838572  +3.37% (+3.37$ per $100), held 4.9d, exit: target
+- LONG IN ZONE: 05 Nov 15:28 at 20.295 -> 06 Nov 14:56 at 19.9177  -2.06% (-2.06$ per $100), held 24h, exit: stop
 ### DOGE
 - LONG IN ZONE - WAIT: 16 Oct 06:00 at 0.082 -> 16 Oct 16:13 at 0.0809  -1.54% (-1.54$ per $100), held 10h, exit: stop
 - LONG BUY SIGNAL: 19 Oct 15:09 at 0.07902 -> 20 Oct 15:03 at 0.08055  +1.74% (+1.74$ per $100), held 24h, exit: target
@@ -1578,10 +1648,12 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 20 Oct 15:34 at 49.82 -> 22 Oct 15:54 at 48.895  -2.06% (-2.06$ per $100), held 2.0d, exit: stop
 - LONG BUY SIGNAL: 26 Oct 17:29 at 51.689999 -> 02 Nov 18:11 at 48.919998  -5.56% (-5.56$ per $100), held 7.0d, exit: stop
 - LONG IN ZONE - WAIT: 04 Nov 14:33 at 45.914799 -> 04 Nov 17:04 at 44.66  -2.93% (-2.93$ per $100), held 2h, exit: stop
+- LONG IN ZONE - WAIT: 05 Nov 17:32 at 43.875 -> 06 Nov 14:56 at 42.169998  -4.09% (-4.09$ per $100), held 21h, exit: stop
 ### DXCM
 - LONG BUY SIGNAL: 16 Oct 19:01 at 86.160004 -> 21 Oct 15:05 at 83  -3.87% (-3.87$ per $100), held 4.8d, exit: stop
 - LONG BUY SIGNAL: 27 Oct 13:55 at 78.830002 -> 30 Oct 14:18 at 82.476001  +4.43% (+4.43$ per $100), held 3.0d, exit: target
 - LONG BUY SIGNAL: 02 Nov 14:31 at 83.290001 -> 04 Nov 15:21 at 87.1525  +4.44% (+4.44$ per $100), held 2.0d, exit: target
+- LONG BUY SIGNAL: 05 Nov 16:29 at 85.269997 -> 06 Nov 17:58 at 79.559998  -6.90% (-6.90$ per $100), held 26h, exit: stop
 ### EBAY
 - LONG BUY SIGNAL: 16 Oct 15:06 at 122.445 -> 30 Oct 14:18 at 121.715  -0.80% (-0.80$ per $100), held 14.0d, exit: time limit
 ### ECHO
@@ -1590,15 +1662,19 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 29 Oct 14:23 at 296.39999 -> 02 Nov 15:24 at 307.89499  +3.68% (+3.68$ per $100), held 4.0d, exit: target
 ### ED
 - LONG BUY SIGNAL: 16 Oct 14:46 at 110.61 -> 22 Oct 15:20 at 113.3  +2.23% (+2.23$ per $100), held 6.0d, exit: target
+- LONG BUY SIGNAL: 23 Oct 15:31 at 115.31 -> 06 Nov 14:56 at 120.264  +4.10% (+4.10$ per $100), held 14.0d, exit: time limit
 ### EFX
 - LONG IN ZONE: 20 Oct 15:04 at 174.34 -> 22 Oct 14:47 at 179.9  +2.99% (+2.99$ per $100), held 48h, exit: target
 - LONG BUY SIGNAL: 27 Oct 13:55 at 176.00999 -> 02 Nov 15:24 at 188.685  +7.00% (+7.00$ per $100), held 6.1d, exit: target
+### EG
+- LONG BUY SIGNAL: 23 Oct 14:59 at 404.64001 -> 06 Nov 14:56 at 409.91  +1.10% (+1.10$ per $100), held 14.0d, exit: time limit
 ### EIX
 - LONG BUY SIGNAL: 19 Oct 15:09 at 56.009998 -> 28 Oct 16:26 at 58.832  +4.84% (+4.84$ per $100), held 9.1d, exit: target
 - LONG IN ZONE: 30 Oct 14:19 at 59.625 -> 02 Nov 15:24 at 58.48  -2.12% (-2.12$ per $100), held 3.0d, exit: stop
 ### EL
 - LONG IN ZONE: 30 Oct 15:55 at 105.755 -> 02 Nov 14:31 at 109.45667  +3.30% (+3.30$ per $100), held 2.9d, exit: target
 - LONG BUY SIGNAL: 03 Nov 14:42 at 104.665 -> 04 Nov 14:32 at 109.45667  +4.38% (+4.38$ per $100), held 24h, exit: target
+- LONG BUY SIGNAL: 05 Nov 18:10 at 108.14 -> 06 Nov 17:17 at 109.45667  +1.02% (+1.02$ per $100), held 23h, exit: target
 ### ELV
 - LONG BUY SIGNAL: 21 Oct 15:37 at 434.47 -> 27 Oct 14:34 at 425.47  -2.27% (-2.27$ per $100), held 6.0d, exit: stop
 - LONG IN ZONE: 28 Oct 17:16 at 415.79001 -> 04 Nov 16:15 at 427.9425  +2.72% (+2.72$ per $100), held 7.0d, exit: target
@@ -1634,6 +1710,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### EQT
 - LONG IN ZONE: 16 Oct 15:15 at 53.419998 -> 23 Oct 14:59 at 55.087778  +2.92% (+2.92$ per $100), held 7.0d, exit: target
 - LONG BUY SIGNAL: 26 Oct 17:29 at 54.490002 -> 04 Nov 14:32 at 53.25  -2.48% (-2.48$ per $100), held 8.9d, exit: stop
+- LONG IN ZONE - WAIT: 05 Nov 17:32 at 51.285 -> 06 Nov 19:35 at 49.790001  -3.12% (-3.12$ per $100), held 26h, exit: stop
 ### ERIE
 - LONG BUY SIGNAL: 16 Oct 14:46 at 240.45 -> 22 Oct 15:20 at 248.22666  +3.03% (+3.03$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 23 Oct 15:31 at 254.00999 -> 27 Oct 16:03 at 243.035  -4.52% (-4.52$ per $100), held 4.1d, exit: stop
@@ -1659,6 +1736,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 28 Oct 17:16 at 7.53 -> 28 Oct 20:01 at 7.63  +1.13% (+1.13$ per $100), held 3h, exit: target
 - LONG BUY SIGNAL: 30 Oct 03:50 at 7.15 -> 02 Nov 18:59 at 6.94  -3.14% (-3.14$ per $100), held 3.6d, exit: stop
 - LONG IN ZONE: 04 Nov 07:54 at 7.11 -> 05 Nov 08:39 at 7.41375  +4.07% (+4.07$ per $100), held 25h, exit: target
+- LONG BUY SIGNAL: 06 Nov 12:07 at 7.13 -> 07 Nov 02:25 at 7  -2.02% (-2.02$ per $100), held 14h, exit: stop
 ### ETH
 - LONG BUY SIGNAL: 16 Oct 00:37 at 2442.01 -> 17 Oct 22:53 at 2381.48  -2.68% (-2.68$ per $100), held 46h, exit: stop
 - LONG IN ZONE - WAIT: 18 Oct 23:43 at 2396.6 -> 19 Oct 10:36 at 2437.08  +1.49% (+1.49$ per $100), held 11h, exit: target
@@ -1716,6 +1794,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### EXPE
 - LONG BUY SIGNAL: 16 Oct 18:32 at 287 -> 30 Oct 17:54 at 281.505  -2.11% (-2.11$ per $100), held 14.0d, exit: time limit
 - LONG BUY SIGNAL: 03 Nov 17:11 at 288.55499 -> 04 Nov 14:32 at 302.80499  +4.74% (+4.74$ per $100), held 21h, exit: target
+- LONG IN ZONE - WAIT: 05 Nov 16:29 at 277.62 -> 06 Nov 15:36 at 263.04501  -5.45% (-5.45$ per $100), held 23h, exit: stop
 ### EXR
 - LONG BUY SIGNAL: 16 Oct 14:46 at 139.25999 -> 22 Oct 16:22 at 142.58  +2.18% (+2.18$ per $100), held 6.1d, exit: target
 - LONG BUY SIGNAL: 23 Oct 18:18 at 142.73 -> 28 Oct 14:03 at 145.39  +1.66% (+1.66$ per $100), held 4.9d, exit: target
@@ -1736,6 +1815,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### FDX
 - LONG BUY SIGNAL: 16 Oct 14:46 at 296.66 -> 27 Oct 15:21 at 304.7025  +2.51% (+2.51$ per $100), held 11.1d, exit: target
 - LONG BUY SIGNAL: 28 Oct 19:21 at 303.45499 -> 29 Oct 16:04 at 309.17003  +1.68% (+1.68$ per $100), held 21h, exit: target
+- LONG IN ZONE: 30 Oct 16:34 at 317.17001 -> 06 Nov 15:36 at 312.57999  -1.65% (-1.65$ per $100), held 7.0d, exit: stop
 ### FDXF
 - LONG IN ZONE - WAIT: 21 Oct 15:05 at 108.29 -> 04 Nov 14:32 at 133.125  +22.73% (+22.73$ per $100), held 14.0d, exit: time limit
 ### FE
@@ -1769,6 +1849,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 22 Oct 22:41 at 0.9862 -> 23 Oct 23:51 at 0.948  -4.07% (-4.07$ per $100), held 25h, exit: stop
 - LONG BUY SIGNAL: 30 Oct 19:54 at 0.8665 -> 04 Nov 02:26 at 0.8385  -3.43% (-3.43$ per $100), held 4.3d, exit: stop
 - LONG BUY SIGNAL: 05 Nov 02:38 at 0.8716 -> 05 Nov 15:28 at 0.7998  -8.44% (-8.44$ per $100), held 13h, exit: stop
+- LONG IN ZONE - WAIT: 06 Nov 15:37 at 0.829 -> 07 Nov 03:55 at 0.8068  -2.88% (-2.88$ per $100), held 12h, exit: stop
 ### FISV
 - LONG IN ZONE: 22 Oct 15:20 at 49.5797 -> 26 Oct 16:15 at 48.665001  -2.04% (-2.04$ per $100), held 4.1d, exit: stop
 ### FITB
@@ -1830,11 +1911,14 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 19 Oct 18:16 at 915.84039 -> 22 Oct 14:47 at 859.92999  -6.30% (-6.30$ per $100), held 2.9d, exit: stop
 - LONG IN ZONE: 26 Oct 15:20 at 853.35681 -> 29 Oct 14:22 at 904.71334  +5.82% (+5.82$ per $100), held 3.0d, exit: target
 - LONG BUY SIGNAL: 30 Oct 17:17 at 854.9483 -> 03 Nov 14:41 at 904.71334  +5.62% (+5.62$ per $100), held 3.9d, exit: target
+### GL
+- LONG IN ZONE - WAIT: 23 Oct 15:31 at 159.36 -> 06 Nov 14:56 at 157.55  -1.34% (-1.34$ per $100), held 14.0d, exit: time limit
 ### GM
 - LONG BUY SIGNAL: 16 Oct 14:46 at 85.695 -> 20 Oct 15:03 at 78.129997  -9.03% (-9.03$ per $100), held 4.0d, exit: stop
 - LONG IN ZONE: 29 Oct 15:15 at 85.199997 -> 30 Oct 17:54 at 87.8  +2.85% (+2.85$ per $100), held 27h, exit: target
 ### GNO
 - LONG IN ZONE: 04 Nov 14:33 at 111.13 -> 05 Nov 03:26 at 113.94167  +2.33% (+2.33$ per $100), held 13h, exit: target
+- LONG BUY SIGNAL: 06 Nov 08:32 at 115.12 -> 06 Nov 11:21 at 113.85  -1.30% (-1.30$ per $100), held 3h, exit: stop
 ### GNRC
 - LONG BUY SIGNAL: 16 Oct 19:01 at 193.92999 -> 21 Oct 16:39 at 201.61667  +3.76% (+3.76$ per $100), held 4.9d, exit: target
 - LONG IN ZONE - WAIT: 22 Oct 19:13 at 186.86501 -> 28 Oct 19:20 at 201.61667  +7.69% (+7.69$ per $100), held 6.0d, exit: target
@@ -1904,6 +1988,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### HD
 - LONG IN ZONE: 22 Oct 15:20 at 322.26001 -> 28 Oct 19:20 at 316.79001  -1.90% (-1.90$ per $100), held 6.2d, exit: stop
 - LONG IN ZONE: 29 Oct 19:52 at 327.48999 -> 04 Nov 14:32 at 342.75166  +4.46% (+4.46$ per $100), held 5.8d, exit: target
+- LONG BUY SIGNAL: 05 Nov 14:34 at 361.29251 -> 06 Nov 14:56 at 342.45001  -5.42% (-5.42$ per $100), held 24h, exit: stop
 ### HIG
 - LONG BUY SIGNAL: 22 Oct 16:23 at 138.31 -> 27 Oct 16:03 at 132.94  -4.08% (-4.08$ per $100), held 5.0d, exit: stop
 - LONG IN ZONE: 28 Oct 16:27 at 131.17999 -> 02 Nov 19:45 at 134.91833  +2.65% (+2.65$ per $100), held 5.1d, exit: target
@@ -1936,6 +2021,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 23 Oct 15:31 at 172.355 -> 23 Oct 18:17 at 169.64999  -1.77% (-1.77$ per $100), held 3h, exit: stop
 - LONG IN ZONE: 26 Oct 13:40 at 168.17999 -> 27 Oct 15:21 at 164.61501  -2.32% (-2.32$ per $100), held 26h, exit: stop
 - LONG IN ZONE - WAIT: 30 Oct 14:19 at 164.44 -> 04 Nov 16:15 at 173.45909  +5.28% (+5.28$ per $100), held 5.1d, exit: target
+- LONG BUY SIGNAL: 05 Nov 17:32 at 173.19501 -> 06 Nov 15:36 at 178.44571  +2.83% (+2.83$ per $100), held 22h, exit: target
 ### HTX
 - LONG IN ZONE: 16 Oct 00:37 at 1.654e-06 -> 17 Oct 13:05 at 1.6708889e-06  +0.82% (+0.82$ per $100), held 36h, exit: target
 - LONG RECLAIM C TP1: 17 Oct 13:05 at 1.672e-06 -> 24 Oct 01:25 at 1.629e-06  -2.77% (-2.77$ per $100), held 6.5d, exit: stop
@@ -1984,6 +2070,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### IBM
 - LONG BUY SIGNAL: 16 Oct 16:13 at 231.30499 -> 20 Oct 15:03 at 239.486  +3.34% (+3.34$ per $100), held 3.9d, exit: target
 - LONG BUY SIGNAL: 22 Oct 14:48 at 247.28999 -> 02 Nov 15:24 at 257.98833  +4.13% (+4.13$ per $100), held 11.1d, exit: target
+- LONG BUY SIGNAL: 03 Nov 16:18 at 249.67 -> 06 Nov 14:56 at 243.815  -2.55% (-2.55$ per $100), held 2.9d, exit: stop
 ### ICE
 - LONG BUY SIGNAL: 16 Oct 18:07 at 158.575 -> 22 Oct 15:20 at 161.665  +1.75% (+1.75$ per $100), held 5.9d, exit: target
 - LONG BUY SIGNAL: 27 Oct 13:55 at 158.48 -> 28 Oct 14:03 at 154.8  -2.52% (-2.52$ per $100), held 24h, exit: stop
@@ -2051,6 +2138,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### ITW
 - LONG IN ZONE: 16 Oct 14:46 at 275.39499 -> 19 Oct 15:09 at 270.04999  -2.14% (-2.14$ per $100), held 3.0d, exit: stop
 - LONG IN ZONE: 20 Oct 18:44 at 273.95999 -> 22 Oct 14:47 at 269.7634  -1.73% (-1.73$ per $100), held 44h, exit: stop
+- LONG BUY SIGNAL: 23 Oct 14:59 at 276.75 -> 06 Nov 14:56 at 281.56009  +1.54% (+1.54$ per $100), held 14.0d, exit: time limit
 ### IVZ
 - LONG BUY SIGNAL: 16 Oct 16:41 at 28.555 -> 30 Oct 15:54 at 27.719999  -3.12% (-3.12$ per $100), held 14.0d, exit: time limit
 - LONG BUY SIGNAL: 05 Nov 14:34 at 29.49 -> 05 Nov 15:28 at 27.709999  -6.24% (-6.24$ per $100), held <1h, exit: stop
@@ -2094,6 +2182,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG CROSS C TP2: 04 Nov 04:02 at 0.14278 -> 04 Nov 08:42 at 0.13981  -2.28% (-2.28$ per $100), held 5h, exit: stop
 - LONG CROSS C TP3: 04 Nov 04:02 at 0.14278 -> 04 Nov 08:42 at 0.13981  -2.28% (-2.28$ per $100), held 5h, exit: stop
 - LONG IN ZONE - WAIT: 05 Nov 00:34 at 0.13977 -> 05 Nov 09:35 at 0.14165667  +1.15% (+1.15$ per $100), held 9h, exit: target
+- LONG BUY SIGNAL: 06 Nov 12:07 at 0.14151 -> 06 Nov 20:20 at 0.1430475  +0.89% (+0.89$ per $100), held 8h, exit: target
 ### JUP
 - LONG IN ZONE - WAIT: 16 Oct 03:11 at 0.3146 -> 16 Oct 16:13 at 0.3038  -3.63% (-3.63$ per $100), held 13h, exit: stop
 - LONG IN ZONE - WAIT: 17 Oct 22:53 at 0.2883 -> 18 Oct 20:40 at 0.2765  -4.29% (-4.29$ per $100), held 22h, exit: stop
@@ -2159,6 +2248,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG CROSS C TP1: 05 Nov 12:19 at 7.407 -> 05 Nov 21:14 at 7.1966  -3.04% (-3.04$ per $100), held 9h, exit: stop
 - LONG CROSS C TP2: 05 Nov 12:19 at 7.407 -> 05 Nov 21:14 at 7.1966  -3.04% (-3.04$ per $100), held 9h, exit: stop
 - LONG CROSS C TP3: 05 Nov 12:19 at 7.407 -> 05 Nov 21:14 at 7.1966  -3.04% (-3.04$ per $100), held 9h, exit: stop
+- LONG IN ZONE: 06 Nov 17:58 at 7.1045 -> 06 Nov 21:37 at 7.0367  -1.15% (-1.15$ per $100), held 4h, exit: stop
 ### KDP
 - LONG BUY SIGNAL: 16 Oct 14:46 at 34.549999 -> 30 Oct 14:18 at 35.855  +3.58% (+3.58$ per $100), held 14.0d, exit: time limit
 ### KEY
@@ -2174,6 +2264,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE: 20 Oct 15:04 at 23.625 -> 22 Oct 15:20 at 24.287857  +2.61% (+2.61$ per $100), held 2.0d, exit: target
 - LONG BUY SIGNAL: 23 Oct 16:08 at 24.805 -> 27 Oct 15:21 at 24.355  -2.01% (-2.01$ per $100), held 4.0d, exit: stop
 - LONG IN ZONE: 02 Nov 19:00 at 24.879999 -> 03 Nov 14:41 at 24.365  -2.27% (-2.27$ per $100), held 20h, exit: stop
+- LONG BUY SIGNAL: 05 Nov 17:32 at 25.129999 -> 06 Nov 14:56 at 24.495001  -2.73% (-2.73$ per $100), held 21h, exit: stop
 ### KIM
 - LONG IN ZONE: 16 Oct 15:06 at 23.01 -> 19 Oct 15:09 at 22.719999  -1.46% (-1.46$ per $100), held 3.0d, exit: stop
 - LONG IN ZONE: 20 Oct 15:34 at 23.055 -> 21 Oct 20:17 at 22.735001  -1.59% (-1.59$ per $100), held 29h, exit: stop
@@ -2196,6 +2287,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 23 Oct 19:42 at 110.035 -> 27 Oct 13:54 at 108.7231  -1.39% (-1.39$ per $100), held 3.8d, exit: stop
 - LONG IN ZONE: 29 Oct 19:52 at 110.115 -> 30 Oct 19:53 at 107.93  -2.18% (-2.18$ per $100), held 24h, exit: stop
 - LONG IN ZONE: 04 Nov 16:16 at 110.195 -> 04 Nov 19:37 at 108.1075  -2.09% (-2.09$ per $100), held 3h, exit: stop
+- LONG IN ZONE: 05 Nov 19:45 at 110.155 -> 06 Nov 17:17 at 108.13  -2.04% (-2.04$ per $100), held 22h, exit: stop
 ### KMI
 - LONG IN ZONE: 03 Nov 15:24 at 33.02 -> 04 Nov 15:21 at 31.690001  -4.23% (-4.23$ per $100), held 24h, exit: stop
 ### KR
@@ -2207,6 +2299,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 21 Oct 20:48 at 19.0898 -> 22 Oct 14:47 at 19.245  +0.61% (+0.61$ per $100), held 18h, exit: target
 ### L
 - LONG BUY SIGNAL: 16 Oct 14:46 at 109.45 -> 22 Oct 14:47 at 111.6975  +1.85% (+1.85$ per $100), held 6.0d, exit: target
+- LONG BUY SIGNAL: 23 Oct 14:59 at 113.175 -> 06 Nov 14:56 at 109.41  -3.53% (-3.53$ per $100), held 14.0d, exit: time limit
 ### LDO
 - LONG BUY SIGNAL: 16 Oct 01:10 at 0.401 -> 17 Oct 14:30 at 0.3915  -2.57% (-2.57$ per $100), held 37h, exit: stop
 - LONG IN ZONE - WAIT: 18 Oct 14:34 at 0.3783 -> 18 Oct 20:40 at 0.3647  -3.80% (-3.80$ per $100), held 6h, exit: stop
@@ -2318,6 +2411,8 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 16 Oct 15:06 at 73.849998 -> 22 Oct 15:20 at 75.990001  +2.70% (+2.70$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 23 Oct 15:31 at 75.669998 -> 29 Oct 15:15 at 78.555  +3.61% (+3.61$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 30 Oct 15:55 at 80.439903 -> 02 Nov 15:24 at 82.604285  +2.49% (+2.49$ per $100), held 3.0d, exit: target
+### MCD
+- LONG IN ZONE: 04 Nov 17:05 at 276.995 -> 06 Nov 14:56 at 272.73679  -1.74% (-1.74$ per $100), held 46h, exit: stop
 ### MCHP
 - LONG IN ZONE - WAIT: 16 Oct 15:48 at 76.129997 -> 16 Oct 18:59 at 74.269997  -2.64% (-2.64$ per $100), held 3h, exit: stop
 - LONG BUY SIGNAL: 19 Oct 15:09 at 73.43 -> 27 Oct 15:21 at 78.213333  +6.31% (+6.31$ per $100), held 8.0d, exit: target
@@ -2330,18 +2425,22 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 26 Oct 15:20 at 63.049999 -> 28 Oct 16:26 at 61.869999  -2.07% (-2.07$ per $100), held 2.0d, exit: stop
 ### MDT
 - LONG BUY SIGNAL: 16 Oct 14:46 at 96.195 -> 30 Oct 14:18 at 97.114998  +0.76% (+0.76$ per $100), held 14.0d, exit: time limit
+### MET
+- LONG IN ZONE: 23 Oct 17:49 at 99.839996 -> 06 Nov 17:17 at 99.400002  -0.64% (-0.64$ per $100), held 14.0d, exit: time limit
 ### META
 - LONG IN ZONE - WAIT: 20 Oct 15:34 at 692.47998 -> 22 Oct 14:47 at 651.34998  -6.14% (-6.14$ per $100), held 47h, exit: stop
 - LONG IN ZONE - WAIT: 26 Oct 13:40 at 633.76001 -> 28 Oct 18:27 at 609.48999  -4.03% (-4.03$ per $100), held 2.2d, exit: stop
 ### MKC
 - LONG BUY SIGNAL: 16 Oct 14:46 at 46.154999 -> 30 Oct 14:18 at 47.759998  +3.28% (+3.28$ per $100), held 14.0d, exit: time limit
 - LONG IN ZONE: 02 Nov 19:00 at 48.73 -> 03 Nov 20:13 at 47.77  -2.17% (-2.17$ per $100), held 25h, exit: stop
+- LONG BUY SIGNAL: 05 Nov 14:34 at 51.299999 -> 06 Nov 14:56 at 48.25  -6.15% (-6.15$ per $100), held 24h, exit: stop
 ### MLM
 - LONG IN ZONE - WAIT: 29 Oct 16:53 at 538.82001 -> 05 Nov 14:33 at 559.25599  +3.59% (+3.59$ per $100), held 6.9d, exit: target
 ### MMM
 - LONG BUY SIGNAL: 16 Oct 14:46 at 167.78 -> 20 Oct 16:08 at 170.36666  +1.34% (+1.34$ per $100), held 4.1d, exit: target
 ### MNST
 - LONG BUY SIGNAL: 16 Oct 14:46 at 46.110001 -> 30 Oct 14:18 at 46.84  +1.38% (+1.38$ per $100), held 14.0d, exit: time limit
+- LONG BUY SIGNAL: 02 Nov 14:31 at 47.93 -> 06 Nov 14:56 at 45.299999  -5.69% (-5.69$ per $100), held 4.0d, exit: stop
 ### MNT
 - LONG BUY SIGNAL: 16 Oct 00:37 at 0.53 -> 16 Oct 12:23 at 0.54206667  +2.08% (+2.08$ per $100), held 12h, exit: target
 - LONG IN ZONE - WAIT: 20 Oct 16:38 at 0.531 -> 21 Oct 14:28 at 0.54695  +2.80% (+2.80$ per $100), held 22h, exit: target
@@ -2390,6 +2489,8 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE: 01 Nov 12:22 at 2.283 -> 01 Nov 19:38 at 2.2331  -2.39% (-2.39$ per $100), held 7h, exit: stop
 - LONG IN ZONE: 03 Nov 17:55 at 2.2118 -> 03 Nov 20:13 at 2.1764  -1.80% (-1.80$ per $100), held 2h, exit: stop
 - LONG IN ZONE: 05 Nov 14:34 at 2.223 -> 05 Nov 15:28 at 2.114  -5.10% (-5.10$ per $100), held <1h, exit: stop
+### MOS
+- LONG IN ZONE: 04 Nov 17:54 at 20.530001 -> 06 Nov 15:36 at 22.526667  +9.53% (+9.53$ per $100), held 46h, exit: target
 ### MPWR
 - LONG BUY SIGNAL: 16 Oct 15:15 at 1231.28 -> 22 Oct 15:20 at 1195.91  -3.07% (-3.07$ per $100), held 6.0d, exit: stop
 - LONG IN ZONE - WAIT: 02 Nov 14:31 at 1233.5699 -> 05 Nov 15:28 at 1158.335  -6.30% (-6.30$ per $100), held 3.0d, exit: stop
@@ -2481,6 +2582,8 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE: 20 Oct 15:04 at 149 -> 22 Oct 20:20 at 157.291  +5.36% (+5.36$ per $100), held 2.2d, exit: target
 - LONG IN ZONE: 28 Oct 17:16 at 149.94 -> 29 Oct 14:22 at 114.0345  -24.15% (-24.15$ per $100), held 21h, exit: stop
 - LONG IN ZONE - WAIT: 04 Nov 14:33 at 111.585 -> 05 Nov 15:28 at 105.14  -5.98% (-5.98$ per $100), held 25h, exit: stop
+### NSC
+- LONG BUY SIGNAL: 23 Oct 16:08 at 331.14999 -> 06 Nov 14:56 at 321.34  -3.16% (-3.16$ per $100), held 14.0d, exit: stop
 ### NTRS
 - LONG IN ZONE: 26 Oct 15:20 at 171.485 -> 30 Oct 18:25 at 168.00999  -2.23% (-2.23$ per $100), held 4.1d, exit: stop
 ### NUE
@@ -2502,14 +2605,17 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### NXPI
 - LONG BUY SIGNAL: 16 Oct 14:46 at 232.09 -> 21 Oct 16:39 at 241.27667  +3.76% (+3.76$ per $100), held 5.1d, exit: target
 - LONG BUY SIGNAL: 22 Oct 17:22 at 240.355 -> 26 Oct 17:28 at 247.875  +2.93% (+2.93$ per $100), held 4.0d, exit: target
+- LONG BUY SIGNAL: 02 Nov 20:29 at 260.07999 -> 06 Nov 14:56 at 246.21001  -5.53% (-5.53$ per $100), held 3.8d, exit: stop
 ### O
 - LONG BUY SIGNAL: 19 Oct 15:09 at 55.764999 -> 22 Oct 18:49 at 56.653334  +1.39% (+1.39$ per $100), held 3.2d, exit: target
+- LONG IN ZONE: 05 Nov 15:28 at 59.84 -> 06 Nov 14:56 at 58.84  -1.87% (-1.87$ per $100), held 24h, exit: stop
 ### ODFL
 - LONG BUY SIGNAL: 16 Oct 14:46 at 190.46001 -> 16 Oct 18:59 at 186.19  -2.44% (-2.44$ per $100), held 4h, exit: stop
 - LONG BUY SIGNAL: 19 Oct 15:09 at 188.39 -> 23 Oct 14:59 at 184.57001  -2.23% (-2.23$ per $100), held 4.0d, exit: stop
 - LONG IN ZONE - WAIT: 26 Oct 16:15 at 182.62 -> 28 Oct 14:52 at 176.85001  -3.36% (-3.36$ per $100), held 47h, exit: stop
 - LONG IN ZONE - WAIT: 29 Oct 15:15 at 166.375 -> 02 Nov 15:24 at 175.15  +5.07% (+5.07$ per $100), held 4.0d, exit: target
 - LONG IN ZONE - WAIT: 04 Nov 14:33 at 182.13 -> 04 Nov 15:21 at 176.17999  -3.47% (-3.47$ per $100), held <1h, exit: stop
+- LONG BUY SIGNAL: 05 Nov 17:32 at 175.33501 -> 06 Nov 14:56 at 168.28  -4.22% (-4.22$ per $100), held 21h, exit: stop
 ### OKB
 - LONG IN ZONE - WAIT: 16 Oct 01:10 at 117.127 -> 16 Oct 12:23 at 120.033  +2.28% (+2.28$ per $100), held 11h, exit: target
 - LONG BUY SIGNAL: 17 Oct 12:26 at 117.514 -> 17 Oct 15:11 at 116.326  -1.21% (-1.21$ per $100), held 3h, exit: stop
@@ -2538,11 +2644,13 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### OKE
 - LONG IN ZONE: 23 Oct 16:08 at 96.580002 -> 28 Oct 19:20 at 94.496803  -2.36% (-2.36$ per $100), held 5.2d, exit: stop
 - LONG IN ZONE: 30 Oct 17:17 at 97.029999 -> 02 Nov 14:31 at 94.550003  -2.76% (-2.76$ per $100), held 2.9d, exit: stop
+- LONG IN ZONE - WAIT: 04 Nov 17:05 at 88.360001 -> 06 Nov 14:56 at 85.764999  -3.14% (-3.14$ per $100), held 46h, exit: stop
 ### OMC
 - LONG BUY SIGNAL: 16 Oct 14:46 at 81.7127 -> 22 Oct 20:20 at 83.050001  +1.44% (+1.44$ per $100), held 6.2d, exit: target
 - LONG BUY SIGNAL: 23 Oct 20:45 at 82.635002 -> 26 Oct 15:19 at 79.985001  -3.41% (-3.41$ per $100), held 2.8d, exit: stop
 - LONG IN ZONE: 27 Oct 15:22 at 78.419998 -> 02 Nov 16:24 at 82.347143  +4.81% (+4.81$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 03 Nov 17:55 at 82.790001 -> 04 Nov 14:32 at 85.403333  +2.96% (+2.96$ per $100), held 21h, exit: target
+- LONG BUY SIGNAL: 05 Nov 14:34 at 88.764999 -> 06 Nov 14:56 at 84.830002  -4.63% (-4.63$ per $100), held 24h, exit: stop
 ### ON
 - LONG BUY SIGNAL: 16 Oct 15:15 at 73.879997 -> 30 Oct 14:18 at 71.769997  -3.06% (-3.06$ per $100), held 14.0d, exit: stop
 - LONG IN ZONE - WAIT: 02 Nov 15:24 at 73.849998 -> 02 Nov 18:59 at 71.370003  -3.56% (-3.56$ per $100), held 4h, exit: stop
@@ -2617,6 +2725,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 30 Oct 15:10 at 0.007343 -> 02 Nov 13:24 at 0.007106  -3.43% (-3.43$ per $100), held 2.9d, exit: stop
 - LONG IN ZONE: 03 Nov 23:58 at 0.007116 -> 04 Nov 00:39 at 0.006961  -2.38% (-2.38$ per $100), held <1h, exit: stop
 - LONG IN ZONE: 05 Nov 01:46 at 0.007354 -> 05 Nov 12:19 at 0.007175  -2.63% (-2.63$ per $100), held 10h, exit: stop
+- LONG BUY SIGNAL: 06 Nov 13:03 at 0.006698 -> 07 Nov 03:12 at 0.006525  -2.78% (-2.78$ per $100), held 14h, exit: stop
 ### PEP
 - LONG IN ZONE: 21 Oct 16:40 at 134.99001 -> 27 Oct 17:29 at 132.89999  -1.75% (-1.75$ per $100), held 6.1d, exit: stop
 - LONG IN ZONE: 30 Oct 14:19 at 136.49519 -> 04 Nov 16:15 at 141.54375  +3.50% (+3.50$ per $100), held 5.1d, exit: target
@@ -2671,6 +2780,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### PIEVERSE
 - LONG BUY SIGNAL: 01 Nov 16:23 at 1.0746 -> 01 Nov 19:04 at 1.052  -2.30% (-2.30$ per $100), held 3h, exit: stop
 - LONG BUY SIGNAL: 03 Nov 01:46 at 1.0948 -> 03 Nov 04:12 at 1.16365  +6.09% (+6.09$ per $100), held 2h, exit: target
+- LONG IN ZONE - WAIT: 06 Nov 05:21 at 1.3704 -> 07 Nov 06:08 at 1.48685  +8.30% (+8.30$ per $100), held 25h, exit: target
 ### PKG
 - LONG IN ZONE - WAIT: 05 Nov 16:29 at 253.48 -> 05 Nov 18:58 at 246.00999  -3.15% (-3.15$ per $100), held 2h, exit: stop
 ### PLD
@@ -2682,10 +2792,14 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG BUY SIGNAL: 23 Oct 14:59 at 200.855 -> 30 Oct 14:18 at 209.105  +3.91% (+3.91$ per $100), held 7.0d, exit: target
 ### PNC
 - LONG BUY SIGNAL: 16 Oct 16:13 at 220.64999 -> 26 Oct 13:39 at 226.895  +2.63% (+2.63$ per $100), held 9.9d, exit: target
+### PNR
+- LONG IN ZONE: 02 Nov 16:25 at 70.169998 -> 06 Nov 14:56 at 68.779999  -2.18% (-2.18$ per $100), held 3.9d, exit: stop
 ### PNW
 - LONG IN ZONE: 16 Oct 14:46 at 102.565 -> 22 Oct 14:47 at 104.6225  +1.81% (+1.81$ per $100), held 6.0d, exit: target
+- LONG BUY SIGNAL: 23 Oct 14:59 at 105.94 -> 06 Nov 14:56 at 102.615  -3.34% (-3.34$ per $100), held 14.0d, exit: time limit
 ### PODD
 - LONG BUY SIGNAL: 20 Oct 15:34 at 143.59 -> 29 Oct 18:17 at 152.14  +5.75% (+5.75$ per $100), held 9.2d, exit: target
+- LONG IN ZONE - WAIT: 02 Nov 15:24 at 153.11 -> 06 Nov 15:36 at 145.485  -5.18% (-5.18$ per $100), held 4.0d, exit: stop
 ### POL
 - LONG BUY SIGNAL: 16 Oct 05:02 at 0.09523 -> 16 Oct 19:59 at 0.09316  -2.37% (-2.37$ per $100), held 15h, exit: stop
 - LONG IN ZONE - WAIT: 17 Oct 22:53 at 0.09177 -> 18 Oct 20:40 at 0.08843  -3.84% (-3.84$ per $100), held 22h, exit: stop
@@ -2818,6 +2932,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 30 Oct 05:13 at 1.58 -> 30 Oct 14:18 at 1.529  -3.43% (-3.43$ per $100), held 9h, exit: stop
 - LONG IN ZONE - WAIT: 31 Oct 15:21 at 1.577 -> 02 Nov 13:24 at 1.539  -2.61% (-2.61$ per $100), held 46h, exit: stop
 - LONG IN ZONE - WAIT: 03 Nov 14:42 at 1.519 -> 04 Nov 03:14 at 1.457  -4.28% (-4.28$ per $100), held 12h, exit: stop
+- LONG IN ZONE - WAIT: 05 Nov 23:18 at 1.484 -> 06 Nov 16:26 at 1.5848333  +6.59% (+6.59$ per $100), held 17h, exit: target
 ### RF
 - LONG IN ZONE: 16 Oct 14:46 at 27.965 -> 16 Oct 17:38 at 27.41  -2.18% (-2.18$ per $100), held 3h, exit: stop
 - LONG BUY SIGNAL: 19 Oct 17:17 at 27.225 -> 21 Oct 15:36 at 27.968  +2.53% (+2.53$ per $100), held 46h, exit: target
@@ -2911,6 +3026,9 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 26 Oct 21:55 at 0.06801 -> 27 Oct 02:03 at 0.06673  -2.08% (-2.08$ per $100), held 4h, exit: stop
 - LONG IN ZONE - WAIT: 28 Oct 02:23 at 0.06623 -> 28 Oct 11:37 at 0.06547  -1.35% (-1.35$ per $100), held 9h, exit: stop
 - LONG IN ZONE - WAIT: 29 Oct 15:15 at 0.06632 -> 29 Oct 21:47 at 0.06549  -1.45% (-1.45$ per $100), held 6h, exit: stop
+- LONG RECLAIM C TP1: 30 Oct 12:24 at 0.06861 -> 06 Nov 13:03 at 0.06592  -4.12% (-4.12$ per $100), held 7.0d, exit: time limit
+- LONG RECLAIM C TP2: 30 Oct 12:24 at 0.06861 -> 06 Nov 13:03 at 0.06592  -4.12% (-4.12$ per $100), held 7.0d, exit: time limit
+- LONG RECLAIM C TP3: 30 Oct 12:24 at 0.06861 -> 06 Nov 13:03 at 0.06592  -4.12% (-4.12$ per $100), held 7.0d, exit: time limit
 - LONG BUY SIGNAL: 30 Oct 23:11 at 0.06716 -> 02 Nov 18:59 at 0.06499  -3.43% (-3.43$ per $100), held 2.8d, exit: stop
 - LONG IN ZONE: 03 Nov 19:25 at 0.06625 -> 04 Nov 00:39 at 0.06466  -2.60% (-2.60$ per $100), held 5h, exit: stop
 - LONG IN ZONE: 05 Nov 03:26 at 0.06797 -> 05 Nov 12:19 at 0.06666  -2.13% (-2.13$ per $100), held 9h, exit: stop
@@ -3038,6 +3156,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 29 Oct 14:23 at 41.810001 -> 02 Nov 15:24 at 43.596001  +4.07% (+4.07$ per $100), held 4.0d, exit: target
 ### SWK
 - LONG BUY SIGNAL: 16 Oct 14:46 at 94.495003 -> 22 Oct 16:22 at 96.900002  +2.35% (+2.35$ per $100), held 6.1d, exit: target
+- LONG BUY SIGNAL: 23 Oct 16:41 at 98.684998 -> 06 Nov 16:26 at 115.13  +16.46% (+16.46$ per $100), held 14.0d, exit: time limit
 ### SWKS
 - LONG IN ZONE - WAIT: 20 Oct 19:08 at 82.379997 -> 28 Oct 14:03 at 86.663335  +5.00% (+5.00$ per $100), held 7.8d, exit: target
 - LONG BUY SIGNAL: 29 Oct 14:23 at 86.120003 -> 04 Nov 14:32 at 75.224998  -12.85% (-12.85$ per $100), held 6.0d, exit: stop
@@ -3205,6 +3324,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### UNH
 - LONG BUY SIGNAL: 16 Oct 14:46 at 398.17999 -> 20 Oct 15:03 at 415.175  +4.07% (+4.07$ per $100), held 4.0d, exit: target
 - LONG BUY SIGNAL: 21 Oct 15:05 at 415.35001 -> 04 Nov 14:32 at 393.61749  -5.43% (-5.43$ per $100), held 14.0d, exit: time limit
+- LONG BUY SIGNAL: 05 Nov 17:32 at 401.595 -> 06 Nov 15:36 at 391.69501  -2.67% (-2.67$ per $100), held 22h, exit: stop
 ### UNI
 - LONG IN ZONE - WAIT: 18 Oct 20:40 at 6.856 -> 21 Oct 02:50 at 7.6656667  +11.61% (+11.61$ per $100), held 2.3d, exit: target
 - LONG RECLAIM C TP1: 19 Oct 09:24 at 7.427 -> 24 Oct 15:41 at 6.71  -9.85% (-9.85$ per $100), held 5.3d, exit: stop
@@ -3325,9 +3445,11 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### WDAY
 - LONG IN ZONE: 20 Oct 15:04 at 201.19501 -> 29 Oct 14:22 at 192.785  -4.38% (-4.38$ per $100), held 9.0d, exit: stop
 - LONG IN ZONE: 02 Nov 15:24 at 201.75999 -> 03 Nov 14:41 at 191.60001  -5.24% (-5.24$ per $100), held 23h, exit: stop
+- LONG IN ZONE: 04 Nov 17:54 at 203.41 -> 06 Nov 14:56 at 193.42999  -5.11% (-5.11$ per $100), held 45h, exit: stop
 ### WEC
 - LONG IN ZONE: 16 Oct 14:46 at 107.1 -> 22 Oct 14:47 at 109.06167  +1.63% (+1.63$ per $100), held 6.0d, exit: target
 - LONG BUY SIGNAL: 02 Nov 15:24 at 115.35 -> 02 Nov 17:22 at 116.01  +0.37% (+0.37$ per $100), held 2h, exit: target
+- LONG IN ZONE: 05 Nov 15:28 at 119.53 -> 06 Nov 14:56 at 116.56  -2.68% (-2.68$ per $100), held 24h, exit: stop
 ### WELL
 - LONG IN ZONE: 20 Oct 15:04 at 237.77 -> 27 Oct 13:54 at 227.37  -4.57% (-4.57$ per $100), held 7.0d, exit: stop
 - LONG BUY SIGNAL: 29 Oct 14:23 at 233.3 -> 30 Oct 14:18 at 238.215  +1.91% (+1.91$ per $100), held 24h, exit: target
@@ -3425,11 +3547,14 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG RECLAIM C TP3: 29 Oct 16:05 at 0.1725 -> 29 Oct 21:10 at 0.1637  -5.30% (-5.30$ per $100), held 5h, exit: stop
 - LONG IN ZONE - WAIT: 30 Oct 05:13 at 0.1671 -> 02 Nov 22:23 at 0.1638  -2.17% (-2.17$ per $100), held 3.7d, exit: stop
 - LONG BUY SIGNAL: 04 Nov 16:16 at 0.1689 -> 05 Nov 13:34 at 0.1641  -3.04% (-3.04$ per $100), held 21h, exit: stop
+- LONG IN ZONE - WAIT: 06 Nov 17:17 at 0.157 -> 06 Nov 23:26 at 0.1535  -2.43% (-2.43$ per $100), held 6h, exit: stop
 ### XMR
 - LONG BUY SIGNAL: 16 Oct 00:37 at 546.36 -> 16 Oct 04:31 at 562.91  +2.83% (+2.83$ per $100), held 4h, exit: target
 - LONG IN ZONE: 17 Oct 05:30 at 560.68 -> 17 Oct 10:34 at 552.58  -1.64% (-1.64$ per $100), held 5h, exit: stop
 - LONG BUY SIGNAL: 18 Oct 10:45 at 586.81 -> 01 Nov 10:20 at 604.95  +2.89% (+2.89$ per $100), held 14.0d, exit: time limit
 - LONG CROSS C TP1: 31 Oct 00:13 at 587.75 -> 04 Nov 06:40 at 639.29286  +8.57% (+8.57$ per $100), held 4.3d, exit: target
+- LONG CROSS C TP2: 31 Oct 00:13 at 587.75 -> 07 Nov 00:38 at 610.46  +3.66% (+3.66$ per $100), held 7.0d, exit: time limit
+- LONG CROSS C TP3: 31 Oct 00:13 at 587.75 -> 07 Nov 00:38 at 610.46  +3.66% (+3.66$ per $100), held 7.0d, exit: time limit
 - LONG IN ZONE: 02 Nov 10:35 at 609.73 -> 02 Nov 16:24 at 603.49  -1.22% (-1.22$ per $100), held 6h, exit: stop
 - LONG BUY SIGNAL: 03 Nov 17:11 at 623.8 -> 03 Nov 19:24 at 630.725  +0.91% (+0.91$ per $100), held 2h, exit: target
 ### XPL
@@ -3462,6 +3587,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE - WAIT: 25 Oct 08:05 at 0.2922 -> 25 Oct 08:59 at 0.2884  -1.50% (-1.50$ per $100), held <1h, exit: stop
 - LONG IN ZONE - WAIT: 26 Oct 10:08 at 0.2828 -> 29 Oct 03:46 at 0.274  -3.31% (-3.31$ per $100), held 2.7d, exit: stop
 - LONG BUY SIGNAL: 05 Nov 13:34 at 0.2753 -> 05 Nov 15:28 at 0.2558  -7.28% (-7.28$ per $100), held 2h, exit: stop
+- LONG IN ZONE - WAIT: 06 Nov 18:41 at 0.275 -> 07 Nov 03:55 at 0.265  -3.84% (-3.84$ per $100), held 9h, exit: stop
 ### XYL
 - LONG IN ZONE - WAIT: 16 Oct 15:06 at 105.52 -> 16 Oct 18:32 at 103.94  -1.70% (-1.70$ per $100), held 3h, exit: stop
 - LONG BUY SIGNAL: 21 Oct 16:09 at 106.405 -> 23 Oct 16:08 at 109.445  +2.66% (+2.66$ per $100), held 2.0d, exit: target
@@ -3506,6 +3632,7 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 - LONG IN ZONE: 01 Nov 05:20 at 1248.22 -> 01 Nov 12:22 at 1226.43  -1.95% (-1.95$ per $100), held 7h, exit: stop
 - LONG BUY SIGNAL: 02 Nov 13:24 at 1242.92 -> 02 Nov 14:31 at 1256.278  +0.87% (+0.87$ per $100), held 1h, exit: target
 - LONG IN ZONE: 03 Nov 17:55 at 1222.08 -> 04 Nov 01:41 at 1194.16  -2.48% (-2.48$ per $100), held 8h, exit: stop
+- LONG IN ZONE: 05 Nov 17:32 at 1250.56 -> 06 Nov 14:56 at 1347.1186  +7.52% (+7.52$ per $100), held 21h, exit: target
 ### ZRO
 - LONG IN ZONE - WAIT: 16 Oct 01:10 at 2.1003 -> 16 Oct 18:07 at 2.002  -4.88% (-4.88$ per $100), held 17h, exit: stop
 - LONG BUY SIGNAL: 18 Oct 05:14 at 1.8944 -> 18 Oct 08:48 at 1.8358  -3.29% (-3.29$ per $100), held 4h, exit: stop
@@ -3519,3 +3646,4 @@ PUMP: 25 trades, 20% won, avg -7.21%, total -180$, avg hold 19h
 ### ZTS
 - LONG BUY SIGNAL: 16 Oct 14:46 at 80.129997 -> 30 Oct 14:18 at 79.735001  -0.69% (-0.69$ per $100), held 14.0d, exit: time limit
 - LONG BUY SIGNAL: 02 Nov 14:31 at 80.440002 -> 02 Nov 16:24 at 82.536667  +2.41% (+2.41$ per $100), held 2h, exit: target
+- LONG BUY SIGNAL: 03 Nov 17:11 at 83.125 -> 06 Nov 14:56 at 79.635002  -4.40% (-4.40$ per $100), held 2.9d, exit: stop
