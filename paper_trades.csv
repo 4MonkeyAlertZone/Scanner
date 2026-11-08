@@ -2606,5 +2606,6 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2605,PENDLE,crypto,long,IN ZONE - WAIT,3,1794084642,07 Nov 20:50,1.633,1.5868214,1.6753333,open,,,,,,,,,
 2606,GNO,crypto,long,IN ZONE,4,1794090154,07 Nov 22:22,112.84,112.09286,115.62333,open,,,,,,,,,
 2607,ETC,crypto,long,IN ZONE - WAIT,3,1794104769,08 Nov 02:26,6.86,6.7367857,7.1025,open,,,,,,,,,
-2608,ARB,crypto,long,IN ZONE,4,1794107698,08 Nov 03:14,0.17045,0.16782571,0.17921,open,,,,,,,,,
+2608,ARB,crypto,long,IN ZONE,4,1794107698,08 Nov 03:14,0.17045,0.16782571,0.17921,closed,1794113320,08 Nov 04:48,0.16771,stop,-1.81,-1.81,1.6,-1.17,
 2609,FIL,crypto,long,IN ZONE - WAIT,4,1794110494,08 Nov 04:01,0.7783,0.76361429,0.83394,open,,,,,,,,,
+2610,MORPHO,crypto,long,IN ZONE - WAIT,3,1794113320,08 Nov 04:48,2.0796,2.0268893,2.13,open,,,,,,,,,
