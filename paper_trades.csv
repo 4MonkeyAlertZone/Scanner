@@ -2615,3 +2615,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2614,M,crypto,long,IN ZONE - WAIT,3,1794147605,08 Nov 14:20,0.80181,0.77704536,0.82291,open,,,,,,,,,
 2615,STABLE,crypto,long,BUY SIGNAL,4,1794147605,08 Nov 14:20,0.025828,0.025392821,0.0265978,open,,,,,,,,,
 2616,AERO,crypto,long,IN ZONE - WAIT,4,1794151428,08 Nov 15:23,0.591,0.56116786,0.64603333,open,,,,,,,,,
+2617,PUMP,crypto,long,IN ZONE - WAIT,4,1794153416,08 Nov 15:56,0.003753,0.0036906429,0.0038945,open,,,,,,,,,
