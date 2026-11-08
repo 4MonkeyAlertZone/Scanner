@@ -2623,3 +2623,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2622,AAVE,crypto,long,IN ZONE - WAIT,4,1794175009,08 Nov 21:56,124.94,121.08401,129.18375,open,,,,,,,,,
 2623,POL,crypto,long,IN ZONE - WAIT,5,1794175009,08 Nov 21:56,0.08663,0.085767143,0.088185,open,,,,,,,,,
 2624,STX,crypto,long,IN ZONE - WAIT,3,1794175009,08 Nov 21:56,0.3203,0.31432857,0.3384,open,,,,,,,,,
+2625,RENDER,crypto,long,IN ZONE - WAIT,3,1794176698,08 Nov 22:24,1.513,1.4629286,1.57575,open,,,,,,,,,
