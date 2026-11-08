@@ -1,28 +1,28 @@
-Paper review 01 Nov 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
+Paper review 08 Nov 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
 
 CROSS A: 6 legs opened, 6 closed, 0 open, average -1.11R, win rate 0%
     TP1: 2 closed, average -1.11R, hit target 0%
     TP2: 2 closed, average -1.11R, hit target 0%
     TP3: 2 closed, average -1.11R, hit target 0%
-CROSS B: 12 legs opened, 12 closed, 0 open, average -1.09R, win rate 0%
-    TP1: 4 closed, average -1.09R, hit target 0%
-    TP2: 4 closed, average -1.09R, hit target 0%
-    TP3: 4 closed, average -1.09R, hit target 0%
-CROSS C: 42 legs opened, 36 closed, 6 open, average -1.78R, win rate 11%
-    TP1: 12 closed, average -1.58R, hit target 25%
-    TP2: 12 closed, average -1.75R, hit target 8%
-    TP3: 12 closed, average -2.01R, hit target 0%
+CROSS B: 18 legs opened, 18 closed, 0 open, average -1.09R, win rate 0%
+    TP1: 6 closed, average -1.09R, hit target 0%
+    TP2: 6 closed, average -1.09R, hit target 0%
+    TP3: 6 closed, average -1.09R, hit target 0%
+CROSS C: 66 legs opened, 54 closed, 12 open, average -1.80R, win rate 13%
+    TP1: 18 closed, average -1.62R, hit target 28%
+    TP2: 18 closed, average -1.71R, hit target 11%
+    TP3: 18 closed, average -2.06R, hit target 0%
 RECLAIM A: 54 legs opened, 54 closed, 0 open, average -0.85R, win rate 11%
     TP1: 18 closed, average -0.85R, hit target 0%
     TP2: 18 closed, average -0.85R, hit target 0%
     TP3: 18 closed, average -0.85R, hit target 0%
-RECLAIM B: 102 legs opened, 99 closed, 3 open, average -1.07R, win rate 3%
-    TP1: 33 closed, average -1.07R, hit target 0%
-    TP2: 33 closed, average -1.07R, hit target 0%
-    TP3: 33 closed, average -1.07R, hit target 0%
-RECLAIM C: 207 legs opened, 195 closed, 12 open, average -0.87R, win rate 8%
-    TP1: 65 closed, average -0.90R, hit target 3%
-    TP2: 65 closed, average -0.87R, hit target 3%
-    TP3: 65 closed, average -0.84R, hit target 3%
+RECLAIM B: 150 legs opened, 126 closed, 24 open, average -1.06R, win rate 2%
+    TP1: 42 closed, average -1.06R, hit target 0%
+    TP2: 42 closed, average -1.06R, hit target 0%
+    TP3: 42 closed, average -1.06R, hit target 0%
+RECLAIM C: 282 legs opened, 249 closed, 33 open, average -0.86R, win rate 8%
+    TP1: 83 closed, average -0.84R, hit target 6%
+    TP2: 83 closed, average -0.86R, hit target 4%
+    TP3: 83 closed, average -0.87R, hit target 2%
 
 Backtest expectation: about +0.1R to +0.15R per trade for RECLAIM A; B slightly lower; C close to zero. Small samples swing wildly, so do not act on a handful of trades.
