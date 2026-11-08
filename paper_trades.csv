@@ -2611,3 +2611,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2610,MORPHO,crypto,long,IN ZONE - WAIT,3,1794113320,08 Nov 04:48,2.0796,2.0268893,2.13,open,,,,,,,,,
 2611,JST,crypto,long,IN ZONE,4,1794115990,08 Nov 05:33,0.14329,0.14061929,0.143915,closed,1794118860,08 Nov 06:21,0.143915,target,0.24,0.24,0.8,0.13,
 2612,TIA,crypto,long,IN ZONE,4,1794118860,08 Nov 06:21,0.4336,0.41349643,0.4498,open,,,,,,,,,
+2613,ENA,crypto,long,BUY SIGNAL,3,1794137844,08 Nov 11:37,0.15539,0.15169214,0.165906,open,,,,,,,,,
