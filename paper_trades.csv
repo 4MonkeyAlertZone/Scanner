@@ -2609,3 +2609,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2608,ARB,crypto,long,IN ZONE,4,1794107698,08 Nov 03:14,0.17045,0.16782571,0.17921,closed,1794113320,08 Nov 04:48,0.16771,stop,-1.81,-1.81,1.6,-1.17,
 2609,FIL,crypto,long,IN ZONE - WAIT,4,1794110494,08 Nov 04:01,0.7783,0.76361429,0.83394,open,,,,,,,,,
 2610,MORPHO,crypto,long,IN ZONE - WAIT,3,1794113320,08 Nov 04:48,2.0796,2.0268893,2.13,open,,,,,,,,,
+2611,JST,crypto,long,IN ZONE,4,1794115990,08 Nov 05:33,0.14329,0.14061929,0.143915,open,,,,,,,,,
