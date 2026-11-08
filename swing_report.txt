@@ -1,4 +1,4 @@
-SWING SCANNER  data to 2026-11-06  BTC regime OUT (live regime)  scanned 71 coins (28 without enough history)
+SWING SCANNER  data to 2026-11-07  BTC regime OUT (live regime)  scanned 71 coins (28 without enough history)
 
 Signals today: 0
 
