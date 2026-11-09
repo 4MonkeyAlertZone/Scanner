@@ -2628,3 +2628,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2627,XTZ,crypto,long,BUY SIGNAL,3,1794191849,09 Nov 02:37,0.2532,0.24095357,0.27795,open,,,,,,,,,
 2628,ZEC,crypto,long,IN ZONE,3,1794194777,09 Nov 03:26,1192,1158.0014,1273.2033,open,,,,,,,,,
 2629,FF,crypto,long,IN ZONE,3,1794194777,09 Nov 03:26,0.08661,0.085527143,0.08887,open,,,,,,,,,
+2630,ARB,crypto,long,BUY SIGNAL,5,1794202224,09 Nov 05:30,0.17286,0.16787214,0.17921,open,,,,,,,,,
