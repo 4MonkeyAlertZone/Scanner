@@ -2626,3 +2626,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2625,RENDER,crypto,long,IN ZONE - WAIT,3,1794176698,08 Nov 22:24,1.513,1.4629286,1.57575,closed,1794191849,09 Nov 02:37,1.57575,target,3.95,3.95,4.2,1.19,
 2626,BDX,crypto,long,IN ZONE - WAIT,5,1794191849,09 Nov 02:37,0.07334,0.072403929,0.07448,open,,,,,,,,,
 2627,XTZ,crypto,long,BUY SIGNAL,3,1794191849,09 Nov 02:37,0.2532,0.24095357,0.27795,open,,,,,,,,,
+2628,ZEC,crypto,long,IN ZONE,3,1794194777,09 Nov 03:26,1192,1158.0014,1273.2033,open,,,,,,,,,
+2629,FF,crypto,long,IN ZONE,3,1794194777,09 Nov 03:26,0.08661,0.085527143,0.08887,open,,,,,,,,,
