@@ -1,4 +1,4 @@
-BTC-GATED BASKET PAPER TEST  data to 2026-11-11 (completed daily candles)   started 2026-10-18   universe 70 coins
+BTC-GATED BASKET PAPER TEST  data to 2026-11-11 (completed daily candles)   started 2026-10-18   universe 71 coins
 BTC ABOVE its 200-day average -> basket held. Rule: top-10 coins by market size order, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
 Paper account (1000 start, 0.1% per side): 834 (-16.6%)   |   same basket WITHOUT the BTC switch: 834 (-16.6%)   |   BTC held: 901 (-9.9%)
 
