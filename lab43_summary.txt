@@ -1,0 +1,51 @@
+LAB 43: OPEN-INTEREST FILTER VS PLAIN GATE  price source Bitstamp BTC/USD daily; 2011-09-13 to 2026-11-12; OI 2021-01-01 to 2026-11-11 (2138 days); window 2021-05-11 to 2026-11-12 (2012 days)
+
+PART 1: RULES OVER 2021-05-11 TO 2026-11-12  (cost 0.1% per switch)
+rule                             final x  CAGR%   DD%  Calmar 1st half 2nd half  delay1  IN%   sw  plac p
+buy & hold BTC                      1.28      5   -77    0.06    -0.07     0.30    0.06  100    0       -
+200d only                           1.23      4   -60    0.06    -0.06     0.38    0.07   53   53    0.41
+200d & 50d (paper bot)              3.38     25   -25    0.98     0.94     1.04    0.75   37   70    0.01
+200d + OI (majors report)           2.26     16   -47    0.34     0.19     0.73    0.31   50   57    0.08
+200d & 50d + OI (LIVE ALERT)        4.28     30   -25    1.20     0.94     1.50    0.94   36   70    0.01
+21-week EMA only                    2.58     19   -38    0.50     0.73     0.43    0.16   53   59    0.03
+21-week EMA + OI                    3.55     26   -38    0.69     0.77     0.78    0.32   49   57    0.03
+buy & hold except OI cool-off       3.96     28   -57    0.50     0.52     0.56    0.44   83   32    0.01
+
+Multiple in each market phase (x; 1.00 = flat):
+rule                                to 2021 peak       2022 bear   2022-25 rally  since 2025 top
+buy & hold BTC                              1.14            0.24            7.91            0.57
+200d only                                   0.61            0.66            3.63            0.83
+200d & 50d (paper bot)                      1.02            0.88            3.66            1.03
+200d + OI (majors report)                   0.79            0.68            4.38            0.95
+200d & 50d + OI (LIVE ALERT)                1.02            0.88            4.11            1.16
+21-week EMA only                            1.24            0.74            3.05            0.91
+21-week EMA + OI                            1.13            0.74            3.87            1.08
+buy & hold except OI cool-off               1.19            0.51            9.75            0.66
+
+Live alert vs plain 200d & 50d: Calmar 1.20 vs 0.98; first half 0.94 vs 0.94; second half 1.50 vs 1.04. The OI filter does NOT beat the plain gate in both halves and overall.
+
+PART 2: OI WARNING EPISODES (warning days 53; episodes 16; episodes start on the first warning day)
+first day   last day          BTC  next 14d %  next 30d %  worst dip 30d %
+2021-05-17  2021-05-17     43,593         -14         -12              -23
+2021-06-03  2021-07-25     39,220          -3         -12              -19
+2021-12-22  2022-01-04     48,619         -11         -25              -25
+2022-04-09  2022-05-03     42,768          -8         -30              -30
+2022-06-25  2022-07-19     21,487           0          -1              -11
+2022-09-05  2022-09-12     19,794          -1           2               -7
+2022-10-04  2022-10-04     20,343          -5          -1               -6
+2022-10-26  2022-10-26     20,775         -24         -21              -24
+2023-06-05  2023-06-05     25,739           4          19               -2
+2023-08-08  2023-08-08     29,764         -13         -12              -13
+2024-12-15  2024-12-15    104,427         -10          -8              -11
+2025-07-14  2025-07-14    119,879          -2           3               -6
+2025-10-06  2025-10-06    124,728         -11         -17              -19
+2025-11-17  2025-11-20     92,102          -6          -6               -8
+2026-04-17  2026-04-17     77,108           1           0               -4
+2026-05-04  2026-05-05     79,844          -4         -20              -20
+All days: next-30d median 1%, mean 2%; share with a 10%+ dip inside 30 days 34%.
+Warning-episode starts (n=16): next-30d median -10%, mean -9%; share with a 10%+ dip inside 30 days 62%.
+A handful of episodes in one bear market: read as anecdote, and overlapping windows are not independent.
+
+NOW (latest daily close in the data: 2026-11-12): BTC 71,374   200-day 73,082 (-2.3%)   50-day 80,863 (-11.7%)
+Last OI warning day: 2026-05-05; cool-off active now: no.
+Rule states now: 200d & 50d (paper bot): OUT; 200d & 50d + OI (LIVE ALERT): OUT
