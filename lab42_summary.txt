@@ -1,0 +1,88 @@
+LAB 42: MIDTERM / POST-PEAK YEAR AND WEEKLY-GATE TEST  source Bitstamp BTC/USD daily; 2011-09-13 to 2026-11-12 (5540 days)
+
+PART 1: BTC RETURN BY QUARTER (%), close to close; * = post-peak (midterm) year; 2026 is to date
+year         Q1      Q2      Q3      Q4     year     Oct     Nov     Dec
+2011          -       -     -19      -5      -23     -32      -3      44
+2012          7      35      85       8      189     -10      13       7
+2013        626      -7      41     480     5429      61     450     -35
+2014*       -38      41     -39     -18      -56     -14      12     -15
+2015        -24       7     -10      82       34      31      21      14
+2016         -4      61      -9      59      124      15       6      30
+2017         11     130      75     221     1336      49      55      40
+2018*       -50      -8       3     -44      -73      -4     -37      -7
+2019         11     163     -23     -14       94      10     -17      -5
+2020        -10      42      18     169      304      28      43      47
+2021        103     -40      25       5       59      40      -7     -19
+2022*        -2     -56      -3     -15      -64       6     -16      -4
+2023         72       7     -11      57      156      29       9      12
+2024         69     -12       1      48      121      11      37      -3
+2025        -12      30       6     -23       -6      -4     -18      -3
+2026*       -22     -14      43     -15      -18      -7      -8       -
+
+Q4 of post-peak years (complete): n=3  mean -26%  median -18%  worst -44%  best -15%
+Q4 of all other years: n=12  mean 91%  median 52%  worst -23%  best 480%
+  Q4 2014: -18% = 21th percentile of all rolling 92-day returns (overlapping windows)
+  Q4 2018: -44% = 3th percentile of all rolling 92-day returns (overlapping windows)
+  Q4 2022: -15% = 24th percentile of all rolling 92-day returns (overlapping windows)
+  Q4 2026 to date: -15%
+Midterm years are the same years as the post-peak years of the halving cycle, so this cannot separate the two and n is 3. Descriptive only.
+
+PART 2: LIVE GATE (200d and 50d) BY YEAR, from 2012-03-31  (B&H = buy and hold)
+year      B&H %  gate %  B&H DD%  gate DD%  IN days%
+2012        171      79      -40       -41        82
+2013       5429    2194      -71       -68        77
+2014*       -56     -30      -66       -40        15
+2015         34      76      -47       -24        34
+2016        124      96      -30       -24        78
+2017       1336     537      -35       -39        87
+2018*       -73     -14      -81       -30         5
+2019         94      58      -49       -40        38
+2020        304     163      -53       -18        58
+2021         59      50      -53       -43        55
+2022*       -64       0      -67         0         0
+2023        156      92      -20       -11        60
+2024        121      71      -26       -25        60
+2025         -6      -2      -32       -16        45
+2026*       -18      17      -40        -7        20
+post-peak years: n=3  avg B&H -65%  avg gate -15%  avg B&H DD -72%  avg gate DD -23%
+other years: n=11  avg B&H 711%  avg gate 311%  avg B&H DD -41%  avg gate DD -32%
+Q4 only (gate vs buy&hold, %):
+  Q4 2012 : B&H      8   gate     10
+  Q4 2013 : B&H    480   gate    199
+  Q4 2014*: B&H    -18   gate      0
+  Q4 2015 : B&H     82   gate     72
+  Q4 2016 : B&H     59   gate     59
+  Q4 2017 : B&H    221   gate    221
+  Q4 2018*: B&H    -44   gate      0
+  Q4 2019 : B&H    -14   gate     -5
+  Q4 2020 : B&H    169   gate    165
+  Q4 2021 : B&H      5   gate     18
+  Q4 2022*: B&H    -15   gate      0
+  Q4 2023 : B&H     57   gate     48
+  Q4 2024 : B&H     48   gate     42
+  Q4 2025 : B&H    -23   gate     -4
+
+PART 3: GATE VARIANTS, same start 2012-10-17 for all (5140 days); halves split at 2019-10-31
+variant                final x   DD%  Calmar 1st half 2nd half  delay1 switch placebo p
+buy & hold BTC          5987.8   -85    1.01     1.85     0.44
+LIVE 200d & 50d         8159.0   -73    1.23     2.01     1.08    1.34    181      0.02
+20-week SMA (140d)     18531.7   -70    1.44     2.59     1.06    1.42     93      0.02
+21-week EMA (147d)     16509.9   -70    1.41     2.45     1.22    1.37    123      0.04
+50-week SMA (350d)     13678.8   -71    1.36     2.55     0.72    1.44     59      0.11
+21w EMA & 50w SMA       8430.9   -70    1.28     2.35     0.96    1.27    125      0.05
+200d only               5754.1   -71    1.20     2.32     0.46    1.26     93      0.10
+100d only              13954.2   -70    1.38     2.46     1.10    1.41    165      0.02
+100d & 50d              9131.1   -73    1.25     1.93     1.64    1.39    209      0.02
+150d only              12160.8   -72    1.32     2.34     0.93    1.36    103      0.05
+150d & 50d              8047.3   -74    1.21     1.94     1.19    1.35    199      0.02
+250d only               5009.6   -76    1.09     2.21     0.38    1.22    101      0.15
+250d & 50d              6057.5   -75    1.14     1.85     1.30    1.31    201      0.04
+300d only               6931.5   -71    1.23     2.42     0.43    1.24     83      0.13
+300d & 50d              7120.1   -69    1.28     2.08     1.39    1.31    201      0.02
+400d only              15666.6   -71    1.39     2.54     0.76    1.37     33      0.10
+400d & 50d              9137.1   -69    1.33     2.08     1.87    1.33    187      0.01
+Variants beating the live gate on Calmar in BOTH halves AND overall: 21-week EMA (147d), 100d only, 300d & 50d, 400d & 50d.
+Calmar = annual return / worst drawdown; placebo p = share of 300 circular time-shifts of the same gate with a Calmar at least as good (small = unlikely luck). Best-of-16 selection: treat a lone winner with suspicion.
+
+PART 4: REALIZED PRICE
+Realized-price data was not reachable from here, so this part is skipped.
