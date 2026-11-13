@@ -2756,3 +2756,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2755,FF,crypto,long,IN ZONE - WAIT,3,1794547068,13 Nov 05:17,0.08654,0.085321429,0.088706667,closed,1794555911,13 Nov 07:45,0.088706667,target,2.30,2.30,2.5,1.64,
 2756,BTW,crypto,long,IN ZONE - WAIT,3,1794555911,13 Nov 07:45,0.88888,0.82185832,0.9792475,open,,,,,,,,,
 2757,NEXO,crypto,long,IN ZONE - WAIT,3,1794562798,13 Nov 09:39,0.6959,0.684825,0.7409,open,,,,,,,,,
+2758,ASTER,crypto,long,IN ZONE - WAIT,3,1794566396,13 Nov 10:39,0.66,0.65064643,0.6717,open,,,,,,,,,
