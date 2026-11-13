@@ -1,24 +1,15 @@
-BTC-GATED BASKET PAPER TEST  data to 2026-11-11 (completed daily candles)   started 2026-10-18   universe 71 coins
-BTC ABOVE its 200-day average -> basket held. Rule: top-10 coins by market size order, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
-Paper account (1000 start, 0.1% per side): 834 (-16.6%)   |   same basket WITHOUT the BTC switch: 834 (-16.6%)   |   BTC held: 901 (-9.9%)
+BTC-GATED BASKET PAPER TEST  data to 2026-11-12 (completed daily candles)   started 2026-10-18   universe 71 coins
+BTC BELOW its 200-day average -> cash. Rule: top-10 coins by market size order, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
+Paper account (1000 start, 0.1% per side): 821 (-17.9%)   |   same basket WITHOUT the BTC switch: 822 (-17.8%)   |   BTC held: 870 (-13.0%)
 
-HOLDING (10 coins, last refreshed 2026-10-18):
-  BNB      11.3% of account   price 680.45
-  HYPE     10.8% of account   price 71.54
-  ETH      10.2% of account   price 2055.8
-  ZEC      10.2% of account   price 963.65
-  DOGE     10.2% of account   price 0.06756
-  LINK     10.0% of account   price 10.05
-  XRP       9.7% of account   price 1.0534
-  SOL       9.6% of account   price 83.28
-  ADA       9.4% of account   price 0.17462
-  NEAR      8.6% of account   price 3.601
+HOLDING: cash
 
 OI WARNING VARIANTS (OI data to 2026-11-11; cash 7 days after a warning, on top of the BTC switch):
-  A: OI up 15%+ in 30 days       account 834 (-16.6%)   holding 10 coins   warning today: no   warning days since start: 0
-  B: OI at a new 180-day high    account 834 (-16.6%)   holding 10 coins   warning today: no   warning days since start: 0
+  A: OI up 15%+ in 30 days       account 821 (-17.9%)   in cash   warning today: no   warning days since start: 0
+  B: OI at a new 180-day high    account 821 (-17.9%)   in cash   warning today: no   warning days since start: 0
 
-ACTIONS (1):
+ACTIONS (2):
   2026-10-18  ENTER         ETH BNB XRP SOL ZEC HYPE DOGE LINK ADA NEAR   account 999.0
+  2026-11-12  EXIT TO CASH     account 821.39
 
 Judge it only after a full BTC bull-to-bear switch has happened, or many months. The lab 25 test showed the switch avoids most bear-market losses but gives up much of the bull-market profit; this paper test shows whether that holds live.
