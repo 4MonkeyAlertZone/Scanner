@@ -1,0 +1,39 @@
+LAB 44: FIVE PRE-DECLARED GATE IMPROVEMENTS  BTC source Bitstamp BTC/USD daily; 2011-09-13 to 2026-11-12 (5540 days); S&P 500 loaded (19340 days)
+
+WINDOW A: 2012-10-17 to 2026-11-12 (5140 days, 14.1 years); halves split at 2019-10-31   cost 0.1% per unit traded
+variant                           final x   DD%  Calmar 1st half 2nd half  delay1  sw/yr avg exp%  plac p
+buy & hold BTC                     5987.8   -85    1.01     1.85     0.44
+LIVE 200d & 50d                    8159.0   -73    1.23     2.01     1.08    1.34   12.9       46    0.01
+C1a 2-close confirmation          15340.6   -73    1.34     2.31     1.29    1.37    7.7       46    0.01
+C1b 2% band                        5998.7   -74    1.15     1.87     1.14    1.16    7.7       45    0.02
+C2 graded 100/50/0                 8179.2   -70    1.28     2.28     0.74    1.35   16.5       54    0.04
+C3a out if 15% below 60d high     16989.2   -49    2.02     3.94     0.76    1.46   14.0       42    0.00
+C3b out if 20% below 60d high     18811.7   -54    1.87     3.43     0.98    1.55   13.4       43    0.00
+C4 200d rising (30d)               2052.2   -72    0.99     1.72     0.62    1.11   12.4       40    0.06
+C5 S&P 500 above its 200d          5645.5   -73    1.15     2.03     0.86    1.21   14.6       43    0.03
+
+WINDOW B: 2021-05-11 to 2026-11-12 (2012 days, 5.5 years); halves split at 2024-02-11   cost 0.1% per unit traded
+variant                           final x   DD%  Calmar 1st half 2nd half  delay1  sw/yr avg exp%  plac p
+buy & hold BTC                        1.3   -77    0.06    -0.07     0.30
+LIVE 200d & 50d                       3.4   -25    0.98     0.94     1.04    0.75   12.7       37    0.02
+C1a 2-close confirmation              2.8   -30    0.70     0.76     0.68    0.43    8.5       37    0.06
+C1b 2% band                           2.9   -28    0.77     1.06     0.61    0.58    7.1       37    0.04
+C2 graded 100/50/0                    2.1   -42    0.35     0.24     0.77    0.39   18.3       45    0.09
+C3a out if 15% below 60d high         3.1   -31    0.72     0.94     0.68    0.81   13.1       37    0.04
+C3b out if 20% below 60d high         3.4   -25    0.98     0.94     1.04    0.75   12.7       37    0.02
+C4 200d rising (30d)                  1.7   -37    0.28     0.14     0.63    0.29   12.7       33    0.14
+C5 S&P 500 above its 200d             2.3   -25    0.64     0.45     0.87    0.38   14.2       35    0.04
+
+VERDICT (rule declared in the header):
+  C1a 2-close confirmation        fail   failed: B overall
+  C1b 2% band                     fail   failed: A overall, A 1st half, B overall
+  C2 graded 100/50/0              fail   failed: A 2nd half, B overall, switches <= 120%
+  C3a out if 15% below 60d high   fail   failed: A 2nd half, B overall
+  C3b out if 20% below 60d high   fail   failed: A 2nd half, B overall
+  C4 200d rising (30d)            fail   failed: A overall, A 1st half, A 2nd half, B overall, placebo p<=0.05
+  C5 S&P 500 above its 200d       fail   failed: A overall, A 2nd half, B overall
+Passing: none. A pass earns a separate paper account only.
+
+NOW (latest daily close in the data: 2026-11-12): BTC 71,374  200-day 73,082 (-2.3%)  50-day 80,863 (-11.7%)  60-day high 86,587 (-17.6%)
+Exposure now: LIVE 0%; C1a 0%; C1b 0%; C2 0%; C3a 0%; C3b 0%; C4 0%; C5 0%
+S&P 500 above its 200-day on the latest day: yes
