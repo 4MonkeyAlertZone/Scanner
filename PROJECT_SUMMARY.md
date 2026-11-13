@@ -76,6 +76,7 @@ Earlier labs (2-25) cover the original support-zone finder, trend crosses, recla
 3. Survivorship (today's coins and stocks only) and repeated testing on the same data flatter every backtest. Treat results as upper bounds.
 4. New alerts and variants need a reason to exist beyond "more data"; extra variants raise selection risk.
 5. Real money only after months of forward paper results, with a trade-only API key, small size, a kill switch and a tax check. The MEXC dry-run bot is parked until then.
+6. Lab freeze: no new labs until the forward paper accounts reach about 30 distinct days. 41 labs on one history already make every new backtest result less trustworthy.
 
 ## Open items
 

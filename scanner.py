@@ -27,11 +27,16 @@ SHORT_TOKENS = [t.strip().upper() for t in os.environ.get("SHORT_TOKENS", "BTC,E
 SHORTS = []        # filled by check_shorts(); tracker.py reads it for the paper-trading ledger
 # -------------------------------------------------------
 
+def warn(msg):
+    """Report a non-fatal problem on stderr (visible in the Actions log) instead of hiding it."""
+    print("WARNING:", msg, file=sys.stderr)
+
 # tuner.py may change MIN_SCORE / MIN_RR here after its weekly self-review (config.json beats the values above)
 try:
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")) as _f: _c = json.load(_f)
     MIN_SCORE, MIN_RR = int(_c.get("MIN_SCORE", MIN_SCORE)), float(_c.get("MIN_RR", MIN_RR))
-except Exception: pass
+except FileNotFoundError: pass   # no config.json yet: use the defaults above
+except Exception as _e: warn(f"config.json ignored ({type(_e).__name__}: {_e}); using default MIN_SCORE/MIN_RR")
 
 HERE = os.path.dirname(os.path.abspath(__file__))   # state files live next to this script
 STATE = os.path.join(HERE, "alerts.json")
@@ -40,12 +45,15 @@ LISTS = os.path.join(HERE, "lists.json")
 def load(path):
     try:
         with open(path) as f: return json.load(f)
-    except Exception: return {}
+    except FileNotFoundError: return {}
+    except Exception as e:
+        warn(f"could not read {os.path.basename(path)} ({type(e).__name__}: {e}); starting empty")
+        return {}
 
 def save(path, obj):
     try:
         with open(path, "w") as f: json.dump(obj, f)
-    except Exception: pass
+    except Exception as e: warn(f"could not write {os.path.basename(path)} ({type(e).__name__}: {e}); state not saved")
 
 API = "https://api.mexc.com/api/v3/klines?symbol={}USDT&interval={}&limit=500"
 YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/{}?interval={}&range={}"
@@ -223,7 +231,7 @@ def _top100():
             syms = [c["symbol"].upper() for c in json.loads(http(url, headers=UA))]
             out = list(dict.fromkeys(x for x in syms if x in mexc and x not in SKIP))[:100]
             if len(out) >= 30: return out, True, src
-        except Exception: pass
+        except Exception as e: warn(f"{src} coin list failed ({type(e).__name__}); trying next source")
     t = json.loads(http("https://api.mexc.com/api/v3/ticker/24hr"))
     t = [x for x in t if x["symbol"].endswith("USDT") and x["symbol"].isascii() and x["symbol"][:-4] not in SKIP
          and not x["symbol"][:-4].endswith(("3L", "3S", "5L", "5S"))]
@@ -241,7 +249,7 @@ def _sp500():
         next(rows)
         out = ["STOCK:" + r[0].strip().replace(".", "-") for r in rows if r]
         if len(out) > 100: return out, True, "S&P 500 list"
-    except Exception: pass
+    except Exception as e: warn(f"S&P 500 list failed ({type(e).__name__}); using short list")
     return ["STOCK:" + x for x in BIG_STOCKS], False, "short list of big stocks (S&P 500 list unavailable)"
 
 def sp500():
