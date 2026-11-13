@@ -4,7 +4,7 @@ Research and alert system for crypto and US stocks. Everything runs on GitHub Ac
 
 ## Where things stand in one paragraph
 
-The only idea that has repeatedly survived testing is a **trend regime gate on BTC**: be IN while BTC's daily close is above both its 200-day and 50-day average, OUT (cash) otherwise. It is stable across settings, beats a time-shift placebo, and survives higher costs and delayed signals (labs 33, 34, 39). Altcoin selection rules built on top of it (trend baskets, volume breakouts, the swing scanner, support/reclaim trades) have **not** shown an edge over simply holding BTC or ETH while the gate is IN (labs 36-38), and the live crypto paper rules are losing (see below). Lab 40 tested the gate on BTC back to 2011 and tempers the 2020+ picture: it helped a lot in the 2018 and 2022 bears, helped little in 2012-16 (drawdown -73% vs -85%) and trailed buy-and-hold on return in 2012-16 and 2023-now. Over the whole history it improves return per unit of drawdown only modestly (Calmar 1.25 vs 1.10) and gives up upside in strong bulls. Treat it as a drawdown reducer, not a return booster. Labs 42-43 (13 Nov) found no weekly-average variant worth switching to and gave the open-interest filter its first number: a thin edge from two 2025 events (see below). Evidence is still thin: BTC/ETH chosen in hindsight and 43 labs run on the same history. Next real evidence comes from the forward paper accounts.
+The only idea that has repeatedly survived testing is a **trend regime gate on BTC**: be IN while BTC's daily close is above both its 200-day and 50-day average, OUT (cash) otherwise. It is stable across settings, beats a time-shift placebo, and survives higher costs and delayed signals (labs 33, 34, 39). Altcoin selection rules built on top of it (trend baskets, volume breakouts, the swing scanner, support/reclaim trades) have **not** shown an edge over simply holding BTC or ETH while the gate is IN (labs 36-38), and the live crypto paper rules are losing (see below). Lab 40 tested the gate on BTC back to 2011 and tempers the 2020+ picture: it helped a lot in the 2018 and 2022 bears, helped little in 2012-16 (drawdown -73% vs -85%) and trailed buy-and-hold on return in 2012-16 and 2023-now. Over the whole history it improves return per unit of drawdown only modestly (Calmar 1.25 vs 1.10) and gives up upside in strong bulls. Treat it as a drawdown reducer, not a return booster. Labs 42-43 (13 Nov) found no weekly-average variant worth switching to and gave the open-interest filter its first number: a thin edge from two 2025 events (see below). Evidence is still thin: BTC/ETH chosen in hindsight and 44 labs run on the same history. Next real evidence comes from the forward paper accounts.
 
 ## What is running
 
@@ -56,10 +56,20 @@ Prompted by an outside video (midterm years are bear years, Q4 drops, weekly ave
 - **Open-interest filter (lab 43, 11 May 2021 to 12 Nov 2026, same code as the live alert):** live alert Calmar 1.20 vs 0.98 for the plain 200/50 gate (buy-and-hold 0.06); first half tied (0.94 each), second half 1.50 vs 1.04; identical in the 2022 bear. The whole difference comes from the 2022-25 rally (x4.11 vs x3.66) and since the 2025 top (x1.16 vs x1.03), mainly the warnings on 6 Oct 2025 (the top, then -17% in 30 days) and 17 Nov 2025. Of 16 warning episodes, 62% saw a 10%+ dip within 30 days (34% of all days), but the rule was fitted on this same data, one episode flagged the 2021 top only about six weeks late, and a few warnings were followed by rises. Verdict: a modest, anecdotal add-on; keep it, keep both versions running, judge on the forward log.
 - **Realized price:** not tested (Coin Metrics returned HTTP 403 from the runner).
 
+## Gate improvements (lab 44, 13 Nov)
+
+Five ideas declared in advance, each tested alone against the live 200/50 gate on 2012+ (A) and 2021+ (B), with a written pass bar. **None passed; the gate stays as it is.**
+
+- **Fast exit (out while 15% or 20% below the 60-day high):** the standout on 2012+ (Calmar 2.02 and 1.87 vs 1.23; drawdown -49% and -54% vs -73%), but all of it comes from 2012-2019. Since 2021 it is worse (15%: 0.72 vs 0.98) or never triggers (20%: identical). Earlier-era volatility, not a lasting edge.
+- **2-close confirmation:** better on 2012+ (1.34 vs 1.23, both halves) with about 40% fewer flips (7.7 vs 12.9 a year), but worse since 2021 (0.70 vs 0.98). Its only failed check was the 2021+ window. Fewer flips would also mean fewer taxable disposals; a possible choice, not a recommendation.
+- **2% band, graded 100/50/0 exposure, rising 200-day, S&P 500 above its 200-day:** no gain (the last two clearly worse). BTC was OUT while the S&P was above its 200-day on 12 Nov.
+- **Lesson:** tweaks that help the early, wilder years do not help the recent regime. Any change is era-dependent, so the simple gate is kept. Combinations were not tested.
+
 ## Labs index (newest first, from 26)
 
 | Lab | Question | Status |
 |---|---|---|
+| 44 | Can the 200/50 gate be improved (confirmation, band, graded exposure, fast exit, rising 200d, S&P)? | done: none passed the pre-declared bar; fast exit and confirmation help only on 2012-2019 data |
 | 43 | Does the live alert's open-interest filter beat the plain 200/50 gate (2021+)? | done: modest edge from two 2025 events, tied in the first half; keep, judge on the forward log |
 | 42 | Midterm/post-peak-year thesis; weekly-average gate variants | done: thesis suggestive but untestable (n=3); no variant worth switching to |
 | 41 | Are the crypto paper rules worse than random entries in the same weeks? | done: yes, worse than random in a hostile market |
@@ -88,7 +98,7 @@ Earlier labs (2-25) cover the original support-zone finder, trend crosses, recla
 3. Survivorship (today's coins and stocks only) and repeated testing on the same data flatter every backtest. Treat results as upper bounds.
 4. New alerts and variants need a reason to exist beyond "more data"; extra variants raise selection risk.
 5. Real money only after months of forward paper results, with a trade-only API key, small size, a kill switch and a tax check. The MEXC dry-run bot is parked until then.
-6. Lab freeze: no new labs until the forward paper accounts reach about 30 distinct days. 43 labs on one history already make every new backtest result less trustworthy. Labs 42 and 43 were run by explicit request; the freeze otherwise stands.
+6. Lab freeze: no new labs until the forward paper accounts reach about 30 distinct days. 44 labs on one history already make every new backtest result less trustworthy. Labs 42, 43 and 44 were run by explicit request; the freeze otherwise stands.
 7. Check this file and the repo before saying something does not exist or cannot be tested (the OI data and its daily log were missed once). Take current prices from the latest data or a live lookup, never from an earlier message.
 
 ## Open items
