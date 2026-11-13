@@ -2748,3 +2748,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2747,SHIB,crypto,long,BUY SIGNAL,3,1794528793,13 Nov 00:13,4.357e-06,4.2507179e-06,4.4853333e-06,open,,,,,,,,,
 2748,ETHFI,crypto,long,BUY SIGNAL,3,1794528793,13 Nov 00:13,0.6375,0.60148929,0.65184,open,,,,,,,,,
 2749,STABLE,crypto,long,BUY SIGNAL,3,1794528793,13 Nov 00:13,0.026511,0.026236429,0.027268,open,,,,,,,,,
+2750,PYTH,crypto,long,IN ZONE,4,1794533229,13 Nov 01:27,0.06748,0.065896786,0.0709675,open,,,,,,,,,
