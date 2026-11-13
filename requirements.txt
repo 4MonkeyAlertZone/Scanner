@@ -1,0 +1,7 @@
+# Only needed by some jobs (installed inside those workflows):
+#   lab24, lab25: numpy, scikit-learn
+#   token_bot:    matplotlib
+# Everything else uses the Python standard library only (Python 3.12 on Actions).
+numpy
+scikit-learn
+matplotlib
