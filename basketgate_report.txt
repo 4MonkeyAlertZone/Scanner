@@ -1,10 +1,10 @@
-BTC-GATED BASKET PAPER TEST  data to 2026-11-12 (completed daily candles)   started 2026-10-18   universe 71 coins
+BTC-GATED BASKET PAPER TEST  data to 2026-11-13 (completed daily candles)   started 2026-10-18   universe 70 coins
 BTC BELOW its 200-day average -> cash. Rule: top-10 coins by market size order, equal weight, refreshed every 30 days; cash while BTC is below its 200-day average.
-Paper account (1000 start, 0.1% per side): 821 (-17.9%)   |   same basket WITHOUT the BTC switch: 822 (-17.8%)   |   BTC held: 870 (-13.0%)
+Paper account (1000 start, 0.1% per side): 821 (-17.9%)   |   same basket WITHOUT the BTC switch: 799 (-20.1%)   |   BTC held: 832 (-16.8%)
 
 HOLDING: cash
 
-OI WARNING VARIANTS (OI data to 2026-11-11; cash 7 days after a warning, on top of the BTC switch):
+OI WARNING VARIANTS (OI data to 2026-11-12; cash 7 days after a warning, on top of the BTC switch):
   A: OI up 15%+ in 30 days       account 821 (-17.9%)   in cash   warning today: no   warning days since start: 0
   B: OI at a new 180-day high    account 821 (-17.9%)   in cash   warning today: no   warning days since start: 0
 
