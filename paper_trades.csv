@@ -2817,3 +2817,5 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2816,SUI,crypto,long,IN ZONE - WAIT,3,1794689896,14 Nov 20:58,0.7043,0.68078929,0.73282,open,,,,,,,,,
 2817,TIA,crypto,long,IN ZONE - WAIT,4,1794689896,14 Nov 20:58,0.3377,0.32566429,0.3682,open,,,,,,,,,
 2818,APEPE,crypto,long,BUY SIGNAL,3,1794689896,14 Nov 20:58,1.2097e-06,1.1963964e-06,1.2465e-06,open,,,,,,,,,
+2819,ZRO,crypto,long,BUY SIGNAL,4,1794728451,15 Nov 07:40,1.4609,1.3643179,1.6173857,open,,,,,,,,,
+2820,FF,crypto,long,BUY SIGNAL,4,1794728451,15 Nov 07:40,0.09116,0.089081071,0.0951825,open,,,,,,,,,
