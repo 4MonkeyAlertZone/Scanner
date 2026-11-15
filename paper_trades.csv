@@ -2823,3 +2823,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2822,WLFI,crypto,long,RECLAIM C TP2,,1794754738,15 Nov 14:58,0.04695,0.04440102,0.05204796,open,,,,,,,,,168
 2823,WLFI,crypto,long,RECLAIM C TP3,,1794754738,15 Nov 14:58,0.04695,0.04440102,0.05459694,open,,,,,,,,,168
 2824,PEPE,crypto,long,BUY SIGNAL,3,1794754738,15 Nov 14:58,3.953e-06,3.78875e-06,4.2764167e-06,open,,,,,,,,,
+2825,DRV,crypto,long,BUY SIGNAL,5,1794773884,15 Nov 20:18,0.2964,0.28013929,0.34091667,open,,,,,,,,,
