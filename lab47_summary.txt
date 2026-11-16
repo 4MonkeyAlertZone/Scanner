@@ -1,0 +1,47 @@
+LAB 47  ETF FLOWS AND THE 200/50 GATE. Prices Bitstamp BTC/USD daily; flows 730 sessions 2024-01-11 to 2026-11-13. Window 2024-01-11 to 2026-11-15 (1040 days). Not financial advice.
+
+PLAIN GATE  x1.78  maxDD -25%  CAGR 22%  Calmar 0.91   |  buy&hold x1.40  maxDD -53%  CAGR 13%  Calmar 0.24
+
+F1 FILTER   (W = sessions; x = final multiple; time IN = share of days invested)
+   W       x  maxDD%  CAGR%  Calmar  timeIN% switches  1st half  2nd half  beats gate (base / costs x2 / 1-day later)
+   3    1.38     -22     12    0.54       35       77      1.51     -0.33  no / no / no
+   5    1.49     -28     15    0.54       36       55      1.32     -0.17  no / no / no
+  10    1.57     -23     17    0.75       38       53      1.81     -0.20  no / no / yes
+  20    1.75     -24     22    0.90       41       43      1.59      0.49  no / no / no
+  30    1.76     -26     22    0.86       42       47      1.57      0.38  no / no / no
+  60    1.53     -25     16    0.65       40       47      1.53     -0.12  no / no / no
+  windows beating the gate on Calmar and CAGR: base 0/6, costs x2 0/6, decision 1 day later 1/6  ->  FAIL
+  (plain gate halves for reference: 1.67 / 0.38)
+
+F3 BOOST   (W = sessions; x = final multiple; time IN = share of days invested)
+   W       x  maxDD%  CAGR%  Calmar  timeIN% switches  1st half  2nd half  beats gate (base / costs x2 / 1-day later)
+   3    1.62     -34     18    0.54       65       97      1.49     -0.03  no / no / no
+   5    2.23     -31     32    1.05       66       75      2.38      0.23  yes / yes / yes
+  10    2.07     -28     29    1.06       66       51      2.42      0.25  yes / yes / yes
+  20    2.22     -36     32    0.90       68       45      1.37      0.61  no / yes / yes
+  30    1.70     -37     21    0.56       71       33      1.50      0.02  no / no / no
+  60    1.41     -35     13    0.36       77       20      1.99     -0.47  no / no / no
+  windows beating the gate on Calmar and CAGR: base 2/6, costs x2 3/6, decision 1 day later 3/6  ->  FAIL
+  (plain gate halves for reference: 1.67 / 0.38)
+
+F2 FLOW ONLY   (W = sessions; x = final multiple; time IN = share of days invested)
+   W       x  maxDD%  CAGR%  Calmar  timeIN% switches  1st half  2nd half  beats gate (base / costs x2 / 1-day later)
+   3    1.40     -36     13    0.36       58      128      1.77     -0.35  no / no / no
+   5    2.11     -33     30    0.91       60       82      2.44     -0.06  yes / no / yes
+  10    2.07     -33     29    0.89       61       60      3.04     -0.09  no / no / yes
+  20    2.43     -35     37    1.03       66       34      1.62      0.66  yes / yes / yes
+  30    1.66     -37     19    0.52       68       26      1.37      0.02  no / no / no
+  60    0.89     -44     -4   -0.09       68       13      0.76     -0.54  no / no / no
+  windows beating the gate on Calmar and CAGR: base 2/6, costs x2 1/6, decision 1 day later 3/6  ->  FAIL
+  (plain gate halves for reference: 1.67 / 0.38)
+
+NOW (latest data)
+  last  3 sessions net flow      -769m  signal negative
+  last  5 sessions net flow    -1,065m  signal negative
+  last 10 sessions net flow    -2,347m  signal negative
+  last 20 sessions net flow    -2,245m  signal negative
+  last 30 sessions net flow    -3,155m  signal negative
+  last 60 sessions net flow    +1,234m  signal positive
+  gate state OUT at 2026-11-15
+
+VERDICT: F1 filter FAIL; F3 boost FAIL; F2 flow only FAIL. A FAIL means nothing here is adopted. A PASS would still be one bear market, so it would only start a forward paper track.
