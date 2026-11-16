@@ -4,7 +4,7 @@ Research and alert system for crypto and US stocks. Everything runs on GitHub Ac
 
 ## Where things stand in one paragraph
 
-The only idea that has repeatedly survived testing is a **trend regime gate on BTC**: be IN while BTC's daily close is above both its 200-day and 50-day average, OUT (cash) otherwise. It is stable across settings, beats a time-shift placebo, and survives higher costs and delayed signals (labs 33, 34, 39). Altcoin selection rules built on top of it (trend baskets, volume breakouts, the swing scanner, support/reclaim trades) have **not** shown an edge over simply holding BTC or ETH while the gate is IN (labs 36-38), and the live crypto paper rules are losing (see below). Lab 40 tested the gate on BTC back to 2011 and tempers the 2020+ picture: it helped a lot in the 2018 and 2022 bears, helped little in 2012-16 (drawdown -73% vs -85%) and trailed buy-and-hold on return in 2012-16 and 2023-now. Over the whole history it improves return per unit of drawdown only modestly (Calmar 1.25 vs 1.10) and gives up upside in strong bulls. Treat it as a drawdown reducer, not a return booster. Labs 42-43 (13 Nov) found no weekly-average variant worth switching to and gave the open-interest filter its first number: a thin edge from two 2025 events (see below). Evidence is still thin: BTC/ETH chosen in hindsight and 45 labs run on the same history. Next real evidence comes from the forward paper accounts.
+The only idea that has repeatedly survived testing is a **trend regime gate on BTC**: be IN while BTC's daily close is above both its 200-day and 50-day average, OUT (cash) otherwise. It is stable across settings, beats a time-shift placebo, and survives higher costs and delayed signals (labs 33, 34, 39). Altcoin selection rules built on top of it (trend baskets, volume breakouts, the swing scanner, support/reclaim trades) have **not** shown an edge over simply holding BTC or ETH while the gate is IN (labs 36-38), and the live crypto paper rules are losing (see below). Lab 40 tested the gate on BTC back to 2011 and tempers the 2020+ picture: it helped a lot in the 2018 and 2022 bears, helped little in 2012-16 (drawdown -73% vs -85%) and trailed buy-and-hold on return in 2012-16 and 2023-now. Over the whole history it improves return per unit of drawdown only modestly (Calmar 1.25 vs 1.10) and gives up upside in strong bulls. Treat it as a drawdown reducer, not a return booster. Labs 42-43 (13 Nov) found no weekly-average variant worth switching to and gave the open-interest filter its first number: a thin edge from two 2025 events (see below). Evidence is still thin: BTC/ETH chosen in hindsight and 46 labs run on the same history. Next real evidence comes from the forward paper accounts.
 
 ## What is running
 
@@ -65,12 +65,13 @@ Five ideas declared in advance, each tested alone against the live 200/50 gate o
 - **2% band, graded 100/50/0 exposure, rising 200-day, S&P 500 above its 200-day:** no gain (the last two clearly worse). BTC was OUT while the S&P was above its 200-day on 12 Nov.
 - **Lesson:** tweaks that help the early, wilder years do not help the recent regime. Any change is era-dependent, so the simple gate is kept. Combinations were not tested.
 
-## Return boosters (lab 45, 16 Nov)
+## Return boosters (labs 45-46, 16 Nov)
 
 Ideas from a literature scan, declared in advance, tested on BTC and on US stocks (SPY, dividends reinvested) with a written pass bar. Only the free one passed.
 
 - **T-bill interest on cash while OUT (passes, small):** BTC CAGR 91% vs 90% over 2012+, and 27% vs 25% since 2021 (4.12% T-bill, OUT about 55% of days). Earlier crypto labs let cash earn 0%. Stocks: about +1 point.
 - **Volatility-sized exposure (target 50% vol, weekly):** the strongest result, but it mainly cuts risk. Capped at 1x: Calmar 2.08 vs 1.26 and worst drawdown -41% vs -73% over 2012+, for a slightly lower CAGR (85% vs 91%). Capped at 2x (borrowing 8% a year): CAGR 101%, drawdown still -41%, since 2021 CAGR 32% vs 27% at the same -25% drawdown. It missed the declared bar only on a tie in the second-half CAGR (48% vs 48%), so officially fail. Needs a robustness test across target volatility and update frequency before any paper account.
+- **Lab 46 (27-setting robustness test of the volatility sizing): the "more gain" claim FAILED the declared plateau rule** (8 of 18 borrowing variants beat the baseline, 14 needed; same under doubled costs and 12% borrowing). What the grid shows instead is a **risk dial**: the sizing target sets the trade. Targets of 35% and 50% cut risk by design (all 9 no-leverage variants improved Calmar and shrank the worst drawdown in both windows: e.g. 35%, weekly, no leverage: Calmar 2.18 vs 1.26, drawdown -30% vs -73%, but CAGR 65% vs 91%). A 65% target earned more (CAGR 96% to 136% vs 91%; since 2021 up to 40% vs 27%) with average exposure 0.54 vs 0.46, but since 2021 the worst drawdown was -30% vs -25% and the best versions use up to 2x leverage at 8% borrowing. Worst single day: -48.5% for the plain gate vs -20% to -56% for sized versions. Choosing the 65% region now would be picking the winner after the fact; if wanted, it must be judged forward in a paper account. No change to the live gate or paper bot.
 - **Donchian ensemble (9 lookbacks):** worse on BTC (7% CAGR since 2021 vs 27%). On SPY it cut drawdown (-10% vs -34% since 2012) but earned about half the buy-and-hold return.
 - **Fixed 1.5x leverage:** BTC CAGR 129% but worst drawdown -89%. More gain here is simply more risk.
 - **Stocks:** buy-and-hold beat every timing rule on raw gain (SPY 8% a year since 2000 vs at most 3%; 14% vs at most 7% since 2012). The rules only cut drawdowns.
@@ -81,6 +82,7 @@ Ideas from a literature scan, declared in advance, tested on BTC and on US stock
 
 | Lab | Question | Status |
 |---|---|---|
+| 46 | Is the volatility-sized gate a real edge or a lucky setting (27 settings, stresses)? | done: 'more gain' failed the plateau rule; works as a risk dial, no free lunch |
 | 45 | Return boosters on BTC and stocks (T-bill cash, vol-sized exposure, Donchian ensemble, leverage), and both together | done: only T-bill cash passed; vol-sizing is the best risk-adjusted lead, needs a robustness test; stocks beat every timing rule on raw gain |
 | 44 | Can the 200/50 gate be improved (confirmation, band, graded exposure, fast exit, rising 200d, S&P)? | done: none passed the pre-declared bar; fast exit and confirmation help only on 2012-2019 data |
 | 43 | Does the live alert's open-interest filter beat the plain 200/50 gate (2021+)? | done: modest edge from two 2025 events, tied in the first half; keep, judge on the forward log |
@@ -111,7 +113,7 @@ Earlier labs (2-25) cover the original support-zone finder, trend crosses, recla
 3. Survivorship (today's coins and stocks only) and repeated testing on the same data flatter every backtest. Treat results as upper bounds.
 4. New alerts and variants need a reason to exist beyond "more data"; extra variants raise selection risk.
 5. Real money only after months of forward paper results, with a trade-only API key, small size, a kill switch and a tax check. The MEXC dry-run bot is parked until then.
-6. Lab freeze: no new labs until the forward paper accounts reach about 30 distinct days. 45 labs on one history already make every new backtest result less trustworthy. Labs 42 to 45 were run by explicit request; the freeze otherwise stands.
+6. Lab freeze: no new labs until the forward paper accounts reach about 30 distinct days. 46 labs on one history already make every new backtest result less trustworthy. Labs 42 to 46 were run by explicit request; the freeze otherwise stands.
 7. Check this file and the repo before saying something does not exist or cannot be tested (the OI data and its daily log were missed once). Take current prices from the latest data or a live lookup, never from an earlier message.
 
 ## Open items
