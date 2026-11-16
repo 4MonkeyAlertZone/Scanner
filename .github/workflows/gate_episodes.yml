@@ -1,0 +1,26 @@
+name: Gate episodes list
+on:
+  workflow_dispatch:
+concurrency:
+  group: gate_episodes
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  gate_episodes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python gate_episodes.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add gate_episodes.txt gate_episodes.csv 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "Gate episodes list results" && (git pull --rebase -q; git push))
