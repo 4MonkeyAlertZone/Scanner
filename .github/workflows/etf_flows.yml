@@ -1,0 +1,28 @@
+name: ETF flows log
+on:
+  schedule:
+    - cron: "23 10 * * *"
+  workflow_dispatch:
+concurrency:
+  group: etf_flows
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  etf_flows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python etf_flows.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add etf_flows.csv 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "ETF flows log" && (git pull --rebase -q; git push))
