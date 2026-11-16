@@ -1,0 +1,57 @@
+CYCLE COMPARISON  source Bitstamp BTC/USD daily; 2011-09-13 to 2026-11-15; today is day 405 after the current peak
+
+1. CYCLES (peak = highest close; low = lowest close after it; current low is 'so far')
+cycle    peak date        peaklow date          low days peak->low  depth % now/low %
+2013-14  2013-12-04      1,1322015-01-14        171            406      -85
+2017-18  2017-12-16     19,1882018-12-15      3,180            364      -83
+2021-22  2021-11-08     67,5592022-11-21     15,766            378      -77
+2025-now 2025-10-06    124,7282026-06-30     58,526            267      -53        12
+
+   current price 65,312 = -48% from the peak; the lowest close since the peak (58,526 on 2026-06-30) is +12% from here.
+
+2. DRAWDOWN FROM THE PEAK AT THE SAME AGE (%, close at peak + k days vs peak close)
+cycle      day 100  day 200  day 300  day 365  day 400  day 450  day 500 day 405 (today)
+2013-14        -44      -47      -65      -67      -76      -78      -80             -80
+2017-18        -58      -66      -68      -83      -82      -80      -73             -81
+2021-22        -35      -58      -70      -73      -74      -65      -58             -75
+2025-now       -22      -38      -49      -31      -41        -        -             -48
+
+3. AT TODAY'S AGE (day 405): WAS THE FINAL LOW ALREADY IN?
+   2013-14: the low came on day 406 (after day 405); at day 405 the price was +32% from that final low and -80% from the peak
+   2017-18: the low came on day 364 (before day 405); at day 405 the price was +12% from that final low and -81% from the peak
+   2021-22: the low came on day 378 (before day 405); at day 405 the price was +6% from that final low and -75% from the peak
+   2025-now: lowest close so far came on day 267; the price is +12% from it and -48% from the peak. Whether it is the final low cannot be known.
+
+4. WHAT THE 200/50 GATE DID INSIDE EACH BEAR
+2013-14:
+   OUT signal 2014-02-06 at 764 (-33% from the peak), 116 days: the lowest close after it was 171 on 2015-01-14 (-78% from the signal, 342 days later)
+   OUT signal 2014-06-09 at 649 (-43% from the peak), 21 days: the lowest close after it was 171 on 2015-01-14 (-74% from the signal, 219 days later)
+   OUT signal 2014-07-24 at 602 (-47% from the peak), 340 days: the lowest close after it was 171 on 2015-01-14 (-72% from the signal, 174 days later)
+   IN rally 2013-12-19 to 2013-12-20: 1 days, BTC -11%
+   IN rally 2013-12-26 to 2013-12-27: 1 days, BTC -3%
+   IN rally 2014-01-02 to 2014-01-07: 5 days, BTC +0%
+   IN rally 2014-01-08 to 2014-01-13: 5 days, BTC -0%
+   IN rally 2014-01-15 to 2014-01-16: 1 days, BTC -3%
+   IN rally 2014-01-19 to 2014-01-24: 5 days, BTC -7%
+   IN rally 2014-01-25 to 2014-01-27: 2 days, BTC -7%
+   IN rally 2014-01-28 to 2014-02-06: 9 days, BTC -3%
+   IN rally 2014-06-02 to 2014-06-04: 2 days, BTC -3%
+   IN rally 2014-06-05 to 2014-06-06: 1 days, BTC -2%
+   IN rally 2014-06-07 to 2014-06-09: 2 days, BTC -1%
+   IN rally 2014-06-30 to 2014-07-24: 24 days, BTC -6%
+   first IN signal after the low: 2015-06-29, 166 days after the low, BTC already +49% above it
+2017-18:
+   OUT signal 2018-01-11 at 13,244 (-31% from the peak), 49 days: the lowest close after it was 3,180 on 2018-12-15 (-76% from the signal, 338 days later)
+   OUT signal 2018-03-07 at 9,913 (-48% from the peak), 391 days: the lowest close after it was 3,180 on 2018-12-15 (-68% from the signal, 283 days later)
+   IN rally 2018-03-01 to 2018-03-07: 6 days, BTC -9%
+   first IN signal after the low: 2019-04-02, 108 days after the low, BTC already +54% above it
+2021-22:
+   OUT signal 2021-11-18 at 56,918 (-16% from the peak), 421 days: the lowest close after it was 15,766 on 2022-11-21 (-72% from the signal, 368 days later)
+   first IN signal after the low: 2023-01-13, 53 days after the low, BTC already +26% above it
+2025-now:
+   OUT signal 2025-10-27 at 114,101 (-9% from the peak), 296 days: the lowest close after it was 58,526 on 2026-06-30 (-49% from the signal, 246 days later)
+   OUT signal 2026-10-22 at 81,315 (-35% from the peak), 25 days (open): the lowest close after it was 64,114 on 2026-11-14 (-21% from the signal, 23 days later)
+   IN rally 2025-10-12 to 2025-10-14: 2 days, BTC -2%
+   IN rally 2025-10-26 to 2025-10-27: 1 days, BTC -0%
+   IN rally 2026-08-19 to 2026-10-22: 64 days, BTC +17%
+   to flip IN today: a close above 79,758 (200-day 72,923, 50-day 79,758), which is +22% from here and +36% above the lowest close so far
