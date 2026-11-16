@@ -78,6 +78,10 @@ Ideas from a literature scan, declared in advance, tested on BTC and on US stock
 - **Both together (50/50 BTC and SPY gates):** smoother, not bigger. Since 2021 CAGR 17% with drawdown -16% (vs 11% and -54% for 50/50 buy-and-hold), but less gain than the BTC gate alone (27%, -25%). Over 2012+ it earns less than 50/50 buy-and-hold (47% vs 56%).
 - Nothing changes the live gate or paper bot. Historic CAGRs (BTC 2012-2019 especially) are not expectations.
 
+## Cycle comparison and ETF flows (cycle_compare, lab 47, 16 Nov)
+- **Cycle comparison (Bitstamp closes to 15 Nov 2026).** Peak to low: 2013-14 -85% (406 days), 2017-18 -83% (364), 2021-22 -77% (378), 2025-now -53% (267; peak 124,728 on 6 Oct 2025, low 58,526 on 30 Jun 2026). At day 405 the earlier cycles stood at -80%, -81%, -75% from the peak; today is -48%. The three earlier lows came on days 364 to 406; this one came about 100 days earlier. The first IN after each earlier low came 166, 108 and 53 days later with BTC already +49%, +54%, +26% above it; this cycle's first IN (19 Aug 2026, +17% over 64 days) failed on 22 Oct. Today's price is +12% above the June low; a flip IN needs a close above about 79,758 (+22%). Two readings fit (June was the low, or a retest is still due); the data cannot separate them and no probability is given.
+- **Lab 47 (ETF flows, 2024-01-11 on, one bull and one bear).** Flow window grid W = 3 to 60 sessions; filter, boost and flow-only variants against the plain gate (Calmar 0.91, CAGR 22%, drawdown -25%). Pre-declared rule (5 of 6 windows beat the gate on Calmar and CAGR, also under costs x2 and a 1-day later decision): all three FAIL (best: boost, 2 to 3 of 6). Nothing adopted. The daily flow log (etf_flows.csv, TFTC data.json, CC BY 4.0) keeps running as a forward record.
+
 ## Labs index (newest first, from 26)
 
 | Lab | Question | Status |
