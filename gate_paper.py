@@ -23,6 +23,14 @@ def gate_at(closes):
     """closes: BTC closes up to and including the day being judged."""
     return len(closes) >= SLOW and closes[-1] > ma(closes, SLOW) and closes[-1] > ma(closes, FAST)
 
+def signal_since(cb, latest):
+    """(date, exact): the close on which the CURRENT gate state first showed, from the closes we hold (display only, never touches the accounts). exact is False if the state already held at the oldest day we can judge."""
+    ds = sorted(d for d in cb if d <= latest); cl = [cb[d] for d in ds]
+    if len(cl) < SLOW: return latest, False
+    cur = gate_at(cl); j = len(cl) - 1
+    while j - 1 >= SLOW - 1 and gate_at(cl[:j]) == cur: j -= 1
+    return ds[j], j > SLOW - 1
+
 def fresh(day):
     return {"start": day, "last_day": day, "gate": None, "w": 0.0, "flips": 0, "since": day,
             "eq": {a: 1.0 for a in ACC}, "bh": {a: 1.0 for a in ACC}, "peak": {a: 1.0 for a in ACC}, "maxdd": {a: 0.0 for a in ACC}}
@@ -87,13 +95,15 @@ def main():
             msg = (f"BTC closed at {cb[d]:,.0f} on {fd(d)}, below its 200-day ({m200:,.0f}) or 50-day ({m50:,.0f}). Paper bot SELLS to cash at this close. Paper only.")
             scanner.notify("GATE FLIPPED: OUT (sell)", msg, NTFY, "red_circle", 4)
     # report
-    L = [f"GATE PAPER BOT  data to {fd(latest)}  state {state} since {fd(st['since'])}  ({latest - st['since']} days)  started {fd(st['start'])} ({latest - st['start']} days)", "",
+    sig, exact = signal_since(cb, latest)
+    L = [f"GATE PAPER BOT  data to {fd(latest)}  signal {state} since the {fd(sig)} close{'' if exact else ' or earlier'}  ({latest - sig} days)  |  paper accounts started {fd(st['start'])} ({latest - st['start']} days)", "",
          f"BTC {p:,.0f}   200-day {m200:,.0f} ({(p / m200 - 1) * 100:+.1f}%)   50-day {m50:,.0f} ({(p / m50 - 1) * 100:+.1f}%)"]
     if st["gate"]: L.append(f"To flip OUT: a close below {min(m200, m50):,.0f} ({(min(m200, m50) / p - 1) * 100:+.1f}% from here, using today's averages).")
     else: L.append(f"To flip IN: a close above {max(m200, m50):,.0f} ({(max(m200, m50) / p - 1) * 100:+.1f}% from here, using today's averages).")
     L += ["", f"{'account':<26}{'equity x':>10}{'worst DD%':>11}{'buy&hold x':>12}", ]
     for a in ACC: L.append(f"{NAMES[a]:<26}{st['eq'][a]:>10.3f}{st['maxdd'][a] * 100:>11.1f}{st['bh'][a]:>12.3f}")
-    L += ["", f"Gate flips so far: {st['flips']}. Equity is net of 0.1% per switch; buy&hold has no cost.",
+    if st["start"] > sig: L.append(f"Note: the {state} signal came before the paper accounts began on {fd(st['start'])}, so the accounts started in the {state} state and have not traded yet.")
+    L += ["", f"Gate flips since the accounts started: {st['flips']}. Equity is net of 0.1% per switch; buy&hold has no cost.",
           "Judge only after at least one full IN and OUT cycle and ideally 6+ months: early numbers mean nothing. Lab 39 expectation: roughly half of buy&hold's drawdown, many small whipsaws. Paper only. Not financial advice."]
     open(P("gate_paper_report.txt"), "w").write("\n".join(L) + "\n"); print("\n".join(L))
 
