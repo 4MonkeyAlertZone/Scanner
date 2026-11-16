@@ -1,0 +1,46 @@
+LAB 46: ROBUSTNESS OF VOLATILITY-SIZED EXPOSURE  BTC source Bitstamp BTC/USD daily; 2011-09-13 to 2026-11-15; T-bill latest 4.12% a year
+
+LONG = 2012-10-17 to 2026-11-15 (halves split at 2019-11-01); B = 2021-05-11 to 2026-11-15.  'beats' = passes the declared rule against the baseline.
+target  upd  cap |  CAGR% Calmar  DD%  1st  2nd |  B CAGR% Calmar  DD% | worst day% avg exp   beats risk-cut
+  BASE    -  1.0 |     91   1.26  -73  147   48 |       27   1.08  -25 |      -48.5    0.46
+   35%    7  1.0 |     65   2.18  -30  103   34 |       24   1.56  -16 |      -20.1    0.29      no      YES
+   35%    7  1.5 |     67   2.25  -30  108   34 |       24   1.37  -18 |      -20.1    0.29      no      YES
+   35%    7  2.0 |     67   2.25  -30  108   34 |       24   1.37  -18 |      -20.1    0.29      no      YES
+   35%   14  1.0 |     65   2.04  -32  104   34 |       24   1.54  -15 |      -20.1    0.29      no      YES
+   35%   14  1.5 |     68   2.14  -32  112   34 |       24   1.33  -18 |      -20.1    0.30      no      YES
+   35%   14  2.0 |     68   2.14  -32  112   34 |       24   1.33  -18 |      -20.1    0.30      no      YES
+   35%   30  1.0 |     64   1.40  -46   99   36 |       24   1.58  -15 |      -30.2    0.29      no      YES
+   35%   30  1.5 |     68   1.47  -46  106   36 |       24   1.42  -17 |      -30.2    0.29      no      YES
+   35%   30  2.0 |     68   1.47  -46  106   36 |       24   1.42  -17 |      -30.2    0.29      no      YES
+   50%    7  1.0 |     85   2.08  -41  138   45 |       28   1.26  -23 |      -28.8    0.37      no      YES
+   50%    7  1.5 |     99   2.41  -41  167   48 |       32   1.40  -23 |      -28.8    0.41      no      YES
+   50%    7  2.0 |    101   2.45  -41  173   48 |       32   1.28  -25 |      -28.8    0.42      no      YES
+   50%   14  1.0 |     86   1.95  -44  139   45 |       28   1.26  -22 |      -28.8    0.37      no      YES
+   50%   14  1.5 |    100   2.25  -44  170   48 |       32   1.38  -23 |      -28.8    0.41      no      YES
+   50%   14  2.0 |    103   2.32  -44  179   47 |       31   1.24  -25 |      -28.8    0.42      no      YES
+   50%   30  1.0 |     85   1.37  -62  133   47 |       29   1.35  -21 |      -43.1    0.37      no      YES
+   50%   30  1.5 |     97   1.56  -62  157   51 |       33   1.42  -23 |      -43.1    0.41     YES      YES
+   50%   30  2.0 |    100   1.61  -62  165   51 |       33   1.33  -24 |      -43.1    0.42     YES      YES
+   65%    7  1.0 |     96   1.87  -51  162   47 |       28   1.19  -24 |      -37.4    0.41      no      YES
+   65%    7  1.5 |    123   2.39  -51  212   59 |       37   1.23  -30 |      -37.4    0.51     YES       no
+   65%    7  2.0 |    135   2.63  -51  244   61 |       40   1.30  -30 |      -37.4    0.54     YES       no
+   65%   14  1.0 |     97   1.75  -55  164   47 |       28   1.19  -24 |      -37.4    0.41      no      YES
+   65%   14  1.5 |    124   2.25  -55  216   59 |       37   1.23  -30 |      -37.4    0.51     YES       no
+   65%   14  2.0 |    136   2.47  -55  248   60 |       39   1.28  -30 |      -37.4    0.54     YES       no
+   65%   30  1.0 |     95   1.40  -68  156   48 |       28   1.20  -24 |      -48.5    0.41      no      YES
+   65%   30  1.5 |    119   1.59  -75  197   62 |       37   1.30  -29 |      -56.1    0.50     YES       no
+   65%   30  2.0 |    130   1.74  -75  222   65 |       40   1.33  -30 |      -56.1    0.54     YES       no
+
+PLATEAU TEST (cap above 1x: 18 variants; need 14 to beat the baseline in each row below):
+  normal        8 of 18 beat the baseline   FAIL
+  costs x2      8 of 18 beat the baseline   FAIL
+  borrow 12%    8 of 18 beat the baseline   FAIL
+  median CAGR change vs baseline over LONG (cap above 1x): +8 points
+  by target: 35%: 0/6; 50%: 2/6; 65%: 6/6
+  by upd: 7: 2/6; 14: 2/6; 30: 4/6
+  by cap: 1.5: 4/9; 2: 4/9
+RISK-CUT TEST (cap 1.0, 9 variants): 9 of 9 lift Calmar and shrink the worst drawdown in both windows.
+VERDICT: the lab-45 result did NOT hold up across settings and stresses: drop the 'more gain' claim. The risk-cut (cap 1.0) result is judged on its own line above.
+
+NOW (latest close in the data: 2026-11-15): BTC 65,312; 90-day volatility 45% a year; gate OUT; T-bill 4.12%
+   sizing if IN today (cap 2x): target 35% -> 78%; target 50% -> 112%; target 65% -> 145%
