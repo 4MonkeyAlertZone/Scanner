@@ -1,12 +1,12 @@
-GATE PAPER BOT  data to 2026-11-15  signal OUT since the 2026-10-22 close  (24 days)  |  paper accounts started 2026-10-30 (16 days)
+GATE PAPER BOT  data to 2026-11-16  signal OUT since the 2026-10-22 close  (25 days)  |  paper accounts started 2026-10-30 (17 days)
 
-BTC 65,355   200-day 72,977 (-10.4%)   50-day 79,842 (-18.1%)
-To flip IN: a close above 79,842 (+22.2% from here, using today's averages).
+BTC 64,901   200-day 72,920 (-11.0%)   50-day 79,451 (-18.3%)
+To flip IN: a close above 79,451 (+22.4% from here, using today's averages).
 
 account                     equity x  worst DD%  buy&hold x
-BTC when IN                    1.000        0.0       0.845
-ETH when IN                    1.000        0.0       0.818
-50/50 BTC+ETH when IN          1.000        0.0       0.832
+BTC when IN                    1.000        0.0       0.839
+ETH when IN                    1.000        0.0       0.811
+50/50 BTC+ETH when IN          1.000        0.0       0.825
 Note: the OUT signal came before the paper accounts began on 2026-10-30, so the accounts started in the OUT state and have not traded yet.
 
 Gate flips since the accounts started: 0. Equity is net of 0.1% per switch; buy&hold has no cost.
