@@ -1,17 +1,17 @@
-STOCKS REGIME  data to 2026-11-16  state IN  light ORANGE
-S&P 500 7,417: +1.0% vs 200-day (7,343), -3.2% vs 50-day (7,661). Exit if a close is below 7,196 (-3.0%).
-Sector funds, 12m / 6m return: XLE +45%/+7%; XLV +25%/+30%; XLP +23%/+9%; XLB +20%/+3%; XLK +16%/-5%; XLF +12%/+13%; XLI +10%/-2%; XLY +3%/+2%; XLU +2%/+2%
+STOCKS REGIME  data to 2026-11-17  state IN  light ORANGE
+S&P 500 7,341: -0.1% vs 200-day (7,345), -4.1% vs 50-day (7,655). Exit if a close is below 7,198 (-1.9%).
+Sector funds, 12m / 6m return: XLE +42%/+5%; XLV +24%/+27%; XLP +22%/+8%; XLB +19%/+5%; XLK +14%/-6%; XLF +11%/+12%; XLI +10%/-2%; XLY +2%/+2%; XLU +1%/-1%
 
-SILENT PAPER TEST since 2026-10-21 (18 days; percent change, cash earns T-bill rate):
-  Nasdaq-100 + regime              -8.9%
-  Top-3 sectors (12m) + regime     -3.0%
-  S&P 500 + regime                 -4.5%
-  Nasdaq-100 buy and hold          -8.9%
-  S&P 500 buy and hold             -4.5%
-  Trend sleeve: 12 ETFs            -4.1%
-  Trend sleeve: 12 ETFs + BTC/ETH   -4.7%
-  Portfolio 40/40/20 (core/trend/crypto)   -7.0%
-  Portfolio 50/30/20 (core/trend/crypto)   -7.4%
+SILENT PAPER TEST since 2026-10-21 (19 days; percent change, cash earns T-bill rate):
+  Nasdaq-100 + regime              -9.6%
+  Top-3 sectors (12m) + regime     -4.0%
+  S&P 500 + regime                 -5.5%
+  Nasdaq-100 buy and hold          -9.6%
+  S&P 500 buy and hold             -5.5%
+  Trend sleeve: 12 ETFs            -4.4%
+  Trend sleeve: 12 ETFs + BTC/ETH   -5.0%
+  Portfolio 40/40/20 (core/trend/crypto)   -7.4%
+  Portfolio 50/30/20 (core/trend/crypto)   -7.9%
 
 Trend sleeve: 12 ETFs holds now: SPY 14%, VNQ 10%, DBC 8%, XLE 6%; cash 62%
 Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 13%, VNQ 10%, DBC 7%, XLE 6%; cash 64%
