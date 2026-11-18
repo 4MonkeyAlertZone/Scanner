@@ -1,12 +1,12 @@
-ETF-FLOW FORWARD PAPER TRACK  data to 2026-11-16  accounts started 2026-11-15 (1 days)  |  BTC 64,901  200-day 72,920  50-day 79,451
+ETF-FLOW FORWARD PAPER TRACK  data to 2026-11-17  accounts started 2026-11-15 (2 days)  |  BTC 64,940  200-day 72,854  50-day 79,079
 
 account                    state  equity x  worst DD%  changes
 plain 200/50 gate            OUT     1.000        0.0        0
 boost, flow W=5              OUT     1.000        0.0        0
 boost, flow W=10 (main)      OUT     1.000        0.0        0
 boost, flow W=20             OUT     1.000        0.0        0
-buy&hold BTC                         0.993
+buy&hold BTC                         0.994
 
-Latest net flow over the last 5 sessions -1,065m, 10 sessions -2,347m, 20 sessions -2,245m (last session 2026-11-13).
+Latest net flow over the last 5 sessions -1,001m, 10 sessions -2,065m, 20 sessions -3,027m (last session 2026-11-17).
 Hypothesis declared 16 Nov 2026: boost (gate OR flow>0) with W=10 beats the plain gate; W=5 and W=20 are neighbours. Lab 47 did not pass its own rule, so this is a forward test only.
 Judge on 16 May 2027 or at the start of the next bear market, whichever is first; before that the numbers mean nothing. Paper only. Not financial advice.
