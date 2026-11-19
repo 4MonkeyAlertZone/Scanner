@@ -2891,7 +2891,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2890,JUP,crypto,long,IN ZONE,4,1794959416,17 Nov 23:50,0.2626,0.25177857,0.2759,open,,,,,,,,,
 2891,ICP,crypto,long,BUY SIGNAL,5,1794977152,18 Nov 04:45,2.262,2.1769643,2.4501111,open,,,,,,,,,
 2892,KITE,crypto,long,IN ZONE - WAIT,4,1794977152,18 Nov 04:45,0.13027,0.12716607,0.13849333,open,,,,,,,,,
-2893,BP,crypto,long,IN ZONE,5,1794977152,18 Nov 04:45,1.024,0.95038571,1.17525,open,,,,,,,,,
+2893,BP,crypto,long,IN ZONE,5,1794977152,18 Nov 04:45,1.024,0.95038571,1.17525,closed,1795085304,19 Nov 10:48,0.9451,stop,-7.91,-7.91,30.0,-1.10,
 2894,HTX,crypto,long,RECLAIM C TP1,,1795008637,18 Nov 13:30,1.497e-06,1.454086e-06,1.539914e-06,open,,,,,,,,,168
 2895,HTX,crypto,long,RECLAIM C TP2,,1795008637,18 Nov 13:30,1.497e-06,1.454086e-06,1.582828e-06,open,,,,,,,,,168
 2896,HTX,crypto,long,RECLAIM C TP3,,1795008637,18 Nov 13:30,1.497e-06,1.454086e-06,1.625742e-06,open,,,,,,,,,168
@@ -2904,3 +2904,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2903,BCH,crypto,long,IN ZONE,3,1795056453,19 Nov 02:47,204.5,201.15857,213.375,open,,,,,,,,,
 2904,RENDER,crypto,long,BUY SIGNAL,3,1795056453,19 Nov 02:47,1.396,1.3609286,1.4556667,open,,,,,,,,,
 2905,FF,crypto,long,IN ZONE - WAIT,4,1795056453,19 Nov 02:47,0.09972,0.096585,0.1033375,open,,,,,,,,,
+2906,BNB,crypto,long,BUY SIGNAL,3,1795085309,19 Nov 10:48,591.56,577.14679,672.74667,open,,,,,,,,,
+2907,MORPHO,crypto,long,BUY SIGNAL,3,1795085309,19 Nov 10:48,1.6962,1.6775571,1.9763,open,,,,,,,,,
+2908,GRASS,crypto,long,BUY SIGNAL,3,1795085309,19 Nov 10:48,0.4337,0.41132857,0.4817,open,,,,,,,,,
+2909,BTT,crypto,long,BUY SIGNAL,3,1795085309,19 Nov 10:48,3.108e-07,3.08375e-07,3.15425e-07,open,,,,,,,,,
