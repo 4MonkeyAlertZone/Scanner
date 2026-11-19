@@ -2900,3 +2900,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2899,BDX,crypto,long,IN ZONE - WAIT,4,1795008637,18 Nov 13:30,0.07029,0.068677857,0.074089524,open,,,,,,,,,
 2900,STRK,crypto,long,IN ZONE - WAIT,4,1795008637,18 Nov 13:30,0.03281,0.031339643,0.034823333,open,,,,,,,,,
 2901,WLD,crypto,long,BUY SIGNAL,3,1795037610,18 Nov 21:33,0.2614,0.25371786,0.27175,open,,,,,,,,,
+2902,WBT,crypto,long,IN ZONE - WAIT,3,1795056453,19 Nov 02:47,60.708,60.220843,70.944,open,,,,,,,,,
+2903,BCH,crypto,long,IN ZONE,3,1795056453,19 Nov 02:47,204.5,201.15857,213.375,open,,,,,,,,,
+2904,RENDER,crypto,long,BUY SIGNAL,3,1795056453,19 Nov 02:47,1.396,1.3609286,1.4556667,open,,,,,,,,,
+2905,FF,crypto,long,IN ZONE - WAIT,4,1795056453,19 Nov 02:47,0.09972,0.096585,0.1033375,open,,,,,,,,,
