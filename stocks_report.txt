@@ -1,20 +1,20 @@
-STOCKS REGIME  data to 2026-11-17  state IN  light ORANGE
-S&P 500 7,341: -0.1% vs 200-day (7,345), -4.1% vs 50-day (7,655). Exit if a close is below 7,198 (-1.9%).
-Sector funds, 12m / 6m return: XLE +42%/+5%; XLV +24%/+27%; XLP +22%/+8%; XLB +19%/+5%; XLK +14%/-6%; XLF +11%/+12%; XLI +10%/-2%; XLY +2%/+2%; XLU +1%/-1%
+STOCKS REGIME  data to 2026-11-18  state IN  light ORANGE
+S&P 500 7,324: -0.3% vs 200-day (7,347), -4.2% vs 50-day (7,649). Exit if a close is below 7,200 (-1.7%).
+Sector funds, 12m / 6m return: XLE +40%/+4%; XLP +22%/+8%; XLV +21%/+24%; XLB +20%/+2%; XLK +16%/-7%; XLF +11%/+10%; XLI +11%/-3%; XLY +5%/+1%; XLU +0%/-1%
 
-SILENT PAPER TEST since 2026-10-21 (19 days; percent change, cash earns T-bill rate):
-  Nasdaq-100 + regime              -9.6%
-  Top-3 sectors (12m) + regime     -4.0%
-  S&P 500 + regime                 -5.5%
-  Nasdaq-100 buy and hold          -9.6%
-  S&P 500 buy and hold             -5.5%
-  Trend sleeve: 12 ETFs            -4.4%
-  Trend sleeve: 12 ETFs + BTC/ETH   -5.0%
+SILENT PAPER TEST since 2026-10-21 (20 days; percent change, cash earns T-bill rate):
+  Nasdaq-100 + regime              -9.2%
+  Top-3 sectors (12m) + regime     -6.0%
+  S&P 500 + regime                 -5.7%
+  Nasdaq-100 buy and hold          -9.2%
+  S&P 500 buy and hold             -5.7%
+  Trend sleeve: 12 ETFs            -4.8%
+  Trend sleeve: 12 ETFs + BTC/ETH   -5.3%
   Portfolio 40/40/20 (core/trend/crypto)   -7.4%
-  Portfolio 50/30/20 (core/trend/crypto)   -7.9%
+  Portfolio 50/30/20 (core/trend/crypto)   -7.8%
 
-Trend sleeve: 12 ETFs holds now: SPY 14%, VNQ 10%, DBC 8%, XLE 6%; cash 62%
-Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 13%, VNQ 10%, DBC 7%, XLE 6%; cash 64%
-Target weights: QQQ 40%, SPY 5%, VNQ 4%, DBC 3%, XLE 3%; cash 45%.
+Trend sleeve: 12 ETFs holds now: SPY 14%, VNQ 10%, XLE 6%; cash 70%
+Trend sleeve: 12 ETFs + BTC/ETH holds now: SPY 13%, VNQ 10%, XLE 6%; cash 72%
+Target weights: QQQ 40%, SPY 5%, VNQ 4%, XLE 3%; cash 48%.
 
 Early weeks mean nothing; judge after months and after a real fall.
