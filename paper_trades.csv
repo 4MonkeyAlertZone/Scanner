@@ -2957,7 +2957,7 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2956,XDC,crypto,long,IN ZONE - WAIT,3,1795164113,20 Nov 08:41,0.02803,0.027641071,0.029003333,closed,1795216391,20 Nov 23:13,0.02758,stop,-1.81,-1.81,14.5,-1.30,
 2957,ZRO,crypto,long,IN ZONE - WAIT,3,1795216396,20 Nov 23:13,1.161,1.1263857,1.26995,closed,1795233617,21 Nov 04:00,1.0809,stop,-7.10,-7.10,4.8,-2.38,
 2958,BTW,crypto,long,BUY SIGNAL,4,1795233622,21 Nov 04:00,0.659026,0.62667664,0.783065,open,,,,,,,,,
-2959,BDX,crypto,long,BUY SIGNAL,3,1795264191,21 Nov 12:29,0.07026,0.068896429,0.073234737,open,,,,,,,,,
+2959,BDX,crypto,long,BUY SIGNAL,3,1795264191,21 Nov 12:29,0.07026,0.068896429,0.073234737,closed,1795305458,21 Nov 23:57,0.06888,stop,-2.16,-2.16,11.5,-1.12,
 2960,GRASS,crypto,long,BUY SIGNAL,3,1795264191,21 Nov 12:29,0.3592,0.33822857,0.38466667,open,,,,,,,,,
 2961,LUNC,crypto,long,IN ZONE - WAIT,4,1795264191,21 Nov 12:29,4.054e-05,3.8397857e-05,4.4562727e-05,open,,,,,,,,,
 2962,RAIN,crypto,long,IN ZONE,3,1795290174,21 Nov 19:42,0.003717,0.0032605,0.005595,open,,,,,,,,,
@@ -2965,3 +2965,4 @@ id,token,market,side,verdict,score,open_epoch,open_time,entry,stop,target,status
 2964,STX,crypto,long,IN ZONE,5,1795290174,21 Nov 19:42,0.2506,0.24541786,0.264075,open,,,,,,,,,
 2965,ETHFI,crypto,long,BUY SIGNAL,3,1795290174,21 Nov 19:42,0.4686,0.44860714,0.5331,open,,,,,,,,,
 2966,DRV,crypto,long,IN ZONE,4,1795290174,21 Nov 19:42,0.3411,0.31755,0.37018333,open,,,,,,,,,
+2967,JST,crypto,long,BUY SIGNAL,5,1795305463,21 Nov 23:57,0.14647,0.14180036,,open,,,,,,,,,
