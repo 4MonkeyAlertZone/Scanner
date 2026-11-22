@@ -1,4 +1,4 @@
-Paper review 15 Nov 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
+Paper review 22 Nov 2026. R = profit in units of risk. Judge a rule only once it has about 30 closed legs.
 
 CROSS A: 6 legs opened, 6 closed, 0 open, average -1.11R, win rate 0%
     TP1: 2 closed, average -1.11R, hit target 0%
@@ -8,10 +8,10 @@ CROSS B: 18 legs opened, 18 closed, 0 open, average -1.09R, win rate 0%
     TP1: 6 closed, average -1.09R, hit target 0%
     TP2: 6 closed, average -1.09R, hit target 0%
     TP3: 6 closed, average -1.09R, hit target 0%
-CROSS C: 69 legs opened, 69 closed, 0 open, average -1.68R, win rate 10%
-    TP1: 23 closed, average -1.54R, hit target 22%
-    TP2: 23 closed, average -1.61R, hit target 9%
-    TP3: 23 closed, average -1.88R, hit target 0%
+CROSS C: 72 legs opened, 72 closed, 0 open, average -1.67R, win rate 10%
+    TP1: 24 closed, average -1.54R, hit target 21%
+    TP2: 24 closed, average -1.61R, hit target 8%
+    TP3: 24 closed, average -1.87R, hit target 0%
 RECLAIM A: 54 legs opened, 54 closed, 0 open, average -0.85R, win rate 11%
     TP1: 18 closed, average -0.85R, hit target 0%
     TP2: 18 closed, average -0.85R, hit target 0%
@@ -20,9 +20,9 @@ RECLAIM B: 150 legs opened, 150 closed, 0 open, average -1.07R, win rate 2%
     TP1: 50 closed, average -1.07R, hit target 0%
     TP2: 50 closed, average -1.07R, hit target 0%
     TP3: 50 closed, average -1.07R, hit target 0%
-RECLAIM C: 291 legs opened, 285 closed, 6 open, average -0.91R, win rate 7%
-    TP1: 95 closed, average -0.88R, hit target 6%
-    TP2: 95 closed, average -0.91R, hit target 3%
-    TP3: 95 closed, average -0.93R, hit target 2%
+RECLAIM C: 297 legs opened, 294 closed, 3 open, average -0.89R, win rate 8%
+    TP1: 98 closed, average -0.86R, hit target 7%
+    TP2: 98 closed, average -0.91R, hit target 3%
+    TP3: 98 closed, average -0.92R, hit target 2%
 
 Backtest expectation: about +0.1R to +0.15R per trade for RECLAIM A; B slightly lower; C close to zero. Small samples swing wildly, so do not act on a handful of trades.
