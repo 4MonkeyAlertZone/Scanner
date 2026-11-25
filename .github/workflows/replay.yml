@@ -33,4 +33,4 @@ jobs:
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
           git add replay_*.txt replay_*.csv replay_compare.txt 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "Trader replay results" && (git pull --rebase -q; git push))
+          git diff --cached --quiet || (git commit -m "Trader replay results" && (for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep 8; done))
