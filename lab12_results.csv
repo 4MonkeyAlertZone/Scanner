@@ -1,25 +1,25 @@
 rule,stop,horizon,n,net_R,random_R,holds,group
-EMA50 reclaim,range-low stop (his style),42,1826,0.019,-0.008,1,GROUP 1
-range-mid reclaim,range-low stop (his style),42,660,0.081,0.021,1,GROUP 1
-both together,range-low stop (his style),42,171,0.067,0.068,0,GROUP 1
-EMA50 reclaim,range-low stop (his style),84,1826,-0.02,-0.017,0,GROUP 1
-range-mid reclaim,range-low stop (his style),84,660,0.073,0.017,0,GROUP 1
-both together,range-low stop (his style),84,171,0.008,0.004,0,GROUP 1
-EMA50 reclaim,2.5 ATR stop,42,2433,-0.007,-0.068,0,GROUP 1
-range-mid reclaim,2.5 ATR stop,42,1252,-0.01,-0.064,0,GROUP 1
-both together,2.5 ATR stop,42,398,0.004,-0.03,0,GROUP 1
-EMA50 reclaim,2.5 ATR stop,84,2433,-0.017,-0.028,0,GROUP 1
-range-mid reclaim,2.5 ATR stop,84,1252,-0.01,0.005,0,GROUP 1
-both together,2.5 ATR stop,84,398,0.017,-0.049,1,GROUP 1
-EMA50 reclaim,range-low stop (his style),42,700,0.067,-0.024,1,GROUP 2
-range-mid reclaim,range-low stop (his style),42,352,-0.007,-0.054,0,GROUP 2
-both together,range-low stop (his style),42,104,-0.055,0.068,0,GROUP 2
-EMA50 reclaim,range-low stop (his style),84,700,0.029,-0.058,1,GROUP 2
-range-mid reclaim,range-low stop (his style),84,352,0.019,-0.046,0,GROUP 2
-both together,range-low stop (his style),84,104,-0.049,-0.079,0,GROUP 2
-EMA50 reclaim,2.5 ATR stop,42,1112,-0.025,-0.062,0,GROUP 2
-range-mid reclaim,2.5 ATR stop,42,765,-0.04,-0.053,0,GROUP 2
-both together,2.5 ATR stop,42,243,-0.049,-0.067,0,GROUP 2
-EMA50 reclaim,2.5 ATR stop,84,1112,-0.04,-0.029,0,GROUP 2
-range-mid reclaim,2.5 ATR stop,84,765,-0.044,-0.006,0,GROUP 2
-both together,2.5 ATR stop,84,243,-0.07,-0.026,0,GROUP 2
+EMA50 reclaim,range-low stop (his style),42,1817,0.021,-0.066,1,GROUP 1
+range-mid reclaim,range-low stop (his style),42,657,0.083,-0.048,1,GROUP 1
+both together,range-low stop (his style),42,169,0.069,-0.074,0,GROUP 1
+EMA50 reclaim,range-low stop (his style),84,1817,-0.017,-0.019,0,GROUP 1
+range-mid reclaim,range-low stop (his style),84,657,0.071,-0.035,0,GROUP 1
+both together,range-low stop (his style),84,169,0.012,0.095,0,GROUP 1
+EMA50 reclaim,2.5 ATR stop,42,2417,-0.008,-0.056,0,GROUP 1
+range-mid reclaim,2.5 ATR stop,42,1244,-0.011,-0.067,0,GROUP 1
+both together,2.5 ATR stop,42,394,0.002,-0.103,0,GROUP 1
+EMA50 reclaim,2.5 ATR stop,84,2417,-0.018,-0.065,0,GROUP 1
+range-mid reclaim,2.5 ATR stop,84,1244,-0.013,-0.046,0,GROUP 1
+both together,2.5 ATR stop,84,394,0.016,-0.04,1,GROUP 1
+EMA50 reclaim,range-low stop (his style),42,649,0.069,-0.071,1,GROUP 2
+range-mid reclaim,range-low stop (his style),42,309,0.021,-0.051,0,GROUP 2
+both together,range-low stop (his style),42,86,-0.01,-0.044,0,GROUP 2
+EMA50 reclaim,range-low stop (his style),84,649,0.029,-0.107,1,GROUP 2
+range-mid reclaim,range-low stop (his style),84,309,0.065,-0.035,1,GROUP 2
+both together,range-low stop (his style),84,86,0.015,-0.122,0,GROUP 2
+EMA50 reclaim,2.5 ATR stop,42,1046,-0.019,-0.075,0,GROUP 2
+range-mid reclaim,2.5 ATR stop,42,702,-0.031,-0.07,0,GROUP 2
+both together,2.5 ATR stop,42,219,-0.022,-0.114,0,GROUP 2
+EMA50 reclaim,2.5 ATR stop,84,1046,-0.035,-0.051,0,GROUP 2
+range-mid reclaim,2.5 ATR stop,84,702,-0.03,-0.05,0,GROUP 2
+both together,2.5 ATR stop,84,219,-0.039,-0.004,0,GROUP 2
