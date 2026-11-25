@@ -1,4 +1,4 @@
-PROBE: free liquidation / positioning data  2026-10-19 19:10 UTC
+PROBE: free liquidation / positioning data  2026-11-25 20:27 UTC
 
 1) data.binance.vision futures daily files (BTCUSDT): which dataset exists on which dates
   metrics              2020-06-15=404  2021-03-15=200  2021-11-10=200  2022-06-15=200  2023-06-15=200  2024-06-15=200  2025-06-15=200  2026-09-15=200
@@ -8,8 +8,8 @@ PROBE: free liquidation / positioning data  2026-10-19 19:10 UTC
 2) Sample content of one metrics file (open interest + long/short ratios)
   rows: 289
   create_time,symbol,sum_open_interest,sum_open_interest_value,count_toptrader_long_short_ratio,sum_toptrader_long_short_ratio,count_long_short_ratio,sum_taker_long_short_vol_ratio
-  2024-06-15 00:00:00,BTCUSDT,79438.9190000000000000,5247201626.4112400000000000,2.07638620,1.45672300,2.31372549,0.60486200
-  2024-06-15 00:05:00,BTCUSDT,79334.4120000000000000,5238628809.6589830000000000,2.07904127,1.45790400,2.32174756,1.09858400
+  2024-06-15 20:50:00,BTCUSDT,80273.2880000000000000,5303832739.3936000000000000,1.99428614,1.51896100,2.10596363,0.40151700
+  2024-06-15 01:15:00,BTCUSDT,78996.5420000000000000,5229618478.3252000000000000,2.09340336,1.44896300,2.34377904,0.57415800
 
 3) Binance futures REST (recent only)
   /fapi/v1/allForceOrders?symbol=BTCUSDT&limit=5 -> 451 HTTP Error 451: 
@@ -17,8 +17,8 @@ PROBE: free liquidation / positioning data  2026-10-19 19:10 UTC
   /futures/data/globalLongShortAccountRatio?symbol=BTCUSDT&period=1d&lim -> 451 HTTP Error 451: 
 
 4) OKX public liquidation orders (recent only)
-  status 200  {"code":"0","data":[{"details":[{"bkLoss":"0","bkPx":"81772.5","ccy":"","posSide":"long","side":"sell","sz":"0.01","time":1792434505552,"ts":"1792434505552"},{"bkLoss":"0","bkPx":"81800.5","ccy":"","p
-  OKX open-interest-volume 1D: rows=180 oldest=2026-04-23
+  status 200  {"code":"0","data":[{"details":[{"bkLoss":"0","bkPx":"59949","ccy":"","posSide":"long","side":"sell","sz":"7.94","time":1795636377701,"ts":"1795636377701"},{"bkLoss":"0","bkPx":"59842.5","ccy":"","pos
+  OKX open-interest-volume 1D: rows=180 oldest=2026-05-30
 
 5) Bybit (recent only)
   Bybit status 403 HTTP Error 403: Forbidden
