@@ -25,4 +25,4 @@ jobs:
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
           git add etf_flows.csv etf_paper_state.json etf_paper_log.csv etf_paper_report.txt 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "ETF forward paper track" && (git pull --rebase -q; git push))
+          git diff --cached --quiet || (git commit -m "ETF forward paper track" && (for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep 8; done))

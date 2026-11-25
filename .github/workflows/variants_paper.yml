@@ -30,4 +30,4 @@ jobs:
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
           git add variants_* basketgate_oi.csv 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "Regime variants paper update" && (git pull --rebase -q; git push))
+          git diff --cached --quiet || (git commit -m "Regime variants paper update" && (for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep 8; done))
