@@ -1,20 +1,20 @@
-47 posts, 2026-07-02 to 2026-10-15. BTC daily closes 2021-04-28 to 2026-10-17. Forward returns are measured from the close of the report's day, so there is no peeking.
+47 posts, 2026-07-02 to 2026-10-15. BTC daily closes 2021-06-05 to 2026-11-24. Forward returns are measured from the close of the report's day, so there is no peeking.
 Stances: 22 bullish, 21 bearish, 4 neutral/unclear. Labels are a human reading of each conclusion, so a few are debatable.
 
 WHOLE PERIOD   (47 reports)
-   3 days ahead. All reports: avg  +0.8% (+/-0.8), up 67% of the time
-       after bullish  n= 21  avg  +1.2% (+/-1.5)  call was right 67%
+   3 days ahead. All reports: avg  +0.8% (+/-0.8), up 66% of the time
+       after bullish  n= 22  avg  +1.2% (+/-1.5)  call was right 64%
        after neutral  n=  4  avg  +0.1% (+/-1.3)
        after bearish  n= 21  avg  +0.5% (+/-0.8)  call was right 29%
-   7 days ahead. All reports: avg  +1.3% (+/-1.5), up 50% of the time
-       after bullish  n= 21  avg  +2.1% (+/-3.1)  call was right 38%
+   7 days ahead. All reports: avg  +1.3% (+/-1.5), up 49% of the time
+       after bullish  n= 22  avg  +2.0% (+/-3.0)  call was right 36%
        after neutral  n=  4  avg  -0.5% (+/-2.0)
        after bearish  n= 21  avg  +0.8% (+/-1.0)  call was right 38%
-  14 days ahead. All reports: avg  +2.0% (+/-1.8), up 48% of the time
-       after bullish  n= 20  avg  +5.2% (+/-3.3)  call was right 75%
+  14 days ahead. All reports: avg  +1.6% (+/-1.7), up 45% of the time
+       after bullish  n= 22  avg  +4.4% (+/-3.2)  call was right 68%
        after neutral  n=  4  avg  -2.6% (+/-1.3)
-       after bearish  n= 20  avg  -0.4% (+/-1.1)  call was right 70%
-  FOLLOWING HIM post by post (long when bullish, short when bearish, flat when neutral), 3-day moves: avg +0.35% per report vs +0.80% for just holding; total +16% vs +37% (simple sum, no compounding, no fees)
+       after bearish  n= 21  avg  -0.6% (+/-1.1)  call was right 71%
+  FOLLOWING HIM post by post (long when bullish, short when bearish, flat when neutral), 3-day moves: avg +0.34% per report vs +0.78% for just holding; total +16% vs +37% (simple sum, no compounding, no fees)
 
 EARLIER HALF   (23 reports)
    3 days ahead. All reports: avg  +1.1% (+/-1.1), up 70% of the time
@@ -32,19 +32,19 @@ EARLIER HALF   (23 reports)
   FOLLOWING HIM post by post (long when bullish, short when bearish, flat when neutral), 3-day moves: avg -0.14% per report vs +1.05% for just holding; total -3% vs +24% (simple sum, no compounding, no fees)
 
 LATER HALF   (24 reports)
-   3 days ahead. All reports: avg  +0.5% (+/-1.1), up 65% of the time
-       after bullish  n=  9  avg  +1.7% (+/-2.4)  call was right 67%
+   3 days ahead. All reports: avg  +0.5% (+/-1.1), up 62% of the time
+       after bullish  n= 10  avg  +1.5% (+/-2.2)  call was right 60%
        after neutral  n=  3  avg  +0.5% (+/-1.5)
        after bearish  n= 11  avg  -0.4% (+/-1.1)  call was right 36%
-   7 days ahead. All reports: avg  +0.1% (+/-1.7), up 39% of the time
-       after bullish  n=  9  avg  +1.5% (+/-4.0)  call was right 44%
+   7 days ahead. All reports: avg  +0.1% (+/-1.6), up 38% of the time
+       after bullish  n= 10  avg  +1.3% (+/-3.6)  call was right 40%
        after neutral  n=  3  avg  -1.3% (+/-1.7)
        after bearish  n= 11  avg  -0.6% (+/-1.3)  call was right 64%
-  14 days ahead. All reports: avg  -0.2% (+/-1.6), up 24% of the time
-       after bullish  n=  8  avg  +2.8% (+/-3.4)  call was right 62%
+  14 days ahead. All reports: avg  -0.7% (+/-1.5), up 21% of the time
+       after bullish  n= 10  avg  +1.4% (+/-3.2)  call was right 50%
        after neutral  n=  3  avg  -3.0% (+/-1.3)
-       after bearish  n= 10  avg  -1.8% (+/-0.6)  call was right 100%
-  FOLLOWING HIM post by post (long when bullish, short when bearish, flat when neutral), 3-day moves: avg +0.84% per report vs +0.55% for just holding; total +19% vs +13% (simple sum, no compounding, no fees)
+       after bearish  n= 11  avg  -2.1% (+/-0.7)  call was right 100%
+  FOLLOWING HIM post by post (long when bullish, short when bearish, flat when neutral), 3-day moves: avg +0.80% per report vs +0.52% for just holding; total +19% vs +12% (simple sum, no compounding, no fees)
 
 WHEN HE CHANGED HIS MIND (stance flips): date, new stance, BTC 14 days later
    2026-07-24  turned BULLISH  BTC $64,157, 14 days later +1.2%
@@ -53,7 +53,7 @@ WHEN HE CHANGED HIS MIND (stance flips): date, new stance, BTC 14 days later
    2026-09-22  turned BEARISH  BTC $86,150, 14 days later -0.7%
    2026-10-01  turned BULLISH  BTC $84,888, 14 days later -3.1%
    2026-10-02  turned BEARISH  BTC $84,516, 14 days later -3.4%
-   2026-10-10  turned BULLISH  BTC $83,000
+   2026-10-10  turned BULLISH  BTC $83,000, 14 days later -2.5%
 
 EPISODES: each stretch of the same stance, from the first post to the first post with a different stance (a held position). Return of following him over that stretch.
    2026-07-02 to 2026-07-24  SHORT  BTC $61,558 -> $64,157   result of following him -4.2%
@@ -63,7 +63,7 @@ EPISODES: each stretch of the same stance, from the first post to the first post
    2026-09-22 to 2026-10-01  SHORT  BTC $86,150 -> $84,888   result of following him +1.5%
    2026-10-01 to 2026-10-02  LONG   BTC $84,888 -> $84,516   result of following him -0.4%
    2026-10-02 to 2026-10-10  SHORT  BTC $84,516 -> $83,000   result of following him +1.8%
-   2026-10-10 to now        LONG   BTC $83,000 -> $81,490   result of following him -1.8% (still open)
-   8 stretches, 4 profitable, total +23.5% (simple sum, no fees); compare with BTC itself over the same period: +32.4%
+   2026-10-10 to now        LONG   BTC $83,000 -> $59,830   result of following him -27.9% (still open)
+   8 stretches, 4 profitable, total -2.6% (simple sum, no fees); compare with BTC itself over the same period: -2.8%
 
 HOW TO READ: 'right' means BTC moved the way he said over that horizon. A bullish stance in a rising market is easy to get right, so compare with 'all reports' and with holding. About 45 posts over about 15 weeks, overlapping windows, one asset, one trader and subjective labels: this can show whether his direction had obvious value, not prove a small edge.
