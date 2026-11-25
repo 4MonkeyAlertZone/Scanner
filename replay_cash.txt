@@ -5,35 +5,35 @@ R = profit in units of the stated risk (entry minus stop), after 0.2% costs. 'ta
 A. TARGET = TP1  (his own stated level)
    MARKET  buy at once after the post                                     n= 115 avg -0.08R (+/-0.19)  target  50%  stop  47%  timeout   3%   avg reward:risk 1.2
    LIMIT   wait for the stated entry price                                n=  89 avg -0.11R (+/-0.25)  target  39%  stop  58%  timeout   2%   avg reward:risk 1.6
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 575 avg -0.05R (+/-0.09)  target  51%  stop  43%  timeout   6%   avg reward:risk 1.2
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 575 avg -0.06R (+/-0.09)  target  50%  stop  45%  timeout   5%   avg reward:risk 1.2
            limit orders filled: 89 of 114
            calls skipped because price was already past the stop or target when the post came: 26
 
 A. TARGET = LAST TP  (his own stated level)
    MARKET  buy at once after the post                                     n= 132 avg -0.07R (+/-0.37)  target  20%  stop  70%  timeout   9%   avg reward:risk 4.5
    LIMIT   wait for the stated entry price                                n=  92 avg -0.24R (+/-0.51)  target  12%  stop  86%  timeout   2%   avg reward:risk 6.2
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 660 avg -0.03R (+/-0.15)  target  19%  stop  63%  timeout  18%   avg reward:risk 4.5
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 660 avg -0.06R (+/-0.14)  target  18%  stop  63%  timeout  18%   avg reward:risk 4.5
            limit orders filled: 92 of 131
            calls skipped because price was already past the stop or target when the post came: 9
 
 A. TARGET = 1R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
    MARKET  buy at once after the post                                     n= 136 avg -0.12R (+/-0.16)  target  46%  stop  49%  timeout   5%   avg reward:risk 1.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.17R (+/-0.19)  target  45%  stop  53%  timeout   2%   avg reward:risk 1.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.08R (+/-0.07)  target  46%  stop  46%  timeout   8%   avg reward:risk 1.0
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.09R (+/-0.07)  target  46%  stop  47%  timeout   7%   avg reward:risk 1.0
            limit orders filled: 95 of 135
            calls skipped because price was already past the stop or target when the post came: 5
 
 A. TARGET = 2R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
    MARKET  buy at once after the post                                     n= 136 avg -0.12R (+/-0.22)  target  28%  stop  62%  timeout  10%   avg reward:risk 2.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.18R (+/-0.27)  target  29%  stop  67%  timeout   3%   avg reward:risk 2.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.10R (+/-0.10)  target  27%  stop  60%  timeout  14%   avg reward:risk 2.0
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.08R (+/-0.10)  target  28%  stop  58%  timeout  14%   avg reward:risk 2.0
            limit orders filled: 95 of 135
            calls skipped because price was already past the stop or target when the post came: 5
 
 A. TARGET = 3R  (1R/2R/3R = that many times the distance from entry to his stop, our standard test when his targets are only on a chart)
    MARKET  buy at once after the post                                     n= 136 avg -0.10R (+/-0.27)  target  20%  stop  68%  timeout  12%   avg reward:risk 3.0
    LIMIT   wait for the stated entry price                                n=  95 avg -0.35R (+/-0.30)  target  18%  stop  79%  timeout   3%   avg reward:risk 3.0
-   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.11R (+/-0.12)  target  18%  stop  64%  timeout  18%   avg reward:risk 3.0
+   RANDOM  random entries, same stop/target distances (no-skill control)  n= 680 avg -0.05R (+/-0.12)  target  19%  stop  62%  timeout  19%   avg reward:risk 3.0
            limit orders filled: 95 of 135
            calls skipped because price was already past the stop or target when the post came: 5
 
