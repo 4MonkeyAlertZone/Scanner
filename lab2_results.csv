@@ -1,16 +1,16 @@
 rule,train_n,train_avgR,test_n,test_avgR,test_ci,vs_random,status
-"long | all | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",2159,0.422,1038,0.125,0.142,-0.105,WEAK
-"long | all | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",2159,0.542,1038,0.17,0.187,0.173,WEAK
-"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1803,0.609,895,0.206,0.194,0.171,HOLDS
-"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",1803,0.469,895,0.111,0.128,-0.123,WEAK
-"long | all | breakout 20-candle high | stop 2.5 ATR, target none (time exit), hold long limit",2617,0.345,1285,0.066,0.129,-0.154,WEAK
-"long | all | breakout 20-candle high | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",1932,0.441,978,0.122,0.129,-0.097,WEAK
-"long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1097,0.909,488,0.733,0.809,0.608,WEAK
-"long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",1567,0.607,742,0.639,0.594,0.451,HOLDS
-"long | all | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1352,0.673,657,0.733,0.662,0.533,HOLDS
-"long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",1293,0.785,569,0.597,0.702,0.555,WEAK
-"long | all | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",1567,0.475,742,0.362,0.361,0.187,HOLDS
-"long | all | breakout 55-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1380,0.65,680,0.694,0.64,0.34,HOLDS
-"long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",712,1.318,287,0.956,1.361,0.86,WEAK
-"long | all | breakout 55-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",972,0.918,406,0.849,0.956,0.598,WEAK
-"long | all | breakout 20-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1932,0.53,978,0.173,0.192,-0.276,WEAK
+"long | all | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",2151,0.484,1031,0.122,0.18,-0.236,WEAK
+"long | all | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",2151,0.37,1031,0.072,0.138,-0.07,WEAK
+"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1768,0.553,896,0.146,0.183,-0.233,WEAK
+"long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",751,0.263,416,0.103,0.121,-0.064,WEAK
+"long | all | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1319,0.622,642,0.635,0.669,0.742,WEAK
+"long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit",1552,0.55,726,0.546,0.601,0.434,WEAK
+"long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",1768,0.42,896,0.045,0.122,-0.065,WEAK
+"long | all | breakout 55-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit",1349,0.593,664,0.601,0.647,0.556,WEAK
+"long | stock | breakout 55-candle high | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit",766,0.254,430,0.101,0.118,-0.003,WEAK
+"long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target 3R, hold long limit",1552,0.217,726,0.105,0.125,0.045,WEAK
+"long | stock | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",863,0.229,427,0.083,0.119,-0.072,WEAK
+"long | all | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit",1552,0.433,726,0.273,0.365,0.185,WEAK
+"long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target 3R, hold long limit",751,0.23,416,0.105,0.119,-0.074,WEAK
+"long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target 2R, hold long limit",751,0.21,416,0.091,0.112,0.011,WEAK
+"long | stock | breakout 20-candle high | stop 2.5 ATR, target none (time exit), hold long limit",1358,0.169,640,0.127,0.104,-0.034,WEAK

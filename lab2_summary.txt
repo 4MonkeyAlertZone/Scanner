@@ -1,151 +1,151 @@
-DATA COVERED  crypto: 2023-10-17 to 2026-10-01 (36 months, 25398 signals); stock: 2018-09-05 to 2026-09-14 (96 months, 16923 signals)
-STRATEGY LAB 2  2026-10-16   (crypto: 36 months of 4H; stocks: 8 years daily; entry at the next candle's open)
+DATA COVERED  crypto: 2023-11-27 to 2026-11-11 (36 months, 26362 signals); stock: 2018-10-16 to 2026-10-23 (96 months, 16823 signals)
+STRATEGY LAB 2  2026-11-25   (crypto: 36 months of 4H; stocks: 8 years daily; entry at the next candle's open)
 R = profit in units of the risk to the stop, after 0.2% costs. Variants are chosen on the older two thirds of history; the newest third is the unseen test.
 Trades never overlap per symbol and rule, but different symbols move together, so real error margins are wider than printed.
 
-42321 trades simulated. Variants with enough trades to judge: 1536.
-496 looked clearly profitable in training (t>=2).
-Overfitting meter: of those, 384 (77%) were also positive on the unseen test period; their average test R was +0.221. (Pure noise: about 50% and about -0.03.)
+43185 trades simulated. Variants with enough trades to judge: 1548.
+585 looked clearly profitable in training (t>=2).
+Overfitting meter: of those, 405 (69%) were also positive on the unseen test period; their average test R was +0.134. (Pure noise: about 50% and about -0.03.)
 
 -- Every strategy family at a plain setting (stop 1.5 ATR, target 2x risk, short holding limit, all markets), by third of history --
    'excess' = average R minus random entries with the same stop and target.  Columns: oldest / middle / NEWEST
 
 long  20/50 average cross up, above 200-avg
-      old n=408 +0.16R (excess +0.15)   |   mid n=424 +0.24R (excess +0.14)   |   NEW n=408 +0.07R (excess +0.01)
+      old n=441 +0.26R (excess +0.32)   |   mid n=383 +0.13R (excess +0.15)   |   NEW n=430 +0.07R (excess +0.30)
 long  20/50 average cross up, above 200-avg  [only when market trend agrees]
-      old n=336 +0.13R (excess +0.09)   |   mid n=327 +0.23R (excess +0.18)   |   NEW n=339 +0.18R (excess +0.12)
+      old n=368 +0.24R (excess +0.37)   |   mid n=275 +0.11R (excess +0.18)   |   NEW n=368 +0.14R (excess +0.34)
 long  breakout 20-candle high
-      old n=1307 +0.06R (excess +0.10)   |   mid n=1310 +0.09R (excess +0.08)   |   NEW n=1285 -0.08R (excess -0.11)
+      old n=1365 +0.11R (excess +0.11)   |   mid n=1302 +0.02R (excess +0.09)   |   NEW n=1281 -0.13R (excess -0.15)
 long  breakout 20-candle high  [only when market trend agrees]
-      old n=1027 +0.04R (excess +0.07)   |   mid n=905 +0.15R (excess +0.15)   |   NEW n=978 -0.04R (excess -0.12)
+      old n=1077 +0.10R (excess +0.11)   |   mid n=833 +0.07R (excess +0.07)   |   NEW n=995 -0.09R (excess -0.13)
 long  breakout 20-candle high + above 200-avg
-      old n=1103 +0.07R (excess +0.02)   |   mid n=1056 +0.13R (excess +0.07)   |   NEW n=1038 -0.05R (excess -0.02)
+      old n=1148 +0.13R (excess +0.19)   |   mid n=1003 +0.06R (excess +0.14)   |   NEW n=1031 -0.08R (excess -0.14)
 long  breakout 20-candle high + above 200-avg  [only when market trend agrees]
-      old n=955 +0.05R (excess +0.02)   |   mid n=848 +0.18R (excess +0.14)   |   NEW n=895 -0.03R (excess +0.02)
+      old n=995 +0.12R (excess +0.16)   |   mid n=773 +0.10R (excess +0.17)   |   NEW n=896 -0.07R (excess -0.16)
 long  breakout 20-candle high + volume>=1.5x
-      old n=801 +0.06R (excess +0.01)   |   mid n=750 +0.14R (excess +0.27)   |   NEW n=713 -0.07R (excess -0.05)
+      old n=822 +0.14R (excess +0.13)   |   mid n=736 +0.03R (excess +0.05)   |   NEW n=715 -0.13R (excess -0.08)
 long  breakout 20-candle high + volume>=1.5x  [only when market trend agrees]
-      old n=646 +0.04R (excess +0.01)   |   mid n=530 +0.26R (excess +0.42)   |   NEW n=522 -0.01R (excess -0.02)
+      old n=661 +0.14R (excess +0.13)   |   mid n=475 +0.13R (excess +0.14)   |   NEW n=538 -0.06R (excess -0.00)
 long  breakout 20-candle high + volume>=1.5x + above 200-avg
-      old n=681 +0.09R (excess +0.11)   |   mid n=612 +0.21R (excess +0.12)   |   NEW n=569 -0.06R (excess -0.02)
+      old n=695 +0.18R (excess +0.17)   |   mid n=568 +0.11R (excess +0.22)   |   NEW n=573 -0.10R (excess -0.04)
 long  breakout 20-candle high + volume>=1.5x + above 200-avg  [only when market trend agrees]
-      old n=601 +0.09R (excess +0.19)   |   mid n=496 +0.28R (excess +0.22)   |   NEW n=488 -0.01R (excess +0.01)
+      old n=611 +0.19R (excess +0.19)   |   mid n=439 +0.15R (excess +0.21)   |   NEW n=495 -0.05R (excess -0.02)
 long  breakout 55-candle high
-      old n=839 +0.08R (excess -0.03)   |   mid n=837 +0.20R (excess +0.26)   |   NEW n=813 +0.03R (excess -0.02)
+      old n=869 +0.14R (excess +0.23)   |   mid n=805 +0.15R (excess +0.04)   |   NEW n=788 -0.00R (excess +0.01)
 long  breakout 55-candle high  [only when market trend agrees]
-      old n=712 +0.04R (excess -0.12)   |   mid n=668 +0.27R (excess +0.34)   |   NEW n=680 +0.09R (excess +0.02)
+      old n=737 +0.11R (excess +0.18)   |   mid n=612 +0.20R (excess +0.11)   |   NEW n=664 +0.05R (excess +0.02)
 long  breakout 55-candle high + above 200-avg
-      old n=793 +0.10R (excess +0.08)   |   mid n=774 +0.23R (excess +0.26)   |   NEW n=742 +0.07R (excess +0.04)
+      old n=818 +0.17R (excess +0.11)   |   mid n=734 +0.18R (excess +0.20)   |   NEW n=726 +0.03R (excess +0.02)
 long  breakout 55-candle high + above 200-avg  [only when market trend agrees]
-      old n=700 +0.07R (excess +0.08)   |   mid n=652 +0.27R (excess +0.28)   |   NEW n=657 +0.11R (excess +0.05)
+      old n=722 +0.14R (excess +0.07)   |   mid n=597 +0.21R (excess +0.21)   |   NEW n=642 +0.06R (excess +0.05)
 long  breakout 55-candle high + volume>=1.5x
-      old n=540 +0.14R (excess +0.11)   |   mid n=504 +0.33R (excess +0.26)   |   NEW n=448 +0.08R (excess +0.04)
+      old n=554 +0.23R (excess +0.23)   |   mid n=465 +0.24R (excess +0.14)   |   NEW n=442 +0.04R (excess +0.12)
 long  breakout 55-candle high + volume>=1.5x  [only when market trend agrees]
-      old n=452 +0.11R (excess +0.06)   |   mid n=413 +0.40R (excess +0.33)   |   NEW n=358 +0.15R (excess +0.14)
+      old n=462 +0.22R (excess +0.22)   |   mid n=358 +0.29R (excess +0.18)   |   NEW n=355 +0.10R (excess +0.12)
 long  breakout 55-candle high + volume>=1.5x + above 200-avg
-      old n=511 +0.13R (excess +0.10)   |   mid n=461 +0.41R (excess +0.43)   |   NEW n=406 +0.08R (excess +0.12)
+      old n=522 +0.22R (excess +0.23)   |   mid n=419 +0.32R (excess +0.32)   |   NEW n=403 +0.02R (excess +0.18)
 long  breakout 55-candle high + volume>=1.5x + above 200-avg  [only when market trend agrees]
-      old n=448 +0.13R (excess +0.09)   |   mid n=396 +0.44R (excess +0.45)   |   NEW n=353 +0.14R (excess +0.20)
+      old n=456 +0.23R (excess +0.25)   |   mid n=343 +0.33R (excess +0.30)   |   NEW n=349 +0.08R (excess +0.23)
 long  closes below lower Bollinger band + RSI<=30
-      old n=400 -0.03R (excess +0.01)   |   mid n=410 -0.12R (excess -0.17)   |   NEW n=397 +0.08R (excess +0.19)
+      old n=397 -0.11R (excess -0.05)   |   mid n=465 -0.14R (excess -0.06)   |   NEW n=398 +0.01R (excess +0.13)
 long  closes below lower Bollinger band + RSI<=30  [only when market trend agrees]
-      old n=199 +0.06R (excess +0.14)   |   mid n=143 -0.09R (excess -0.23)   |   NEW n=161 +0.10R (excess +0.17)
+      old n=190 -0.06R (excess -0.15)   |   mid n=142 -0.17R (excess +0.09)   |   NEW n=175 -0.01R (excess +0.11)
 long  oversold: RSI falls to <=20
-      old n=75 +0.24R (excess +0.21)   |   mid n=93 +0.58R (excess +0.82)   |   NEW n=68 -0.02R (excess +0.26)
+      old n=83 +0.27R (excess -0.04)   |   mid n=100 +0.52R (excess +0.52)   |   NEW n=69 -0.34R (excess -0.37)
 long  pullback in uptrend: RSI falls to <=30
-      old n=77 -0.11R (excess -0.20)   |   mid n=71 -0.00R (excess -0.14)   |   NEW n=56 +0.33R (excess +0.08)
+      old n=68 -0.27R (excess -0.19)   |   mid n=73 +0.02R (excess +0.15)   |   NEW n=69 +0.03R (excess +0.23)
 long  pullback in uptrend: RSI falls to <=30  [only when market trend agrees]
-      old n=59 -0.15R (excess -0.31)   |   mid n=53 -0.14R (excess -0.14)   |   NEW n=44 +0.41R (excess +0.05)
+      old n=50 -0.38R (excess -0.26)   |   mid n=54 -0.10R (excess +0.18)   |   NEW n=56 +0.03R (excess +0.08)
 long  pullback in uptrend: RSI falls to <=40
-      old n=441 +0.02R (excess +0.11)   |   mid n=431 -0.15R (excess -0.21)   |   NEW n=420 -0.01R (excess +0.04)
+      old n=433 +0.06R (excess +0.05)   |   mid n=425 -0.21R (excess -0.15)   |   NEW n=458 -0.03R (excess +0.03)
 long  pullback in uptrend: RSI falls to <=40  [only when market trend agrees]
-      old n=368 +0.02R (excess +0.10)   |   mid n=319 -0.22R (excess -0.28)   |   NEW n=370 +0.02R (excess +0.05)
+      old n=361 +0.07R (excess +0.07)   |   mid n=305 -0.30R (excess -0.21)   |   NEW n=405 -0.00R (excess +0.05)
 short 20/50 average cross down, below 200-avg
-      old n=354 +0.04R (excess +0.12)   |   mid n=352 -0.09R (excess +0.06)   |   NEW n=369 -0.08R (excess -0.10)
+      old n=363 +0.09R (excess +0.05)   |   mid n=413 +0.06R (excess +0.27)   |   NEW n=354 -0.19R (excess -0.12)
 short 20/50 average cross down, below 200-avg  [only when market trend agrees]
-      old n=170 +0.21R (excess +0.21)   |   mid n=226 -0.10R (excess +0.06)   |   NEW n=222 -0.03R (excess -0.00)
+      old n=175 +0.24R (excess +0.08)   |   mid n=286 +0.12R (excess +0.32)   |   NEW n=202 -0.25R (excess -0.20)
 short bounce in downtrend: RSI rises to >=60
-      old n=301 -0.26R (excess -0.38)   |   mid n=350 -0.15R (excess -0.20)   |   NEW n=347 +0.00R (excess +0.04)
+      old n=313 -0.22R (excess -0.08)   |   mid n=406 -0.07R (excess -0.04)   |   NEW n=332 +0.05R (excess +0.15)
 short bounce in downtrend: RSI rises to >=60  [only when market trend agrees]
-      old n=160 -0.19R (excess -0.34)   |   mid n=205 -0.20R (excess -0.18)   |   NEW n=187 +0.04R (excess +0.02)
+      old n=168 -0.18R (excess -0.11)   |   mid n=259 -0.07R (excess -0.09)   |   NEW n=162 +0.00R (excess +0.10)
 short bounce in downtrend: RSI rises to >=70
-      old n=56 -0.36R (excess +0.04)   |   mid n=69 -0.15R (excess -0.11)   |   NEW n=77 +0.19R (excess +0.19)
+      old n=59 -0.39R (excess -0.61)   |   mid n=79 -0.03R (excess +0.14)   |   NEW n=72 +0.28R (excess +0.24)
 short bounce in downtrend: RSI rises to >=70  [only when market trend agrees]
-      old n=31 -0.53R (excess -0.16)   |   mid n=37 +0.21R (excess +0.23)   |   NEW n=47 +0.50R (excess +0.45)
+      old n=32 -0.54R (excess -0.84)   |   mid n=49 +0.28R (excess +0.34)   |   NEW n=40 +0.58R (excess +0.34)
 short breakdown 20-candle low
-      old n=994 -0.06R (excess -0.01)   |   mid n=1088 -0.05R (excess +0.09)   |   NEW n=1112 -0.11R (excess +0.02)
+      old n=990 -0.03R (excess -0.02)   |   mid n=1141 +0.01R (excess +0.06)   |   NEW n=1173 -0.15R (excess -0.09)
 short breakdown 20-candle low  [only when market trend agrees]
-      old n=344 -0.14R (excess -0.17)   |   mid n=557 +0.07R (excess +0.22)   |   NEW n=444 -0.08R (excess +0.01)
+      old n=346 -0.12R (excess -0.13)   |   mid n=636 +0.10R (excess +0.11)   |   NEW n=460 -0.24R (excess -0.26)
 short breakdown 20-candle low + below 200-avg
-      old n=694 -0.06R (excess +0.06)   |   mid n=774 +0.03R (excess +0.11)   |   NEW n=807 -0.13R (excess -0.02)
+      old n=695 -0.04R (excess -0.06)   |   mid n=848 +0.07R (excess +0.19)   |   NEW n=845 -0.23R (excess -0.13)
 short breakdown 20-candle low + below 200-avg  [only when market trend agrees]
-      old n=333 -0.14R (excess -0.00)   |   mid n=515 +0.09R (excess +0.16)   |   NEW n=425 -0.09R (excess +0.01)
+      old n=336 -0.12R (excess -0.15)   |   mid n=590 +0.12R (excess +0.26)   |   NEW n=444 -0.28R (excess -0.21)
 short breakdown 20-candle low + volume>=1.5x
-      old n=717 -0.03R (excess -0.04)   |   mid n=708 +0.02R (excess +0.12)   |   NEW n=721 -0.14R (excess -0.10)
+      old n=703 -0.00R (excess -0.01)   |   mid n=770 +0.06R (excess +0.06)   |   NEW n=766 -0.18R (excess -0.06)
 short breakdown 20-candle low + volume>=1.5x  [only when market trend agrees]
-      old n=276 -0.11R (excess -0.12)   |   mid n=393 -0.02R (excess +0.04)   |   NEW n=350 -0.12R (excess -0.15)
+      old n=277 -0.08R (excess -0.10)   |   mid n=463 +0.01R (excess -0.09)   |   NEW n=367 -0.27R (excess -0.15)
 short breakdown 20-candle low + volume>=1.5x + below 200-avg
-      old n=506 -0.04R (excess +0.02)   |   mid n=521 +0.16R (excess +0.14)   |   NEW n=544 -0.16R (excess -0.18)
+      old n=504 -0.02R (excess +0.05)   |   mid n=592 +0.17R (excess +0.22)   |   NEW n=575 -0.24R (excess -0.14)
 short breakdown 20-candle low + volume>=1.5x + below 200-avg  [only when market trend agrees]
-      old n=260 -0.15R (excess -0.12)   |   mid n=360 +0.05R (excess +0.03)   |   NEW n=335 -0.16R (excess -0.18)
+      old n=265 -0.11R (excess -0.12)   |   mid n=427 +0.07R (excess +0.16)   |   NEW n=355 -0.31R (excess -0.21)
 short breakdown 55-candle low
-      old n=531 -0.16R (excess -0.05)   |   mid n=566 -0.03R (excess +0.06)   |   NEW n=628 -0.25R (excess -0.25)
+      old n=529 -0.17R (excess -0.13)   |   mid n=619 +0.00R (excess -0.05)   |   NEW n=671 -0.22R (excess -0.20)
 short breakdown 55-candle low  [only when market trend agrees]
-      old n=269 -0.24R (excess -0.13)   |   mid n=368 -0.15R (excess -0.07)   |   NEW n=321 -0.27R (excess -0.30)
+      old n=273 -0.24R (excess -0.21)   |   mid n=422 -0.11R (excess -0.19)   |   NEW n=338 -0.33R (excess -0.47)
 short breakdown 55-candle low + below 200-avg
-      old n=472 -0.17R (excess -0.17)   |   mid n=510 +0.03R (excess -0.02)   |   NEW n=568 -0.23R (excess -0.10)
+      old n=475 -0.17R (excess -0.12)   |   mid n=564 +0.05R (excess +0.13)   |   NEW n=603 -0.23R (excess -0.14)
 short breakdown 55-candle low + below 200-avg  [only when market trend agrees]
-      old n=261 -0.24R (excess -0.22)   |   mid n=362 -0.13R (excess -0.15)   |   NEW n=312 -0.23R (excess -0.14)
+      old n=268 -0.25R (excess -0.15)   |   mid n=416 -0.10R (excess -0.01)   |   NEW n=333 -0.29R (excess -0.13)
 short breakdown 55-candle low + volume>=1.5x
-      old n=414 -0.10R (excess +0.07)   |   mid n=384 +0.16R (excess +0.16)   |   NEW n=450 -0.17R (excess -0.10)
+      old n=418 -0.13R (excess -0.11)   |   mid n=436 +0.14R (excess +0.13)   |   NEW n=483 -0.15R (excess -0.22)
 short breakdown 55-candle low + volume>=1.5x  [only when market trend agrees]
-      old n=213 -0.20R (excess +0.00)   |   mid n=266 +0.03R (excess +0.07)   |   NEW n=258 -0.13R (excess -0.21)
+      old n=218 -0.20R (excess -0.10)   |   mid n=318 +0.02R (excess +0.08)   |   NEW n=281 -0.17R (excess -0.15)
 short breakdown 55-candle low + volume>=1.5x + below 200-avg
-      old n=364 -0.13R (excess -0.11)   |   mid n=350 +0.22R (excess +0.22)   |   NEW n=415 -0.21R (excess -0.10)
+      old n=370 -0.15R (excess -0.05)   |   mid n=401 +0.19R (excess +0.12)   |   NEW n=443 -0.20R (excess -0.12)
 short breakdown 55-candle low + volume>=1.5x + below 200-avg  [only when market trend agrees]
-      old n=206 -0.19R (excess -0.22)   |   mid n=258 +0.05R (excess +0.11)   |   NEW n=255 -0.23R (excess -0.14)
+      old n=214 -0.20R (excess -0.13)   |   mid n=308 +0.03R (excess -0.07)   |   NEW n=276 -0.25R (excess -0.21)
 short closes above upper Bollinger band + RSI>=70
-      old n=554 -0.18R (excess -0.11)   |   mid n=543 -0.26R (excess -0.20)   |   NEW n=558 -0.10R (excess +0.13)
+      old n=581 -0.16R (excess -0.08)   |   mid n=513 -0.22R (excess -0.12)   |   NEW n=544 -0.08R (excess +0.10)
 short closes above upper Bollinger band + RSI>=70  [only when market trend agrees]
-      old n=71 -0.21R (excess +0.01)   |   mid n=102 -0.07R (excess -0.28)   |   NEW n=99 +0.37R (excess +0.55)
+      old n=74 -0.19R (excess -0.04)   |   mid n=124 -0.02R (excess +0.03)   |   NEW n=87 +0.42R (excess +0.72)
 short overbought: RSI rises to >=80
-      old n=164 -0.20R (excess -0.16)   |   mid n=153 -0.45R (excess -0.41)   |   NEW n=164 -0.27R (excess -0.16)
+      old n=174 -0.27R (excess -0.22)   |   mid n=140 -0.38R (excess -0.26)   |   NEW n=152 -0.28R (excess -0.23)
 
 -- Top 15 variants picked ONLY from training (profitable in both training periods, t>=2), then checked on the unseen test period --
-- long | all | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit
-    train n= 2159  avg R +0.42 (+/-0.14)   TEST n= 1038  avg R +0.12 (+/-0.14)   vs random -0.10   [WEAK]
 - long | all | breakout 20-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 2159  avg R +0.54 (+/-0.19)   TEST n= 1038  avg R +0.17 (+/-0.19)   vs random +0.17   [WEAK]
+    train n= 2151  avg R +0.48 (+/-0.18)   TEST n= 1031  avg R +0.12 (+/-0.18)   vs random -0.24   [WEAK]
+- long | all | breakout 20-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit
+    train n= 2151  avg R +0.37 (+/-0.14)   TEST n= 1031  avg R +0.07 (+/-0.14)   vs random -0.07   [WEAK]
 - long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1803  avg R +0.61 (+/-0.21)   TEST n=  895  avg R +0.21 (+/-0.19)   vs random +0.17   [HOLDS]
-- long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit
-    train n= 1803  avg R +0.47 (+/-0.16)   TEST n=  895  avg R +0.11 (+/-0.13)   vs random -0.12   [WEAK]
-- long | all | breakout 20-candle high | stop 2.5 ATR, target none (time exit), hold long limit
-    train n= 2617  avg R +0.35 (+/-0.12)   TEST n= 1285  avg R +0.07 (+/-0.13)   vs random -0.15   [WEAK]
-- long | all | breakout 20-candle high | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit
-    train n= 1932  avg R +0.44 (+/-0.16)   TEST n=  978  avg R +0.12 (+/-0.13)   vs random -0.10   [WEAK]
-- long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1097  avg R +0.91 (+/-0.33)   TEST n=  488  avg R +0.73 (+/-0.81)   vs random +0.61   [WEAK]
-- long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1567  avg R +0.61 (+/-0.22)   TEST n=  742  avg R +0.64 (+/-0.59)   vs random +0.45   [HOLDS]
+    train n= 1768  avg R +0.55 (+/-0.21)   TEST n=  896  avg R +0.15 (+/-0.18)   vs random -0.23   [WEAK]
+- long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit
+    train n=  751  avg R +0.26 (+/-0.10)   TEST n=  416  avg R +0.10 (+/-0.12)   vs random -0.06   [WEAK]
 - long | all | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1352  avg R +0.67 (+/-0.25)   TEST n=  657  avg R +0.73 (+/-0.66)   vs random +0.53   [HOLDS]
-- long | all | breakout 20-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1293  avg R +0.78 (+/-0.29)   TEST n=  569  avg R +0.60 (+/-0.70)   vs random +0.56   [WEAK]
-- long | all | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit
-    train n= 1567  avg R +0.48 (+/-0.18)   TEST n=  742  avg R +0.36 (+/-0.36)   vs random +0.19   [HOLDS]
+    train n= 1319  avg R +0.62 (+/-0.24)   TEST n=  642  avg R +0.64 (+/-0.67)   vs random +0.74   [WEAK]
+- long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit
+    train n= 1552  avg R +0.55 (+/-0.21)   TEST n=  726  avg R +0.55 (+/-0.60)   vs random +0.43   [WEAK]
+- long | all | breakout 20-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit
+    train n= 1768  avg R +0.42 (+/-0.16)   TEST n=  896  avg R +0.05 (+/-0.12)   vs random -0.06   [WEAK]
 - long | all | breakout 55-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1380  avg R +0.65 (+/-0.24)   TEST n=  680  avg R +0.69 (+/-0.64)   vs random +0.34   [HOLDS]
-- long | crypto | breakout 20-candle high + volume>=1.5x + above 200-avg | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n=  712  avg R +1.32 (+/-0.49)   TEST n=  287  avg R +0.96 (+/-1.36)   vs random +0.86   [WEAK]
-- long | all | breakout 55-candle high + volume>=1.5x + above 200-avg | stop 1.5 ATR, target none (time exit), hold long limit
-    train n=  972  avg R +0.92 (+/-0.34)   TEST n=  406  avg R +0.85 (+/-0.96)   vs random +0.60   [WEAK]
-- long | all | breakout 20-candle high | only when market trend agrees | stop 1.5 ATR, target none (time exit), hold long limit
-    train n= 1932  avg R +0.53 (+/-0.20)   TEST n=  978  avg R +0.17 (+/-0.19)   vs random -0.28   [WEAK]
+    train n= 1349  avg R +0.59 (+/-0.23)   TEST n=  664  avg R +0.60 (+/-0.65)   vs random +0.56   [WEAK]
+- long | stock | breakout 55-candle high | only when market trend agrees | stop 2.5 ATR, target none (time exit), hold long limit
+    train n=  766  avg R +0.25 (+/-0.10)   TEST n=  430  avg R +0.10 (+/-0.12)   vs random -0.00   [WEAK]
+- long | all | breakout 55-candle high + above 200-avg | stop 1.5 ATR, target 3R, hold long limit
+    train n= 1552  avg R +0.22 (+/-0.09)   TEST n=  726  avg R +0.10 (+/-0.12)   vs random +0.05   [WEAK]
+- long | stock | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit
+    train n=  863  avg R +0.23 (+/-0.09)   TEST n=  427  avg R +0.08 (+/-0.12)   vs random -0.07   [WEAK]
+- long | all | breakout 55-candle high + above 200-avg | stop 2.5 ATR, target none (time exit), hold long limit
+    train n= 1552  avg R +0.43 (+/-0.17)   TEST n=  726  avg R +0.27 (+/-0.36)   vs random +0.19   [WEAK]
+- long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target 3R, hold long limit
+    train n=  751  avg R +0.23 (+/-0.09)   TEST n=  416  avg R +0.11 (+/-0.12)   vs random -0.07   [WEAK]
+- long | stock | breakout 55-candle high + above 200-avg | only when market trend agrees | stop 2.5 ATR, target 2R, hold long limit
+    train n=  751  avg R +0.21 (+/-0.08)   TEST n=  416  avg R +0.09 (+/-0.11)   vs random +0.01   [WEAK]
+- long | stock | breakout 20-candle high | stop 2.5 ATR, target none (time exit), hold long limit
+    train n= 1358  avg R +0.17 (+/-0.07)   TEST n=  640  avg R +0.13 (+/-0.10)   vs random -0.03   [WEAK]
 
-Procedure result: 'pick the best in training' gave an average TEST result of +0.436R, 15 of 15 positive, 5 clearly holding.
+Procedure result: 'pick the best in training' gave an average TEST result of +0.210R, 15 of 15 positive, 0 clearly holding.
 
 VERDICTS
-Some rules held up on unseen data. Worth paper-trading forward before any real money.
+Weak hints only. Not enough to rely on.
 
-Could not test: XMR (not enough history), WBT (not enough history), RAIN (not enough history), BTW (not enough history)
+Could not test: WBT (not enough history), RAIN (not enough history), M (not enough history), USDF (not enough history)
