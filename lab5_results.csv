@@ -1,13 +1,13 @@
 tf,rule,n,net_R,gross_R,bench_R,holds
-1h,"buy surge (volume 2x, buyers 58%+, green)",20758,-0.154,-0.025,-0.166,0
-1h,buy surge + above 50-avg,14667,-0.164,-0.03,-0.166,0
-1h,buying pressure building (3 candles),18175,-0.139,-0.023,-0.166,0
-1h,buy surge + 4H uptrend,8432,-0.097,0.013,-0.166,0
-2h,"buy surge (volume 2x, buyers 58%+, green)",10370,-0.09,-0.003,-0.095,0
-2h,buy surge + above 50-avg,7200,-0.059,0.014,-0.095,0
-2h,buying pressure building (3 candles),9103,-0.079,-0.01,-0.095,0
-2h,buy surge + 4H uptrend,4414,-0.039,0.032,-0.095,0
-4h,"buy surge (volume 2x, buyers 58%+, green)",4896,-0.024,0.019,-0.058,0
-4h,buy surge + above 50-avg,3395,-0.027,0.016,-0.058,0
-4h,buying pressure building (3 candles),4290,-0.031,0.011,-0.058,0
-4h,buy surge + 4H uptrend,2372,-0.039,0.003,-0.058,0
+1h,"buy surge (volume 2x, buyers 58%+, green)",20154,-0.19,-0.039,-0.194,0
+1h,buy surge + above 50-avg,14058,-0.177,-0.044,-0.194,0
+1h,buying pressure building (3 candles),17542,-0.157,-0.04,-0.194,0
+1h,buy surge + 4H uptrend,7885,-0.111,0.0,-0.194,0
+2h,"buy surge (volume 2x, buyers 58%+, green)",10089,-0.118,-0.03,-0.126,0
+2h,buy surge + above 50-avg,6893,-0.087,-0.013,-0.126,0
+2h,buying pressure building (3 candles),8764,-0.106,-0.038,-0.126,0
+2h,buy surge + 4H uptrend,4127,-0.064,0.007,-0.126,0
+4h,"buy surge (volume 2x, buyers 58%+, green)",4738,-0.05,-0.007,-0.096,0
+4h,buy surge + above 50-avg,3190,-0.044,-0.0,-0.096,0
+4h,buying pressure building (3 candles),4082,-0.065,-0.022,-0.096,0
+4h,buy surge + 4H uptrend,2187,-0.054,-0.011,-0.096,0
