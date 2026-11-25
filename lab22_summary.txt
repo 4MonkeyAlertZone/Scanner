@@ -1,24 +1,24 @@
-LAB 22  2026-10-19  original support finder + extra filters. Cost 0.10% round trip. Entries 1 Oct 2020 - 31 Aug 2025, every 8h, 30 coins (survivors only).
+LAB 22  2026-11-25  original support finder + extra filters. Cost 0.10% round trip. Entries 1 Oct 2020 - 31 Aug 2025, every 8h, 29 coins (survivors only).
 Cell = signals/distinct coin-days, average R after costs, EDGE = avg R minus random entries (same stop/target distances, same BTC-gate mix), ± 95% margin. Edge bigger than the ± and positive in cycle 1 AND cycle 2 = worth trusting. Many filters tested: expect a couple of lucky ones.
 
 filter                        all                         cycle 1                     bear yr                     cycle 2                     
-ORIGINAL (no extra filter)    24945/19331-0.09 edge+0.02±0.022633/2016-0.05 edge+0.05±0.065247/4081-0.10 edge+0.05±0.0317065/13234-0.09 edge+0.00±0.02
-RSI < 35                      1857/1641-0.15 edge-0.04±0.05 169/149 -0.13 edge-0.03±0.17 467/403 -0.16 edge-0.00±0.111221/1089-0.14 edge-0.05±0.07
-RSI < 30                       616/559 -0.14 edge-0.03±0.09  65/56  -0.16 edge-0.06±0.27 162/146 -0.19 edge-0.02±0.18 389/357 -0.11 edge-0.02±0.12
-RSI 35-50                     10782/9149-0.12 edge-0.01±0.021076/899 -0.09 edge+0.01±0.072267/1951-0.12 edge+0.03±0.057439/6299-0.12 edge-0.02±0.03
-RSI >= 50                     12306/10286-0.05 edge+0.05±0.031388/1134-0.01 edge+0.09±0.092513/2104-0.07 edge+0.08±0.058405/7048-0.06 edge+0.03±0.03
-BTC above 200d avg            15578/11998-0.09 edge+0.03±0.021500/1150+0.00 edge+0.11±0.08 557/427 -0.25 edge+0.02±0.1013521/10421-0.09 edge+0.03±0.02
-BTC below 200d avg            9367/7333-0.09 edge-0.01±0.031133/866 -0.12 edge-0.02±0.074690/3654-0.09 edge+0.05±0.043544/2813-0.09 edge-0.09±0.04
-48h drop >= 12%                569/502 -0.08 edge+0.02±0.10 162/133 -0.17 edge-0.07±0.17 144/129 -0.13 edge+0.04±0.19 263/240 -0.00 edge+0.09±0.15
-48h drop >= 8%                1650/1432-0.11 edge-0.01±0.06 320/275 -0.12 edge-0.01±0.13 439/374 -0.20 edge-0.04±0.11 891/783 -0.07 edge+0.03±0.08
-touches >= 3                  22807/17763-0.09 edge+0.01±0.022386/1839-0.04 edge+0.06±0.064713/3679-0.11 edge+0.04±0.0315708/12245-0.10 edge-0.01±0.02
-1D/weekly zone match          10296/8944-0.09 edge+0.01±0.03 893/780 -0.13 edge-0.03±0.091949/1722-0.10 edge+0.05±0.067454/6442-0.09 edge+0.01±0.03
-long lower wick (>=50%)       4240/4040-0.13 edge-0.03±0.04 460/433 -0.11 edge-0.01±0.14 833/786 -0.19 edge-0.04±0.092947/2821-0.12 edge-0.03±0.05
-BUY SIGNAL only (reclaim)     16156/14565-0.09 edge+0.02±0.021889/1642-0.02 edge+0.08±0.073473/3132-0.10 edge+0.05±0.0410794/9791-0.09 edge-0.00±0.03
-GATE + RSI < 35               1154/1021-0.12 edge+0.00±0.07  96/84  -0.11 edge-0.01±0.21  80/63  -0.13 edge+0.14±0.23 978/874 -0.12 edge-0.00±0.07
-GATE + drop >= 8%             1023/896 -0.07 edge+0.05±0.07 180/157 -0.08 edge+0.02±0.16  85/70  -0.36 edge-0.09±0.20 758/669 -0.04 edge+0.07±0.08
-GATE + 1D match               6888/5929-0.09 edge+0.03±0.03 550/470 -0.09 edge+0.01±0.12 236/201 -0.23 edge+0.04±0.156102/5258-0.08 edge+0.03±0.04
-GATE + RSI<35 + 1D match       583/533 -0.06 edge+0.06±0.10  51/46  -0.03 edge+0.07±0.30  43/38  +0.05 edge+0.33±0.35 489/449 -0.07 edge+0.04±0.11
-GATE + reclaim + RSI<45       2692/2566-0.12 edge+0.00±0.05 267/247 -0.05 edge+0.06±0.15 134/123 -0.28 edge-0.01±0.202291/2196-0.12 edge-0.00±0.05
+ORIGINAL (no extra filter)    24061/18750-0.10 edge+0.01±0.022243/1731+0.02 edge+0.12±0.075258/4109-0.12 edge+0.04±0.0316560/12910-0.11 edge-0.02±0.02
+RSI < 35                      1838/1608-0.11 edge-0.00±0.05 159/131 -0.02 edge+0.07±0.19 481/414 -0.18 edge-0.02±0.111198/1063-0.09 edge+0.00±0.07
+RSI < 30                       656/594 -0.11 edge-0.01±0.09  71/64  -0.09 edge+0.01±0.26 173/153 -0.14 edge+0.03±0.18 412/377 -0.10 edge-0.01±0.11
+RSI 35-50                     10349/8867-0.12 edge-0.01±0.02 910/773 -0.01 edge+0.09±0.112274/1955-0.14 edge+0.02±0.057165/6139-0.13 edge-0.04±0.03
+RSI >= 50                     11874/9945-0.08 edge+0.03±0.031174/968 +0.05 edge+0.14±0.112503/2125-0.08 edge+0.08±0.058197/6852-0.09 edge-0.01±0.03
+BTC above 200d avg            14853/11506-0.09 edge+0.02±0.021204/925 +0.07 edge+0.17±0.12 538/423 -0.21 edge+0.05±0.1013111/10158-0.10 edge+0.01±0.02
+BTC below 200d avg            9208/7244-0.10 edge-0.02±0.021039/806 -0.04 edge+0.06±0.074720/3686-0.11 edge+0.04±0.043449/2752-0.12 edge-0.13±0.04
+48h drop >= 12%                510/451 -0.03 edge+0.07±0.10 123/103 -0.05 edge+0.05±0.19 145/129 -0.23 edge-0.06±0.19 242/219 +0.10 edge+0.19±0.15
+48h drop >= 8%                1580/1361-0.05 edge+0.05±0.06 261/220 -0.03 edge+0.07±0.13 435/373 -0.20 edge-0.03±0.11 884/768 +0.01 edge+0.10±0.08
+touches >= 3                  21977/17215-0.10 edge+0.00±0.022021/1574+0.02 edge+0.12±0.074705/3696-0.11 edge+0.04±0.0315251/11945-0.11 edge-0.03±0.02
+1D/weekly zone match          9919/8647-0.09 edge+0.01±0.03 756/685 +0.03 edge+0.13±0.171952/1709-0.11 edge+0.05±0.067211/6253-0.10 edge-0.01±0.03
+long lower wick (>=50%)       4189/3997-0.16 edge-0.05±0.04 376/358 -0.06 edge+0.03±0.14 802/769 -0.20 edge-0.04±0.093011/2870-0.16 edge-0.07±0.04
+BUY SIGNAL only (reclaim)     15487/13950-0.10 edge-0.00±0.021569/1382+0.05 edge+0.15±0.103439/3100-0.10 edge+0.05±0.0410479/9468-0.13 edge-0.04±0.03
+GATE + RSI < 35               1141/1012-0.10 edge+0.02±0.07  85/70  -0.08 edge+0.02±0.25  81/72  -0.28 edge-0.02±0.25 975/870 -0.09 edge+0.02±0.07
+GATE + drop >= 8%              959/838 -0.00 edge+0.12±0.08 137/113 -0.08 edge+0.02±0.17  84/74  -0.26 edge+0.00±0.24 738/651 +0.04 edge+0.16±0.09
+GATE + 1D match               6533/5671-0.09 edge+0.03±0.04 439/397 +0.10 edge+0.20±0.28 222/200 -0.25 edge+0.01±0.165872/5074-0.09 edge+0.02±0.04
+GATE + RSI<35 + 1D match       573/535 -0.07 edge+0.05±0.10  46/44  -0.12 edge-0.02±0.28  41/38  -0.19 edge+0.07±0.40 486/453 -0.05 edge+0.06±0.11
+GATE + reclaim + RSI<45       2479/2372-0.13 edge-0.01±0.05 204/191 -0.00 edge+0.10±0.20 121/113 -0.12 edge+0.14±0.272154/2068-0.14 edge-0.03±0.06
 
-Skipped: XMR (short history), WBT (short history), RAIN (short history), CC (short history), GRAM (short history), BTW (short history), TAO (short history), ENA (no window), PUMP (no window), ASTER (no window)
+Skipped: WBT (short history), CC (no window), GRAM (short history), TAO (short history), RAIN (short history), M (short history), USDF (short history), U (short history), VVV (short history), WLFI (no window)
