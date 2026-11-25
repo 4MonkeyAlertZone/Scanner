@@ -1,5 +1,5 @@
-ALT REGIME  data to 2026-11-23: OUT
-BTC 61,272  200d avg 72,290 (below)  50d avg 76,255 (below)
+ALT REGIME  data to 2026-11-24: OUT
+BTC 59,830  200d avg 72,188 (below)  50d avg 75,735 (below)
 OI warning in last 14d: no
 Why OUT: BTC below its 200-day average; BTC below its 50-day average
 Signal from the daily close; rule-based prompt, not advice.
