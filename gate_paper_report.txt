@@ -1,14 +1,14 @@
-GATE PAPER BOT  data to 2026-11-26  signal OUT since the 2026-10-22 close  (35 days)  |  paper accounts started 2026-10-30 (27 days)
+GATE PAPER BOT  data to 2026-11-27  signal OUT since the 2026-10-22 close  (36 days)  |  paper accounts started 2026-10-30 (28 days)
 
-BTC 60,575   200-day 71,979 (-15.8%)   50-day 74,779 (-19.0%)
-To flip IN: a close above 74,779 (+23.4% from here, using today's averages).
-Position now: SHORT. Calendar short window: OPEN until 2026-12-01 (5 days left).
+BTC 59,926   200-day 71,869 (-16.6%)   50-day 74,343 (-19.4%)
+To flip IN: a close above 74,343 (+24.1% from here, using today's averages).
+Position now: SHORT. Calendar short window: OPEN until 2026-12-01 (4 days left).
 
 account                     equity x  worst DD%  buy&hold x
-BTC when IN                    1.000        0.0       0.783
-ETH when IN                    1.000        0.0       0.753
-50/50 BTC+ETH when IN          1.000        0.0       0.768
-BTC gate + window short        0.986       -1.4       1.012
+BTC when IN                    1.000        0.0       0.775
+ETH when IN                    1.000        0.0       0.740
+50/50 BTC+ETH when IN          1.000        0.0       0.758
+BTC gate + window short        0.997       -1.4       1.002
 The short account started 2026-11-24; it is long when IN, short only while the gate is OUT and the calendar window is open, otherwise cash (cash earns 0 here, borrow 0.02%/day on the short).
 Note: the OUT signal came before the paper accounts began on 2026-10-30, so the accounts started in the OUT state and have not traded yet.
 
